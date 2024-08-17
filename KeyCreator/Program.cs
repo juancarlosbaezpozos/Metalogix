@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KeyCreator
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Generar();
         }
 
         public static void Generar()
         {
-            MLLicenseCA lc = new MLLicenseCA();
+            var lc = new MLLicenseCA();
             lc.Name = "Carlos P";
             lc.Organization = "IBM";
             lc.Email = "jc@mx1.ibm.com";
@@ -26,8 +22,8 @@ namespace KeyCreator
             lc.TotalPages = 1;
             lc.Signature = "firma";
 
-            string sProductName = "Migrador";
-            string sLicenseFilePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Metalogix\" + sProductName + @"\Product.lic";
+            const string sProductName = "Migrador";
+            var sLicenseFilePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Metalogix\" + sProductName + @"\Product.lic";
             lc.SaveToFile(sLicenseFilePath);
         }
     }

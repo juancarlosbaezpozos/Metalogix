@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KeyCreator
 {
@@ -27,12 +23,12 @@ namespace KeyCreator
 
         public virtual string[] GetLicenseCustomInfo()
         {
-            return new string[0];
+            return Array.Empty<string>();
         }
 
         public virtual string[] GetLicenseInfo()
         {
-            return new string[0];
+            return Array.Empty<string>();
         }
 
         public abstract void Validate(string sProductCode);
