@@ -1,0 +1,28 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Module Name="SystemDisplayTemplates" Url="_catalogs/masterpage/Display Templates/System" Path="DisplayTemplates" RootWebOnly="TRUE">
+        <File Url="Control_QueryBuilderPreview.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_QueryBuilderControl" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Control" />
+            <Property Name="TemplateHidden" Value="0" />
+        </File>
+        <File Url="Group_QueryBuilderPreview.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_QueryBuilderGroup" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Group" />
+            <Property Name="TemplateHidden" Value="0" />
+            <Property Name="TargetControlType" Value=";#SearchResults;#" />
+        </File>
+        <File Url="Item_QueryBuilderPreview.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_QueryBuilderItem" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Item" />
+            <Property Name="TemplateHidden" Value="0" />
+            <Property Name="TargetControlType" Value=";#SearchResults;#" />
+            <Property Name="ManagedPropertyMapping" Value="'Title':'Title','Author':'Author','Size':'Size','Path':'Path','Description':'Description','LastModifiedTime':'LastModifiedTime','CollapsingStatus':'CollapsingStatus','DocId':'DocId','HitHighlightedSummary':'HitHighlightedSummary','HitHighlightedProperties':'HitHighlightedProperties','FileExtension':'FileExtension','ViewsLifeTime':'ViewsLifeTime','ParentLink':'ParentLink','ViewsRecent':'ViewsRecent','FileType':'FileType','IsContainer':'IsContainer','SecondaryFileExtension':'SecondaryFileExtension','DisplayAuthor':'DisplayAuthor'"/>
+        </File>
+    </Module>
+</Elements>

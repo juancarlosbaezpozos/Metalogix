@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{E9DFF0FE-D8EB-4CC2-BC04-0EE2B5F4990F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Metalogix.SharePoint.Adapters</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>migrador.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web">
+      <HintPath>.\Metalogix.SharePoint.AdaptersReferences\System.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AdapterShortNameAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ExceptionDetail.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddSiteCollectionOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\GetDocumentResult.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AdapterDisplayNameAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\FieldsLookUp.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IDB2013CheckOverride.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AdapterSupportsAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\Authentication.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ShowInMenuAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\MenuOrderAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\LoginResult.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\LoginErrorCode.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AutoDetectPriorityAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UpdateSiteCollectionOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\AuthenticationMode.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ModifyNavigationOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\LoginCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ISharePointReader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\LoginCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\GetListItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\ModeCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IDBWriter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IDBReader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\ModeCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AspxUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SupportedConnectionScopesAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AspxTagInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AspxTagType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SupportedAdaptersAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CMWebService\CMWebService.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\MenuTextAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SupportedAuthenticationMethodsAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CMWebService\IsActivatedCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\IsDefaultO365Authenticator.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CMWebService\IsActivatedCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\CookieRepository.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\CredentialEntryStyle.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\CookieManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\EntryStyles.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\DisallowSharePointAdapter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\Office365WebBrowserAuthenticationManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\AuthenticationUtilities.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\AutomaticAuthenticationEnabled.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IServiceManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\AuthenticationInitializer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ISharePointWriter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\Office365WebBrowserInitializer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ISharePointAdapterService.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Enums\ViewTypes.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IStoragePointSupport.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Expert\IMigrationExpertReports.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ISharePointAdapterCommand.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\AutoDetectInitializer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ISP2013WorkflowAdapter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\WebBrowserAuthenticationManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IMigrationPipeline.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\OverrideSQLAuthenticationHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\WebBrowserInitializer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IMySitesConnector.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\NativeMethods.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CSharpExtensions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ServerTemplate.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\SiteData.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\InsufficentIEVersionException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IAutoDetectAdapter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ListType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IServerHealthMonitor.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\WebBrowserLoginUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ServerHealthInformation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\FieldNodeAttribute.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\FBAInitializer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ConnectionScope.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\DocumentFileLevel.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\WindowsCookieManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sSiteMetadata.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointAdapterCommands.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ExternalizationSupport.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\WindowsInitializer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AdapterSupportedFlags.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sList.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CertificateValidator.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TenantSetting.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sProperty.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TenantSettingManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\BinaryTransfer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sListMetadata.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TypeCatalog.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sFPUrl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ChunkedContentCopyHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointAdapter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AdapterLicensing.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sListWithTime.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ListItemQueryType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ChunkedFile.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Properties\Settings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AdapterOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sWebMetadata.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\_sWebWithTime.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddUserOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\ObjectType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddAudienceOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetSiteAndWebCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IUpdateListOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetSiteAndWebCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointExtensionsLogger.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CopySessionStore.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddListOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetSiteCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CommonConstants.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SpecialContentTypeId.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetSiteCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddFolderOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\FeatureGuids.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetWebCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IUpdateListItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\CookieAwareWebClient.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetWebCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddListItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetListCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IUpdateDocumentOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetListCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointReader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetListItemsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddDocumentOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetListItemsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IUpdateWebOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\EnumerateFolderCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AdapterConfigurationVariables.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointServerAdapterConfig.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\EnumerateFolderCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointMajorVersion.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Enums\ListFlags.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\AddWebOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetAttachmentsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Exceptions\NotSharePointDatabaseException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UpdateWebOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\BaseExceptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetAttachmentsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetURLSegmentsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UpdateListOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ServerProblem.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UpdateItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointVersion.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\NoHost.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetURLSegmentsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\NoSharePoint.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\NoMLSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UserProblem.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Unauthorized.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UpdateListItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UpdateDocumentOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointWriter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetListCollectionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ExternalizationUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\InvalidUnPw.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SPSearchParameters.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\InvalidCredentials.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetListCollectionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\FormsAuthenticationManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\StreamType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetContentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\StandardizedUrl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\OperationNotSupportedByAdapterException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\IBinaryTransferHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\StoragePointClassType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetContentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ServiceNotAvailableException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\StoragePointNotAvailableException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetSiteUrlCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\StoragePointField.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ServiceError.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\ExceptionFault.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetSiteUrlCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetChangesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SiteData\GetChangesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\WebPartTemplateResourceManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SystemInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\WebPartTemplateResourceLocation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\RectifyClass.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TaxonomyFields.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\XmlAdapterUtility.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SortedCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TaxonomyClassType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\WebPartUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\XmlAttributeNames.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TaxonomyReportingElements.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SortedRowCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\XmlElementNames.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TaxonomyReportingAttributes.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TaxonomyStatistics.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TaxonomyOperationResult.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\TimeZoneInformation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SharePointTimeZoneInformation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\BuiltInTimeZoneInformation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UrlType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\UrlUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\SYSTEM_INFO.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\InternalSYSTEM_INFO.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Architecture.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Utils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint\Adapters\Authentication\AuthenticationWebBrowser.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Metalogix.SharePoint\Adapters\Authentication\AuthenticationWebBrowser.resx">
+      <DependentUpon>AuthenticationWebBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint\Adapters\Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.TenantSettings.xml" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.TimeZoneFiles.TIMEZONE.XML" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.DocumentTemplates.wkpstd.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.Features.BizAppsCTypes.DashboardTemplate1CV.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.Features.BizAppsCTypes.DashboardTemplate2CV.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.Features.BizAppsCTypes.DashboardTemplateH.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd1.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd2.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd3.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd4.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd5.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd6.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd7.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._15.Template.STS.DOCTEMP.SMARTPGS.spstd8.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.Features.BizAppsCTypes.DashboardTemplate1CV.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.Features.BizAppsCTypes.DashboardTemplate2CV.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.Features.BizAppsCTypes.DashboardTemplateH.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.Features.BizAppsCTypes.DashboardTemplate1CV.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.Features.BizAppsCTypes.DashboardTemplate2CV.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.Features.BizAppsCTypes.DashboardTemplateH.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.DocumentTemplates.wkpstd.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.DocumentTemplates.wkpstd.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd1.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd2.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd3.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd4.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd5.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd6.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd7.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._14.Template.STS.DOCTEMP.SMARTPGS.spstd8.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd8.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd7.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd6.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd5.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd4.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd3.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd2.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._12.Template.STS.DOCTEMP.SMARTPGS.spstd1.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd8.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd7.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd6.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd5.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd4.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd3.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd2.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Adapters.WebPartTemplates.Templates._60.STS.DOCTEMP.SMARTPGS.spstd1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metalogix.Connectivity\Metalogix.Connectivity.csproj">
+      <Project>{004767ba-3564-4224-8b0c-0ec2487b9dd8}</Project>
+      <Name>Metalogix.Connectivity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Core\Metalogix.Core.csproj">
+      <Project>{e4130506-97ab-4226-9323-b9db94629bdc}</Project>
+      <Name>Metalogix.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Utilities\Metalogix.Utilities.csproj">
+      <Project>{44be20ed-a618-469b-a9bf-c28393fa4a74}</Project>
+      <Name>Metalogix.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="migrador.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

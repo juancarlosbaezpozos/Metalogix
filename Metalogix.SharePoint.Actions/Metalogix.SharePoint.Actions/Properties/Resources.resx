@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Migration_Detail_GroupsCopied" xml:space="preserve">
+    <value>Groups Copied</value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_Adding_Master_Page" xml:space="preserve">
+    <value>Adding Master Page</value>
+  </data>
+  <data name="FailedToCopyWebParts" xml:space="preserve">
+    <value>Failed to copy web parts</value>
+  </data>
+  <data name="AddingTaxonomyGroup" xml:space="preserve">
+    <value>Adding Taxonomy Group</value>
+  </data>
+  <data name="FS_ErrorSyncDependencyTerms" xml:space="preserve">
+    <value>Error synchronising dependency terms.{0}</value>
+  </data>
+  <data name="Transform" xml:space="preserve">
+    <value>Transform</value>
+  </data>
+  <data name="ManagedMetadataItemMapTermGuidLabel" xml:space="preserve">
+    <value>Term guid(s): </value>
+  </data>
+  <data name="FS_ManagedMetadataItemMapFieldLabel" xml:space="preserve">
+    <value>Field '{0}':</value>
+  </data>
+  <data name="PublishingDataUpdater_SetAppropriateLayoutFromTargetPageLayouts_PageLayoutNullException" xml:space="preserve">
+    <value>The page layout '{0}' cannot be found in the target web's masterpage gallery, and there are no other page layouts on the target using content type '{1}'. Please check the target library, then try again.</value>
+  </data>
+  <data name="FS_AddedVia" xml:space="preserve">
+    <value>Added via {0} Transformation.</value>
+  </data>
+  <data name="TargetTermstoresRefreshed" xml:space="preserve">
+    <value>Target term stores refreshed</value>
+  </data>
+  <data name="TaxonomyBindingInfoDifferent" xml:space="preserve">
+    <value>, taxonomy binding is different : SspId='{0}', TermSetId='{1}'</value>
+  </data>
+  <data name="FailedToParseFormPageWebPart" xml:space="preserve">
+    <value>Failed to parse form page web part. </value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_SkipDraftHiddenVersionAsBinariesAreUnavailable" xml:space="preserve">
+    <value>Skipping migration of version {0} (draft hidden) of {1}, as its binaries are inaccessible.</value>
+  </data>
+  <data name="FS_VerboseGuidMapFromTo" xml:space="preserve">
+    <value>Mapped Guid {0} to {1}</value>
+  </data>
+  <data name="FS_AnchorParentTermSetItemNull" xml:space="preserve">
+    <value>parent (TermSetItem) is null. [termSet='{0}', TargetAnchor='{1}']</value>
+  </data>
+  <data name="FS_IssueEncounteredAddingAnchorTerm" xml:space="preserve">
+    <value>Issue encountered adding anchor term '{0}' to parent TermSetItem '{1}':</value>
+  </data>
+  <data name="WebAppNotFoundMessage" xml:space="preserve">
+    <value>Configured target web application "{0}" was not found.</value>
+  </data>
+  <data name="Migration_Detail_SitesCopied" xml:space="preserve">
+    <value>Sites Copied</value>
+  </data>
+  <data name="AccessingTermstore" xml:space="preserve">
+    <value>Accessing Termstore</value>
+  </data>
+  <data name="NoPlaceHoderMasterPageDataForVersionError" xml:space="preserve">
+    <value>No place holder master page data stored for target SharePoint version.</value>
+  </data>
+  <data name="UnableToDetermineSiteCollectionTermstoreDetails" xml:space="preserve">
+    <value>Please ensure that a managed metadata service connection has been designated to be the default site collection term store. This can be done using SharePoint Central Administration-&gt;Manage Service Connections-&gt;[your managed metadata service connection]-&gt;Properties-&gt;set option: 'This service application is the default storage location for column specific term sets.'
+
+Please also ensure the required permissions to access the managed metadata service and term store are present for the migrating user.
+</value>
+  </data>
+  <data name="FS_LookupListNotFound" xml:space="preserve">
+    <value>Unable to find lookup list '{0}'. [WebId={1}, ShowField={2}]. Using the original source field lookup ID value as a default. Please ensure the lookup list exists within the appropriate scope of the connection. Possible resolutions include refreshing the parent connection prior to migrating a site or sub sites or connecting to a site that allows this list to be accessed.</value>
+  </data>
+  <data name="SecondElementMustBeSPList" xml:space="preserve">
+    <value>Second element must be an object of type SPList</value>
+  </data>
+  <data name="CopyMasterPagesAction_ApprovalStatus_Rejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="AddingTaxonomyTermset" xml:space="preserve">
+    <value>Adding Taxonomy Termset</value>
+  </data>
+  <data name="VerboseLoggingEnabled" xml:space="preserve">
+    <value>Verbose Logging Enabled</value>
+  </data>
+  <data name="TermStoreStats" xml:space="preserve">
+    <value>Migration Statistics</value>
+  </data>
+  <data name="FS_ManagedMetadataPleaseCheckVersionsOfItems" xml:space="preserve">
+    <value>Please check the versions of the item being migrated have terms that exist within the source termset.{0}The following managed metadata term guid values could not be found and have been removed during migration:</value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_Adding_Master_Page_Catalog_Items" xml:space="preserve">
+    <value>Adding Master Page Catalog Items</value>
+  </data>
+  <data name="StatusLabel_RestorationComplete" xml:space="preserve">
+    <value>Restoration Completed</value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_Source_page_is_ghosted" xml:space="preserve">
+    <value>Source page is ghosted</value>
+  </data>
+  <data name="FS_SynchronisingSet" xml:space="preserve">
+    <value>Synchronising set {0} of {1}</value>
+  </data>
+  <data name="MappingListTemplate" xml:space="preserve">
+    <value>Mapping List Template</value>
+  </data>
+  <data name="UnableToObtainTaxonomyBindingInfo" xml:space="preserve">
+    <value>Unable to obtain taxonomy binding information.</value>
+  </data>
+  <data name="FS_NewFieldAlreadyExistsOnSource" xml:space="preserve">
+    <value>New field name '{0}' (InternalName '{1}') already exists within the source list. Please review details.</value>
+  </data>
+  <data name="FS_SourceFieldTypeNotSupported" xml:space="preserve">
+    <value>Transformation of source field type '{0}' into Managed Metadata is currently not supported.</value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_Exception_thrown____0____the_source_page_s_moderation_status_was_set_as___1____so_could_not_be_read_" xml:space="preserve">
+    <value>Exception thrown: "{0}", the source page's moderation status was set as "{1}", so could not be read.</value>
+  </data>
+  <data name="FS_PrefixFieldInfoAndValue" xml:space="preserve">
+    <value>{0}.{1}:{2}</value>
+  </data>
+  <data name="StatusLabel_RestorationRunning" xml:space="preserve">
+    <value>Running Restoration</value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_Exception_thrown____0____please_verify_that_the_source_page_s_moderation_status" xml:space="preserve">
+    <value>Exception thrown: "{0}", please verify that the source page's moderation status</value>
+  </data>
+  <data name="GenericWebPartProcessingErrorMessage" xml:space="preserve">
+    <value>{0} could not be processed properly for the target. The web part may still be copied but there may be issues with it such as references not being link corrected. The error message is: {1}</value>
+  </data>
+  <data name="Migration_Detail_FoldersCopied" xml:space="preserve">
+    <value>Folders Copied</value>
+  </data>
+  <data name="MappingListTemplateInfoMessage" xml:space="preserve">
+    <value>Mapped template '{0}' to '{1}' as '{0}' does not exist on the target.</value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_Adding_Page_Layout" xml:space="preserve">
+    <value>Adding Page Layout</value>
+  </data>
+  <data name="ContactDetailsWebPartProcessingErrorMessage" xml:space="preserve">
+    <value>{0} could not be processed properly for the target. The referenced user does not exist on the target web. This web part will be copied but without a target user.</value>
+  </data>
+  <data name="EnsureTaxonomyTermAnchorsExist" xml:space="preserve">
+    <value>Ensuring Taxonomy Term Anchor Existence</value>
+  </data>
+  <data name="No2003MasterPagesError" xml:space="preserve">
+    <value>Master pages do not exist in SharePoint 2003.</value>
+  </data>
+  <data name="FirstElementMustBeSPList" xml:space="preserve">
+    <value>First element must be an object of type SPList.</value>
+  </data>
+  <data name="CheckLinks_Detail_Succeeded" xml:space="preserve">
+    <value>Working Links</value>
+  </data>
+  <data name="MigratingTermStore" xml:space="preserve">
+    <value>Migrating Term Store</value>
+  </data>
+  <data name="FS_FieldAlreadyExistsOnTarget" xml:space="preserve">
+    <value>Field name '{0}' (InternalName '{1}') already exists on the target. Please review details.</value>
+  </data>
+  <data name="AddingTaxonomyTerm" xml:space="preserve">
+    <value>Adding Taxonomy Term</value>
+  </data>
+  <data name="Migration_Detail_RoleAssignments" xml:space="preserve">
+    <value>Role Assignments Copied</value>
+  </data>
+  <data name="NoTargetTermstores" xml:space="preserve">
+    <value>No term stores exist on the target.</value>
+  </data>
+  <data name="CannotRunTargetIsChildSiteOfSource" xml:space="preserve">
+    <value>Cannot run action. The target is a child site of the source.</value>
+  </data>
+  <data name="ErrorsHaveOccured" xml:space="preserve">
+    <value>Errors have occured. Please review details.</value>
+  </data>
+  <data name="StatusLabel_RestorationNotRunning" xml:space="preserve">
+    <value>Preparing to Run Restoration</value>
+  </data>
+  <data name="ExcludeSpecificFieldRefAddMessage" xml:space="preserve">
+    <value>Excluding the following field references from being explicitly added:</value>
+  </data>
+  <data name="FS_UnableToTransformSourceFieldDuplicate" xml:space="preserve">
+    <value>Unable to transform Source field '{0}' (InternalName '{1}') [Type:{2}] into Target field '{3}' (InternalName '{4}') [Type:{5}, Termset:{6}.{7}.{8}] as the target field display name or internal name already exists. Please ensure the Display Name and Internal Name for a new field are unique to avoid conflicts and potential issues in converting native SharePoint fields.</value>
+  </data>
+  <data name="MinimumSharePointVersionFor2013Theme" xml:space="preserve">
+    <value>15.0.4420.1017</value>
+  </data>
+  <data name="ApplyTheme" xml:space="preserve">
+    <value>Applying current theme issue</value>
+  </data>
+  <data name="FS_TermstoreNotFound" xml:space="preserve">
+    <value>{0} not found. Unable to transform field [{1}].</value>
+  </data>
+  <data name="FS_WarningsHaveOccured" xml:space="preserve">
+    <value>Warnings have occured.{0}Please review details.</value>
+  </data>
+  <data name="FS_CorrectedInfoPathHREF" xml:space="preserve">
+    <value>Corrected href from {0} to {1}</value>
+  </data>
+  <data name="CheckLinks_Detail_Flagged" xml:space="preserve">
+    <value>Flagged Links</value>
+  </data>
+  <data name="FS_IssuesDuringMigration" xml:space="preserve">
+    <value>Issues encountered during migration.{0}</value>
+  </data>
+  <data name="MembersWebPartProcessingErrorMessage" xml:space="preserve">
+    <value>{0} could not be processed properly for the target. A Site Users web part could not copied correctly. The referenced group does not exist on the target web. The web part will display people and groups with direct permissions on this site.</value>
+  </data>
+  <data name="ContentType" xml:space="preserve">
+    <value>Content Type</value>
+  </data>
+  <data name="StatusLabel_RestorationPaused" xml:space="preserve">
+    <value>Restoration Paused</value>
+  </data>
+  <data name="NintexWorkflowAppWarning" xml:space="preserve">
+    <value>Nintex workflows will not be able to migrate to SharePoint Online without the presence of "Nintex" license or the SharePoint Add-In "Nintex Workflows for Office 365" present at the target. Please validate the the same are present prior to migration should Nintex workflow migration be desired.</value>
+  </data>
+  <data name="CheckLinks_Detail_Failed" xml:space="preserve">
+    <value>Broken Links</value>
+  </data>
+  <data name="UnableToDetemineDefaultSourceSiteCollectionTermstore" xml:space="preserve">
+    <value>Unable to determine the default source site collection term store. Please see details.</value>
+  </data>
+  <data name="MappingListTemplateExceptionMessage" xml:space="preserve">
+    <value>Mapping List Template [{0} to {1}]</value>
+  </data>
+  <data name="ApplyCurrentTheme" xml:space="preserve">
+    <value>Applying current theme skipped</value>
+  </data>
+  <data name="PublishingDataUpdater_ParsePageLayoutName_The_target_page_layout_name_could_not_be_set_as_its_URL_was_not_in_the_valid_format" xml:space="preserve">
+    <value>The target page layout name could not be set as its URL was not in the valid format : {0}</value>
+  </data>
+  <data name="PublishingDataUpdater_SetEnterprisePageLayoutFromTarget_The_pagelayout__EnterpriseWikiaspx_could_not_be_found" xml:space="preserve">
+    <value>The page layout 'EnterpriseWiki.aspx (Basic Page)' cannot be found in the target web's masterpage gallery. Please check, then try again.</value>
+  </data>
+  <data name="TaxonomyTypeMismatch" xml:space="preserve">
+    <value>, determined taxonomy type mismatch [Type '{0}']</value>
+  </data>
+  <data name="InfoPathMigrationNotSupported" xml:space="preserve">
+    <value>Migration of InfoPath form template is not supported on target.</value>
+  </data>
+  <data name="Dependencies" xml:space="preserve">
+    <value>Dependencies</value>
+  </data>
+  <data name="GenericExceptionMessage" xml:space="preserve">
+    <value>Please review details.</value>
+  </data>
+  <data name="Migration_Detail_ItemsCopied" xml:space="preserve">
+    <value>Items Copied</value>
+  </data>
+  <data name="CertainManagedMetadataTermGuidNotFound" xml:space="preserve">
+    <value>Certain managed metadata term guids not found. Please see details.</value>
+  </data>
+  <data name="CopyMasterPagesAction_CopyMasterPages_Cannot_complete_this_action__File_not_readable" xml:space="preserve">
+    <value>Cannot complete this action. File not readable</value>
+  </data>
+  <data name="SuccessReviewDetails" xml:space="preserve">
+    <value>Success, please review details.</value>
+  </data>
+  <data name="DeleteCurrentLookFailed" xml:space="preserve">
+    <value>Deleting current composed look on target failed</value>
+  </data>
+  <data name="FS_AddedAnchorTerm" xml:space="preserve">
+    <value>Added anchor term '{0}' -&gt; [{1}]</value>
+  </data>
+  <data name="DataViewWebPartProcessingErrorMessage" xml:space="preserve">
+    <value>Link correction failed for {0}. This web part may not appear correctly on the target. Exception: {1}</value>
+  </data>
+  <data name="DeleteComposedLooksFailed" xml:space="preserve">
+    <value>Deleting composed looks on target failed</value>
+  </data>
+  <data name="Migration_Detail_UsersCopied" xml:space="preserve">
+    <value>Users Copied</value>
+  </data>
+  <data name="ProcessingWebParts" xml:space="preserve">
+    <value>Processing Web Parts</value>
+  </data>
+  <data name="TermsExistWithDifferentGuid" xml:space="preserve">
+    <value>Terms with the same name (or label) and a different guid already exist within the term set or parent term. When migrating a term store please ensure no same named terms (or labels) exist in the termset or parent term.</value>
+  </data>
+  <data name="CopyWebPartsInDocument" xml:space="preserve">
+    <value>Copying web parts in document</value>
+  </data>
+  <data name="Migration_Detail_ListsCopied" xml:space="preserve">
+    <value>Lists Copied</value>
+  </data>
+  <data name="FS_VerboseNewFieldAddedToContentType" xml:space="preserve">
+    <value>Added new field '{0}' (InternalName '{1}')' in relation to site column '{2}' transformation.</value>
+  </data>
+  <data name="ProcessingDataViewWebPart" xml:space="preserve">
+    <value>Processing Data View Web Part</value>
+  </data>
+  <data name="CopyMasterPagesAction_ApprovalStatus_Approved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="MigratingLocalSiteCollectionManagedMetadata" xml:space="preserve">
+    <value>Migrating Local Site Collection Managed Metadata</value>
+  </data>
+  <data name="EnsurePermissionsGranted" xml:space="preserve">
+    <value>Please ensure the appropriate permissions have been granted.</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="StatusLabel_RestorationFailed" xml:space="preserve">
+    <value>Restoration Failed</value>
+  </data>
+  <data name="TargetMustBeSharePoint2010" xml:space="preserve">
+    <value>Target must be SharePoint 2010 or later.</value>
+  </data>
+  <data name="FailedToLocateSourceFormContentArea" xml:space="preserve">
+    <value>Failed to locate content area on source form page.</value>
+  </data>
+  <data name="NotSupportedUIVersionError" xml:space="preserve">
+    <value>The target SharePoint version does not support any of the source page's UI versions.</value>
+  </data>
+  <data name="UnableToDetermineSourceLocalGroup" xml:space="preserve">
+    <value>Unable to determine the source local site collection group.</value>
+  </data>
+  <data name="FS_CopyingInfoPathTemplate" xml:space="preserve">
+    <value>Copying InfoPath Template [{0}]</value>
+  </data>
+  <data name="UnableToDetemineDefaultTargetSiteCollectionTermstore" xml:space="preserve">
+    <value>Unable to determine the default target site collection term store. Please see details.</value>
+  </data>
+  <data name="Taxonomy" xml:space="preserve">
+    <value>Taxonomy</value>
+  </data>
+  <data name="RunOperationWrongParameterNumber" xml:space="preserve">
+    <value>Run operation call does not incude the required number of parameters.</value>
+  </data>
+  <data name="CopyMasterPagesAction_ApprovalStatus_Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="StatusLabel_RestorationAborted" xml:space="preserve">
+    <value>Restoration Aborted</value>
+  </data>
+  <data name="SiteColumn" xml:space="preserve">
+    <value>Site Column</value>
+  </data>
+  <data name="SourceTermstoresRefreshed" xml:space="preserve">
+    <value>Source term stores refreshed</value>
+  </data>
+  <data name="DeleteMasterpageFailed" xml:space="preserve">
+    <value>Deleting masterpage on target failed</value>
+  </data>
+  <data name="MasterPageDownGradeError" xml:space="preserve">
+    <value>Master page copying is not supported in the downgrade case.</value>
+  </data>
+  <data name="SingleMMDServiceNotSupportedYet" xml:space="preserve">
+    <value>This operation is not supported at present on single managed metadata service configurations.</value>
+  </data>
+  <data name="FS_VerboseSourceItemTransformation" xml:space="preserve">
+    <value>Source field '{0}' [value:{1}] transformed to Target field '{2}' [value:{3}]</value>
+  </data>
+  <data name="MigratingAndResolvingRequiredManagedMetadata" xml:space="preserve">
+    <value>Resolving and migrating required managed metadata</value>
+  </data>
+  <data name="CopyMasterPagesAction_ApprovalStatus_Draft" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="DataViewWebPart" xml:space="preserve">
+    <value>Data View Web Part</value>
+  </data>
+  <data name="ObtainingLookupValue" xml:space="preserve">
+    <value>Obtaining Lookup Value</value>
+  </data>
+  <data name="FS_ReviewResults" xml:space="preserve">
+    <value>Please review the results as issues were encountered.{0}</value>
+  </data>
+  <data name="NoSourceTermstores" xml:space="preserve">
+    <value>No term stores exist on the source.</value>
+  </data>
+  <data name="CopyMasterPagesAction_ApprovalStatus_Scheduled" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="FS_MigrationStatsInfo" xml:space="preserve">
+    <value>Statistics for migration of '{0}' to '{1}'. Please view details.</value>
+  </data>
+  <data name="MigratingServerTaxonomies" xml:space="preserve">
+    <value>Migrating Server Taxonomies</value>
+  </data>
+  <data name="CopyingContentTypeResourceFolderForList" xml:space="preserve">
+    <value>Copying Content Type Resource Folder For List</value>
+  </data>
+  <data name="PartialSuccessReviewDetails" xml:space="preserve">
+    <value>Partially successful, please review details.</value>
+  </data>
+  <data name="FS_LinkCorrectedFromTo" xml:space="preserve">
+    <value>Corrected Url '{0}' to '{1}'</value>
+  </data>
+  <data name="PleaseReviewTheRelatedLogItemsForDetails" xml:space="preserve">
+    <value>Please review the individual related log items for further details.</value>
+  </data>
+  <data name="FS_VerboseSourceFieldTransformation" xml:space="preserve">
+    <value>Source field '{0}' [Type:{1}] transformed into Target field '{2}' [Type:{3}, Termset:{4}.{5}.{6}]</value>
+  </data>
+  <data name="FS_UnableToTransformTargetFieldTypeMismatch" xml:space="preserve">
+    <value>Unable to transform Source field '{0}' (InternalName '{1}') [Type:{2}] as the field already exists on the target as field '{3}' (InternalName '{4}') [Type:{5}{6}]. Please create a new field in replacement of this and ensure the Display Name and Internal Name for a new field are unique to avoid conflicts and potential issues.</value>
+  </data>
+  <data name="CopyMasterpageFailed" xml:space="preserve">
+    <value>Copying masterpage used by source theme to target failed</value>
+  </data>
+  <data name="FS_2013ThemeVersionMessage" xml:space="preserve">
+    <value>SharePoint version {0} or greater is required.</value>
+  </data>
+  <data name="FS_ManagedMetadataItemMapValueXmlLabel" xml:space="preserve">
+    <value>Value Xml : {0}</value>
+  </data>
+  <data name="StatusLabel_RestorationWarning" xml:space="preserve">
+    <value>Restoration Completed With Warnings</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="FailedToLocateTargetFormContentArea" xml:space="preserve">
+    <value>Failed to locate content area in target page.</value>
+  </data>
+  <data name="RefreshingTermstores" xml:space="preserve">
+    <value>Refreshing Term Stores</value>
+  </data>
+  <data name="CopyingContentTypeResourceFile" xml:space="preserve">
+    <value>Copying Content Type Resource File</value>
+  </data>
+</root>

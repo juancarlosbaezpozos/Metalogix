@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="3" DisableWebDesignFeatures="">
+    <NavBars>
+        <NavBar Name="SharePoint Top Navbar" ID="1002">
+        </NavBar>
+    </NavBars>
+    <ListTemplates>
+        <ListTemplate Name="Tabs" DisplayName="$Resources:spscore,SitesOnet_TabsListName;" FolderCreation="FALSE" Type="301" BaseType="0" OnQuickLaunch="FALSE" SecurityBits="11" Description="$Resources:spscore,SitesOnet_TabsList_Description;" Image="/_layouts/images/itgen.gif">
+        </ListTemplate>
+    </ListTemplates>
+
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Default="TRUE" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.one" TargetName="Forms/template.one" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+
+    <Configurations>
+        <Configuration ID="-1" Name="NewWeb"/>
+        <Configuration ID="0" Name="Default">
+            <Lists>
+                <List Title="$Resources:spscore,SearchCenterOnet_SearchCenterListName;" Description="$Resources:spscore,SearchCenterOnet_SearchCenterListDescription;" Url="SearchCenter" Type="301">
+                    <Data>
+                        <Rows>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,DocumentsTab;</Field>
+                                <Field Name="Page">default.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,DocumentsTabComment;</Field>
+                            </Row>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,DocumentsTab;</Field>
+                                <Field Name="Page">advanced.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,DocumentsTabComment;</Field>
+                            </Row>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,PeopleTab;</Field>
+                                <Field Name="Page">people.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,PeopleTabComment;</Field>
+                            </Row>
+                        </Rows>
+
+                    </Data>
+                </List>
+                <List Title="$Resources:spscore,SearchCenterOnet_SearchResultsListName;" Description="$Resources:spscore,SearchCenterOnet_SearchResultsListDescription;" Url="SearchResults" Type="301">
+                    <Data>
+                        <Rows>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,DocumentsTab;</Field>
+                                <Field Name="Page">results.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,DocumentsTabComment;</Field>
+                            </Row>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,PeopleTab;</Field>
+                                <Field Name="Page">peopleresults.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,PeopleTabComment;</Field>
+                            </Row>
+                        </Rows>
+
+                    </Data>
+                </List>
+            </Lists>
+            <SiteFeatures>
+                <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA" />
+                <!-- Base site feature -->
+                <Feature ID="B21B090C-C796-4b0f-AC0F-7EF1659C20AE"/>
+
+                <Feature ID="7AC8CC56-D28E-41f5-AD04-D95109EB987A" >
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="SearchCenterUrl" Value="~SiteCollection/" />
+			<Property Key="DocLib" Value="$Resources:cmscore,List_Pages_UrlName;" />
+                    </Properties>
+		</Feature>
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="WelcomePageUrl" Value="$Resources:cmscore,List_Pages_UrlName;/default.aspx" />
+                        <Property Key="AvailablePageLayouts" Value="~SiteCollection/_catalogs/masterpage/searchmain.aspx:~SiteCollection/_catalogs/masterpage/SearchResults.aspx:~SiteCollection/_catalogs/masterpage/PeopleSearchResults.aspx:~SiteCollection/_catalogs/masterpage/AdvancedSearchLayout.aspx"/>
+                        <Property Key="SimplePublishing" Value="true" />
+                    </Properties>
+                </Feature>
+
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+                <Feature ID="7ACFCB9D-8E8F-4979-AF7E-8AED7E95245E"/>
+
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+                    <!-- Per-Web Portal Navigation Properties-->
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="InheritGlobalNavigation" Value="true"/>
+                        <Property Key="IncludeSubSites" Value="true"/>
+                        <Property Key="IncludePages" Value="false"/>
+                    </Properties>
+                </Feature>
+
+            </WebFeatures>
+            <Modules>
+                <Module Name="PageUpload" />
+            </Modules>
+        </Configuration>
+        <Configuration ID="1" Name="Blank">
+            <ExecuteUrl Url="_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/settings.aspx" />
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="PageUpload" Url="$Resources:cmscore,List_Pages_UrlName;" Path="">
+            <File Url="default.aspx" Type="GhostableInLibrary">
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/searchmain.aspx, $Resources:spscore,SearchMainTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SearchCenterPageTitle;" />
+                <Property Name="ContentType" Value="$Resources:cmscore,contenttype_welcomepage_name;" />
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.SearchBoxEx</TypeName>
+                        <Title>$Resources:spscore,SearchBoxWP_Title;</Title>
+                        <Description>$Resources:spscore,SearchBoxWP_Desc;</Description>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                        <Width>420px</Width>
+                        <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageUrl>
+                        <GoImageUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageUrlRTL>
+                        <GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageActiveUrl>
+                        <GoImageActiveUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageActiveUrlRTL>
+                        <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">280</TextBoxWidth>
+                        <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">results.aspx</SearchResultPageURL>
+                        <AdvancedSearchPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">~Site/$Resources:cmscore,List_Pages_UrlName;/advanced.aspx</AdvancedSearchPageURL>
+                        <ShowAdvancedSearch xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowAdvancedSearch>
+                        <DropDownMode xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownMode>
+                        <ShouldTakeFocusIfEmpty xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShouldTakeFocusIfEmpty>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+            </File>
+            <File Url="advanced.aspx" Type="GhostableInLibrary">
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/AdvancedSearchLayout.aspx, $Resources:spscore,SearchCenterAdvancedSearchTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SearchCenterAdvancedSearchTitle;" />
+                <AllUsersWebPart WebPartZoneID="BottomZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.AdvancedSearchBox</TypeName>
+                        <Title>$Resources:spscore,AdvancedSearch_Webpart_Title;</Title>
+                        <Description>$Resources:spscore,AdvancedSearch_Webpart_Description;</Description>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                        <SearchResultPageURL xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">~Site/$Resources:cmscore,List_Pages_UrlName;/results.aspx</SearchResultPageURL>
+                        <TextQuerySectionLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">$Resources:spscore,AdvancedSearch_FindDocsWith_Title;</TextQuerySectionLabelText>
+                        <ShowAndQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowAndQueryTextBox>
+                        <ShowPhraseQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowPhraseQueryTextBox>
+                        <ShowOrQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowOrQueryTextBox>
+                        <ShowNotQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowNotQueryTextBox>
+                        <ScopeSectionLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">$Resources:spscore,AdvancedSearch_NarrowSearch_Title;</ScopeSectionLabelText>
+                        <ShowScopes xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">false</ShowScopes>
+                        <ShowLanguageOptions xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowLanguageOptions>
+                        <ShowResultTypePicker xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowResultTypePicker>
+                        <ShowPropertiesSection xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowPropertiesSection>
+                        <PropertiesSectionLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">$Resources:spscore,AdvancedSearch_AddPropRestrictions_Title;</PropertiesSectionLabelText>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+            </File>
+            <File Url="people.aspx" Type="GhostableInLibrary">
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/searchmain.aspx, $Resources:spscore,SearchMainTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SearchCenterPeopleSearchTitle;" />
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.PeopleSearchBoxEx</TypeName>
+                        <Title>$Resources:spscore,PeopleSearchBoxTitle;</Title>
+                        <Description>$Resources:spscore,PeopleSearchBoxDescription;</Description>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                        <Width>420px</Width>
+                        <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageUrl>
+                        <GoImageUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageUrlRTL>
+			<GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageActiveUrl>
+			<GoImageActiveUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageActiveUrlRTL> 
+                        <DropDownMode xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownMode>
+                        <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">280</TextBoxWidth>
+                        <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">peopleresults.aspx</SearchResultPageURL>
+                        <ShowSearchOptions xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowSearchOptions>
+                        <ShouldTakeFocusIfEmpty xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShouldTakeFocusIfEmpty>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+            </File>
+            <File Url="results.aspx" Type="GhostableInLibrary">
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/searchresults.aspx, $Resources:spscore,SearchResultsTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SearchCenterResultsPageTitle;" />
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.SearchBoxEx</TypeName>
+                        <Title>$Resources:spscore,SearchBoxWP_Title;</Title>
+                        <Description>$Resources:spscore,SearchBoxWP_Desc;</Description>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                        <Width>420px</Width>
+                        <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageUrl>
+                        <GoImageUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageUrlRTL>
+						<GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageActiveUrl>
+						<GoImageActiveUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageActiveUrlRTL> 
+                        <DropDownMode xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownMode>
+                        <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">280</TextBoxWidth>
+                        <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">results.aspx</SearchResultPageURL>
+						<AdvancedSearchPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">~Site/$Resources:cmscore,List_Pages_UrlName;/advanced.aspx</AdvancedSearchPageURL>
+                        <ShowAdvancedSearch xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowAdvancedSearch>
+                        <ShouldTakeFocusIfEmpty xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShouldTakeFocusIfEmpty>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MidLowerLeftZone" WebPartOrder="1"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.SearchStatsWebPart</TypeName>
+                        <Title>$Resources:spscore,SearchStatsWP_Title;</Title>
+                        <Description>$Resources:spscore,SearchStatsWP_Desc;</Description>
+                        <PartOrder>2</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MidUpperLeftZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.SearchSummaryWebPart</TypeName>
+						<Title>$Resources:spscore,SearchSummaryWP_Title;</Title>
+						<Description>$Resources:spscore,SearchSummaryWP_Desc;</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MidUpperRightZone" WebPartOrder="1"><![CDATA[
+                                        <webParts>
+					  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+					    <metaData>
+                                              <type name="Microsoft.Office.Server.Search.WebControls.CoreResultsWebPart,Microsoft.Office.Server.Search,Version=12.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+					      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+					    </metaData>
+					    <data>
+					      <properties>
+					          <property name="Xsl" type="string">&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" &gt;
+&lt;xsl:param name="ResultsBy" /&gt;
+&lt;xsl:param name="ViewByUrl" /&gt;
+&lt;xsl:param name="ViewByValue" /&gt;
+&lt;xsl:param name="IsNoKeyword" /&gt;
+&lt;xsl:param name="ShowActionLinks" /&gt;
+&lt;xsl:param name="AlertMeLink" /&gt;
+&lt;xsl:param name="AlertMeText" /&gt;
+&lt;xsl:param name="SrchRSSText" /&gt;
+&lt;xsl:param name="SrchRSSLink" /&gt;
+&lt;!-- When empty result set is returned from search --&gt;
+&lt;xsl:template name="dvt_1.empty"&gt;
+&lt;div class="srch-sort-right"&gt;
+&lt;xsl:if test="$AlertMeLink and $ShowActionLinks"&gt;
+&lt;span class="srch-alertme" &gt; &lt;a href ="{$AlertMeLink}" id="CSR_AM1" title="{$AlertMeText}">&lt;img style="vertical-align: middle;" src="/_layouts/images/bell.gif" border="0" alt=""/&gt;&lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;&lt;xsl:value-of select="$AlertMeText" /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test="$SrchRSSLink and $ShowActionLinks"&gt;
+&lt;xsl:if test="$AlertMeLink"&gt; | &lt;/xsl:if&gt;
+&lt;a type="application/rss+xml" href ="{$SrchRSSLink}" title="{$SrchRSSText}" id="SRCHRSSL"&gt;&lt;img style="vertical-align: middle;" border="0" src="/_layouts/images/rss.gif" alt=""/&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt; &lt;xsl:value-of select="$SrchRSSText"/&gt;&lt;/a&gt;
+&lt;/xsl:if&gt;
+&lt;/div&gt;
+&lt;/xsl:template&gt;
+&lt;!-- Main body template. Sets the Results view (Relevance or date) options --&gt;
+&lt;xsl:template name="dvt_1.body"&gt;
+&lt;div&gt;
+&lt;xsl:if test="$ShowActionLinks"&gt;
+&lt;div class="srch-sort-right"&gt;
+&lt;xsl:value-of select="$ResultsBy" /&gt;
+&lt;xsl:if test="$ViewByUrl"&gt; | &lt;a href ="{$ViewByUrl}" id="CSR_RV" title="{$ViewByValue}"&gt;&lt;xsl:value-of select="$ViewByValue" /&gt;&lt;/a&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test="$AlertMeLink"&gt; |
+&lt;span class="srch-alertme" &gt; &lt;a href ="{$AlertMeLink}" id="CSR_AM2" title="{$AlertMeText}">&lt;img style="vertical-align: middle;" src="/_layouts/images/bell.gif" border="0" alt=""/&gt;&lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;&lt;xsl:value-of select="$AlertMeText" /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test="$SrchRSSLink"&gt;| &lt;a type="application/rss+xml" href ="{$SrchRSSLink}" title="{$SrchRSSText}" id="SRCHRSSL"&gt;&lt;img style="vertical-align: middle;" border="0" src="/_layouts/images/rss.gif" alt=""/&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt; &lt;xsl:value-of select="$SrchRSSText"/&gt;&lt;/a&gt;
+&lt;/xsl:if&gt;
+&lt;/div&gt;
+&lt;/xsl:if&gt;
+&lt;/div&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template match="/"&gt;
+&lt;xsl:variable name="Rows" select="/All_Results/Result" /&gt;
+&lt;xsl:variable name="RowCount" select="count($Rows)" /&gt;
+&lt;xsl:variable name="IsEmpty" select="$RowCount = 0" /&gt;
+&lt;xsl:if test="$AlertMeLink"&gt;&lt;input type="hidden" name="P_Query" /&gt;&lt;input type="hidden" name="P_LastNotificationTime" /&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:call-template name="dvt_1.body"/&gt;
+&lt;/xsl:template&gt;
+&lt;!-- End of Stylesheet --&gt;&lt;/xsl:stylesheet&gt;</property>
+					          <property name="Title" type="string">$Resources:spscore,SearchActionsWP_Title;</property>
+					          <property name="Description" type="string">$Resources:spscore,SearchActionsWP_Desc;</property>
+					          <property name="ChromeType">None</property>
+					          <property name="AllowMinimize" type="bool">true</property>
+					          <property name="AllowClose" type="bool">true</property> 
+					          <property name="Hidden" type="bool">false</property>
+					          <property name="ShowMessages" type="bool">false</property>
+					          <property name="ShowSearchResults" type="bool">false</property>
+					     </properties>
+					    </data>
+					  </webPart>
+                                        </webParts>]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="BottomZone" WebPartOrder="1"><![CDATA[
+                                <webParts>
+				  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+				    <metaData>
+					      <type name="Microsoft.Office.Server.Search.WebControls.HighConfidenceWebPart,Microsoft.Office.Server.Search,Version=12.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+					      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+					    </metaData>
+					    <data>
+					      <properties>
+					    <property name="Title" type="string">$Resources:spscore,HighConfidenceWP_Title;</property>
+						<property name="Description" type="string">$Resources:spscore,HighConfidenceWP_Desc;</property>
+						<property name="ChromeType">None</property>
+						<property name="AllowMinimize" type="bool">true</property>
+						<property name="AllowClose" type="bool">true</property> 
+						<property name="Hidden" type="bool">false</property>
+						<property name="PartOrder" type="int">1</property>
+						<property name="DisplayTerm" type="bool">false</property>
+						<property name="DisplayImage" type="bool">false</property>
+						<property name="DisplayDiscoveredDefinition" type="bool">false</property>
+						<property name="DisplayDefinition" type="bool">false</property>
+						<property name="DisplayRecommendedBy" type="bool">false</property>
+						<property name="DisplayBestBetTitle" type="bool">false</property>
+						<property name="DisplayDescription" type="bool">false</property>					      
+						<property name="DisplayUrl" type="bool">false</property>		
+					     </properties>
+					    </data>
+					  </webPart>
+					</webParts>]]>					
+				</AllUsersWebPart>
+				<AllUsersWebPart WebPartZoneID="BottomZone" WebPartOrder="2"><![CDATA[
+				<webParts>
+				  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+				    <metaData>
+				      <type name="Microsoft.Office.Server.Search.WebControls.CoreResultsWebPart,Microsoft.Office.Server.Search,Version=12.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+				      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+				    </metaData>
+				    <data>	
+				      <properties>
+					<property name="Title" type="string">$Resources:spscore,CoreResultsWP_Title;</property>
+					<property name="Description" type="string">$Resources:spscore,CoreResultsWP_Desc;</property>
+					<property name="ChromeType">None</property>
+					<property name="AllowMinimize" type="bool">true</property>
+					<property name="AllowClose" type="bool">true</property> 
+					<property name="Hidden" type="bool">false</property>
+					<property name="ShowActionLinks" type="bool">false</property>
+					<property name="DateView" type="bool">false</property>
+					<property name="RelevanceView" type="bool">false</property>
+					<property name="DisplayAlertMeLink" type="bool">false</property>
+					<property name="DisplayRSSLink" type="bool">false</property>
+					<property name="DisplayDiscoveredDefinition" type="bool">true</property>
+					<property name="ScopeID" type="int">1</property>
+				     </properties>
+				    </data>
+				  </webPart>
+				</webParts>]]> 						
+				</AllUsersWebPart>
+				<AllUsersWebPart WebPartZoneID="BottomZone" WebPartOrder="3"> 
+                   		 <![CDATA[
+		                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                		        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, 					PublicKeyToken=71e9bce111e9429c</Assembly>
+		                        <TypeName>Microsoft.Office.Server.Search.WebControls.SearchPagingWebPart</TypeName>
+		                        <Title>$Resources:spscore,SearchPagingWP_Title;</Title>
+                		        <Description>$Resources:spscore,SearchPagingWPWP_Desc;</Description>
+		                        <PartOrder>1</PartOrder>
+                		        <FrameType>None</FrameType>
+		                        <AllowMinimize>true</AllowMinimize>
+                		        <AllowRemove>true</AllowRemove>
+		                        <IsVisible>true</IsVisible>
+                		    </WebPart>
+		                ]]>
+                		</AllUsersWebPart>				
+				<AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="1"><![CDATA[
+					<webParts>
+					  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+					    <metaData>
+					      <type name="Microsoft.Office.Server.Search.WebControls.HighConfidenceWebPart,Microsoft.Office.Server.Search,Version=12.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+					      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+					    </metaData>
+					    <data>
+					      <properties>
+						<property name="Title" type="string">$Resources:spscore,SearchBestBetsWP_Title;</property>
+						<property name="Description" type="string">$Resources:spscore,SearchBestBetsWP_Desc;</property>
+						<property name="ChromeType">None</property>
+						<property name="AllowMinimize" type="bool">true</property>
+						<property name="AllowClose" type="bool">true</property> 
+						<property name="Hidden" type="bool">false</property>
+						<property name="PartOrder" type="int">1</property>
+						<property name="DisplayHCImage" type="bool">false</property>
+						<property name="DisplayHCTitle" type="bool">false</property>
+						<property name="DisplayHCProps" type="bool">false</property>
+						<property name="DisplayHCDescription" type="bool">false</property>
+					     </properties>
+					    </data>
+					  </webPart>
+                                        </webParts>]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MidLowerRightZone" WebPartOrder="1"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.SearchPagingWebPart</TypeName>
+                        <Title>$Resources:spscore,SearchPagingWP_Title;</Title>
+                        <Description>$Resources:spscore,SearchPagingWPWP_Desc;</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                ]]>
+                </AllUsersWebPart>
+            </File>
+            <File Url="peopleresults.aspx" Type="GhostableInLibrary">
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/peoplesearchresults.aspx, $Resources:spscore,PeopleSearchResultsTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SearchCenterPeopleResultsPageTitle;" />
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.PeopleSearchBoxEx</TypeName>
+                        <Title>$Resources:spscore,PeopleSearchBoxTitle;</Title>
+                        <Description>$Resources:spscore,PeopleSearchBoxDescription;</Description>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                        <Width>300px</Width>
+                        <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageUrl>
+                        <GoImageUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageUrlRTL>
+						<GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch.gif</GoImageActiveUrl>
+						<GoImageActiveUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/goRTL.gif</GoImageActiveUrlRTL> 
+                        <DropDownMode xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownMode>
+                        <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">280</TextBoxWidth>
+                        <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">peopleresults.aspx</SearchResultPageURL>
+                        <ShowSearchOptions xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowSearchOptions>
+                        <ShouldTakeFocusIfEmpty xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShouldTakeFocusIfEmpty>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MidUpperRightZone" WebPartOrder="1"><![CDATA[
+                    <webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.PeopleCoreResultsWebPart,Microsoft.Office.Server.Search,Version=12.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">$Resources:spscore,SearchActionsWP_Title;</property>
+        <property name="Description" type="string">$Resources:spscore,SearchActionsWP_Desc;</property>
+        <property name="ChromeType">None</property>
+        <property name="AllowMinimize" type="bool">true</property>
+        <property name="AllowClose" type="bool">true</property> 
+        <property name="Hidden" type="bool">false</property>
+		<property name="ShowSearchResults" type="bool">false</property>
+		<property name="ShowMessages" type="bool">false</property>
+	<property name="Xsl" type="string">&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" &gt;
+&lt;xsl:param name="ResultsBy" /&gt;
+&lt;xsl:param name="ViewByLiteral" /&gt;
+&lt;xsl:param name="ViewByUrl" /&gt;
+&lt;xsl:param name="ViewByValue" /&gt;
+&lt;xsl:param name="IsNoKeyword" /&gt;
+&lt;xsl:param name="ShowActionLinks" /&gt;
+&lt;xsl:param name="AlertMeLink" /&gt;
+&lt;xsl:param name="AlertMeText" /&gt;
+&lt;xsl:param name="SrchRSSText" /&gt;
+&lt;xsl:param name="SrchRSSLink" /&gt;
+&lt;!-- When empty result set is returned from search --&gt;
+&lt;xsl:template name="dvt_1.empty"&gt;
+&lt;div class="srch-sort-right"&gt;
+&lt;xsl:if test="$AlertMeLink and $ShowActionLinks"&gt;
+&lt;span class="srch-alertme" &gt; &lt;a href ="{$AlertMeLink}" id="CSR_AM1">&lt;img style="vertical-align: middle;" src="/_layouts/images/bell.gif" border="0" alt=""/&gt;&lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;&lt;xsl:value-of select="$AlertMeText" /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test="$SrchRSSLink and $ShowActionLinks"&gt;
+&lt;xsl:if test="$AlertMeLink"&gt; | &lt;/xsl:if&gt;
+&lt;a type="application/rss+xml" href ="{$SrchRSSLink}" title="{$SrchRSSText}" id="SRCHRSSL"&gt;&lt;img style="vertical-align: middle;" border="0" src="/_layouts/images/rss.gif" alt=""/&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt; &lt;xsl:value-of select="$SrchRSSText"/&gt;&lt;/a&gt;
+&lt;/xsl:if&gt;
+&lt;/div&gt;
+&lt;/xsl:template&gt;
+&lt;!-- Main body template. Sets the Results view (Relevance or date) options --&gt;
+&lt;xsl:template name="dvt_1.body"&gt;
+&lt;div&gt;
+&lt;xsl:if test="$ShowActionLinks"&gt;
+&lt;div class="srch-sort-right"&gt;
+&lt;xsl:value-of select="$ResultsBy" /&gt;
+&lt;xsl:if test="$ViewByUrl"&gt; | &lt;a href ="{$ViewByUrl}" id="CSR_RV"&gt;&lt;xsl:value-of select="$ViewByLiteral" /&gt;&lt;xsl:value-of select="$ViewByValue" /&gt;&lt;/a&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test="$AlertMeLink"&gt; |
+&lt;span class="srch-alertme" &gt; &lt;a href ="{$AlertMeLink}" id="CSR_AM2">&lt;img style="vertical-align: middle;" src="/_layouts/images/bell.gif" border="0" alt=""/&gt;&lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;&lt;xsl:value-of select="$AlertMeText" /&gt;&lt;/a&gt;
+&lt;/span&gt;
+&lt;/xsl:if&gt;
+&lt;xsl:if test="$SrchRSSLink"&gt;| &lt;a type="application/rss+xml" href ="{$SrchRSSLink}" title="{$SrchRSSText}" id="SRCHRSSL"&gt;&lt;img style="vertical-align: middle;" border="0" src="/_layouts/images/rss.gif" alt=""/&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt; &lt;xsl:value-of select="$SrchRSSText"/&gt;&lt;/a&gt;
+&lt;/xsl:if&gt;
+&lt;/div&gt;
+&lt;/xsl:if&gt;
+&lt;/div&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template match="/"&gt;
+&lt;xsl:variable name="Rows" select="/All_Results/Result" /&gt;
+&lt;xsl:variable name="RowCount" select="count($Rows)" /&gt;
+&lt;xsl:variable name="IsEmpty" select="$RowCount = 0" /&gt;
+&lt;xsl:if test="$AlertMeLink"&gt;&lt;input type="hidden" name="P_Query" /&gt;&lt;input type="hidden" name="P_LastNotificationTime" /&gt;
+&lt;/xsl:if&gt;
+
+&lt;xsl:call-template name="dvt_1.body"/&gt;
+
+&lt;/xsl:template&gt;
+&lt;!-- End of Stylesheet --&gt;&lt;/xsl:stylesheet&gt;
+	</property>
+     </properties>
+    </data>
+  </webPart>
+</webParts>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MidLowerLeftZone" WebPartOrder="1"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.SearchStatsWebPart</TypeName>
+                        <Title>$Resources:spscore,SearchStatsWP_Title;</Title>
+                        <Description>$Resources:spscore,SearchStatsWP_Desc;</Description>
+                        <PartOrder>2</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="BottomZone" WebPartOrder="1"><![CDATA[
+                  <webParts>
+				    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+				      <metaData>
+					      <type name="Microsoft.Office.Server.Search.WebControls.HighConfidenceWebPart,Microsoft.Office.Server.Search,Version=12.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+					      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+					    </metaData>
+					    <data>
+					      <properties>
+						    <property name="Title" type="string">$Resources:spscore,HighConfidenceWP_Title;</property>
+						    <property name="Description" type="string">$Resources:spscore,HighConfidenceWP_Desc;</property>
+						    <property name="ChromeType">None</property>
+						    <property name="AllowMinimize" type="bool">true</property>
+						    <property name="AllowClose" type="bool">true</property> 
+						    <property name="Hidden" type="bool">false</property>
+						    <property name="PartOrder" type="int">1</property>
+						    <property name="DisplayTerm" type="bool">false</property>
+						    <property name="DisplayImage" type="bool">false</property>
+						    <property name="DisplayDiscoveredDefinition" type="bool">false</property>
+						    <property name="DisplayDefinition" type="bool">false</property>
+						    <property name="DisplayRecommendedBy" type="bool">false</property>
+						    <property name="DisplayBestBetTitle" type="bool">false</property>
+						    <property name="DisplayDescription" type="bool">false</property>					      
+						    <property name="DisplayUrl" type="bool">false</property>		
+					     </properties>
+					    </data>
+					  </webPart>
+					</webParts>]]>					
+				</AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="BottomZone" WebPartOrder="2"><![CDATA[
+                                        <webParts>
+					  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+					    <metaData>
+					      <type name="Microsoft.Office.Server.Search.WebControls.PeopleCoreResultsWebPart,Microsoft.Office.Server.Search,Version=12.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+					      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+					    </metaData>
+					    <data>
+					      <properties>
+						<property name="Title" type="string">$Resources:spscore,PeopleCoreResultsWP_Title;</property>
+						<property name="Description" type="string">$Resources:spscore,PeopleCoreResultsWP_Desc;</property>
+						<property name="ChromeType">None</property>
+						<property name="AllowMinimize" type="bool">true</property>
+						<property name="AllowClose" type="bool">true</property> 
+						<property name="Hidden" type="bool">false</property>
+						<property name="ScopeID" type="int">0</property>
+						<property name="SelectColumns" type="string">
+							&lt;root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+							    &lt;Columns&gt;
+							        &lt;Column Name="AccountName"/&gt;
+							        &lt;Column Name="UserProfile_GUID"/&gt;
+							        &lt;Column Name="PreferredName"/&gt;
+							        &lt;Column Name="JobTitle"/&gt;
+							        &lt;Column Name="Department"/&gt;
+							        &lt;Column Name="WorkPhone"/&gt;
+							        &lt;Column Name="OfficeNumber"/&gt;
+							        &lt;Column Name="AboutMe"/&gt;
+							        &lt;Column Name="PictureURL"/&gt;
+							        &lt;Column Name="WorkEmail"/&gt;
+							        &lt;Column Name="WebSite"/&gt;
+							        &lt;Column Name="Path"/&gt;
+							        &lt;Column Name="HitHighlightedSummary"/&gt;
+							        &lt;Column Name="HitHighlightedProperties"/&gt;
+							        &lt;Column Name="Responsibility"/&gt;
+							        &lt;Column Name="Skills"/&gt;
+							        &lt;Column Name="SipAddress"/&gt;
+							    &lt;/Columns&gt;
+							&lt;/root&gt;
+						</property>
+						<property name="ShowActionLinks" type="bool">false</property>
+					     </properties>
+					    </data>
+					  </webPart>
+                                        </webParts>]]>
+                </AllUsersWebPart>
+		<AllUsersWebPart WebPartZoneID="BottomZone" WebPartOrder="3"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.SearchPagingWebPart</TypeName>
+                        <Title>$Resources:spscore,SearchPagingWP_Title;</Title>
+                        <Description>$Resources:spscore,SearchPagingWPWP_Desc;</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                ]]>
+                </AllUsersWebPart>				
+                <AllUsersWebPart WebPartZoneID="MidLowerRightZone" WebPartOrder="1"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.SearchPagingWebPart</TypeName>
+                        <Title>$Resources:spscore,SearchPagingWP_Title;</Title>
+                        <Description>$Resources:spscore,SearchPagingWPWP_Desc;</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+            </File>
+        </Module>
+
+    </Modules>
+</Project>

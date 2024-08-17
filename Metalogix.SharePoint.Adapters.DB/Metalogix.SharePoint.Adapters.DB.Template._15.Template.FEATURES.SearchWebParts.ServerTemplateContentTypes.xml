@@ -1,0 +1,7 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ContentType ID="0x010100C5033D6CFB8447359FB795C8A73A2B19" Name="$Resources:Microsoft.Office.Server.Search,contenttype_designfile_name;" Description="$Resources:Microsoft.Office.Server.Search,contenttype_designfile_description;" Group="_Hidden" Sealed="TRUE" Inherits="TRUE" Version="0">
+        <FieldRefs>
+        </FieldRefs>
+    </ContentType>
+    <ContentTypeBinding ContentTypeId="0x010100C5033D6CFB8447359FB795C8A73A2B19" ListUrl="_catalogs/masterpage" />
+</Elements>

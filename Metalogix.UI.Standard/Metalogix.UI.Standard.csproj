@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{0CAA4A75-1AAB-4B37-A610-626B45E150F8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Metalogix.UI.Standard</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Metalogix</RootNamespace>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>migrador.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="DevExpress.Utils.v16.1">
+      <HintPath>.\Metalogix.UI.StandardReferences\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1">
+      <HintPath>.\Metalogix.UI.StandardReferences\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraEditors.v16.1">
+      <HintPath>.\Metalogix.UI.StandardReferences\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI.Standard\Explorer\ItemCollectionViewStatus.cs" />
+    <Compile Include="UI.Standard\Explorer\ItemViewFilter.cs" />
+    <Compile Include="UI.Standard\Explorer\ListViewHeaderHandler.cs" />
+    <Compile Include="UI.Standard\Explorer\MLTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI.Standard\Explorer\STApplicationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI.Standard\Explorer\StatusChangedEventHandler.cs" />
+    <Compile Include="UI.Standard\Explorer\STItemCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI.Standard\Explorer\STItemsViewControlFull.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI.Standard\Properties\Resources.cs" />
+    <Compile Include="UI.Standard\Properties\Settings.cs" />
+    <Compile Include="UI.Standard\StandardMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="UI.Standard.Resources.ShowVersionHistory.ico" />
+    <EmbeddedResource Include="Metalogix.UI.Standard.dll.licenses" />
+    <EmbeddedResource Include="UI.Standard\Explorer\STApplicationControl.resx">
+      <DependentUpon>STApplicationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI.Standard\Explorer\STItemCollectionView.resx">
+      <DependentUpon>STItemCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI.Standard\Explorer\STItemsViewControlFull.resx">
+      <DependentUpon>STItemsViewControlFull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI.Standard\Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI.Standard\StandardMainForm.resx">
+      <DependentUpon>StandardMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metalogix.Actions\Metalogix.Actions.csproj">
+      <Project>{1dee0f6a-9402-40e1-ac4b-4904989ba28d}</Project>
+      <Name>Metalogix.Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Core\Metalogix.Core.csproj">
+      <Project>{e4130506-97ab-4226-9323-b9db94629bdc}</Project>
+      <Name>Metalogix.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Explorer\Metalogix.Explorer.csproj">
+      <Project>{6616966d-e4db-4a44-9645-dd6c35cdf061}</Project>
+      <Name>Metalogix.Explorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.UI.WinForms\Metalogix.UI.WinForms.csproj">
+      <Project>{2aef72ae-552f-4a3d-98a8-79e5c6a5c6f0}</Project>
+      <Name>Metalogix.UI.WinForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="migrador.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

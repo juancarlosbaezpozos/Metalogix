@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_cbRenameList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_bEditAndApplyDocumentSets.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_plApplyNewContentTypes.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_plApplyNewContentTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 23</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveDocumentIDs.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveDocumentIDs.Name" xml:space="preserve">
+    <value>w_helpPreserveDocumentIDs</value>
+  </data>
+  <data name="w_cbCopyLists.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveIds.Name" xml:space="preserve">
+    <value>w_cbPreserveIds</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveIds.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_helpAzureUpload.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpPreserveIds.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyItems.Name" xml:space="preserve">
+    <value>w_cbCopyItems</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>359, 324</value>
+  </data>
+  <data name="cbEncryptAzureMigrationJobs.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_cbCopyLists.Properties.Caption" xml:space="preserve">
+    <value>Copy Lists</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_cbUseAzureUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 19</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbPreserveSharePointDocumentIDs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_btnEditRename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 0</value>
+  </data>
+  <data name="&gt;&gt;w_helpReattachPageLayouts.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpReattachPageLayouts.Name" xml:space="preserve">
+    <value>w_helpReattachPageLayouts</value>
+  </data>
+  <data name="&gt;&gt;_helpAzureUpload.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;_helpAzureUpload.Name" xml:space="preserve">
+    <value>_helpAzureUpload</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyAllVersions.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_cbPreserveDocumentIDs.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="w_cbPreserveDocumentIDs.Properties.Caption" xml:space="preserve">
+    <value>Preserve IDs on items/folders in Document Libraries</value>
+  </data>
+  <data name="&gt;&gt;w_cbVersions.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>426, 396</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyDocumentSets.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRename.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRename.Name" xml:space="preserve">
+    <value>w_btnEditRename</value>
+  </data>
+  <data name="&gt;&gt;w_plMaxVersions.Name" xml:space="preserve">
+    <value>w_plMaxVersions</value>
+  </data>
+  <data name="&gt;&gt;w_plMaxVersions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbApplyDocumentSets.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyAllVersions.Parent" xml:space="preserve">
+    <value>w_plMaxVersions</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.Name" xml:space="preserve">
+    <value>w_plSiteScoped</value>
+  </data>
+  <data name="w_lblMaxVersions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 23</value>
+  </data>
+  <data name="&gt;&gt;_cbUseAzureUpload.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbEncryptAzureMigrationJobs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 19</value>
+  </data>
+  <data name="w_cbDisableParsing.Properties.Caption" xml:space="preserve">
+    <value>Disable SharePoint Document Parsing</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbCopySubfolders.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpDisableParsing.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbPreserveSharePointDocumentIDs.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="w_cbDisableParsing.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveIds.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveIds.Name" xml:space="preserve">
+    <value>w_helpPreserveIds</value>
+  </data>
+  <data name="w_cbReattachPageLayouts.Properties.Caption" xml:space="preserve">
+    <value>Reattach Publishing Page Layouts</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyContentTypes.Parent" xml:space="preserve">
+    <value>w_plApplyNewContentTypes</value>
+  </data>
+  <data name="&gt;&gt;_cbUseAzureUpload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_helpAzureUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 347</value>
+  </data>
+  <data name="cbEncryptAzureMigrationJobs.Properties.Caption" xml:space="preserve">
+    <value>Encrypt Azure/SPO Container Jobs</value>
+  </data>
+  <data name="&gt;&gt;w_rbMaxVerisons.Name" xml:space="preserve">
+    <value>w_rbMaxVerisons</value>
+  </data>
+  <data name="&gt;&gt;w_rbMaxVerisons.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_btnEditRename.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_helpPreserveIds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbPreserveIds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="w_cbVersions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyDocumentSets.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_helpAzureUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblMaxVersions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbVersions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbCopyItems.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbApplyDocumentSets.Properties.Caption" xml:space="preserve">
+    <value>Apply new document sets during copy</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveDocumentIDs.Name" xml:space="preserve">
+    <value>w_cbPreserveDocumentIDs</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveDocumentIDs.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbReattachPageLayouts.Name" xml:space="preserve">
+    <value>w_cbReattachPageLayouts</value>
+  </data>
+  <data name="&gt;&gt;w_cbReattachPageLayouts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbCopySubfolders.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_cbPreserveDocumentIDs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbApplyContentTypes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveSharePointDocumentIDs.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveSharePointDocumentIDs.Name" xml:space="preserve">
+    <value>w_helpPreserveSharePointDocumentIDs</value>
+  </data>
+  <data name="w_btnEditRename.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_btnEditRename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="&gt;&gt;_cbCopySPDCustomizedForms.Parent" xml:space="preserve">
+    <value>w_plAboveItemLevel</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;w_bEditAndApplyDocumentSets.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_bEditAndApplyDocumentSets.Name" xml:space="preserve">
+    <value>w_bEditAndApplyDocumentSets</value>
+  </data>
+  <data name="w_cbCopySubfolders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 46</value>
+  </data>
+  <data name="&gt;&gt;_cbCopySPDCustomizedForms.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyContentTypes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubfolders.Parent" xml:space="preserve">
+    <value>w_plAboveItemLevel</value>
+  </data>
+  <data name="w_helpDisableParsing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbDisableParsing.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_bEditApplyContentTypes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_plSiteScoped.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_cbUseAzureUpload.Properties.Caption" xml:space="preserve">
+    <value>Use Azure/SPO Container Office 365 Upload</value>
+  </data>
+  <data name="w_cbPreserveDocumentIDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 19</value>
+  </data>
+  <data name="w_cbVersions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 19</value>
+  </data>
+  <data name="w_helpDisableParsing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 301</value>
+  </data>
+  <data name="w_cbPreserveIds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 19</value>
+  </data>
+  <data name="w_helpDisableParsing.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubfolders.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_cbDisableParsing.Name" xml:space="preserve">
+    <value>w_cbDisableParsing</value>
+  </data>
+  <data name="&gt;&gt;w_cbDisableParsing.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveIds.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_helpAzureUpload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbCopySubfolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 19</value>
+  </data>
+  <data name="&gt;&gt;w_plListScoped.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plListScoped.Name" xml:space="preserve">
+    <value>w_plListScoped</value>
+  </data>
+  <data name="w_plMaxVersions.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyDocumentSets.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="w_plAboveItemLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 9</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpDisableParsing.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plMaxVersions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_helpAzureUpload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbDisableParsing.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="w_cbPreserveSharePointDocumentIDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 19</value>
+  </data>
+  <data name="w_bEditAndApplyDocumentSets.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbReattachPageLayouts.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_bEditApplyContentTypes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveDocumentIDs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpPreserveIds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 255</value>
+  </data>
+  <data name="w_cbCopyItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 92</value>
+  </data>
+  <data name="w_rbCopyAllVersions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_bEditApplyContentTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="w_bEditApplyContentTypes.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveIds.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbCopySubfolders.Properties.Caption" xml:space="preserve">
+    <value>Copy Subfolders recursively</value>
+  </data>
+  <data name="w_bEditAndApplyDocumentSets.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_bEditAndApplyDocumentSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="w_cbApplyDocumentSets.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_lblMaxVersions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_lblMaxVersions.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_lblMaxVersions.Parent" xml:space="preserve">
+    <value>w_plMaxVersions</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveSharePointDocumentIDs.Name" xml:space="preserve">
+    <value>w_cbPreserveSharePointDocumentIDs</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveSharePointDocumentIDs.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyDocumentSets.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbPreserveSharePointDocumentIDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 325</value>
+  </data>
+  <data name="w_cbCopyLists.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_plMaxVersions.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 210</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyDocumentSets.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyDocumentSets.Name" xml:space="preserve">
+    <value>w_helpApplyDocumentSets</value>
+  </data>
+  <data name="w_cbCopyItems.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbReattachPageLayouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 233</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveDocumentIDs.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 278</value>
+  </data>
+  <data name="w_cbCopyLists.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 19</value>
+  </data>
+  <data name="w_plSiteScoped.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;w_nudVersions.Parent" xml:space="preserve">
+    <value>w_plMaxVersions</value>
+  </data>
+  <data name="&gt;&gt;w_bEditApplyContentTypes.Name" xml:space="preserve">
+    <value>w_bEditApplyContentTypes</value>
+  </data>
+  <data name="&gt;&gt;w_bEditApplyContentTypes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_rbCopyAllVersions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 19</value>
+  </data>
+  <data name="w_cbDisableParsing.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_cbPreserveSharePointDocumentIDs.Properties.Caption" xml:space="preserve">
+    <value>Preserve SharePoint Document IDs (Requires SharePoint Crawl)</value>
+  </data>
+  <data name="w_cbDisableParsing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 19</value>
+  </data>
+  <data name="w_cbCopyItems.Properties.Caption" xml:space="preserve">
+    <value>Copy List Items and Documents</value>
+  </data>
+  <data name="w_cbPreserveIds.Properties.Caption" xml:space="preserve">
+    <value>Preserve IDs on items/folders in Lists</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubfolders.Name" xml:space="preserve">
+    <value>w_cbCopySubfolders</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubfolders.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_rbCopyAllVersions.Properties.Caption" xml:space="preserve">
+    <value>Copy all Versions</value>
+  </data>
+  <data name="w_cbDisableParsing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 302</value>
+  </data>
+  <data name="w_nudVersions.Properties.Mask.EditMask" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="&gt;&gt;w_helpDisableParsing.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbRenameList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 0</value>
+  </data>
+  <data name="w_btnEditRename.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_cbVersions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 124</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveDocumentIDs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plListScoped.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_helpDisableParsing.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyItems.Parent" xml:space="preserve">
+    <value>w_plAboveItemLevel</value>
+  </data>
+  <data name="&gt;&gt;_cbUseAzureUpload.Name" xml:space="preserve">
+    <value>_cbUseAzureUpload</value>
+  </data>
+  <data name="&gt;&gt;_cbUseAzureUpload.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_helpDisableParsing.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpDisableParsing.Name" xml:space="preserve">
+    <value>w_helpDisableParsing</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveDocumentIDs.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;w_cbVersions.Name" xml:space="preserve">
+    <value>w_cbVersions</value>
+  </data>
+  <data name="&gt;&gt;w_cbVersions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbRenameList.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_cbCopySPDCustomizedForms.Properties.Caption" xml:space="preserve">
+    <value>Copy Customized Form Pages</value>
+  </data>
+  <data name="w_helpPreserveIds.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_cbRenameList.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameList.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plAboveItemLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 115</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameList.Name" xml:space="preserve">
+    <value>w_cbRenameList</value>
+  </data>
+  <data name="&gt;&gt;w_plApplyNewContentTypes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_cbApplyContentTypes.Properties.Caption" xml:space="preserve">
+    <value>Apply new content types during copy</value>
+  </data>
+  <data name="w_cbCopyItems.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_nudVersions.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_helpPreserveIds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyLists.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyLists.Name" xml:space="preserve">
+    <value>w_cbCopyLists</value>
+  </data>
+  <data name="_cbCopySPDCustomizedForms.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 19</value>
+  </data>
+  <data name="w_nudVersions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 19</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_plMaxVersions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 147</value>
+  </data>
+  <data name="&gt;&gt;w_nudVersions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_cbApplyContentTypes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 0</value>
+  </data>
+  <data name="w_cbVersions.Properties.Caption" xml:space="preserve">
+    <value>Copy Versions for Items and Documents</value>
+  </data>
+  <data name="w_cbReattachPageLayouts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 19</value>
+  </data>
+  <data name="w_btnEditRename.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_bEditAndApplyDocumentSets.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="w_cbRenameList.Properties.Caption" xml:space="preserve">
+    <value>Rename List</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_plMaxVersions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_plApplyNewContentTypes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plApplyNewContentTypes.Name" xml:space="preserve">
+    <value>w_plApplyNewContentTypes</value>
+  </data>
+  <data name="w_cbApplyContentTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 19</value>
+  </data>
+  <data name="w_rbMaxVerisons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemLevel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbApplyDocumentSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 19</value>
+  </data>
+  <data name="&gt;&gt;w_helpReattachPageLayouts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_rbCopyAllVersions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 0</value>
+  </data>
+  <data name="w_plMaxVersions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 40</value>
+  </data>
+  <data name="&gt;&gt;w_cbReattachPageLayouts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plListScoped.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 23</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemLevel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="w_bEditAndApplyDocumentSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 210</value>
+  </data>
+  <data name="w_cbPreserveDocumentIDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 279</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_nudVersions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbReattachPageLayouts.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemLevel.Name" xml:space="preserve">
+    <value>w_plAboveItemLevel</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemLevel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyItems.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_bEditApplyContentTypes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 0</value>
+  </data>
+  <data name="w_plListScoped.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.Parent" xml:space="preserve">
+    <value>w_plAboveItemLevel</value>
+  </data>
+  <data name="w_rbMaxVerisons.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_rbCopyAllVersions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_plApplyNewContentTypes.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;w_bEditAndApplyDocumentSets.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbEncryptAzureMigrationJobs.Name" xml:space="preserve">
+    <value>cbEncryptAzureMigrationJobs</value>
+  </data>
+  <data name="&gt;&gt;cbEncryptAzureMigrationJobs.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_plApplyNewContentTypes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 187</value>
+  </data>
+  <data name="w_helpDisableParsing.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_helpPreserveIds.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="cbEncryptAzureMigrationJobs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 373</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_helpDisableParsing.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCListContentOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_rbMaxVerisons.Properties.Caption" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="&gt;&gt;cbEncryptAzureMigrationJobs.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_plListScoped.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRename.Parent" xml:space="preserve">
+    <value>w_plListScoped</value>
+  </data>
+  <data name="w_plAboveItemLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_cbUseAzureUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_bEditApplyContentTypes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveSharePointDocumentIDs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblMaxVersions.Text" xml:space="preserve">
+    <value>most recent Versions</value>
+  </data>
+  <data name="w_lblMaxVersions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="_cbUseAzureUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 348</value>
+  </data>
+  <data name="_cbCopySPDCustomizedForms.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_helpReattachPageLayouts.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRename.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameList.Parent" xml:space="preserve">
+    <value>w_plListScoped</value>
+  </data>
+  <data name="&gt;&gt;cbEncryptAzureMigrationJobs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbReattachPageLayouts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyDocumentSets.Name" xml:space="preserve">
+    <value>w_cbApplyDocumentSets</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyDocumentSets.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpPreserveSharePointDocumentIDs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbPreserveIds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 256</value>
+  </data>
+  <data name="&gt;&gt;w_nudVersions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_nudVersions.Name" xml:space="preserve">
+    <value>w_nudVersions</value>
+  </data>
+  <data name="w_helpApplyDocumentSets.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="_cbCopySPDCustomizedForms.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_cbCopySPDCustomizedForms.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbCopySPDCustomizedForms.Name" xml:space="preserve">
+    <value>_cbCopySPDCustomizedForms</value>
+  </data>
+  <data name="&gt;&gt;w_bEditApplyContentTypes.Parent" xml:space="preserve">
+    <value>w_plApplyNewContentTypes</value>
+  </data>
+  <data name="w_helpDisableParsing.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="_helpAzureUpload.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="_helpAzureUpload.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_cbApplyDocumentSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 210</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveSharePointDocumentIDs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_helpAzureUpload.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveSharePointDocumentIDs.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveSharePointDocumentIDs.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbEncryptAzureMigrationJobs.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="w_cbCopyLists.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbEncryptAzureMigrationJobs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_nudVersions.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_plListScoped.Parent" xml:space="preserve">
+    <value>w_plAboveItemLevel</value>
+  </data>
+  <data name="_cbUseAzureUpload.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblMaxVersions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblMaxVersions.Name" xml:space="preserve">
+    <value>w_lblMaxVersions</value>
+  </data>
+  <data name="&gt;&gt;w_plListScoped.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_helpPreserveDocumentIDs.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyLists.Parent" xml:space="preserve">
+    <value>w_plSiteScoped</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveIds.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyLists.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_rbMaxVerisons.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_cbVersions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbCopyItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 19</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="w_plSiteScoped.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_rbMaxVerisons.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_cbCopyLists.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbPreserveIds.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_helpPreserveIds.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveIds.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbApplyContentTypes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_plSiteScoped.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 23</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 232</value>
+  </data>
+  <data name="w_rbMaxVerisons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 19</value>
+  </data>
+  <data name="_cbCopySPDCustomizedForms.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 69</value>
+  </data>
+  <data name="_helpAzureUpload.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_rbMaxVerisons.Parent" xml:space="preserve">
+    <value>w_plMaxVersions</value>
+  </data>
+  <data name="w_helpPreserveIds.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_helpAzureUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyAllVersions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpReattachPageLayouts.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyContentTypes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyAllVersions.Name" xml:space="preserve">
+    <value>w_rbCopyAllVersions</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyContentTypes.Name" xml:space="preserve">
+    <value>w_cbApplyContentTypes</value>
+  </data>
+</root>

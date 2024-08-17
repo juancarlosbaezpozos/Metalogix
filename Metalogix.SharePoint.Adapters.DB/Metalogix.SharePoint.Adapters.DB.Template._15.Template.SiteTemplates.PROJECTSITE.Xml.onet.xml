@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="4" UIVersion="15">
+    <NavBars>
+        <NavBar Name="$Resources:core,category_Top;"         Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;"             ID="1002"/>
+        <NavBar Name="$Resources:core,category_NavHome;"     Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;"    ID="1031" />
+    </NavBars>
+    <ListTemplates/>
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+    <Configurations>
+        <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+                <List
+                    FeatureId="00BFEA71-E717-4E80-AA17-D0C71B360101"
+                    Type="101"
+                    Title="$Resources:core,shareddocuments_Title_15;" 
+                    Url="$Resources:core,shareddocuments_Folder;"
+                    OnQuickLaunch="True"
+                    QuickLaunchHeading="True"
+                />
+            </Lists>
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+            <SiteFeatures>
+                <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+                <Feature ID="FDE5D850-671E-4143-950A-87B473922DC7" />
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+                <Feature ID="F41CC668-37E5-4743-B4A8-74D1DB3FD8A4" />
+                <Feature ID="F151BB39-7C3B-414F-BB36-6BF18872052F" /><!-- SiteNotebook Feature -->
+                <Feature ID="4AEC7207-0D02-4f4f-AA07-B370199CD0C7" />
+                <Feature ID="E2F2BB18-891D-4812-97DF-C265AFDBA297" />
+                <Feature ID="87294C72-F260-42f3-A41B-981A2FFCE37A" /> <!-- MDS -->
+            </WebFeatures>
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="Default" Url="" Path="">
+            <File Url="default.aspx" NavBarHome="True">
+                <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="1">
+                    <![CDATA[
+                        <webParts>
+                            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                <metaData>
+                                    <type name="Microsoft.SharePoint.Portal.WebControls.ProjectSummaryWebPart, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                                    <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                                </metaData>
+                                <data>
+                                    <properties>
+                                        <property name="Title" type="string">$Resources:spscore,ProjectSummaryWebPartTitle;</property>
+                                        <property name="Description" type="string">$Resources:spscore,ProjectSummaryWebPartDescription;</property>
+                                        <property name="ChromeType" type="chrometype">None</property>
+                                    </properties>
+                                </data>
+                            </webPart>
+                        </webParts>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="2">
+                    <![CDATA[
+                        <webParts>
+                            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                <metaData>
+                                    <type name="Microsoft.SharePoint.WebPartPages.GettingStartedWebPart,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                </metaData>
+                                <data>
+                                    <properties>
+                                        <property name="ChromeType" type="chrometype">None</property>
+                                        <property name="BaseViewID" type="string">2</property>
+                                        <property name="Title" type="string">$Resources:core,GettingStartedWebPartTitle;</property>
+                                    </properties>
+                                </data>
+                            </webPart>
+                        </webParts>
+                    ]]>
+                </AllUsersWebPart>
+                <View List="$Resources:core,shareddocuments_Folder;" BaseViewID="1" RowLimit="15" WebPartZoneID="Left" WebPartOrder="3" />
+                <NavBarPage Name="$Resources:core,nav_Home;" Url="~site" ID="1002" />
+                <NavBarPage Name="$Resources:core,nav_Home;" Url="" ID="0" Position="Start"/>
+            </File>
+        </Module>
+    </Modules>
+</Project>

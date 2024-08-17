@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+     Id="DiscussionsCustomRibbonButton"
+     Location="CommandUI.Ribbon"
+     RegistrationType="List"
+     RegistrationId="108">
+        <CommandUIExtension>
+            <CommandUIDefinitions>
+                <CommandUIDefinition Location="Ribbon.ListContextualGroup._children">
+                    <Tab
+                        Id="Ribbon.DiscussionModerationTab"
+                        Title="$Resources:core,Discussion_ModerationTab_Title;"
+                        Description=""
+                        Sequence="501">
+                        <Scaling Id="Ribbon.DiscussionModerationTab.Scaling">
+                            <MaxSize
+                                Id="Ribbon.DiscussionModerationTab.MaxSize"
+                                GroupId="Ribbon.DiscussionModerationTab.Featured"
+                                Size="LargeLarge" />
+                            <Scale
+                                Id="Ribbon.DiscussionModerationTab.Scaling"
+                                GroupId="Ribbon.DiscussionModerationTab.Featured"
+                                Size="LargeLarge" />
+                        </Scaling>
+                        <Groups Id="Ribbon.DiscussionModerationTab.Groups">
+                            <Group
+                                Id="Ribbon.DiscussionModerationTab.Featured"
+                                Sequence="50"
+                                Command="ModerateDiscussionsGroup"
+                                Description=""
+                                Title="$Resources:core,Discussion_ModerationFeaturedGroup_Title;"
+                                Template="Ribbon.Templates.DiscussionModerationFeaturedGroupTemplate" >
+                                <Controls Id="Ribbon.ListItem.Moderation.Controls">
+                                    <Button
+                                        Id="Ribbon.ListItem.Moderation.MarkAsFeatured"
+                                        Command="MarkAsFeaturedCommand"
+                                        Sequence="10"
+                                        Image16by16="/_layouts/15/images/placeholder32x32.png"
+                                        Image32by32="/_layouts/15/images/placeholder32x32.png"
+                                        Description="$Resources:core,Discussion_MarkAsFeatured_ButtonDesc;"
+                                        LabelText="$Resources:core,Discussion_MarkAsFeatured_ButtonLabel;"
+                                        ToolTipTitle="$Resources:core,Discussion_MarkAsFeatured_ButtonLabel;"
+                                        ToolTipDescription="$Resources:core,Discussion_MarkAsFeatured_ButtonDesc;"
+                                        TemplateAlias="o1" />
+                                    <Button
+                                        Id="Ribbon.ListItem.Moderation.UnmarkAsFeatured"
+                                        Command="UnmarkAsFeaturedCommand"
+                                        Sequence="20"
+                                        Image16by16="/_layouts/15/images/placeholder32x32.png"
+                                        Image32by32="/_layouts/15/images/placeholder32x32.png"
+                                        Description="$Resources:core,Discussion_UnmarkAsFeatured_ButtonDesc;"
+                                        LabelText="$Resources:core,Discussion_UnmarkAsFeatured_ButtonLabel;"
+                                        ToolTipTitle="$Resources:core,Discussion_UnmarkAsFeatured_ButtonLabel;"
+                                        ToolTipDescription="$Resources:core,Discussion_UnmarkAsFeatured_ButtonDesc;"
+                                        TemplateAlias="o1" />
+                                </Controls>
+                            </Group>
+                        </Groups>
+                    </Tab>
+                </CommandUIDefinition>
+                <CommandUIDefinition Location="Ribbon.Templates._children">
+                    <GroupTemplate Id="Ribbon.Templates.DiscussionModerationFeaturedGroupTemplate">
+                        <Layout Title="LargeLarge">
+                            <OverflowSection Type="OneRow" TemplateAlias="o1" DisplayMode="Large"/>
+                            <OverflowSection Type="OneRow" TemplateAlias="o2" DisplayMode="Large"/>
+                        </Layout>
+                    </GroupTemplate>
+                </CommandUIDefinition>
+            </CommandUIDefinitions>
+        </CommandUIExtension>
+    </CustomAction>
+</Elements>

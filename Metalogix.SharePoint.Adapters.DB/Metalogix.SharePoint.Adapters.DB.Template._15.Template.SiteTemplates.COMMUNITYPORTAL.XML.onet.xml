@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="7" UIVersion="15" SiteLogoUrl="/_layouts/15/images/siteicon.png">
+    <NavBars>
+    </NavBars>
+
+    <Configurations>
+        <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+            </Lists>
+            <WebFeatures>
+                <Feature ID="87294C72-F260-42f3-A41B-981A2FFCE37A" /> <!-- MDS -->
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" /> <!-- TeamCollab Feature -->
+            </WebFeatures>
+            <SiteFeatures>
+                <Feature ID="2B03956C-9271-4d1c-868A-07DF2971ED30" /> <!-- Community Portal Site -->
+                <Feature ID="8B2C6BCB-C47F-4F17-8127-F8EAE47A44DD" /> <!-- SearchTemplatesandResources -->
+                <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" /> <!-- BasicWebParts Feature -->
+            </SiteFeatures>
+            <Modules>
+            </Modules>
+        </Configuration>
+    </Configurations>
+    <Modules>
+    </Modules>
+</Project>

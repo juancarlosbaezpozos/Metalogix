@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Revision="1" UIVersion="15" Title="$Resources:cmscore,IB_PC_ProductCatalog_Site_Title;" ListDir="Lists" xmlns:ows="Microsoft SharePoint">
+  <NavBars>
+    <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002" />
+    <NavBar Name="$Resources:core,category_NavHome;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1031" />
+    <NavBar Name="$Resources:core,category_Lists;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1003" />
+    <NavBar Name="$Resources:core,category_Recent;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1033" />
+    <NavBar Name="$Resources:core,SiteSettings_SearchNav_Title;"  Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;"    ID="1040" />
+  </NavBars>
+  <ListTemplates></ListTemplates>
+  <DocumentTemplates></DocumentTemplates>
+  <BaseTypes></BaseTypes>
+  <Configurations>
+    <Configuration ID="-1" Name="NewWeb"/>
+    <Configuration ID="0" Name="Product Catalog" MasterUrl="_catalogs/masterpage/v15.master">
+      <Lists>
+        <List Type="751" FeatureId="DD926489-FC66-47A6-BA00-CE0E959C9B41" 
+             EnableContentTypes="TRUE" 
+             VersioningEnabled="TRUE" 
+             EnableMinorVersions="TRUE" 
+             Title="$Resources:cmscore,IB_PC_ProductCatalogDefaultListTitle;" 
+             Description="$Resources:cmscore,IB_PC_ProductCatalogDefaultListDescription;" 
+             Url="Lists/Products" 
+             QuickLaunchUrl="Lists/Products/AllItems.aspx" />
+      </Lists>
+      <SiteFeatures>
+        <!-- Office SharePoint Server Publishing -->
+        <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA" />
+
+        <!-- SharePoint Server Standard Site Collection features -->
+        <Feature ID="B21B090C-C796-4b0f-AC0F-7EF1659C20AE" />
+
+        <!-- ProductCatalog Resources -->
+        <Feature ID="409D2FEB-3AFB-4642-9462-F7F426A0F3E9" />
+        <!-- ProductCatalog List Template -->
+        <Feature ID="DD926489-FC66-47A6-BA00-CE0E959C9B41" />
+        <!-- Reporting -->
+        <Feature ID="7094bd89-2cfe-490a-8c7e-fbace37b4a34" />
+        <!-- Cross-site collection publishing -->
+        <Feature ID="151D22D9-95A8-4904-A0A3-22E4DB85D1E0" />
+        <!-- ViewFormPagesLockDown -->
+        <Feature ID="7C637B23-06C4-472d-9A9A-7C175762C5C4" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- Publishing -->
+        <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+          <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+            <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/default.aspx"/>
+          </Properties>
+        </Feature>
+      </WebFeatures>
+      <Modules>
+        <Module Name="Home" />
+      </Modules>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="Home" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+      <File Url="default.aspx" Type="GhostableInLibrary">
+        <Property Name="Title" Value="$Resources:cmscore,IB_PC_DefaultTitle;" />
+        <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/ProductCatalog.aspx, $Resources:cmscore,IB_PC_ProductCatalog_DefaultLayoutTitle;" />
+        <Property Name="PublishingPageContent" Value="&lt;p&gt;$Resources:cmscore,IB_PC_HomePageContent1_Header;$Resources:cmscore,IB_PC_HomePageContent1;&lt;/p&gt;&lt;p&gt;$Resources:cmscore,IB_PC_HomePageContent2_Header;$Resources:cmscore,IB_PC_HomePageContent2;&lt;/p&gt;&lt;p&gt;$Resources:cmscore,IB_PC_HomePageContent3_Header;$Resources:cmscore,IB_PC_HomePageContent3;&lt;/p&gt;&lt;p&gt;$Resources:cmscore,IB_PC_HomePageContent4_Header;$Resources:cmscore,IB_PC_HomePageContent4;&lt;/p&gt;&lt;p&gt;$Resources:cmscore,IB_PC_HomePageContent6_Header;$Resources:cmscore,IB_PC_HomePageContent6;&lt;/p&gt;&lt;p&gt;$Resources:cmscore,IB_PC_HomePageContent7_Header;$Resources:cmscore,IB_PC_HomePageContent7;&lt;/p&gt;" />
+        <View List="751" BaseViewID="1" Scope="Recursive" WebPartZoneID="BottomZone" WebPartOrder="1" />
+      </File>
+    </Module>
+  </Modules>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="navigateSettingsCustomAction"
+    GroupId="PersonalActions"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="1002"
+    Title="$Resources:eduserver,IDS_NavigateSettingsCustomActionTitle;"
+    Description="$Resources:eduserver,IDS_NavigateSettingsCustomActionDescription;">
+    <UrlAction Url="SitePages/Edu/settings.aspx"/>
+  </CustomAction>
+  <Control
+  Id="GlobalSiteLink0"
+  Sequence="25"
+  ControlSrc="~/_controltemplates/15/Edu/Common/EduTopNav.ascx">
+  </Control>
+</Elements>

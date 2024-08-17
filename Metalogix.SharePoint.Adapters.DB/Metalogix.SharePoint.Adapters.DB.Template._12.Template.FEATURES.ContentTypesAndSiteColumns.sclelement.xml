@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{E15E79C1-D6FB-489d-BF68-50794BFB3BE7}"
+         Name="DateCreated"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="DateCreated"
+         Group="DEEWR Columns"
+         Type="Calculated"
+         ReadOnly="TRUE"
+         ResultType="Text"
+         DisplayName="Date Created">
+    <Formula>=IF(ISBLANK([Created])," ",Text([Created], "ddd, dd-mmmm-yyyy")</Formula>
+    <FieldRefs>
+      <FieldRef Name="Created" ID="{8c06beca-0777-48f7-91c7-6da68bc07b69}" />
+    </FieldRefs>
+  </Field>
+  <Field ID="{9a0843fd-ba22-4165-89fe-b896b333b9df}"
+         Name="Agenda"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="Agenda"
+         Group="DEEWR Columns"
+         Type="URL"
+         ReadOnly="FALSE"
+         DisplayName="Agenda">
+  </Field>
+  <Field ID="{3085a5d6-6d4e-4edd-88bd-3760bd3de5dd}"
+         Name="Minutes"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="Minutes"
+         Group="DEEWR Columns"
+         Type="URL"
+         ReadOnly="FALSE"
+         DisplayName="Minutes">
+  </Field>
+  <Field ID="{88FCB21C-5841-4f6c-B042-F52A76DF4A06}"
+         Name="TopItemPosition"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="TopItemPosition"
+         Group="DEEWR Columns"
+         Type="Number"
+         ReadOnly="FALSE"
+         DisplayName="Top Item Position">
+  </Field>
+  <Field ID="{BB38F50C-4339-41c0-BF2C-71503193DD86}"
+         Name="DEEWRCategory"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="DEEWRCategory"
+         Group="DEEWR Columns"
+         Type="Choice"
+         ReadOnly="FALSE"
+         DisplayName="Category">
+    <CHOICES>
+      <CHOICE>Category 1</CHOICE>
+      <CHOICE>Category 2</CHOICE>
+      <CHOICE>Category 3</CHOICE>
+      <CHOICE>Category 4</CHOICE>
+      <CHOICE>Category 5</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{9EFAD2BA-C381-4ef2-98FC-EC1A2958D33E}"
+         Name="DEEWRResourceType"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="DEEWRResourceType"
+         Group="DEEWR Columns"
+         Type="Choice"
+         ReadOnly="FALSE"
+         DisplayName="Resource Type">
+    <CHOICES>
+      <CHOICE>Resource Type 1</CHOICE>
+      <CHOICE>Resource Type 2</CHOICE>
+      <CHOICE>Resource Type 3</CHOICE>
+      <CHOICE>Resource Type 4</CHOICE>
+      <CHOICE>Resource Type 5</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{8FF8B9F2-33B9-4963-B166-5253E493B9C3}"
+         Name="DEEWRSubject"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="DEEWRSubject"
+         Group="DEEWR Columns"
+         Type="Choice"
+         ReadOnly="FALSE"
+         DisplayName="Subject">
+    <CHOICES>
+      <CHOICE>Subject 1</CHOICE>
+      <CHOICE>Subject 2</CHOICE>
+      <CHOICE>Subject 3</CHOICE>
+      <CHOICE>Subject 4</CHOICE>
+      <CHOICE>Subject 5</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{ECD0F507-A607-4591-88E2-BA5F25ACFB21}"
+         Name="Link"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="Link"
+         Group="DEEWR Columns"
+         Type="Text"
+         ReadOnly="FALSE"
+         DisplayName="Link">
+  </Field>
+  <Field ID="{E65C6551-0657-4278-8DBD-7F6ADB9B0E7F}"
+         Name="DEEWRDescription"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="DEEWRDescription"
+         Group="DEEWR Columns"
+         Type="Note"
+         NumLines="6"
+         ReadOnly="FALSE"
+         DisplayName="Description">
+  </Field>
+  <Field ID="{755BAFAD-F489-4852-8CFD-671114F5F87C}"
+         Name="DEEWRUserContactType"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="DEEWRUserContactType"
+         Group="DEEWR Columns"
+         Type="Choice"
+         ReadOnly="FALSE"
+         DisplayName="User Contact Type">
+    <CHOICES>
+      <CHOICE>User</CHOICE>
+      <CHOICE>Group</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{FDB6EE48-849D-498c-8032-395B3C4290CA}"
+         Name="DEEWRUserContactOrder"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="DEEWRUserContactOrder"
+         Group="DEEWR Columns"
+         Type="Number"
+         Decimals="0"
+         Min="1"
+         ReadOnly="FALSE"
+         DisplayName="User Contact Order">
+    <Default>1</Default>
+  </Field>
+  <Field ID="{C9994A44-B453-4cba-83F8-B91FB8364ECD}"
+         Name="DeewrCustListReleaseReleaseComments"
+         StaticName="DeewrCustListReleaseReleaseComments"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         Group="DEEWR Columns"
+         ReadOnly="FALSE"
+         DisplayName="Release Comments 0000F"
+         Type="Note" RichText="TRUE" Sortable="FALSE">
+  </Field>
+</Elements>

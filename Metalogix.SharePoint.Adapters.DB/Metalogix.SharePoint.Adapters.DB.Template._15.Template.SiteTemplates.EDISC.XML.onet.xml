@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- _lcid="1033" _version="15.0.4128" _dal="1" -->
+<!-- _LocalBinding -->
+<Project Title="$Resources:dlccore,EDiscoveryConsoleSiteTitle;" Revision="1" ListDir="" xmlns:ows="Microsoft SharePoint">
+    <NavBars>
+        <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002"/>
+    </NavBars>
+    <ListTemplates>
+    </ListTemplates>
+    <DocumentTemplates>
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+    </DocumentTemplates>
+    <Configurations>
+    <Configuration ID="0" Name="EDC" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+            </Lists>
+            <Modules>
+                <Module Name="DefaultEDC" />
+            </Modules>
+            <SiteFeatures>
+                <Feature ID="5BCCB9A4-B903-4fd1-8620-B795FA33C9BA" />
+                <Feature ID="2FCD5F8A-26B7-4a6a-9755-918566DBA90A" />
+                <Feature ID="250042B9-1AAD-4B56-A8A6-69D9FE1C8C2C" />
+                <Feature ID="7094BD89-2CFE-490a-8C7E-FBACE37B4A34" />
+                <Feature ID="0AF5989A-3AEA-4519-8AB0-85D91ABE39FF" />
+                <!-- SearchWebParts Feature -->
+                <Feature ID="EAF6A128-0482-4F71-9A2F-B1C650680E77" />
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="7201D6A4-A5D3-49A1-8C19-19C4BAC6E668" />
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+            </WebFeatures>
+        </Configuration>
+        <Configuration ID="1" Name="EDC" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+            </Lists>
+            <Modules>
+                <Module Name="DefaultCase" />
+            </Modules>
+            <SiteFeatures>
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="E8C02A2A-9010-4F98-AF88-6668D59F91A7" />
+                <Feature ID="7201D6A4-A5D3-49A1-8C19-19C4BAC6E668" />
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+            </WebFeatures>
+        </Configuration>
+    </Configurations>  
+    <Modules>
+    <Module Name="DefaultEDC" Url="" Path="">
+          <File Url="default.aspx" NavBarHome="True" Type="Ghostable">
+          <AllUsersWebPart WebPartZoneID="Top_Left" WebPartOrder="1">
+                    <![CDATA[
+                        <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                            <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                            <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                            <FrameType>None</FrameType>
+                            <ChromeType>None</ChromeType>
+                            <ChromeState>Minimized</ChromeState>
+                            <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+                                &lt;h1&gt;$Resources:dlccore,EDiscoveryConsoleWelcome;&lt;/h1&gt;
+                                &lt;p&gt;$Resources:dlccore,EDiscoveryConsoleWelcomeDescription;&lt;/p&gt;
+                            </Content>
+                        </WebPart>
+                    ]]>
+            </AllUsersWebPart>
+            <AllUsersWebPart WebPartZoneID="Top_Right" WebPartOrder="2">
+                    <![CDATA[
+                        <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                            <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                            <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                            <FrameType>None</FrameType>
+                            <ChromeType>None</ChromeType>
+                            <ChromeState>Normal</ChromeState>
+                            <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+                                &lt;div &gt;
+                                  &lt;button onclick="javascript:STSNavigate(&amp;quot;~SiteCollection/_layouts/15/newsbweb.aspx?ID=3300&amp;amp;CancelSource=&amp;quot; + GetSource());return false;" type="submit"&gt;
+                                    &lt;nobr&gt;&lt;img style="vertical-align:middle" alt="$Resources:dlccore,EDiscoveryConsoleNewCaseLink;" src="/_layouts/15/images/CreateCase.png"/&gt;&amp;#160;$Resources:dlccore,EDiscoveryConsoleNewCaseLink;&lt;/nobr&gt;
+                                  &lt;/button&gt;
+                                &lt;/div&gt;
+                            </Content>
+                        </WebPart>
+                    ]]>
+            </AllUsersWebPart>
+            <AllUsersWebPart WebPartZoneID="Middle_Left" WebPartOrder="3">
+                    <![CDATA[
+                        <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                            <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                            <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                            <FrameType>None</FrameType>
+                            <ChromeType>None</ChromeType>
+                            <ChromeState>Normal</ChromeState>
+                            <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+                                &lt;h1&gt;$Resources:dlccore,EDiscoveryConsoleGetStartedLabel;&lt;/h1&gt;
+                                &lt;ol&gt;
+                                  &lt;li&gt;$Resources:dlccore,EDiscoveryConsoleGetStartedDescription1;&lt;/li&gt;
+                                  &lt;li&gt;$Resources:dlccore,EDiscoveryConsoleGetStartedDescription2;&lt;/li&gt;
+                                  &lt;li&gt;$Resources:dlccore,EDiscoveryConsoleGetStartedDescription3;&lt;/li&gt;
+                                  &lt;li&gt;$Resources:dlccore,EDiscoveryConsoleGetStartedDescription4;&lt;/li&gt;
+                                &lt;/ol&gt;
+                            </Content>
+                        </WebPart>
+                    ]]>
+            </AllUsersWebPart>
+                        <AllUsersWebPart WebPartZoneID="Middle_Right" WebPartOrder="3">
+                    <![CDATA[
+                        <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                            <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                            <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                            <FrameType>None</FrameType>
+                            <ChromeType>None</ChromeType>
+                            <ChromeState>Normal</ChromeState>
+                            <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+                                &lt;h1&gt;$Resources:dlccore,EDiscoveryConsoleInplaceLabel;&lt;/h1&gt;
+                                &lt;ul&gt;
+                                  &lt;li&gt;$Resources:dlccore,EDiscoveryConsoleInplaceDescription1;&lt;/li&gt;
+                                  &lt;li&gt;$Resources:dlccore,EDiscoveryConsoleInplaceDescription2;&lt;/li&gt;
+                                  &lt;li&gt;$Resources:dlccore,EDiscoveryConsoleInplaceDescription3;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            </Content>
+                        </WebPart>
+                    ]]>
+            </AllUsersWebPart>
+            <NavBarPage Name="$Resources:core,nav_Home;" ID="1002" Position="Start" />
+            <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start" />
+          </File>
+        </Module>
+        <Module Name="DefaultCase" Url="" Path="">
+          <File Name="default.aspx" Url="defaultcase.aspx" NavBarHome="True" Type="Ghostable">
+            <AllUsersWebPart WebPartZoneID="SourceStats" WebPartOrder="1">
+                <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Policy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Discovery.WebControls.CaseContentWebPart</TypeName>
+                        <Title>$Resources:dlccore,EDiscoverySourceStatisticsWebPartTitle;</Title>
+                        <FrameType>None</FrameType>
+                        <ChromeType>None</ChromeType>
+                        <CatalogIconImageUrl>/_layouts/15/images/msimagel.gif</CatalogIconImageUrl>
+                        <DisplayText></DisplayText>
+                        <data>
+                            <properties>
+                                <property d4p1:name="IsSourceStatistics" d4p1:type="bool" xmlns:d4p1="http://schemas.microsoft.com/WebPart/v2">True</property>
+                            </properties>
+                        </data>
+                        <IsSourceStatistics xmlns="urn:schemas-microsoft-com:CaseContentWebPart">true</IsSourceStatistics>
+                    </WebPart>
+                ]]>
+            </AllUsersWebPart>
+            <AllUsersWebPart WebPartZoneID="ExportStats" WebPartOrder="1">
+                <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Policy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Discovery.WebControls.CaseContentWebPart</TypeName>
+                        <Title>$Resources:dlccore,EDiscoveryExportStatisticsWebPartTitle;</Title>
+                        <FrameType>None</FrameType>
+                        <ChromeType>None</ChromeType>
+                        <CatalogIconImageUrl>/_layouts/15/images/msimagel.gif</CatalogIconImageUrl>
+                        <DisplayText></DisplayText>
+                        <data>
+                            <properties>
+                                <property d4p1:name="IsSourceStatistics" d4p1:type="bool" xmlns:d4p1="http://schemas.microsoft.com/WebPart/v2">False</property>
+                            </properties>
+                        </data>
+                          <IsSourceStatistics xmlns="urn:schemas-microsoft-com:CaseContentWebPart">false</IsSourceStatistics>
+                    </WebPart>
+                ]]>
+            </AllUsersWebPart>
+          <View WebPartZoneID="Collections" WebPartOrder="1" List="$Resources:core,lists_Folder;/$Resources:dlccore,SourceGroupsListUrl;" BaseViewID="2" TabularView="FALSE">
+                <![CDATA[
+                    <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+                                    <property name="AllowConnect" type="bool">True</property>
+                                    <property name="ChromeType" type="chrometype">TitleOnly</property>
+                                    <property name="InplaceSearchEnabled" type="bool">False</property>
+                                    <property name="DisableViewSelectorMenu" type="bool">True</property>
+                                    <property name="DisableSaveAsNewViewButton" type="bool">True</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                    </webParts>
+                ]]>
+            </View>
+            <View WebPartZoneID="Queries" WebPartOrder="1" List="$Resources:core,lists_Folder;/$Resources:dlccore,SavedSearchesListUrl;" BaseViewID="2" TabularView="FALSE">
+                <![CDATA[
+                    <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+                                    <property name="AllowConnect" type="bool">True</property>
+                                    <property name="ChromeType" type="chrometype">TitleOnly</property>
+                                    <property name="InplaceSearchEnabled" type="bool">False</property>
+                                    <property name="DisableViewSelectorMenu" type="bool">True</property>
+                                    <property name="DisableSaveAsNewViewButton" type="bool">True</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                    </webParts>
+                ]]>
+            </View>
+            <NavBarPage Name="$Resources:core,nav_Home;" ID="1002" Position="Start" />
+            <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start" />
+          </File>
+        <File Url="DiscoverySearch.aspx">
+        </File>
+        </Module>
+    </Modules>
+</Project>

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="3" Title="$Resources:spscore,PortalManifest_SiteDirectory_DisplayName;"  DisableWebDesignFeatures="">
+    <NavBars>
+        <NavBar Name="SharePoint Top Navbar" ID="1002">
+        </NavBar>
+    </NavBars>
+    <ListTemplates>
+
+        <ListTemplate Name="siteslst" DisplayName="$Resources:spscore,SitesOnet_SitesListName;" FolderCreation="FALSE" Type="300" BaseType="0" OnQuickLaunch="FALSE" SecurityBits="11" Description="$Resources:spscore,SitesOnet_SitesListDescription;" Image="/_layouts/images/itgen.gif">
+        </ListTemplate>
+        <ListTemplate Name="Tabs" DisplayName="$Resources:spscore,SitesOnet_TabsListName;" FolderCreation="FALSE" Type="301" BaseType="0" OnQuickLaunch="FALSE" SecurityBits="11" Description="$Resources:spscore,SitesOnet_SitesList_Description;" Image="/_layouts/images/itgen.gif">
+        </ListTemplate>
+    </ListTemplates>
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+
+    <Configurations>
+        <Configuration ID="-1" Name="NewWeb"/>
+        <Configuration ID="0" Name="Default">
+            <Lists>
+                <List Title="$Resources:spscore,SitesOnet_TabsList_Title;" Url="Tabs" Description="$Resources:spscore,SitesOnet_TabsList_Description;" Type="301">
+                    <Data>
+                        <Rows>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,CategoriesTab;</Field>
+                                <Field Name="Page">category.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,CategoriesTabComment;</Field>
+                            </Row>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,CategoriesTab;</Field>
+                                <Field Name="Page">categoryresults.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,CategoriesTabComment;</Field>
+                            </Row>
+                            <Row>
+                                <Field Name="TabName">$Resources:spscore,SiteMapTab;</Field>
+                                <Field Name="Page">sitemap.aspx</Field>
+                                <Field Name="Comments">$Resources:spscore,SiteMapTabComment;</Field>
+                            </Row>
+                        </Rows>
+
+                    </Data>
+                </List>
+            </Lists>
+            <SiteFeatures>
+                <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA" />
+	         <!-- Base site feature -->
+                <Feature ID="B21B090C-C796-4b0f-AC0F-7EF1659C20AE"/>
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/category.aspx" />
+                        <Property Key="SimplePublishing" Value="true" />
+                    </Properties>
+                </Feature>
+                <Feature ID="8F15B342-80B1-4508-8641-0751E2B55CA6">
+                </Feature>
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+                    <!-- Per-Web Portal Navigation Properties-->
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="InheritGlobalNavigation" Value="true"/>
+                        <Property Key="IncludePages" Value="false" />
+                    </Properties>
+                </Feature>
+
+                <Feature ID="A311BF68-C990-4da3-89B3-88989A3D7721" />
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+
+            </WebFeatures>
+
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+        </Configuration>
+        <Configuration ID="1" Name="Blank">
+            <ExecuteUrl Url="_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/settings.aspx" />
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="Default" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+            <File Url="category.aspx" Type="GhostableInLibrary" >
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/tabviewpagelayout.aspx, $Resources:spscore,TabViewPageLayoutTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SiteDirectoryPageTitle;" />
+                <Property Name="ContentType" Value="$Resources:cmscore,contenttype_welcomepage_name;" />
+                <Property Name="Comments" Value="$Resources:spscore,SiteDirectoryPageDescription;" />
+                <AllUsersWebPart WebPartZoneID="Header" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title>$Resources:spscore,ReportCenterOnet_CWP_Title</Title>
+		  	<FrameType>TitleBarOnly</FrameType>
+		  	<Description>$Resources:spscore,ReportCenterOnet_CWP_Description</Description>
+		 	<IsIncluded>true</IsIncluded>
+                        <ZoneID>TopLeftZone</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/images/wp_pers.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.ContactFieldControl</TypeName>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1"><![CDATA[
+                                <webParts>
+			            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			                <metaData>
+			                    <type name="Microsoft.SharePoint.Portal.WebControls.CategoryWebPart,Microsoft.SharePoint.Portal,Version=14.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+			                    <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+			                </metaData>
+			                <data>
+			                    <properties>
+                                    <property name="Title">$Resources:spscore,SitesOnet_CategoryWP_Title;</property>
+                                    <property name="Description" type="string">$Resources:spscore,SitesOnet_CategoryWP_Description;</property>
+                                    <property name="ChromeType" type="chrometype">None</property>
+                                    <property name="ChromeState">Normal</property>
+                                    <property name="HelpUrl" type="string">/_layouts/help.aspx</property>
+
+                                </properties>
+                            </data>
+                        </webPart>
+                    </webParts>]]>
+                </AllUsersWebPart>
+            </File>
+            <File Url="sitemap.aspx" Type="GhostableInLibrary" >
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/tabviewpagelayout.aspx, $Resources:spscore,TabViewPageLayoutTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SiteDirectorySiteMapPageTitle;" />
+                <Property Name="Comments" Value="$Resources:spscore,SiteDirectoryPageDescription;" />
+                <AllUsersWebPart WebPartZoneID="Header" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title>$Resources:spscore,ReportCenterOnet_CWP_Title</Title>
+		  	<FrameType>TitleBarOnly</FrameType>
+		  	<Description>$Resources:spscore,ReportCenterOnet_CWP_Description</Description>
+		 	<IsIncluded>true</IsIncluded>
+                        <ZoneID>TopLeftZone</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/images/wp_pers.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.ContactFieldControl</TypeName>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1"><![CDATA[
+                                        <webParts>
+					    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+						    <metaData>
+							    <type name="Microsoft.SharePoint.Publishing.WebControls.TableOfContentsWebPart,Microsoft.SharePoint.Publishing,Version=14.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+							    <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+						    </metaData>
+						    <data>
+							    <properties>
+                                    <property name="ParameterBindings" type="string">
+                                      &lt;ParameterBinding Name="MainStylesheetLocation" Location="None" DefaultValue="/Style Library/XSL Style Sheets/TableOfContentsMain.xsl" /&gt;
+                                      &lt;ParameterBinding Name="LevelStylesheetLocation" Location="None" DefaultValue="/Style Library/XSL Style Sheets/LevelStyle.xsl" /&gt;
+                                      &lt;ParameterBinding Name="HeaderStylesheetLocation" Location="None" DefaultValue="/Style Library/XSL Style Sheets/Header.xsl" /&gt;
+                                    </property>
+                                    <property name="Title">$Resources:spscore,SitesOnet_TOCWP_Title;</property>
+                                    <property name="IncludeContentFromStartingLocation" type="bool">false</property>
+                                    <property name="ChromeType" type="chrometype">None</property>
+                                    <property name="AnchorLocation" type="string">~SiteCollection/</property>
+                                    <property name="ShowPages" type="bool">False</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                    </webParts>]]>
+                </AllUsersWebPart>
+            </File>
+            <File Url="categoryresults.aspx" Type="GhostableInLibrary" >
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/tabviewpagelayout.aspx, $Resources:spscore,TabViewPageLayoutTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,SiteDirectoryCatResPageTitle;" />
+                <Property Name="Comments" Value="$Resources:spscore,SiteDirectoryPageDescription;" />
+                <AllUsersWebPart WebPartZoneID="Header" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title>$Resources:spscore,ReportCenterOnet_CWP_Title</Title>
+		  	<FrameType>TitleBarOnly</FrameType>
+		  	<Description>$Resources:spscore,ReportCenterOnet_CWP_Description</Description>
+		 	<IsIncluded>true</IsIncluded>
+                        <ZoneID>TopLeftZone</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/images/wp_pers.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.ContactFieldControl</TypeName>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1"><![CDATA[
+                              <webParts>
+				  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+				    <metaData>
+				      <type name="Microsoft.SharePoint.Portal.WebControls.CategoryResultsWebPart,Microsoft.SharePoint.Portal,Version=14.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+				      <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+				    </metaData>
+				    <data>
+				      <properties>
+				        <property name="DataSourcesString" type="string">&lt;%@ Register TagPrefix="WebControls" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;WebControls:ObjectCacheDataSource runat="server" ListName="$Resources:spscore,SitesOnet_SitesList_Title;" WebUrl="~Site" &gt;&lt;/WebControls:ObjectCacheDataSource&gt;</property>
+					<property name="Xsl" type="string">
+   &lt;xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" version="1.0" exclude-result-prefixes="xsl ddwrt msxsl" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:crwp="urn:schemas-microsoft-com:CategoryResultsWebPart"&gt;
+     &lt;xsl:output method="html" indent="no"/&gt;
+     &lt;xsl:param name="dvt_adhocmode"&gt;sort&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_adhocfiltermode"&gt;xsl&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_fieldsort"&gt;1&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_sortfield"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_groupfield"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_groupdisplay"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_sortdir"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_groupdir"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_grouptype"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_sorttype"&gt;text&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_groupsorttype"&gt;text&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_filterfield"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_filterval"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_filtertype"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_firstrow"&gt;1&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_nextpagedata"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="dvt_apos"&gt;'&lt;/xsl:param&gt;
+     &lt;xsl:param name="filterParam"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="sdwp_filterfield"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="sdwp_filtervalue"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="sdwp_FilterByColumnName"&gt;&lt;/xsl:param&gt;
+     &lt;xsl:param name="sdwp_FilterByValue"&gt;&lt;/xsl:param&gt;
+
+     &lt;xsl:template match="/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp"&gt;
+       &lt;xsl:call-template name="dvt_1"/&gt;
+     &lt;/xsl:template&gt;
+
+     &lt;xsl:template name="dvt_1"&gt;
+       &lt;xsl:variable name="StyleName"&gt;Table&lt;/xsl:variable&gt;
+       &lt;xsl:variable name="Rows" select="/dsQueryResponse/NewDataSet/Row"/&gt;
+       &lt;xsl:variable name="RowCount" select="count($Rows)"/&gt;
+       &lt;xsl:variable name="RowLimit" select="50"/&gt;
+       &lt;xsl:variable name="FirstRow" select="$dvt_firstrow"/&gt;
+       &lt;xsl:variable name="LastRow"&gt;
+	     &lt;xsl:choose&gt;
+	       &lt;xsl:when test="($FirstRow + $RowLimit - 1) &amp;gt; $RowCount"&gt;
+		     &lt;xsl:value-of select="$RowCount"/&gt;
+		   &lt;/xsl:when&gt;
+		   &lt;xsl:otherwise&gt;
+		     &lt;xsl:value-of select="$FirstRow + $RowLimit - 1"/&gt;
+		   &lt;/xsl:otherwise&gt;
+	     &lt;/xsl:choose&gt;
+	&lt;/xsl:variable&gt;
+       &lt;xsl:variable name="IsEmpty" select="$RowCount = 0 or $RowLimit = 0"/&gt;
+
+       &lt;xsl:choose&gt;
+         &lt;xsl:when test="$IsEmpty"&gt;
+           &lt;xsl:call-template name="dvt_1.empty"/&gt;
+         &lt;/xsl:when&gt;
+         &lt;xsl:otherwise&gt;
+           &lt;table border="0" width="100%" cellpadding="0" cellspacing="0" class="ms-sitedirresultssort"&gt;
+             &lt;xsl:call-template name="dvt_1.sortrow" /&gt;
+           &lt;/table&gt;
+           &lt;table border="0" width="100%" cellpadding="0" cellspacing="0" class="ms-sitedirresultspaging"&gt;
+             &lt;tr&gt;
+               &lt;td&gt;
+		 &lt;xsl:choose&gt;
+	           &lt;xsl:when test="not($sdwp_FilterByColumnName)"&gt;
+		     &lt;xsl:value-of select="$sdwp_FilterByValue" /&gt;
+		   &lt;/xsl:when&gt;
+		   &lt;xsl:otherwise&gt;
+		     &lt;xsl:value-of select="$sdwp_FilterByColumnName" /&gt; : &lt;xsl:value-of select="$sdwp_FilterByValue" /&gt;
+		   &lt;/xsl:otherwise&gt;
+	          &lt;/xsl:choose&gt; 
+               &lt;/td&gt;
+               &lt;xsl:if test="$FirstRow &amp;gt; 1 or $LastRow &amp;lt; $RowCount"&gt;
+                 &lt;xsl:call-template name="dvt_1.paging"&gt;
+                   &lt;xsl:with-param name="FirstRow" select="$FirstRow"/&gt;
+                   &lt;xsl:with-param name="LastRow" select="$LastRow"/&gt;
+                   &lt;xsl:with-param name="RowLimit" select="$RowLimit"/&gt;
+                   &lt;xsl:with-param name="RowCount" select="$RowCount"/&gt;
+                   &lt;xsl:with-param name="RealLastRow" select="number(ddwrt:NameChanged('', -100))"/&gt;
+                 &lt;/xsl:call-template&gt;
+               &lt;/xsl:if&gt;
+             &lt;/tr&gt;
+           &lt;/table&gt;
+           &lt;table border="0" width="100%" cellpadding="0" cellspacing="0" id="table2" class="ms-sitedirresultsbody"&gt;
+             &lt;xsl:call-template name="dvt_1.body"&gt;
+               &lt;xsl:with-param name="Rows" select="$Rows[position() &amp;gt;= $FirstRow and position() &amp;lt;= $LastRow]"/&gt;
+               &lt;xsl:with-param name="FirstRow" select="1"/&gt;
+               &lt;xsl:with-param name="LastRow" select="$LastRow - $FirstRow + 1"/&gt;
+             &lt;/xsl:call-template&gt;
+           &lt;/table&gt;
+           &lt;xsl:if test="$FirstRow &amp;gt; 1 or $LastRow &amp;lt; $RowCount"&gt;
+             &lt;table border="0" width="100%" cellpadding="0" cellspacing="0" id="table2" class="ms-sitedirresultspaging"&gt;
+               &lt;tr&gt;
+                 &lt;td width="100%"&gt;
+                 &lt;/td&gt;
+
+                 &lt;xsl:call-template name="dvt_1.paging"&gt;
+                   &lt;xsl:with-param name="FirstRow" select="$FirstRow"/&gt;
+                   &lt;xsl:with-param name="LastRow" select="$LastRow"/&gt;
+                   &lt;xsl:with-param name="RowLimit" select="$RowLimit"/&gt;
+                   &lt;xsl:with-param name="RowCount" select="$RowCount"/&gt;
+                   &lt;xsl:with-param name="RealLastRow" select="number(ddwrt:NameChanged('', -100))"/&gt;
+                 &lt;/xsl:call-template&gt;
+               &lt;/tr&gt;
+             &lt;/table&gt;
+           &lt;/xsl:if&gt;
+         &lt;/xsl:otherwise&gt;
+       &lt;/xsl:choose&gt;
+     &lt;/xsl:template&gt;
+
+     &lt;xsl:template name="dvt_1.sortrow"&gt;
+       &lt;tr&gt;
+         &lt;td width="100%" /&gt;
+         &lt;td noWrap="true"&gt;
+           &lt;a&gt;
+              &lt;xsl:attribute name="href"&gt;
+                javascript: &lt;xsl:value-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" select="ddwrt:GenFireServerEvent('dvt_sortfield={Title};dvt_sortdir={asc}')"/&gt;;
+              &lt;/xsl:attribute&gt;
+              $Resources:spscore,SitesOnet_CategoryResultsWP_SortByTitle;
+           &lt;/a&gt;
+           &lt;span&gt;
+           |
+           &lt;/span&gt;
+           &lt;a&gt;
+              &lt;xsl:attribute name="href"&gt;
+                javascript: &lt;xsl:value-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" select="ddwrt:GenFireServerEvent('dvt_sortfield={URL};dvt_sortdir={asc}')"/&gt;;
+              &lt;/xsl:attribute&gt;
+              $Resources:spscore,SitesOnet_CategoryResultsWP_SortByUrl;
+           &lt;/a&gt;
+         &lt;/td&gt;
+       &lt;/tr&gt;
+     &lt;/xsl:template&gt;
+     &lt;xsl:template name="dvt_1.paging"&gt;
+       &lt;xsl:param name="FirstRow"/&gt;
+       &lt;xsl:param name="LastRow"/&gt;
+       &lt;xsl:param name="RowLimit"/&gt;
+       &lt;xsl:param name="RowCount"/&gt;
+       &lt;xsl:param name="RealLastRow"/&gt;
+
+       &lt;xsl:variable name="PrevRow"&gt;
+	&lt;xsl:choose&gt;
+	 &lt;xsl:when test="$FirstRow - $RowLimit &amp;lt; 1"&gt;1&lt;/xsl:when&gt;
+	 &lt;xsl:otherwise&gt;
+	   &lt;xsl:value-of select="$FirstRow - $RowLimit"/&gt;
+	 &lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+       &lt;/xsl:variable&gt;
+       &lt;xsl:variable name="LastRowValue"&gt;
+	&lt;xsl:choose&gt;
+	 &lt;xsl:when test="$LastRow &amp;gt; $RealLastRow"&gt;
+	   &lt;xsl:value-of select="$LastRow"&gt;&lt;/xsl:value-of&gt;
+	 &lt;/xsl:when&gt;
+	 &lt;xsl:otherwise&gt;
+	  &lt;xsl:value-of select="$RealLastRow"&gt;&lt;/xsl:value-of&gt;
+	 &lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+       &lt;/xsl:variable&gt;
+       &lt;xsl:variable name="NextRow"&gt;
+         &lt;xsl:value-of select="$LastRowValue + 1" /&gt;
+       &lt;/xsl:variable&gt;
+
+               &lt;td noWrap="true" style="text-align: right;"&gt;
+                 &lt;xsl:if test="$dvt_firstrow &amp;gt; 1" ddwrt:cf_ignore="1"&gt;
+                  &lt;a&gt;
+                   &lt;xsl:attribute name="href"&gt;
+                    javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_firstrow={',$PrevRow,'}'))"/&gt;;
+                   &lt;/xsl:attribute&gt;
+                   &lt;img src="/_layouts/images/prev.gif" border="0" alt="Previous" /&gt;
+                  &lt;/a&gt;
+                 &lt;/xsl:if&gt;
+                 &lt;span&gt;
+                 &lt;xsl:value-of select="$FirstRow"/&gt;
+		 -
+                 &lt;xsl:value-of select="$LastRowValue"/&gt;
+                 &lt;/span&gt;
+                 &lt;xsl:if test="$LastRowValue &amp;lt; $RowCount or string-length($dvt_nextpagedata)!=0" ddwrt:cf_ignore="1"&gt;
+                  &lt;a&gt;
+                   &lt;xsl:attribute name="href"&gt;
+                    javascript: &lt;xsl:value-of select="ddwrt:GenFireServerEvent(concat('dvt_firstrow={',$NextRow,'}'))"/&gt;;
+                   &lt;/xsl:attribute&gt;
+                   &lt;img src="/_layouts/images/next.gif" border="0" alt="Next" /&gt;
+                  &lt;/a&gt;
+                 &lt;/xsl:if&gt;
+               &lt;/td&gt;
+     &lt;/xsl:template&gt;
+     &lt;xsl:template name="dvt_1.body"&gt;
+       &lt;xsl:param name="Rows"/&gt;
+       &lt;xsl:param name="FirstRow"/&gt;
+       &lt;xsl:param name="LastRow"/&gt;
+       &lt;xsl:for-each select="$Rows"&gt;
+         &lt;xsl:if test="position() &amp;gt;= $FirstRow and position() &amp;lt;= $LastRow"&gt;
+
+             &lt;tr&gt;
+               &lt;td valign="top"&gt;
+                  &lt;img src="/_layouts/images/lstbulet.gif" alt=""/&gt;
+               &lt;/td&gt;
+               &lt;td width="100%" class="ms-sitedirresultstitle"&gt;
+		 &lt;a href="{ddwrt:EnsureAllowedProtocol(substring-before(@URL, ', '))}"&gt;
+		   &lt;xsl:value-of select="@Title"/&gt;
+		 &lt;/a&gt;
+	       &lt;/td&gt;
+             &lt;/tr&gt;
+             &lt;xsl:if test="@Description[. != '']"&gt;
+               &lt;tr&gt;
+                 &lt;td&gt;&lt;/td&gt;
+                 &lt;td width="100%" class="ms-sitedirresultsdescription"&gt;&lt;span&gt;&lt;xsl:value-of select="@Description"/&gt;&lt;/span&gt;&lt;/td&gt;
+               &lt;/tr&gt;
+             &lt;/xsl:if&gt;
+             &lt;tr&gt;
+               &lt;td&gt;&lt;/td&gt;
+               &lt;td width="100%" class="ms-sitedirresultsurl"&gt;
+                  &lt;a  href="{ddwrt:EnsureAllowedProtocol(substring-before(@URL, ', '))}" dir="ltr"&gt;
+		   &lt;xsl:value-of select="substring-before(@URL, ', ')"/&gt;
+		 &lt;/a&gt;
+	       &lt;/td&gt;
+             &lt;/tr&gt;
+         &lt;/xsl:if&gt;
+       &lt;/xsl:for-each&gt;
+     &lt;/xsl:template&gt;
+     &lt;xsl:template name="dvt_1.empty"&gt;
+       &lt;xsl:variable name="ViewEmptyText"&gt;$Resources:spscore,EmptyViewText;&lt;/xsl:variable&gt;
+       &lt;table border="0" width="100%"&gt;
+         &lt;tr&gt;
+           &lt;td class="ms-vb"&gt;
+	     &lt;xsl:value-of select="$ViewEmptyText"/&gt;
+	   &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/xsl:template&gt;
+
+     &lt;/xsl:stylesheet&gt;
+	</property>
+
+<property name="ParameterBindings" type="string">
+  &lt;ParameterBinding Name="dvt_adhocmode" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_adhocfiltermode" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_fieldsort" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_groupfield" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_groupdisplay" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_groupdir" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_grouptype" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_sorttype" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_groupsorttype" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_filterfield" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_filterval" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_filtertype" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_nextpagedata" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="dvt_apos" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="filterParam" Location="Postback;Connection"/&gt;
+  &lt;ParameterBinding Name="UserID" Location="CAMLVariable" DefaultValue="CurrentUserName"/&gt;
+  &lt;ParameterBinding Name="Today" Location="CAMLVariable" DefaultValue="CurrentDate"/&gt;
+  &lt;ParameterBinding Name="sdwp_filterfield" Location="QueryString[Column]"/&gt;
+  &lt;ParameterBinding Name="sdwp_filtervalue" Location="QueryString[Value]"/&gt;
+</property>
+	<property name="Title">$Resources:spscore,SitesOnet_CategoryResultsWP_Title;</property>
+	<property name="Description" type="string">$Resources:spscore,SitesOnet_CategoryResultsWP_Description;</property>
+        <property name="ChromeType" type="chrometype">None</property>
+	<property name="HelpUrl" type="string">/_layouts/help.aspx</property>
+	<property name="TitleUrl" type="string">~Site/Lists/SitesList/AllItems.aspx</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]>
+                </AllUsersWebPart>
+            </File>
+        </Module>
+    </Modules>
+</Project>
+

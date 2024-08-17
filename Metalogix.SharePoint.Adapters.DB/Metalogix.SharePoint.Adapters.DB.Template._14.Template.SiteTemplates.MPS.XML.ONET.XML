@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Title="$Resources:onet_TeamWebSite;" Revision="2" ListDir="$Resources:core,lists_Folder;" UIVersion="4" xmlns:ows="Microsoft SharePoint">
+  <NavBars>
+    <NavBar Name="Meetings Top Navbar" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002">
+      <NavBarLink Name="$Resources:core,nav_Home;" Url="_layouts/mtgredir.aspx">
+      </NavBarLink>
+    </NavBar>
+  </NavBars>
+  <ListTemplates>
+    <ListTemplate Name="meetings" DisplayName="$Resources:xml_onet_mwsidmeetingDisp;" Type="200" BaseType="0" Unique="TRUE" Hidden="TRUE" HiddenList="TRUE" DontSaveInTemplate="TRUE" SecurityBits="11" Description="$Resources:xml_onet_mwsidmeetingDesc;" Image="/_layouts/images/itevent.gif">
+    </ListTemplate>
+    <ListTemplate Name="agenda" DisplayName="$Resources:xml_onet_mwsidagendaDisp;" Type="201" BaseType="0" FolderCreation="FALSE" DisallowContentTypes="TRUE" SecurityBits="11" Description="$Resources:xml_onet_mwsidagendaDesc" Image="/_layouts/images/itagnda.png">
+    </ListTemplate>
+    <ListTemplate Name="people" DisplayName="$Resources:xml_onet_mwsidattendeesDisp;" Type="202" BaseType="0" FolderCreation="FALSE" DisallowContentTypes="TRUE" Unique="TRUE" DontSaveInTemplate="TRUE" AllowDeletion="FALSE" SecurityBits="11" Description="$Resources:xml_onet_mwsidattendeesDesc" Image="/_layouts/images/itcontct.gif">
+    </ListTemplate>
+    <ListTemplate Name="decision" DisplayName="$Resources:xml_onet_mwsiddecisionsDisp;" Type="204" BaseType="0" FolderCreation="FALSE" DisallowContentTypes="TRUE" SecurityBits="11" Description="$Resources:xml_onet_mwsiddecisionsDesc" Image="/_layouts/images/itdecis.png">
+    </ListTemplate>
+    <ListTemplate Name="objectiv" DisplayName="$Resources:xml_onet_mwsidobjectiveDisp;" Type="207" BaseType="0" FolderCreation="FALSE" DisallowContentTypes="TRUE" SecurityBits="11" Description="$Resources:xml_onet_mwsidobjectiveDesc" Image="/_layouts/images/itobject.png">
+    </ListTemplate>
+    <ListTemplate Name="textbox" DisplayName="$Resources:xml_onet_mwsidtextboxDisp;" Type="210" BaseType="0" FolderCreation="FALSE" DisallowContentTypes="TRUE" SecurityBits="11" Description="$Resources:xml_onet_mwsidtextboxDesc;" Image="/_layouts/images/itgen.png">
+    </ListTemplate>
+    <ListTemplate Name="thgbring" DisplayName="$Resources:xml_onet_mwsidttbringDisp;" Type="211" BaseType="0" FolderCreation="FALSE" DisallowContentTypes="TRUE" SecurityBits="11" Description="$Resources:xml_onet_mwsidttbringDesc;" Image="/_layouts/images/itthgbrg.png">
+    </ListTemplate>
+    <ListTemplate Name="wkspglib" DisplayName="$Resources:xml_onet_mwsidworkpagesDisp;" Type="212" BaseType="1" Unique="TRUE" Hidden="TRUE" HiddenList="TRUE" DontSaveInTemplate="TRUE" MustSaveRootFiles="TRUE" SecurityBits="11" Description="$Resources:xml_onet_mwsidworkpagesDesc;" Image="/_layouts/images/itgen.gif">
+    </ListTemplate>
+  </ListTemplates>
+  <DocumentTemplates>
+    <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+  </DocumentTemplates>
+  <Configurations>
+    <Configuration ID="0" Name="Basic" CustomMasterUrl="_catalogs/masterpage/MWSDefaultv4.master" MasterUrl="_catalogs/masterpage/MWSDefaultv4.master">
+      <Lists>
+        <List Title="$Resources:xml_onet_mwsidmeetingDisp;" Type="200">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidattendeesDisp;" Type="202">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidagendaDisp;" Type="201">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidobjectiveDisp;" Type="207">
+        </List>
+        <List Title="$Resources:xml_onet_mwsiddoclibDisp;" Url="$Resources:xml_onet_mwsiddoclibDisp;" FeatureId="00BFEA71-E717-4E80-AA17-D0C71B360101" Type="101">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidworkpagesDisp;" Type="212" Url="pages">
+        </List>
+      </Lists>
+      <Modules>
+        <Module Name="BasicHome" />
+        <Module Name="MWSMasterPage" />
+      </Modules>
+      <SiteFeatures>
+        <!-- Three-state Workflow Feature -->
+        <Feature ID="FDE5D850-671E-4143-950A-87B473922DC7" />
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- Meetings Workspaces Web Parts -->
+        <Feature ID="39DD29FB-B6F5-4697-B526-4D38DE4893E5" />
+      </WebFeatures>
+    </Configuration>
+    <Configuration ID="1" Name="Blank" CustomMasterUrl="_catalogs/masterpage/MWSDefaultv4.master" MasterUrl="_catalogs/masterpage/MWSDefaultv4.master">
+      <Lists>
+        <List Title="$Resources:xml_onet_mwsidmeetingDisp;" Type="200">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidattendeesDisp;" Type="202">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidworkpagesDisp;" Type="212" Url="pages">
+        </List>
+      </Lists>
+      <Modules>
+        <Module Name="BlankHome" />
+        <Module Name="MWSMasterPage" />
+      </Modules>
+      <SiteFeatures>
+        <!-- Three-state Workflow Feature -->
+        <Feature ID="FDE5D850-671E-4143-950A-87B473922DC7" />
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- Meetings Workspaces Web Parts -->
+        <Feature ID="39DD29FB-B6F5-4697-B526-4D38DE4893E5" />
+      </WebFeatures>
+    </Configuration>
+    <Configuration ID="2" Name="Decision" CustomMasterUrl="_catalogs/masterpage/MWSDefaultv4.master" MasterUrl="_catalogs/masterpage/MWSDefaultv4.master">
+      <Lists>
+        <List Title="$Resources:xml_onet_mwsidmeetingDisp;" Type="200">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidattendeesDisp;" Type="202">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidworkpagesDisp;" Type="212" Url="pages">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidobjectiveDisp;" Type="207">
+        </List>
+        <List Title="$Resources:xml_onet_mwsiddoclibDisp;" Url="$Resources:xml_onet_mwsiddoclibDisp;" FeatureId="00BFEA71-E717-4E80-AA17-D0C71B360101" Type="101">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidagendaDisp;" Type="201">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidtasksDisp;" Url="$Resources:core,lists_Folder;/$Resources:xml_onet_mwsidtasksDisp;" FeatureId="00BFEA71-A83E-497E-9BA0-7A5C597D0107" Type="107">
+        </List>
+        <List Title="$Resources:xml_onet_mwsiddecisionsDisp;" Type="204">
+        </List>
+      </Lists>
+      <Modules>
+        <Module Name="DecisionHome" />
+        <Module Name="MWSMasterPage" />
+      </Modules>
+      <SiteFeatures>
+        <!-- Three-state Workflow Feature -->
+        <Feature ID="FDE5D850-671E-4143-950A-87B473922DC7" />
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- Meetings Workspaces Web Parts -->
+        <Feature ID="39DD29FB-B6F5-4697-B526-4D38DE4893E5" />
+      </WebFeatures>
+    </Configuration>
+    <Configuration ID="3" Name="Social" CustomMasterUrl="_catalogs/masterpage/MWSDefaultv4.master" MasterUrl="_catalogs/masterpage/MWSDefaultv4.master">
+      <Lists>
+        <List Title="$Resources:xml_onet_mwsidmeetingDisp;" Type="200">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidattendeesDisp;" Type="202">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidworkpagesDisp;" Type="212" Url="pages">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidttbringDisp;" Type="211">
+        </List>
+        <List Title="$Resources:xml_onet_mwsididDirections3;" Type="210">
+        </List>
+        <List Title="$Resources:xml_onet_mwsididDiscussionBoard3;" Url="$Resources:core,lists_Folder;/$Resources:xml_onet_mwsididDiscussionBoard3;" FeatureId="00BFEA71-6A49-43FA-B535-D15C05500108" Type="108">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidpicDisp;" Url="$Resources:xml_onet_mwsidpicDisp;" FeatureId="00BFEA71-52D4-45B3-B544-B1C71B620109" Type="109">
+        </List>
+      </Lists>
+      <Modules>
+        <Module Name="SocialHome" />
+        <Module Name="Social" />
+        <Module Name="MWSMasterPage" />
+      </Modules>
+      <SiteFeatures>
+        <!-- Three-state Workflow Feature -->
+        <Feature ID="FDE5D850-671E-4143-950A-87B473922DC7" />
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- Meetings Workspaces Web Parts -->
+        <Feature ID="39DD29FB-B6F5-4697-B526-4D38DE4893E5" />
+      </WebFeatures>
+    </Configuration>
+    <Configuration ID="4" Name="Multipage" CustomMasterUrl="_catalogs/masterpage/MWSDefaultv4.master" MasterUrl="_catalogs/masterpage/MWSDefaultv4.master">
+      <Lists>
+        <List Title="$Resources:xml_onet_mwsidmeetingDisp;" Type="200">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidattendeesDisp;" Type="202">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidworkpagesDisp;" Type="212" Url="pages">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidobjectiveDisp;" Type="207">
+        </List>
+        <List Title="$Resources:xml_onet_mwsidagendaDisp;" Type="201">
+        </List>
+      </Lists>
+      <Modules>
+        <Module Name="MultipageHome" />
+        <Module Name="Multipage" />
+        <Module Name="MWSMasterPage" />
+      </Modules>
+      <SiteFeatures>
+        <!-- Three-state Workflow Feature -->
+        <Feature ID="FDE5D850-671E-4143-950A-87B473922DC7" />
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- Meetings Workspaces Web Parts -->
+        <Feature ID="39DD29FB-B6F5-4697-B526-4D38DE4893E5" />
+      </WebFeatures>
+    </Configuration>
+    <Configuration ID="5" Hidden="TRUE" Name="EnsureMWSMaster">
+      <Modules>
+        <Module Name="EnsureMWSMasterPage" />
+      </Modules>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="BasicHome" Url="" Path="">
+      <File Url="default.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+        <View List="207" BaseViewID="0" WebPartZoneID="Left" WebPartOrder="1" />
+        <View List="202" BaseViewID="0" WebPartZoneID="Left" WebPartOrder="2" />
+        <View List="201" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="1" />
+        <View List="$Resources:xml_onet_mwsiddoclibDisp;" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="2" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start">
+        </NavBarPage>
+      </File>
+    </Module>
+    <Module Name="MWSMasterPage" Url="_catalogs/masterpage" SetupPath="global">
+      <File Url="MWSDefault.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE">
+        <Property Name="UIVersion" Value="3" />
+        <Property Name="ContentTypeId" Value="0x010105" />
+      </File>
+      <File Url="MWSDefaultv4.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE">
+        <Property Name="UIVersion" Value="4" />
+        <Property Name="ContentTypeId" Value="0x010105" />
+      </File>
+    </Module>
+    <Module Name="BlankHome" Url="" Path="">
+      <File Url="default.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start">
+        </NavBarPage>
+      </File>
+    </Module>
+    <Module Name="DecisionHome" Url="" Path="">
+      <File Url="default.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+        <View List="207" BaseViewID="0" WebPartZoneID="Left" WebPartOrder="1" />
+        <View List="202" BaseViewID="0" WebPartZoneID="Left" WebPartOrder="2" />
+        <View List="201" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="1" />
+        <View List="$Resources:xml_onet_mwsiddoclibDisp;" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="2" />
+        <View List="$Resources:core,lists_Folder;/$Resources:xml_onet_mwsidtasksDisp;" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="3" />
+        <View List="204" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="4" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start">
+        </NavBarPage>
+      </File>
+    </Module>
+    <Module Name="SocialHome" Url="" Path="">
+      <File Url="default.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+        <View List="202" BaseViewID="0" WebPartZoneID="Left" />
+        <View List="210" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="1" />
+        <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="1"><![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" xmlns:iwp="http://schemas.microsoft.com/WebPart/v2/Image">
+                        <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ImageWebPart</TypeName>
+                        <FrameType>None</FrameType>
+                        <iwp:ImageLink>/_layouts/images/templogo.gif</iwp:ImageLink>
+                        <iwp:AlternativeText>$Resources:xml_onet_SocMtgImgAltText</iwp:AlternativeText>
+                   </WebPart>
+                   ]]></AllUsersWebPart>
+        <View List="211" BaseViewID="0" WebPartZoneID="Right" WebPartOrder="2" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start">
+        </NavBarPage>
+      </File>
+    </Module>
+    <Module Name="Social" Url="pages" List="212" Path="">
+      <File Url="doctemp\smartpgs\spstd1.aspx" Type="GhostableInLibrary" Name="$Resources:core,xml_onet_mwsidDiscussion;.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+        <View List="$Resources:core,lists_Folder;/$Resources:xml_onet_mwsididDiscussionBoard3;" BaseViewID="0" ContentTypeID="0x012001" WebPartZoneID="Left" />
+      </File>
+      <File Url="doctemp\smartpgs\spstd1.aspx" Type="GhostableInLibrary" Name="$Resources:core,xml_onet_mwsidPhotos;.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+        <View List="$Resources:xml_onet_mwsidpicDisp;" BaseViewID="0" WebPartZoneID="Left" />
+      </File>
+    </Module>
+    <Module Name="MultipageHome" Url="" Path="">
+      <File Url="default.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+        <View List="207" BaseViewID="0" WebPartZoneID="Left" WebPartOrder="1" />
+        <View List="202" BaseViewID="0" WebPartZoneID="Left" WebPartOrder="2" />
+        <View List="201" BaseViewID="0" WebPartZoneID="Center" WebPartOrder="1" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start">
+        </NavBarPage>
+      </File>
+    </Module>
+    <Module Name="Multipage" Url="pages" List="212" Path="">
+      <File Url="doctemp\smartpgs\spstd1.aspx" Type="GhostableInLibrary" Name="$Resources:core,xml_onet_mwsidPage1;.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+      </File>
+      <File Url="doctemp\smartpgs\spstd1.aspx" Type="GhostableInLibrary" Name="$Resources:core,xml_onet_mwsidPage2;.aspx">
+        <View List="200" BaseViewID="0" WebPartZoneID="MeetingSummary" />
+        <View List="200" BaseViewID="2" WebPartZoneID="MeetingNavigator" />
+      </File>
+    </Module>
+    <Module Name="EnsureMWSMasterPage" Url="_catalogs/masterpage" SetupPath="global" RootWebOnly="FALSE">
+      <File Url="MWSDefault.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE">
+        <Property Name="UIVersion" Value="3" />
+        <Property Name="ContentTypeId" Value="0x010105" />
+      </File>
+      <File Url="MWSDefaultv4.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE">
+        <Property Name="UIVersion" Value="4" />
+        <Property Name="ContentTypeId" Value="0x010105" />
+      </File>
+    </Module>
+  </Modules>
+  <Components>
+    <FileDialogPostProcessor ID="BDEADF27-C265-11d0-BCED-00A0C90AB50F" />
+  </Components>
+  <ServerEmailFooter>$Resources:ServerEmailFooter;</ServerEmailFooter>
+</Project>

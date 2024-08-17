@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{1EB2684D-8377-4B1E-92E4-A139D173FD9D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Metalogix.SharePoint.Actions</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>migrador.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web">
+      <HintPath>.\Metalogix.SharePoint.ActionsReferences\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>.\Metalogix.SharePoint.ActionsReferences\Ionic.Zip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopySiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\SharePointActionheader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\MasterPageMigrationUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\RequestMigrationJob.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\AddSiteCollectionHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\StatusProviders\MigrationDetailOrderProvider.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\PasteSiteCollectionHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\MigrationUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ChangeSiteCollectionSettingsHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ChangeSiteSettingsHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\AzureUploadCreator.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\IPasteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\SharePointAction_T_.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\AnalyzeChurnAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteCollectionAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyTaxonomyAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\AnalyzeListChurnAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteCollectionSelfServiceAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\AnalyzeWebChurnAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyTaxonomyLocalSiteCollectionGroupAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\AnalyzeServerChurnAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\StatusProviders\MigrationStatusSummaryProvider.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopySiteColumnsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CheckLinks\CheckLinksResults.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteContentHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteAction_T_.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteListContentHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyAccessRequestListAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\QueueState.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteFolderContentHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\UploadManagerState.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.Office365\IUploadManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteContentAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.Office365\IUploadManagerStatusLog.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteObjectsHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CheckLinks\CheckLinksAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteListObjectsHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CheckLinks\CheckLinksCompletionDetailOrderProvider.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteFolderObjectsHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ConnectAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteItemObjectsHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ConnectToSharePoint.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ConnectToSharePointReadOnly.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteLists.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\AddRoleAssignmentsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\RemoveRoleAssignmentAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CrawlAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteAllSubFoldersAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CreateFolderAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteAllSubSitesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CreateListAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\ManagedMetadataServicesServerNodeCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CreateListFromXMLAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyManagedMetadataServicesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyTenantManagedMetadataAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CreateSiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyTaxonomyFromSiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CreateSiteCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyTaxonomyFromServerAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\AzureUploadManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\CreateSiteCollectionSelfServiceMode.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteTaxonomyFromTenantAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteBase.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\DocumentSetUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteSiteCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteSite.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyGloballyReusableWFItemsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyUsersAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteSiteForConsoles.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyListTemplateGalleryAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteList.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyWebPartPageAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteWebEmailNotificationAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteFolder.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteItem.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyWebPartsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteListAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\DeleteDiscussionItem.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ExportDocItemsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyComposedLooksGalleryAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyPermissionsRecursivelyAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ExportDocItemsWithMetadataAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyAlertsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyWebPermissions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ExportItemsWithMetadataAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyItemAlertsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ExportListToXMLAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyListPermissions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyListAlertsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyFolderPermissions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyWorkflowAssociationsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Exceptions\MissingSharePointNodeException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyWebAlertsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Exceptions\NotASharePointNodeException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\IHealthScoreProvider.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\FileHealthScoreProvider.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\HealthCheckTimer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteActionUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\IHealthCheckTimerSettings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteAllListItemsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\LinkManagement\LinkCorrectionAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\HealthCheckTimerAppConfigSettings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\HealthScoreBlockerWorker.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteDuplicateListAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteAllListItemsForFolderActions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\HealthScoreUtils.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\Navigation\ChangeGlobalNavigationAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteDuplicateSiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\HealthScoreBlocker.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\HealthScoreBlockerSettings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteAllListItemsForListActions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Properties\Tooltips.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tooltips.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\Navigation\ChangeGlobalNavigationForSiteCollectionAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\AudienceServerNodeCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\Navigation\ChangeGlobalNavigationForSiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\HealthScore\SiteHealthScoreProvider.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyAudiencesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\Navigation\ChangeQuickLaunchAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\CopyNintexWorkflowAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteAudiencesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\Navigation\ChangeQuickLaunchForSiteCollectionAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\Mappings\IMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\Navigation\ChangeQuickLaunchForSiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\Mappings\WorkflowDataMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\NodePropertiesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\Mappings\NintexWorkflowMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Reporting\CompareSiteAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\PreviewDocumentAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\Mappings\TitleMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Reporting\CompareListAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\PublishDocumentsAndPagesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\AddConnectionHeader.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Reporting\CompareFolderAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\PasteAllNintexWorkflows.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\ReConnect.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Reporting\SearchAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\RefreshAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyContentTypesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\RefreshAllAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\PasteNintexWorkflow.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\RemoveConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\PasteNintexSiteWorkflow.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopySiteContentTypesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\StoragePointDetailsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\SharePointAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\PasteNintexListWorkflow.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Nintex\PasteNintexWorkflowOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Administration\UpdateSiteCollectionSettingsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Permissions\IPermissionsKeyFormatter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\BaseListItemDataUpdater_TAction, TActionOptions_.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteCustomContent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Permissions\PermissionsBufferedTaskKeyFormatter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\IEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteDefaultWebPartPageAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\Events\JobEndEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyFolderAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\Events\JobFatalErrorEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\Events\JobLogFileCreateEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ContentTypeFieldMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\BCS\BCSHelper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\Events\JobProgressEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\Events\JobQueuedEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Database\ConnectToBackup.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\Events\JobStartEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Database\ConnectToDatabaseSite.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\Events\JobWarningEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteFolderAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\FailedToProvisionContainerException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\FailedToProvisionQueueException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ContentTypesApplicator.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\IEventPrinter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteListAsFolderAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ContentTypeToManagedMetadata.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\ReflectionEventPrinter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\SharePointContainerFactory.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\Pipeline\SharePointContainerInstance.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\AzureToO365MigrationJobState.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\DocumentSetsApplicator.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyGroupsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\DocumentSetsFolderApplicator.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Database\RestoreAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyListAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\BaseColumnMapper_T, A, C1, C2_.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteMySitesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ListColumnMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Database\StatusProviders\RestorationStatusLabelProvider.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteMySitesSelfServiceAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteListEmailNotificationAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\ExternalConnections\AttachNintexConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ListItemColumnMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\ExternalConnections\AttachStoragePointConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\FolderColumnMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyListForms.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\MasterPageDataUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyListItemAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\PageLayoutGuidMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ReferencedFolderDataUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ReferencedMasterPageDataUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteNavigationAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyPermissionsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyPermissionsFromWeb.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyPermissionsFromList.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\SiteColumnToManagedMetadata.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\FieldToManagedMetadata.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\SiteFeatureEnforcerBase_A, C2_.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyPermissionsFromFolder.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\SiteFeatureEnforcer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\SiteCollectionFeatureEnforcer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyPermissionsFromItem.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\FieldValueToManagedMetadata.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\FormPageContentUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\InfopathItemContentXml.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ListGuidMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PastePortalListingsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\BDCUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\WebPartsProcessor.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ManagedMetadataItemValueMapper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\MapUsers.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\DeletionPropagator.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyRoleAssignmentsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\PublishingDataUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\ReferencedListItemDataUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteRolesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteListItemAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyServerAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteListViewsAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Transform\WorkflowDataUpdater.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyMasterPageGalleryAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyMasterPagesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\MySitesServerNodeCollection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\CopyMySitesAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\IPasteWebAction.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteBaseAction_T_.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.Actions\Migration\PasteSiteCollectionBaseAction_T_.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions\Properties\Tooltips.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tooltips.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions\Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Add.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Edit.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.LinkCorrection.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Remove.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.AddConnection.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.AddFolder.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.AddList.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.AddSite.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Checkin.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Churn.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.CreateSite.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Delete.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.ExportToFileOrange.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Fwd.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Properties.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Refresh.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPServer-DB-Valid.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPServer-OM-Valid.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPServer-WS-Valid.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPWeb-DB-Valid.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPWeb-OM-Valid.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPWeb-WS-Valid.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.StoragePoint.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.UpdateAdminsAndQuotas.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.Backup.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.wait.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.connect.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.Database.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.RestoreFromDatabase.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.sqlserver.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Alert.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Workflows.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.AllSiteContent.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Audiences.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.ChildLists.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Copy.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Edit.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.FilterGrid.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Fwd.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Group.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Map.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.MasterPageGallery.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Navigation.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.NotificationSetting.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Paste.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.PasteAllItems.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.PermissionLevels.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Permissions.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.PortalListings.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Run.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.SimpleMapping.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.SmallAdd.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.SmallSubtract.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.SubSites.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.ToolStripSettings.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Users.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Views.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.WebParts.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Reporting.Compare.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Reporting.MagnifyingGlass.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Reporting.SmallAdd.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Reporting.SmallSubtract.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.Termstore.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.GlobalNavigation.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.QuickLaunch.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.ExternalConnections.Nintex.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPWeb-WS-Valid-ReadOnly.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SPServer-OM-Valid-ReadOnly.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.ContentTypes.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.SiteColumn.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.CopyList.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.warning.gif" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.MasterPage.2010MasterPage.xml" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.MasterPage.2013MasterPage.xml" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.MasterPage.2016MasterPage.xml" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.MasterPage.2010MasterPageHTML.txt" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.MasterPage.2013MasterPageHTML.txt" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.MasterPage.2016MasterPageHTML.txt" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.ConnectToSharePointDatabaseBackupFile16x16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.ConnectToSharePointDatabaseBackupFile32x32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.SiteSettingsIcon.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.ConnectToSharePoint16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.ConnectToSharePoint32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.ConnectToSharePointReadOnly16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.ConnectToSharePointReadOnly32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.ConnectToSharePointDatabase16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Database.ConnectToSharePointDatabase32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Administration.Properties16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Icons.Migration.PasteFolder.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.FormPages.2007FormPageTemplate.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.FormPages.2010FormPageTemplate.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.FormPages.2013FormPageTemplate.aspx" />
+    <EmbeddedResource Include="Metalogix.SharePoint.Actions.Migration.FormPages.2016FormPageTemplate.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metalogix.Actions\Metalogix.Actions.csproj">
+      <Project>{1dee0f6a-9402-40e1-ac4b-4904989ba28d}</Project>
+      <Name>Metalogix.Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Azure.Blob.Manager\Metalogix.Azure.Blob.Manager.csproj">
+      <Project>{02c13c4f-a377-478d-ac97-b6de1b8b2c6d}</Project>
+      <Name>Metalogix.Azure.Blob.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Azure\Metalogix.Azure.csproj">
+      <Project>{5ca97097-8a1b-42c4-b4f3-bf899b6eac22}</Project>
+      <Name>Metalogix.Azure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Connectivity\Metalogix.Connectivity.csproj">
+      <Project>{004767ba-3564-4224-8b0c-0ec2487b9dd8}</Project>
+      <Name>Metalogix.Connectivity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Core\Metalogix.Core.csproj">
+      <Project>{e4130506-97ab-4226-9323-b9db94629bdc}</Project>
+      <Name>Metalogix.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Explorer\Metalogix.Explorer.csproj">
+      <Project>{6616966d-e4db-4a44-9645-dd6c35cdf061}</Project>
+      <Name>Metalogix.Explorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.MLLicensing\Metalogix.MLLicensing.csproj">
+      <Project>{d4c508ef-9614-4c75-87d3-da6a8cd9a6ae}</Project>
+      <Name>Metalogix.MLLicensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Office365\Metalogix.Office365.csproj">
+      <Project>{b9437661-f8fe-42e1-a771-63a63b294864}</Project>
+      <Name>Metalogix.Office365</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint.Adapters\Metalogix.SharePoint.Adapters.csproj">
+      <Project>{e9dff0fe-d8eb-4cc2-bc04-0ee2b5f4990f}</Project>
+      <Name>Metalogix.SharePoint.Adapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint.Common\Metalogix.SharePoint.Common.csproj">
+      <Project>{181c60bc-baf2-407a-83c7-89131f5336f4}</Project>
+      <Name>Metalogix.SharePoint.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint.Options\Metalogix.SharePoint.Options.csproj">
+      <Project>{c1635653-6aad-4eaa-a5a0-60d84a533d63}</Project>
+      <Name>Metalogix.SharePoint.Options</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint\Metalogix.SharePoint.csproj">
+      <Project>{1ebbedeb-0ea6-470c-b37d-26b72a1e713d}</Project>
+      <Name>Metalogix.SharePoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Utilities\Metalogix.Utilities.csproj">
+      <Project>{44be20ed-a618-469b-a9bf-c28393fa4a74}</Project>
+      <Name>Metalogix.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="migrador.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

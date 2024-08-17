@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Title="$Resources:dmscore,IDS_DMSSiteTemplateTitle;" Revision="1" UIVersion="4" SPS_ONET_STANDARD_DISABLEWEBDESIGNFEATURES_ATTRIBUTE="" SiteLogoUrl="/_layouts/15/images/siteicon.png">
+    <NavBars>
+        <NavBar Name="$Resources:core,nav_Home;" Url="~site" ID="1002"></NavBar>
+    </NavBars>
+
+    <ListTemplates>
+    </ListTemplates>
+
+    <Configurations>
+        <Configuration ID="0" Name="DocMarketPlace" CustomMasterUrl="_catalogs/masterpage/v15.master" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+            </Lists>
+
+            <SiteFeatures>
+                <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA" />   <!-- Provides SharePoint Server Publishing Infrastructure Feature -->
+                <Feature ID="EAF6A128-0482-4F71-9A2F-B1C650680E77" />   <!-- Search WebParts feature-->
+                <Feature ID="8b2c6bcb-c47f-4f17-8127-f8eae47a44dd" />   <!-- SearchTemplatesandResources feature-->
+                <Feature ID="915c240e-a6cc-49b8-8b2c-0bff8b553ed3" />   <!-- The rating feature-->
+                <Feature ID="8D75610E-5FF9-4CD1-AEFC-8B926F2AF771" />   <!-- The EDU search display templates feature -->
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="94C94CA6-B32F-4da9-A9E3-1F3D343D7ECB" />  <!-- Provides SharePoint Server Publishing Web Feature -->
+                <Feature ID="184C82E7-7EB1-4384-8E8C-62720EF397A0" />  <!-- Provides the Document Marketplace Feature -->
+            </WebFeatures>
+            <Modules>
+            </Modules>
+        </Configuration>
+    </Configurations>
+    <Modules>
+    </Modules>
+</Project>

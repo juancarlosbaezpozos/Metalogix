@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Name="HealthReports" Title="$Resources:core,HealthReports_Title;" Direction="$Resources:core,Direction;" BaseType="0" VersioningEnabled="TRUE" MajorVersionLimit="48" Url="$Resources:core,lists_Folder;/$Resources:core,HealthReports_Folder;">
+  <MetaData>
+    <ContentTypes>
+      <ContentTypeRef ID="0x0100F95DB3A97E8046b58C6A54FB31F2BD46">
+        <Folder TargetName="HealthReport" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{89efcbd9-9796-41f0-b569-65325f1882dc}" Name="HealthReportSeverityIcon" Type="Computed" ClassInfo="Icon" ReadOnly="TRUE" Group="_Hidden" DisplayName="" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthReportSeverityIcon" AllowDeletion="FALSE" Description="$Resources:core,HealthReports_SeverityDesc">
+        <FieldRefs>
+          <FieldRef ID="{505423C5-F085-48b9-9432-12073D643BA5}" Name="HealthReportSeverity" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <LookupColumn Name="HealthReportSeverity" />
+            </Expr>
+            <Case Value="1 - $Resources:core,HealthReports_Error;"><HTML><![CDATA[<img src="/_layouts/15/images/hltherr.png" alt="]]><![CDATA[$Resources:core,HealthReports_Error;]]><![CDATA[" />]]></HTML>
+            </Case>
+            <Case Value="2 - $Resources:core,HealthReports_Warning;"><HTML><![CDATA[<img src="/_layouts/15/images/hlthwrn.png" alt="]]><![CDATA[$Resources:core,HealthReports_Warning;]]><![CDATA[" />]]></HTML>
+            </Case>
+            <Case Value="3 - $Resources:core,HealthReports_Information;"><HTML><![CDATA[<img src="/_layouts/15/images/hlthinfo.png" alt="]]><![CDATA[$Resources:core,HealthReports_Information;]]><![CDATA[" />]]></HTML>
+            </Case>
+            <Case Value="4 - $Resources:core,HealthReports_Success;"><HTML><![CDATA[<img src="/_layouts/15/images/hlthsucc.png" alt="]]><![CDATA[$Resources:core,HealthReports_Success;]]><![CDATA[" />]]></HTML>
+            </Case>
+            <Default><HTML><![CDATA[<img src="/_layouts/15/images/hlthfail.png" alt="]]><![CDATA[$Resources:core,HealthReports_RuleExecutionFailure;]]><![CDATA[" />]]></HTML>
+            </Default>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{7dd0a092-8704-4ed2-8253-ac309150ac59}" Name="HealthRuleType" DisplayName="$Resources:core,HealthRules_Type;" Type="Text" Description="$Resources:core,HealthRules_TypeDescription" Group="_Hidden" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthRuleType" AllowDeletion="FALSE" Hidden="TRUE" Indexed="TRUE" Required="TRUE">
+      </Field>
+      <Field ID="{505423c5-f085-48b9-9432-12073d643ba5}" Name="HealthReportSeverity" Type="Choice" Group="_Hidden" DisplayName="$Resources:core,HealthReports_Severity" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthReportSeverity" AllowDeletion="FALSE" Description="$Resources:core,HealthReports_SeverityDesc" Required="TRUE">
+        <CHOICES><CHOICE>1 - $Resources:core,HealthReports_Error;</CHOICE><CHOICE>2 - $Resources:core,HealthReports_Warning;</CHOICE><CHOICE>3 - $Resources:core,HealthReports_Information;</CHOICE><CHOICE>4 - $Resources:core,HealthReports_Success;</CHOICE><CHOICE>0 - $Resources:core,HealthReports_RuleExecutionFailure;</CHOICE>
+        </CHOICES>
+        <Default>1 - $Resources:core,HealthReports_Error;</Default>
+      </Field>
+      <Field ID="{a63505f2-f42c-4d94-b03b-78ba2c73d40e}" Name="HealthReportCategory" Group="_Hidden" Type="Choice" DisplayName="$Resources:core,HealthReports_Category" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthReportCategory" FillInChoice="TRUE">
+        <CHOICES><CHOICE>$Resources:core,HealthRules_CatConfiguration;</CHOICE><CHOICE>$Resources:core,HealthRules_CatSecurity;</CHOICE><CHOICE>$Resources:core,HealthRules_CatPerformance;</CHOICE><CHOICE>$Resources:core,HealthRules_CatAvailability;</CHOICE>
+        </CHOICES>
+        <Default>$Resources:core,HealthRules_CatConfiguration;</Default>
+      </Field>
+      <Field ID="{b4c8faec-5d60-49ee-a5fb-6165f5c3e6a9}" Name="HealthReportExplanation" DisplayName="$Resources:core,HealthReports_Explanation;" Type="Note" NumLines="5" Description="$Resources:core,HealthReports_ExplanationDesc" Group="_Hidden" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthReportExplanation" AllowDeletion="FALSE" Required="TRUE">
+      </Field>
+      <Field ID="{8aa22caa-8000-44c9-b343-a7705bbed863}" Name="HealthReportRemedy" DisplayName="$Resources:core,HealthReports_Remedy;" Type="Note" NumLines="5" Description="$Resources:core,HealthReports_RemedyDesc" Group="_Hidden" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthReportRemedy" AllowDeletion="FALSE" Required="TRUE">
+      </Field>
+      <Field ID="{84a318aa-9035-4529-98b9-e08bb20a5da0}" Type="Note" Group="_Hidden" Name="HealthReportServers" DisplayName="$Resources:core,HealthReports_Servers" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthReportServers" AllowDeletion="FALSE" Required="TRUE" NumLines="5" Description="$Resources:core,HealthReports_ServerDesc">
+      </Field>
+      <Field ID="{e2b0b450-6795-4b86-86b7-3c21ab1797fb}" Type="Note" Group="_Hidden" Name="HealthReportServices" DisplayName="$Resources:core,HealthReports_Services" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthReportServices" AllowDeletion="FALSE" Required="TRUE" NumLines="5" Description="$Resources:core,HealthReports_ServiceDesc">
+      </Field>
+      <Field ID="{cf4ff575-f1f5-4c5b-b595-54bbcccd0c62}" Name="HealthRuleReportLink" DisplayName="$Resources:core,HealthRules_ReportLink;" Type="URL" Description="$Resources:core,HealthRules_ReportLinkDesc" Group="_Hidden" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="HealthRuleReportLink" AllowDeletion="FALSE" Required="TRUE">
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" TabularView="FALSE">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Position="After" Type="Freeform">
+          <IfHasRights>
+            <RightsChoices>
+              <RightsGroup PermAddListItems="required" />
+            </RightsChoices>
+            <Then><HTML><![CDATA[<div class="tb"><img src="/_layouts/15/images/caladd.gif" alt="" />&#160;<a class="ms-addnew" id="idAddNewItem" href="]]></HTML>
+              <URL Cmd="New" /><HTML><![CDATA[" onclick="javascript:NewItem(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <URL Cmd="New" />
+              </ScriptQuote><HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML><HTML>$Resources:core,addnewitem;</HTML><HTML><![CDATA[</a></div>]]></HTML>
+            </Then>
+          </IfHasRights>
+        </Toolbar>
+        <RowLimit>10</RowLimit>
+        <ViewFields>
+          <FieldRef Name="HealthReportSeverityIcon">
+          </FieldRef>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="HealthReportSeverity" Ascending="FALSE" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,HealthReports_AllItems;" SetupPath="pages\viewpage.aspx" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" ImageUrl="/_layouts/15/images/hlthrpts.png" Url="AllItems.aspx">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="HealthReportSeverityIcon">
+          </FieldRef>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+          <FieldRef Name="HealthReportServers">
+          </FieldRef>
+          <FieldRef Name="HealthReportServices">
+          </FieldRef>
+          <FieldRef Name="Modified">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <Where>
+            <Neq>
+              <FieldRef Name="HealthReportSeverity" />
+              <Value Type="Text">4 - $Resources:core,HealthReports_Success;</Value>
+            </Neq>
+          </Where>
+          <OrderBy>
+            <FieldRef Name="HealthReportSeverity" Ascending="TRUE" />
+          </OrderBy>
+          <GroupBy>
+            <FieldRef Name="HealthReportCategory" Ascending="FALSE" />
+          </GroupBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" ToolbarTemplate="HealthReportsDisplayFormToolBar" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+    <DefaultDescription>
+            $Resources:core,HealthReports_DefaultDescription;
+        </DefaultDescription>
+  </MetaData>
+</List>

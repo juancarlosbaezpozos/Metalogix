@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature 
+    Id="9C03E124-EEF7-4DC6-B5EB-86CCD207CB87" 
+    Title="$Resources:core,groupboardFeatureTitle;"
+    Description="$Resources:core,groupboardFeatureDesc;"
+    ImageUrl="WssTeamCollaborationFeature.gif"
+    ImageUrlAltText=""
+    Scope="Web" 
+    DefaultResourceFile="core"
+    ReceiverAssembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+    ReceiverClass="Microsoft.SharePoint.Applications.GroupBoard.GroupBoardFeatureReceiver"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ActivationDependencies>
+        <!-- Groupboard webpart feature -->
+        <ActivationDependency FeatureId="3D25BD73-7CD4-4425-B8FB-8899977F73DE"/>
+        <!-- CallTrackList Feature -->
+        <ActivationDependency FeatureId="239650e3-ee0b-44a0-a22a-48292402b8d8"/>
+        <!-- CirculationList Feature -->
+        <ActivationDependency FeatureId="a568770a-50ba-4052-ab48-37d8029b3f47"/>
+        <!-- FacilityList Feature -->
+        <ActivationDependency FeatureId="58160a6b-4396-4d6e-867c-65381fb5fbc9"/>
+        <!-- HolidaysList Feature -->
+        <ActivationDependency FeatureId="9ad4c2d4-443b-4a94-8534-49a23f20ba3c"/>
+        <!-- TimeCardList Feature -->
+        <ActivationDependency FeatureId="d5191a77-fa2d-4801-9baf-9f4205c9e9d2"/>
+        <!-- WhereaboutsList Feature -->
+        <ActivationDependency FeatureId="9c2ef9dc-f733-432e-be1c-2e79957ea27b"/>
+        <!-- IMEDicList Feature -->
+        <ActivationDependency FeatureId="1c6a572c-1b58-49ab-b5db-75caf50692e6"/>
+    </ActivationDependencies>
+    <ElementManifests>
+        <ElementManifest Location="ListInstance.xml"/>
+    </ElementManifests>
+</Feature>

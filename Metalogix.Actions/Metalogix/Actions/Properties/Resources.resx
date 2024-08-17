@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Invalid_License" xml:space="preserve">
+    <value>Cannot identify a valid license to run this action.</value>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CurrentlyRunningTabName" xml:space="preserve">
+    <value>CURRENTLY RUNNING</value>
+  </data>
+  <data name="JobTemplateResolver" xml:space="preserve">
+    <value>JobTemplateResolver</value>
+  </data>
+  <data name="StatusLabel_CompletedWithWarning" xml:space="preserve">
+    <value>Completed with a Warning</value>
+  </data>
+  <data name="PercentageCPUUsageKey" xml:space="preserve">
+    <value>PercentageCPUUsage</value>
+  </data>
+  <data name="DetailsButtonText" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="ValidSiteCollectionURL" xml:space="preserve">
+    <value>Site collection url cannot contain illegal characters</value>
+  </data>
+  <data name="StatusLabel_MigrationFailed" xml:space="preserve">
+    <value>Migration Failed</value>
+  </data>
+  <data name="StatusSummary_Skipped" xml:space="preserve">
+    <value>Skipped</value>
+  </data>
+  <data name="AzureAdGraphCredentialsInvalidMessage" xml:space="preserve">
+    <value>Invalid Azure AD Graph API Credentials for the target SPO connection have been specified. Please disconnect and reconnect to your target SharePoint and specify valid credentials.</value>
+  </data>
+  <data name="StatusLabel_MigrationComplete" xml:space="preserve">
+    <value>Migration Completed</value>
+  </data>
+  <data name="StatusSummary_Successes" xml:space="preserve">
+    <value>Successes</value>
+  </data>
+  <data name="RemotePowerShellTimerIntervalKey" xml:space="preserve">
+    <value>RemotePowerShellTimerInterval</value>
+  </data>
+  <data name="CancelActionConfirmation" xml:space="preserve">
+    <value>Do you wish to cancel this action?</value>
+  </data>
+  <data name="ActionOptionsXmlToTextTransform" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;&lt;xsl:output method="text" omit-xml-declaration="yes" indent="yes"/&gt;&lt;xsl:strip-space elements="*"/&gt;&lt;xsl:template match="/Action"&gt;&lt;xsl:param name="description" select="./@ActionType"/&gt;  &lt;xsl:text&gt;Action : &lt;/xsl:text&gt;&lt;xsl:value-of select="substring-before($description,',')"/&gt;&lt;xsl:apply-templates/&gt;&lt;/xsl:template&gt;&lt;xsl:template match="*"&gt;&lt;xsl:if test= "not(@Type = 'System.String')"&gt;&lt;xsl:text&gt;, &lt;/xsl:text&gt;&lt;xsl:value-of select="name()"/&gt;&lt;xsl:text&gt; : &lt;/xsl:text&gt;&lt;xsl:value-of select="text()"/&gt;&lt;/xsl:if&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="ActionUtils_TryThenThrowIfFail_MaxTriesReached" xml:space="preserve">
+    <value>The number of retries have exceeded. ({0} retries)</value>
+  </data>
+  <data name="EnableCustomTransformersKey" xml:space="preserve">
+    <value>EnableCustomTransformers</value>
+  </data>
+  <data name="FailedToLocateActionTargets" xml:space="preserve">
+    <value>Failed to locate action targets. This may be because they have been deleted.</value>
+  </data>
+  <data name="SQLMappingDBContextKey" xml:space="preserve">
+    <value>SQLMappingDBContext</value>
+  </data>
+  <data name="FindAndReplaceOperand_StartsWith" xml:space="preserve">
+    <value>Start of Field</value>
+  </data>
+  <data name="StatusLabel_MigrationPaused" xml:space="preserve">
+    <value>Migration Paused</value>
+  </data>
+  <data name="OnlySingleActionTargetCouldBeLocated" xml:space="preserve">
+    <value>Only a single action target could be located. This may be because one or more targets have been deleted.</value>
+  </data>
+  <data name="StatusLabel_Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="License_Used" xml:space="preserve">
+    <value>Data Migrated</value>
+  </data>
+  <data name="FileMappingDBContextKey" xml:space="preserve">
+    <value>FileMappingDBContext</value>
+  </data>
+  <data name="ActionOperationMissingParameter" xml:space="preserve">
+    <value>{0} is missing parameters</value>
+  </data>
+  <data name="FindAndReplaceOperand_EndsWith" xml:space="preserve">
+    <value>End of Field</value>
+  </data>
+  <data name="StatusLabel_MigrationAborted" xml:space="preserve">
+    <value>Migration Aborted</value>
+  </data>
+  <data name="FindAndReplaceOperand_RegEx" xml:space="preserve">
+    <value>Regular Expression</value>
+  </data>
+  <data name="ConfirmActionTemplateApplication_AdvancedToSimplified" xml:space="preserve">
+    <value>You are trying to apply a job configuration that was saved in Advanced Mode. Any advanced options that are not available in Simplified Mode may not be set correctly.</value>
+  </data>
+  <data name="ValidSiteURL" xml:space="preserve">
+    <value>Site url cannot contain illegal characters</value>
+  </data>
+  <data name="CloseButtonText" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CannotRunOneOrMoreSourcesAlsoTarget" xml:space="preserve">
+    <value>Cannot run action. One or more sources are also targets.</value>
+  </data>
+  <data name="StatusSummary_Failures" xml:space="preserve">
+    <value>Failures</value>
+  </data>
+  <data name="OnlySingleActionSourceCouldBeLocated" xml:space="preserve">
+    <value>Only a single action source could be located. This may be because one or more sources have been deleted.</value>
+  </data>
+  <data name="StatusLabel_Aborted" xml:space="preserve">
+    <value>Aborted</value>
+  </data>
+  <data name="ConfirmActionTemplateApplication" xml:space="preserve">
+    <value>Are you sure you would like to apply the selected job configuration? The current configuration will be lost.</value>
+  </data>
+  <data name="FindAndReplaceOperand_Contains" xml:space="preserve">
+    <value>Any part of Field</value>
+  </data>
+  <data name="StatusLabel_Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="CannotRunTargetIsSameAsSource" xml:space="preserve">
+    <value>Cannot run action. The target is the same as the source.</value>
+  </data>
+  <data name="FailedToLocateActionSources" xml:space="preserve">
+    <value>Failed to locate action sources. This may be because they have been deleted.</value>
+  </data>
+  <data name="StatusLabel_MigrationRunning" xml:space="preserve">
+    <value>Running Migration</value>
+  </data>
+  <data name="ActionOperationBadParameter" xml:space="preserve">
+    <value>{0} was passed a parameter of the wrong type. Expected {1}  Actual {2}</value>
+  </data>
+  <data name="AzureConnectionStringWarning" xml:space="preserve">
+    <value>No Azure connection string is detected in the EnvironmentalSettings.xml file OR Configuration Database. 
+Please select the “Encrypt Azure/SPO Container Jobs” checkbox to use the SPO Containers OR provide a valid Azure connection string inside the EnvironmentalSettings.xml file OR Configuration Database.</value>
+  </data>
+  <data name="PerActionResourceUseKey" xml:space="preserve">
+    <value>PerActionResourceUse</value>
+  </data>
+  <data name="StatusLabel_MigrationCompletedWithWarning" xml:space="preserve">
+    <value>Migration Completed with a Warning</value>
+  </data>
+  <data name="StatusLabel_Paused" xml:space="preserve">
+    <value>Paused</value>
+  </data>
+  <data name="FindAndReplaceOperand_Equals" xml:space="preserve">
+    <value>Whole Field</value>
+  </data>
+  <data name="AzureAdGraphCredentialsNotFoundMessage" xml:space="preserve">
+    <value>Azure AD Graph API Credentials for the target SPO connection have not been specified. These are required when using the Azure Office 365 Upload option. Please disconnect and reconnect to your target SharePoint and specify these additional credentials.</value>
+  </data>
+  <data name="ApplyConfiguration" xml:space="preserve">
+    <value>Applying Configuration</value>
+  </data>
+  <data name="StatusLabel_MigrationNotRunning" xml:space="preserve">
+    <value>Preparing to Run Migration</value>
+  </data>
+  <data name="StatusLabel_NotRunning" xml:space="preserve">
+    <value>Preparing to Run</value>
+  </data>
+  <data name="StatusSummary_Warnings" xml:space="preserve">
+    <value>Warnings</value>
+  </data>
+  <data name="StatusLabel_Running" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="RemotePowerShellScriptFilesLocationKey" xml:space="preserve">
+    <value>RemotePowerShellScriptFilesLocation</value>
+  </data>
+</root>

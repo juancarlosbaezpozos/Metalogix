@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbOverwriteGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="w_cbChangeProperties.Properties.Caption" xml:space="preserve">
+    <value>Rename Specific Sites. Lists and Folders</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapGroupsByName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_helpAllowDBWrite.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpAllowDBWrite.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="w_cbMapAudiences.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 9</value>
+  </data>
+  <data name="w_tbMissingUsers.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapGroupsByName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 257</value>
+  </data>
+  <data name="w_cbOverwriteGroups.Properties.Caption" xml:space="preserve">
+    <value>Overwrite existing groups</value>
+  </data>
+  <data name="w_btnEditGlobalMappings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 216</value>
+  </data>
+  <data name="w_cbMapColumns.Properties.Caption" xml:space="preserve">
+    <value>Map list item data to different columns</value>
+  </data>
+  <data name="&gt;&gt;w_tbMissingUsers.Parent" xml:space="preserve">
+    <value>w_plMissingUsers</value>
+  </data>
+  <data name="w_cbMapWebTemplates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_cbAutomapUserMetadata.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbMapColumns.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbAllowDBWrite.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="w_helpMissingUsers.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_tbMissingUsers.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_helpAllowDBWrite.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpAllowDBWrite.Name" xml:space="preserve">
+    <value>w_helpAllowDBWrite</value>
+  </data>
+  <data name="&gt;&gt;w_cbAutomapUserMetadata.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_btnEditTemplateMappings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 1</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditColumnMappings.Name" xml:space="preserve">
+    <value>w_btnEditColumnMappings</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditColumnMappings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plBelowListScope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 78</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbOverwriteGroups.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditGlobalMappings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditGlobalMappings.Name" xml:space="preserve">
+    <value>w_btnEditGlobalMappings</value>
+  </data>
+  <data name="w_cbMapWebTemplates.Properties.Caption" xml:space="preserve">
+    <value>Map Child Site Templates</value>
+  </data>
+  <data name="w_helpEditGlobalMappings.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_plAboveItemScope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 55</value>
+  </data>
+  <data name="w_plSite.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_cbMapGroupsByName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 19</value>
+  </data>
+  <data name="&gt;&gt;w_plBelowListScope.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpEditGlobalMappings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeProperties.Name" xml:space="preserve">
+    <value>w_cbChangeProperties</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeProperties.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbAutomapUserMetadata.Parent" xml:space="preserve">
+    <value>w_plWebServiceOnly</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemScope.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemScope.Name" xml:space="preserve">
+    <value>w_plAboveItemScope</value>
+  </data>
+  <data name="&gt;&gt;w_cbAllowDBWrite.Name" xml:space="preserve">
+    <value>w_cbAllowDBWrite</value>
+  </data>
+  <data name="&gt;&gt;w_cbAllowDBWrite.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditGlobalMappings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbMapWebTemplates.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_helpMissingUsers.Parent" xml:space="preserve">
+    <value>w_plMissingUsers</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditGlobalMappings.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="w_btnEditRenameAll.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_btnEditRenameAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="w_cbAutomapUserMetadata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 19</value>
+  </data>
+  <data name="&gt;&gt;w_plMissingUsers.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plMissingUsers.Name" xml:space="preserve">
+    <value>w_plMissingUsers</value>
+  </data>
+  <data name="w_helpEditGlobalMappings.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plBelowListScope.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="w_cbMissingUsers.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRenameAll.Parent" xml:space="preserve">
+    <value>w_plAboveItemScope</value>
+  </data>
+  <data name="w_btnEditRenameAll.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_helpAllowDBWrite.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;w_helpEditGlobalMappings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_helpAllowDBWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 192</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRenameAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbMapColumns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditTemplateMappings.Name" xml:space="preserve">
+    <value>w_btnEditTemplateMappings</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditTemplateMappings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plBelowListScope.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditColumnMappings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_plSite.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_helpAllowDBWrite.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_helpMissingUsers.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_cbAutomapUserMetadata.Properties.Caption" xml:space="preserve">
+    <value>Automap Created/Modified Meta Info</value>
+  </data>
+  <data name="w_plMissingUsers.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_cbMapWebTemplates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 19</value>
+  </data>
+  <data name="w_cbMapColumns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 19</value>
+  </data>
+  <data name="w_cbAllowDBWrite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_helpEditGlobalMappings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbMissingUsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_tbMissingUsers.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Components.AnchoredControls.AnchoredTextBox, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_tbMissingUsers.Name" xml:space="preserve">
+    <value>w_tbMissingUsers</value>
+  </data>
+  <data name="w_btnEditTemplateMappings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_plWebServiceOnly.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plMissingUsers.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_plWebServiceOnly.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_cbMapAudiences.Properties.Caption" xml:space="preserve">
+    <value>Map Audiences</value>
+  </data>
+  <data name="&gt;&gt;w_plMissingUsers.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbOverwriteGroups.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_cbMissingUsers.Parent" xml:space="preserve">
+    <value>w_plMissingUsers</value>
+  </data>
+  <data name="w_helpAllowDBWrite.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_plAboveItemScope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="w_cbChangeProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditColumnMappings.Parent" xml:space="preserve">
+    <value>w_plBelowListScope</value>
+  </data>
+  <data name="w_btnEditTemplateMappings.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_btnEditTemplateMappings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="&gt;&gt;w_cbOverwriteGroups.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_helpMissingUsers.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpMissingUsers.Name" xml:space="preserve">
+    <value>w_helpMissingUsers</value>
+  </data>
+  <data name="w_helpMissingUsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbMapGroupsByName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 124</value>
+  </data>
+  <data name="w_cbMapAudiences.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_plWebServiceOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="w_cbAllowDBWrite.Properties.Caption" xml:space="preserve">
+    <value>Allow copying of deleted Active Directory users</value>
+  </data>
+  <data name="w_cbMissingUsers.Properties.Caption" xml:space="preserve">
+    <value>Map missing users to:</value>
+  </data>
+  <data name="&gt;&gt;w_cbOverwriteGroups.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbOverwriteGroups.Name" xml:space="preserve">
+    <value>w_cbOverwriteGroups</value>
+  </data>
+  <data name="w_btnEditColumnMappings.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_btnEditColumnMappings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="w_helpMissingUsers.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="w_helpMissingUsers.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbMissingUsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 19</value>
+  </data>
+  <data name="w_helpEditGlobalMappings.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbMissingUsers.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_plAboveItemScope.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.Name" xml:space="preserve">
+    <value>w_plSite</value>
+  </data>
+  <data name="w_tbMissingUsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 20</value>
+  </data>
+  <data name="w_plWebServiceOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 101</value>
+  </data>
+  <data name="&gt;&gt;w_helpAllowDBWrite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpEditGlobalMappings.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRenameAll.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.Parent" xml:space="preserve">
+    <value>w_plBelowListScope</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRenameAll.Name" xml:space="preserve">
+    <value>w_btnEditRenameAll</value>
+  </data>
+  <data name="&gt;&gt;w_cbAutomapUserMetadata.Name" xml:space="preserve">
+    <value>w_cbAutomapUserMetadata</value>
+  </data>
+  <data name="&gt;&gt;w_cbAutomapUserMetadata.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbOverwriteGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapGroupsByName.Name" xml:space="preserve">
+    <value>w_cbMapGroupsByName</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapGroupsByName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbMapAudiences.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 19</value>
+  </data>
+  <data name="w_cbChangeProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_cbMapAudiences.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_plWebServiceOnly.Name" xml:space="preserve">
+    <value>w_plWebServiceOnly</value>
+  </data>
+  <data name="&gt;&gt;w_plWebServiceOnly.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpAllowDBWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbAllowDBWrite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbMapGroupsByName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_btnEditColumnMappings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_plBelowListScope.Name" xml:space="preserve">
+    <value>w_plBelowListScope</value>
+  </data>
+  <data name="&gt;&gt;w_plBelowListScope.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeProperties.Parent" xml:space="preserve">
+    <value>w_plAboveItemScope</value>
+  </data>
+  <data name="w_tbMissingUsers.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemScope.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="w_helpMissingUsers.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_helpMissingUsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbAllowDBWrite.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_cbOverwriteGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 147</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCMappingOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_btnEditGlobalMappings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 23</value>
+  </data>
+  <data name="w_btnEditGlobalMappings.Text" xml:space="preserve">
+    <value>Edit Global Mappings...</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapAudiences.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapAudiences.Name" xml:space="preserve">
+    <value>w_cbMapAudiences</value>
+  </data>
+  <data name="w_cbMapGroupsByName.Properties.Caption" xml:space="preserve">
+    <value>Map groups by name</value>
+  </data>
+  <data name="w_btnEditColumnMappings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 1</value>
+  </data>
+  <data name="&gt;&gt;w_helpAllowDBWrite.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_helpEditGlobalMappings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 217</value>
+  </data>
+  <data name="w_plMissingUsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="w_plSite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="w_cbMapGroupsByName.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapWebTemplates.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_plMissingUsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="w_cbChangeProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbMissingUsers.Name" xml:space="preserve">
+    <value>w_cbMissingUsers</value>
+  </data>
+  <data name="&gt;&gt;w_cbMissingUsers.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditTemplateMappings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbAllowDBWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 193</value>
+  </data>
+  <data name="w_tbMissingUsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeProperties.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_btnEditRenameAll.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_btnEditRenameAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 1</value>
+  </data>
+  <data name="&gt;&gt;w_plAboveItemScope.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpMissingUsers.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_helpEditGlobalMappings.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpEditGlobalMappings.Name" xml:space="preserve">
+    <value>w_helpEditGlobalMappings</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapWebTemplates.Parent" xml:space="preserve">
+    <value>w_plSite</value>
+  </data>
+  <data name="w_plSite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditTemplateMappings.Parent" xml:space="preserve">
+    <value>w_plSite</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.Name" xml:space="preserve">
+    <value>w_cbMapColumns</value>
+  </data>
+  <data name="w_cbAllowDBWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 19</value>
+  </data>
+  <data name="w_plBelowListScope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapAudiences.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapWebTemplates.Name" xml:space="preserve">
+    <value>w_cbMapWebTemplates</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapWebTemplates.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapAudiences.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpEditGlobalMappings.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="w_cbAutomapUserMetadata.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_plWebServiceOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_btnEditGlobalMappings.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+</root>

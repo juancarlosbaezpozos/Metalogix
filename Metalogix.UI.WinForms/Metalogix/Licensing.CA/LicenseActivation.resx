@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 188</value>
+  </data>
+  <data name="w_lblError.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 197</value>
+  </data>
+  <data name="&gt;&gt;w_lblMetalogixProduct.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblMetalogixProduct.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_lblNote.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_lblMetalogixProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 36</value>
+  </data>
+  <data name="w_tbLicenseKeyShort.MaxLength" type="System.Int32, mscorlib">
+    <value>1024</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAAAAEAIACoEAAAJgAAABAQAAABACAAaAQAAM4QAAAoAAAAIAAAAEAAAAABACAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAALW8wP+QlZj/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/32C
+        hP99goT/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/5CV
+        mP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//j5+f/4+fn/+Pn5//j5+f/4+Pj/+Pj4//f4
+        +P/3+Pj/9/j4//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b39//29/f/9vf3//b39//19vb/9fb2//X2
+        9v/19vb/fYKE/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADW1tb/+fn5/+Pj4/+MjIz/1NXV//j5
+        +f/4+Pj/+Pj4//f4+P/3+Pj/9/j4//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b39//29/f/9vf3//b3
+        9//29vb/9fb2//X29v99goT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/5+fn/4eHh/4aG
+        hv98fHz/5+jo//j5+f/4+fn/+Pj4//f4+P/3+Pj/9/j4//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b3
+        9//29/f/9vf3//b39//29vb/9fb2/32ChP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//n6
+        +v/5+vr/ubm5/3p6ev9tbW3/cXFx/2tra/9paWn/Z2dn/2RkZP9gYGD/XV1d/1hYWP9VVVX/UVFR/0xM
+        TP9ISEj/Q0ND/0RERP/29/f/9vf3//b39//29/f/fYKE/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADW1tb/+fr6//T19f/09fX/s7Oz/3Z2dv+srKz/cnJy/4eHh/+fn5//9fX1/8DAwP/j5OT/19jY//f4
+        +P/3+Pj/9/j4//f39//29/f/9vf3//b39//29/f/9vf3//b39/99goT/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAANbW1v/6+vr/hISE/4+Pj//S09P/h4eH/6enp/98fHz/dHR0/3l6ev9/f3//k5OT/4OD
+        g/+Li4v/19jY//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b39//29/f/9vf3/32ChP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA1tbW//r6+v/6+vr/zMzM/4qLi/97e3v/x8fH//n5+f/Oz8//np6e/3R0
+        dP/j5OT/6+vr/39/f/85ODf/goOF/8nKyv/3+Pj/9/f3//f39//29/f/9vf3//b39//29/f/fYKE/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADW1tb/+vv7//r6+v/6+vr/8vLy/5CQkP+Dg4P/7/Dw//n5
+        +f/5+fn/+Pn5//j5+f/4+fn/6+zs/46PkP9vlbr/X3yZ/4eKjv/3+Pj/9/j4//f39//29/f/9vf3//b3
+        9/99goT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/6+/v/+vv7//r6+v/6+vr/zMzM/3+A
+        gP/Gx8f/+fr6//n5+f/5+fn/+fn5//j5+f/4+fn/6err/3aVtP+OyP//aZfI/3CMof/R1tj/9/j4//f3
+        9//39/f/9vf3/32ChP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//v7+//6+/v/+vv7//r6
+        +v/r6+v/g4OD/6ipqf/5+vr/+fn5//n5+f/5+fn/+Pn5//j5+f/4+fn/uLu+/36w3f+b0f//g7ry/12E
+        q//R1tj/9/j4//f4+P/39/f/fYKE/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADW1tb/+/v7//v7
+        +//6+/v/+vv7//r7+/+vr6//w8PD//r6+v/5+vr/+fr6//n6+v/5+fn/+fn5//j5+f/4+fn/fabB/3Sx
+        2v+P4f7/aNX1/zRqjP/R1tj/9/j4//f4+P99goT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW
+        1v/7+/v/+/v7//v7+//7+/v/+vv7//r6+v/6+vr/+vr6//n6+v/5+vr/+fr6//n5+f/5+fn/+Pn5//j5
+        +f/19vb/b5O5/2Gw1/+M6///btj5/zRqjP/R1tj/9/j4/32ChP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA1tbW//v8/P/7+/v/+/v7//v7+//6+/v/+vv7//r6+v/6+vr/+vr6//n6+v/5+vr/+fr6//n5
+        +f/5+fn/+Pn5//j5+f/19vb/Rnuj/2q33v+R7P//edz1/zRqjP/R1tj/fYKE/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADW1tb/+/z8//v8/P/7+/v/+/v7/7agjf+3nYb/uJt//7qXd/+7k2//vJFo/7yO
+        Y/+/iln/wIZP/8GDSv/CgUH/xH03/8V4Lf/BciL/SIKn/2+94/+i9v//f9/4/zRqjP9+hon/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/8/Pz//Pz8//v8/P/7/Pz/+/v7//v7+//6+/v/+vv7//r7
+        +//6+vr/+vr6//r6+v/5+vr/+fr6//n6+v/5+fn/+fn5//j5+f/19vb/To+3/3zI7P+o9f//huD2/zRq
+        jP+fqa3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//z8/P/8/Pz//Pz8//v8/P/7+/v/+/v7//v7
+        +//7+/v/+vv7//r7+//6+vr/+vr6//r6+v/5+vr/+fr6//n6+v/5+fn/+fn5//j5+f/09fb/U5W8/4LO
+        7v+v+P//ieL1/zRqjP+xur//AAAAAAAAAAAAAAAAAAAAAAAAAADW1tb//Pz8//z8/P/8/Pz//Pz8/7ag
+        jf+3nYb/uJt//7qXd/+7k2//vJFo/7yOY/+/iln/wIZP/8GDSv/CgUH/xH03/8V4Lf/GdCL/yHYi//j5
+        +f/29/f/WJ/G/4fV8/++/Pz/pLK5/2eFaP+xur//AAAAAAAAAAAAAAAAAAAAANbW1v/8/f3//Pz8//z8
+        /P/8/Pz//Pz8//v8/P/7+/v/+/v7//v7+//7+/v/+vv7//r7+//6+vr/+vr6//r6+v/5+vr/+fr6//n6
+        +v/5+fn/+fn5//n5+f/09fX/YKnS/6Syuf9EdDH/gZWB/6yurv+xur//AAAAAAAAAAAAAAAA1tbW//39
+        /f/8/f3//Pz8//z8/P/8/Pz//Pz8//v8/P/7/Pz/+/v7//v7+//7+/v/+vv7//r7+//6+/v/+vr6//r6
+        +v/6+vr/+fr6//n6+v/5+vr/+fn5//n5+f/z8/T/Z4Vo/4+li//q6er/mZnV/2Jkrv+rsrX/AAAAAAAA
+        AADW1tb//f39//39/f/8/f3//Pz8/7agjf+3nYb/uJt//7qXd/+7k2//vJFo/7yOY/+/iln/wIZP/8GD
+        Sv/CgUH/xH03/8V4Lf/GdCL/yHYi//n6+v/5+vr/+fr6//n5+f96f4L/vcHB/4mK2f9tbt3/Skqs/5ab
+        wv8AAAAAAAAAANbW1v/9/f3//f39//39/f/8/f3//Pz8//z8/P/8/Pz//Pz8//z8/P/7/Pz/+/z8//v7
+        +//7+/v/+/v7//v7+//6+/v/+vv7//r6+v/6+vr/+vr6//n6+v/5+vr/+fr6/32ChP8AAAAAam21/1lb
+        s/+Jjbv/AAAAAAAAAAAAAAAA1tbW//39/f/9/f3//f39//39/f/8/f3//P39//z8/P/8/Pz//Pz8//z8
+        /P/8/Pz/+/z8//v7+//7+/v/+/v7//v7+//6+/v/+vv7//r6+v/6+vr/+vr6//n6+v/U1NT/fYKE/wAA
+        AAAAAAAAp63L/wAAAAAAAAAAAAAAAAAAAADW1tb//f39//39/f/9/f3//f39/7ypmf+3nof/uZl7/7uT
+        bv+8j2T/v4lW/8GDSv/Dfzz/xXgr/8p8Lf/7+/v/+/v7//v7+//6+/v/+vv7/9bW1v/Ozs7/v7+//7i4
+        uP+Fio3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/9/f3//f39//39/f/9/f3//f39//39
+        /f/9/f3//P39//z8/P/8/Pz//Pz8//z8/P/8/Pz/+/z8//v8/P/7+/v/+/v7/7Kysv+rq6v/qamp/6mp
+        qf+vr6//uLi4/52jpv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//7+/v/9/f3//f39//39
+        /f/9/f3//f39//39/f/9/f3//P39//z8/P/8/Pz//Pz8//z8/P/8/Pz/+/z8//v8/P/7+/v/xsbG//X1
+        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
+</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MetalogixProduct Activation</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyLong.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbNoInternetConnection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_cbNoInternetConnection.Text" xml:space="preserve">
+    <value>Activate me offline. Use this option if:</value>
+  </data>
+  <data name="w_cbNoInternetConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 19</value>
+  </data>
+  <data name="w_lblMetalogixProduct.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_tbLicenseKeyShort.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>376, 235</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyLong.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_cbNoInternetConnection.Name" xml:space="preserve">
+    <value>w_cbNoInternetConnection</value>
+  </data>
+  <data name="&gt;&gt;w_cbNoInternetConnection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_btnAddKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_lblInstructions.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_lblInstructions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 17</value>
+  </data>
+  <data name="w_lblInstructions.Text" xml:space="preserve">
+    <value>Enter license key to activate your copy of:</value>
+  </data>
+  <data name="w_lblOfflineInstructions.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_lblInstructions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_lblInstructions.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_tbLicenseKeyShort.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="btnCancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblLicenseKey.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblLicenseKey.Text" xml:space="preserve">
+    <value>License Key: (ex. ABCDEF0123456789ABCDEF0123456789)</value>
+  </data>
+  <data name="lblLicenseKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 19</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyShort.Name" xml:space="preserve">
+    <value>w_tbLicenseKeyShort</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyShort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.Name" xml:space="preserve">
+    <value>lblLicenseKey</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lblOfflineInstructions.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_lblOfflineInstructions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 26</value>
+  </data>
+  <data name="w_lblOfflineInstructions.Text" xml:space="preserve">
+    <value>- You have a long format license key from Metalogix
+- You do not have Internet connectivity</value>
+  </data>
+  <data name="&gt;&gt;w_lblInstructions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblOfflineInstructions.Name" xml:space="preserve">
+    <value>w_lblOfflineInstructions</value>
+  </data>
+  <data name="&gt;&gt;w_lblOfflineInstructions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_cbNoInternetConnection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 132</value>
+  </data>
+  <data name="&gt;&gt;w_lblOfflineInstructions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_lblError.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="w_cbNoInternetConnection.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="w_lblNote.Text" xml:space="preserve">
+    <value>Note: Activation requires Internet connectivity.</value>
+  </data>
+  <data name="w_lblNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 20</value>
+  </data>
+  <data name="w_lblNote.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_cbNoInternetConnection.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;w_lblError.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblError.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblInstructions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 9</value>
+  </data>
+  <data name="&gt;&gt;w_lblOfflineInstructions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbNoInternetConnection.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_tbLicenseKeyShort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 21</value>
+  </data>
+  <data name="w_tbLicenseKeyLong.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyShort.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="w_btnAddKey.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblMetalogixProduct.Name" xml:space="preserve">
+    <value>w_lblMetalogixProduct</value>
+  </data>
+  <data name="&gt;&gt;w_lblMetalogixProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblLicenseKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 63</value>
+  </data>
+  <data name="w_tbLicenseKeyLong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="w_tbLicenseKeyShort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 85</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyShort.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_tbLicenseKeyLong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 184</value>
+  </data>
+  <data name="&gt;&gt;w_lblNote.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbNoInternetConnection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblOfflineInstructions.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblError.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_lblNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblNote.Name" xml:space="preserve">
+    <value>w_lblNote</value>
+  </data>
+  <data name="&gt;&gt;w_lblNote.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_cbNoInternetConnection.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LicenseActivation</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>382, 260</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="w_btnAddKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 188</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyLong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseKeyLong.Name" xml:space="preserve">
+    <value>w_tbLicenseKeyLong</value>
+  </data>
+  <data name="lblLicenseKey.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>382, 260</value>
+  </data>
+  <data name="w_cbNoInternetConnection.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="w_lblMetalogixProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="w_lblMetalogixProduct.Text" xml:space="preserve">
+    <value>MetalogixProduct</value>
+  </data>
+  <data name="w_btnAddKey.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddKey.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_tbLicenseKeyLong.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddKey.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblMetalogixProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="w_lblError.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 18</value>
+  </data>
+  <data name="w_lblError.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_lblOfflineInstructions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 154</value>
+  </data>
+  <data name="&gt;&gt;w_lblError.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblError.Name" xml:space="preserve">
+    <value>w_lblError</value>
+  </data>
+  <data name="&gt;&gt;w_lblInstructions.Name" xml:space="preserve">
+    <value>w_lblInstructions</value>
+  </data>
+  <data name="&gt;&gt;w_lblInstructions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddKey.Name" xml:space="preserve">
+    <value>w_btnAddKey</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_tbLicenseKeyLong.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_btnAddKey.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_btnAddKey.Text" xml:space="preserve">
+    <value>Enter Key</value>
+  </data>
+  <data name="w_btnAddKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 24</value>
+  </data>
+  <data name="w_lblNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 109</value>
+  </data>
+</root>

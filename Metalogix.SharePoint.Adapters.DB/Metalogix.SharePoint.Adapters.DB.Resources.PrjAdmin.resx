@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="managepwa_statusfieldlabel" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="admin_backup_reportingdb_description" xml:space="preserve">
+    <value>The Reporting database, Staging tables for generating reports and online analytical processing (OLAP) cubes.</value>
+  </data>
+  <data name="createpwa_validate_invalid_sqlserver" xml:space="preserve">
+    <value>The server name specified is not valid. Enter a valid server name and try again.</value>
+  </data>
+  <data name="createpwa_validate_invalid_dbname" xml:space="preserve">
+    <value>The database name is invalid. Each database instance name must be a unique, valid SQL database name.</value>
+  </data>
+  <data name="timerjob_adminsync_title" xml:space="preserve">
+    <value>Project Server Synchronizing Job for '{0}'</value>
+  </data>
+  <data name="createpwa_nopwapath" xml:space="preserve">
+    <value>The Project Web Access path cannot be empty. Please enter a Project Web Access path.</value>
+  </data>
+  <data name="createpwa_noadmin" xml:space="preserve">
+    <value>You must specify an administrator account.</value>
+  </data>
+  <data name="createpwa_chk_hostheaderissitename" xml:space="preserve">
+    <value>Use Project Web Access path as host header</value>
+  </data>
+  <data name="multipages_error_site_notfound" xml:space="preserve">
+    <value>Site not found.</value>
+  </data>
+  <data name="managepwa_CreateButtonTitle" xml:space="preserve">
+    <value>Create Project Web Access Site</value>
+  </data>
+  <data name="admin_backup_publisheddb_description" xml:space="preserve">
+    <value>The Published database, Published projects visible in Project Web Access.</value>
+  </data>
+  <data name="multipages_error_no_webapplications" xml:space="preserve">
+    <value>No web applications available to create a Project Web Access site in.</value>
+  </data>
+  <data name="createpwa_PageCreateTitle" xml:space="preserve">
+    <value>Create Project Web Access Site</value>
+  </data>
+  <data name="createpwa_PageViewTitle" xml:space="preserve">
+    <value>View Project Web Access Site</value>
+  </data>
+  <data name="managepwa_Status_InProgressProvisioningDbs" xml:space="preserve">
+    <value>Creating Databases</value>
+  </data>
+  <data name="createpwa_db_chk_repdbserver" xml:space="preserve">
+    <value>Use the primary database server</value>
+  </data>
+  <data name="createpwa_adminacct_header" xml:space="preserve">
+    <value>Administrator Account</value>
+  </data>
+  <data name="multipages_deletejobbutton_text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="createpwa_error_invalid_task" xml:space="preserve">
+    <value>Invalid task.  Return to the Manage Project Web Access page and try the operation again.</value>
+  </data>
+  <data name="multipages_editbutton_text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="multipages_error_no_sitecollection" xml:space="preserve">
+    <value>Unable to retrieve site collection.</value>
+  </data>
+  <data name="admin_task_list_description" xml:space="preserve">
+    <value>Description:\r\nAfter configuring the farms Core Services, you can install Microsoft Office Project Web Access. First, you must specify the following information:\r\n1)	The Project Web Access site location: Select the host SharePoint Web application and then type the URL to Project Web Access.\r\n2)	The administrator account: Type the account information of the person who will be added as the first server administrator.\r\n3)	Primary database settings: Type the name of the server on which the primary Project Server databases will be created, and then type the names of those databases.\r\n4)	Secondary database settings: Type the name of the server on which the reporting database will be created, and then type the name of that database.\r\nAfter you submit this information, Project Web Access can be accessed.</value>
+  </data>
+  <data name="createpwa_db_lbl_pubdbname" xml:space="preserve">
+    <value>Published database name:</value>
+  </data>
+  <data name="createpwa_validate_duplicate_sitename" xml:space="preserve">
+    <value>The Project Web Access site specified can not be created because a site by that name already exists. Enter another Project Web Access path and try again.</value>
+  </data>
+  <data name="feature_title" xml:space="preserve">
+    <value>Project Web Access Sites</value>
+  </data>
+  <data name="multipages_error_projectpsisharedapplication_offline" xml:space="preserve">
+    <value>The Project PSI Shared Application is stopped. Start the Project PSI Shared Application service.</value>
+  </data>
+  <data name="feature_group_title" xml:space="preserve">
+    <value>Project Server</value>
+  </data>
+  <data name="managepwa_PageTitle" xml:space="preserve">
+    <value>Manage Project Web Access Sites</value>
+  </data>
+  <data name="managepwa_Status_Provisioned" xml:space="preserve">
+    <value>Provisioned</value>
+  </data>
+  <data name="createpwa_db_primaryheader" xml:space="preserve">
+    <value>Primary Database</value>
+  </data>
+  <data name="event_service_description" xml:space="preserve">
+    <value>Microsoft Office Project Server Events Service executes events triggered by changes to entities on the ProjectServer.</value>
+  </data>
+  <data name="createpwa_error_invalid_id" xml:space="preserve">
+    <value>Invalid id.  Rreturn to the Manage Project Web Access page and try the operation again.</value>
+  </data>
+  <data name="multipages_editmenuitem" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="multipages_error_no_servercontext" xml:space="preserve">
+    <value>Unable to get server context.  Return to the Manage Project Web Access page and try the operation again.</value>
+  </data>
+  <data name="createpwa_PageDeleteJobDescription" xml:space="preserve">
+    <value>Use this page to delete a Project Web Access site update or creation job.</value>
+  </data>
+  <data name="multipages_savebutton_text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="createpwa_db_lbl_verdbname" xml:space="preserve">
+    <value>Archive database name:</value>
+  </data>
+  <data name="createpwa_PageDeleteDescription" xml:space="preserve">
+    <value>Use this page to delete a Project Web Access installation.</value>
+  </data>
+  <data name="createpwa_PageEditTitle" xml:space="preserve">
+    <value>Edit Project Web Access Site</value>
+  </data>
+  <data name="createpwa_db_reportheader" xml:space="preserve">
+    <value>Reporting Database</value>
+  </data>
+  <data name="createpwa_OperationInProgressDescription" xml:space="preserve">
+    <value>Please wait while your changes are processed.</value>
+  </data>
+  <data name="multipages_direction_dir_value" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="managepwa_menulabel" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="managepwa_Status_InProgressCreatingWebSite" xml:space="preserve">
+    <value>Creating Project Web Access Site</value>
+  </data>
+  <data name="managepwa_RefreshButtonTitle" xml:space="preserve">
+    <value>Refresh Status</value>
+  </data>
+  <data name="createpwa_pwasite_desc3" xml:space="preserve">
+    <value>To create a Project Web Access instance using WSS host header mode, select &lt;b&gt;Use Project Web Access path as host header&lt;/b&gt;, and enter the full URL that will be used to access Project Server (for example, http://www.contoso.com).</value>
+  </data>
+  <data name="createpwa_pwasite_desc2" xml:space="preserve">
+    <value>This path is relative to the SharePoint Web Application chosen to host Project Web Access. For example, if your Web application is http://site_name, and you want Project Web Access to be at http://site_name/projectserver, then the URL path would be projectserver.</value>
+  </data>
+  <data name="createpwa_pwasite_desc1" xml:space="preserve">
+    <value>Choose the Web application and URL for the Project Web Access site.</value>
+  </data>
+  <data name="application_service_description" xml:space="preserve">
+    <value>Project Server Services enable this server to support requests for Project Server functionality</value>
+  </data>
+  <data name="multipages_direction_right_align_value" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="multipages_error_ssp_offline" xml:space="preserve">
+    <value>The Shared Service Provider is stopped. Start the Shared Service Provider service.</value>
+  </data>
+  <data name="createpwa_PageBreadcrumbTitle" xml:space="preserve">
+    <value>Project Web Access Site Properties</value>
+  </data>
+  <data name="multipages_error_no_ssp" xml:space="preserve">
+    <value>Invalid Shared Resource Provider.  Return to the Manage Project Web Access page and try the operation again.</value>
+  </data>
+  <data name="managepwa_Status_InProgressPostProvisionSetup" xml:space="preserve">
+    <value>Configuring the new Project Web Access Site</value>
+  </data>
+  <data name="application_service_name" xml:space="preserve">
+    <value>Project Server Application Services</value>
+  </data>
+  <data name="createpwa_error_wrong_ssp" xml:space="preserve">
+    <value>You cannot edit this site through this Shared Service Provider, please access it through the parent Shared Service Provider.</value>
+  </data>
+  <data name="multipages_cancelbutton_text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="managepwa_PageDescription" xml:space="preserve">
+    <value>This page allows you to manage all of your Project Web Access virtual directories within this farm.</value>
+  </data>
+  <data name="multipages_error_projectapplicationservice_offline" xml:space="preserve">
+    <value>The Project Application Service doesn't exist or is stopped. Start the Project Application Service.</value>
+  </data>
+  <data name="createpwa_nosqlsrv" xml:space="preserve">
+    <value>You must specify a SQL server.</value>
+  </data>
+  <data name="createpwa_pwasite_header" xml:space="preserve">
+    <value>Project Web Access Site Location</value>
+  </data>
+  <data name="managepwa_onlinefieldlabel" xml:space="preserve">
+    <value>Provisioned</value>
+  </data>
+  <data name="createpwa_PageEditDescription" xml:space="preserve">
+    <value>Use this page to edit a Project Web Access installation.</value>
+  </data>
+  <data name="admin_backup_versionsdb_description" xml:space="preserve">
+    <value>The Archive database, Older versions of projects plans.</value>
+  </data>
+  <data name="createpwa_db_lbl_wrkdbname" xml:space="preserve">
+    <value>Draft database name:</value>
+  </data>
+  <data name="createpwa_error_no_projectappservice" xml:space="preserve">
+    <value>You can not create an instance of Project Web Access when the 'Microsoft Office Project Server Application Service' is stopped.  Start 'Microsoft Office Project Server Application Service' in the Services on Server page in Central Administration.</value>
+  </data>
+  <data name="createpwa_pwasite_lbl1" xml:space="preserve">
+    <value>SharePoint Web Application to host Project Web Access:</value>
+  </data>
+  <data name="createpwa_pwasite_lbl2" xml:space="preserve">
+    <value>Project Web Access path:</value>
+  </data>
+  <data name="multipages_retrybutton_text" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="projectapplicationservice_description" xml:space="preserve">
+    <value>Project Application Service</value>
+  </data>
+  <data name="createpwa_validate_database_usedonpage" xml:space="preserve">
+    <value>The database specified is already used on this page. Enter a different server or database name and try again.</value>
+  </data>
+  <data name="createpwa_db_lbl_repdbname" xml:space="preserve">
+    <value>Reporting database name:</value>
+  </data>
+  <data name="multipages_owscss_url" xml:space="preserve">
+    <value>/_layouts/1033/styles/ows.css</value>
+  </data>
+  <data name="createpwa_PageCreateDescription" xml:space="preserve">
+    <value>Use this page to create a new Project Web Access installation.</value>
+  </data>
+  <data name="createpwa_pwasite_lbl_langselect" xml:space="preserve">
+    <value>Select a language:</value>
+  </data>
+  <data name="admin_task_list_title" xml:space="preserve">
+    <value>Create Project Web Access sites for {0}</value>
+  </data>
+  <data name="wssadmin_feature_description" xml:space="preserve">
+    <value>Provides administration features for Microsoft Office Project Server 2007</value>
+  </data>
+  <data name="multipages_error_no_projectsite" xml:space="preserve">
+    <value>The Project Site specified does not exist.  Return to the Manage Project Web Access page and reselect a site.</value>
+  </data>
+  <data name="createpwa_PageViewDescription" xml:space="preserve">
+    <value>Use this page to view a Project Web Access installation parameters.</value>
+  </data>
+  <data name="multipages_deletejobmenuitem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="timerjob_presync_title" xml:space="preserve">
+    <value>Project Server Pre-Synchronizing Job for '{0}'</value>
+  </data>
+  <data name="createpwa_db_reportdesc" xml:space="preserve">
+    <value>Specify the Reporting database information for this Project Server installation.</value>
+  </data>
+  <data name="createpwa_nodbname" xml:space="preserve">
+    <value>You must specify a database name.</value>
+  </data>
+  <data name="createpwa_OperationInProgressTitle" xml:space="preserve">
+    <value>Operation in Progress</value>
+  </data>
+  <data name="managepwa_Status_Failed" xml:space="preserve">
+    <value>Failed - see the Event Log</value>
+  </data>
+  <data name="createpwa_db_lbl_repdbserver" xml:space="preserve">
+    <value>Reporting database server:</value>
+  </data>
+  <data name="createpwa_validate_database_usedbysite" xml:space="preserve">
+    <value>The database specified is already used by another project server. Enter a different server or database name and try again.</value>
+  </data>
+  <data name="multipages_deletemenuitem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="createpwa_PageDeleteTitle" xml:space="preserve">
+    <value>Delete Project Web Access Site</value>
+  </data>
+  <data name="createpwa_PageRetryTitle" xml:space="preserve">
+    <value>Update Project Web Access Site</value>
+  </data>
+  <data name="admin_backup_projectsite_description" xml:space="preserve">
+    <value>Project Site.</value>
+  </data>
+  <data name="createpwa_validate_invalid_sitename" xml:space="preserve">
+    <value>The Project Web Access Site path is invalid. Correct path and try again.</value>
+  </data>
+  <data name="createpwa_adminacct_lbl2" xml:space="preserve">
+    <value>Example: domain\username</value>
+  </data>
+  <data name="createpwa_adminacct_lbl1" xml:space="preserve">
+    <value>Administrator Account</value>
+  </data>
+  <data name="createpwa_adminacct_desc" xml:space="preserve">
+    <value>Specify the user account that will be given administrative rights to this Project Server instance.</value>
+  </data>
+  <data name="multipages_error_projectapplicationserviceinstance_offline" xml:space="preserve">
+    <value>All Project Application Service instances are stopped. Start at least one Project Application Service instance.</value>
+  </data>
+  <data name="multipages_direction_left_align_value" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="admin_task_list_action_title" xml:space="preserve">
+    <value>Create Project Web Access Instances</value>
+  </data>
+  <data name="admin_backup_workingdb_description" xml:space="preserve">
+    <value>The Draft database. Unpublished projects from Project Professional 2007.</value>
+  </data>
+  <data name="managepwa_Status_NotStarted" xml:space="preserve">
+    <value>Waiting for Resources</value>
+  </data>
+  <data name="createpwa_validate_invalid_admin_name" xml:space="preserve">
+    <value>The administrator account specified is not valid. Specify a valid account and try again.</value>
+  </data>
+  <data name="multipages_error_provset_notfound" xml:space="preserve">
+    <value>Site update not found.</value>
+  </data>
+  <data name="createpwa_db_checkbox" xml:space="preserve">
+    <value>Use this server for all stores</value>
+  </data>
+  <data name="multipages_retrymenuitem" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="admin_backup_projectpsisharedapp_description" xml:space="preserve">
+    <value>Project Server Shared Service</value>
+  </data>
+  <data name="createpwa_db_primarydesc" xml:space="preserve">
+    <value>Specify the database information for this Project Server installation. Project Server creates 4 databases for each application instance: Published, Draft, Archive, and Reporting. These databases may exist in the same SQL instance, or the Reporting store may be separated for performance.</value>
+  </data>
+  <data name="wssadmin_feature_title" xml:space="preserve">
+    <value>Microsoft Office Project Server 2007 Administration</value>
+  </data>
+  <data name="createpwa_PageDeleteJobTitle" xml:space="preserve">
+    <value>Delete Project Web Access Site</value>
+  </data>
+  <data name="multipages_viewmenuitem" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="multipages_deletebutton_text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="createpwa_db_lbl_maindbserver" xml:space="preserve">
+    <value>Primary database server:</value>
+  </data>
+  <data name="createpwa_PageRetryDescription" xml:space="preserve">
+    <value>Use this page to retry a Project Web Access update or creation job.</value>
+  </data>
+  <data name="queue_service_description" xml:space="preserve">
+    <value>Microsoft Project Server Queuing Service executes project related jobs asynchronously. Example queue jobs: Save project, publish project, submit timesheet.</value>
+  </data>
+  <data name="createpwa_validate_invalid_siteurl" xml:space="preserve">
+    <value>The Project Web Access Site url is invalid. Correct url and try again.</value>
+  </data>
+</root>

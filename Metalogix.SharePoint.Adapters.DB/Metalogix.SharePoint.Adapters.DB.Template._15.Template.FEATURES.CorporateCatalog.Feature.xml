@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature 
+  xmlns="http://schemas.microsoft.com/sharepoint/" 
+  Title="$Resources:core,Marketplace_CorporateCatalogFeatureTitle;"
+  Description="$Resources:core,Marketplace_CorporateCatalogFeatureDescription;" 
+  Id="0ac11793-9c2f-4cac-8f22-33f93fac18f2"
+  Hidden="TRUE"
+  Version="15.0.3.0"
+  Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="CorporateCatalogCustomActions.xml" />
+    <ElementManifest Location="CorporateCatalogFields.xml" />
+    <ElementManifest Location="CorporateCatalogTemplate.xml" />
+    <ElementManifest Location="CorporateCatalogInstance.xml" />
+    <ElementManifest Location="WebEventReceiver.xml" />
+    <ElementFile Location="CorporateCatalog\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions 
+    ReceiverAssembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+    ReceiverClass="Microsoft.SharePoint.Marketplace.CorporateCuratedGallery.SPCorporateCatalogFeatureReceiver">
+    <VersionRange EndVersion="15.0.0.4">
+      <CustomUpgradeAction Name="EnsureFieldsAndViews" />
+        <ApplyElementManifests>
+            <ElementManifest Location="CorporateCatalogFields.xml" />
+        </ApplyElementManifests>
+    </VersionRange>
+    <VersionRange EndVersion="15.0.2.0">
+      <CustomUpgradeAction Name="EnsureDocIconAndLinkFilenameInViews" />
+    </VersionRange>
+    <VersionRange EndVersion="15.0.3.0">
+      <CustomUpgradeAction Name="UpdateAppSubtype" />
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

@@ -1,0 +1,8 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Module Name="ServerRenderTemplates" Url="_catalogs/masterpage/Display Templates/Server Style Sheets" Path="DisplayTemplates" RootWebOnly="TRUE">
+        <File Url="ServerRenderTemplate.xsl" Name="ServerRenderTemplate.xsl" Type="GhostableInLibrary">
+            <Property Name="Title" Value="ServerRenderTemplate" />
+            <Property Name="ContentType" Value="$Resources:Microsoft.Office.Server.Search,contenttype_designfile_name;" />
+        </File>
+    </Module>
+</Elements>

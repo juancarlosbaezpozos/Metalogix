@@ -1,0 +1,117 @@
+<!-- _lcid="1033" _version="15.0.4128" _dal="1" -->
+<!-- _LocalBinding -->
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- SEO Properties -->
+        <!-- SEO Properties -->
+    <Field ID="{FF92F929-D18B-46D4-9879-521378C689EF}" 
+            Name="SeoBrowserTitle" 
+            StaticName="SeoBrowserTitle" 
+            SourceID="http://schemas.microsoft.com/sharepoint/v3" 
+            Group="$Resources:cmscore,group_publishingcolumns;" 
+            Description="$Resources:cmscore,column_seo_browsertitledescription;"
+            DisplayName="$Resources:cmscore,column_seo_browsertitle;"
+            Type="Text"
+            DisplaceOnUpgrade="TRUE" 
+            Required="FALSE" 
+            ShowInNewForm="FALSE"
+            ShowInFileDlg="FALSE"
+            ShowInEditForm="FALSE"
+            Sealed="TRUE"></Field>
+    <Field ID="{D83897E5-2430-4DF7-8E5A-9BC06C664992}" 
+            Name="SeoMetaDescription" 
+            StaticName="SeoMetaDescription" 
+            SourceID="http://schemas.microsoft.com/sharepoint/v3" 
+            Group="$Resources:cmscore,group_publishingcolumns;" 
+            Description="$Resources:cmscore,column_seo_metadescriptiondescription;"
+            DisplayName="$Resources:cmscore,column_seo_metadescription;"
+            Type="Text" 
+            DisplaceOnUpgrade="TRUE"
+            Required="FALSE" 
+            ShowInNewForm="FALSE"
+            ShowInFileDlg="FALSE"
+            ShowInEditForm="FALSE"
+            Sealed="TRUE"></Field>
+    <Field ID="{325C00DD-FD91-468B-81CF-5BB9951ABBA1}" 
+            Name="RobotsNoIndex" 
+            StaticName="SeoRobotsNoIndex" 
+            SourceID="http://schemas.microsoft.com/sharepoint/v3" 
+            Group="$Resources:cmscore,group_publishingcolumns;" 
+            Description="$Resources:cmscore,column_seo_robotsnoindexdescription;"
+            DisplayName="$Resources:cmscore,column_seo_robotsnoindex;"
+            Type="Boolean" 
+            DisplaceOnUpgrade="TRUE"
+            Required="FALSE" 
+            ShowInNewForm="FALSE"
+            ShowInFileDlg="FALSE"
+            ShowInEditForm="FALSE"
+            Sealed="TRUE">
+    </Field>
+    <Field ID="{6482F111-9EDE-4ED7-9426-D612007F6D19}" 
+            Name="SitemapChangeFrequency" 
+            StaticName="SeoSitemapChangeFrequency" 
+            SourceID="http://schemas.microsoft.com/sharepoint/v3" 
+            Group="$Resources:cmscore,group_publishingcolumns;" 
+            Description="$Resources:cmscore,column_seo_sitemapchangefrequencydescription;"
+            DisplayName="$Resources:cmscore,column_seo_sitemapchangefrequency;"
+            Type="Choice" 
+            DisplaceOnUpgrade="TRUE"
+            Required="FALSE" 
+            ShowInNewForm="FALSE"
+            ShowInFileDlg="FALSE"
+            ShowInEditForm="FALSE"
+            Sealed="TRUE">
+        <CHOICES>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyDoNotUse;</CHOICE>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyAlways;</CHOICE>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyHourly;</CHOICE>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyDaily;</CHOICE>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyWeekly;</CHOICE>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyMonthly;</CHOICE>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyYearly;</CHOICE>
+            <CHOICE>$Resources:cmscore,SitemapChangeFrequencyNever;</CHOICE>
+        </CHOICES>
+        <MAPPINGS>
+            <MAPPING Value="0">$Resources:cmscore,SitemapChangeFrequencyDoNotUse;</MAPPING>
+            <MAPPING Value="1">$Resources:cmscore,SitemapChangeFrequencyAlways;</MAPPING>
+            <MAPPING Value="2">$Resources:cmscore,SitemapChangeFrequencyHourly;</MAPPING>
+            <MAPPING Value="3">$Resources:cmscore,SitemapChangeFrequencyDaily;</MAPPING>
+            <MAPPING Value="4">$Resources:cmscore,SitemapChangeFrequencyWeekly;</MAPPING>
+            <MAPPING Value="5">$Resources:cmscore,SitemapChangeFrequencyMonthly;</MAPPING>
+            <MAPPING Value="6">$Resources:cmscore,SitemapChangeFrequencyYearly;</MAPPING>
+            <MAPPING Value="7">$Resources:cmscore,SitemapChangeFrequencyNever;</MAPPING>
+        </MAPPINGS>
+        <Default>$Resources:cmscore,SitemapChangeFrequencyDoNotUse;</Default>
+    </Field>
+    <Field ID="{64E0011B-4C4B-4FBD-B1E1-0B87748AF008}" 
+            Name="SitemapPriority" 
+            StaticName="SeoSitemapPriority" 
+            SourceID="http://schemas.microsoft.com/sharepoint/v3" 
+            Group="$Resources:cmscore,group_publishingcolumns;" 
+            Description="$Resources:cmscore,column_seo_sitemapprioritydecsription;"
+            DisplayName="$Resources:cmscore,column_seo_sitemappriority;"
+            Type="Number"
+            Min="0"
+            Max="1"
+            Decimals="3"
+            DisplaceOnUpgrade="TRUE"
+            Required="FALSE" 
+            ShowInNewForm="FALSE"
+            ShowInFileDlg="FALSE"
+            ShowInEditForm="FALSE"
+            Sealed="TRUE"></Field>
+    <Field ID="{45AE2169-585C-440B-AA4C-1D5E981FBBE5}" 
+            Name="SeoKeywords" 
+            StaticName="SeoKeywords" 
+            SourceID="http://schemas.microsoft.com/sharepoint/v3" 
+            Group="$Resources:cmscore,group_publishingcolumns;" 
+            Description="$Resources:cmscore,column_seo_metakeywordstitle;"
+            DisplayName="$Resources:cmscore,column_seo_metakeywordstitle;"
+            Type="Text" 
+            DisplaceOnUpgrade="TRUE"
+            Required="FALSE" 
+            ShowInNewForm="FALSE"
+            ShowInFileDlg="FALSE"
+            ShowInEditForm="FALSE"
+            Sealed="TRUE"></Field>
+    <!-- END SEO Properties -->
+</Elements>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ListTemplate
+        Name="tasks"
+        Type="107"
+        BaseType="0"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="360"
+        DisplayName="$Resources:core,taskList;"
+        Description="$Resources:core,taskList_Desc;"
+        Image="/_layouts/images/ittask.png"/>
+</Elements>

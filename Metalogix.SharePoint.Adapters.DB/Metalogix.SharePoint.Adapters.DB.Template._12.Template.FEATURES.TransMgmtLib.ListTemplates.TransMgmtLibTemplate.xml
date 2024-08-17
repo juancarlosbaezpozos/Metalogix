@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ListTemplate
+        Name="TransMgmtLib"
+        Type="1300"
+        BaseType="1"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        DisplayName="$Resources:MultiLangDisplayName"
+        Description="$Resources:MultiLangDescription"
+        Image="/_layouts/images/itmldl.gif"
+        DocumentTemplate="101"
+        NewPage="NewTranslationManagement.aspx">
+    </ListTemplate>
+</Elements>

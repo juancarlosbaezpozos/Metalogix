@@ -1,0 +1,1518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="w_lblWebApp.Text" xml:space="preserve">
+    <value>Web Application:</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_lblWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="w_tbOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblLang.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_plQuotaOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_cmbExperienceVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_lblSecOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 37</value>
+  </data>
+  <data name="w_tbOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_gbMainProps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 159</value>
+  </data>
+  <data name="w_gbMainProps.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="w_cmbTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 20</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_tbURL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_rbSetQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 62</value>
+  </data>
+  <data name="w_lblMax.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lblLang.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_numStorageQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_numMax.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="w_cbSetSiteQuota.Properties.Caption" xml:space="preserve">
+    <value>Quota Settings</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckPrimaryAdmin.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="w_cbSetSiteQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_tbSecOwner.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Name" xml:space="preserve">
+    <value>w_lblTemplate</value>
+  </data>
+  <data name="w_lblResourceQuota.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_tbTitle.Parent" xml:space="preserve">
+    <value>w_gbMainProps</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Name" xml:space="preserve">
+    <value>w_cmbWebApp</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 545</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_cmbTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 131</value>
+  </data>
+  <data name="w_cmbContentDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_rbSetQuota.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="w_tbTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaTab.Name" xml:space="preserve">
+    <value>SiteQuotaTab</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaTab.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_gbSiteQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_lblStorageQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_tbTitle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_lblOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.Name" xml:space="preserve">
+    <value>w_lblOwner</value>
+  </data>
+  <data name="w_tbURL.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_tbURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 20</value>
+  </data>
+  <data name="w_numResourceQuota.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblMax.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="w_cmbSiteQuotaTemplates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 62</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_lblStorageQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 11</value>
+  </data>
+  <data name="w_tbOwner.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_numWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 37</value>
+  </data>
+  <data name="w_btnCheckPrimaryAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 8</value>
+  </data>
+  <data name="&gt;&gt;w_lblSiteTitle.Name" xml:space="preserve">
+    <value>w_lblSiteTitle</value>
+  </data>
+  <data name="&gt;&gt;w_lblSiteTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbDescription.Parent" xml:space="preserve">
+    <value>w_gbMainProps</value>
+  </data>
+  <data name="w_lblSiteTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_lblTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="w_lblTemplate.Text" xml:space="preserve">
+    <value>Template:</value>
+  </data>
+  <data name="w_numMax.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="w_gbMainProps.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_numMax.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.Parent" xml:space="preserve">
+    <value>w_plTenantQuotaOption</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_plQuotaOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 25</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetSiteQuota.Parent" xml:space="preserve">
+    <value>w_gbSiteQuota</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.Name" xml:space="preserve">
+    <value>w_lblSecOwner</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Content Database:</value>
+  </data>
+  <data name="w_lblLang.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="w_lblLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Mb</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="w_lbExperienceVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.Name" xml:space="preserve">
+    <value>w_cmbLang</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="w_lblSelWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 57</value>
+  </data>
+  <data name="&gt;&gt;w_lblURL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_lblDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Mb</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="w_gbSiteQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;TenantQuotaPage.Parent" xml:space="preserve">
+    <value>SiteQuotaTab</value>
+  </data>
+  <data name="groupBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="groupBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetSiteQuota.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_plExperienceVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 51</value>
+  </data>
+  <data name="w_numResourceQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 37</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_lblResourceQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="&gt;&gt;w_lblMax.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 36</value>
+  </data>
+  <data name="lblUnitMB.Text" xml:space="preserve">
+    <value>Mb</value>
+  </data>
+  <data name="lblUnitMB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Send warning e-mail when site storage reaches: </value>
+  </data>
+  <data name="w_cmbExperienceVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_cmbLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 80</value>
+  </data>
+  <data name="&gt;&gt;w_tbDescription.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.Name" xml:space="preserve">
+    <value>w_tbOwner</value>
+  </data>
+  <data name="lblUnitMB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_cmbSiteQuotaTemplates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.Name" xml:space="preserve">
+    <value>w_lblSelWebApp</value>
+  </data>
+  <data name="w_lblOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="w_lblOwner.Text" xml:space="preserve">
+    <value>Primary Administrator:</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 159</value>
+  </data>
+  <data name="w_btnCheckPrimaryAdmin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_numStorageQuota.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 95</value>
+  </data>
+  <data name="w_cmbWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="w_rbToIndividual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 0</value>
+  </data>
+  <data name="w_lblLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 59</value>
+  </data>
+  <data name="w_btnCheckSecondaryAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 34</value>
+  </data>
+  <data name="SiteQuotaTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 387</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplate.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 62</value>
+  </data>
+  <data name="SiteQuotaPage.Text" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="SiteQuotaPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 126</value>
+  </data>
+  <data name="&gt;&gt;w_numMax.Name" xml:space="preserve">
+    <value>w_numMax</value>
+  </data>
+  <data name="&gt;&gt;w_numMax.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TenantQuotaPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 167</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.Name" xml:space="preserve">
+    <value>w_lblStorageQuota</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="w_gbTenantSiteQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="w_tbURL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 54</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_plTenantQuotaOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>533, 59</value>
+  </data>
+  <data name="&gt;&gt;w_plQuotaOptions.Parent" xml:space="preserve">
+    <value>w_gbSiteQuota</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_btnCheckSecondaryAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;TenantQuotaPage.Name" xml:space="preserve">
+    <value>TenantQuotaPage</value>
+  </data>
+  <data name="&gt;&gt;TenantQuotaPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_rbToIndividual.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_numWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 20</value>
+  </data>
+  <data name="&gt;&gt;w_rbSetQuota.Name" xml:space="preserve">
+    <value>w_rbSetQuota</value>
+  </data>
+  <data name="&gt;&gt;w_rbSetQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lblResourceQuota.Text" xml:space="preserve">
+    <value>Server Resource Quota:</value>
+  </data>
+  <data name="w_lblResourceQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 13</value>
+  </data>
+  <data name="&gt;&gt;w_lblURL.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="w_cmbContentDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>417, 20</value>
+  </data>
+  <data name="w_numMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 17</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Name" xml:space="preserve">
+    <value>w_lblWebApp</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaPage.Name" xml:space="preserve">
+    <value>SiteQuotaPage</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_tbOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 8</value>
+  </data>
+  <data name="w_numStorageQuota.EditValue" type="System.Decimal, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="w_cmbWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_cmbLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 20</value>
+  </data>
+  <data name="w_cmbExperienceVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblSelWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="w_lblSelWebApp.Text" xml:space="preserve">
+    <value>http:/webapp/</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="w_cbSetSiteQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 3</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Parent" xml:space="preserve">
+    <value>w_gbMainProps</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_rbToIndividual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 19</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.Parent" xml:space="preserve">
+    <value>w_plTenantQuotaOption</value>
+  </data>
+  <data name="&gt;&gt;w_plTenantQuotaOption.Parent" xml:space="preserve">
+    <value>w_gbTenantSiteQuota</value>
+  </data>
+  <data name="w_gbTenantSiteQuota.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="w_plTenantQuotaOption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 11</value>
+  </data>
+  <data name="cbHostHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_lblDescription.Parent" xml:space="preserve">
+    <value>w_gbMainProps</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaTab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_gbSiteQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 126</value>
+  </data>
+  <data name="w_gbSiteQuota.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.Parent" xml:space="preserve">
+    <value>w_plExperienceVersion</value>
+  </data>
+  <data name="&gt;&gt;w_gbTenantSiteQuota.Parent" xml:space="preserve">
+    <value>TenantQuotaPage</value>
+  </data>
+  <data name="w_rbToIndividual.Properties.Caption" xml:space="preserve">
+    <value>To Individual Values</value>
+  </data>
+  <data name="w_plTenantQuotaOption.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="w_btnCheckPrimaryAdmin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABa0lEQVQ4T82Pv0tCcRTF3xRRNPQnNApN
+        OrS4loEhRYNLCkpT9egFIQURRBJZQkFlPwjBJAoddBCbCr4EgkNEDdZSKq0h0RAEwYlzeWlhPGzrwOHy
+        fe9+zr1XoxKJBKLRqDgcDoNv+dGK2Kzreh1kiNfrxc72VmshoVAIwUBAzCDCSikJNFus5Xa7QedyOZRK
+        JYG5CYPNFmvZ7XbQ32FO50Zmi7XMW3/APKPlE6jkUkQmEmTdGBhE/vjUMiClXuEyLqE9lSuIO/uRtjlQ
+        rlbw9v6B6fYuceXh8deQ/XxN4NhJEdqhw4kL/wSUbwqRtk7kh8aw3GNDwTUq1WTq2sw8N2CKAWp8BoXJ
+        eamcTPg2e4ZUUv0I4OThuWIDprg+4YKxKGZAdS+O9YNrRNIvIMQ+1uDqDYy186atNN5/1NEtJzCA03s9
+        MXgW7qHv1sT+lTuMGNlm2EoEXLNX4j5f5m/wlxjCbXiS+elfSdM+AeCXGovRuaDpAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="w_tbTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 34</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_gbTenantSiteQuota.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_rbToIndividual.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_numStorageQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 8</value>
+  </data>
+  <data name="w_lblSiteTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 37</value>
+  </data>
+  <data name="&gt;&gt;w_plQuotaOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.Name" xml:space="preserve">
+    <value>w_numResourceQuota</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plExperienceVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="w_lblDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.Name" xml:space="preserve">
+    <value>w_lblResourceQuota</value>
+  </data>
+  <data name="&gt;&gt;w_rbToIndividual.Name" xml:space="preserve">
+    <value>w_rbToIndividual</value>
+  </data>
+  <data name="&gt;&gt;w_rbToIndividual.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_numResourceQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_gbSiteQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_gbSiteQuota.Name" xml:space="preserve">
+    <value>w_gbSiteQuota</value>
+  </data>
+  <data name="w_cmbTemplate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lbExperienceVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="w_lbExperienceVersion.Text" xml:space="preserve">
+    <value>Experience Version:</value>
+  </data>
+  <data name="w_tbSecOwner.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="w_tbDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 60</value>
+  </data>
+  <data name="w_gbSiteQuota.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckPrimaryAdmin.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckPrimaryAdmin.Name" xml:space="preserve">
+    <value>w_btnCheckPrimaryAdmin</value>
+  </data>
+  <data name="w_tbSecOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblLang.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cmbSiteQuotaTemplates.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cmbSiteQuotaTemplates.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.Name" xml:space="preserve">
+    <value>cbHostHeader</value>
+  </data>
+  <data name="w_cmbPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plTenantQuotaOption.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cmbSiteQuotaTemplates.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;w_lblDescription.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_plTenantQuotaOption.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="lblUnitMB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 14</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_tbOwner.EditValue" xml:space="preserve">
+    <value>LONGDOMAINNAME\alongusernamethatfits</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_lblOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 11</value>
+  </data>
+  <data name="w_rbToIndividual.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cmbPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 54</value>
+  </data>
+  <data name="w_lblURL.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_lblSelWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 11</value>
+  </data>
+  <data name="w_rbSetQuota.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_btnCheckPrimaryAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 40</value>
+  </data>
+  <data name="w_tbDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 91</value>
+  </data>
+  <data name="&gt;&gt;w_lblSiteTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_rbToIndividual.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="w_numMax.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.Name" xml:space="preserve">
+    <value>lblUnitMB</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_numWarning.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="w_numWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SiteQuotaTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 126</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.Name" xml:space="preserve">
+    <value>w_plExperienceVersion</value>
+  </data>
+  <data name="w_cmbWebApp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="w_tbTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="w_plExperienceVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_lblWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cmbLang.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_cmbContentDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_numWarning.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_tbDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_numStorageQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_cbSetSiteQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 19</value>
+  </data>
+  <data name="&gt;&gt;w_plTenantQuotaOption.Name" xml:space="preserve">
+    <value>w_plTenantQuotaOption</value>
+  </data>
+  <data name="&gt;&gt;w_plTenantQuotaOption.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_lblLang.Name" xml:space="preserve">
+    <value>w_lblLang</value>
+  </data>
+  <data name="&gt;&gt;w_lblLang.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Name" xml:space="preserve">
+    <value>w_cmbPath</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Parent" xml:space="preserve">
+    <value>w_gbMainProps</value>
+  </data>
+  <data name="w_lblSecOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_lbExperienceVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_numMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="w_cmbContentDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 8</value>
+  </data>
+  <data name="w_tbOwner.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="&gt;&gt;w_rbToIndividual.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.Parent" xml:space="preserve">
+    <value>w_plTenantQuotaOption</value>
+  </data>
+  <data name="&gt;&gt;w_lblSiteTitle.Parent" xml:space="preserve">
+    <value>w_gbMainProps</value>
+  </data>
+  <data name="&gt;&gt;w_lblMax.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblMax.Name" xml:space="preserve">
+    <value>w_lblMax</value>
+  </data>
+  <data name="w_lblSecOwner.Text" xml:space="preserve">
+    <value>Secondary Administrator:</value>
+  </data>
+  <data name="w_lblSecOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="w_lblStorageQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="w_lblStorageQuota.Text" xml:space="preserve">
+    <value>Storage Quota:</value>
+  </data>
+  <data name="&gt;&gt;w_plQuotaOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plQuotaOptions.Name" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_tbSecOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplate.Name" xml:space="preserve">
+    <value>w_cmbTemplate</value>
+  </data>
+  <data name="cbHostHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 19</value>
+  </data>
+  <data name="w_lblMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblDescription.Name" xml:space="preserve">
+    <value>w_lblDescription</value>
+  </data>
+  <data name="&gt;&gt;w_lblDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_numWarning.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 21</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_gbTenantSiteQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_gbTenantSiteQuota.Name" xml:space="preserve">
+    <value>w_gbTenantSiteQuota</value>
+  </data>
+  <data name="lblUnitMB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblSiteTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="w_lblSiteTitle.Text" xml:space="preserve">
+    <value>Site Title:</value>
+  </data>
+  <data name="w_gbTenantSiteQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 126</value>
+  </data>
+  <data name="w_gbTenantSiteQuota.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_plTenantQuotaOption.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.Name" xml:space="preserve">
+    <value>w_numStorageQuota</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CreateSiteCollectionControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Components.CollapsableControl, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="groupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="cbHostHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 11</value>
+  </data>
+  <data name="w_gbMainProps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>w_plQuotaOptions</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="w_gbSiteQuota.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_cmbTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_numStorageQuota.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="w_cmbSiteQuotaTemplates.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="w_numResourceQuota.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;w_gbMainProps.Name" xml:space="preserve">
+    <value>w_gbMainProps</value>
+  </data>
+  <data name="&gt;&gt;w_gbMainProps.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lblTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 110</value>
+  </data>
+  <data name="w_gbTenantSiteQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="lblUnitMB.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_numMax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_plQuotaOptions.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_btnCheckSecondaryAdmin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABa0lEQVQ4T82Pv0tCcRTF3xRRNPQnNApN
+        OrS4loEhRYNLCkpT9egFIQURRBJZQkFlPwjBJAoddBCbCr4EgkNEDdZSKq0h0RAEwYlzeWlhPGzrwOHy
+        fe9+zr1XoxKJBKLRqDgcDoNv+dGK2Kzreh1kiNfrxc72VmshoVAIwUBAzCDCSikJNFus5Xa7QedyOZRK
+        JYG5CYPNFmvZ7XbQ32FO50Zmi7XMW3/APKPlE6jkUkQmEmTdGBhE/vjUMiClXuEyLqE9lSuIO/uRtjlQ
+        rlbw9v6B6fYuceXh8deQ/XxN4NhJEdqhw4kL/wSUbwqRtk7kh8aw3GNDwTUq1WTq2sw8N2CKAWp8BoXJ
+        eamcTPg2e4ZUUv0I4OThuWIDprg+4YKxKGZAdS+O9YNrRNIvIMQ+1uDqDYy186atNN5/1NEtJzCA03s9
+        MXgW7qHv1sT+lTuMGNlm2EoEXLNX4j5f5m/wlxjCbXiS+elfSdM+AeCXGovRuaDpAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="w_plExperienceVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 0</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckSecondaryAdmin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_tbDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="w_btnCheckSecondaryAdmin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 316</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.Parent" xml:space="preserve">
+    <value>w_plTenantQuotaOption</value>
+  </data>
+  <data name="w_btnCheckSecondaryAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_gbSiteQuota.Parent" xml:space="preserve">
+    <value>SiteQuotaPage</value>
+  </data>
+  <data name="w_lblURL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 35</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="w_plQuotaOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 89</value>
+  </data>
+  <data name="TenantQuotaPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 126</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckSecondaryAdmin.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="w_lblWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 11</value>
+  </data>
+  <data name="w_numWarning.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cbHostHeader.Properties.Caption" xml:space="preserve">
+    <value>Host Header</value>
+  </data>
+  <data name="w_lblStorageQuota.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="SiteQuotaTab.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckSecondaryAdmin.Name" xml:space="preserve">
+    <value>w_btnCheckSecondaryAdmin</value>
+  </data>
+  <data name="w_numWarning.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckSecondaryAdmin.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_rbSetQuota.Properties.Caption" xml:space="preserve">
+    <value>To Template</value>
+  </data>
+  <data name="w_lblMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_gbSiteQuota.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lblTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.Name" xml:space="preserve">
+    <value>w_cmbContentDatabase</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_tbDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbDescription.Name" xml:space="preserve">
+    <value>w_tbDescription</value>
+  </data>
+  <data name="w_lblURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="w_lblURL.Text" xml:space="preserve">
+    <value>Site URL:</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_numMax.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.Parent" xml:space="preserve">
+    <value>w_plTenantQuotaOption</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_tbTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbTitle.Name" xml:space="preserve">
+    <value>w_tbTitle</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.Name" xml:space="preserve">
+    <value>w_cmbExperienceVersion</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 40</value>
+  </data>
+  <data name="w_numResourceQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="w_tbTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_numWarning.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_numWarning.Name" xml:space="preserve">
+    <value>w_numWarning</value>
+  </data>
+  <data name="w_tbSecOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 34</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_cmbExperienceVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 21</value>
+  </data>
+  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_gbMainProps.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblResourceQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_cmbLang.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_tbDescription.EditValue" xml:space="preserve">
+    <value>This is the default description text. Lets see how much fits in this box. Probably not too much, but it seems to be okay.</value>
+  </data>
+  <data name="w_rbSetQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 19</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;w_cmbSiteQuotaTemplates.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbSiteQuotaTemplates.Name" xml:space="preserve">
+    <value>w_cmbSiteQuotaTemplates</value>
+  </data>
+  <data name="w_lblMax.Text" xml:space="preserve">
+    <value>Limit site storage to a maximum of: </value>
+  </data>
+  <data name="w_lblMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 13</value>
+  </data>
+  <data name="w_numResourceQuota.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="w_plQuotaOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.Name" xml:space="preserve">
+    <value>w_lbExperienceVersion</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetSiteQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetSiteQuota.Name" xml:space="preserve">
+    <value>w_cbSetSiteQuota</value>
+  </data>
+  <data name="w_btnCheckPrimaryAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_gbMainProps.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_cmbPath.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_btnCheckPrimaryAdmin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.Name" xml:space="preserve">
+    <value>w_tbSecOwner</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.Name" xml:space="preserve">
+    <value>w_tbURL</value>
+  </data>
+  <data name="&gt;&gt;w_lblURL.Name" xml:space="preserve">
+    <value>w_lblURL</value>
+  </data>
+  <data name="&gt;&gt;w_lblURL.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbSetQuota.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;SiteQuotaPage.Parent" xml:space="preserve">
+    <value>SiteQuotaTab</value>
+  </data>
+  <data name="w_lblDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 62</value>
+  </data>
+  <data name="w_rbSetQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 212</value>
+  </data>
+  <data name="w_plTenantQuotaOption.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_cmbWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 8</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.Parent" xml:space="preserve">
+    <value>w_plExperienceVersion</value>
+  </data>
+</root>

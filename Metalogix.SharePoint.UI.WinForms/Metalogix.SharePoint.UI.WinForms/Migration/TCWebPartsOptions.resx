@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;w_rbPreserveExistingWebParts.Name" xml:space="preserve">
+    <value>w_rbPreserveExistingWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_rbPreserveExistingWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_helpFormWebParts.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_helpCopyContentZoneContent.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblExistingProtocol.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_rbCloseExistingWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_helpFormWebParts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_plViewPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 55</value>
+  </data>
+  <data name="w_cbFormWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbSiteWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemWebParts.Name" xml:space="preserve">
+    <value>w_cbItemWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plViewPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="w_cbCopyWebPartsRecursive.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyContentZoneContent.Name" xml:space="preserve">
+    <value>w_helpCopyContentZoneContent</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyContentZoneContent.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_plClosedPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 78</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemWebParts.Parent" xml:space="preserve">
+    <value>w_plWebPartPages</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 273</value>
+  </data>
+  <data name="w_cbCopyContentZoneContent.Properties.Caption" xml:space="preserve">
+    <value>Copy Content Zone Content</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemWebParts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyContentZoneContent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_plWebPartPages.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plWebPartPages.Name" xml:space="preserve">
+    <value>w_plWebPartPages</value>
+  </data>
+  <data name="w_rbPreserveExistingWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_helpCopyContentZoneContent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpCopyContentZoneContent.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="w_lblExistingProtocol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 5</value>
+  </data>
+  <data name="w_lblExistingProtocol.Text" xml:space="preserve">
+    <value>Existing Web Part Protocol</value>
+  </data>
+  <data name="w_lblExistingProtocol.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="&gt;&gt;w_plViewPanel.Name" xml:space="preserve">
+    <value>w_plViewPanel</value>
+  </data>
+  <data name="&gt;&gt;w_plViewPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyContentZoneContent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbFormWebParts.Properties.Caption" xml:space="preserve">
+    <value>Copy List Form Pages (same version only)</value>
+  </data>
+  <data name="w_plFormPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_plClosedPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyContentZoneContent.Parent" xml:space="preserve">
+    <value>w_plCopyContentZoneContent</value>
+  </data>
+  <data name="w_rbCloseExistingWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbViewWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbViewWebParts.Name" xml:space="preserve">
+    <value>w_cbViewWebParts</value>
+  </data>
+  <data name="w_plSite.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_helpCopyContentZoneContent.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_rbPreserveExistingWebParts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;w_cbClosedWebParts.Parent" xml:space="preserve">
+    <value>w_plClosedPanel</value>
+  </data>
+  <data name="w_cbViewWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 19</value>
+  </data>
+  <data name="&gt;&gt;w_rbDeleteExistingWebParts.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_helpFormWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpCopyContentZoneContent.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyContentZoneContent.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_cbItemWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 19</value>
+  </data>
+  <data name="&gt;&gt;w_rbDeleteExistingWebParts.Parent" xml:space="preserve">
+    <value>w_plExistingWebParts</value>
+  </data>
+  <data name="w_plCopyWebPartsRecursive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="w_lblExistingProtocol.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_helpFormWebParts.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_cbViewWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_lblExistingProtocol.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyContentZoneContent.Name" xml:space="preserve">
+    <value>w_plCopyContentZoneContent</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyContentZoneContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plClosedPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_plFormPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbClosedWebParts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_helpCopyContentZoneContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbClosedWebParts.Properties.Caption" xml:space="preserve">
+    <value>Copy Closed Web Parts</value>
+  </data>
+  <data name="w_plExistingWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="w_plSite.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_rbDeleteExistingWebParts.Name" xml:space="preserve">
+    <value>w_rbDeleteExistingWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_rbDeleteExistingWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plExistingWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 80</value>
+  </data>
+  <data name="w_rbDeleteExistingWebParts.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_helpFormWebParts.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpFormWebParts.Name" xml:space="preserve">
+    <value>w_helpFormWebParts</value>
+  </data>
+  <data name="w_plWebPartPages.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_cbSiteWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_plViewPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyContentZoneContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyContentZoneContent.Name" xml:space="preserve">
+    <value>w_cbCopyContentZoneContent</value>
+  </data>
+  <data name="&gt;&gt;w_plClosedPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_cbFormWebParts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpCopyContentZoneContent.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_plCopyWebPartsRecursive.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_cbClosedWebParts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_plFormPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbViewWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_plCopyContentZoneContent.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_cbClosedWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_plFormPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_cbCopyWebPartsRecursive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_lblExistingProtocol.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_cbItemWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_cbCopyWebPartsRecursive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 19</value>
+  </data>
+  <data name="&gt;&gt;w_plFormPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plFormPanel.Name" xml:space="preserve">
+    <value>w_plFormPanel</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyWebPartsRecursive.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_rbPreserveExistingWebParts.Properties.Caption" xml:space="preserve">
+    <value>Preserve Existing Web Parts on Target</value>
+  </data>
+  <data name="&gt;&gt;w_plWebPartPages.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_rbDeleteExistingWebParts.Properties.Caption" xml:space="preserve">
+    <value>Delete Existing Web Parts on Target</value>
+  </data>
+  <data name="&gt;&gt;w_plViewPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_plCopyContentZoneContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="&gt;&gt;w_plClosedPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbFormWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyWebPartsRecursive.Parent" xml:space="preserve">
+    <value>w_plCopyWebPartsRecursive</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.Name" xml:space="preserve">
+    <value>w_plSite</value>
+  </data>
+  <data name="&gt;&gt;w_cbViewWebParts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_plCopyContentZoneContent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 101</value>
+  </data>
+  <data name="&gt;&gt;w_plWebPartPages.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_rbCloseExistingWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 40</value>
+  </data>
+  <data name="w_plExistingWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="&gt;&gt;w_rbPreserveExistingWebParts.Parent" xml:space="preserve">
+    <value>w_plExistingWebParts</value>
+  </data>
+  <data name="w_cbSiteWebParts.Properties.Caption" xml:space="preserve">
+    <value>Copy Web Parts on Landing Pages</value>
+  </data>
+  <data name="w_cbClosedWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_helpFormWebParts.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbClosedWebParts.Name" xml:space="preserve">
+    <value>w_cbClosedWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_cbClosedWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plWebPartPages.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_helpCopyContentZoneContent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 0</value>
+  </data>
+  <data name="&gt;&gt;w_rbCloseExistingWebParts.Name" xml:space="preserve">
+    <value>w_rbCloseExistingWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_rbCloseExistingWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbPreserveExistingWebParts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_plExistingWebParts.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_helpFormWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_plExistingWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plExistingWebParts.Name" xml:space="preserve">
+    <value>w_plExistingWebParts</value>
+  </data>
+  <data name="w_cbViewWebParts.Properties.Caption" xml:space="preserve">
+    <value>Copy Web Parts on List View Pages</value>
+  </data>
+  <data name="w_cbSiteWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbViewWebParts.Parent" xml:space="preserve">
+    <value>w_plViewPanel</value>
+  </data>
+  <data name="w_rbDeleteExistingWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCWebPartsOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyContentZoneContent.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbClosedWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 19</value>
+  </data>
+  <data name="w_rbPreserveExistingWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteWebParts.Name" xml:space="preserve">
+    <value>w_cbSiteWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_cbFormWebParts.Parent" xml:space="preserve">
+    <value>w_plFormPanel</value>
+  </data>
+  <data name="w_plFormPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 147</value>
+  </data>
+  <data name="w_cbCopyContentZoneContent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_plWebPartPages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="w_rbCloseExistingWebParts.Properties.Caption" xml:space="preserve">
+    <value>Close Existing Web Parts on Target</value>
+  </data>
+  <data name="w_helpFormWebParts.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbFormWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_plSite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 23</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyWebPartsRecursive.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyWebPartsRecursive.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyWebPartsRecursive.Name" xml:space="preserve">
+    <value>w_plCopyWebPartsRecursive</value>
+  </data>
+  <data name="w_cbCopyContentZoneContent.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_plExistingWebParts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyContentZoneContent.Parent" xml:space="preserve">
+    <value>w_plCopyContentZoneContent</value>
+  </data>
+  <data name="w_rbDeleteExistingWebParts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 19</value>
+  </data>
+  <data name="w_plCopyWebPartsRecursive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 124</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteWebParts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_rbCloseExistingWebParts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="w_plViewPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_lblExistingProtocol.Parent" xml:space="preserve">
+    <value>w_plExistingWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_plClosedPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plClosedPanel.Name" xml:space="preserve">
+    <value>w_plClosedPanel</value>
+  </data>
+  <data name="w_cbItemWebParts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyWebPartsRecursive.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_cbFormWebParts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_plSite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 9</value>
+  </data>
+  <data name="w_cbItemWebParts.Properties.Caption" xml:space="preserve">
+    <value>Copy Web Parts on Web Part Pages and Publishing Content</value>
+  </data>
+  <data name="&gt;&gt;w_rbCloseExistingWebParts.Parent" xml:space="preserve">
+    <value>w_plExistingWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_helpFormWebParts.Parent" xml:space="preserve">
+    <value>w_plFormPanel</value>
+  </data>
+  <data name="w_plClosedPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_rbDeleteExistingWebParts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="w_helpFormWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 0</value>
+  </data>
+  <data name="w_rbPreserveExistingWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 60</value>
+  </data>
+  <data name="w_rbDeleteExistingWebParts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteWebParts.Parent" xml:space="preserve">
+    <value>w_plSite</value>
+  </data>
+  <data name="w_cbCopyWebPartsRecursive.Properties.Caption" xml:space="preserve">
+    <value>Copy Web Parts Recursively</value>
+  </data>
+  <data name="&gt;&gt;w_plSite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plWebPartPages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyWebPartsRecursive.Name" xml:space="preserve">
+    <value>w_cbCopyWebPartsRecursive</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyWebPartsRecursive.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_helpFormWebParts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbFormWebParts.Name" xml:space="preserve">
+    <value>w_cbFormWebParts</value>
+  </data>
+  <data name="&gt;&gt;w_cbFormWebParts.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plExistingWebParts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblExistingProtocol.Name" xml:space="preserve">
+    <value>w_lblExistingProtocol</value>
+  </data>
+  <data name="&gt;&gt;w_lblExistingProtocol.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbCopyContentZoneContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 19</value>
+  </data>
+  <data name="&gt;&gt;w_rbCloseExistingWebParts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+</root>

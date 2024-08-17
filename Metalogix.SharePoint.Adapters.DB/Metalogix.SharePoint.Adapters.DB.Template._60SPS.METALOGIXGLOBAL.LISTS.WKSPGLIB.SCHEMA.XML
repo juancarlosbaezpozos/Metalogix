@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- _lcid="1033" _version="11.0.8161" _dal="1" -->
+<!-- _LocalBinding -->
+            <List xmlns:ows="Microsoft SharePoint" Name="Pages" Title="Workspace Pages" OrderedList="TRUE" Url="Pages" BaseType="1" >
+            
+               <MetaData>
+                  <Fields>
+                    <Field Type="Text" Name="Title" DisplayName="Title"></Field>
+                    <Field Type="Text" Name="Description" DisplayName="Description"></Field>
+                  </Fields>
+                  <Views>
+                  </Views>
+                  <Forms>
+                   </Forms>
+                   <DefaultDescription>
+                   </DefaultDescription>
+<Toolbar Type="RelatedTasks">
+<HTML><![CDATA[
+<TABLE width=100% cellpadding=0 cellspacing=2 BORDER=0>
+<TR><TD width=100% ID="L_RelatedTasks">Actions</TD></TR>
+<TR><TD class="ms-navline"><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+]]></HTML><Switch><Expr><GetVar Name="HasPortal"/></Expr><Case Value="TRUE"><HTML><![CDATA[ <tr> <td style="padding-left: 2px;padding-bottom: 2px" width=100%> <table border=0 cellpadding=0 cellspacing=0 width=100%> <tr> <td width=100% class="ms-unselectednav" colspan=2> <table cellpadding=0 cellspacing=0 border=0> <tr> <td valign=top> <img src="/_layouts/images/rect.gif">&nbsp; </td> <td><A ACCESSKEY="M" ID="diidPinToMyPage" HREF='javascript:PortalPinToMyPage(document.forms[MSOWebPartPageFormName], ]]></HTML><ScriptQuote><ProjectProperty Select="PortalUrl"/></ScriptQuote><HTML><![CDATA[, ]]></HTML><ScriptQuote><MeetingProperty Select="InstanceID"/></ScriptQuote><HTML><![CDATA[)'>]]></HTML><HTML>Add to My Links</HTML><HTML><![CDATA[</A></td> </tr> </table> </td> </tr> </table> </td> </tr> <INPUT Type="Hidden" Name="ListTitle" Value="]]></HTML><ListProperty Select="Title" HTMLEncode="TRUE"/><HTML><![CDATA["><INPUT Type="Hidden" Name="ListDescription" Value="]]></HTML><ListProperty Select="Description" HTMLEncode="TRUE"/><HTML><![CDATA["><INPUT Type="Hidden" Name="ListViewUrl" Value="]]></HTML><PageUrl HTMLEncode="TRUE"/><HTML><![CDATA["><INPUT Type="Hidden" Name="BaseType" Value="]]></HTML><ListProperty Select="BaseType"/><HTML><![CDATA["><INPUT Type="Hidden" Name="ServerTemplate" Value="]]></HTML><ListProperty Select="ServerTemplate"/><HTML><![CDATA["><INPUT Type="Hidden" Name="ReturnUrl" Value=""> ]]></HTML></Case></Switch><HTML><![CDATA[
+<tr> <td style="padding-left: 2px;padding-bottom: 2px" width=100%> <table border=0 cellpadding=0 cellspacing=0 width=100%> <tr> <td width=100% class="ms-unselectednav" colspan=2> <table cellpadding=0 cellspacing=0 border=0> <tr> <td valign=top> <img src="/_layouts/images/rect.gif">&nbsp; </td> <td><A ACCESSKEY="B" ID="diidSubscribeButton" HREF="]]></HTML><HttpVDir/><HTML><![CDATA[/_layouts/<%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%>/SubNew.aspx?List=]]></HTML><List/><HTML><![CDATA[">]]></HTML><HTML>Alert me</HTML><HTML><![CDATA[</A></td> </tr> </table> </td> </tr> </table> </td> </tr>
+<tr> <td style="padding-left: 2px;padding-bottom: 2px" width=100%> <table border=0 cellpadding=0 cellspacing=0 width=100%> <tr> <td width=100% class="ms-unselectednav" colspan=2> <table cellpadding=0 cellspacing=0 border=0> <tr> <td valign=top> <img src="/_layouts/images/rect.gif" onerror=CatchCreateError onload="EnsureSSImporter()">&nbsp; </td> <td><A ACCESSKEY="P" ID="diidIOExportToSpreadsheet" HREF="javascript:" onclick="javaScript:ExportList(']]></HTML><HttpPath/><HTML><![CDATA[&Using=_layouts/query.iqy&List=]]></HTML><List/><HTML><![CDATA[&View=]]></HTML><GetVar Name='View'/><HTML><![CDATA[&RootFolder=]]></HTML><GetVar Name='RootFolder' URLEncode="TRUE"/><HTML><![CDATA[&CacheControl=1');javascript:return false;">]]></HTML><HTML>Export to spreadsheet</HTML><HTML><![CDATA[</A></td> </tr> </table> </td> </tr> </table> </td> </tr>
+<tr> <td style="padding-left: 2px;padding-bottom: 2px" width=100%> <table border=0 cellpadding=0 cellspacing=0 width=100%> <tr> <td width=100% class="ms-unselectednav" colspan=2> <table cellpadding=0 cellspacing=0 border=0> <tr> <td valign=top> <img src="/_layouts/images/rect.gif">&nbsp; </td> <td><A ACCESSKEY="C" ID="diidCustomizeButton" HREF="]]></HTML><HttpVDir/><HTML><![CDATA[/_layouts/<%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%>/listedit.aspx?List=]]></HTML><List/><HTML><![CDATA[">]]></HTML><HTML>Modify settings and columns</HTML><HTML><![CDATA[</A></td> </tr> </table> </td> </tr> </table> </td> </tr>
+</TABLE>
+]]></HTML>
+</Toolbar>
+               </MetaData>
+            </List>

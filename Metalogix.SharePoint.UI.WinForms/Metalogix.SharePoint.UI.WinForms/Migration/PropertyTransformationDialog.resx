@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_splitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>213</value>
+  </data>
+  <data name="w_eExplorerControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_eExplorerControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 188</value>
+  </data>
+  <data name="&gt;&gt;w_lablTaskstoPerform.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lablTaskstoPerform.Name" xml:space="preserve">
+    <value>w_lablTaskstoPerform</value>
+  </data>
+  <data name="&gt;&gt;w_eExplorerControl.Parent" xml:space="preserve">
+    <value>w_splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Name" xml:space="preserve">
+    <value>editToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_btnEditTask.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACBUlEQVQ4T6WR30tTcRjGz1/QRRf9G9HF
+        LryJrgIDAyGyqy4mg5AxNdukYkSgp0CrxXSto7a5uTOcy9lszhkzdYZzpM0hzjKYOX80kS4SNZ07T33f
+        k+5M22564bl44f08H77ncP89LZ5NKMOLm3jQnYGh4zu0bRtQP13HjUdruPpwFZfvr+KiIU0pu72C4wLH
+        BGAbkyCEc7CEDmEKZNEycICmvn0Y3b/Q6NhFfdcOal7uQNO+TbmgmckXHKXJlcE9Wwa6F7L5Or+GK8Y0
+        Lv01KnNeHZUL3EMfIUlSyexnc9jey2Hr5yElvZWFqrxaLnD6o3Q0FluihKNfaA+ML+BNeB59oQTBdt8M
+        BE8MDl8UQ+NzuKVvlgte9UcKbMoozcy6tHGA+ek4XmtvUkb9/eCE3lE6ZuaRD4tkZjszi28/kZnBba4p
+        ON0+AlPP6hA3yCWcxTVSYGX5l3k6nsS7ASO8wzHMNTcQbFKpwJkdQYKKvZmZGRzyNuDHcis+T2rB80aC
+        RdOTfEEpc1DUEJx8r4ZfKMe5s2dQXVMrf8SjgpNvFtwTsPd4EbBXnYKt3Z78b2QFzLz49RsSyWXEEilE
+        ZlMYDkcw2FlxCu4QB+H8IyooYIsyurs8rF1OTAUfY2X2zjFcp28suKOCYsMKJCmHXnMlwbZOc2ng5Ojq
+        9ai8VsUgWC3Pi8Ac9xvqr4G3yzG17AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="editToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 22</value>
+  </data>
+  <data name="w_listviewContextStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 70</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 22</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Rename Sites, Lists and Folders</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel2.Parent" xml:space="preserve">
+    <value>w_splitContainer</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_btnNavigateTo.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="removeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 22</value>
+  </data>
+  <data name="removeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="w_btnOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_btnRenameOnTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 22</value>
+  </data>
+  <data name="w_btnRenameOnTarget.Text" xml:space="preserve">
+    <value>Rename Selected Node</value>
+  </data>
+  <data name="w_splitContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="w_btnNavigateTo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACRElEQVQ4T62SX0gTARzHt4ZrTVu1slZt
+        Rf5ZWemi2RmI1YsiIQQW0SXsIFmLFoSYzSKGaayEkgbFVvRgGLPIzW3pVie7ranrwSZYzYVY9PetJ41e
+        evi2u223ThR66AO/l7vf9/P78bsTLYSe9MI8bgQR0oMIpiqgB/WCRG/MgUzL0hhGSRyeqId95hpcszdh
+        f2tGx8QRnApXoMqnQs0TAu5Y3+IiIqLH1WQ73J+ccCYtsE024cJ4Nc5FdXxRoTIUP1gP99gCiSFKomv6
+        InpnOtHzxsQHhj87BAK2jOHdKLVrcgI67kUNsxd3E63ofH0ULWME1zj1gwHL15/vBQJztAIH+zfj0tOW
+        tMQcMeJ0rBaWV4cEjdfjx/Hr95xAYnpZjqawFieYElT27EwLqgb1OD9aKQhna+BDNydg+TKf5J41hopQ
+        R2uwrkOWEQzouRe3p5ozrUvzcT6BWlqN6ucqqG/lZwSufxcEvj/GvmAh9gSUWNMuTQsoNwlqpIxfu35E
+        w9VJRgvHtCUTBXzfXFx41/BqbPHno7hNnRY8jDiw/5GKC2ePxArupD5rFjasS00telYAjV+OtQ4pGq80
+        pAUsB+4ROBYsAcmU8keanXvHh7cPreKmbvTJoPBIoDQpQIe9OQEd82JbdyHqAhr+SK1xA24kLnNT1f4V
+        UA7mQe4WQ3pGDNt9ay6cxcP0QdeV+lWdK7kjaYcU3LobvMtR4FkGmV0MZbNi8fDf2PqtKG/bAflZCWRG
+        CfIoMbYaNoGyksK1/w8i0R/3HPAuxuzhDwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;propertiesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;propertiesToolStripMenuItem.Name" xml:space="preserve">
+    <value>propertiesToolStripMenuItem</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>532, 442</value>
+  </data>
+  <data name="w_btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_lvTasks.Parent" xml:space="preserve">
+    <value>w_splitContainer.Panel2</value>
+  </data>
+  <data name="w_lablTaskstoPerform.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditTask.Name" xml:space="preserve">
+    <value>w_btnEditTask</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lvTasks.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lablTaskstoPerform.Parent" xml:space="preserve">
+    <value>w_splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_btnRenameOnTarget.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnRenameOnTarget.Name" xml:space="preserve">
+    <value>w_btnRenameOnTarget</value>
+  </data>
+  <data name="w_btnNavigateTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 22</value>
+  </data>
+  <data name="w_btnNavigateTo.Text" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SourceNodeColumn.Width" type="System.Int32, mscorlib">
+    <value>240</value>
+  </data>
+  <data name="&gt;&gt;renameSelectedNodeToolStripMenuItem.Name" xml:space="preserve">
+    <value>renameSelectedNodeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;renameSelectedNodeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lablTaskstoPerform.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_splitContainer.SplitterWidth" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_PanelforControlButtons.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SourceNodeColumn.Text" xml:space="preserve">
+    <value>Source Node</value>
+  </data>
+  <data name="&gt;&gt;w_PanelforControlButtons.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Parent" xml:space="preserve">
+    <value>w_PanelforControlButtons</value>
+  </data>
+  <data name="&gt;&gt;w_listviewContextStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_listviewContextStrip.Name" xml:space="preserve">
+    <value>w_listviewContextStrip</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="renameSelectedNodeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rename Selected Node</value>
+  </data>
+  <data name="renameSelectedNodeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 22</value>
+  </data>
+  <data name="w_splitContainer.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RenameTasksColumn.Text" xml:space="preserve">
+    <value>Rename Operations To Perform</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Name" xml:space="preserve">
+    <value>w_btnCancel</value>
+  </data>
+  <data name="w_btnRemoveTask.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel2.Name" xml:space="preserve">
+    <value>w_splitContainer.Panel2</value>
+  </data>
+  <data name="w_PanelforControlButtons.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel1.Name" xml:space="preserve">
+    <value>w_splitContainer.Panel1</value>
+  </data>
+  <data name="w_btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;refreshToolStripMenuItem.Name" xml:space="preserve">
+    <value>refreshToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;refreshToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 13</value>
+  </data>
+  <data name="w_btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="w_btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="navigateToToolStripMenuItem.Text" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="navigateToToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 22</value>
+  </data>
+  <data name="toolStrip2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;RenameTasksColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RenameTasksColumn.Name" xml:space="preserve">
+    <value>RenameTasksColumn</value>
+  </data>
+  <data name="w_btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="w_btnRenameOnTarget.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="w_lvTasks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="RenameTasksColumn.Width" type="System.Int32, mscorlib">
+    <value>278</value>
+  </data>
+  <data name="w_lablTaskstoPerform.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_eExplorerControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_lablTaskstoPerform.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Parent" xml:space="preserve">
+    <value>w_splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_btnRemoveTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnRemoveTask.Name" xml:space="preserve">
+    <value>w_btnRemoveTask</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Panel1.Parent" xml:space="preserve">
+    <value>w_splitContainer</value>
+  </data>
+  <data name="&gt;&gt;w_lvTasks.Name" xml:space="preserve">
+    <value>w_lvTasks</value>
+  </data>
+  <data name="&gt;&gt;w_lvTasks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_eExplorerControl.Name" xml:space="preserve">
+    <value>w_eExplorerControl</value>
+  </data>
+  <data name="&gt;&gt;w_eExplorerControl.Type" xml:space="preserve">
+    <value>Metalogix.Explorer.Widgets.ExplorerControlWithLocation, Metalogix.System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_PanelforControlButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 394</value>
+  </data>
+  <data name="w_splitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 394</value>
+  </data>
+  <data name="w_splitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;SourceNodeColumn.Name" xml:space="preserve">
+    <value>SourceNodeColumn</value>
+  </data>
+  <data name="&gt;&gt;SourceNodeColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lvTasks.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="w_lvTasks.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_lvTasks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 141</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_btnEditTask.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="w_btnEditTask.Text" xml:space="preserve">
+    <value>Edit Task</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PropertyTransformationDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>540, 379</value>
+  </data>
+  <data name="&gt;&gt;w_treeViewcontextStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_treeViewcontextStrip.Name" xml:space="preserve">
+    <value>w_treeViewcontextStrip</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 25</value>
+  </data>
+  <data name="w_btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lablTaskstoPerform.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="propertiesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 22</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStrip2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 154</value>
+  </data>
+  <data name="toolStrip2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="toolStrip2.Text" xml:space="preserve">
+    <value>toolStrip2</value>
+  </data>
+  <data name="toolStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 25</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_btnEditTask.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Name" xml:space="preserve">
+    <value>w_btnOK</value>
+  </data>
+  <data name="&gt;&gt;removeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeToolStripMenuItem.Name" xml:space="preserve">
+    <value>removeToolStripMenuItem</value>
+  </data>
+  <data name="w_btnRemoveTask.Text" xml:space="preserve">
+    <value>Remove Task</value>
+  </data>
+  <data name="w_btnRemoveTask.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Name" xml:space="preserve">
+    <value>toolStrip2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_PanelforControlButtons.Name" xml:space="preserve">
+    <value>w_PanelforControlButtons</value>
+  </data>
+  <data name="&gt;&gt;w_PanelforControlButtons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lvTasks.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 13</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>w_splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Parent" xml:space="preserve">
+    <value>w_PanelforControlButtons</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_splitContainer.Name" xml:space="preserve">
+    <value>w_splitContainer</value>
+  </data>
+  <data name="w_PanelforControlButtons.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="w_PanelforControlButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 48</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;navigateToToolStripMenuItem.Name" xml:space="preserve">
+    <value>navigateToToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;navigateToToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lablTaskstoPerform.Text" xml:space="preserve">
+    <value>List of Rename Tasks :</value>
+  </data>
+  <data name="w_lablTaskstoPerform.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 13</value>
+  </data>
+  <data name="w_lablTaskstoPerform.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="w_treeViewcontextStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 70</value>
+  </data>
+  <data name="&gt;&gt;w_btnNavigateTo.Name" xml:space="preserve">
+    <value>w_btnNavigateTo</value>
+  </data>
+  <data name="&gt;&gt;w_btnNavigateTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_eExplorerControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_eExplorerControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_splitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+</root>

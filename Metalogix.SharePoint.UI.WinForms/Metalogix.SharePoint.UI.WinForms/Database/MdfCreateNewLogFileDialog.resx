@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_lblDatabaseFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 32</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_lblExpectedLogFile.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lblSupport.Name" xml:space="preserve">
+    <value>w_lblSupport</value>
+  </data>
+  <data name="&gt;&gt;w_lblSupport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_btnNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="w_btnNo.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="w_lblDatabaseFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_lblNewLogFile.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_lblNewLogFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblNewLogFile.Name" xml:space="preserve">
+    <value>w_lblNewLogFile</value>
+  </data>
+  <data name="w_lblExpectedLogFile.Text" xml:space="preserve">
+    <value>The expected logfile location is:</value>
+  </data>
+  <data name="w_lblExpectedLogFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 12</value>
+  </data>
+  <data name="w_lblNewLogFile.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBiqv/PWN+/z1jfv88Yn3/PWN+/9Pa
+        3f8AAAAAAAAAAHFXRP9jSTX/Y0k1/2NJNf9jSTX/Y0k1/2NJNf9Biqv/Ob/u/4bb7P9Zxeb/FJfT/wOH
+        zf8lYYf/AAAAAAAAAAB2XEn/79PG/96/r//fvav/2rSi/9iwnf/XrZn/QImq/z7F8v+R6Pb/YNPz/w+q
+        7f8AmOj/HmCJ/wAAAAAAAAAAemFO//ji2P/02Mr/8tXI//HRwf/xzr//8M27/0WKq/8+xfL/j+b0/1/Q
+        8P8QqOr/AJTi/x5giv8AAAAAAAAAAIBnVf/45Nv/9d3R//Tazf/z1cf/8dPD//HQwP9CiKj/P8Xy/5Dm
+        9P9f0PH/EKjq/wCT4v8eYYr/AAAAAAAAAACGbVr/+ejg//bi1//139T/9NrN//PXyv/y1cf/Ro2s/z/F
+        8v+Q5vT/YNDx/xGo6P8Ak+H/H2GK/wAAAAAAAAAAi3Nh//rr5P/45t7/9uTa//Xe1P/03ND/9NnM/0KI
+        qf8+w/L/jeX0/1nN8P8Iouj/AI/h/x5hjP8AAAAAAAAAAJF5aP/77uf/+ezk//jo4f/349n/9eHW//Xe
+        0v9Jj63/Z9z7/5/t9/+A3/T/P8Dw/xyt7f8gY43/AAAAAAAAAACXgG///PDs//rv6//57ef/+Ojh//fl
+        3f/34tn/eLHF/6jz+f/C////yv///8X///+j8fn/YJOp/wAAAAAAAAAAnYZ2//3z8P/79fD/+/Lu//rs
+        5//56uP/+Ojg//nr5f94scX/eLHF/3ixxf94scX/eLHF/wAAAAAAAAAAAAAAAKOMff/89fL//fj2//z2
+        8v/78e3/+u/q//rt5v/46uL/+Ofg//Tc0P9jSTX/AAAAAAAAAAAAAAAAAAAAAAAAAACzn4///vv5////
+        /////////v38//77+f/++ff/oox8/2xRPf9sUT3/Y0k1/wAAAAAAAAAAAAAAAAAAAAAAAAAAuKSV//78
+        +//////////////////+/f3///z7/6KMfP/n3tj/o419/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL2o
+        m/////////////////////////////////+ijHz/o419/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADCrqD/vaib/7iklf+zn5D/qJOD/6ONff+dhnb/l4Bv/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/4EAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAMAAIAPAACADwAAgB8AAIA/
+        AACAfwAA//8AAA==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Create New Log File?</value>
+  </data>
+  <data name="w_lblExpectedLogFileLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 79</value>
+  </data>
+  <data name="w_btnNo.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="w_lblCreateNewLogFileQuestion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 144</value>
+  </data>
+  <data name="&gt;&gt;w_btnYes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnYes.Name" xml:space="preserve">
+    <value>w_btnYes</value>
+  </data>
+  <data name="&gt;&gt;w_lblNewLogFile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblCreateNewLogFileQuestion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFile.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>542, 207</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblCannotFindLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblCannotFindLog.Name" xml:space="preserve">
+    <value>w_lblCannotFindLog</value>
+  </data>
+  <data name="w_lblSupport.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_lblExpectedLogFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_btnNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblDatabaseFile.Name" xml:space="preserve">
+    <value>w_lblDatabaseFile</value>
+  </data>
+  <data name="&gt;&gt;w_lblDatabaseFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lblExpectedLogFileLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_lblDatabaseFile.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_lblExpectedLogFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 56</value>
+  </data>
+  <data name="w_lblCannotFindLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 8</value>
+  </data>
+  <data name="w_lblCreateNewLogFileQuestion.Text" xml:space="preserve">
+    <value>Do you want to create a new logfile?</value>
+  </data>
+  <data name="w_lblCreateNewLogFileQuestion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 13</value>
+  </data>
+  <data name="w_lblCreateNewLogFileQuestion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="w_lblCannotFindLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFileLocation.Name" xml:space="preserve">
+    <value>w_lblExpectedLogFileLocation</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFileLocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lblCreateNewLogFileQuestion.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_btnYes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblExpectedLogFileLocation.Text" xml:space="preserve">
+    <value>Log file path</value>
+  </data>
+  <data name="w_lblExpectedLogFileLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 12</value>
+  </data>
+  <data name="w_btnYes.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFileLocation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnYes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_lblDatabaseFile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblSupport.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFile.Name" xml:space="preserve">
+    <value>w_lblExpectedLogFile</value>
+  </data>
+  <data name="&gt;&gt;w_btnNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnNo.Name" xml:space="preserve">
+    <value>w_btnNo</value>
+  </data>
+  <data name="w_btnYes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_lblSupport.Text" xml:space="preserve">
+    <value>(For further information about this process, please contact support@metalogix.net). </value>
+  </data>
+  <data name="w_lblSupport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 12</value>
+  </data>
+  <data name="w_lblSupport.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_lblExpectedLogFileLocation.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_lblNewLogFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 105</value>
+  </data>
+  <data name="&gt;&gt;w_lblCreateNewLogFileQuestion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblCreateNewLogFileQuestion.Name" xml:space="preserve">
+    <value>w_lblCreateNewLogFileQuestion</value>
+  </data>
+  <data name="&gt;&gt;w_lblDatabaseFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lblNewLogFile.Text" xml:space="preserve">
+    <value>A new logfile can be created, but this requires writing to the database file to update its logfile entry.
+</value>
+  </data>
+  <data name="w_lblNewLogFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 12</value>
+  </data>
+  <data name="w_lblCannotFindLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 36</value>
+  </data>
+  <data name="w_lblCannotFindLog.Text" xml:space="preserve">
+    <value>Could not find the expected log file for the database file:</value>
+  </data>
+  <data name="&gt;&gt;w_lblSupport.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblSupport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 120</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MdfCreateNewLogFileDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>526, 234</value>
+  </data>
+  <data name="w_lblNewLogFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_lblCreateNewLogFileQuestion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnNo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="w_btnYes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 164</value>
+  </data>
+  <data name="&gt;&gt;w_lblCannotFindLog.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="w_btnYes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="w_btnYes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="&gt;&gt;w_lblCreateNewLogFileQuestion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="w_lblDatabaseFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 12</value>
+  </data>
+  <data name="w_lblDatabaseFile.Text" xml:space="preserve">
+    <value>Database file path</value>
+  </data>
+  <data name="&gt;&gt;w_btnNo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 164</value>
+  </data>
+  <data name="&gt;&gt;w_lblCannotFindLog.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblExpectedLogFileLocation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+</root>

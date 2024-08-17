@@ -1,0 +1,1253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{FD421A60-C0C5-41F7-831D-8E2E752C879B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Metalogix.SharePoint.UI.WinForms</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>migrador.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.Utils.v16.1">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="DevExpress.XtraEditors.v16.1">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="DevExpress.XtraLayout.v16.1">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\DevExpress.XtraLayout.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.1">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\DevExpress.XtraTreeList.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Data">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>.\Metalogix.SharePoint.UI.WinFormsReferences\System.Drawing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Actions\PasteAllListItemsIntoItemsViewAction.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Actions\PasteListItemIntoItemsViewAction.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Actions\RestoreFromLogAction.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\AnalyzeChurnConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\AnalyzeChurnConfigurationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\CheckLinksConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\CheckLinksConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\CheckLinksFlagDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\TCCheckLinksOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\TCFlaggingOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ConnectExtensionErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ConnectToSharePointConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ConnectToSharePointDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ConnectToSharePointReadOnly.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ConnectToSharePointWriteable.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateFolderConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateFolderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateListConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateListFromXMLConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteCollectionConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteCollectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteCollectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\DeleteConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ExportDocItemsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ExportDocItemsWithMetadataConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ExportItems.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ExportItemsWithMetadataAction.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ExportListToXMLConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\FileAlreadyExistsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\HostNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ISharePointConnectionOptionsContainer.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\LimitSiteCollectionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\LinkManagement\LinkCorrectionConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\LinkManagement\LinkCorrectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeGlobalNavigationConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeGlobalNavigationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeNavigationTemplateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeQuickLaunchConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeQuickLaunchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCGlobalNavigationOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCNavigationRibbonOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCNavigationSortingOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCQuickLaunchOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\NodePropertiesConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\NodePropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\PreviewDocumentConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\PublishDocumentAndPagesConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\PublishDocumentsandPagesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\ReConnectConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\RemoveConnectionConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\StoragePointDetailsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\StoragePointDetailsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\TCSharePointConnectionConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\UpdateSiteCollectionSettingsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Administration\UpdateSiteCollectionSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\AvailabilityChangedEventArgs.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\AvailabilityChangedEventHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\BackupFileCreationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\BackupVersionPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\ConnectToBackupConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\ConnectToDatabaseSiteConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\ConnectToDatabaseSiteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\ConnectToMdfDatabaseHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\DatabaseRestoreDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\GetDatabaseBackupVersionsHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\InitializeFileLocationsHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\MdfCreateNewLogFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\MdfFileCreationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\RestoreActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\RestoreConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\RestoreDatabaseFromBakHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\RestoreDatabaseFromMdfHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\RestoreFromLogConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Database\RunRestoreHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExplorerViewOptions\ShowListInternalNameOption.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExplorerViewOptions\ShowWebUrlOption.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\AttachStoragePointConnectionConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\AttachStoragePointConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\ChooseNintexConnectionsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\ChooseNintexConnectionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\ManageNintexConnectionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\ManageNintexConnectionsSettings.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\TCStoragePointConnectionConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Mapping\CreateDomainMappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Mapping\CreateUserMappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Mapping\GlobalMappingsSetting.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Mapping\SPGlobalMappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\AdvancedOptionsMainControlStateEventArgs.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopyFolderActionDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopyListActionDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopyListItemActionDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopyListItemHelper.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopySiteActionDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopySiteCollectionActionDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\FilterControlBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\OptionsSummary.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\ScopableLeftNavigableTabsFormBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\SiteContentOptionsScopableTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\ToggleSwitchedEventHandler.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UpdateItemOptionsDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UpdateListOptionsDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UpdateSiteOptionsDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCAzureOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCExistingItemsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCExistingListsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCExistingSitesBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCFilterOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCGeneralOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCListContentAdvancedOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCListContentOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCListElementOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCMigrationModeAdvancedOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCMigrationModeOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCMigrationOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCSiteCollectionOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCSiteOptionsBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCSummaryBasicView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\ColumnFilteringConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\ContentTypeApplicationOptionsConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\ContentTypeApplicationOptionsSiteLevelConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\ContentTypeToListItemMappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyAlertsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyAlertsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyAudiencesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyContentTypesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyDefaultWebPartPageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyFolderActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyFolderConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyGroupsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyGroupsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListAlertsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListEmailNotificationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListItemActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListTemplateGalleryConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListViewConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListViewsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMasterPageGalleryConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMasterPageGalleryDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMasterPageGalleryOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMySitesActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMySitesConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyNavigationActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyNavigationConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyPermissionsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyPermissionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyPermissionsRecursivelyConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyPortalListingConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyPortalListingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyRoleAssignmentsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyRolesConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyRolesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteAdminsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteCollectionActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteCollectionConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteColumnConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteColumnsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteContentConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteContentTypesConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteListsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySubSitesConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyTaxonomyConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyTaxonomyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyUsersActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyUsersConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyWebAlertsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\DocumentSetApplicationOptionsSiteLevelConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\DocumentSetDocumentMappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\DocumentSetFolderOptionsConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\FilterOptionsScopableTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\FilterSetupOptions.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\ListContentScopableTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\GenericSiteLevelMappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\AllFieldTypeFilter.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\ColumnMappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\CustomFieldFilter.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\ListPickerNeutralView.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\NewColumnDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\NewFieldTypeFilter.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPContentTypeFieldFilter.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldComparer.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldDisplaySummaryView.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldDisplayView.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldSummaryView.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldToListPickerItemGrouper.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldToSPFieldComparer.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldToSPFieldGrouper.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPFieldView.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPListFieldTypeFilter.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPNewFieldSummaryView.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\SPSiteFieldTypeFilter.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\Views.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\MigrationElementsScopabbleTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\MigrationModeChangedInfo.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\MigrationModeScopableTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteAllListItemsConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteAudiencesConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteDefaultWebPartPageConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteDuplicateListConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteDuplicateSiteConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteListConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteListEmailNotificationConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PasteListItemConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\PropertyTransformationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\RenameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\RenameInfo.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\SerializableTermstoreMapper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\SerializableWebTemplateMapper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\SetSiteQuotaDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\SiteCollectionOptionsScopableTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TaxonomySetupOptions.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCAlertOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCAudienceOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCContentTypeOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCFilterOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCFolderContentOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGeneralOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalDomainMappings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalGuidMappings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalUrlMappings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalUserMappings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGroupOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCListContentOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCListEmailNotificationOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCListViewsOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMappingOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMasterPageGalleryOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMessages.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMigrationModeOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMySitesOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCNavigationMappingOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCNavigationOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCPermissionsOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCSiteCollectionOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCSiteContentOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCStoragePointOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCStoragePointOptionsMMS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCTaxonomyOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCWebPartsOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\TCWorkflowOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\UpdateItemOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\UpdateListOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\UpdateOptionsStateEventArgs.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Migration\UpdateSiteOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Properties\Resources.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Properties\Settings.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Properties\Tooltips.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\CompareDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\CompareSiteConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\ComparisonOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\NavigateSearchResult.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\SearchConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\SearchResultsActionPalette.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Reporting\SearchResultsItemsCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ScopableLeftNavigableTabsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\ScopableTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\SPUIUtils.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\BindableSubstitutionValues.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\FieldToManagedMetadataConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\FieldToManagedMetadataConfigConstants.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\FieldToManagedMetadataConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\FieldToManagedMetadataConfigItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\SiteColumnToManagedMetadataConfig.cs" />
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\SiteColumnToManagedMetadataConfigDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix.SharePoint.UI.WinForms\Transform\SiteColumnToManagedMetadataConfigItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.ListViewOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.ContentTypes.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Clear the Default Features.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.MappingOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Map16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Overwrite Sites.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Preserve Sites.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Preserve the Default Features.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Warning32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.MappingOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.MigrationMode.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.UserAndPermissionsOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.SiteOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.ListContentOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.TaxonomyOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.WebPartsOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.FilterOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.WorkflowOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.StoragePointOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.GeneralOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.ConnectionOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.SiteCollectionOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.MySitesOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Settings.ManageNintexWorkflowDatabases16x16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Settings.ManageNintexWorkflowDatabases32x32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.GeneralOptions.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.ShowInternalListNames16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.ShowInternalListNames32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.ShowWebUrls16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.ShowWebUrls32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Settings.ConfigureGlobalMappings16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Settings.ConfigureGlobalMappings32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.FolderContentOptions16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.FolderContentOptions32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Properties16.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Properties32.png" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.Checkin.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Resources.magnifyingglass.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.Audiences32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.Navigation32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.MasterPage32x32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.Groups32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.FolderContent32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.Ribbon32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.Settings32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.Sorting32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.LinkFlagging32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.QuickLaunch32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.GlobalNavigation32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Actions.PasteAllItems.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Actions.Paste.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Actions.RestoreFromDatabase.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Administration.Fwd16.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.DomainMapping32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.GuidMapping32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.UrlMapping32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.Icons.Migration.UserMapping32.ico" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms.dll.licenses" />
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\AnalyzeChurnConfigurationDialog.resx">
+      <DependentUpon>AnalyzeChurnConfigurationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\CheckLinksConfigDialog.resx">
+      <DependentUpon>CheckLinksConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\CheckLinksFlagDialog.resx">
+      <DependentUpon>CheckLinksFlagDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\TCCheckLinksOptions.resx">
+      <DependentUpon>TCCheckLinksOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CheckLinks\TCFlaggingOptions.resx">
+      <DependentUpon>TCFlaggingOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\ConnectExtensionErrorDialog.resx">
+      <DependentUpon>ConnectExtensionErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\ConnectToSharePointDialog.resx">
+      <DependentUpon>ConnectToSharePointDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateFolderDialog.resx">
+      <DependentUpon>CreateFolderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateListDialog.resx">
+      <DependentUpon>CreateListDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteCollectionControl.resx">
+      <DependentUpon>CreateSiteCollectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteCollectionDialog.resx">
+      <DependentUpon>CreateSiteCollectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\CreateSiteDialog.resx">
+      <DependentUpon>CreateSiteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\FileAlreadyExistsDialog.resx">
+      <DependentUpon>FileAlreadyExistsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\HostNameDialog.resx">
+      <DependentUpon>HostNameDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\LimitSiteCollectionsDialog.resx">
+      <DependentUpon>LimitSiteCollectionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\LinkManagement\LinkCorrectionDialog.resx">
+      <DependentUpon>LinkCorrectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeGlobalNavigationDialog.resx">
+      <DependentUpon>ChangeGlobalNavigationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeNavigationTemplateDialog.resx">
+      <DependentUpon>ChangeNavigationTemplateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\ChangeQuickLaunchDialog.resx">
+      <DependentUpon>ChangeQuickLaunchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCGlobalNavigationOptions.resx">
+      <DependentUpon>TCGlobalNavigationOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCNavigationRibbonOptions.resx">
+      <DependentUpon>TCNavigationRibbonOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCNavigationSortingOptions.resx">
+      <DependentUpon>TCNavigationSortingOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\Navigation\TCQuickLaunchOptions.resx">
+      <DependentUpon>TCQuickLaunchOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\NodePropertiesDialog.resx">
+      <DependentUpon>NodePropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\PublishDocumentsandPagesDialog.resx">
+      <DependentUpon>PublishDocumentsandPagesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\StoragePointDetailsDialog.resx">
+      <DependentUpon>StoragePointDetailsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\TCSharePointConnectionConfig.resx">
+      <DependentUpon>TCSharePointConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Administration\UpdateSiteCollectionSettingsDialog.resx">
+      <DependentUpon>UpdateSiteCollectionSettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Database\BackupFileCreationDialog.resx">
+      <DependentUpon>BackupFileCreationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Database\BackupVersionPickerDialog.resx">
+      <DependentUpon>BackupVersionPickerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Database\ConnectToDatabaseSiteDialog.resx">
+      <DependentUpon>ConnectToDatabaseSiteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Database\DatabaseRestoreDialog.resx">
+      <DependentUpon>DatabaseRestoreDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Database\MdfCreateNewLogFileDialog.resx">
+      <DependentUpon>MdfCreateNewLogFileDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Database\MdfFileCreationDialog.resx">
+      <DependentUpon>MdfFileCreationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Database\RestoreActionDialog.resx">
+      <DependentUpon>RestoreActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\AttachStoragePointConnectionDialog.resx">
+      <DependentUpon>AttachStoragePointConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\ChooseNintexConnectionsDialog.resx">
+      <DependentUpon>ChooseNintexConnectionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\ManageNintexConnectionsDialog.resx">
+      <DependentUpon>ManageNintexConnectionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\ExternalConnections\TCStoragePointConnectionConfig.resx">
+      <DependentUpon>TCStoragePointConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Mapping\CreateDomainMappingDialog.resx">
+      <DependentUpon>CreateDomainMappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Mapping\CreateUserMappingDialog.resx">
+      <DependentUpon>CreateUserMappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Mapping\SPGlobalMappingDialog.resx">
+      <DependentUpon>SPGlobalMappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopyFolderActionDialogBasicView.resx">
+      <DependentUpon>CopyFolderActionDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopyListActionDialogBasicView.resx">
+      <DependentUpon>CopyListActionDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopyListItemActionDialogBasicView.resx">
+      <DependentUpon>CopyListItemActionDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopySiteActionDialogBasicView.resx">
+      <DependentUpon>CopySiteActionDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\CopySiteCollectionActionDialogBasicView.resx">
+      <DependentUpon>CopySiteCollectionActionDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\FilterControlBasicView.resx">
+      <DependentUpon>FilterControlBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\ScopableLeftNavigableTabsFormBasicView.resx">
+      <DependentUpon>ScopableLeftNavigableTabsFormBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UpdateItemOptionsDialogBasicView.resx">
+      <DependentUpon>UpdateItemOptionsDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UpdateListOptionsDialogBasicView.resx">
+      <DependentUpon>UpdateListOptionsDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UpdateSiteOptionsDialogBasicView.resx">
+      <DependentUpon>UpdateSiteOptionsDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCAzureOptionsBasicView.resx">
+      <DependentUpon>TCAzureOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCExistingItemsBasicView.resx">
+      <DependentUpon>TCExistingItemsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCExistingListsBasicView.resx">
+      <DependentUpon>TCExistingListsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCExistingSitesBasicView.resx">
+      <DependentUpon>TCExistingSitesBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCFilterOptionsBasicView.resx">
+      <DependentUpon>TCFilterOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCGeneralOptionsBasicView.resx">
+      <DependentUpon>TCGeneralOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCListContentAdvancedOptionsBasicView.resx">
+      <DependentUpon>TCListContentAdvancedOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCListContentOptionsBasicView.resx">
+      <DependentUpon>TCListContentOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCListElementOptionsBasicView.resx">
+      <DependentUpon>TCListElementOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCMigrationModeAdvancedOptionsBasicView.resx">
+      <DependentUpon>TCMigrationModeAdvancedOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCMigrationModeOptionsBasicView.resx">
+      <DependentUpon>TCMigrationModeOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCMigrationOptionsBasicView.resx">
+      <DependentUpon>TCMigrationOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCSiteCollectionOptionsBasicView.resx">
+      <DependentUpon>TCSiteCollectionOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCSiteOptionsBasicView.resx">
+      <DependentUpon>TCSiteOptionsBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\BasicView\UserControls\TCSummaryBasicView.resx">
+      <DependentUpon>TCSummaryBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\ColumnFilteringConfigDialog.resx">
+      <DependentUpon>ColumnFilteringConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\ContentTypeApplicationOptionsConfigDialog.resx">
+      <DependentUpon>ContentTypeApplicationOptionsConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\ContentTypeApplicationOptionsSiteLevelConfigDialog.resx">
+      <DependentUpon>ContentTypeApplicationOptionsSiteLevelConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\ContentTypeToListItemMappingDialog.resx">
+      <DependentUpon>ContentTypeToListItemMappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyAlertsDialog.resx">
+      <DependentUpon>CopyAlertsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyAudiencesDialog.resx">
+      <DependentUpon>CopyAudiencesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyContentTypesDialog.resx">
+      <DependentUpon>CopyContentTypesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyDefaultWebPartPageDialog.resx">
+      <DependentUpon>CopyDefaultWebPartPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyFolderActionDialog.resx">
+      <DependentUpon>CopyFolderActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyGroupsDialog.resx">
+      <DependentUpon>CopyGroupsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListActionDialog.resx">
+      <DependentUpon>CopyListActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListEmailNotificationDialog.resx">
+      <DependentUpon>CopyListEmailNotificationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListItemActionDialog.resx">
+      <DependentUpon>CopyListItemActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyListViewsDialog.resx">
+      <DependentUpon>CopyListViewsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMasterPageGalleryDialog.resx">
+      <DependentUpon>CopyMasterPageGalleryDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMasterPageGalleryOptionsDialog.resx">
+      <DependentUpon>CopyMasterPageGalleryOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyMySitesActionDialog.resx">
+      <DependentUpon>CopyMySitesActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyNavigationActionDialog.resx">
+      <DependentUpon>CopyNavigationActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyPermissionsDialog.resx">
+      <DependentUpon>CopyPermissionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyPortalListingsDialog.resx">
+      <DependentUpon>CopyPortalListingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyRoleAssignmentsDialog.resx">
+      <DependentUpon>CopyRoleAssignmentsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyRolesDialog.resx">
+      <DependentUpon>CopyRolesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteActionDialog.resx">
+      <DependentUpon>CopySiteActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteAdminsDialog.resx">
+      <DependentUpon>CopySiteAdminsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteCollectionActionDialog.resx">
+      <DependentUpon>CopySiteCollectionActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopySiteColumnsDialog.resx">
+      <DependentUpon>CopySiteColumnsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyTaxonomyDialog.resx">
+      <DependentUpon>CopyTaxonomyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\CopyUsersActionDialog.resx">
+      <DependentUpon>CopyUsersActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\DocumentSetApplicationOptionsSiteLevelConfigDialog.resx">
+      <DependentUpon>DocumentSetApplicationOptionsSiteLevelConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\DocumentSetDocumentMappingDialog.resx">
+      <DependentUpon>DocumentSetDocumentMappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\DocumentSetFolderOptionsConfigDialog.resx">
+      <DependentUpon>DocumentSetFolderOptionsConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\GenericSiteLevelMappingDialog.resx">
+      <DependentUpon>GenericSiteLevelMappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\ColumnMappingDialog.resx">
+      <DependentUpon>ColumnMappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\Mapping\Widgets\NewColumnDialog.resx">
+      <DependentUpon>NewColumnDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\MigrationElementsScopabbleTabbableControl.resx">
+      <DependentUpon>MigrationElementsScopabbleTabbableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\PropertyTransformationDialog.resx">
+      <DependentUpon>PropertyTransformationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\RenameDialog.resx">
+      <DependentUpon>RenameDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\SerializableWebTemplateMapper.resx">
+      <DependentUpon>SerializableWebTemplateMapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\SetSiteQuotaDialog.resx">
+      <DependentUpon>SetSiteQuotaDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCAlertOptions.resx">
+      <DependentUpon>TCAlertOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCAudienceOptions.resx">
+      <DependentUpon>TCAudienceOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCContentTypeOptions.resx">
+      <DependentUpon>TCContentTypeOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCFilterOptions.resx">
+      <DependentUpon>TCFilterOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCFolderContentOptions.resx">
+      <DependentUpon>TCFolderContentOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGeneralOptions.resx">
+      <DependentUpon>TCGeneralOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalDomainMappings.resx">
+      <DependentUpon>TCGlobalDomainMappings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalGuidMappings.resx">
+      <DependentUpon>TCGlobalGuidMappings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalUrlMappings.resx">
+      <DependentUpon>TCGlobalUrlMappings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGlobalUserMappings.resx">
+      <DependentUpon>TCGlobalUserMappings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCGroupOptions.resx">
+      <DependentUpon>TCGroupOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCListContentOptions.resx">
+      <DependentUpon>TCListContentOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCListEmailNotificationOptions.resx">
+      <DependentUpon>TCListEmailNotificationOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCListViewsOptions.resx">
+      <DependentUpon>TCListViewsOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMappingOptions.resx">
+      <DependentUpon>TCMappingOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMasterPageGalleryOptions.resx">
+      <DependentUpon>TCMasterPageGalleryOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMigrationModeOptions.resx">
+      <DependentUpon>TCMigrationModeOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCMySitesOptions.resx">
+      <DependentUpon>TCMySitesOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCNavigationMappingOptions.resx">
+      <DependentUpon>TCNavigationMappingOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCNavigationOptions.resx">
+      <DependentUpon>TCNavigationOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCPermissionsOptions.resx">
+      <DependentUpon>TCPermissionsOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCSiteCollectionOptions.resx">
+      <DependentUpon>TCSiteCollectionOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCSiteContentOptions.resx">
+      <DependentUpon>TCSiteContentOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCStoragePointOptions.resx">
+      <DependentUpon>TCStoragePointOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCStoragePointOptionsMMS.resx">
+      <DependentUpon>TCStoragePointOptionsMMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCTaxonomyOptions.resx">
+      <DependentUpon>TCTaxonomyOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCWebPartsOptions.resx">
+      <DependentUpon>TCWebPartsOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\TCWorkflowOptions.resx">
+      <DependentUpon>TCWorkflowOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\UpdateItemOptionsDialog.resx">
+      <DependentUpon>UpdateItemOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\UpdateListOptionsDialog.resx">
+      <DependentUpon>UpdateListOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Migration\UpdateSiteOptionsDialog.resx">
+      <DependentUpon>UpdateSiteOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Properties\Tooltips.resx">
+      <DependentUpon>Tooltips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Reporting\CompareDialog.resx">
+      <DependentUpon>CompareDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Reporting\ComparisonOptionsControl.resx">
+      <DependentUpon>ComparisonOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Reporting\SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\ScopableLeftNavigableTabsForm.resx">
+      <DependentUpon>ScopableLeftNavigableTabsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\ScopableTabbableControl.resx">
+      <DependentUpon>ScopableTabbableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Transform\FieldToManagedMetadataConfigDialog.resx">
+      <DependentUpon>FieldToManagedMetadataConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Transform\FieldToManagedMetadataConfigItemDialog.resx">
+      <DependentUpon>FieldToManagedMetadataConfigItemDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Transform\SiteColumnToManagedMetadataConfigDialog.resx">
+      <DependentUpon>SiteColumnToManagedMetadataConfigDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.SharePoint.UI.WinForms\Transform\SiteColumnToManagedMetadataConfigItemDialog.resx">
+      <DependentUpon>SiteColumnToManagedMetadataConfigItemDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="migrador.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metalogix.Actions\Metalogix.Actions.csproj">
+      <Project>{1dee0f6a-9402-40e1-ac4b-4904989ba28d}</Project>
+      <Name>Metalogix.Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Connectivity\Metalogix.Connectivity.csproj">
+      <Project>{004767ba-3564-4224-8b0c-0ec2487b9dd8}</Project>
+      <Name>Metalogix.Connectivity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Core\Metalogix.Core.csproj">
+      <Project>{e4130506-97ab-4226-9323-b9db94629bdc}</Project>
+      <Name>Metalogix.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Explorer\Metalogix.Explorer.csproj">
+      <Project>{6616966d-e4db-4a44-9645-dd6c35cdf061}</Project>
+      <Name>Metalogix.Explorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Licensing\Metalogix.Licensing.csproj">
+      <Project>{4021bed6-df4d-47a9-8f69-c7ffdf7a7604}</Project>
+      <Name>Metalogix.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.MLLicensing\Metalogix.MLLicensing.csproj">
+      <Project>{d4c508ef-9614-4c75-87d3-da6a8cd9a6ae}</Project>
+      <Name>Metalogix.MLLicensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Office365\Metalogix.Office365.csproj">
+      <Project>{b9437661-f8fe-42e1-a771-63a63b294864}</Project>
+      <Name>Metalogix.Office365</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint.Actions\Metalogix.SharePoint.Actions.csproj">
+      <Project>{1eb2684d-8377-4b1e-92e4-a139d173fd9d}</Project>
+      <Name>Metalogix.SharePoint.Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint.Adapters\Metalogix.SharePoint.Adapters.csproj">
+      <Project>{e9dff0fe-d8eb-4cc2-bc04-0ee2b5f4990f}</Project>
+      <Name>Metalogix.SharePoint.Adapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint.Options\Metalogix.SharePoint.Options.csproj">
+      <Project>{c1635653-6aad-4eaa-a5a0-60d84a533d63}</Project>
+      <Name>Metalogix.SharePoint.Options</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint\Metalogix.SharePoint.csproj">
+      <Project>{1ebbedeb-0ea6-470c-b37d-26b72a1e713d}</Project>
+      <Name>Metalogix.SharePoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Telemetry\Metalogix.Telemetry.csproj">
+      <Project>{08a3e529-0af3-44ac-8668-230af48b0fa3}</Project>
+      <Name>Metalogix.Telemetry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.UI.Standard\Metalogix.UI.Standard.csproj">
+      <Project>{0caa4a75-1aab-4b37-a610-626b45e150f8}</Project>
+      <Name>Metalogix.UI.Standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.UI.WinForms\Metalogix.UI.WinForms.csproj">
+      <Project>{2aef72ae-552f-4a3d-98a8-79e5c6a5c6f0}</Project>
+      <Name>Metalogix.UI.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Utilities\Metalogix.Utilities.csproj">
+      <Project>{44be20ed-a618-469b-a9bf-c28393fa4a74}</Project>
+      <Name>Metalogix.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

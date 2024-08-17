@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_lblLine.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="_layoutItemsView.CustomizationFormText" xml:space="preserve">
+    <value>_layoutItemsView</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedAfter.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_dtpCreatedBefore.Properties.Mask.EditMask" xml:space="preserve">
+    <value>g</value>
+  </data>
+  <data name="&gt;&gt;_layoutCancelButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_layoutCancelButton.Name" xml:space="preserve">
+    <value>_layoutCancelButton</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_cbSites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 68</value>
+  </data>
+  <data name="_cbCreatedAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 19</value>
+  </data>
+  <data name="_cbModifiedAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 19</value>
+  </data>
+  <data name="&gt;&gt;_cbLists.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_dtpCreatedAfter.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_tsBtnCancel.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBy.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="_cmbContentType.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="_lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 22</value>
+  </data>
+  <data name="_lblStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;_cbRecursive.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;_cbSites.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_lblTypes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 71</value>
+  </data>
+  <data name="_cbContentType.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_cbSites.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_btnShowPropertyGrids.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_tbCreatedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_tbCreatedBy.Name" xml:space="preserve">
+    <value>_tbCreatedBy</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBy.Name" xml:space="preserve">
+    <value>_cbModifiedBy</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cmbContentType.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_layoutLine.Text" xml:space="preserve">
+    <value>_layoutLine</value>
+  </data>
+  <data name="&gt;&gt;_layoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_cbRecursive.Properties.Caption" xml:space="preserve">
+    <value>Recursively Search Subsites</value>
+  </data>
+  <data name="_layoutAdvancedOptions.CustomizationFormText" xml:space="preserve">
+    <value>_layoutAdvancedOptions</value>
+  </data>
+  <data name="_cbContentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 19</value>
+  </data>
+  <data name="&gt;&gt;_cbItems.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_cbRecursive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 19</value>
+  </data>
+  <data name="&gt;&gt;_cbItems.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="_tbModifiedBy.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="_tbCreatedBy.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBy.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedAfter.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_cbCreatedBy.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Ably
+        B1G5cgeL////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Ably
+        BzG5cgffuXIHOf///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Ably
+        Bz+5cgfpuXIHOf///wH///8B////Af///wG5cgcLuXIHc7lyB5m5cgeXuXIHl7lyB425cgcx////Ably
+        Bzm5cgfhuXIHN////wH///8B////Af///wG5cgdRuXIHz7lyB5O5cgdNuXIHM7lyBz25cgdvuXIHr7ly
+        B6G5cgeruXIHK////wH///8B////Af///wG5cgdXuXIH77lyBy3///8B////Af///wH///8B////Af//
+        /wG5cge1uXIHt////wH///8B////Af///wG5cgcLuXIHzblyByv///8B////Af///wH///8B////Af//
+        /wH///8B////AblyB6W5cgdz////Af///wH///8BuXIHeblyB5H///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cgczuXIHof///wH///8B////AblyB6G5cgdX////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////AblyB5W5cgcl////Af///wG5cge5uXIHOf///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wG5cgeNuXIHPf///wH///8BuXIHp7lyB1H///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8BuXIHk7lyByv///8B////AblyB3u5cgeR////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8BuXIHM7lyB6P///8B////Af///wG5cgcNuXIHz7ly
+        Byv///8B////Af///wH///8B////Af///wH///8B////AblyB6+5cgdz////Af///wH///8B////Ably
+        B1m5cgfxuXIHLf///wH///8B////Af///wH///8B////AblyB6W5cget////Af///wH///8B////Af//
+        /wH///8BuXIHU7lyB9O5cgeVuXIHTblyBye5cgc5uXIHc7lyB725cgeX////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cgcLuXIHc7lyB6W5cge9uXIHq7lyB425cgcx////Af///wH///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Search SharePoint</value>
+  </data>
+  <data name="_btnShowPropertyGrids.Location" type="System.Drawing.Point, System.Drawing">
+    <value>765, 330</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedAfter.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_dtpModifiedAfter.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="_cbCreatedBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_lblStatus.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="_dtpCreatedBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 151</value>
+  </data>
+  <data name="_btnSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 9</value>
+  </data>
+  <data name="_teSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 9</value>
+  </data>
+  <data name="_groupAdvanced.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>380, 0</value>
+  </data>
+  <data name="&gt;&gt;_cmbContentType.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_tbCreatedBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 127</value>
+  </data>
+  <data name="_searchLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 280</value>
+  </data>
+  <data name="&gt;&gt;_btnSearch.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_btnShowPropertyGrids.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="_tbCreatedBy.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_cbModifiedBy.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="_btnSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="_btnSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="_cbCreatedBy.Properties.Caption" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="&gt;&gt;_lblLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_lblLine.Name" xml:space="preserve">
+    <value>_lblLine</value>
+  </data>
+  <data name="&gt;&gt;_cbContentType.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_cbRecursive.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>892, 583</value>
+  </data>
+  <data name="_cbSites.Properties.Caption" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="_cbCreatedAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 171</value>
+  </data>
+  <data name="_dtpCreatedBefore.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_cbModifiedBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 219</value>
+  </data>
+  <data name="&gt;&gt;_lblLine.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedAfter.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedAfter.Name" xml:space="preserve">
+    <value>_cbCreatedAfter</value>
+  </data>
+  <data name="_cbFolders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 68</value>
+  </data>
+  <data name="_itemsView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedAfter.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedAfter.Name" xml:space="preserve">
+    <value>_dtpModifiedAfter</value>
+  </data>
+  <data name="_cbMatchExactly.Properties.Caption" xml:space="preserve">
+    <value>Match Search Term Exactly</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedAfter.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="_tsBtnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>679, 9</value>
+  </data>
+  <data name="_lblStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_cbItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
+  </data>
+  <data name="_cmbContentType.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBefore.Name" xml:space="preserve">
+    <value>_cbModifiedBefore</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBefore.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_btnSearch.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_layoutAdvancedOptions.Name" xml:space="preserve">
+    <value>_layoutAdvancedOptions</value>
+  </data>
+  <data name="&gt;&gt;_layoutAdvancedOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_dtpCreatedAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbMatchExactly.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_cbFolders.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_layoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>_layoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;_cbSites.Name" xml:space="preserve">
+    <value>_cbSites</value>
+  </data>
+  <data name="&gt;&gt;_cbSites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBy.Name" xml:space="preserve">
+    <value>_cbCreatedBy</value>
+  </data>
+  <data name="_dtpCreatedBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_dtpModifiedAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBefore.Name" xml:space="preserve">
+    <value>_cbCreatedBefore</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBefore.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_cbCreatedBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 19</value>
+  </data>
+  <data name="&gt;&gt;_cbContentType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_itemsView.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="_btnSearch.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="_layoutSearch.Text" xml:space="preserve">
+    <value>Search Term:</value>
+  </data>
+  <data name="&gt;&gt;_lblLine.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_dtpModifiedAfter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_tbModifiedBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedBefore.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_lblTypes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbMatchExactly.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbMatchExactly.Name" xml:space="preserve">
+    <value>_cbMatchExactly</value>
+  </data>
+  <data name="_layoutSearchLocation.Text" xml:space="preserve">
+    <value>_layoutSearchLocation</value>
+  </data>
+  <data name="_dtpModifiedAfter.Properties.Mask.EditMask" xml:space="preserve">
+    <value>g</value>
+  </data>
+  <data name="&gt;&gt;_groupAdvanced.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_groupAdvanced.Name" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_dtpCreatedAfter.Properties.Mask.EditMask" xml:space="preserve">
+    <value>g</value>
+  </data>
+  <data name="&gt;&gt;_cbMatchExactly.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_lblTypes.Text" xml:space="preserve">
+    <value>Search for:</value>
+  </data>
+  <data name="_lblTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="_cbModifiedBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="_lblStatus.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="_searchLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 35</value>
+  </data>
+  <data name="_tbModifiedBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 199</value>
+  </data>
+  <data name="_dtpModifiedAfter.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_cbLists.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 68</value>
+  </data>
+  <data name="_lblLine.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="_cbCreatedBefore.Properties.Caption" xml:space="preserve">
+    <value>Created Before</value>
+  </data>
+  <data name="_layoutCancelButton.Text" xml:space="preserve">
+    <value>_layoutCancelButton</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Name" xml:space="preserve">
+    <value>_lblStatus</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedBefore.Name" xml:space="preserve">
+    <value>_dtpCreatedBefore</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedBefore.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedBefore.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_layoutItemsView.Name" xml:space="preserve">
+    <value>_layoutItemsView</value>
+  </data>
+  <data name="&gt;&gt;_layoutItemsView.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_layoutSearchButton.Text" xml:space="preserve">
+    <value>_layoutSearchButton</value>
+  </data>
+  <data name="&gt;&gt;_cbFolders.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbFolders.Name" xml:space="preserve">
+    <value>_cbFolders</value>
+  </data>
+  <data name="_cbModifiedAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 243</value>
+  </data>
+  <data name="&gt;&gt;_tsBtnCancel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_groupAdvanced.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="_btnShowPropertyGrids.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="_btnShowPropertyGrids.Text" xml:space="preserve">
+    <value>Show Properties</value>
+  </data>
+  <data name="&gt;&gt;_btnShowPropertyGrids.Name" xml:space="preserve">
+    <value>_btnShowPropertyGrids</value>
+  </data>
+  <data name="&gt;&gt;_btnShowPropertyGrids.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_tsBtnCancel.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_layoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_lblTypes.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="_cbMatchExactly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 19</value>
+  </data>
+  <data name="_itemsView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>874, 220</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBefore.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_dtpModifiedBefore.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;_layoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_layoutControlGroup.Name" xml:space="preserve">
+    <value>_layoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;_lblTypes.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_cmbContentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 95</value>
+  </data>
+  <data name="_btnAdvanced.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="_dtpCreatedBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbDocuments.Name" xml:space="preserve">
+    <value>_cbDocuments</value>
+  </data>
+  <data name="&gt;&gt;_cbDocuments.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_cbModifiedAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;_tbModifiedBy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_tbCreatedBy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_groupAdvanced.Text" xml:space="preserve">
+    <value>Advanced Search Options</value>
+  </data>
+  <data name="_groupAdvanced.Size" type="System.Drawing.Size, System.Drawing">
+    <value>380, 280</value>
+  </data>
+  <data name="_dtpModifiedBefore.Properties.Mask.EditMask" xml:space="preserve">
+    <value>g</value>
+  </data>
+  <data name="_lblLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>878, 13</value>
+  </data>
+  <data name="_teSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBefore.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="_cbDocuments.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;_layoutControl.Name" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="&gt;&gt;_layoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_cbRecursive.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_lblStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 330</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBy.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_btnSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAU1JREFUOE+dk7FKxEAQhtdiN5HDxxALsRALuUJ8AovDQnyKZDdcIfcIYiEih+Uh
+        YiGijWRnxUeQK3wAsbQSnyD+E9ljXDTcWXy5ZG7m3z8zE9U0zVJEVdQz1leZoyv8PmXW34AT7R43ZZ5k
+        JoCCfSS/GOfPTUl7pqjX8qLusyCLGUdjWRhpBbQLhzj1U9uwkSZE2FVm6TaNKzW8X8mcn+qyXk//TIHA
+        HTuSMQXLIwicyuBf6Iq2kH8pYwrF18bSQAa7QC/OpFt2QNwsmdQFTyUv6534DAGaaOcPZFIX7ZSGYTU+
+        K9g/WqwHNJExxcuDET3PNYXvBfs5Bb7wK8DFR/ce+AecXqdxsYk0QNKUu8ybyHa5WcaFop0/rPNqp05/
+        /RbABQrGjPwW2tV2/m25ou1ZTbyZl9yGXRzwHke/sADDjuDulUX+JcC0PbN0/AUxo4vTlnYoRQAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="_cmbContentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
+  </data>
+  <data name="_dtpModifiedBefore.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_layoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_layoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="_layoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>892, 583</value>
+  </data>
+  <data name="_btnSearch.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="_itemsView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 354</value>
+  </data>
+  <data name="_layoutSearchButton.CustomizationFormText" xml:space="preserve">
+    <value>_layoutSearchButton</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedBefore.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_layoutItemsView.Text" xml:space="preserve">
+    <value>_layoutItemsView</value>
+  </data>
+  <data name="_cbModifiedAfter.Properties.Caption" xml:space="preserve">
+    <value>Modified After</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBy.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_cbLists.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedBefore.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_cbDocuments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 68</value>
+  </data>
+  <data name="&gt;&gt;_tbCreatedBy.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_cbLists.Name" xml:space="preserve">
+    <value>_cbLists</value>
+  </data>
+  <data name="&gt;&gt;_cbLists.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_searchLocation.Name" xml:space="preserve">
+    <value>_searchLocation</value>
+  </data>
+  <data name="&gt;&gt;_searchLocation.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Widgets.ExplorerControlWithLocation, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="_cbFolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
+  </data>
+  <data name="_cbRecursive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 43</value>
+  </data>
+  <data name="&gt;&gt;_layoutPropertiesButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_layoutPropertiesButton.Name" xml:space="preserve">
+    <value>_layoutPropertiesButton</value>
+  </data>
+  <data name="&gt;&gt;_cbCreatedBefore.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_tbModifiedBy.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_dtpCreatedAfter.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="_dtpModifiedAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 247</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedAfter.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_cbItems.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_layoutSearch.CustomizationFormText" xml:space="preserve">
+    <value>Search Term:</value>
+  </data>
+  <data name="_searchLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedBefore.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_cbDocuments.Properties.Caption" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="_lblLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 317</value>
+  </data>
+  <data name="_cbCreatedAfter.Properties.Caption" xml:space="preserve">
+    <value>Created After</value>
+  </data>
+  <data name="&gt;&gt;_cbRecursive.Name" xml:space="preserve">
+    <value>_cbRecursive</value>
+  </data>
+  <data name="&gt;&gt;_cbRecursive.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_groupAdvanced.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_dtpModifiedBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 223</value>
+  </data>
+  <data name="_cbModifiedBefore.Properties.Caption" xml:space="preserve">
+    <value>Modified Before</value>
+  </data>
+  <data name="&gt;&gt;_cbDocuments.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;_tbCreatedBy.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_layoutLine.CustomizationFormText" xml:space="preserve">
+    <value>_layoutLine</value>
+  </data>
+  <data name="_teSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>515, 20</value>
+  </data>
+  <data name="_cbMatchExactly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 21</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedAfter.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_cbFolders.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_itemsView.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_cbDocuments.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_lblTypes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_lblTypes.Name" xml:space="preserve">
+    <value>_lblTypes</value>
+  </data>
+  <data name="_cbMatchExactly.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_layoutPropertiesButton.CustomizationFormText" xml:space="preserve">
+    <value>_layoutPropertiesButton</value>
+  </data>
+  <data name="_cbDocuments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 19</value>
+  </data>
+  <data name="_cbItems.Properties.Caption" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="&gt;&gt;_searchLocation.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="&gt;&gt;_cmbContentType.Name" xml:space="preserve">
+    <value>_cmbContentType</value>
+  </data>
+  <data name="&gt;&gt;_cmbContentType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_itemsView.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_layoutAdvancedButton.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="_layoutSearchLocation.CustomizationFormText" xml:space="preserve">
+    <value>_layoutSearchLocation</value>
+  </data>
+  <data name="_cmbContentType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_tbCreatedBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbFolders.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedBefore.Name" xml:space="preserve">
+    <value>_dtpModifiedBefore</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedBefore.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_cbItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_layoutPropertiesButton.Text" xml:space="preserve">
+    <value>_layoutPropertiesButton</value>
+  </data>
+  <data name="_groupAdvanced.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>380, 0</value>
+  </data>
+  <data name="_btnAdvanced.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="_btnAdvanced.Text" xml:space="preserve">
+    <value>Advanced Options</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SearchDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_cbSites.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>900, 610</value>
+  </data>
+  <data name="_groupAdvanced.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 35</value>
+  </data>
+  <data name="_cbDocuments.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_cbModifiedBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 19</value>
+  </data>
+  <data name="_tbModifiedBy.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_dtpModifiedBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_cbLists.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 19</value>
+  </data>
+  <data name="&gt;&gt;_cbContentType.Name" xml:space="preserve">
+    <value>_cbContentType</value>
+  </data>
+  <data name="&gt;&gt;_cbContentType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_dtpCreatedAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_layoutLine.Name" xml:space="preserve">
+    <value>_layoutLine</value>
+  </data>
+  <data name="&gt;&gt;_layoutLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbItems.Name" xml:space="preserve">
+    <value>_cbItems</value>
+  </data>
+  <data name="_tsBtnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="_tsBtnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="_layoutStatus.CustomizationFormText" xml:space="preserve">
+    <value>_layoutStatus</value>
+  </data>
+  <data name="&gt;&gt;_searchLocation.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_groupAdvanced.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_cbContentType.Properties.Caption" xml:space="preserve">
+    <value>Content type</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="_btnAdvanced.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_layoutAdvancedButton.Name" xml:space="preserve">
+    <value>_layoutAdvancedButton</value>
+  </data>
+  <data name="&gt;&gt;_layoutAdvancedButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_btnShowPropertyGrids.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_cbCreatedBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 123</value>
+  </data>
+  <data name="&gt;&gt;_layoutSearchLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_layoutSearchLocation.Name" xml:space="preserve">
+    <value>_layoutSearchLocation</value>
+  </data>
+  <data name="&gt;&gt;_layoutSearch.Name" xml:space="preserve">
+    <value>_layoutSearch</value>
+  </data>
+  <data name="&gt;&gt;_layoutSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_layoutAdvancedOptions.Text" xml:space="preserve">
+    <value>_layoutAdvancedOptions</value>
+  </data>
+  <data name="_dtpCreatedBefore.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_layoutControlGroup.Text" xml:space="preserve">
+    <value>_layoutControlGroup</value>
+  </data>
+  <data name="_dtpCreatedBefore.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;_teSearch.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedAfter.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbModifiedAfter.Name" xml:space="preserve">
+    <value>_cbModifiedAfter</value>
+  </data>
+  <data name="&gt;&gt;_teSearch.Name" xml:space="preserve">
+    <value>_teSearch</value>
+  </data>
+  <data name="&gt;&gt;_teSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_layoutStatus.Text" xml:space="preserve">
+    <value>_layoutStatus</value>
+  </data>
+  <data name="&gt;&gt;_groupAdvanced.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_btnSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="_cbFolders.Properties.Caption" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedAfter.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedAfter.Name" xml:space="preserve">
+    <value>_dtpCreatedAfter</value>
+  </data>
+  <data name="_dtpModifiedBefore.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_dtpModifiedBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
+  </data>
+  <data name="_cbCreatedAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="_cbItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 68</value>
+  </data>
+  <data name="_cbSites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 19</value>
+  </data>
+  <data name="_layoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;_btnAdvanced.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_cbContentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 91</value>
+  </data>
+  <data name="_cbModifiedBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 195</value>
+  </data>
+  <data name="_tbModifiedBy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;_layoutSearchButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_layoutSearchButton.Name" xml:space="preserve">
+    <value>_layoutSearchButton</value>
+  </data>
+  <data name="&gt;&gt;_itemsView.Type" xml:space="preserve">
+    <value>Metalogix.UI.Standard.Explorer.STItemCollectionView, Metalogix.UI.Standard, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;_itemsView.Name" xml:space="preserve">
+    <value>_itemsView</value>
+  </data>
+  <data name="&gt;&gt;_tbModifiedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_tbModifiedBy.Name" xml:space="preserve">
+    <value>_tbModifiedBy</value>
+  </data>
+  <data name="&gt;&gt;_lblStatus.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_btnShowPropertyGrids.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="&gt;&gt;_tsBtnCancel.Name" xml:space="preserve">
+    <value>_tsBtnCancel</value>
+  </data>
+  <data name="&gt;&gt;_tsBtnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="_cbModifiedBy.Properties.Caption" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="_layoutAdvancedButton.Text" xml:space="preserve">
+    <value>_layoutAdvancedButton</value>
+  </data>
+  <data name="_cbLists.Properties.Caption" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="_cbModifiedBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 19</value>
+  </data>
+  <data name="_tsBtnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="&gt;&gt;_cbLists.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_btnSearch.Name" xml:space="preserve">
+    <value>_btnSearch</value>
+  </data>
+  <data name="&gt;&gt;_btnSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_dtpCreatedAfter.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="_dtpModifiedAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 20</value>
+  </data>
+  <data name="&gt;&gt;_btnAdvanced.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_teSearch.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="_cbCreatedBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 19</value>
+  </data>
+  <data name="_layoutCancelButton.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;_btnAdvanced.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_btnAdvanced.Name" xml:space="preserve">
+    <value>_btnAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_dtpModifiedAfter.Parent" xml:space="preserve">
+    <value>_groupAdvanced</value>
+  </data>
+  <data name="&gt;&gt;_btnShowPropertyGrids.Parent" xml:space="preserve">
+    <value>_layoutControl</value>
+  </data>
+  <data name="&gt;&gt;_layoutStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_layoutStatus.Name" xml:space="preserve">
+    <value>_layoutStatus</value>
+  </data>
+  <data name="_cbCreatedBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 147</value>
+  </data>
+  <data name="_btnAdvanced.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="_btnAdvanced.Location" type="System.Drawing.Point, System.Drawing">
+    <value>763, 9</value>
+  </data>
+  <data name="_tsBtnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;_layoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_dtpCreatedAfter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_dtpCreatedAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 175</value>
+  </data>
+</root>

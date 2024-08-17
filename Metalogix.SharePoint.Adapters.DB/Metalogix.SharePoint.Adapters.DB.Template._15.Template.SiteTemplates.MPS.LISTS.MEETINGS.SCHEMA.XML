@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Name="Meetings" Title="$Resources:meetings_schema_mwsid200;" Url="Lists/Meetings" BaseType="0" DisableAttachments="TRUE">
+  <MetaData>
+    <Fields>
+      <Field ID="{5d1d4e76-091a-4e03-ae83-6a59847731c0}" Sealed="TRUE" Type="Integer" Name="EventType" ColName="int1" DisplayName="$Resources:core,Event_Type;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventType">
+      </Field>
+      <Field ID="{63055d04-01b5-48f3-9e1e-e564e7c6b23b}" Sealed="TRUE" Type="Guid" Name="UID" ColName="uniqueidentifier1" DisplayName="$Resources:core,meetings_schema_series_guid;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="UID">
+      </Field>
+      <Field ID="{dfcc8fff-7c4c-45d6-94ed-14ce0719efef}" Sealed="TRUE" Type="DateTime" Name="RecurrenceID" ColName="datetime3" DisplayName="$Resources:core,Recurrence_ID;" CalType="1" Format="ISO8601Gregorian" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RecurrenceID">
+      </Field>
+      <Field ID="{bd9f0786-ba9d-43c4-bbce-e9698d6a7c7d}" Sealed="TRUE" Type="DateTime" Name="EventDate" ColName="datetime1" DisplayName="$Resources:core,meetings_schema_event_date;" Format="DateTime" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventDate">
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field>
+      <Field ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Sealed="TRUE" Type="DateTime" Name="EndDate" ColName="datetime2" DisplayName="$Resources:core,End_Date;" Format="DateTime" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EndDate">
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field>
+      <Field ID="{4d54445d-1c84-4a6d-b8db-a51ded4e1acc}" Sealed="TRUE" Type="Integer" Name="Duration" ColName="int2" DisplayName="$Resources:core,Duration;" Min="0" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Duration">
+        <Default>0</Default>
+      </Field>
+      <Field ID="{288f5f32-8462-4175-8f09-dd7ba29359a9}" Sealed="TRUE" Type="Text" Name="Location" ColName="nvarchar3" DisplayName="$Resources:core,Location;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Location">
+      </Field>
+      <Field ID="{d12572d0-0a1e-4438-89b5-4d0430be7603}" Sealed="TRUE" Type="Note" Name="RecurrenceData" ColName="ntext1" DisplayName="$Resources:core,RecurrenceData;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RecurrenceData">
+      </Field>
+      <Field ID="{6cc1c612-748a-48d8-88f2-944f477f301b}" Sealed="TRUE" Type="Integer" Name="TimeZone" ColName="int3" DisplayName="$Resources:core,meetings_schema_timezone_id;" Min="0" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TimeZone">
+      </Field>
+      <Field ID="{7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8}" Sealed="TRUE" Type="AllDayEvent" Name="fAllDayEvent" ColName="bit4" DisplayName="$Resources:All_Day_Event;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="fAllDayEvent">
+        <FieldRefs>
+          <FieldRef Name="EventDate" RefType="StartDate" />
+          <FieldRef Name="EndDate" RefType="EndDate" />
+          <FieldRef Name="TimeZone" RefType="TimeZone" />
+        </FieldRefs>
+      </Field>
+      <Field ID="{f2e63656-135e-4f1c-8fc2-ccbe74071901}" Sealed="TRUE" Type="Recurrence" Name="fRecurrence" ColName="bit3" DisplayName="$Resources:core,meetings_schema_has_recurrence;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="fRecurrence">
+        <FieldRefs>
+          <FieldRef Name="RecurrenceData" RefType="RecurData" />
+          <FieldRef Name="EventType" RefType="EventType" /> \ <FieldRef Name="UID" RefType="UID" /><FieldRef Name="RecurrenceID" RefType="RecurrenceId" /><FieldRef Name="EventDate" RefType="StartDate" /><FieldRef Name="EndDate" RefType="EndDate" /><FieldRef Name="Duration" RefType="Duration" /><FieldRef Name="TimeZone" RefType="TimeZone" /></FieldRefs>
+      </Field>
+      <Field ID="{804e95ec-8f0b-4df0-a295-09ea1424a13a}" Sealed="TRUE" Type="Text" Name="EventUID" ColName="nvarchar1" DisplayName="$Resources:core,meetings_schema_event_uid;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventUID">
+      </Field>
+      <Field ID="{06b83ba2-495a-4892-9596-9c0a3d324acb}" Sealed="TRUE" Type="Note" Name="RRule" ColName="ntext2" DisplayName="$Resources:core,meetings_schema_recurrence_rule;" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RRule">
+      </Field>
+      <Field ID="{3ac38070-c8c9-4bcf-9e6b-9f915f2ca2b8}" Sealed="TRUE" Type="Note" Name="ExRule" ColName="ntext3" DisplayName="$Resources:core,meetings_schema_exclusion_rule;" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ExRule">
+      </Field>
+      <Field ID="{c6d7fd39-23fd-403a-bb8b-839059cc4d89}" Sealed="TRUE" Type="DateTime" Name="SuppressUntil" ColName="datetime5" DisplayName="$Resources:core,meetings_schema_suppress_until;" Format="DateTime" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="SuppressUntil">
+      </Field>
+      <Field ID="{f0969c98-0881-4659-b6ea-82b61b9751a2}" Sealed="TRUE" Type="Boolean" Name="IsException" ColName="bit2" DisplayName="$Resources:core,meetings_schema_is_exception;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="IsException">
+      </Field>
+      <Field ID="{02b56269-02c8-4fa5-89e7-f18f78d51e58}" Sealed="TRUE" Type="Boolean" Name="IsOrphaned" ColName="bit1" DisplayName="$Resources:core,meetings_schema_is_orphaned;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="IsOrphaned">
+        <Default>0</Default>
+      </Field>
+      <Field ID="{393ab00d-2ce7-4ba6-90e3-3aca8877af03}" Sealed="TRUE" Type="Integer" Name="IsDetached" ColName="int4" DisplayName="$Resources:core,meetings_schema_is_detached;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="IsDetached">
+        <Default>0</Default>
+      </Field>
+      <Field ID="{b90eaa9b-6998-472b-942c-45baa91d5460}" Sealed="TRUE" Type="Integer" Name="Sequence" ColName="int5" DisplayName="$Resources:core,meetings_schema_sequence;" Min="0" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Sequence">
+      </Field>
+      <Field ID="{6d9d8bea-63f5-4557-b305-16a904664331}" Sealed="TRUE" Type="DateTime" Name="DTStamp" ColName="datetime4" DisplayName="$Resources:core,meetings_schema_dtStamp;" Format="DateTime" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="DTStamp">
+      </Field>
+      <Field ID="{068a9704-0c26-432d-97f4-b4c64669e001}" Sealed="TRUE" Type="User" List="UserInfo" Name="Organizer" ColName="int6" DisplayName="$Resources:core,people_schema_mwsidonetid107;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Organizer">
+      </Field>
+      <Field ID="{664a8795-ed48-4884-b3d7-3cc3a00ae35d}" Sealed="TRUE" Type="URL" Name="EventUrl" DisplayName="$Resources:core,meetings_schema_event_url;" ColName="nvarchar4" ColName2="nvarchar5" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventUrl">
+      </Field>
+      <Field ID="{94f89715-e097-4e8b-ba79-ea02aa8b7adb}" Name="FileRef" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" Type="Lookup" DisplayName="$Resources:core,URL_Path;" List="Docs" FieldRef="ID" ShowField="FullUrl" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileRef">
+      </Field>
+      <Field ID="{56605df6-8fa1-47e4-a04c-5b384d59609f}" Name="FileDirRef" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" Type="Lookup" DisplayName="$Resources:core,URL_Dir_Name;" List="Docs" FieldRef="ID" ShowField="DirName" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileDirRef">
+      </Field>
+      <Field ID="{173f76c8-aebd-446a-9bc9-769a2bd2c18f}" Name="Last_x0020_Modified" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Modified;" Type="Lookup" List="Docs" FieldRef="ID" ShowField="TimeLastModified" Format="TRUE" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Last_x0020_Modified">
+      </Field>
+      <Field ID="{998b5cff-4a35-47a7-92f3-3914aa6aa4a2}" Name="Created_x0020_Date" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Created;" Type="Lookup" List="Docs" FieldRef="ID" ShowField="TimeCreated" Format="TRUE" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Created_x0020_Date">
+      </Field>
+      <Field ID="{30bb605f-5bae-48fe-b4e3-1f81d9772af9}" Name="FSObjType" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,File_System_Object_Type;" List="Docs" FieldRef="ID" ShowField="FSType" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FSObjType">
+      </Field>
+      <Field ID="{423874f8-c300-4bfb-b7a1-42e2159e3b19}" Name="SortBehavior" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,Sort_Behavior_Type;" List="Docs" FieldRef="ID" ShowField="SortBehavior" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="SortBehavior">
+      </Field>
+      <Field ID="{ba3c27ee-4791-4867-8821-ff99000bac98}" Name="PermMask" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" RenderXMLUsingPattern="TRUE" ShowInFileDlg="FALSE" Type="Computed" DisplayName="$Resources:core,Effective_Perm_Mask;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PermMask">
+        <FieldRefs>
+          <FieldRef Name="ID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <CurrentRights />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Hidden="TRUE" ShowInFileDlg="FALSE" ShowInVersionHistory="FALSE" Type="File" Name="FileLeafRef" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Name;" AuthoringInfo="$Resources:core,for_use_in_forms;" List="Docs" FieldRef="ID" ShowField="LeafName" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileLeafRef">
+      </Field>
+      <Field ID="{4b7403de-8d94-43e8-9f0f-137a3e298126}" Name="UniqueId" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,UniqueId;" List="Docs" FieldRef="ID" ShowField="UniqueId" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="UniqueId">
+      </Field>
+      <Field ID="{6d2c4fde-3605-428e-a236-ce5f3dc2b4d4}" Name="SyncClientId" DisplaceOnUpgrade="TRUE" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Sync_Client_Id;" ShowInFileDlg="FALSE" Type="Lookup" List="Docs" FieldRef="ID" ShowField="SyncClientId" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="SyncClientId">
+      </Field>
+      <Field ID="{c5c4b81c-f1d9-4b43-a6a2-090df32ebb68}" Name="ProgId" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,ProgId;" List="Docs" FieldRef="ID" ShowField="ProgId" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ProgId">
+      </Field>
+      <Field ID="{dddd2420-b270-4735-93b5-92b713d0944d}" Name="ScopeId" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,ScopeId;" List="Docs" FieldRef="ID" ShowField="ScopeId" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ScopeId">
+      </Field>
+      <Field ID="{39360f11-34cf-4356-9945-25c44e68dade}" ReadOnly="TRUE" Hidden="TRUE" Type="Text" Name="File_x0020_Type" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,File_Type;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="File_x0020_Type">
+      </Field>
+      <Field ReadOnly="TRUE" ID="{4ef1b78f-fdba-48dc-b8ab-3fa06a0c9804}" Hidden="TRUE" Type="Computed" Name="HTML_x0020_File_x0020_Type" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,HTML_File_Type;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="HTML_x0020_File_x0020_Type">
+        <FieldRefs>
+          <FieldRef Name="File_x0020_Type" />
+        </FieldRefs>
+        <DisplayPattern />
+      </Field>
+      <Field ID="{3c6303be-e21f-4366-80d7-d6d0a3b22c7a}" Hidden="TRUE" ReadOnly="TRUE" Type="Computed" Name="_EditMenuTableStart" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Edit_Menu_Table_Start;" ClassInfo="Menu" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_EditMenuTableStart">
+        <FieldRefs>
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="FileDirRef" />
+          <FieldRef Name="FSObjType" />
+          <FieldRef Name="ID" />
+          <FieldRef Name="ServerUrl" />
+          <FieldRef Name="HTML_x0020_File_x0020_Type" />
+          <FieldRef Name="File_x0020_Type" />
+          <FieldRef Name="PermMask" />
+          <FieldRef Name="_HasCopyDestinations" />
+          <FieldRef Name="_CopySource" />
+          <FieldRef Name="ContentType" />
+          <FieldRef Name="ContentTypeId" />
+          <FieldRef Name="_ModerationStatus" />
+          <FieldRef Name="_UIVersion" />
+        </FieldRefs>
+        <DisplayPattern><HTML><![CDATA[<div class="ms-vb" onmouseover="OnItem(this)" CTXName="ctx]]></HTML>
+          <Counter Type="View" /><HTML>" id="</HTML>
+          <Column Name="ID" HTMLEncode="TRUE" /><HTML>" Url="</HTML>
+          <Field Name="ServerUrl" URLEncodeAsURL="TRUE" /><HTML>" DRef="</HTML>
+          <Field Name="FileDirRef" /><HTML>" Perm="</HTML>
+          <Field Name="PermMask" /><HTML>" type="</HTML>
+          <Column Name="HTML_x0020_File_x0020_Type" /><HTML>" Ext="</HTML>
+          <Column Name="File_x0020_Type" /><HTML>" Icon="</HTML>
+          <MapToAll>
+            <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+            <Column Name="File_x0020_Type" />
+          </MapToAll><HTML>" OType="</HTML>
+          <LookupColumn Name="FSObjType" /><HTML>" COUId="</HTML><HTML>" HCD="</HTML>
+          <Column Name="_HasCopyDestinations" /><HTML>" CSrc="</HTML>
+          <Column Name="_CopySource" URLEncodeAsURL="TRUE" /><HTML>" MS="</HTML>
+          <Column Name="_ModerationStatus" /><HTML><![CDATA[" CType="]]></HTML>
+          <Column Name="ContentType" HTMLEncode="TRUE" /><HTML><![CDATA[" CId="]]></HTML>
+          <Column Name="ContentTypeId" /><HTML>" UIS="</HTML>
+          <Column Name="_UIVersion" />
+          <GetVar Name="_EditMenuTableExtra" /><HTML>" SUrl="</HTML><HTML><![CDATA[">]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{1344423c-c7f9-4134-88e4-ad842e2d723c}" Hidden="TRUE" ReadOnly="TRUE" Type="Computed" Name="_EditMenuTableStart2" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Edit_Menu_Table_Start;" ClassInfo="Menu" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_EditMenuTableStart2">
+        <FieldRefs>
+          <FieldRef Name="ID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Counter Type="View" /><HTML>" id="</HTML>
+          <Column Name="ID" HTMLEncode="TRUE" />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{2ea78cef-1bf9-4019-960a-02c41636cb47}" Hidden="TRUE" ReadOnly="TRUE" Type="Computed" Name="_EditMenuTableEnd" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Edit_Menu_Table_End;" ClassInfo="Menu" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_EditMenuTableEnd">
+        <FieldRefs>
+          <FieldRef Name="ID" />
+        </FieldRefs>
+        <DisplayPattern><HTML><![CDATA[</div>]]></HTML><HTML><![CDATA[<div class="s4-ctx" onmouseover="OnChildItem(this.parentNode); return false;">]]></HTML><HTML><![CDATA[<span>&nbsp;</span>]]></HTML><HTML><![CDATA[<a onfocus="OnChildItem(this.parentNode.parentNode); return false;" onclick="PopMenuFromChevron(event); return false;" href="javascript:;" title="$Resources:core,open_menu;"></a>]]></HTML><HTML><![CDATA[<span>&nbsp;</span>]]></HTML><HTML><![CDATA[</div>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{9d30f126-ba48-446b-b8f9-83745f322ebe}" ReadOnly="TRUE" Type="Computed" Name="LinkFilenameNoMenu" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Name;" Hidden="TRUE" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" AuthoringInfo="$Resources:core,linked_to_document;" ListItemMenuAllowed="Prohibited" LinkToItemAllowed="Prohibited" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkFilenameNoMenu">
+        <FieldRefs>
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="FSObjType" />
+          <FieldRef Name="Created_x0020_Date" />
+          <FieldRef Name="FileRef" />
+          <FieldRef Name="File_x0020_Type" />
+          <FieldRef Name="HTML_x0020_File_x0020_Type" />
+          <FieldRef Name="ContentTypeId" />
+          <FieldRef Name="PermMask" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <FieldSwitch>
+                <Expr>
+                  <GetVar Name="RecursiveView" />
+                </Expr>
+                <Case Value="1">
+                  <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+                </Case>
+                <Default>
+                  <SetVar Name="UnencodedFilterLink">
+                    <SetVar Name="RootFolder"><HTML>/</HTML>
+                      <LookupColumn Name="FileRef" />
+                    </SetVar>
+                    <SetVar Name="SkipHost">1</SetVar>
+                    <SetVar Name="FolderCTID">
+                      <FieldSwitch>
+                        <Expr>
+                          <ListProperty Select="EnableContentTypes" />
+                        </Expr>
+                        <Case Value="1">
+                          <Column Name="ContentTypeId" />
+                        </Case>
+                      </FieldSwitch>
+                    </SetVar>
+                    <FilterLink Default="" Paged="FALSE" />
+                  </SetVar><HTML><![CDATA[<a onfocus="OnLink(this)" href="]]></HTML>
+                  <GetVar Name="UnencodedFilterLink" HTMLEncode="TRUE" /><HTML><![CDATA[" onmousedown="javascript:VerifyFolderHref(this,event, ']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <GetVar Name="UnencodedFilterLink" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <ListProperty Select="DefaultItemOpen" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <MapToControl>
+                      <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                      <Column Name="File_x0020_Type" />
+                    </MapToControl>
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <Column Name="HTML_x0020_File_x0020_Type" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[')"]]></HTML><HTML><![CDATA[" onclick="return HandleFolder(this,event, ']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <GetVar Name="UnencodedFilterLink" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <ServerProperty Select="HtmlTransform" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <ListProperty Select="DefaultItemOpen" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <MapToControl>
+                      <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                      <Column Name="File_x0020_Type" />
+                    </MapToControl>
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <Column Name="HTML_x0020_File_x0020_Type" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <UserID AllowAnonymous="TRUE" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <ListProperty Select="ForceCheckout" />
+                  </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <Field Name="PermMask" />
+                  </ScriptQuote><HTML><![CDATA[');">]]></HTML>
+                  <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+                  <IfEqual>
+                    <Expr1>
+                      <GetVar Name="ShowAccessibleIcon" />
+                    </Expr1>
+                    <Expr2>1</Expr2>
+                    <Then><HTML><![CDATA[<img src="/_layouts/15/images/blank.gif" class="ms-hidden" border="0" width="1" height="1" alt="$Resources:core,OpenMenuKeyAccessible;"/>]]></HTML>
+                    </Then>
+                  </IfEqual><HTML><![CDATA[</a>]]></HTML>
+                </Default>
+              </FieldSwitch>
+            </Then>
+            <Else><HTML><![CDATA[<a onfocus="OnLink(this)" href="]]></HTML>
+              <Field Name="ServerUrl" URLEncodeAsURL="TRUE" /><HTML><![CDATA[" onclick="return DispEx(this,event,']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <ServerProperty Select="HtmlTransform" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <ListProperty Select="DefaultItemOpen" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <MapToControl>
+                  <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                  <Column Name="File_x0020_Type" />
+                </MapToControl>
+              </ScriptQuote><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <Column Name="HTML_x0020_File_x0020_Type" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <UserID AllowAnonymous="TRUE" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <ListProperty Select="ForceCheckout" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <Field Name="PermMask" />
+              </ScriptQuote><HTML><![CDATA[')">]]></HTML>
+              <UrlBaseName HTMLEncode="TRUE">
+                <LookupColumn Name="FileLeafRef" />
+              </UrlBaseName>
+              <IfEqual>
+                <Expr1>
+                  <GetVar Name="ShowAccessibleIcon" />
+                </Expr1>
+                <Expr2>1</Expr2>
+                <Then><HTML><![CDATA[<img src="/_layouts/15/images/blank.gif" class="ms-hidden" border="0" width="1" height="1" alt="$Resources:core,OpenMenuKeyAccessible;"/>]]></HTML>
+                </Then>
+              </IfEqual><HTML><![CDATA[</a>]]></HTML>
+              <IfNew Name="Created_x0020_Date"><HTML><![CDATA[<img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/new.gif" alt="]]></HTML><HTML>$Resources:core,new_gif_alttext;</HTML><HTML><![CDATA[" class="ms-newgif" />]]></HTML>
+              </IfNew>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{5cc6dc79-3710-4374-b433-61cb4a686c12}" ReadOnly="TRUE" Type="Computed" Name="LinkFilename" DisplaceOnUpgrade="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Name;" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" ClassInfo="Menu" AuthoringInfo="$Resources:core,linked_to_document_with_edit_menu;" ListItemMenuAllowed="Required" LinkToItemAllowed="Prohibited" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkFilename">
+        <FieldRefs>
+          <FieldRef Name="LinkFilenameNoMenu" />
+          <FieldRef Name="_EditMenuTableStart2" />
+          <FieldRef Name="_EditMenuTableEnd" />
+        </FieldRefs>
+        <DisplayPattern>
+          <FieldSwitch>
+            <Expr>
+              <GetVar Name="FreeForm" />
+            </Expr>
+            <Case Value="TRUE">
+              <Field Name="LinkFilenameNoMenu" />
+            </Case>
+            <Default><HTML><![CDATA[<div class="ms-vb itx" onmouseover="OnItem(this)" CTXName="ctx]]></HTML>
+              <Field Name="_EditMenuTableStart2" /><HTML><![CDATA[">]]></HTML>
+              <Field Name="LinkFilenameNoMenu" /><HTML><![CDATA[</div>]]></HTML><HTML><![CDATA[<div class="s4-ctx" onmouseover="OnChildItem(this.parentNode); return false;">]]></HTML><HTML><![CDATA[<span>&nbsp;</span>]]></HTML><HTML><![CDATA[<a onfocus="OnChildItem(this.parentNode.parentNode); return false;" onclick="PopMenuFromChevron(event); return false;" href="javascript:;" title="$Resources:core,open_menu;"></a>]]></HTML><HTML><![CDATA[<span>&nbsp;</span>]]></HTML><HTML><![CDATA[</div>]]></HTML>
+            </Default>
+          </FieldSwitch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{224ba411-da77-4050-b0eb-62d422f13d3e}" Hidden="TRUE" ReadOnly="TRUE" Type="Computed" Name="LinkFilename2" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Name;" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" ClassInfo="Menu" AuthoringInfo="$Resources:core,linked_to_document_with_edit_menu; (old)" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkFilename2">
+        <FieldRefs>
+          <FieldRef Name="LinkFilenameNoMenu" />
+          <FieldRef Name="_EditMenuTableStart" />
+          <FieldRef Name="_EditMenuTableEnd" />
+        </FieldRefs>
+        <DisplayPattern>
+          <FieldSwitch>
+            <Expr>
+              <GetVar Name="FreeForm" />
+            </Expr>
+            <Case Value="TRUE">
+              <Field Name="LinkFilenameNoMenu" />
+            </Case>
+            <Default>
+              <Field Name="_EditMenuTableStart" />
+              <SetVar Name="ShowAccessibleIcon" Value="1" />
+              <Field Name="LinkFilenameNoMenu" />
+              <SetVar Name="ShowAccessibleIcon" Value="0" />
+              <Field Name="_EditMenuTableEnd" />
+            </Default>
+          </FieldSwitch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{081c6e4c-5c14-4f20-b23e-1a71ceb6a67c}" Type="Computed" ReadOnly="TRUE" Name="DocIcon" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Type;" TextOnly="TRUE" ClassInfo="Icon" AuthoringInfo="$Resources:core,Icon_Linked_Document;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="DocIcon">
+        <FieldRefs>
+          <FieldRef Name="File_x0020_Type" />
+          <FieldRef Name="FSObjType" />
+          <FieldRef Name="FileRef" />
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="HTML_x0020_File_x0020_Type" />
+          <FieldRef Name="PermMask" />
+          <FieldRef Name="IconOverlay">
+          </FieldRef>
+        </FieldRefs>
+        <DisplayPattern>
+          <SetVar Name="DocIconImg">
+            <SetVar Name="DocIconAltText">
+              <IfEqual>
+                <Expr1>
+                  <LookupColumn Name="FSObjType" />
+                </Expr1>
+                <Expr2>1</Expr2>
+                <Then>
+                  <IfSubString>
+                    <Expr1>0x0120D5</Expr1>
+                    <Expr2>
+                      <Column Name="ContentTypeId" />
+                    </Expr2>
+                    <Then><HTML>$Resources:core,itemname_documentset;: </HTML>
+                      <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+                    </Then>
+                    <Else><HTML>$Resources:core,Folder;: </HTML>
+                      <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+                    </Else>
+                  </IfSubString>
+                </Then>
+                <Else>
+                  <LookupColumn Name="Title" HTMLEncode="TRUE" />
+                </Else>
+              </IfEqual>
+            </SetVar>
+            <SetVar Name="DocIconFileName">
+              <IfEqual>
+                <Expr1>
+                  <Column Name="IconOverlay" />
+                </Expr1>
+                <Expr2>
+                </Expr2>
+                <Then>
+                  <IfEqual>
+                    <Expr1>
+                      <LookupColumn Name="FSObjType" />
+                    </Expr1>
+                    <Expr2>1</Expr2>
+                    <Then>
+                      <IfEqual>
+                        <Expr1>
+                          <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                          <Column Name="File_x0020_Type" />
+                        </Expr1>
+                        <Expr2><HTML>|</HTML>
+                        </Expr2>
+                        <Then><HTML>folder.gif</HTML>
+                        </Then>
+                        <Else>
+                          <SetVar Name="FolderIconFromMap">
+                            <MapToIcon>
+                              <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                              <Column Name="File_x0020_Type" />
+                            </MapToIcon>
+                          </SetVar>
+                          <IfEqual>
+                            <Expr1>
+                              <GetVar Name="FolderIconFromMap" />
+                            </Expr1>
+                            <Expr2>
+                              <MapToIcon>
+                              </MapToIcon>
+                            </Expr2>
+                            <Then><HTML>folder.gif</HTML>
+                            </Then>
+                            <Else>
+                              <GetVar Name="FolderIconFromMap" />
+                            </Else>
+                          </IfEqual>
+                        </Else>
+                      </IfEqual>
+                    </Then>
+                    <Else>
+                      <MapToIcon>
+                        <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                        <Column Name="File_x0020_Type" />
+                      </MapToIcon>
+                    </Else>
+                  </IfEqual>
+                </Then>
+                <Else>
+                  <MapToIcon>
+                    <Column Name="IconOverlay" />
+                  </MapToIcon>
+                </Else>
+              </IfEqual>
+            </SetVar><HTML><![CDATA[<img border="0" alt="]]></HTML>
+            <GetVar Name="DocIconAltText" /><HTML><![CDATA[" title="]]></HTML>
+            <GetVar Name="DocIconAltText" /><HTML><![CDATA[" src="/_layouts/15/images/]]></HTML>
+            <GetVar Name="DocIconFileName" /><HTML><![CDATA[" />]]></HTML>
+          </SetVar>
+          <SetVar Name="DocIconOverlayImg">
+            <IfEqual>
+              <Expr1>
+                <Column Name="IconOverlay" />
+              </Expr1>
+              <Expr2>
+              </Expr2>
+              <Then>
+              </Then>
+              <Else><HTML><![CDATA[<img class="ms-vb-icon-overlay" alt="*" src="/_layouts/15/images/]]></HTML>
+                <MapToOverlay>
+                  <Column Name="IconOverlay" />
+                </MapToOverlay><HTML><![CDATA[" />]]></HTML>
+              </Else>
+            </IfEqual>
+          </SetVar>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <FieldSwitch>
+                <Expr>
+                  <GetVar Name="RecursiveView" />
+                </Expr>
+                <Case Value="1">
+                  <GetVar Name="DocIconImg" />
+                  <GetVar Name="DocIconOverlayImg" />
+                </Case>
+                <Default>
+                  <SetVar Name="UnencodedFilterLink">
+                    <SetVar Name="RootFolder"><HTML>/</HTML>
+                      <LookupColumn Name="FileRef" />
+                    </SetVar>
+                    <SetVar Name="SkipHost">1</SetVar>
+                    <SetVar Name="FolderCTID">
+                      <FieldSwitch>
+                        <Expr>
+                          <ListProperty Select="EnableContentTypes" />
+                        </Expr>
+                        <Case Value="1">
+                          <Column Name="ContentTypeId" />
+                        </Case>
+                      </FieldSwitch>
+                    </SetVar>
+                    <FilterLink Default="" Paged="FALSE" />
+                  </SetVar>
+                  <FieldSwitch>
+                    <Expr>
+                      <GetVar Name="FileDialog" />
+                    </Expr>
+                    <Case Value="1">
+                      <GetVar Name="DocIconImg" />
+                      <GetVar Name="DocIconOverlayImg" />
+                    </Case>
+                    <Default><HTML><![CDATA[<a href="]]></HTML>
+                      <GetVar Name="UnencodedFilterLink" HTMLEncode="TRUE" /><HTML><![CDATA[" onclick="javascript:EnterFolder(']]></HTML>
+                      <ScriptQuote NotAddingQuote="TRUE">
+                        <GetVar Name="UnencodedFilterLink" />
+                      </ScriptQuote><HTML><![CDATA[');javascript:return false;">]]></HTML>
+                      <GetVar Name="DocIconImg" />
+                      <GetVar Name="DocIconOverlayImg" /><HTML><![CDATA[</a>]]></HTML>
+                    </Default>
+                  </FieldSwitch>
+                </Default>
+              </FieldSwitch>
+            </Then>
+            <Else><HTML><![CDATA[<a onfocus="OnLink(this)" href="]]></HTML>
+              <URL /><HTML><![CDATA[" onclick="GoToLink(this);return false;" target="_self">]]></HTML>
+              <GetVar Name="DocIconImg" />
+              <GetVar Name="DocIconOverlayImg" /><HTML><![CDATA[</a>]]></HTML>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{105f76ce-724a-4bba-aece-f81f2fce58f5}" ReadOnly="TRUE" Hidden="TRUE" Type="Computed" Name="ServerUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Server_Relative_URL;" Filterable="FALSE" RenderXMLUsingPattern="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ServerUrl">
+        <FieldRefs>
+          <FieldRef Name="FileRef" />
+        </FieldRefs>
+        <DisplayPattern><HTML>/</HTML>
+          <LookupColumn Name="FileRef" />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{7177cfc7-f399-4d4d-905d-37dd51bc90bf}" ReadOnly="TRUE" Hidden="TRUE" Type="Computed" Name="EncodedAbsUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Encoded_Absolute_URL;" Filterable="FALSE" RenderXMLUsingPattern="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EncodedAbsUrl">
+        <FieldRefs>
+          <FieldRef Name="FileRef" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HttpHost URLEncodeAsURL="TRUE" /><HTML>/</HTML>
+          <LookupColumn Name="FileRef" IncludeVersions="TRUE" URLEncodeAsURL="TRUE" />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{7615464b-559e-4302-b8e2-8f440b913101}" ReadOnly="TRUE" Hidden="TRUE" Type="Computed" Name="BaseName" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,File_Name;" Filterable="FALSE" RenderXMLUsingPattern="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BaseName">
+        <FieldRefs>
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="FSObjType" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+            </Then>
+            <Else>
+              <UrlBaseName HTMLEncode="TRUE">
+                <LookupColumn Name="FileLeafRef" />
+              </UrlBaseName>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{687c7f94-686a-42d3-9b67-2782eac4b4f8}" Name="MetaInfo" DisplaceOnUpgrade="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,Property_Bag;" List="Docs" FieldRef="ID" ShowField="MetaInfo" JoinColName="DoclibRowId" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="MetaInfo">
+      </Field>
+      <Field ID="{43bdd51b-3c5b-4e78-90a8-fb2087f71e70}" ColName="tp_Level" RowOrdinal="0" ReadOnly="TRUE" Type="Integer" Name="_Level" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Level;" Hidden="TRUE" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_Level">
+      </Field>
+      <Field ID="{c101c3e7-122d-4d4d-bc34-58e94a38c816}" ColName="tp_IsCurrentVersion" DisplaceOnUpgrade="TRUE" RowOrdinal="0" ReadOnly="TRUE" Type="Boolean" Name="_IsCurrentVersion" DisplayName="$Resources:core,Is_Current_Version;" Hidden="TRUE" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_IsCurrentVersion">
+      </Field>
+      <Field ID="{b824e17e-a1b3-426e-aecf-f0184d900485}" Name="ItemChildCount" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,Item_Child_Count;" List="Docs" FieldRef="ID" ShowField="ItemChildCount" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ItemChildCount">
+      </Field>
+      <Field ID="{960ff01f-2b6d-4f1b-9c3f-e19ad8927341}" Name="FolderChildCount" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,Folder_Child_Count;" List="Docs" FieldRef="ID" ShowField="FolderChildCount" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FolderChildCount">
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="2" Type="HTML" RecurrenceRowset="TRUE" ReadOnly="TRUE">
+        <Toolbar Type="Freeform">
+        </Toolbar>
+        <ViewHeader><HTML><![CDATA[<table width="116" cellpadding="2" cellspacing="0"><tr valign="top">
+						<td>]]></HTML><HTML><![CDATA[<script type="text/javascript">
+ctx = new ContextInfo();
+ctx.listBaseType = ]]></HTML>
+          <ListProperty Select="BaseType" /><HTML><![CDATA[;
+ctx.listTemplate = ]]></HTML>
+          <ListProperty Select="ServerTemplate" /><HTML><![CDATA[;
+ctx.listName = ]]></HTML>
+          <ScriptQuote>
+            <List />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.view = ]]></HTML>
+          <ScriptQuote>
+            <GetVar Name="View" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.listUrlDir = ]]></HTML>
+          <ScriptQuote>
+            <ListUrlDir ServerRel="TRUE" URLEncodeAsURL="TRUE" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.HttpPath = ]]></HTML>
+          <ScriptQuote>
+            <HttpPath ServerRel="TRUE" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.HttpRoot = ]]></HTML>
+          <ScriptQuote>
+            <HttpVDir />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.imagesPath = ]]></HTML>
+          <ScriptQuote>/_layouts/15/images/</ScriptQuote><HTML><![CDATA[;
+ctx.PortalUrl = ]]></HTML>
+          <ScriptQuote>
+            <ProjectProperty Select="PortalUrl" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.SendToLocationName = ]]></HTML>
+          <ScriptQuote>
+            <ListProperty Select="SendToLocationName" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.SendToLocationUrl = ]]></HTML>
+          <ScriptQuote>
+            <ListProperty Select="SendToLocationUrl" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.RecycleBinEnabled = ]]></HTML>
+          <ProjectProperty Select="RecycleBinEnabled" /><HTML><![CDATA[;
+ctx.OfficialFileName = ]]></HTML>
+          <ScriptQuote>
+            <ServerProperty Select="OfficialFileName" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.OfficialFileNames = ]]></HTML>
+          <ScriptQuote>
+            <ServerProperty Select="OfficialFileNames" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.WriteSecurity = ]]></HTML>
+          <ScriptQuote>
+            <ListProperty Select="WriteSecurity" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.SiteTitle = ]]></HTML>
+          <ScriptQuote>
+            <ProjectProperty Select="Title" />
+          </ScriptQuote><HTML><![CDATA[;
+ctx.ListTitle = ]]></HTML>
+          <ScriptQuote>
+            <ListProperty Select="Title" />
+          </ScriptQuote><HTML><![CDATA[;
+if (ctx.PortalUrl == "") ctx.PortalUrl = null;
+ctx.isWebEditorPreview = ]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="WebEditorPreview" />
+            </Expr>
+            <Case Value="TRUE">1</Case>
+            <Default>0</Default>
+          </Switch><HTML><![CDATA[;
+ctx.ctxId = ]]></HTML>
+          <Counter Type="View" /><HTML><![CDATA[;
+g_ViewIdToViewCounterMap[ ]]></HTML>
+          <ScriptQuote>
+            <GetVar Name="View" />
+          </ScriptQuote><HTML><![CDATA[ ]= ]]></HTML>
+          <Counter Type="View" /><HTML><![CDATA[;
+ctx.CurrentUserId = ]]></HTML>
+          <UserID AllowAnonymous="TRUE" /><HTML><![CDATA[;
+]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="JsGrid" />
+            </Expr>
+            <Case Value="1">
+ctx.isJsGrid = true;
+</Case>
+            <Default>
+ctx.isJsGrid = false;
+</Default>
+          </Switch>
+          <Switch>
+            <Expr>
+              <ListProperty Select="NavigateForFormsPages" />
+            </Expr>
+            <Case Value="1">
+ctx.NavigateForFormsPages = true;
+</Case>
+            <Default>
+ctx.NavigateForFormsPages = false;
+</Default>
+          </Switch>
+          <Switch>
+            <Expr>
+              <ListProperty Select="ModeratedList" />
+            </Expr>
+            <Case Value="1">
+ctx.isModerated = true;
+</Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <ListProperty Select="ForceCheckout" />
+            </Expr>
+            <Case Value="1">
+ctx.isForceCheckout = true;
+</Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <ListProperty Select="EnableMinorVersions" />
+            </Expr>
+            <Case Value="1">
+ctx.EnableMinorVersions = true;
+</Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <ListProperty Select="VersioningEnabled" />
+            </Expr>
+            <Case Value="1">
+ctx.verEnabled = 1;
+</Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <GetVar Name="RecursiveView" />
+            </Expr>
+            <Case Value="1">
+ctx.recursiveView = true;
+</Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <ListProperty Select="WorkflowsAssociated" />
+            </Expr>
+            <Case Value="1">
+ctx.WorkflowsAssociated = true;
+</Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <ListProperty Select="EnableContentTypes" />
+            </Expr>
+            <Case Value="1">
+ctx.ContentTypesEnabled = true;
+</Case>
+          </Switch><HTML><![CDATA[ 
+ctx]]></HTML>
+          <Counter Type="View" /><HTML><![CDATA[ = ctx;
+g_ctxDict['ctx]]></HTML>
+          <Counter Type="View" /><HTML><![CDATA['] = ctx;
+</script>]]></HTML><HTML><![CDATA[<table id="onetidMeetingNavigator" width="100%" border="0"><tr><td class="ms-navheader" colspan="3">]]></HTML><HTML><![CDATA[<div style="display:none;padding-bottom:10px;" class="ms-alerttext">]]></HTML><HTML>This Web Part is required for the workspace to function properly. It should not be removed.</HTML><HTML><![CDATA[</div>]]></HTML><HTML>$Resources:core,meetings_schema_onetidMeetingNav</HTML><HTML><![CDATA[</td></tr><tr height="3"><td></td></tr>]]></HTML>
+        </ViewHeader>
+        <ViewBody><HTML><![CDATA[<tr><td width="4">]]></HTML>
+          <IfEqual>
+            <Expr1>
+              <MeetingProperty Select="InstanceID" />
+            </Expr1>
+            <Expr2>
+              <Column Name="InstanceID" />
+            </Expr2>
+            <Then><HTML><![CDATA[<img alt="]]></HTML><HTML>$Resources:core,meetings_schema_onetidMtgSelected</HTML><HTML><![CDATA[" border="0" src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/usm.gif" />]]></HTML>
+            </Then>
+          </IfEqual><HTML><![CDATA[</td><td>]]></HTML><HTML><![CDATA[<table cellspacing="0" class="ms-unselectedtitle" id="]]></HTML>
+          <Column Name="InstanceID" HTMLEncode="TRUE" />
+          <Switch>
+            <Expr>
+              <Column Name="IsOrphaned" />
+            </Expr>
+            <Case Value="1"><HTML><![CDATA[" onmouseover="OnItem(this)" CTXName="ctx]]></HTML>
+              <Counter Type="View" /><HTML>" menuType="Orphaned" DateTime="</HTML>
+              <Column Name="EventDate" Format="DateTime" HTMLEncode="TRUE" /><HTML>" DateTimeISO="</HTML>
+              <Column Name="EventDate" Format="ISO8601Basic" HTMLEncode="TRUE" />
+            </Case>
+          </Switch><HTML><![CDATA["><tr>]]></HTML>
+          <Switch>
+            <Expr>
+              <Column Name="EventType" />
+            </Expr>
+            <Case Value="5"><HTML><![CDATA[<td nowrap="nowrap" class="ms-MWSUninstantiated" style="cursor:hand" title="$Resources:meetings_schema_mwsididInactiveOccurrence;">]]></HTML>
+            </Case>
+            <Default><HTML><![CDATA[<td nowrap="nowrap" class="ms-MWSInstantiated">]]></HTML>
+            </Default>
+          </Switch>
+          <IfEqual>
+            <Expr1>
+              <MeetingProperty Select="InstanceID" />
+            </Expr1>
+            <Expr2>
+              <Column Name="InstanceID" />
+            </Expr2>
+            <Then><HTML><![CDATA[<u>]]></HTML>
+              <Column Name="EventDate" Format="DateOnly" HTMLEncode="TRUE" /><HTML><![CDATA[</u>]]></HTML>
+            </Then>
+            <Else><HTML><![CDATA[<a onfocus="OnLink(this)" href='javascript:CoreInvoke("MtgNavigate",]]></HTML>
+              <ScriptQuote>
+                <Column Name="InstanceID" />
+              </ScriptQuote><HTML><![CDATA[);' target="_self">]]></HTML>
+              <Switch>
+                <Expr>
+                  <Column Name="EventType" />
+                </Expr>
+                <Case Value="5" />
+                <Default><HTML><![CDATA[<u>]]></HTML>
+                </Default>
+              </Switch>
+              <Column Name="EventDate" Format="DateOnly" HTMLEncode="TRUE" />
+              <Switch>
+                <Expr>
+                  <Column Name="EventType" />
+                </Expr>
+                <Case Value="5" />
+                <Default><HTML><![CDATA[</u>]]></HTML>
+                </Default>
+              </Switch><HTML><![CDATA[</a>]]></HTML>
+            </Else>
+          </IfEqual><HTML><![CDATA[</td>]]></HTML>
+          <Switch>
+            <Expr>
+              <Column Name="IsOrphaned" />
+            </Expr>
+            <Case Value="1"><HTML><![CDATA[<td><img alt="]]></HTML><HTML>$Resources:core,meetings_schema_onetidMtgReschedule</HTML><HTML><![CDATA[" border="0" src="]]></HTML>
+              <ImagesPath /><HTML><![CDATA[wppinval.gif" /></td>]]></HTML><HTML><![CDATA[<td><img src="]]></HTML>
+              <ImagesPath /><HTML><![CDATA[blank.gif" width="13" style="visibility: hidden" alt="" /></td>]]></HTML>
+            </Case>
+          </Switch><HTML><![CDATA[</tr></table>]]></HTML><HTML><![CDATA[</td></tr>]]></HTML>
+        </ViewBody>
+        <ViewFooter><HTML><![CDATA[</table></td></tr></table>]]></HTML>
+        </ViewFooter>
+        <RowLimit Paged="TRUE">
+					15
+				</RowLimit>
+        <PagedRowset><HTML><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" class="ms-bottompaging">
+<tr><td class="ms-bottompagingline1"><img src="/_layouts/15/images/blank.gif" width='1' height='1' alt="" /></td></tr>
+<tr><td class="ms-bottompagingline2"><img src="/_layouts/15/images/blank.gif" width='1' height='1' alt="" /></td></tr>
+<tr><td align="center" class="ms-vb" id="bottomPagingCell]]></HTML>
+          <GetVar Name="WPQ" /><HTML><![CDATA["><table>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="PrevPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[<td><a href="javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="PrevPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'>]]></HTML><HTML><![CDATA[<img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="]]><![CDATA[$Resources:core,idPrevious;]]><![CDATA["/></a></td>]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[<td nowrap="nowrap" class="ms-paging">]]></HTML>
+          <IfEqual>
+            <Expr1>
+              <GetVar Name="IsViewEmpty" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then><HTML><![CDATA[<a href="javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="$Resources:core,idRewind;"/><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="$Resources:core,idRewind;"/></a>]]></HTML>
+            </Then>
+            <Else>
+              <GetVar Name="PageFirstRow" HTMLEncode="TRUE" /><HTML><![CDATA[&#160;]]></HTML><HTML>-</HTML><HTML><![CDATA[&#160;]]></HTML>
+              <GetVar Name="PageLastRow" HTMLEncode="TRUE" />
+            </Else>
+          </IfEqual><HTML><![CDATA[</td>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="NextPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[<td><a href="javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'>]]></HTML><HTML><![CDATA[<img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/next.gif" border="0" alt="]]><![CDATA[$Resources:core,idNext;]]><![CDATA["></a></td>]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</tr></table></td></tr>
+<tr><td class="ms-bottompagingline3"><img src="/_layouts/15/images/blank.gif" width='1' height='1' alt="" /></td></tr>
+</table>]]></HTML><HTML><![CDATA[
+<script type="text/javascript">
+  var topPagingCell = document.getElementById("topPagingCell]]></HTML>
+          <GetVar Name="WPQ" /><HTML><![CDATA[");
+  var bottomPagingCell = document.getElementById("bottomPagingCell]]></HTML>
+          <GetVar Name="WPQ" /><HTML><![CDATA[");
+  if (topPagingCell != null && bottomPagingCell != null)
+  {
+    topPagingCell.innerHTML = bottomPagingCell.innerHTML;
+  }
+</script>
+]]></HTML>
+        </PagedRowset>
+        <PagedClientCallbackRowset><HTML><![CDATA[<tr><td></td><td align="left" class="ms-vb">]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="NextPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[&#160;<a href="]]></HTML>
+              <PageUrl HTMLEncode="TRUE" /><HTML>?</HTML>
+              <GetVar Name="NextPageData" HTMLEncode="TRUE" /><HTML><![CDATA[" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'>]]></HTML><HTML><![CDATA[$Resources:core,groupMore;]]></HTML><HTML><![CDATA[</a>&#160;]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</td></tr>]]></HTML>
+        </PagedClientCallbackRowset>
+        <PagedRecurrenceRowset><HTML><![CDATA[<table width="100%" border="0"><tr><td  nowrap="nowrap" class="ms-vb">]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="PrevPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[&#160;<a id="onetidPrev" href=
+                "javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="PrevPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'
+                ><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="]] /><![CDATA[$Resources:core,idPrevious;]]><![CDATA["></a>
+                <a href=
+                "javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="PrevPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'
+                >]]></HTML><HTML>$Resources:core,idPrevious;</HTML><HTML><![CDATA[</a>]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</td><td align="$Resources:core,align-right;" nowrap="nowrap" class="ms-vb">]]></HTML><HTML></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="NextPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[<a href=
+                "javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'
+            >]]></HTML><HTML>$Resources:core,idNext;</HTML><HTML><![CDATA[</a>
+            <a id="onetidNext" href=
+                "javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'
+                ><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/next.gif" border="0" alt="]] /><![CDATA[$Resources:core,idNext;]]><![CDATA["></a>&#160;]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</td></tr></table>]]></HTML><HTML><![CDATA[<script type="text/javascript">
+        var g_thispagedata = ']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <GetVar Name="ThisPageData" />
+          </ScriptQuote><HTML><![CDATA[';
+    </script>]]></HTML>
+        </PagedRecurrenceRowset>
+        <ViewEmpty><HTML><![CDATA[<table width="116" cellpadding="2" cellspacing="0"><tr valign="top">
+						<td>]]></HTML><HTML><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0">]]></HTML><HTML><![CDATA[<tr><td><div style="display:none;padding-bottom:10px;" class="ms-alerttext">]]></HTML><HTML>This Web Part is required for the workspace to function properly. It should not be removed.</HTML><HTML><![CDATA[</div></td></tr>]]></HTML><HTML><![CDATA[<tr><td class="ms-vb">]]></HTML><HTML>$Resources:core,meetings_schema_onetidNoMeetings</HTML><HTML><![CDATA[</td></tr></table></td></tr></table>]]></HTML>
+        </ViewEmpty>
+        <ViewFields>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="RRule" />
+          <FieldRef Name="ExRule" />
+          <FieldRef Name="SuppressUntil" />
+          <FieldRef Name="InstanceID" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="IsOrphaned" />
+          <FieldRef Name="EventDate" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate" />
+              <FieldRef Name="EndDate" />
+              <FieldRef Name="RecurrenceID" />
+              <Value Type="DateTime">
+                <MeetingProperty Select="StartTimeUTC" />
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="7" Hidden="TRUE" Type="HTML" WebPartZoneID="Main" Url="movetodt.aspx" RecurrenceRowset="TRUE" ReadOnly="TRUE">
+        <Toolbar Type="Freeform"><HTML><![CDATA[<script type="text/javascript">
+					    <!--
+						var fromInstanceId = ]]></HTML>
+          <ScriptQuote>
+            <GetVar Name="FromInstanceID" />
+          </ScriptQuote><HTML><![CDATA[;
+						var fromInstanceDate = unescapeProperly(]]></HTML>
+          <ScriptQuote>
+            <GetVar Name="FromInstanceDate" />
+          </ScriptQuote><HTML><![CDATA[);
+						function PageNext(pagedata)
+						{
+							SubmitFormPost( ]]></HTML>
+          <ScriptQuote>
+            <PageUrl /><HTML><![CDATA[?FromInstanceID=]]></HTML>
+          </ScriptQuote><HTML><![CDATA[ + escapeProperly(fromInstanceId) + '&FromInstanceDate=' + escapeProperly(fromInstanceDate)
+												+ '&Source=' + GetSource() + '&' + pagedata);
+						}
+						function MtgMoveSubmit()
+						{
+							var form = document.forms[0];
+							var mtgselected = false;
+							var toInstanceId;
+							var toInstantiated;
+							var toInstanceDate;
+							if (typeof(form.mtgselector) != "undefined" && form.mtgselector != null)
+							{
+								for (var i=0; i < form.mtgselector.length; ++i)
+								{
+									if (form.mtgselector(i).checked)
+									{
+										var mtginfostr = form.mtgselector(i).value;
+										var separator = mtginfostr.indexOf('#');
+										toInstanceId = mtginfostr.substring(0,separator);
+										toInstantiated = (mtginfostr.charAt(separator+1) == '1') ? true : false;
+										toInstanceDate = mtginfostr.substr(separator+3);
+										mtgselected = true;
+										break;
+									}
+								}
+							}
+							if (!mtgselected)
+							{
+								var L_MtgSelect_Text = "]]></HTML><HTML>$Resources:core,meetings_schema_onetidMtgSelect</HTML><HTML><![CDATA[";
+								alert(L_MtgSelect_Text);
+								return;
+							}
+							var L_MtgMoveConfirm_Text = "]]></HTML><HTML>$Resources:core,meetings_schema_onetidMtgMoveConfirm</HTML><HTML><![CDATA[";
+							var mtgMoveConfirmText = L_MtgMoveConfirm_Text.replace(/!1/g, fromInstanceDate);
+							mtgMoveConfirmText = mtgMoveConfirmText.replace(/!2/, toInstanceDate);
+							if (toInstantiated)
+							{
+								var L_MtgOverwriteConfirm_Text = "\n]]></HTML><HTML>$Resources:core,meetings_schema_onetidMtgOverwriteConfirm</HTML><HTML><![CDATA[";
+								mtgMoveConfirmText += L_MtgOverwriteConfirm_Text.replace(/!2/g, toInstanceDate);
+							}
+							if (confirm(mtgMoveConfirmText))
+							{
+								SubmitFormPost( ]]></HTML>
+          <ScriptQuote>
+            <HttpPath />
+          </ScriptQuote><HTML><![CDATA[ + '&Cmd=MtgMove&List=' +]]></HTML>
+          <ScriptQuote>
+            <List />
+          </ScriptQuote><HTML><![CDATA[ + '&FromInstanceID=' + escapeProperly(fromInstanceId) + '&ToInstanceID=' + escapeProperly(toInstanceId) + (toInstantiated ? '&Overwrite=1' : '') + '&NextUsing=' + escapeProperly(]]></HTML>
+          <ScriptQuote>
+            <HttpVDir />
+          </ScriptQuote><HTML><![CDATA[ + '?InstanceID=' + toInstanceId) );
+							}
+						}
+						function MtgMoveCancel()
+						{
+							window.location.href = unescapeProperly(GetSource());
+						}
+						-->
+						</script>]]></HTML><HTML><![CDATA[<table cellpadding="0" cellspacing="3" border="0" width="100%"><tr><td nowrap="nowrap" class="ms-vb">]]></HTML><HTML>$Resources:core,meetings_schema_onetidMtgMoveTitle</HTML><HTML><![CDATA[</td></tr><tr><td nowrap="nowrap" class="ms-vb"><script type="text/javascript">document.write(fromInstanceDate);</script></td></tr><tr height="3"><td></td></tr><tr><td class="ms-sectionline"><img src="]]></HTML>
+          <ImagesPath /><HTML><![CDATA[blank.gif" width="1" height="1" alt="" /></td></tr></table>]]></HTML>
+        </Toolbar>
+        <ViewHeader><HTML><![CDATA[<table id="onetidMeetingSelector" width="100%" border="0"><tr><td class="ms-vb" colspan="3">]]></HTML><HTML>$Resources:core,meetings_schema_onetidMeetingMov</HTML><HTML><![CDATA[</td></tr><tr height="3" colspan="3"><td></td></tr>]]></HTML><HTML><![CDATA[<tr><td colspan="3"><input type="radio" name="mtgselector" value='' style="display:none" /></td></tr>]]></HTML>
+        </ViewHeader>
+        <ViewBody>
+          <Switch>
+            <Expr>
+              <Column Name="IsOrphaned" />
+            </Expr>
+            <Case Value="1"><HTML><![CDATA[<tr><td class="ms-input"><input type="radio" disabled="disabled" /></td><td nowrap="nowrap" class="ms-input">]]></HTML>
+              <Column Name="EventDate" Format="DateOnly" HTMLEncode="TRUE" /><HTML><![CDATA[</td><td width="100%"></td></tr>]]></HTML>
+            </Case>
+            <Default><HTML><![CDATA[<tr><td class="ms-input"><input type="radio" title=']]><Column Name="EventDate" Format="DateOnly" HTMLEncode="TRUE" /></HTML><HTML><![CDATA[' name="mtgselector" value=']]></HTML>
+              <Column Name="InstanceID" HTMLEncode="TRUE" /><HTML><![CDATA[#]]></HTML>
+              <Switch>
+                <Expr>
+                  <Column Name="EventType" />
+                </Expr>
+                <Case Value="5"><HTML><![CDATA[0#]]></HTML>
+                </Case>
+                <Default><HTML><![CDATA[1#]]></HTML>
+                </Default>
+              </Switch>
+              <Column Name="EventDate" Format="DateTime" HTMLEncode="TRUE" /><HTML><![CDATA[' /></td><td nowrap="nowrap" class="ms-input">]]></HTML>
+              <Column Name="EventDate" Format="DateOnly" HTMLEncode="TRUE" /><HTML><![CDATA[</td><td width="100%"></td></tr>]]></HTML>
+            </Default>
+          </Switch>
+        </ViewBody>
+        <ViewFooter><HTML><![CDATA[</table>]]></HTML>
+        </ViewFooter>
+        <RowLimit Paged="TRUE">
+					15
+				</RowLimit>
+        <PagedRowset><HTML><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" class="ms-bottompaging">
+<tr><td class="ms-bottompagingline1"><img src="/_layouts/15/images/blank.gif" width='1' height='1' alt="" /></td></tr>
+<tr><td class="ms-bottompagingline2"><img src="/_layouts/15/images/blank.gif" width='1' height='1' alt="" /></td></tr>
+<tr><td align="center" class="ms-vb" id="bottomPagingCell]]></HTML>
+          <GetVar Name="WPQ" /><HTML><![CDATA["><table>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="PrevPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[<td><a href="javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="PrevPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'>]]></HTML><HTML><![CDATA[<img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="]]><![CDATA[$Resources:core,idPrevious;]]><![CDATA["/></a></td>]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[<td nowrap="nowrap" class="ms-paging">]]></HTML>
+          <IfEqual>
+            <Expr1>
+              <GetVar Name="IsViewEmpty" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then><HTML><![CDATA[<a href="javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="$Resources:core,idRewind;"/><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="$Resources:core,idRewind;"/></a>]]></HTML>
+            </Then>
+            <Else>
+              <GetVar Name="PageFirstRow" HTMLEncode="TRUE" /><HTML><![CDATA[&#160;]]></HTML><HTML>-</HTML><HTML><![CDATA[&#160;]]></HTML>
+              <GetVar Name="PageLastRow" HTMLEncode="TRUE" />
+            </Else>
+          </IfEqual><HTML><![CDATA[</td>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="NextPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[<td><a href="javascript:" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'>]]></HTML><HTML><![CDATA[<img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/next.gif" border="0" alt="]]><![CDATA[$Resources:core,idNext;]]><![CDATA["></a></td>]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</tr></table></td></tr>
+<tr><td class="ms-bottompagingline3"><img src="/_layouts/15/images/blank.gif" width='1' height='1' alt="" /></td></tr>
+</table>]]></HTML><HTML><![CDATA[
+<script type="text/javascript">
+  var topPagingCell = document.getElementById("topPagingCell]]></HTML>
+          <GetVar Name="WPQ" /><HTML><![CDATA[");
+  var bottomPagingCell = document.getElementById("bottomPagingCell]]></HTML>
+          <GetVar Name="WPQ" /><HTML><![CDATA[");
+  if (topPagingCell != null && bottomPagingCell != null)
+  {
+    topPagingCell.innerHTML = bottomPagingCell.innerHTML;
+  }
+</script>
+]]></HTML>
+        </PagedRowset>
+        <PagedClientCallbackRowset><HTML><![CDATA[<tr><td></td><td align="left" class="ms-vb">]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="NextPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[&#160;<a href="]]></HTML>
+              <PageUrl HTMLEncode="TRUE" /><HTML>?</HTML>
+              <GetVar Name="NextPageData" HTMLEncode="TRUE" /><HTML><![CDATA[" onclick='javascript:RefreshPageTo(event, "]]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <PageUrl /><HTML>?</HTML>
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[");javascript:return false;'>]]></HTML><HTML><![CDATA[$Resources:core,groupMore;]]></HTML><HTML><![CDATA[</a>&#160;]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</td></tr>]]></HTML>
+        </PagedClientCallbackRowset>
+        <PagedRecurrenceRowset><HTML><![CDATA[<table width="100%" border="0"><tr><td  nowrap="nowrap" class="ms-vb">]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="PrevPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[&#160;<a id="onetidPrev" href=
+                "javascript:PageNext" onclick="javascript:PageNext(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <GetVar Name="PrevPageData" />
+              </ScriptQuote><HTML><![CDATA[');javascript:return false;" target="_self"
+                ><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/prev.gif" border="0" alt="]] /><![CDATA[$Resources:core,idPrevious;]]><![CDATA["></a>
+                <a href=
+                "javascript:PageNext" onclick="javascript:PageNext(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <GetVar Name="PrevPageData" />
+              </ScriptQuote><HTML><![CDATA[');javascript:return false;" target="_self"
+                >]]></HTML><HTML>$Resources:core,idPrevious;</HTML><HTML><![CDATA[</a>]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</td><td align="$Resources:core,align-right;" nowrap="nowrap" class="ms-vb">]]></HTML><HTML></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="NextPageData" />
+            </Expr>
+            <Case Value="" />
+            <Default><HTML><![CDATA[<a href=
+                "javascript:PageNext" onclick="javascript:PageNext(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[');javascript:return false;" target="_self"
+            >]]></HTML><HTML>$Resources:core,idNext;</HTML><HTML><![CDATA[</a>
+            <a id="onetidNext" href=
+                "javascript:PageNext" onclick="javascript:PageNext(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <GetVar Name="NextPageData" />
+              </ScriptQuote><HTML><![CDATA[');javascript:return false;" target="_self"
+                ><img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/next.gif" border="0" alt="]] /><![CDATA[$Resources:core,idNext;]]><![CDATA["></a>&#160;]]></HTML>
+            </Default>
+          </Switch><HTML><![CDATA[</td></tr></table>]]></HTML>
+        </PagedRecurrenceRowset>
+        <ViewEmpty><HTML><![CDATA[<table width="100%" border="0"><tr><td class="ms-vb">]]></HTML><HTML>$Resources:core,meetings_schema_onetidNoUninstantiatedMeetings</HTML><HTML><![CDATA[</td></tr></table>]]></HTML>
+        </ViewEmpty>
+        <ViewFields>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="RRule" />
+          <FieldRef Name="ExRule" />
+          <FieldRef Name="SuppressUntil" />
+          <FieldRef Name="InstanceID" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="IsOrphaned" />
+          <FieldRef Name="EventDate" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate" />
+              <FieldRef Name="EndDate" />
+              <FieldRef Name="RecurrenceID" />
+              <Value Type="DateTime">
+                <GetVar Name="FromInstanceDateISO" />
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="0" Type="HTML" RecurrenceRowset="TRUE" ReadOnly="TRUE">
+        <ViewHeader><HTML><![CDATA[<table id="MeetingInfo" cellpadding="0" cellspacing="1" border="0" width="100%">]]></HTML><HTML><![CDATA[<tr><td><div style="display:none;padding-bottom:10px;" class="ms-alerttext">]]></HTML><HTML>This Web Part is required for the workspace to function properly. It should not be removed.</HTML><HTML><![CDATA[</div></td></tr>]]></HTML><HTML><![CDATA[<tr><td id="WorkspaceTitle" class="ms-homepagetitle" nowrap="nowrap"><div style="display:none;">]]></HTML>
+          <ProjectProperty Select="Title" HTMLEncode="TRUE" /><HTML><![CDATA[</div></td></tr>]]></HTML>
+        </ViewHeader>
+        <ViewBody>
+          <IfEqual>
+            <Expr1>
+              <MeetingProperty Select="InstanceID" />
+            </Expr1>
+            <Expr2>
+              <Column Name="InstanceID" />
+            </Expr2>
+            <Then>
+              <IfEqual>
+                <Expr1>
+                  <ProjectProperty Select="Title" />
+                </Expr1>
+                <Expr2>
+                  <Column Name="Title" />
+                </Expr2>
+                <Then />
+                <Else>
+                  <IfEqual>
+                    <Expr1>
+                      <Column Name="Title" />
+                    </Expr1>
+                    <Expr2>
+                    </Expr2>
+                    <Then />
+                    <Else><HTML><![CDATA[<tr><td id="MeetingTitle" class="ms-vb"><b>$Resources:meetings_schema_mwsididSubject;</b>]]></HTML>
+                      <Column Name="Title" HTMLEncode="TRUE" /><HTML><![CDATA[</td></tr>]]></HTML>
+                    </Else>
+                  </IfEqual>
+                </Else>
+              </IfEqual><HTML><![CDATA[<tr><td id="MeetingDate" class="ms-vb"><script type="text/javascript">FormatDate(]]></HTML>
+              <ScriptQuote>
+                <Column Name="EventDate" Format="DateOnly" />
+              </ScriptQuote><HTML><![CDATA[,]]></HTML>
+              <ScriptQuote>
+                <Column Name="EventDate" Format="TimeOnly" />
+              </ScriptQuote><HTML><![CDATA[,]]></HTML>
+              <ScriptQuote>
+                <Column Name="EndDate" Format="DateOnly" />
+              </ScriptQuote><HTML><![CDATA[,]]></HTML>
+              <ScriptQuote>
+                <Column Name="EndDate" Format="TimeOnly" />
+              </ScriptQuote><HTML><![CDATA[);</script> <span style="display:none" id="TimeZoneSection">]]></HTML>
+              <TimeZone HTMLEncode="TRUE" /><HTML><![CDATA[</span><span class="ms-addnew">&#160;
+							<a id="TimeZoneLink" title="$Resources:meetings_schema_mwsididShowTimeZone;" href="#" onclick="CoreInvoke('MtgToggleTimeZone');return false;">&gt;&gt;</a></span><script type="text/javascript">MtgShowTimeZone();</script></td></tr>]]></HTML>
+              <Switch>
+                <Expr>
+                  <Column Name="Location" HTMLEncode="TRUE" />
+                </Expr>
+                <Case Value="" />
+                <Default><HTML><![CDATA[<tr><td id="MeetingLocation" class="ms-vb"><b>$Resources:meetings_schema_mwsididLocation;</b>]]></HTML>
+                  <Column Name="Location" HTMLEncode="TRUE" /><HTML><![CDATA[</td></tr>]]></HTML>
+                </Default>
+              </Switch>
+              <Switch>
+                <Expr>
+                  <Column Name="EventUrl" HTMLEncode="TRUE" />
+                </Expr>
+                <Case Value="" />
+                <Default><HTML><![CDATA[<tr><td><table cellspadding="0" cellspacing="0">
+									<tr><td>
+										<a id="idEventUrl1" href=']]></HTML>
+                  <Column Name="EventUrl" HTMLEncode="TRUE" /><HTML><![CDATA['><img border="0" alt=']]></HTML><HTML>$Resources:core,meetings_calendar_list_link;</HTML><HTML><![CDATA[' src=']]></HTML>
+                  <ImagesPath /><HTML><![CDATA[$Resources:core,back_gif;' /></a>&#160;
+										</td>
+										<td class="ms-vb"><a id="idEventUrl2" href=']]></HTML>
+                  <Column Name="EventUrl" HTMLEncode="TRUE" /><HTML><![CDATA['>]]></HTML><HTML>$Resources:meetings_schema_mwsidonetidGoTo;</HTML><HTML><![CDATA[</a>
+										</td>
+									</tr></table></td></tr>]]></HTML>
+                </Default>
+              </Switch><HTML><![CDATA[
+								<tr><td class="ms-alerttext">
+									<script type="text/javascript">
+										var strAlert = GetAlertText(]]></HTML>
+              <ScriptQuote>
+                <Column Name="IsDetached" />
+              </ScriptQuote><HTML><![CDATA[);
+										if (strAlert != null)
+											document.write(strAlert);
+									</script>
+								</td></tr>]]></HTML>
+            </Then>
+          </IfEqual>
+        </ViewBody>
+        <ViewFooter><HTML><![CDATA[</table>]]></HTML>
+        </ViewFooter>
+        <ViewEmpty><HTML><![CDATA[<table id="MeetingInfo" cellpadding="0" cellspacing="1" border="0" width="100%">]]></HTML><HTML><![CDATA[<tr><td><div style="display:none;padding-bottom:10px;" class="ms-alerttext">]]></HTML><HTML>This Web Part is required for the workspace to function properly. It should not be removed.</HTML><HTML><![CDATA[</div></td></tr>]]></HTML><HTML><![CDATA[<tr><td id="WorkspaceTitle" class="ms-homepagetitle nowrap"><div style="display:none;">]]></HTML>
+          <ProjectProperty Select="Title" HTMLEncode="TRUE" /><HTML><![CDATA[</div></td></tr>]]></HTML><HTML><![CDATA[</table>]]></HTML>
+        </ViewEmpty>
+        <ViewFields>
+          <FieldRef Name="fRecurrence" />
+          <FieldRef Name="RRule" />
+          <FieldRef Name="ExRule" />
+          <FieldRef Name="SuppressUntil" />
+          <FieldRef Name="InstanceID" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="EventDate" />
+          <FieldRef Name="EndDate" />
+          <FieldRef Name="Location" />
+          <FieldRef Name="IsDetached" />
+          <FieldRef Name="EventType" />
+          <FieldRef Name="EventUrl" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate" />
+              <FieldRef Name="EndDate" />
+              <FieldRef Name="RecurrenceID" />
+              <Value Type="DateTime">
+                <MeetingProperty Select="StartTimeUTC" />
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+        <RowLimit>
+					10
+				</RowLimit>
+      </View>
+    </Views>
+    <Forms>
+    </Forms>
+    <DefaultDescription>
+    </DefaultDescription>
+  </MetaData>
+</List>

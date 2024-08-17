@@ -1,0 +1,1092 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="w_lblWebApp.Text" xml:space="preserve">
+    <value>Web Application:</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_lblWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="w_tbOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="w_cmbExperienceVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="&gt;&gt;w_btnMPGalleryOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnMPGalleryOptions.Name" xml:space="preserve">
+    <value>w_btnMPGalleryOptions</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyAuditSettings.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="w_lblSecOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 236</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.Name" xml:space="preserve">
+    <value>w_cmbTemplateName</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_tbOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="w_cbCopySiteAdmins.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 369</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_tbURL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;helpLinkHostHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpCopyAuditSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyMasterPageGallery.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="w_btnCopyAdmins.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="w_numStorageQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="w_helpCopyAuditSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="w_helpCopyMasterPageGallery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="w_cbSetQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 19</value>
+  </data>
+  <data name="w_tbSecOwner.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Name" xml:space="preserve">
+    <value>w_lblTemplate</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblResourceQuota.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Name" xml:space="preserve">
+    <value>w_cmbWebApp</value>
+  </data>
+  <data name="&gt;&gt;helpLinkHostHeader.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 445</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="w_cbCopySiteAdmins.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="w_cmbContentDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lContentDatabase.Name" xml:space="preserve">
+    <value>lContentDatabase</value>
+  </data>
+  <data name="&gt;&gt;lContentDatabase.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbSetQuota.Properties.Caption" xml:space="preserve">
+    <value>Set Site Quota</value>
+  </data>
+  <data name="w_btnMPGalleryOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 318</value>
+  </data>
+  <data name="w_lblStorageQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="w_lblOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="w_btnSiteQuota.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyAuditSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.Name" xml:space="preserve">
+    <value>w_lblOwner</value>
+  </data>
+  <data name="w_tbURL.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_tbURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 20</value>
+  </data>
+  <data name="w_numResourceQuota.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cmbTemplateName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cmbTemplateName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 79</value>
+  </data>
+  <data name="&gt;&gt;w_btnSiteQuota.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblUnitMB.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_lblStorageQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 273</value>
+  </data>
+  <data name="w_tbOwner.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="w_lblTemplate.Text" xml:space="preserve">
+    <value>Template:</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAuditSettings.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="w_cbCopyMasterPageGallery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 321</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblUrl.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbCopyAuditSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 417</value>
+  </data>
+  <data name="&gt;&gt;w_lblSecOwner.Name" xml:space="preserve">
+    <value>w_lblSecOwner</value>
+  </data>
+  <data name="&gt;&gt;w_btnSiteQuota.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lbExperienceVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.Name" xml:space="preserve">
+    <value>w_cmbLang</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblSelWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 183</value>
+  </data>
+  <data name="&gt;&gt;lContentDatabase.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="w_cbCopyListTemplateGallery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAuditSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plExperienceVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 25</value>
+  </data>
+  <data name="w_numResourceQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 291</value>
+  </data>
+  <data name="w_lblResourceQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 294</value>
+  </data>
+  <data name="w_helpCopyMasterPageGallery.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lblUnitMB.Text" xml:space="preserve">
+    <value>Mb</value>
+  </data>
+  <data name="lblUnitMB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="w_cmbExperienceVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_cmbLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 55</value>
+  </data>
+  <data name="w_btnCopyAdmins.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 366</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.Name" xml:space="preserve">
+    <value>w_tbOwner</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.Name" xml:space="preserve">
+    <value>w_lblSelWebApp</value>
+  </data>
+  <data name="w_lblOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="w_lblOwner.Text" xml:space="preserve">
+    <value>Primary Administrator:</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cmbWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="helpLinkHostHeader.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpCopyAuditSettings.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopyAdmins.Name" xml:space="preserve">
+    <value>w_btnCopyAdmins</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopyAdmins.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyMasterPageGallery.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyMasterPageGallery.Name" xml:space="preserve">
+    <value>w_helpCopyMasterPageGallery</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.Name" xml:space="preserve">
+    <value>w_lblStorageQuota</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblUrl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cmbLang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_tbURL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 180</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="w_lblResourceQuota.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="helpLinkHostHeader.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_numResourceQuota.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_lblResourceQuota.Text" xml:space="preserve">
+    <value>Server Resource Quota:</value>
+  </data>
+  <data name="w_lblResourceQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 13</value>
+  </data>
+  <data name="w_cmbContentDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="&gt;&gt;lContentDatabase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Name" xml:space="preserve">
+    <value>w_lblWebApp</value>
+  </data>
+  <data name="lContentDatabase.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;helpLinkHostHeader.Name" xml:space="preserve">
+    <value>helpLinkHostHeader</value>
+  </data>
+  <data name="&gt;&gt;helpLinkHostHeader.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_tbOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 208</value>
+  </data>
+  <data name="w_lblUrl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="w_numStorageQuota.EditValue" type="System.Decimal, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="w_cmbWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_cmbLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="w_btnSiteQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="w_btnSiteQuota.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_cmbExperienceVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblSelWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="w_lblSelWebApp.Text" xml:space="preserve">
+    <value>http://d-mayne-09</value>
+  </data>
+  <data name="&gt;&gt;w_lblSelWebApp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopyAdmins.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopyAdmins.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpCopyMasterPageGallery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 320</value>
+  </data>
+  <data name="w_cbCopySiteAdmins.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 19</value>
+  </data>
+  <data name="cbHostHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="helpLinkHostHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 141</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.Parent" xml:space="preserve">
+    <value>w_plExperienceVersion</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="w_numStorageQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 265</value>
+  </data>
+  <data name="lContentDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="lContentDatabase.Text" xml:space="preserve">
+    <value>Content Database:</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.Name" xml:space="preserve">
+    <value>w_numResourceQuota</value>
+  </data>
+  <data name="&gt;&gt;w_numResourceQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plExperienceVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.Name" xml:space="preserve">
+    <value>w_lblResourceQuota</value>
+  </data>
+  <data name="w_numResourceQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="w_cmbTemplateName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="w_helpCopyMasterPageGallery.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="w_lbExperienceVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="w_lbExperienceVersion.Text" xml:space="preserve">
+    <value>Experience Version:</value>
+  </data>
+  <data name="w_cbCopyAuditSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetQuota.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="w_tbSecOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySiteAdmins.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySiteAdmins.Name" xml:space="preserve">
+    <value>w_cbCopySiteAdmins</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyListTemplateGallery.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAuditSettings.Name" xml:space="preserve">
+    <value>w_cbCopyAuditSettings</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAuditSettings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.Name" xml:space="preserve">
+    <value>cbHostHeader</value>
+  </data>
+  <data name="w_cmbPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="w_btnMPGalleryOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyListTemplateGallery.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpCopyMasterPageGallery.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_btnSiteQuota.Name" xml:space="preserve">
+    <value>w_btnSiteQuota</value>
+  </data>
+  <data name="&gt;&gt;w_btnSiteQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblUnitMB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 271</value>
+  </data>
+  <data name="w_lblUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="w_lblUrl.Text" xml:space="preserve">
+    <value>Site Url:</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbSetQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_lblOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 211</value>
+  </data>
+  <data name="w_btnSiteQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="w_cmbPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 180</value>
+  </data>
+  <data name="w_lblSelWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="helpLinkHostHeader.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 58</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyListTemplateGallery.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyListTemplateGallery.Name" xml:space="preserve">
+    <value>w_cbCopyListTemplateGallery</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.Name" xml:space="preserve">
+    <value>lblUnitMB</value>
+  </data>
+  <data name="&gt;&gt;lblUnitMB.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbHostHeader.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_helpCopyMasterPageGallery.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbCopyAuditSettings.Properties.Caption" xml:space="preserve">
+    <value>Copy Audit Settings</value>
+  </data>
+  <data name="w_helpCopyAuditSettings.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plExperienceVersion.Name" xml:space="preserve">
+    <value>w_plExperienceVersion</value>
+  </data>
+  <data name="w_cmbWebApp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plExperienceVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_lblWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cmbLang.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_btnCopyAdmins.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cmbContentDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetQuota.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="helpLinkHostHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="w_btnMPGalleryOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="w_btnMPGalleryOptions.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_helpCopyAuditSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 418</value>
+  </data>
+  <data name="w_btnSiteQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 390</value>
+  </data>
+  <data name="&gt;&gt;w_lblUrl.Name" xml:space="preserve">
+    <value>w_lblUrl</value>
+  </data>
+  <data name="&gt;&gt;w_lblUrl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySiteAdmins.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbCopyListTemplateGallery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 345</value>
+  </data>
+  <data name="w_numStorageQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lContentDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 106</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="w_lblUrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 165</value>
+  </data>
+  <data name="&gt;&gt;w_btnMPGalleryOptions.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Name" xml:space="preserve">
+    <value>w_cmbPath</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyMasterPageGallery.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblSecOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="w_lbExperienceVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 3</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyAuditSettings.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyAuditSettings.Name" xml:space="preserve">
+    <value>w_helpCopyAuditSettings</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cmbContentDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 103</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbCopySiteAdmins.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySiteAdmins.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_lblSecOwner.Text" xml:space="preserve">
+    <value>Secondary Administrator:</value>
+  </data>
+  <data name="w_lblSecOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="w_lblStorageQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="w_lblStorageQuota.Text" xml:space="preserve">
+    <value>Storage Quota:</value>
+  </data>
+  <data name="w_cbCopySiteAdmins.Properties.Caption" xml:space="preserve">
+    <value>Copy Site Collection Admins</value>
+  </data>
+  <data name="w_lblStorageQuota.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_tbSecOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="cbHostHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 19</value>
+  </data>
+  <data name="w_cbCopyMasterPageGallery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 19</value>
+  </data>
+  <data name="&gt;&gt;w_btnMPGalleryOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;w_lblResourceQuota.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblUnitMB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="helpLinkHostHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.Name" xml:space="preserve">
+    <value>w_numStorageQuota</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCSiteCollectionOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_cbSetQuota.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 393</value>
+  </data>
+  <data name="w_cbCopyListTemplateGallery.Properties.Caption" xml:space="preserve">
+    <value>Copy List Template Gallery</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnCopyAdmins.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="w_btnCopyAdmins.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="cbHostHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 139</value>
+  </data>
+  <data name="w_numStorageQuota.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_numStorageQuota.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="w_cbCopyMasterPageGallery.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="w_cbCopyMasterPageGallery.Properties.Caption" xml:space="preserve">
+    <value>Copy Master Page Gallery</value>
+  </data>
+  <data name="w_lblTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 82</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopyMasterPageGallery.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblUnitMB.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="w_plExperienceVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 31</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cmbTemplateName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 10</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbCopyAuditSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyMasterPageGallery.Name" xml:space="preserve">
+    <value>w_cbCopyMasterPageGallery</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyMasterPageGallery.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="cbHostHeader.Properties.Caption" xml:space="preserve">
+    <value>Host Header</value>
+  </data>
+  <data name="w_lblStorageQuota.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_lblTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.Name" xml:space="preserve">
+    <value>w_cmbContentDatabase</value>
+  </data>
+  <data name="&gt;&gt;w_cmbContentDatabase.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="w_cbCopyListTemplateGallery.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_helpCopyAuditSettings.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.Name" xml:space="preserve">
+    <value>w_cmbExperienceVersion</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_numResourceQuota.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="w_cbCopyAuditSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 19</value>
+  </data>
+  <data name="w_tbSecOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 233</value>
+  </data>
+  <data name="w_cmbExperienceVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 0</value>
+  </data>
+  <data name="w_helpCopyMasterPageGallery.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_numStorageQuota.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_lblResourceQuota.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="w_cmbLang.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_tbOwner.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="w_cbSetQuota.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="helpLinkHostHeader.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetQuota.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbSetQuota.Name" xml:space="preserve">
+    <value>w_cbSetQuota</value>
+  </data>
+  <data name="w_numResourceQuota.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.Name" xml:space="preserve">
+    <value>w_lbExperienceVersion</value>
+  </data>
+  <data name="&gt;&gt;w_lbExperienceVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpCopyAuditSettings.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cmbPath.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;w_lblOwner.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblStorageQuota.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.Name" xml:space="preserve">
+    <value>w_tbSecOwner</value>
+  </data>
+  <data name="&gt;&gt;w_tbSecOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbURL.Name" xml:space="preserve">
+    <value>w_tbURL</value>
+  </data>
+  <data name="w_cmbWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 7</value>
+  </data>
+  <data name="helpLinkHostHeader.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="lContentDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_cmbExperienceVersion.Parent" xml:space="preserve">
+    <value>w_plExperienceVersion</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyMasterPageGallery.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+</root>

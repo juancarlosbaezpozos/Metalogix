@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_lblCurrentNavMaxItems.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSubsites.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="w_cbCurrentNavShowPublishingPages.Properties.Caption" xml:space="preserve">
+    <value>Show Publishing Pages</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSiblingsAndBelow.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbTreeViewEnabled.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_pnlCurrentNav.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 53</value>
+  </data>
+  <data name="w_rbLeaveNavigationUnchanged.Properties.Caption" xml:space="preserve">
+    <value>Do not change current navigation display mode</value>
+  </data>
+  <data name="w_rbCurrentNavSubsites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 19</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavMaxItems.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_txtCurrentNavMaxItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="w_rbCurrentNavSameAsParent.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_cbTreeViewEnabled.Properties.Caption" xml:space="preserve">
+    <value>Tree View Enabled</value>
+  </data>
+  <data name="&gt;&gt;w_cbTreeViewEnabled.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_rbCurrentNavSiblingsAndBelow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbQuickLaunchEnabled.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbQuickLaunchEnabled.Name" xml:space="preserve">
+    <value>w_cbQuickLaunchEnabled</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 260</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSiblingsAndBelow.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="w_lblCurrentNavMaxItems.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="w_lblCurrentNavPanel.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_rbLeaveNavigationUnchanged.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 94</value>
+  </data>
+  <data name="w_cbCurrentNavShowPublishingPages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 19</value>
+  </data>
+  <data name="w_cbCurrentNavShowPublishingPages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 142</value>
+  </data>
+  <data name="&gt;&gt;w_cbTreeViewEnabled.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbTreeViewEnabled.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 28</value>
+  </data>
+  <data name="w_rbCurrentNavSubsites.Properties.Caption" xml:space="preserve">
+    <value>Display only the navigations items below the current site</value>
+  </data>
+  <data name="w_lblCurrentNavPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="w_lblCurrentNavPanel.Text" xml:space="preserve">
+    <value>Current Navigation</value>
+  </data>
+  <data name="w_txtCurrentNavMaxItems.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_pnlCurrentNav.Name" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="&gt;&gt;w_pnlCurrentNav.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_pnlCurrentNav.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;w_cbQuickLaunchEnabled.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_rbLeaveNavigationUnchanged.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowPublishingPages.Name" xml:space="preserve">
+    <value>w_cbCurrentNavShowPublishingPages</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowPublishingPages.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbLeaveNavigationUnchanged.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbLeaveNavigationUnchanged.Name" xml:space="preserve">
+    <value>w_rbLeaveNavigationUnchanged</value>
+  </data>
+  <data name="&gt;&gt;w_cbQuickLaunchEnabled.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbTreeViewEnabled.Name" xml:space="preserve">
+    <value>w_cbTreeViewEnabled</value>
+  </data>
+  <data name="&gt;&gt;w_cbTreeViewEnabled.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_rbCurrentNavSameAsParent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowSubsites.Name" xml:space="preserve">
+    <value>w_cbCurrentNavShowSubsites</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowSubsites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavPanel.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_rbCurrentNavSiblingsAndBelow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 40</value>
+  </data>
+  <data name="w_cbCurrentNavShowSubsites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 119</value>
+  </data>
+  <data name="w_pnlCurrentNav.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 199</value>
+  </data>
+  <data name="&gt;&gt;w_pnlCurrentNav.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbCurrentNavShowPublishingPages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblObjectModelSettings.Text" xml:space="preserve">
+    <value>These settings require a local connection or a Extensions Web Service connection.
+</value>
+  </data>
+  <data name="w_lblObjectModelSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 26</value>
+  </data>
+  <data name="&gt;&gt;w_txtCurrentNavMaxItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_txtCurrentNavMaxItems.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowSubsites.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_cbQuickLaunchEnabled.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 19</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSubsites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSubsites.Name" xml:space="preserve">
+    <value>w_rbCurrentNavSubsites</value>
+  </data>
+  <data name="w_cbTreeViewEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbCurrentNavShowPublishingPages.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_rbCurrentNavSubsites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblCurrentNavMaxItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 167</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavMaxItems.Name" xml:space="preserve">
+    <value>w_lblCurrentNavMaxItems</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavMaxItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowSubsites.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="w_rbCurrentNavSameAsParent.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_rbLeaveNavigationUnchanged.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_pnlCurrentNav.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbCurrentNavShowSubsites.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_rbCurrentNavSubsites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 70</value>
+  </data>
+  <data name="&gt;&gt;w_rbLeaveNavigationUnchanged.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_rbCurrentNavSiblingsAndBelow.Properties.Caption" xml:space="preserve">
+    <value>Display the current site, the navigation items below the current site, and the current site's sibling sites</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSameAsParent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSameAsParent.Name" xml:space="preserve">
+    <value>w_rbCurrentNavSameAsParent</value>
+  </data>
+  <data name="w_rbCurrentNavSameAsParent.Properties.Caption" xml:space="preserve">
+    <value>Display the same navigation items as the parent site</value>
+  </data>
+  <data name="w_txtCurrentNavMaxItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 164</value>
+  </data>
+  <data name="&gt;&gt;w_rbLeaveNavigationUnchanged.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowPublishingPages.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSiblingsAndBelow.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSiblingsAndBelow.Name" xml:space="preserve">
+    <value>w_rbCurrentNavSiblingsAndBelow</value>
+  </data>
+  <data name="w_cbQuickLaunchEnabled.Properties.Caption" xml:space="preserve">
+    <value>Quick Launch Enabled</value>
+  </data>
+  <data name="w_lblObjectModelSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_cbCurrentNavShowSubsites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 19</value>
+  </data>
+  <data name="&gt;&gt;w_lblObjectModelSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_rbLeaveNavigationUnchanged.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 19</value>
+  </data>
+  <data name="w_cbQuickLaunchEnabled.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbCurrentNavShowPublishingPages.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="w_lblCurrentNavMaxItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 26</value>
+  </data>
+  <data name="w_lblCurrentNavMaxItems.Text" xml:space="preserve">
+    <value>Maximum number of dynamic items to show within this level of navigation (SharePoint 2010):</value>
+  </data>
+  <data name="w_rbCurrentNavSameAsParent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 19</value>
+  </data>
+  <data name="w_lblCurrentNavPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_rbCurrentNavSameAsParent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_lblCurrentNavPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCQuickLaunchOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSameAsParent.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="w_lblCurrentNavPanel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbCurrentNavShowSubsites.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_cbCurrentNavShowSubsites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblObjectModelSettings.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Italic</value>
+  </data>
+  <data name="w_cbTreeViewEnabled.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 19</value>
+  </data>
+  <data name="&gt;&gt;w_lblObjectModelSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_txtCurrentNavMaxItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtCurrentNavMaxItems.Name" xml:space="preserve">
+    <value>w_txtCurrentNavMaxItems</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSameAsParent.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_txtCurrentNavMaxItems.Properties.Mask.EditMask" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="w_lblObjectModelSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 5</value>
+  </data>
+  <data name="w_cbQuickLaunchEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_txtCurrentNavMaxItems.EditValue" type="System.Decimal, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;w_lblObjectModelSettings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblObjectModelSettings.Name" xml:space="preserve">
+    <value>w_lblObjectModelSettings</value>
+  </data>
+  <data name="w_cbQuickLaunchEnabled.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_rbCurrentNavSubsites.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_rbCurrentNavSiblingsAndBelow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 31</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavPanel.Name" xml:space="preserve">
+    <value>w_lblCurrentNavPanel</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_rbCurrentNavSubsites.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_rbCurrentNavSiblingsAndBelow.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_lblCurrentNavMaxItems.Parent" xml:space="preserve">
+    <value>w_pnlCurrentNav</value>
+  </data>
+  <data name="w_cbQuickLaunchEnabled.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="w_cbCurrentNavShowSubsites.Properties.Caption" xml:space="preserve">
+    <value>Show Subsites</value>
+  </data>
+</root>

@@ -1,0 +1,140 @@
+<List Name="PortalListings" Title="Portal Listings" BaseTemplate="103" BaseType="0" DirName="Lists" ItemCount="1" Hidden="False" FeatureId="00bfea71-2062-426c-90bf-714c59600103" Description="" HasUniquePermissions="False" EnableAttachments="False" EnableModeration="False" EnableAssignToEmail="False" EnableVersioning="False" DraftVersionVisibility="0" OnQuickLaunch="False" AllowMultiResponses="False" ShowUser="True" ContentTypesEnabled="False" Folders="True" ReadSecurity="1" WriteSecurity="1" NoCrawl="False" MultipleDataList="False" EnableSyndication="True">
+<Views>
+<View DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Listings" Url="/Lists/PortalListingTest/AllListings.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/links.png">
+<Query>
+<Where>
+<Neq>
+<FieldRef Name="ApprovalStatus" />
+<Value Type="Text">Archived</Value>
+</Neq>
+</Where>
+</Query>
+<ViewFields>
+<FieldRef Name="URLwMenu" />
+<FieldRef Name="Comments" />
+<FieldRef Name="ApprovalStatus" />
+<FieldRef Name="Highlight" />
+<FieldRef Name="Author" />
+</ViewFields>
+<RowLimit Paged="TRUE">30</RowLimit>
+<Aggregations Value="Off" />
+</View>
+<View MobileView="TRUE" Type="HTML" DisplayName="Pending" Url="/Lists/PortalListingTest/Pending.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/links.png">
+<Query>
+<Where>
+<Eq>
+<FieldRef Name="ApprovalStatus" />
+<Value Type="Text">Pending</Value>
+</Eq>
+</Where>
+</Query>
+<ViewFields>
+<FieldRef Name="URLwMenu" />
+<FieldRef Name="Comments" />
+<FieldRef Name="Highlight" />
+<FieldRef Name="Author" />
+</ViewFields>
+<RowLimit Paged="TRUE">30</RowLimit>
+<Aggregations Value="Off" />
+</View>
+<View MobileView="TRUE" Type="HTML" DisplayName="Rejected" Url="/Lists/PortalListingTest/Rejected.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/links.png">
+<Query>
+<Where>
+<Eq>
+<FieldRef Name="ApprovalStatus" />
+<Value Type="Text">Rejected</Value>
+</Eq>
+</Where>
+</Query>
+<ViewFields>
+<FieldRef Name="URLwMenu" />
+<FieldRef Name="Comments" />
+<FieldRef Name="Highlight" />
+<FieldRef Name="Author" />
+</ViewFields>
+<RowLimit Paged="TRUE">30</RowLimit>
+<Aggregations Value="Off" />
+</View>
+<View MobileView="TRUE" Type="HTML" DisplayName="Archived" Url="/Lists/PortalListingTest/Archived.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/links.png">
+<Query>
+<Where>
+<Eq>
+<FieldRef Name="ApprovalStatus" />
+<Value Type="Text">Archived</Value>
+</Eq>
+</Where>
+</Query>
+<ViewFields>
+<FieldRef Name="URLwMenu" />
+<FieldRef Name="Comments" />
+<FieldRef Name="Highlight" />
+<FieldRef Name="Author" />
+</ViewFields>
+<RowLimit Paged="TRUE">30</RowLimit>
+<Aggregations Value="Off" />
+</View>
+<View MobileView="TRUE" Type="HTML" DisplayName="Expired" Url="/Lists/PortalListingTest/Expired.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/links.png">
+<Query>
+<Where>
+<And>
+<And>
+<Neq>
+<FieldRef Name="ApprovalStatus" />
+<Value Type="Text">Archived</Value>
+</Neq>
+<Lt>
+<FieldRef Name="PublishingExpirationDate" />
+<Value Type="DateTime">
+<Today />
+</Value>
+</Lt>
+</And>
+<IsNotNull>
+<FieldRef Name="PublishingExpirationDate" />
+</IsNotNull>
+</And>
+</Where>
+</Query>
+<ViewFields>
+<FieldRef Name="URLwMenu" />
+<FieldRef Name="Comments" />
+<FieldRef Name="ApprovalStatus" />
+<FieldRef Name="Highlight" />
+<FieldRef Name="Author" />
+</ViewFields>
+<RowLimit Paged="TRUE">30</RowLimit>
+<Aggregations Value="Off" />
+</View>
+</Views>
+<Fields>
+<Field Type="Note" Name="Comments" DisplayName="Description" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Comments" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" Version="1" RowOrdinal="0" />
+<Field Type="Choice" DisplayName="Group" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" StaticName="Group" Name="Group" RowOrdinal="0">
+  <Default>General</Default>
+  <CHOICES>
+    <CHOICE>Highlight</CHOICE>
+    <CHOICE>General</CHOICE>
+    <CHOICE>Expert</CHOICE>
+  </CHOICES>
+</Field>
+<Field Type="Choice" DisplayName="Approval Status" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" StaticName="ApprovalStatus" Name="ApprovalStatus" RowOrdinal="0" Version="1">
+<Default>Pending</Default>
+<CHOICES>
+<CHOICE>Approved</CHOICE>
+<CHOICE>Pending</CHOICE>
+<CHOICE>Rejected</CHOICE>
+<CHOICE>Archived</CHOICE>
+</CHOICES>
+</Field>
+<Field Type="URL" DisplayName="Image" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Image" StaticName="Image" Name="Image" ColName="nvarchar7" RowOrdinal="0" ColName2="nvarchar8" RowOrdinal2="0" />
+<Field Type="URL" DisplayName="Icon" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Image" StaticName="Icon" Name="Icon" RowOrdinal="0" RowOrdinal2="0" />
+<Field Type="DateTime" DisplayName="Publishing Start Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" StaticName="PublishingStartDate" Name="PublishingStartDate" RowOrdinal="0" CalType="0" Version="1" />
+<Field Type="DateTime" DisplayName="Publishing Expiration Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" StaticName="PublishingExpirationDate" Name="PublishingExpirationDate" RowOrdinal="0" CalType="0" Version="1" />
+<Field Type="Calculated" DisplayName="Highlight" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Boolean" ReadOnly="TRUE" StaticName="Highlight" Name="Highlight" RowOrdinal="0">
+<Formula>=(Group="Highlight")</Formula>
+<FieldRefs>
+<FieldRef Name="Group" />
+</FieldRefs>
+</Field>
+<Field RowOrdinal="0" Hidden="TRUE" Type="Guid" Name="ListingID" DisplayName="Listing ID" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Listing ID" />
+</Fields>
+</List>

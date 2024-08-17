@@ -1,0 +1,1596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{4C759AFF-BF4A-4E12-AF3D-ED9B0ADB814B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Metalogix.SharePoint.Adapters.MLWS</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Metalogix</RootNamespace>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>migrador.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\Properties\Settings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteRoleCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteGroupCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemsByQueryCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteGroupCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemsByQueryCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteContentTypesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemVersionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteContentTypesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWebPartsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemVersionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWebPartsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAttachmentsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteWebPartCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAttachmentsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFieldsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteWebPartCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteWebPartsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteWebPartsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFieldsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteUsersCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CloseWebPartsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteUsersCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CloseWebPartsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListTemplatesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListItemStatusCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListTemplatesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListItemStatusCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetWelcomePageCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetWelcomePageCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentVersionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetMasterPageCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentVersionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetMasterPageCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentBlobRefCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CorrectDefaultPageVersionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentBlobRefCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CorrectDefaultPageVersionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentVersionBlobRefCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ValidateUserInfoCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentVersionBlobRefCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ValidateUserInfoCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SearchForDocumentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebApplicationsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SearchForDocumentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebApplicationsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AnalyzeChurnCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetLanguagesAndWebTemplatesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AnalyzeChurnCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetLanguagesAndWebTemplatesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\FindUniquePermissionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\FindUniquePermissionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\FindAlertsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteQuotaTemplatesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\FindAlertsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAlertsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteQuotaTemplatesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddSiteCollectionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAlertsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSystemInfoCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddSiteCollectionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSystemInfoCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateSiteCollectionSettingsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSharePointVersionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateSiteCollectionSettingsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSharePointVersionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetGroupsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteSiteCollectionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteSiteCollectionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetGroupsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentTemplatetoContentTypeCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetRolesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLWSAdapter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentTemplatetoContentTypeCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetRolesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateWebNavigationStructureCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetRoleAssignmentsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetRoleAssignmentsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateWebNavigationStructureCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetContentTypesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetDocumentParsingCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetContentTypesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasDocumentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetDocumentParsingCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ModifyWebNavigationSettingsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasDocumentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ModifyWebNavigationSettingsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebPartPageCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetUserProfilesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebPartPageCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasWebPartsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetUserProfilesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAudiencesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasWebPartsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAudiencesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentIdCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetUserProfileCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentIdCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\SetUserProfileCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebPartPageTemplateCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateAudienceCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebPartPageTemplateCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateAudienceCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetMySiteDataCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDashboardPageTemplateCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetMySiteDataCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDashboardPageTemplateCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFormTemplateToContentTypeCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebPartsOnPageCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebPartsOnPageCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFormTemplateToContentTypeCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetUserFromProfileCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\Apply2013ThemeCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\Apply2013ThemeCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetUserFromProfileCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermstoreLanguagesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermstoreLanguagesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowAssociationsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermGroupCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowAssociationsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasWorkflowsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermGroupCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddReferencedTaxonomyDataCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasWorkflowsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasUniquePermissionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddReferencedTaxonomyDataCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddReusedTermsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\HasUniquePermissionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\IsListContainsInfoPathOrAspxItemCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddReusedTermsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermSetCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\IsListContainsInfoPathOrAspxItemCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermStoresCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermSetCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermStoresCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermGroupsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddTermCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermGroupsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteCollectionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermSetsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteCollectionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermSetsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteCollectionsOnWebAppCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteCollectionsOnWebAppCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermsFromTermSetCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermsFromTermSetCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermsFromTermSetItemCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermsFromTermSetItemCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetExternalContentTypesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetExternalContentTypesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebNavigationSettingsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebNavigationSettingsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetExternalItemsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetExternalItemsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetExternalContentTypeOperationsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebNavigationStructureCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetExternalContentTypeOperationsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetPortalListingGroupsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebNavigationStructureCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebTemplatesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetPortalListingGroupsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetPortalListingIDsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebTemplatesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetPortalListingIDsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetPortalListingsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetPortalListingsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSubWebsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermSetCollectionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermSetCollectionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSubWebsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermCollectionFromTermSetCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermCollectionFromTermSetCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermCollectionFromTermCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFoldersCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetTermCollectionFromTermCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetReferencedTaxonomyFullXmlCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFoldersCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetReferencedTaxonomyFullXmlCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemIDsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFilesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemIDsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFilesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\StoragePointAvailableCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ConfigureStoragePointFileShareEndpointAndProfileCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CatalogDocumentToStoragePointFileShareEndpointCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\StoragePointAvailableCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetStoragePointProfileConfigurationCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CatalogDocumentToStoragePointFileShareEndpointCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListItemChunkedCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetStoragePointProfileConfigurationCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListItemChunkedCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\StoragePointProfileConfiguredCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListItemChunkedCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\StoragePointProfileConfiguredCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListItemChunkedCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ConfigureStoragePointFileShareEndpointAndProfileCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentChunkedCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\OpenFileCopySessionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\WriteChunkCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentChunkedCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateDocumentChunkedCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ReadChunkCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ReadChunkCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateDocumentChunkedCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CloseFileCopySessionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentChunkedCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\CloseFileCopySessionCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentChunkedCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentOptimisticallyCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentVersionChunkedCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentOptimisticallyCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetDocumentVersionChunkedCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\OpenFileCopySessionCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFolderOptimisticallyCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFolderOptimisticallyCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSP2013WorkflowsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSP2013WorkflowsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\IsWorkflowServicesInstanceAvailableCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\MigrateSP2013WorkflowsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\IsWorkflowServicesInstanceAvailableCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\MigrateSP2013WorkflowsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ExecuteCommandCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteSP2013WorkflowsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteSP2013WorkflowsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ExecuteCommandCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmSolutionBinaryCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetLockedSitesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetLockedSitesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmSolutionBinaryCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListWorkflowRunning2010CompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAddInsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListWorkflowRunning2010CompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAddInsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetBrowserFileHandlingCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteSolutionsBinaryCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSiteSolutionsBinaryCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetBrowserFileHandlingCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmSandboxSolutionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetBcsApplicationsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetBcsApplicationsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmSandboxSolutionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetCustomProfilePropertyMappingCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\IsAppWebPartOnPageCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetCustomProfilePropertyMappingCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\IsAppWebPartOnPageCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetInfopathsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmSolutionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetInfopathsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSecureStorageApplicationsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmSolutionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowAssociation2013CompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetSecureStorageApplicationsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAdImportDcMappingsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowAssociation2013CompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebApplicationPoliciesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmServerDetailsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowAssociation2010CompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWebApplicationPoliciesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFarmServerDetailsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowAssociation2010CompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AdapterOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowRunning2013CompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFolderOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowRunning2013CompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowRunning2010CompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetWorkflowRunning2010CompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddSiteCollectionOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWebOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFileVersionsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ListItemQueryType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetListItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\StreamType.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetFileVersionsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ModifyNavigationOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWebCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetUserProfilePropertiesUsageCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateSiteCollectionOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetUserProfilePropertiesUsageCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWebCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateWebCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\GetAdImportDcMappingsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateDocumentOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateWebCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddViewCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddViewCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateContentTypeCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteFolderCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteListCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateContentTypeCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateWebOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ApplyOrUpdateContentTypeCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteListCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddAudienceOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteWebCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ApplyOrUpdateContentTypeCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddUserOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ReorderContentTypesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ReorderContentTypesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteWebCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFolderCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFieldsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFolderCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFolderToFolderCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListItemOptions.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFolderToFolderCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListItemCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddListItemCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFileToFolderCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFieldsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListItemCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateDocumentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteItemCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateListItemCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteItemCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateDocumentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteItemsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddSiteUserCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteItemsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddSiteUserCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddDocumentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteFolderCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddRoleAssignmentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddFileToFolderCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWorkflowAssociationCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddRoleAssignmentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ActivateReusableWorkflowTemplatesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateRoleCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateRoleCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\ActivateReusableWorkflowTemplatesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateGroupCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWorkflowCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddOrUpdateGroupCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWorkflowCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateGroupQuickLaunchCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\BeginCompilingAllAudiencesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\UpdateGroupQuickLaunchCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\BeginCompilingAllAudiencesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddAlertsCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteAllAudiencesCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddAlertsCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteAllAudiencesCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteAudienceCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\AddWorkflowAssociationCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteAudienceCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteRoleAssignmentCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteRoleAssignmentCompletedEventArgs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\DeleteRoleCompletedEventHandler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SharePoint.Adapters.MLWS\MLSPExtensionsWebServiceRef\MLSPExtensionsWebService.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metalogix.Connectivity\Metalogix.Connectivity.csproj">
+      <Project>{004767ba-3564-4224-8b0c-0ec2487b9dd8}</Project>
+      <Name>Metalogix.Connectivity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Core\Metalogix.Core.csproj">
+      <Project>{e4130506-97ab-4226-9323-b9db94629bdc}</Project>
+      <Name>Metalogix.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.SharePoint.Adapters\Metalogix.SharePoint.Adapters.csproj">
+      <Project>{e9dff0fe-d8eb-4cc2-bc04-0ee2b5f4990f}</Project>
+      <Name>Metalogix.SharePoint.Adapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Utilities\Metalogix.Utilities.csproj">
+      <Project>{44be20ed-a618-469b-a9bf-c28393fa4a74}</Project>
+      <Name>Metalogix.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="migrador.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

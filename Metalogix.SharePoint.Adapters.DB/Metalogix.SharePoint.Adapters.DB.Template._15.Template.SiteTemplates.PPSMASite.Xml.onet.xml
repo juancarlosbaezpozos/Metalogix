@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="1" ListDir="$Resources:core,lists_Folder;" xmlns:ows="Microsoft SharePoint" UIVersion="15">
+    <NavBars>
+        <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002" />
+        <NavBar Name="$Resources:ppsma,Onet_Dashboard_Title" ID="1005" Url="Dashboards" />
+        <NavBar Name="$Resources:ppsma,Onet_PPSMA_Title;" Url="Lists/Dashboard Content" ID="1006" />
+        <NavBar Name="$Resources:ppsma,Onet_DataSource_Title;" Url="Data Sources" ID="1007" />
+    </NavBars>
+    <ListTemplates>
+    </ListTemplates>
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+    <Configurations>
+        <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+                <List 
+                    Title="$Resources:ppsma,Onet_PPSMA_Title" 
+                    Description="$Resources:ppsma,Onet_PPSMA_Description" 
+                    Type="450" 
+                    Url="Lists/Dashboard Content" 
+                    FeatureId="481333E1-A246-4d89-AFAB-D18C6FE344CE" 
+                    QuickLaunchUrl="$Resources:core,lists_Folder;/Dashboard Content/AllItems.aspx" />
+                <List 
+                    Title="$Resources:ppsma,Onet_DataSource_Title" 
+                    Description="$Resources:ppsma,Onet_DataSource_Description" 
+                    Type="460" 
+                    Url="Data Sources" 
+                    FeatureId="5D220570-DF17-405e-B42D-994237D60EBF"
+                    QuickLaunchUrl="Data Sources/Forms/AllItems.aspx" />
+                <List 
+                    Title="$Resources:ppsma,Onet_Dashboard_Title" 
+                    Description="$Resources:ppsma,Onet_Dashboard_Description" 
+                    Type="101" 
+                    Url="Dashboards"
+                    QuickLaunchUrl="Dashboards/Forms/AllItems.aspx" /> 
+            </Lists>
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+            <SiteFeatures>
+              <!-- BasicWebParts Feature -->
+              <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+              <!-- PerformancePoint SiteCollection Feature -->
+              <Feature ID="A1CB5B7F-E5E9-421B-915F-BF519B0760EF" />
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+                    <!-- Per-Web Portal Navigation Properties-->
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="InheritGlobalNavigation" Value="true"/>
+                        <Property Key="IncludeSubSites" Value="true"/>
+                    </Properties>
+                </Feature>
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" /> <!-- Team Collaboration Feature -->
+                <Feature ID="99FE402E-89A0-45aa-9163-85342E865DC8" /> <!-- BaseWeb - Standard Site Features -->
+            </WebFeatures>
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="Default" Url="" Path="">
+            <File Url="default.aspx" NavBarHome="True" Type="Ghostable">
+                <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title></Title>
+                        <FrameType>None</FrameType>
+                        <Description></Description>
+                        <IsIncluded>true</IsIncluded>
+                        <ZoneID>Main</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/15/images/mscontl.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                        <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                        <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><Value>&lt;table&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+function OpenDD()
+{
+	var designerRedirect = "/_layouts/15/ppswebparts/designerredirect.aspx";
+	var siteCollection = "~SiteCollection";
+	var siteLocation = "~Site";
+	var pagesIndex = location.pathname.indexOf("/Pages/");
+	if (pagesIndex > 0) siteLocation = location.pathname.substring(0,pagesIndex);
+	var siteCollectionUrl = location.protocol + "//" + location.host + siteCollection;
+	if (siteLocation != null)
+	{
+		var siteLocationUrl = siteLocation.replace(siteCollection,"");
+		designerRedirect = siteLocation + designerRedirect + "?SiteCollection=" + siteCollectionUrl + "&amp;SiteLocation=" + siteLocationUrl;
+	}
+	location.href = designerRedirect;
+}
+&lt;/script&gt;
+		&lt;tr&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td valign=&quot;middle&quot;&gt;
+				&lt;span class=&quot;ppsma-fpt&quot;&gt;$Resources:ppsma,SiteTemplate_ViewSamples;&lt;/span&gt;
+				&lt;br /&gt;
+				&lt;br /&gt;
+				&lt;button onclick=&quot;javascript: OpenDD(); return false;&quot;&gt;
+					&lt;img align=&quot;absmiddle&quot; alt=&quot;$Resources:ppsma,SiteTemplate_RunDDAlt;&quot; src=&quot;/_layouts/15/images/PPSSiteTemplateRun.png&quot;
+						height=&quot;36px&quot; width=&quot;36px&quot; /&gt;&amp;nbsp;&lt;span class=&quot;ppsma-fpbbt&quot;&gt;$Resources:ppsma,SiteTemplate_RunDD;&lt;/span&gt;
+				&lt;/button&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td&gt;
+				&lt;img alt=&quot;$Resources:ppsma,SiteTemplate_SplashAlt;&quot; src=&quot;/_layouts/15/images/PPSSiteTemplateSplash.png&quot;
+					height=&quot;202px&quot; width=&quot;352px&quot; /&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td class=&quot;ppsma-fphtd&quot; colspan=&quot;3&quot;&gt;
+				&lt;h1 class=&quot;ppsma-fph1&quot;&gt;
+					$Resources:ppsma,SiteTemplate_PerformancePointServerName;
+				&lt;/h1&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td&gt;
+				&lt;table&gt;
+					&lt;tr&gt;
+						&lt;td valign=&quot;top&quot;&gt;
+							&lt;img height=&quot;44px&quot; width=&quot;44px&quot; src=&quot;/_layouts/15/images/PPSSiteTemplateScorecard.png&quot;
+								alt=&quot;$Resources:ppsma,SiteTemplate_ScorecardsImageAlt;&quot; class=&quot;ppsma-fpi&quot; /&gt;
+						&lt;/td&gt;
+						&lt;td&gt;
+							&lt;div class=&quot;ppsma-fpct ppsma-fpt&quot;&gt;
+								&lt;h2 class=&quot;ppsma-fph2&quot;&gt;
+									$Resources:ppsma,SiteTemplate_DriveAccountability;&lt;/h2&gt;
+								$Resources:ppsma,SiteTemplate_DriveAccountabilityDescription;&lt;/div&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;ppsma-fpcsl&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td&gt;
+				&lt;table&gt;
+					&lt;tr&gt;
+						&lt;td valign=&quot;top&quot;&gt;
+							&lt;img height=&quot;44px&quot; width=&quot;44px&quot; src=&quot;/_layouts/15/images/PPSSiteTemplateDecomp.png&quot;
+								alt=&quot;$Resources:ppsma,SiteTemplate_DecompImageAlt;&quot; class=&quot;ppsma-fpi&quot; /&gt;
+						&lt;/td&gt;
+						&lt;td&gt;
+							&lt;div class=&quot;ppsma-fpct ppsma-fpt&quot;&gt;
+								&lt;h2 class=&quot;ppsma-fph2&quot;&gt;
+									$Resources:ppsma,SiteTemplate_DigDeeper;&lt;/h2&gt;
+								$Resources:ppsma,SiteTemplate_DigDeeperDescription;&lt;/div&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td&gt;
+				&lt;table&gt;
+					&lt;tr&gt;
+						&lt;td valign=&quot;top&quot;&gt;
+							&lt;img height=&quot;44px&quot; width=&quot;44px&quot; src=&quot;/_layouts/15/images/PPSSiteTemplateDashboard.png&quot;
+								alt=&quot;$Resources:ppsma,SiteTemplate_DataVisualizationsAlt;&quot; class=&quot;ppsma-fpi&quot; /&gt;
+						&lt;/td&gt;
+						&lt;td&gt;
+							&lt;div class=&quot;ppsma-fpct ppsma-fpt&quot;&gt;
+								&lt;h2 class=&quot;ppsma-fph2&quot;&gt;
+									$Resources:ppsma,SiteTemplate_IntegratedDashboards;&lt;/h2&gt;
+								$Resources:ppsma,SiteTemplate_IntegratedDashboardsDescription;&lt;/div&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;ppsma-fpcsl&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td&gt;
+				&lt;table&gt;
+					&lt;tr&gt;
+						&lt;td valign=&quot;top&quot;&gt;
+							&lt;img height=&quot;44px&quot; width=&quot;44px&quot; src=&quot;/_layouts/15/images/PPSSiteTemplateChartGrid.png&quot;
+								alt=&quot;$Resources:ppsma,SiteTemplate_ChartsAndGridsAlt;&quot; class=&quot;ppsma-fpi&quot; /&gt;
+						&lt;/td&gt;
+						&lt;td&gt;
+							&lt;div class=&quot;ppsma-fpct ppsma-fpt&quot;&gt;
+								&lt;h2 class=&quot;ppsma-fph2&quot;&gt;
+									$Resources:ppsma,SiteTemplate_AnalyticPower;&lt;/h2&gt;
+								$Resources:ppsma,SiteTemplate_AnalyticPowerDescription;
+							&lt;/div&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;ppsma-fpcsm&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;</Value></Content>
+                        <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <View DisplayName="$Resources:ppsma,Onet_Dashboard_Title" List="Dashboards" BaseViewID="0" WebPartZoneID="Main" WebPartOrder="2"></View>
+                <NavBarPage Name="$Resources:core,nav_Home;" ID="1002" Position="Start"/>
+                <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start"/>               
+            </File>
+        </Module>
+    </Modules>
+    <ServerEmailFooter>$Resources:ServerEmailFooter;</ServerEmailFooter>
+</Project>

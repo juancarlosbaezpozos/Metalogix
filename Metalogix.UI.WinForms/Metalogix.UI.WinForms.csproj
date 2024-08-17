@@ -1,0 +1,1315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{2AEF72AE-552F-4A3D-98A8-79E5C6A5C6F0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Metalogix.UI.WinForms</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>migrador.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DevExpress.Utils.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraEditors.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.XtraTreeList.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="DevExpress.Data.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="DevExpress.XtraLayout.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.XtraLayout.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.1">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\DevExpress.XtraVerticalGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebHelp">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\WebHelp.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Security" />
+    <Reference Include="Microsoft.Win32.TaskSchedulerEditor">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\Microsoft.Win32.TaskSchedulerEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>.\Metalogix.UI.WinFormsReferences\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CERTENROLLLib\AlgorithmFlags.cs" />
+    <Compile Include="CERTENROLLLib\CObjectId.cs" />
+    <Compile Include="CERTENROLLLib\CX500DistinguishedName.cs" />
+    <Compile Include="CERTENROLLLib\CX509CertificateRequestCertificate.cs" />
+    <Compile Include="CERTENROLLLib\CX509Enrollment.cs" />
+    <Compile Include="CERTENROLLLib\CX509PrivateKey.cs" />
+    <Compile Include="CERTENROLLLib\EncodingType.cs" />
+    <Compile Include="CERTENROLLLib\InstallResponseRestrictionFlags.cs" />
+    <Compile Include="CERTENROLLLib\IObjectId.cs" />
+    <Compile Include="CERTENROLLLib\IX500DistinguishedName.cs" />
+    <Compile Include="CERTENROLLLib\IX509CertificateRequest.cs" />
+    <Compile Include="CERTENROLLLib\IX509CertificateRequestCertificate.cs" />
+    <Compile Include="CERTENROLLLib\IX509CertificateRequestCertificate2.cs" />
+    <Compile Include="CERTENROLLLib\IX509CertificateRequestPkcs10.cs" />
+    <Compile Include="CERTENROLLLib\IX509Enrollment.cs" />
+    <Compile Include="CERTENROLLLib\IX509Enrollment2.cs" />
+    <Compile Include="CERTENROLLLib\IX509PrivateKey.cs" />
+    <Compile Include="CERTENROLLLib\ObjectIdGroupId.cs" />
+    <Compile Include="CERTENROLLLib\ObjectIdPublicKeyFlags.cs" />
+    <Compile Include="CERTENROLLLib\PFXExportOptions.cs" />
+    <Compile Include="CERTENROLLLib\X500NameFlags.cs" />
+    <Compile Include="CERTENROLLLib\X509CertificateEnrollmentContext.cs" />
+    <Compile Include="CERTENROLLLib\X509KeySpec.cs" />
+    <Compile Include="CERTENROLLLib\X509PrivateKeyExportFlags.cs" />
+    <Compile Include="Metalogix\Licensing.CA\AgreeToLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Licensing.CA\LicenseActivation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Licensing.CA\Messages.cs" />
+    <Compile Include="Metalogix\MLShortTextEntryDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Permissions\MappableRoleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Permissions\MappableSecurityPrincipalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Permissions\PrincipalListViewItem.cs" />
+    <Compile Include="Metalogix\Permissions\PrincipalMappingListViewItem.cs" />
+    <Compile Include="Metalogix\Permissions\RoleListViewItem.cs" />
+    <Compile Include="Metalogix\Permissions\RoleMappingListViewItem.cs" />
+    <Compile Include="Metalogix\Permissions\SecurableComboBoxItem.cs" />
+    <Compile Include="Metalogix\SharePoint.Migration\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\TextBoxSize.cs" />
+    <Compile Include="Metalogix\TextEntryType.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionPaletteControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionPaletteGroup.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionPaletteGroupCollection.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionPaletteMenu.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionPaletteMenuCollection.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionTemplateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionTemplateSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\ActionTemplateUIHelper.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\BasicView\ConfigureEmailSettingsDialogBasicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\ConfigureEmailSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\CopyLogItemAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\CopyLogItemMenuHeader.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\CopyLogItemWithDetailsAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\CopyLogItemWithoutDetailsAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\HasSelectableObjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\ILogAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\LogItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\LogItemDetailsAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\LogItemListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\LogItemViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\NavigateAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\NavigateToLogItemMenuHeader.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\NavigateToLogItemSourceAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\NavigateToLogItemTargetAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\PleaseWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Actions\ReportAnErrorAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Actions\TemplatableTabsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\AdvancedAlertDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\AdvancedXtraMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Attributes\ApplicationIconAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\ApplicationSettingAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\FormIconAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\FormTypeAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\IsAdvancedPreconditionAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\ItemDataConverterAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\ItemsViewAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\LicenseWarningMessagesAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\MultiSelectAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\SecondExplorerAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\SplashScreenAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Attributes\UIAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\BooleanApplicationSetting.cs" />
+    <Compile Include="Metalogix\UI.WinForms\BrowserNavigateEventArgs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\BrowserNavigateEventHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\CancelableEventArgs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\ActionPaletteDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\AddEditAgentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\AnchoredControls\AnchoredButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\AnchoredControls\AnchoredLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\AnchoredControls\AnchoredLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\AnchoredControls\AnchoredPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\AnchoredControls\AnchoredTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\AnchoredControls\AnchoringUtils.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\AnchoredControls\IAnchoredControl.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\CollapsableComponent.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\CollapsableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\CollapsableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\ControlCollection.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\ControlImageAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\ControlNameAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\ElementStyle.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\ExtendedMarqueeWheel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\ICertificateInclusionOptionsContainer.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\LeftNavigableTabsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\LeftRightSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\MappingListViewItem.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\MarqueeBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\PictureButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\RunSaveCancelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\SerializableTableMapper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\SimpleIntervalClock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\SimplifiedGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\SortingType.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\TabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\TCCertificateInclusionConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\TCXtraDBConnection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\UsesGroupBoxAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\UsesTabControlAttribute.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraAutoCompleteComboEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraBarArrowsLinkViewInfo.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraBarManagerArrowsHelper.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraBarManagerWithArrows.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraHeirarchicalCheckBoxTreeList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraParentSelectableGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraSizableSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraSizableSplitterViewInfo.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraWizardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Components\XtraWizardTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Coordinates.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Database\DatabaseConnectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Database\NewDatabaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Database\SqlDatabaseBrowserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Database\SqlDatabaseBrowserDialogSorter.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Database\SqlServerBrowserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\ConditionalMappingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\ConditionalMappingListViewItem.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\FilterControlParent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\FilterNode.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\FilterRow.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\Filters\CheckedChangedEventHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\Filters\FilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Filters\FilterExpressionEditorAndTypeSelectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Filters\FilterExpressionEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Filters\FilterExpressionEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\BasicTextMappingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\BasicTextMappingInputValidatorDelegate.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\ListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\ListGroupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\ListMapperControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\ListPickerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\ListSummaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\ListSummaryItemEventArgs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\ListSummaryItemEventHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\SourceChangedEventArgs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\Mapping\SourceChangedEventHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\OperandTranslationDictionary.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Data\PluralOperandTranslationDictionary.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Deployment\AnotherProcessesDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Deployment\DownloadData.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Deployment\DownloadEventArgs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Deployment\DownloadProgressHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Deployment\FileDownloadDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Deployment\FileDownloader.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Deployment\FormGetLatestProductRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Deployment\Resources.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Deployment\UICalls.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Deployment\UpdaterService.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Documentation\DocumentationHelper.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Documentation\Native\NativeMethods.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Documentation\Native\NativeWrappers.cs" />
+    <Compile Include="Metalogix\UI.WinForms\DoubleBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\ErrorHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\ErrorHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ApplicationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ApplicationControlHelper.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ExplorerTreeNode.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ExplorerViewOption.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ItemCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ItemsViewControlFull.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ItemsViewType.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ItemViewFolder.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Explorer\ItemViewFolderList.cs" />
+    <Compile Include="Metalogix\UI.WinForms\FlatXtraMessageBox.cs" />
+    <Compile Include="Metalogix\UI.WinForms\GUIService.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Interfaces\IApplicationSetting.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Interfaces\IBooleanApplicationSetting.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Interfaces\IMultiSelectLimiter.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Interfaces\ITransformerTabConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\AnalyzeJobs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\CopyJobToClipboard.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\CreateIncrementalJobs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\DeleteSelectedJobs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ExportJobsToExcelConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ExportJobsToXml.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\GenerateJobGroups.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\GeneratePowerShellScript.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\GeneratePowerShellScriptForCertificate.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\GeneratePowerShellScriptForMachine.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\GeneratePowerShellScriptForUser.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\GeneratePowerShellScriptMenuHeader.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\NavigateToJobHeader.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\NavigateToJobSourceAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\NavigateToJobTargetAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ReconfigureJobs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\RenameJob.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\RunSelectedJobs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ScheduleTask.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ScheduleTaskForCertificate.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ScheduleTaskForCurrentMachine.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ScheduleTaskForCurrentUser.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ScheduleTaskMenuHeader.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\Actions\ViewLogsForJobs.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\AnalysisConfigurationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Jobs\DurationCalculator.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\DurationFormatter.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\JobGroupingEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Jobs\JobListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Jobs\JobListFullControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Jobs\JobStatusDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Jobs\JobUIHelper.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Jobs\LogDetailCountsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Jobs\LogItemDetailCountLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Licensing.Common\ActivationProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Licensing.Common\ActivationProgressHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Licensing.Common\AutoWaitCursor.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Licensing.Common\LicenseNewKeyWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Licensing.Common\LicenseProxyDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Licensing.Common\UpdateActivationProgressHandler.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Licensing.Common\WindowWrapper.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Licensing.SK\FormProxySetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Licensing.SK\FormSetLicenseKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\ListViewColumnComparer.cs" />
+    <Compile Include="Metalogix\UI.WinForms\ListViewColumnSorter.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Metabase\DisconnectConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Metabase\ExportToCSVConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Metabase\ExportToCSVControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\ExportToCSVDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\ExtractXPathControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\ImportFromCSVConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Metabase\ImportFromCSVDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\ImportFromCSVPreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\LoadFromCSVConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Metabase\LoadFromCSVDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\MetabaseDefaultConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\MetabaseSettingsConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Metabase\MetabaseSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Metabase\MetabaseSettingsEditorSetting.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Properties\Resources.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Properties\Settings.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Properties\Tooltips.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Proxy\EditProxyAddressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Proxy\EditProxyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Proxy\IProxyOptionsContainer.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Proxy\ManageProxyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Proxy\NewAddressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Proxy\ProxyDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Proxy\TCProxyConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\AddAgentAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\AddAgentConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\AddUpdateAgentBaseAction_T_.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\AgentAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\AgentHelper.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\DeleteJobAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\EditAgentAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\EditAgentConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\ManageAgentsAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\ManageAgentsConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\ManageQueueAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\ManageQueueConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\RefreshAgentAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\RefreshJobAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\RemoveAgentAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\RunSelectedJobsRemotely.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\UpdateAgentAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\UpdateAgentConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\ViewAgentAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Actions\ViewAgentConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Options\UpdateAgentOptions.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.UI\AddEditAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.UI\AgentsBrowserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.UI\ManageAgents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.UI\ManageQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.UI\UpdateAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.UI\ViewAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.Actions\AgentWizardAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.Actions\AgentWizardConfig.cs" />
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\AgentWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\AgentWizardTabbableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\CertificateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\GetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCApplicationMappings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCConfigureAgents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCConfigureMetabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCCreateCertificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCDeployCertificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCDownloadInstaller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCGettingStarted.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCInstallAgent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCInstallCertificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCPrerequisites.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCProvisionAgentDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\ShowAdvancedSetting.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\CreateSupportPackageAction.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\EnvironmentInfo.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\InstalledPowerShellInfo.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\InstalledProductInfo.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\JobInfo.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\ProductInfo.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\SupportFileType.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Support\SupportPackageBuilder.cs" />
+    <Compile Include="Metalogix\UI.WinForms\TextEditContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\ThreadSettingsEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\ThreadSettingsEditorSetting.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Tooltips\TooltipManager.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Transformers\EnableCustomTransformersSetting.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Transformers\TCTransformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\UIAboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\UIApplication.cs" />
+    <Compile Include="Metalogix\UI.WinForms\UIApplicationSettings.cs" />
+    <Compile Include="Metalogix\UI.WinForms\UIConfigurationVariables.cs" />
+    <Compile Include="Metalogix\UI.WinForms\UIController.cs" />
+    <Compile Include="Metalogix\UI.WinForms\UIMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\UIMarketingSplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\UISettings.cs" />
+    <Compile Include="Metalogix\UI.WinForms\UISplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\UIUtils.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Utilities\DevExpressExtensions.cs" />
+    <Compile Include="Metalogix\UI.WinForms\VerifyUserActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Web\AuthenticationWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Web\WebBrowserAuthUtils.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Web\WebBrowserLoginContext.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Widgets\BrowserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\CertificateFromFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\CertificateFromStoreDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\DisableLineRenderer.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Widgets\ExplorerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\ExplorerControlWithLocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\ExplorerControlWithNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\Interface\ITextMonikerEditorPresenter.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Widgets\Interface\ITextMonikerEditorView.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Widgets\LocationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\NodeChooserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\NodePropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\TextMonikerEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metalogix\UI.WinForms\Widgets\TextMonikerEditorPresenter.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Widgets\TextMonikerUITypeEditor.cs" />
+    <Compile Include="Metalogix\UI.WinForms\Widgets\TreeViewX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Widgets\EnhancedTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Widgets\FlickerFreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Widgets\FlickerFreeTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Widgets\HierarchicalCheckBoxesTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Xml\XMLComparer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Metalogix\Xml\XMLPropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TooltipsTest\HelpTipButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TooltipsTest\HelpTipDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Metalogix\Licensing.CA\AgreeToLicense.resx">
+      <DependentUpon>AgreeToLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\Licensing.CA\LicenseActivation.resx">
+      <DependentUpon>LicenseActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\MLShortTextEntryDialog.resx">
+      <DependentUpon>MLShortTextEntryDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\Permissions\MappableRoleControl.resx">
+      <DependentUpon>MappableRoleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\Permissions\MappableSecurityPrincipalControl.resx">
+      <DependentUpon>MappableSecurityPrincipalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\SharePoint.Migration\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\ActionTemplateManager.resx">
+      <DependentUpon>ActionTemplateManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\ActionTemplateSelector.resx">
+      <DependentUpon>ActionTemplateSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\BasicView\ConfigureEmailSettingsDialogBasicView.resx">
+      <DependentUpon>ConfigureEmailSettingsDialogBasicView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\ConfigureEmailSettingsDialog.resx">
+      <DependentUpon>ConfigureEmailSettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\HasSelectableObjects.resx">
+      <DependentUpon>HasSelectableObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\LogItemDetails.resx">
+      <DependentUpon>LogItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\LogItemListControl.resx">
+      <DependentUpon>LogItemListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\LogItemViewer.resx">
+      <DependentUpon>LogItemViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\PleaseWaitDialog.resx">
+      <DependentUpon>PleaseWaitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Actions\TemplatableTabsForm.resx">
+      <DependentUpon>TemplatableTabsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\AdvancedAlertDialogBox.resx">
+      <DependentUpon>AdvancedAlertDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\AdvancedXtraMessageBox.resx">
+      <DependentUpon>AdvancedXtraMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\AddEditAgentControl.resx">
+      <DependentUpon>AddEditAgentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\CollapsableForm.resx">
+      <DependentUpon>CollapsableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\LeftNavigableTabsForm.resx">
+      <DependentUpon>LeftNavigableTabsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\LeftRightSelectionControl.resx">
+      <DependentUpon>LeftRightSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\RunSaveCancelForm.resx">
+      <DependentUpon>RunSaveCancelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\SerializableTableMapper.resx">
+      <DependentUpon>SerializableTableMapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\SimplifiedGridView.resx">
+      <DependentUpon>SimplifiedGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\TabbableControl.resx">
+      <DependentUpon>TabbableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\TCCertificateInclusionConfig.resx">
+      <DependentUpon>TCCertificateInclusionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\TCXtraDBConnection.resx">
+      <DependentUpon>TCXtraDBConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\XtraTabControl.resx">
+      <DependentUpon>XtraTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Components\XtraWizardControl.resx">
+      <DependentUpon>XtraWizardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Database\DatabaseConnectDialog.resx">
+      <DependentUpon>DatabaseConnectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Database\NewDatabaseDialog.resx">
+      <DependentUpon>NewDatabaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Database\SqlDatabaseBrowserDialog.resx">
+      <DependentUpon>SqlDatabaseBrowserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Database\SqlServerBrowserDialog.resx">
+      <DependentUpon>SqlServerBrowserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\ConditionalMappingControl.resx">
+      <DependentUpon>ConditionalMappingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Filters\FilterControl.resx">
+      <DependentUpon>FilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Filters\FilterExpressionEditorAndTypeSelectorDialog.resx">
+      <DependentUpon>FilterExpressionEditorAndTypeSelectorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Filters\FilterExpressionEditorControl.resx">
+      <DependentUpon>FilterExpressionEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Filters\FilterExpressionEditorDialog.resx">
+      <DependentUpon>FilterExpressionEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Mapping\BasicTextMappingControl.resx">
+      <DependentUpon>BasicTextMappingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Mapping\ListControl.resx">
+      <DependentUpon>ListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Mapping\ListGroupControl.resx">
+      <DependentUpon>ListGroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Mapping\ListMapperControl.resx">
+      <DependentUpon>ListMapperControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Mapping\ListPickerControl.resx">
+      <DependentUpon>ListPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Data\Mapping\ListSummaryControl.resx">
+      <DependentUpon>ListSummaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Deployment\AnotherProcessesDlg.resx">
+      <DependentUpon>AnotherProcessesDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Deployment\FileDownloadDlg.resx">
+      <DependentUpon>FileDownloadDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Deployment\FormGetLatestProductRelease.resx">
+      <DependentUpon>FormGetLatestProductRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Deployment\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\ErrorHandlerForm.resx">
+      <DependentUpon>ErrorHandlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Explorer\ItemCollectionView.resx">
+      <DependentUpon>ItemCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Explorer\ItemsViewControlFull.resx">
+      <DependentUpon>ItemsViewControlFull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Jobs\AnalysisConfigurationDialog.resx">
+      <DependentUpon>AnalysisConfigurationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Jobs\JobGroupingEditorDialog.resx">
+      <DependentUpon>JobGroupingEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Jobs\JobListControl.resx">
+      <DependentUpon>JobListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Jobs\JobListFullControl.resx">
+      <DependentUpon>JobListFullControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Jobs\JobStatusDialog.resx">
+      <DependentUpon>JobStatusDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Jobs\LogDetailCountsControl.resx">
+      <DependentUpon>LogDetailCountsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Jobs\LogItemDetailCountLabel.resx">
+      <DependentUpon>LogItemDetailCountLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Licensing.Common\ActivationProgress.resx">
+      <DependentUpon>ActivationProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Licensing.Common\LicenseNewKeyWizard.resx">
+      <DependentUpon>LicenseNewKeyWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Licensing.SK\FormProxySetup.resx">
+      <DependentUpon>FormProxySetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Licensing.SK\FormSetLicenseKey.resx">
+      <DependentUpon>FormSetLicenseKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\ExportToCSVControl.resx">
+      <DependentUpon>ExportToCSVControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\ExportToCSVDialog.resx">
+      <DependentUpon>ExportToCSVDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\ExtractXPathControl.resx">
+      <DependentUpon>ExtractXPathControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\ImportFromCSVDialog.resx">
+      <DependentUpon>ImportFromCSVDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\ImportFromCSVPreviewDialog.resx">
+      <DependentUpon>ImportFromCSVPreviewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\LoadFromCSVDialog.resx">
+      <DependentUpon>LoadFromCSVDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\MetabaseDefaultConfiguration.resx">
+      <DependentUpon>MetabaseDefaultConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Metabase\MetabaseSettingsDialog.resx">
+      <DependentUpon>MetabaseSettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Properties\Tooltips.resx">
+      <DependentUpon>Tooltips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Proxy\EditProxyAddressControl.resx">
+      <DependentUpon>EditProxyAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Proxy\EditProxyDialog.resx">
+      <DependentUpon>EditProxyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Proxy\ManageProxyControl.resx">
+      <DependentUpon>ManageProxyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Proxy\NewAddressDialog.resx">
+      <DependentUpon>NewAddressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Proxy\ProxyDlg.resx">
+      <DependentUpon>ProxyDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Proxy\TCProxyConfig.resx">
+      <DependentUpon>TCProxyConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.UI\AddEditAgent.resx">
+      <DependentUpon>AddEditAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.UI\AgentsBrowserDialog.resx">
+      <DependentUpon>AgentsBrowserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.UI\ManageAgents.resx">
+      <DependentUpon>ManageAgents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.UI\ManageQueue.resx">
+      <DependentUpon>ManageQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.UI\UpdateAgent.resx">
+      <DependentUpon>UpdateAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.UI\ViewAgent.resx">
+      <DependentUpon>ViewAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\AgentWizard.resx">
+      <DependentUpon>AgentWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\CertificateDetails.resx">
+      <DependentUpon>CertificateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\GetPassword.resx">
+      <DependentUpon>GetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCApplicationMappings.resx">
+      <DependentUpon>TCApplicationMappings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCConfigureAgents.resx">
+      <DependentUpon>TCConfigureAgents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCConfigureMetabase.resx">
+      <DependentUpon>TCConfigureMetabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCCreateCertificate.resx">
+      <DependentUpon>TCCreateCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCDeployCertificate.resx">
+      <DependentUpon>TCDeployCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCDownloadInstaller.resx">
+      <DependentUpon>TCDownloadInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCGettingStarted.resx">
+      <DependentUpon>TCGettingStarted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCInstallAgent.resx">
+      <DependentUpon>TCInstallAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCInstallCertificate.resx">
+      <DependentUpon>TCInstallCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCPrerequisites.resx">
+      <DependentUpon>TCPrerequisites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCProvisionAgentDB.resx">
+      <DependentUpon>TCProvisionAgentDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\RemotePowerShell.Wizard.UI\TCSummary.resx">
+      <DependentUpon>TCSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\TextEditContextMenu.resx">
+      <DependentUpon>TextEditContextMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\ThreadSettingsEditorForm.resx">
+      <DependentUpon>ThreadSettingsEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Transformers\TCTransformation.resx">
+      <DependentUpon>TCTransformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\UIAboutForm.resx">
+      <DependentUpon>UIAboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\UIMainForm.resx">
+      <DependentUpon>UIMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\UIMarketingSplashForm.resx">
+      <DependentUpon>UIMarketingSplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\UISplashForm.resx">
+      <DependentUpon>UISplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\VerifyUserActionDialog.resx">
+      <DependentUpon>VerifyUserActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Web\AuthenticationWebBrowser.resx">
+      <DependentUpon>AuthenticationWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\BrowserControl.resx">
+      <DependentUpon>BrowserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\CertificateFromFileDialog.resx">
+      <DependentUpon>CertificateFromFileDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\CertificateFromStoreDialog.resx">
+      <DependentUpon>CertificateFromStoreDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\ExplorerControl.resx">
+      <DependentUpon>ExplorerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\ExplorerControlWithLocation.resx">
+      <DependentUpon>ExplorerControlWithLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\ExplorerControlWithNavigation.resx">
+      <DependentUpon>ExplorerControlWithNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\LocationBar.resx">
+      <DependentUpon>LocationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\NodeChooserDialog.resx">
+      <DependentUpon>NodeChooserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\NodePropertyGrid.resx">
+      <DependentUpon>NodePropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\UI.WinForms\Widgets\TextMonikerEditor.resx">
+      <DependentUpon>TextMonikerEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\Widgets\FlickerFreeListView.resx">
+      <DependentUpon>FlickerFreeListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\Widgets\FlickerFreeTreeView.resx">
+      <DependentUpon>FlickerFreeTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\Xml\XMLComparer.resx">
+      <DependentUpon>XMLComparer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix\Xml\XMLPropertyGrid.resx">
+      <DependentUpon>XMLPropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.windows_powershell_icon.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.WaitMessage.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.BusyIcon.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Help16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Help16Disabled.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Transformations.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.ProxyOptions.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.IncludedCertificates.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.ConfigureDefaultMetabaseSettings16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.ConfigureDefaultMetabaseSettings32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.EditResourceUtilizationSettings16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.EditResourceUtilizationSettings32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.EnableAdvancedMode16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.EnableAdvancedMode32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.EnableCustomTransformers16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Icons.Settings.EnableCustomTransformers32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.About16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.About32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Add16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.AddAgent16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Certificate16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.CheckForUpdates16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.CheckForUpdates32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ChangeConfiguration16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ChangeConfiguration32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Config Wizard.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.document-save.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Delete.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Facebook16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Facebook32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.DeleteJobs16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.File16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.GeneratePowershellScript16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.DeleteJobs32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.File32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.GeneratePowershellScript32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ExportToExcel16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ConnectToJobDatabase16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.CopySelectedJobsToClipboard16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ExportJobsToXML16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ForCurrentMachine16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ForCurrentUser16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ConnectToJobDatabase32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ExportToExcel32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Delete16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Down16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Edit16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Cut16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.envelope_lg.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.envelope_sm.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.contactus_sm.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ConnectToAgentDatabase16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.DeleteAgent16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.EditAgent16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.CreateNewUser16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Filter16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Import.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Linkedin16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.OurBlog16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RefreshConnection16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.HelpTopics32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Linkedin32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.OurBlog32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RefreshConnection32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RefreshButton.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Navigate16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Navigate32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ImportJobsFromXML16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.NewJobList16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.OpenJobList16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RefreshJobList16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ImportJobsFromXML32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.NewJobList32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.OpenJobList32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RefreshJobList32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ManageAgents16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ManageAgents32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ManageQueue16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ManageQueue32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.MetalogixAcademyContentMatrix16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.MetalogixAcademyContentMatrix32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Map16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Map32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Paste16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RefreshAgent16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.NavigateLeft16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Replicator16X16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Show2ndExplorer16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ShowCheckboxes16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ShowJobsList16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Show2ndExplorer32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ShowCheckboxes32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RunJobs16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RunJobs32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.SaveJobList16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ScheduleTask16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.SaveJobList32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ScheduleTask32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RunJobsRemotely16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.SupportForum16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.UpdateLicense16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.SupportForum32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Twitter32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.UpdateLicense32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ViewLogs16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ViewLogs32.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Up16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Undo16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.UpdateAgent16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ViewAgent16.png" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.AddAgent16.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Config Wizard.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Database.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Delete.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ConnectToAgentDatabase16.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.EditAgent16.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.CopyList.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ContentMatrix.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ContentMatrixIcon.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ManageAgents16.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ManageQueue16.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.UpdateAgent16.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.ViewAgent16.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.RefreshButton.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Properties.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Log.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Fwd.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.Resources.Copy.ico" />
+    <EmbeddedResource Include="Metalogix.UI.WinForms.dll.licenses" />
+    <EmbeddedResource Include="TooltipsTest\HelpTipDialog.resx">
+      <DependentUpon>HelpTipDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metalogix.Actions\Metalogix.Actions.csproj">
+      <Project>{1dee0f6a-9402-40e1-ac4b-4904989ba28d}</Project>
+      <Name>Metalogix.Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Client\Metalogix.Client.csproj">
+      <Project>{4baf70e9-3748-42e7-a6b3-5425dadc0188}</Project>
+      <Name>Metalogix.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Connectivity\Metalogix.Connectivity.csproj">
+      <Project>{004767ba-3564-4224-8b0c-0ec2487b9dd8}</Project>
+      <Name>Metalogix.Connectivity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Core\Metalogix.Core.csproj">
+      <Project>{e4130506-97ab-4226-9323-b9db94629bdc}</Project>
+      <Name>Metalogix.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Explorer\Metalogix.Explorer.csproj">
+      <Project>{6616966d-e4db-4a44-9645-dd6c35cdf061}</Project>
+      <Name>Metalogix.Explorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Jobs.Reporting\Metalogix.Jobs.Reporting.csproj">
+      <Project>{acf4baf2-9f16-42f0-b276-d8b4dfaf61d4}</Project>
+      <Name>Metalogix.Jobs.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Licensing\Metalogix.Licensing.csproj">
+      <Project>{4021bed6-df4d-47a9-8f69-c7ffdf7a7604}</Project>
+      <Name>Metalogix.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.MLLicensing\Metalogix.MLLicensing.csproj">
+      <Project>{d4c508ef-9614-4c75-87d3-da6a8cd9a6ae}</Project>
+      <Name>Metalogix.MLLicensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Telemetry\Metalogix.Telemetry.csproj">
+      <Project>{08a3e529-0af3-44ac-8668-230af48b0fa3}</Project>
+      <Name>Metalogix.Telemetry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metalogix.Utilities\Metalogix.Utilities.csproj">
+      <Project>{44be20ed-a618-469b-a9bf-c28393fa4a74}</Project>
+      <Name>Metalogix.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MetalogixSkins\MetalogixSkins.csproj">
+      <Project>{ba3e5d1c-2b6a-47d7-9d84-b4e7922a3df9}</Project>
+      <Name>MetalogixSkins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="migrador.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

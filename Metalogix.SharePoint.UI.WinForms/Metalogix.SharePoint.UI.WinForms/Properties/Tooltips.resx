@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionsw_cbCopyReferencedManagedMetadata" xml:space="preserve">
+    <value>Copies managed metadata referenced by items on the source and also ensures any source site or list columns that use managed metadata are correctly migrated.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCExistingListsBasicViewtsModifiedLists" xml:space="preserve">
+    <value>Choose this option to check the Modified metadata value of the lists and libraries between the source and target to see if any updates have been made to the list or library settings. If the source value is more recent the list and library settings will be updated. This does not include items or documents.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbVerboseLinkText" xml:space="preserve">
+    <value>general-options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_cbUpdateListsLinkText" xml:space="preserve">
+    <value>migration_mode.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewtsCopySiteCollectionAdmin" xml:space="preserve">
+    <value>Choose whether to migrate all Site Collection Administrators from the source to the target.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCStoragePointOptionsMMSw_rbSideloadDocs" xml:space="preserve">
+    <value>This option is only available if StoragePoint is detected on the target. Any documents and attachments will be migrated directly through the StoragePoint API, but they will leave a reference file behind in SharePoint, so the file can still be accessed.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_cbGroupLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListContentAdvancedOptionsBasicViewtsScanOfficeDocs" xml:space="preserve">
+    <value>Attempt to parse Office Docs (Word, Excel, PowerPoint) for additional metadata during the migration effort. Due to environmental configuration, this may prevent certain files from migrating. Disable this feature if there are issues with migrating Office Docs.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMappingOptionsw_cbAllowDBWrite" xml:space="preserve">
+    <value>This will allow copying of deleted Active Directory users on the source into the target farm. However, this requires database writing for a direct write to the SharePoint database, which is not supported by Microsoft.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListContentOptionsBasicViewtsCopyAllLists" xml:space="preserve">
+    <value>Copy all Lists and Librories in this scope or copy none. To copy specific Lists or Libraries choose a different scope or apply a filter.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsCopySitePermissions" xml:space="preserve">
+    <value>Choose to migrate over security at the site level. This includes the actual permission, the access request settings, and the associated group settings.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_rbCustomModeLinkText" xml:space="preserve">
+    <value>migration_mode.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMappingOptionsw_cbMissingUsers" xml:space="preserve">
+    <value>This option allows you to enter a specific User account. Any Users on the source that no longer exist on the Target AD will be mapped to this User account, and all their metadata will use this account instead. See "Allow copying of deleted Active Directory users" for additional options.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewcmbWebApplication" xml:space="preserve">
+    <value>This is the Web Application you want to put this site under. The actual URL will be defined in a moment.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationTCSharePointConnectionConfigw_comboAuthenticationType" xml:space="preserve">
+    <value>This option allows you to select the security authentication type that should be used when connecting to your SharePoint environment. For on-premises migrations, Windows Authentication or Forms Based Authentication are recommended. For online connections, Office 365 Standard/ADFS Authentication is recommended if ADFS is being used.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_cbUpdateItems" xml:space="preserve">
+    <value>This will preserve any existing items/documents on the SharePoint target, but allows you to update some of their specific elements such as core metadata or permissions to those of the source.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_cbUpdateLists" xml:space="preserve">
+    <value>This will preserve any existing lists/libraries on the SharePoint target, but allows you to update a subset of their specific elements such as Core Metadata with those of the source list.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsPermissions" xml:space="preserve">
+    <value>Choose to bring over users and security from the source. Review the advanced options if user mapping is needed and has not already been configured.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCStoragePointOptionsMMSw_rbSideloadDocsLinkText" xml:space="preserve">
+    <value>storagepoint_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationCreateSiteCollectionDialoghelpLinkHostHeader" xml:space="preserve">
+    <value>"Selecting this indicates that you would like to use Host Headers for your Site Collection/Web Application."</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_txtAnchorLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbPreserveDocumentIDsLinkText" xml:space="preserve">
+    <value>list_content_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWebPartsOptionsw_cbCopyContentZoneContent" xml:space="preserve">
+    <value>This option allows HTML data to be copied from a "Content Zone" on a Page in a Pages Library. It is &lt;b&gt;recommended&lt;/b&gt; to use this option.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteCollectionOptionshelpLinkHostHeader" xml:space="preserve">
+    <value>"Selecting this indicates that you would like to use Host Headers for your Site Collection/Web Application."</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_txtAnchorLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCExistingSitesBasicViewtsUpdateSites" xml:space="preserve">
+    <value>Choose this option to preserve the existing site instead of overwriting it. This allows for specific site settings to be updated. It is encouraged to read the documentation before updating any of these site settings.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionsw_cbCopyReferencedManagedMetadataLinkText" xml:space="preserve">
+    <value>store_and_metadata_config_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbPreserveSharePointDocumentIDs" xml:space="preserve">
+    <value>This option will preserve the SharePoint 2010 (and later) &lt;b&gt;Document ID&lt;/b&gt; value that is enabled by the &lt;b&gt;Document ID Service&lt;/b&gt; feature. The source must be SharePoint 2010 or later. This is different from the &lt;b&gt;Preserve IDs on items/folders in Document Libraries&lt;/b&gt; option.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbPreserveIds" xml:space="preserve">
+    <value>This will preserve SharePoint Item IDs for any SharePoint list items that are migrated. &lt;b&gt;This is required for incremental copying&lt;/b&gt;. During migration of lists with lookup dependencies, this option is explicitly set to ensure data integrity.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWorkflowOptionshelpListSPD2013OMButtonLinkText" xml:space="preserve">
+    <value>modifying_suppressevents_property.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsMapMMD" xml:space="preserve">
+    <value>Choose this option to copy Managed Metadata from the  source. The default behavior will attempt to map Term Stores and any Term Sets, Term Groups, and Terms to the target, while trying to match its structure on the source. Consult the documentation and the advanced options if this behavior needs to be changed.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewtsCopyMasterPageGallery" xml:space="preserve">
+    <value>Choose to copy the master page gallery including master pages, page layouts, and other resources (such as CSS). 
+NOTE: Master pages generally do not work between different versions of SharePoint.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_cbGroup" xml:space="preserve">
+    <value>Select an existing Term Group or type in a new group name.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationTCSharePointConnectionConfigw_comboConnectionType" xml:space="preserve">
+    <value>This option allows you to choose the SharePoint connection Adapter that you want to use. Adapters have a significant impact on the performance of your migration and the actions available. Please read our online help for this item, or watch the video about this at http://www.metalogix.com/support/videos.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteCollectionOptionsw_cbCopyMasterPageGallery" xml:space="preserve">
+    <value>This option copies SharePoint Master Pages and page layouts along with associated resources such as css files to the SharePoint target. It also allows you to correct links on these Master Pages. This option is only available when migrating as a Site Collection.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_cbTermSetLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbPreserveSharePointDocumentIDsLinkText" xml:space="preserve">
+    <value>migrating_with_sp_document_ids.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionscbTransformSiteColumnsLinkText" xml:space="preserve">
+    <value>store_and_metadata_config_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_cbUpdateItemsLinkText" xml:space="preserve">
+    <value>migration_mode.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteOptionsBasicViewtsCopyChildSites" xml:space="preserve">
+    <value>Unchecking this will choose to not copy any child sites of this one. Should you wish only specific sites to be copied, leave this checked and add a filter on the filtering screen.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCGeneralOptionsBasicViewtsRenamedContentLinks" xml:space="preserve">
+    <value>Choose this option if content URLs changed during migration.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsExplorerViewOptionsShowListInternalNameOption" xml:space="preserve">
+    <value>When this option is selected, SharePoint Lists will be displayed with their internal names, rather than their URLs.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsExplorerViewOptionsShowWebUrlOption" xml:space="preserve">
+    <value>When this option is selected, SharePoint Webs will be displayed with their full URLs, rather than their names.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionsw_cbMapTermStoresLinkText" xml:space="preserve">
+    <value>store_and_metadata_config_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCGeneralOptionsBasicViewtsSendEmail" xml:space="preserve">
+    <value>Configure settings to recieve an email upon successful or unsuccessful migration.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbApplyDocumentSets" xml:space="preserve">
+    <value>This option allows you to convert any SharePoint folders, documents or items into SharePoint Document Sets.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCGeneralOptionsBasicViewtsTextFieldLinks" xml:space="preserve">
+    <value>Choose this is Content Matrix should look into text-based metadata fields for link correction activities.
+NOTE: This may adversely affect performance.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbReattachPageLayouts" xml:space="preserve">
+    <value>This option will only apply when migrating publishing pages that are ghosted/unghosted for migrations within the same version of SharePoint. Any Unghosted publishing pages will be re-ghosted (attached to the DB) in the target environment. For migrations between different SharePoint versions, this will always happen.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_cbCreateNewFieldLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_cbApplyThemeLinkText" xml:space="preserve">
+    <value>site_collection_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCExistingItemsBasicViewtsModifiedItems" xml:space="preserve">
+    <value>Choose this option to check the Modified metadata value any items or documents between the source and target to see if any updates have been made. If the source value is more recent the items and documents will be updated.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteOptionsBasicViewtsCopyNavigation" xml:space="preserve">
+    <value>Unchecking this will choose not to migrate over navigation from the source (top link, navigation bar, etc.).</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_rbClearTargetFeaturesLinkText" xml:space="preserve">
+    <value>site_collection_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsCopyItemPermissions" xml:space="preserve">
+    <value>Choose to copy unique permissions at the item level.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewtsCopyListTemplateGallery" xml:space="preserve">
+    <value>Choose to copy the list template gallery which contains custom list templates used in this site collection. 
+NOTE: These custom templates will not migrate between versions of SharePoint, in which case this option will be disabled.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_cbCreateNewFieldLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_cbPropagateItemDeletions" xml:space="preserve">
+    <value>This option will look at the content on the source and target, and if any content has been deleted from the source but exists on the target, those same items will be deleted from the target to match.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListContentOptionsBasicViewtsCopyItemsDocuments" xml:space="preserve">
+    <value>Copying items and documents with their respective versions.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWorkflowOptionshelpWebSPD2013OMButtonLinkText" xml:space="preserve">
+    <value>modifying_suppressevents_property.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsWorkflow" xml:space="preserve">
+    <value>Choose to copy workflows or not. The default behavior will be to attempt to copy all Out-Of-Box, Designer and Nintex workflows as applicable at all scopes.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWorkflowOptionshelpWebSPD2013OMButton" xml:space="preserve">
+    <value>When migrating using SharePoint Object Model, the "SuppressEvents" property will need to be disabled in order for workflows to publish properly.
+Workflows may be published manually via SharePoint Designer 2013 after migration.
+Refer to "Server Side Configuration" section under the Content Matrix - SharePoint Edition help file.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsFolderIgnorePermissions" xml:space="preserve">
+    <value>When enabled,the target folder will have broken inheritance from it's parent. Otherwise the target folder will inherit permissions.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptions_cbResolveByName" xml:space="preserve">
+    <value>This option maps managed metadata by name and hierarchy. Any required managed metadata that is not found on the target term store by name and hierarchy is added using new guids. This is only supported for SharePoint 2010 and later.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCAzureOptionsBasicViewtsAzureOption" xml:space="preserve">
+    <value>The SharePoint Online Migration API is a way to improve performance to SharePoint Online. The default settings will leverage the Microsoft Provided Azure Storage Containers for this API and require no end user input. For advanced configuration please consult the documentation.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionscbTransformSiteColumns" xml:space="preserve">
+    <value>Allows transformation of source site columns into managed metadata type columns.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionsw_cbMapTermStores" xml:space="preserve">
+    <value>This will open the &lt;b&gt;Map Term Stores&lt;/b&gt; window, and will allow existing Term Stores to be mapped to each other. This is only supported for SharePoint 2010 and later.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewtsCopyAuditSettings" xml:space="preserve">
+    <value>Preserve the Site Collection Audit Settings from Source to Target.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbApplyDocumentSetsLinkText" xml:space="preserve">
+    <value>doc_sets_to_libraries_folders_and_docs.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_cbGroup" xml:space="preserve">
+    <value>Select an existing Term Group or type in a new group name.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_cbApplyTheme" xml:space="preserve">
+    <value>This option will attempt to preserve and use the same (look-and-feel) SharePoint site theme used on the source and apply it to the target, provided this theme exists on the target SharePoint server.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_rbPreserveOnTarget" xml:space="preserve">
+    <value>This option will preserve the default features that are enabled on a newly created target SharePoint site, and then enable and add any additional source features to the target site.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCExistingItemsBasicViewtsUpdateItems" xml:space="preserve">
+    <value>This will preserve any existing items/documents on the SharePoint target, but allows you to update some of their specific elements such as core metadata or permissions to those of the source.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCNavigationOptionsw_rbCopyOnlyQuickLaunchLinkText" xml:space="preserve">
+    <value>site_collection_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_cbTermSet" xml:space="preserve">
+    <value>Select an existing Term Set or type in a new Termset name.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationTCSharePointConnectionConfigw_comboAuthenticationTypeLinkText" xml:space="preserve">
+    <value>connect_to_sharepoint_sites_servers.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsMigrateBrokenSitePermissions" xml:space="preserve">
+    <value>When enabled, the target site will have broken inheritance from it's parent. Otherwise the target site will inherit permissions.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCStoragePointOptionsMMSw_rbShallowCopyExternalizedData" xml:space="preserve">
+    <value>This option will only copy the reference link that is left behind if the SharePoint source has already been externalized. The target must also be configured to be externalized.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsCopyListPermissions" xml:space="preserve">
+    <value>Choose to copy unique permissions at the list and library level.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsMapPermissions" xml:space="preserve">
+    <value>Compare permission levels at the source and target based off of the name, and use that information when determining user rights.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_txtAnchor" xml:space="preserve">
+    <value>Optionally define a child Term Anchor within the termset.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbComprehensiveLinkCorrection" xml:space="preserve">
+    <value>This option is used when content has been &lt;b&gt;renamed&lt;/b&gt;. It allows for link correction to be run earlier in the migration process to help correct links when the name change is applied.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteCollectionOptionsw_cbCopyAuditSettingsLinkText" xml:space="preserve">
+    <value>site_collection_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWebPartsOptionsw_cbFormWebPartsLinkText" xml:space="preserve">
+    <value>web_parts_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_cbPropagateItemDeletionsLinkText" xml:space="preserve">
+    <value>migration_mode.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbReattachPageLayoutsLinkText" xml:space="preserve">
+    <value>un-ghosted_to_ghosted_migration.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbForceRefreshLinkText" xml:space="preserve">
+    <value>general-options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWorkflowOptionshelpIncludePreviousVersionInstancesButton" xml:space="preserve">
+    <value>Previous workflow version instances will be copied for List, Site and Content Type level workflow associations. When enabled, the migration time can be increased based on the number of previous version associations that exist.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsCopyClosedWebParts" xml:space="preserve">
+    <value>Enabling this will also migrate all closed web parts from the source to target. Default behavior is only open web parts will be migrated.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteOptionsBasicViewtsCopySiteFeatures" xml:space="preserve">
+    <value>Choose whether features that are enabled at the source should be enabled at the target. If "Preserve the Default Features" is enabled, all of the default site features will be turned on, and then the features from the source will be as well. If "Clear the Default Features" is selected, all of the target features will be turned off before turning on the features from the source.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsWorkflowListScope" xml:space="preserve">
+    <value>Choose to copy workflows or not. The default behavior will be to attempt to copy all Out-Of-Box and Designer workflows as applicable.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMappingOptionsw_cbMissingUsersLinkText" xml:space="preserve">
+    <value>mapping_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCGeneralOptionsBasicViewtsCorrectLinks" xml:space="preserve">
+    <value>Choose if links should be modified during migration to point to the target environment or continue to point the source.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_cbCopySubsites" xml:space="preserve">
+    <value>This option will copy all of the sub-sites/child sites under the currently selected SharePoint site. All other migration options will also be applied to any of the copied sub-sites.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbDisableParsingLinkText" xml:space="preserve">
+    <value>list_content_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteCollectionOptionsw_cbCopyAuditSettings" xml:space="preserve">
+    <value>This option preserves a source Site Collection's Audit  (SharePoint internal logging) settings, and copies them to the target SharePoint environment. This is only available when migrating as a Site Collection.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbPreserveDocumentIDs" xml:space="preserve">
+    <value>This will preserve SharePoint Document IDs for any SharePoint Document Library documents that are migrated.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsIgnorePermissions" xml:space="preserve">
+    <value>When enabled,the target list will have broken inheritance from it's parent. Otherwise the target list will inherit permissions.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewlcAdvancedOptions" xml:space="preserve">
+    <value>These options generally do not need to be changed. It's encouraged to read the documentation before updating any of these.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_rbClearTargetFeatures" xml:space="preserve">
+    <value>This option will clear any features that are enabled by default on a newly created target SharePoint site prior to adding the features enabled on the source to the target SharePoint site.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationTCSharePointConnectionConfigw_lblTargetType" xml:space="preserve">
+    <value>This option allows you to select the type/level of connection that you want to a SharePoint environment. You can connect to a SharePoint Site, Web Application, or Farm. Farm level connections give you the most flexibility and power, while Site level connections give you a narrower scope of capabilities.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMappingOptionsw_btnEditGlobalMappingsLinkText" xml:space="preserve">
+    <value>mapping_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_cbGroupLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsExternalConnectionsManageNintexConnectionsSettings" xml:space="preserve">
+    <value>This will open a window that allows you to add any external Nintex Workflow databases.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteCollectionOptionsw_cbCopyMasterPageGalleryLinkText" xml:space="preserve">
+    <value>site_collection_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsCopyContentPermissions" xml:space="preserve">
+    <value>Choose to copy unique permissions at the folder, list item, and document level.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListContentAdvancedOptionsBasicViewtsPreserveLibraryID" xml:space="preserve">
+    <value>This option will preserve the incremental item ID (not the unique ID) for documents and folders within SharePoint Document Libraries. This feature requires database writing to be enabled. Please consult the documentation for this feature.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCStoragePointOptionsw_cbSideloadDocs" xml:space="preserve">
+    <value>This option is only available if StoragePoint is detected on the target. Any documents and attachments will be migrated directly through the StoragePoint API, but they will leave a reference file behind in SharePoint, so the file can still be accessed.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_cbTermSetLinkText" xml:space="preserve">
+    <value>list_columns_to_managed_metadata.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMigrationModeOptionsw_rbCustomMode" xml:space="preserve">
+    <value>This option allows you to select which items you'd like to override, and which you would like to preserve and is a customizable mix between the &lt;b&gt;Full Copy&lt;/b&gt; and &lt;b&gt;Incremental Copy&lt;/b&gt; options.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCFolderContentOptions_cbUseAzureUploadLinkText" xml:space="preserve">
+    <value>list_content_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCNavigationOptionsw_rbCopyOnlyQuickLaunch" xml:space="preserve">
+    <value>The Quick Launch navigation and Top Bar navigation will both be migrated to the target.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptions_cbUseAzureUpload" xml:space="preserve">
+    <value>This option should only be used if you are 100% certain that your SharePoint Online tenant has the Migration Pipeline enabled. 
+
+What does this do? This migrates items and folders within the document library using a combination of Azure storage/SPO Container and the Microsoft SharePoint Online Migration Pipeline. It provides faster upload of documents into a library.
+
+This option requires free storage space on the local hard drive that is at least 4x the largest file size in the document library that is going to be migrated using this approach.
+
+To migrate using Azure storage, please ensure that azure storage is configured and the appropriate configuration parameters are set within Content Matrix.
+
+To migrate using SPO Container, "Use Azure/SPO Container Office 365 Upload" and "Encrypt Azure/SPO Container Jobs" options should be checked  and connection string should be blank in the EnvironmentSettings.xml or Configuration Database. 
+
+If you are unsure in the slightest then please do not use this option.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbVerbose" xml:space="preserve">
+    <value>This option allows for more detailed logging for any actions that are run in Content Matrix Console.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbPreserveIdsLinkText" xml:space="preserve">
+    <value>list_content_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewcmbTemplate" xml:space="preserve">
+    <value>The target site template. The default choice is the template at the source. If the template will likely not exist at the target, please choose a different template.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListContentAdvancedOptionsBasicViewtsPreserveListID" xml:space="preserve">
+    <value>This option will preserve the incremental item ID (not the unique ID) for items and folders within SharePoint lists.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_cbCreateNewField" xml:space="preserve">
+    <value>Transform source column into a new column on the target, or to an existing column on the target (make sure to use the exact name and display name for existing columns)</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsMapMissingUsers" xml:space="preserve">
+    <value>Should a user be unable to resolve in SharePoint, the account will be replaced by the account used to connect to SharePoint. If there is a different account desired, the one in this field will be used.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationCreateSiteCollectionDialoghelpLinkHostHeaderLinkText" xml:space="preserve">
+    <value>http://technet.microsoft.com/en-us/library/cc424952%28v=office.15%29.aspx</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListContentOptionsBasicViewtsCopyListItems" xml:space="preserve">
+    <value>Copy all of the items and documents in the Lists and Libraries in the scope or copy none. To copy specific items and documents choose a different scope or apply a filter.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMappingGlobalMappingsSetting" xml:space="preserve">
+    <value>This will open a mapping window that allows you to map: Users, Domains, URLs, and GUIDs.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_txtAnchor" xml:space="preserve">
+    <value>Optionally define a child Term Anchor within the termset.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWorkflowOptionshelpIncludePreviousVersionInstancesButtonLinkText" xml:space="preserve">
+    <value>configuring_workflow_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsItemIgnorePermissions" xml:space="preserve">
+    <value>When enabled,the target item will have broken inheritance from it's parent. Otherwise the target item will inherit permissions.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformFieldToManagedMetadataConfigItemDialog_cbTermSet" xml:space="preserve">
+    <value>Select an existing Term Set or type in a new Termset name.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationTCSharePointConnectionConfigw_comboConnectionTypeLinkText" xml:space="preserve">
+    <value>connect_to_sharepoint_sites_servers.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCStoragePointOptionsMMSw_rbShallowCopyExternalizedDataLinkText" xml:space="preserve">
+    <value>storagepoint_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptionsw_cbDisableParsing" xml:space="preserve">
+    <value>This option is only required in &lt;b&gt;a few specific cases&lt;/b&gt;, when migrating documents results in a "Unable to Update" error. It will allow documents to be migrated with a different method.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_rbPreserveOnTargetLinkText" xml:space="preserve">
+    <value>site_collection_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewbtnOpenUserMapping" xml:space="preserve">
+    <value>Open the global mappings screen to configure user mappings from source to target.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCListContentOptions_cbUseAzureUploadLinkText" xml:space="preserve">
+    <value>list_content_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsAdministrationTCSharePointConnectionConfigw_lblTargetTypeLinkText" xml:space="preserve">
+    <value>connect_to_sharepoint_sites_servers.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWebPartsOptionsw_cbCopyContentZoneContentLinkText" xml:space="preserve">
+    <value>web_parts_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWebPartsOptionsw_cbFormWebParts" xml:space="preserve">
+    <value>This option copies customized list form pages such as DispForm.aspx that have been modified in SharePoint designer on the source. It is not supported in migrations between versions of SharePoint.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionscbTransformFieldLinkText" xml:space="preserve">
+    <value>store_and_metadata_config_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCExistingListsBasicViewtsUpdateLists" xml:space="preserve">
+    <value>This will preserve any existing lists/libraries on the SharePoint target, but allows you to update a subset of their specific elements such as Core Metadata with those of the source list.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbCorrectLinks" xml:space="preserve">
+    <value>This option allows for link correction to be run for all of the items within the scope of the migration. Links that point outside of the migration scope will not be corrected.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbComprehensiveLinkCorrectionLinkText" xml:space="preserve">
+    <value>enabling_link_correction.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbCorrectLinksLinkText" xml:space="preserve">
+    <value>enabling_link_correction.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCWorkflowOptionshelpListSPD2013OMButton" xml:space="preserve">
+    <value>When migrating using SharePoint Object Model, the "SuppressEvents" property will need to be disabled in order for workflows to publish properly.
+Workflows may be published manually via SharePoint Designer 2013 after migration.
+Refer to "Server Side Configuration" section under the Content Matrix - SharePoint Edition help file.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCStoragePointOptionsw_cbSideloadDocsLinkText" xml:space="preserve">
+    <value>storagepoint_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_cbCopySubsitesLinkText" xml:space="preserve">
+    <value>site_collection_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsTransformSiteColumnToManagedMetadataConfigItemDialog_cbCreateNewField" xml:space="preserve">
+    <value>Transform source column into a new column on the target.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsOverwriteExistingGroups" xml:space="preserve">
+    <value>When enabled, existing groups at the target will be overwritten by the source groups.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptions_cbResolveByNameLinkText" xml:space="preserve">
+    <value>store_and_metadata_config_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCGeneralOptionsw_cbForceRefresh" xml:space="preserve">
+    <value>This option forces a refresh of the source and target environments just before the migration begins, to ensure that all of the existing data is up-to-date before starting the migration.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteCollectionOptionshelpLinkHostHeaderLinkText" xml:space="preserve">
+    <value>http://technet.microsoft.com/en-us/library/cc424952%28v=office.15%29.aspx</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsMapGroupsByName" xml:space="preserve">
+    <value>Compare groups of source and target based off of name, and use that information when determining user rights.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCTaxonomyOptionscbTransformField" xml:space="preserve">
+    <value>Allows transformation of source list columns into managed metadata type columns.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_rbCopyOnlyQuickLaunchLinkText" xml:space="preserve">
+    <value>site_collection_migration_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCFolderContentOptions_cbUseAzureUpload" xml:space="preserve">
+    <value>This option should only be used if you are 100% certain that your SharePoint Online tenant has the Migration Pipeline enabled. 
+
+What does this do? This migrates items and folders within the document library using a combination of Azure storage/SPO Container and the Microsoft SharePoint Online Migration Pipeline. It provides faster upload of documents into a library.
+
+This option requires free storage space on the local hard drive that is at least 4x the largest file size in the document library that is going to be migrated using this approach.
+
+To migrate using Azure storage, please ensure that azure storage is configured and the appropriate configuration parameters are set within Content Matrix.
+
+To migrate using SPO Container, “Use Azure/SPO Container Office 365 Upload” and “Encrypt Azure/SPO Container Jobs” options should be checked  and connection string should be blank in the EnvironmentSettings.xml or Configuration Database. 
+
+If you are unsure in the slightest then please do not use this option.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMappingOptionsw_cbAllowDBWriteLinkText" xml:space="preserve">
+    <value>mapping_options.html</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewtETargetSiteUrl" xml:space="preserve">
+    <value>This is the URL of the newly created site. Pick a full name if using a Host Named Site Collection, or something relative to the Web Application if you are not. The Managed Paths available in the drop-down have already been defined in Central Administration.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsCopyWebParts" xml:space="preserve">
+    <value>Choose to copy web parts from source to target. This will attempt to copy all web parts. Please consult Advanced Mode if this behavior needs to be changed.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCAzureOptionsBasicViewtsEncryptAzureOption" xml:space="preserve">
+    <value>Choose to encrypt the content during migration to SharePoint Online. Only disable after consulting the documentation.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCSiteContentOptionsw_rbCopyOnlyQuickLaunch" xml:space="preserve">
+    <value>The Quick Launch navigation and Top Bar navigation will both be migrated to the target.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewtESiteCollectionAdministrator" xml:space="preserve">
+    <value>This is the owner of this new Site Collection. The default is the owner in the source, but feel free to change it if desired.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCListElementOptionsBasicViewtsCopyFolderPermissions" xml:space="preserve">
+    <value>Choose to copy unique permissions at the item and folder level.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationTCMappingOptionsw_btnEditGlobalMappings" xml:space="preserve">
+    <value>This will open the &lt;b&gt;Specify Global Mappings&lt;/b&gt; dialog and allow you to map data, such as: Domains, Users, URLs, and GUIDs. These mappings will persist for each migration. You can also reach this dialog box from the Settings Ribbon/Configure Global Mappings option.</value>
+  </data>
+  <data name="MetalogixSharePointUIWinFormsMigrationBasicViewUserControlsTCSiteCollectionOptionsBasicViewtsSetSiteQuota" xml:space="preserve">
+    <value>Choose to preserve the Site Collection Storage Quota from the source, use a target template, or make an entirely new quota.</value>
+  </data>
+</root>

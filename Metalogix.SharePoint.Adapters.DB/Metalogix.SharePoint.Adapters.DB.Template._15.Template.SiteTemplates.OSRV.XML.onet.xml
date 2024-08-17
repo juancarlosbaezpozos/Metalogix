@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="3" Title="$Resources:osrvcore,SspAdministrationSiteTitle;" ListDir="Lists">
+  <NavBars>
+	<NavBar Name="$Resources:osrvcore,SspAdministrationTopNavBarTitle;" ID="1002">
+		<NavBarLink Name="$Resources:osrvcore,HomeText;" Url="default.aspx" />
+	</NavBar>
+  </NavBars>
+
+  <ListTemplates>
+  </ListTemplates>
+
+  <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+  </DocumentTemplates>
+
+  <Configurations>
+    <Configuration ID="0" Name="Default">
+      <WebFeatures>
+	    <Feature ID="10BDAC29-A21A-47d9-9DFF-90C7CAE1301E" />
+        <Feature ID="00BFEA71-DE22-43B2-A848-C05709900100" /> <Feature ID="00BFEA71-E717-4E80-AA17-D0C71B360101" /> <Feature ID="00BFEA71-EB8A-40B1-80C7-506BE7590102" /> <Feature ID="00BFEA71-2062-426C-90BF-714C59600103" /> <Feature ID="00BFEA71-D1CE-42de-9C63-A44004CE0104" /> <Feature ID="00BFEA71-7E6D-4186-9BA8-C047AC750105" /> <Feature ID="00BFEA71-EC85-4903-972D-EBE475780106" /> <Feature ID="00BFEA71-A83E-497E-9BA0-7A5C597D0107" /> <Feature ID="00BFEA71-6A49-43FA-B535-D15C05500108" /> <Feature ID="00BFEA71-52D4-45B3-B544-B1C71B620109" /> <Feature ID="00BFEA71-F381-423D-B9D1-DA7A54C50110" /> <Feature ID="00BFEA71-1E1D-4562-B56A-F05371BB0115" /> <Feature ID="00BFEA71-F600-43F6-A895-40C0DE7B0117" /> <Feature ID="00BFEA71-513D-4CA0-96C2-6A47775C0119" /> <Feature ID="00BFEA71-3A1D-41D3-A0EE-651D11570120" /> <Feature ID="00BFEA71-4EA5-48D4-A4AD-305CF7030140" /> <Feature ID="00BFEA71-5932-4F9C-AD71-1557E5751100" /> <Feature ID="F9CE21F8-F437-4f7e-8BC6-946378C850F0" /> <Feature ID="FF13819A-A9AC-46FB-8163-9D53357EF98D" />                
+      </WebFeatures>
+      <Modules>
+        <Module Name="Default"/>
+      </Modules>
+    </Configuration>
+  </Configurations>
+
+  <Modules>
+    <Module Name="Default" Url="" Path="">
+      <File Url="default.aspx">
+      </File>
+    </Module>
+  </Modules>
+</Project>

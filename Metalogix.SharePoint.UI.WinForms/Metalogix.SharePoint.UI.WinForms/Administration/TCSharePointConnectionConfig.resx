@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_comboAuthenticationType.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="w_helpTargetType.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_radioButtonWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 35</value>
+  </data>
+  <data name="w_lblTargetType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="w_cbRememberMe.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_radioButtonFarm.Properties.Caption" xml:space="preserve">
+    <value>Farm</value>
+  </data>
+  <data name="&gt;&gt;w_helpAuthenticationType.Name" xml:space="preserve">
+    <value>w_helpAuthenticationType</value>
+  </data>
+  <data name="&gt;&gt;w_helpAuthenticationType.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_radioButtonCurrentUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_comboAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 7</value>
+  </data>
+  <data name="&gt;&gt;w_lblTargetType.Name" xml:space="preserve">
+    <value>w_lblTargetType</value>
+  </data>
+  <data name="&gt;&gt;w_lblTargetType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_lblAzureClientId.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 76</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonWebApp.Name" xml:space="preserve">
+    <value>w_radioButtonWebApp</value>
+  </data>
+  <data name="w_lblAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_txtAzureClientId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 35</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonNewUser.Name" xml:space="preserve">
+    <value>w_radioButtonNewUser</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonNewUser.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lblAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_comboAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_txtPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureClientId.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureClientId.Name" xml:space="preserve">
+    <value>_lblAzureClientId</value>
+  </data>
+  <data name="w_labelConnectionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 65</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureAppSecret.Parent" xml:space="preserve">
+    <value>_gbAzureGraphCredentials</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonFarm.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;w_txtPassword.Name" xml:space="preserve">
+    <value>w_txtPassword</value>
+  </data>
+  <data name="&gt;&gt;w_txtPassword.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 360</value>
+  </data>
+  <data name="_lblAzureAppSecret.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_labelAuthenticationType.Text" xml:space="preserve">
+    <value>Authentication Type:</value>
+  </data>
+  <data name="w_labelAuthenticationType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="w_groupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_labelPwd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_radioButtonSite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 19</value>
+  </data>
+  <data name="w_labelPwd.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="w_labelPwd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="textEdit1.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="w_labelPwd.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonNewUser.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_labelPwd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 79</value>
+  </data>
+  <data name="w_cbRememberMe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 19</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonNewUser.Parent" xml:space="preserve">
+    <value>w_groupBox</value>
+  </data>
+  <data name="w_radioButtonNewUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 49</value>
+  </data>
+  <data name="w_radioButtonFarm.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_lblAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="w_lblAddress.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="&gt;&gt;w_lblTargetType.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="w_radioButtonTenant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 35</value>
+  </data>
+  <data name="w_txtPassword.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonFarm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_comboConnectionType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_gbAzureGraphCredentials.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblTargetType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_groupBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_gbAzureGraphCredentials.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_txtAzureClientId.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_helpAuthenticationType.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_radioButtonWebApp.Properties.Caption" xml:space="preserve">
+    <value>Web App</value>
+  </data>
+  <data name="w_comboAuthenticationType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 20</value>
+  </data>
+  <data name="_txtAzureClientId.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_radioButtonSite.Properties.Caption" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="w_helpConnectionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonSite.Name" xml:space="preserve">
+    <value>w_radioButtonSite</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonSite.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_comboConnectionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 20</value>
+  </data>
+  <data name="w_radioButtonTenant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 19</value>
+  </data>
+  <data name="&gt;&gt;w_comboConnectionType.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_comboAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>328, 20</value>
+  </data>
+  <data name="w_radioButtonTenant.Properties.Caption" xml:space="preserve">
+    <value>Office 365 Tenant</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureClientId.Parent" xml:space="preserve">
+    <value>_gbAzureGraphCredentials</value>
+  </data>
+  <data name="&gt;&gt;w_comboConnectionType.Name" xml:space="preserve">
+    <value>w_comboConnectionType</value>
+  </data>
+  <data name="&gt;&gt;w_comboConnectionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtPassword.Parent" xml:space="preserve">
+    <value>w_groupBox</value>
+  </data>
+  <data name="w_radioButtonNewUser.Properties.Caption" xml:space="preserve">
+    <value>Different user:</value>
+  </data>
+  <data name="w_comboConnectionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 62</value>
+  </data>
+  <data name="&gt;&gt;w_comboAuthenticationType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_comboAuthenticationType.Name" xml:space="preserve">
+    <value>w_comboAuthenticationType</value>
+  </data>
+  <data name="&gt;&gt;w_txtDifferentUser.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_txtPassword.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_lblAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 10</value>
+  </data>
+  <data name="w_helpAuthenticationType.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_radioButtonCurrentUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 25</value>
+  </data>
+  <data name="_lblAzureAppSecret.Text" xml:space="preserve">
+    <value>App Secret:</value>
+  </data>
+  <data name="_lblAzureAppSecret.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonCurrentUser.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonCurrentUser.Name" xml:space="preserve">
+    <value>w_radioButtonCurrentUser</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.Name" xml:space="preserve">
+    <value>w_labelConnectionType</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_groupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_txtPassword.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_lblAzureClientId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="_lblAzureClientId.Text" xml:space="preserve">
+    <value>Client Id:</value>
+  </data>
+  <data name="w_helpConnectionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 62</value>
+  </data>
+  <data name="&gt;&gt;w_helpTargetType.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_comboAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureClientId.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureAppSecret.Parent" xml:space="preserve">
+    <value>_gbAzureGraphCredentials</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureAppSecret.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureAppSecret.Name" xml:space="preserve">
+    <value>_lblAzureAppSecret</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpTargetType.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureAppSecret.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_helpAuthenticationType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureClientId.Name" xml:space="preserve">
+    <value>_txtAzureClientId</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureClientId.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_radioButtonTenant.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_radioButtonFarm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_helpTargetType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_groupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 133</value>
+  </data>
+  <data name="w_groupBox.Text" xml:space="preserve">
+    <value>Connect As</value>
+  </data>
+  <data name="_lblAzureAppSecret.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 64</value>
+  </data>
+  <data name="w_labelAuthenticationType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_txtDifferentUser.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_labelPwd.Name" xml:space="preserve">
+    <value>w_labelPwd</value>
+  </data>
+  <data name="&gt;&gt;w_labelPwd.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_radioButtonNewUser.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_labelAuthenticationType.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_txtDifferentUser.Parent" xml:space="preserve">
+    <value>w_groupBox</value>
+  </data>
+  <data name="&gt;&gt;w_groupBox.Name" xml:space="preserve">
+    <value>w_groupBox</value>
+  </data>
+  <data name="&gt;&gt;w_groupBox.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_helpConnectionType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_radioButtonWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 19</value>
+  </data>
+  <data name="textEdit2.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;w_labelAuthenticationType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_groupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 118</value>
+  </data>
+  <data name="&gt;&gt;w_helpConnectionType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpTargetType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_lblAzureAppSecret.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_labelConnectionType.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonFarm.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonFarm.Name" xml:space="preserve">
+    <value>w_radioButtonFarm</value>
+  </data>
+  <data name="&gt;&gt;w_comboAddress.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Components.XtraAutoCompleteComboEdit, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_comboAddress.Name" xml:space="preserve">
+    <value>w_comboAddress</value>
+  </data>
+  <data name="w_txtDifferentUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_radioButtonTenant.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_radioButtonCurrentUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 19</value>
+  </data>
+  <data name="&gt;&gt;w_txtDifferentUser.Name" xml:space="preserve">
+    <value>w_txtDifferentUser</value>
+  </data>
+  <data name="&gt;&gt;w_txtDifferentUser.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_comboAuthenticationType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_gbAzureGraphCredentials.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 257</value>
+  </data>
+  <data name="w_comboAuthenticationType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 89</value>
+  </data>
+  <data name="w_helpAuthenticationType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 88</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureClientId.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_lblTargetType.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonTenant.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_helpConnectionType.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpConnectionType.Name" xml:space="preserve">
+    <value>w_helpConnectionType</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonCurrentUser.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureClientId.Parent" xml:space="preserve">
+    <value>_gbAzureGraphCredentials</value>
+  </data>
+  <data name="w_radioButtonSite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_radioButtonSite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 35</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonTenant.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_radioButtonNewUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_txtDifferentUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 20</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonTenant.Name" xml:space="preserve">
+    <value>w_radioButtonTenant</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonTenant.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpTargetType.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_radioButtonNewUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 19</value>
+  </data>
+  <data name="_txtAzureAppSecret.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_labelAuthenticationType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 92</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonWebApp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpTargetType.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="w_radioButtonCurrentUser.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_helpAuthenticationType.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonCurrentUser.Parent" xml:space="preserve">
+    <value>w_groupBox</value>
+  </data>
+  <data name="&gt;&gt;w_labelPwd.Parent" xml:space="preserve">
+    <value>w_groupBox</value>
+  </data>
+  <data name="_gbAzureGraphCredentials.Text" xml:space="preserve">
+    <value>Azure AD Graph API Credentials</value>
+  </data>
+  <data name="_gbAzureGraphCredentials.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 93</value>
+  </data>
+  <data name="w_helpConnectionType.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="w_labelConnectionType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_txtAzureClientId.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_radioButtonWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_comboAuthenticationType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpAuthenticationType.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonWebApp.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_labelPwd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_radioButtonFarm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 19</value>
+  </data>
+  <data name="&gt;&gt;w_comboAuthenticationType.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 20</value>
+  </data>
+  <data name="&gt;&gt;w_comboAddress.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.Name" xml:space="preserve">
+    <value>w_cbRememberMe</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpConnectionType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpAuthenticationType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_radioButtonWebApp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpConnectionType.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_cbRememberMe.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCSharePointConnectionConfig</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Components.TabbableControl, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="_txtAzureAppSecret.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonSite.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="w_cbRememberMe.Properties.Caption" xml:space="preserve">
+    <value>Remember my password</value>
+  </data>
+  <data name="w_comboConnectionType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_comboAddress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_labelAuthenticationType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_labelAuthenticationType.Name" xml:space="preserve">
+    <value>w_labelAuthenticationType</value>
+  </data>
+  <data name="_gbAzureGraphCredentials.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureAppSecret.Name" xml:space="preserve">
+    <value>_txtAzureAppSecret</value>
+  </data>
+  <data name="&gt;&gt;_txtAzureAppSecret.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_txtAzureClientId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 20</value>
+  </data>
+  <data name="w_radioButtonCurrentUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_gbAzureGraphCredentials.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_gbAzureGraphCredentials.Name" xml:space="preserve">
+    <value>_gbAzureGraphCredentials</value>
+  </data>
+  <data name="&gt;&gt;w_radioButtonSite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_txtAzureAppSecret.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_helpConnectionType.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_gbAzureGraphCredentials.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_labelConnectionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="w_labelConnectionType.Text" xml:space="preserve">
+    <value>Connection Type:</value>
+  </data>
+  <data name="w_radioButtonFarm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 35</value>
+  </data>
+  <data name="w_txtDifferentUser.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_comboConnectionType.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="w_radioButtonSite.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_txtAzureAppSecret.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 20</value>
+  </data>
+  <data name="w_helpAuthenticationType.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="w_lblTargetType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_radioButtonCurrentUser.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbRememberMe.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_txtDifferentUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 50</value>
+  </data>
+  <data name="w_labelAuthenticationType.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_helpConnectionType.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="w_helpTargetType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 33</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_helpTargetType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.Parent" xml:space="preserve">
+    <value>w_groupBox</value>
+  </data>
+  <data name="&gt;&gt;w_helpTargetType.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpTargetType.Name" xml:space="preserve">
+    <value>w_helpTargetType</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.Name" xml:space="preserve">
+    <value>w_lblAddress</value>
+  </data>
+  <data name="_lblAzureClientId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 38</value>
+  </data>
+  <data name="w_txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_groupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="w_radioButtonSite.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lblAzureClientId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_txtAzureAppSecret.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 61</value>
+  </data>
+  <data name="w_txtDifferentUser.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="w_helpAuthenticationType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;_lblAzureAppSecret.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lblTargetType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="w_lblTargetType.Text" xml:space="preserve">
+    <value>Target Type:</value>
+  </data>
+  <data name="w_cbRememberMe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 101</value>
+  </data>
+</root>

@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="w_lblWebApp.Text" xml:space="preserve">
+    <value>MySite Target Web Application:</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_lblWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="w_lvMySitesToCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 156</value>
+  </data>
+  <data name="&gt;&gt;marqueeBar1.Parent" xml:space="preserve">
+    <value>w_pLoadingPanel</value>
+  </data>
+  <data name="&gt;&gt;marqueeBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MarqueeProgressBarControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;marqueeBar1.Name" xml:space="preserve">
+    <value>marqueeBar1</value>
+  </data>
+  <data name="w_pLoadingPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 239</value>
+  </data>
+  <data name="w_lvMySitesToIgnore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_btnAddToCopy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lvMySitesToIgnore.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="w_pLoadingPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="marqueeBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToIgnore.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToIgnore.Name" xml:space="preserve">
+    <value>w_btnAddToIgnore</value>
+  </data>
+  <data name="gbSelectMySiteData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Name" xml:space="preserve">
+    <value>w_cmbWebApp</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToIgnore.Parent" xml:space="preserve">
+    <value>gbChooseMySites</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 259</value>
+  </data>
+  <data name="w_lblToIgnore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 1</value>
+  </data>
+  <data name="&gt;&gt;lManagedPath.Name" xml:space="preserve">
+    <value>lManagedPath</value>
+  </data>
+  <data name="&gt;&gt;lManagedPath.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToIgnore.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_lvMySitesToCopy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="&gt;&gt;marqueeBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lvMySitesToCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_lblToCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToCopy.Parent" xml:space="preserve">
+    <value>gbChooseMySites</value>
+  </data>
+  <data name="w_btnAddToCopy.Text" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="w_btnAddToCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 21</value>
+  </data>
+  <data name="w_lblWebApp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lManagedPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lLoading.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lLoading.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cmbWebApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 20</value>
+  </data>
+  <data name="gbSelectMySiteData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 55</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToCopy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="marqueeBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 5</value>
+  </data>
+  <data name="&gt;&gt;w_lLoading.Parent" xml:space="preserve">
+    <value>w_pLoadingPanel</value>
+  </data>
+  <data name="&gt;&gt;gbChooseMySites.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gbSelectMySiteData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Name" xml:space="preserve">
+    <value>w_lblWebApp</value>
+  </data>
+  <data name="gbChooseMySites.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_cmbWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lblToCopy.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.Parent" xml:space="preserve">
+    <value>gbSelectMySiteData</value>
+  </data>
+  <data name="&gt;&gt;w_lblToCopy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblToCopy.Name" xml:space="preserve">
+    <value>w_lblToCopy</value>
+  </data>
+  <data name="&gt;&gt;gbSelectMySiteData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblToCopy.Text" xml:space="preserve">
+    <value>Available MySites</value>
+  </data>
+  <data name="w_lblToCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToCopy.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_pLoadingPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;w_lblWebApp.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbSelectMySiteData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblToIgnore.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;gbChooseMySites.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lvMySitesToIgnore.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_lLoading.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="w_lLoading.Text" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="&gt;&gt;lManagedPath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_btnAddToIgnore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cmbPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblToCopy.Parent" xml:space="preserve">
+    <value>gbChooseMySites</value>
+  </data>
+  <data name="&gt;&gt;gbChooseMySites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gbChooseMySites.Name" xml:space="preserve">
+    <value>gbChooseMySites</value>
+  </data>
+  <data name="&gt;&gt;lManagedPath.Parent" xml:space="preserve">
+    <value>gbSelectMySiteData</value>
+  </data>
+  <data name="lManagedPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 13</value>
+  </data>
+  <data name="lManagedPath.Text" xml:space="preserve">
+    <value>MySite Target Managed Path:</value>
+  </data>
+  <data name="w_cmbPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 34</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToCopy.Parent" xml:space="preserve">
+    <value>gbChooseMySites</value>
+  </data>
+  <data name="w_lblToIgnore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cmbWebApp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lLoading.Name" xml:space="preserve">
+    <value>w_lLoading</value>
+  </data>
+  <data name="&gt;&gt;w_lLoading.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lblToCopy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblWebApp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_pLoadingPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToCopy.Name" xml:space="preserve">
+    <value>w_btnAddToCopy</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToCopy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToIgnore.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_lblToIgnore.Parent" xml:space="preserve">
+    <value>gbChooseMySites</value>
+  </data>
+  <data name="gbSelectMySiteData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_pLoadingPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_btnAddToIgnore.Parent" xml:space="preserve">
+    <value>gbChooseMySites</value>
+  </data>
+  <data name="gbChooseMySites.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="w_btnAddToIgnore.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_lblToIgnore.Name" xml:space="preserve">
+    <value>w_lblToIgnore</value>
+  </data>
+  <data name="&gt;&gt;w_lblToIgnore.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Name" xml:space="preserve">
+    <value>w_cmbPath</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbWebApp.Parent" xml:space="preserve">
+    <value>gbSelectMySiteData</value>
+  </data>
+  <data name="w_btnAddToIgnore.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="marqueeBar1.EditValue" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lManagedPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 37</value>
+  </data>
+  <data name="&gt;&gt;gbSelectMySiteData.Name" xml:space="preserve">
+    <value>gbSelectMySiteData</value>
+  </data>
+  <data name="&gt;&gt;gbSelectMySiteData.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lLoading.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;w_lblToIgnore.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_pLoadingPanel.Name" xml:space="preserve">
+    <value>w_pLoadingPanel</value>
+  </data>
+  <data name="&gt;&gt;w_pLoadingPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lblToCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCMySitesOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_lvMySitesToIgnore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 156</value>
+  </data>
+  <data name="w_pLoadingPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="marqueeBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 12</value>
+  </data>
+  <data name="w_btnAddToCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gbChooseMySites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 178</value>
+  </data>
+  <data name="w_lvMySitesToCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 19</value>
+  </data>
+  <data name="w_lblWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 13</value>
+  </data>
+  <data name="w_btnAddToIgnore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 21</value>
+  </data>
+  <data name="w_btnAddToIgnore.Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.Parent" xml:space="preserve">
+    <value>gbSelectMySiteData</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToCopy.Name" xml:space="preserve">
+    <value>w_lvMySitesToCopy</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lLoading.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cmbPath.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_cmbPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToIgnore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lvMySitesToIgnore.Name" xml:space="preserve">
+    <value>w_lvMySitesToIgnore</value>
+  </data>
+  <data name="lManagedPath.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_btnAddToCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 101</value>
+  </data>
+  <data name="w_cmbPath.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_btnAddToCopy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="w_btnAddToIgnore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 76</value>
+  </data>
+  <data name="w_lblToIgnore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="w_lblToIgnore.Text" xml:space="preserve">
+    <value>MySites to Copy</value>
+  </data>
+  <data name="gbChooseMySites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 60</value>
+  </data>
+  <data name="w_cmbWebApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 10</value>
+  </data>
+</root>

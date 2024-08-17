@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;_saveActionTemplateButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////AblxCU+5cQmRuXEJXblxCWO5cQljuXEJY7lxCWO5cQlhuXEJXblx
+        CZG5cQk7uXEJI7lxCZW5cQmFuXEJg7lxCZO5cQm5uXEJD////wH///8B////Af///wH///8B////Af//
+        /wG5cQk/uXEJn7lxCaW5cQljuXEJDblxCRe5cQlDuXEJh////wH///8B////Af///wH///8B////Af//
+        /wH///8BuXEJD7lxCYW5cQmfuXEJI////wH///8BuXEJI7lxCYX///8B////Af///wH///8B////Af//
+        /wH///8B////AblxCRG5cQmHuXEJoblxCSX///8B////AblxCSO5cQmF////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cQkRuXEJh7lxCaG5cQkl////Af///wG5cQkjuXEJhf///wH///8B////Af//
+        /wH///8B////Af///wH///8BuXEJEblxCYe5cQmhuXEJJf///wH///8BuXEJI7lxCYX///8B////Af//
+        /wH///8B////Af///wH///8B////AblxCRG5cQmFuXEJoblxCSX///8B////AblxCSO5cQmF////Af//
+        /wH///8B////Af///wH///8B////AblxCSO5cQkpuXEJgblxCaG5cQkl////Af///wG5cQkjuXEJhf//
+        /wH///8B////Af///wH///8BuXEJA7lxCZe5cQlbuXEJt7lxCa+5cQmhuXEJJf///wH///8BuXEJI7lx
+        CYP///8B////Af///wH///8B////AblxCWW5cQltuXEJB7lxCau5cQkVuXEJoblxCSX///8B////Ablx
+        CR+5cQmL////Af///wH///8B////Af///wG5cQlPuXEJeblxCeO5cQl3////AblxCaG5cQkl////Af//
+        /wH///8BuXEJhblxCY25cQlNuXEJV7lxCVe5cQk/uXEJl7lxCc+5cQmRuXEJZ////wG5cQmfuXEJI///
+        /wH///8B////AblxCQ25cQlluXEJablxCWO5cQlpuXEJVblxCV3///8BuXEJX7lxCYP///8BuXEJpblx
+        CWP///8BuXEJWblxCaO5cQl1uXEJW7lxCVu5cQlduXEJWblxCXm5cQkV////AblxCae5cQlx////Ablx
+        CSW5cQmXuXEJdblxCce5cQljuXEJDblxCSW5cQkluXEJJblxCQO5cQmjuXEJv7lxCYW5cQl3////Af//
+        /wH///8B////Af///wG5cQlLuXEJqblxCXe5cQl/uXEJf7lxCX+5cQl7uXEJp7lxCSX///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Configure List Copying Options</value>
+  </data>
+  <data name="&gt;&gt;_saveActionTemplateButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_loadActionTemplateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 731</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>734, 766</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_loadActionTemplateButton.Name" xml:space="preserve">
+    <value>_loadActionTemplateButton</value>
+  </data>
+  <data name="&gt;&gt;_loadActionTemplateButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnSave.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_btnSave.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnSave.Name" xml:space="preserve">
+    <value>w_btnSave</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Name" xml:space="preserve">
+    <value>w_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;w_btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tabControl.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="w_btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 731</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnOK.Text" xml:space="preserve">
+    <value>&amp;Run</value>
+  </data>
+  <data name="w_btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 731</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CopyListActionDialogBasicView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.Migration.BasicView.ScopableLeftNavigableTabsFormBasicView, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>750, 805</value>
+  </data>
+  <data name="&gt;&gt;_loadActionTemplateButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_saveActionTemplateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 731</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>750, 805</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Name" xml:space="preserve">
+    <value>w_btnOK</value>
+  </data>
+  <data name="CopyListActionDialogBasicView.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>226, 228, 233</value>
+  </data>
+  <data name="&gt;&gt;_loadActionTemplateButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 990</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 961</value>
+  </data>
+  <data name="&gt;&gt;_saveActionTemplateButton.Name" xml:space="preserve">
+    <value>_saveActionTemplateButton</value>
+  </data>
+  <data name="&gt;&gt;_saveActionTemplateButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

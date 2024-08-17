@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_plRecurseSites.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSubfolders.Name" xml:space="preserve">
+    <value>w_cbRecurseSubfolders</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSubfolders.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_plRecurseSites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 23</value>
+  </data>
+  <data name="w_cbMapRolesByName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbFolderPermissions.Name" xml:space="preserve">
+    <value>w_cbFolderPermissions</value>
+  </data>
+  <data name="&gt;&gt;w_cbFolderPermissions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plRecursiveFolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 23</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemPermissions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPermissionLevels.Name" xml:space="preserve">
+    <value>w_cbCopyPermissionLevels</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPermissionLevels.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbCopyAccessRequests.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbCopyAssociatedGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 19</value>
+  </data>
+  <data name="w_btnEditRoleMappings.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_btnEditRoleMappings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="_siteSettingOptionsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_plRecurseSites.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 336</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPermissionLevels.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbCopyRootPermissions.Properties.Caption" xml:space="preserve">
+    <value>Ignore permissions inheritance for root node</value>
+  </data>
+  <data name="w_cbCopyPermissionLevels.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_plLists.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_cbRecurseSites.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbItemPermissions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 19</value>
+  </data>
+  <data name="w_cbMapRolesByName.Properties.Caption" xml:space="preserve">
+    <value>Map permissions levels by name</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemPermissions.Parent" xml:space="preserve">
+    <value>w_plListItems</value>
+  </data>
+  <data name="w_cbClearRoleAssignments.Properties.Caption" xml:space="preserve">
+    <value>Delete pre-existing permissions </value>
+  </data>
+  <data name="&gt;&gt;w_cbOverrideRoleMappings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbOverrideRoleMappings.Name" xml:space="preserve">
+    <value>w_cbOverrideRoleMappings</value>
+  </data>
+  <data name="&gt;&gt;w_cbClearRoleAssignments.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyRootPermissions.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_plRecursiveFolders.Name" xml:space="preserve">
+    <value>w_plRecursiveFolders</value>
+  </data>
+  <data name="&gt;&gt;w_plRecursiveFolders.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plRecurseSites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 101</value>
+  </data>
+  <data name="w_cbRecurseSubfolders.Properties.Caption" xml:space="preserve">
+    <value>Copy permissions in subfolders</value>
+  </data>
+  <data name="&gt;&gt;w_plRecurseSites.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbOverrideRoleMappings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPermissionLevels.Parent" xml:space="preserve">
+    <value>w_plSites</value>
+  </data>
+  <data name="&gt;&gt;w_cbListPermissions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbListPermissions.Name" xml:space="preserve">
+    <value>w_cbListPermissions</value>
+  </data>
+  <data name="w_cbCopyAccessRequests.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_btnEditRoleMappings.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_plFolders.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="w_plFolders.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_cbCopyRootPermissions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 19</value>
+  </data>
+  <data name="w_cbItemPermissions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_plFolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 23</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyRootPermissions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plFolders.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbListPermissions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbClearRoleAssignments.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_siteSettingOptionsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 46</value>
+  </data>
+  <data name="w_cbItemPermissions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_plSites.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_plListItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 193</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemPermissions.Name" xml:space="preserve">
+    <value>w_cbItemPermissions</value>
+  </data>
+  <data name="&gt;&gt;w_cbItemPermissions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbMapRolesByName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 262</value>
+  </data>
+  <data name="w_plFolders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 147</value>
+  </data>
+  <data name="&gt;&gt;w_plLists.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyRootPermissions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyRootPermissions.Name" xml:space="preserve">
+    <value>w_cbCopyRootPermissions</value>
+  </data>
+  <data name="&gt;&gt;w_plRecurseSites.Name" xml:space="preserve">
+    <value>w_plRecurseSites</value>
+  </data>
+  <data name="&gt;&gt;w_plRecurseSites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plLists.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbClearRoleAssignments.Name" xml:space="preserve">
+    <value>w_cbClearRoleAssignments</value>
+  </data>
+  <data name="w_btnEditRoleMappings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 283</value>
+  </data>
+  <data name="&gt;&gt;w_cbClearRoleAssignments.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbListPermissions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_plRecurseSites.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="w_cbListPermissions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapRolesByName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapRolesByName.Name" xml:space="preserve">
+    <value>w_cbMapRolesByName</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapRolesByName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plRecursiveFolders.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="w_cbRecurseSites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_cbRecurseSites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbSitePermissions.Properties.Caption" xml:space="preserve">
+    <value>Copy site permissions</value>
+  </data>
+  <data name="w_plListItems.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_plRecursiveFolders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 170</value>
+  </data>
+  <data name="w_plFolders.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_plListItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 23</value>
+  </data>
+  <data name="&gt;&gt;w_plRecursiveFolders.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapRolesByName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_plLists.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 124</value>
+  </data>
+  <data name="w_cbOverrideRoleMappings.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_plListItems.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_plSites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 9</value>
+  </data>
+  <data name="w_plSites.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbRecurseSubfolders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_plLists.Name" xml:space="preserve">
+    <value>w_plLists</value>
+  </data>
+  <data name="&gt;&gt;w_plLists.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbCopyAssociatedGroups.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbMapRolesByName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRoleMappings.Name" xml:space="preserve">
+    <value>w_btnEditRoleMappings</value>
+  </data>
+  <data name="w_cbListPermissions.Properties.Caption" xml:space="preserve">
+    <value>Copy list permissions</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRoleMappings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbCopyAssociatedGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_siteSettingOptionsPanel.Name" xml:space="preserve">
+    <value>_siteSettingOptionsPanel</value>
+  </data>
+  <data name="&gt;&gt;_siteSettingOptionsPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbItemPermissions.Properties.Caption" xml:space="preserve">
+    <value>Copy item permissions</value>
+  </data>
+  <data name="&gt;&gt;w_cbOverrideRoleMappings.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_cbCopyPermissionLevels.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="&gt;&gt;w_plListItems.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plSites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 92</value>
+  </data>
+  <data name="w_cbCopyPermissionLevels.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_plRecursiveFolders.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRoleMappings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_cbOverrideRoleMappings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditRoleMappings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plListItems.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="w_cbFolderPermissions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_plRecursiveFolders.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_cbCopyPermissionLevels.Properties.Caption" xml:space="preserve">
+    <value>Copy permission levels</value>
+  </data>
+  <data name="w_cbCopyRootPermissions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 216</value>
+  </data>
+  <data name="w_cbSitePermissions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 19</value>
+  </data>
+  <data name="w_cbCopyRootPermissions.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_cbCopyAccessRequests.Properties.Caption" xml:space="preserve">
+    <value>Copy access request settings</value>
+  </data>
+  <data name="&gt;&gt;w_cbSitePermissions.Parent" xml:space="preserve">
+    <value>w_plSites</value>
+  </data>
+  <data name="w_plListItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;_siteSettingOptionsPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_siteSettingOptionsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 46</value>
+  </data>
+  <data name="w_plRecursiveFolders.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_cbFolderPermissions.Properties.Caption" xml:space="preserve">
+    <value>Copy folder permissions</value>
+  </data>
+  <data name="w_cbCopyAssociatedGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="&gt;&gt;w_plSites.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbFolderPermissions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbSitePermissions.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_siteSettingOptionsPanel.Parent" xml:space="preserve">
+    <value>w_plSites</value>
+  </data>
+  <data name="w_plFolders.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCPermissionsOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_plLists.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_plSites.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAssociatedGroups.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbClearRoleAssignments.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_cbFolderPermissions.Parent" xml:space="preserve">
+    <value>w_plFolders</value>
+  </data>
+  <data name="w_cbFolderPermissions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_plLists.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 23</value>
+  </data>
+  <data name="&gt;&gt;w_cbListPermissions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAssociatedGroups.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAssociatedGroups.Name" xml:space="preserve">
+    <value>w_cbCopyAssociatedGroups</value>
+  </data>
+  <data name="w_cbRecurseSites.Properties.Caption" xml:space="preserve">
+    <value>Copy permissions in child sites</value>
+  </data>
+  <data name="w_plSites.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="w_cbCopyAccessRequests.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 0</value>
+  </data>
+  <data name="w_cbClearRoleAssignments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 239</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAccessRequests.Parent" xml:space="preserve">
+    <value>_siteSettingOptionsPanel</value>
+  </data>
+  <data name="w_cbFolderPermissions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbListPermissions.Parent" xml:space="preserve">
+    <value>w_plLists</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSites.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_btnEditRoleMappings.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_cbCopyAccessRequests.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 19</value>
+  </data>
+  <data name="&gt;&gt;w_plFolders.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plFolders.Name" xml:space="preserve">
+    <value>w_plFolders</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSites.Parent" xml:space="preserve">
+    <value>w_plRecurseSites</value>
+  </data>
+  <data name="w_cbCopyAssociatedGroups.Properties.Caption" xml:space="preserve">
+    <value>Copy associated group settings</value>
+  </data>
+  <data name="w_cbOverrideRoleMappings.Properties.Caption" xml:space="preserve">
+    <value>Override role mappings</value>
+  </data>
+  <data name="w_cbOverrideRoleMappings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 285</value>
+  </data>
+  <data name="w_cbRecurseSubfolders.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_plSites.Name" xml:space="preserve">
+    <value>w_plSites</value>
+  </data>
+  <data name="&gt;&gt;w_plSites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAccessRequests.Name" xml:space="preserve">
+    <value>w_cbCopyAccessRequests</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAccessRequests.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plListItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plListItems.Name" xml:space="preserve">
+    <value>w_plListItems</value>
+  </data>
+  <data name="w_cbRecurseSubfolders.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbSitePermissions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAssociatedGroups.Parent" xml:space="preserve">
+    <value>_siteSettingOptionsPanel</value>
+  </data>
+  <data name="w_cbCopyPermissionLevels.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 19</value>
+  </data>
+  <data name="w_plRecurseSites.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_cbSitePermissions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbSitePermissions.Name" xml:space="preserve">
+    <value>w_cbSitePermissions</value>
+  </data>
+  <data name="w_cbRecurseSubfolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSites.Name" xml:space="preserve">
+    <value>w_cbRecurseSites</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyAccessRequests.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="_siteSettingOptionsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_cbRecurseSites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSubfolders.Parent" xml:space="preserve">
+    <value>w_plRecursiveFolders</value>
+  </data>
+  <data name="&gt;&gt;w_cbRecurseSubfolders.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_cbSitePermissions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbClearRoleAssignments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 19</value>
+  </data>
+  <data name="w_plLists.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+</root>

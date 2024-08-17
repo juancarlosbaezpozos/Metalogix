@@ -1,0 +1,15 @@
+<Feature Id="481333E1-A246-4d89-AFAB-D18C6FE344CE" 
+         Title="$Resources:ppsma,Workspace_ContentList_Title"
+         Description="$Resources:ppsma,Workspace_ContentList_Description" 
+         Version="14.0.0.0" 
+         Scope="Web" 
+         SolutionId="7ED6CD55-B479-4EB7-A529-E99A24C10BD3"
+         Hidden="TRUE" 
+         DefaultResourceFile="core" 
+         xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ListTemplates\elementManifest.xml" />
+    <ElementFile Location="PPSWorkspaceLists\schema.xml" />
+    <ElementFile Location="PPSWorkspaceLists\allitems.aspx" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="7" UIVersion="15">
+    <NavBars>
+      <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002">
+          <NavBarLink Name="$Resources:spscore,GlobalTopNav_MySite_Text;" Url="default.aspx" ID="1010" />
+      </NavBar>
+      <NavBar Name="$Resources:spscore,GlobalQuickLaunch_Default_Text;" Url="default.aspx" />
+      <NavBar Name="$Resources:spscore,GlobalQuickLaunch_Profile_Text;" Url="person.aspx" />
+    </NavBars>
+    <ListTemplates>
+
+        <ListTemplate
+            Hidden="TRUE"
+            Name="xmlform"
+            DisplayName="$Resources:core,formlibList;"
+            Type="115"
+            BaseType="1"
+            OnQuickLaunch="FALSE"
+            SecurityBits="11"
+            Description="$Resources:core,formlibList_Desc;"
+            Image="/_layouts/images/itdl.png"
+            DocumentTemplate="1000" />
+    </ListTemplates>
+
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+
+    <Configurations>
+        <Configuration ID="-1" Name="NewWeb"/>
+        <Configuration ID="0" Name="Default" CustomMasterUrl="_catalogs/masterpage/mysite15.master" MasterUrl="_catalogs/masterpage/mysite15.master">
+            <Lists>
+            </Lists>
+            <WebFeatures>
+                <Feature ID="5EDE0A86-C772-4f1d-A120-72E734B3400C" /> <!-- Organization Logos -->
+                <Feature ID="41BAA678-AD62-41ef-87E6-62C8917FC0AD" /> <!-- My Site Unified Navigation feature -->
+                <Feature ID="87294C72-F260-42f3-A41B-981A2FFCE37A" /> <!-- MDS -->
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+            </WebFeatures>
+            <SiteFeatures>
+                <Feature ID="49571CD1-B6A1-43a3-BF75-955ACC79C8D8" /> <!-- My Site Host feature -->
+                <Feature ID="6928B0E5-5707-46a1-AE16-D6E52522D52B" /> <!-- My Site Layouts -->
+                <Feature ID="DFA42479-9531-4BAF-8873-FC65B22C9BD4" /> <!-- MySite MicroBlog Main Controller feature -->
+            </SiteFeatures>
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+        </Configuration>
+        <Configuration ID="1" Name="Blank">
+            <ExecuteUrl Url="_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/settings.aspx" />
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="Default">
+            <File Url="blog.xsl"></File>
+            <File Url="tagprofile.aspx" Type="Ghostable">
+
+                <AllUsersWebPart WebPartZoneID="LeftZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.TagInformationWebPart</TypeName>
+                        <Title>$Resources:spscore,TagInformation_WebPart_Title</Title>
+                        <Description>$Resources:spscore,TagInformation_WebPart_Description</Description>
+                        <PartOrder>2</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="LeftZone" WebPartOrder="2">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.TaggedUrlListWebPart</TypeName>
+                        <Title>$Resources:spscore,TaggedUrlList_WebPart_Title</Title>
+                        <Description>$Resources:spscore,TaggedUrlList_WebPart_Description</Description>
+                        <PartOrder>3</PartOrder>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.TaggedPeopleListWebPart</TypeName>
+                        <Title>$Resources:spscore,TaggedPeopleList_WebPart_Title</Title>
+                        <Description>$Resources:spscore,TaggedPeopleList_WebPart_Description</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="2">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.SocialCommentWebPart</TypeName>
+                        <Title>$Resources:spscore,SocialComment_WebPart_Title</Title>
+                        <Description>$Resources:spscore,SocialComment_WebPart_Description</Description>
+                        <PartOrder>3</PartOrder>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+            </File>
+            <File Url="person.aspx" Type="Ghostable">
+
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.AskMeAboutWebPart</TypeName>
+                        <Title>$Resources:spscore,MySiteOnet_WebPart_AskMeAbout_Title</Title>
+                        <Description>$Resources:spscore,MySiteOnet_WebPart_AskMeAbout_Description</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="2">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.PublishedFeedWebPart</TypeName>
+                        <Title>$Resources:spscore,PublishedFeed_WebPart_Title</Title>
+                        <Description>$Resources:spscore,PublishedFeed_WebPart_Description</Description>
+                        <PartOrder>2</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="3">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.MySitePersonalSiteUpgradeOnNavigationWebPart</TypeName>
+                        <Title>MySite Personal Site Upgrade On Navigation</Title>
+                        <Description>Upgrades personal site</Description>
+                        <PartOrder>3</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>false</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+                <AllUsersWebPart WebPartZoneID="MiddleRightZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.ProfileInfoWebPart</TypeName>
+                        <Title>$Resources:spscore,ProfileInfo_WebPart_Title</Title>
+                        <Description>$Resources:spscore,Profileinfo_WebPart_Description</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MiddleRightZone" WebPartOrder="2">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.MySharedContext</TypeName>
+                        <Title>$Resources:spscore,InCommon_WebPart_15_Title</Title>
+                        <Description>$Resources:spscore,InCommon_WebPart_15_Description</Description>
+                        <PartOrder>2</PartOrder>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MiddleRightZone" WebPartOrder="3">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.ProfileManages</TypeName>
+                        <Title>$Resources:spscore,ProfileManages_WebPart_15_Title</Title>
+                        <Description>$Resources:spscore,ProfileManages_WebPart_15_Description</Description>
+                        <PartOrder>4</PartOrder>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MiddleRightZone" WebPartOrder="4">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.TagCloudWebPart</TypeName>
+                        <Title>$Resources:spscore,TagCloudWebPart_Title</Title>
+                        <Description>$Resources:spscore,TagCloudWebPart_Description</Description>
+                        <PartOrder>3</PartOrder>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+            </File>
+
+            <File Url="default.aspx" Type="Ghostable">
+
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.MicroFeedWebPart</TypeName>
+                        <Title>$Resources:spscore,MicroFeed_WebPart_Title</Title>
+                        <Description>$Resources:spscore,MicroFeed_WebPart_Description</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="2">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.MySitePersonalSiteUpgradeOnNavigationWebPart</TypeName>
+                        <Title>MySite Personal Site Upgrade On Navigation</Title>
+                        <Description>Upgrades personal site</Description>
+                        <PartOrder>2</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>false</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="3">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.MySiteFirstRunExperienceWebPart</TypeName>
+                        <Title>MySite First run experience</Title>
+                        <Description>Mysite first run experience</Description>
+                        <PartOrder>3</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>false</IsVisible>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+                <AllUsersWebPart WebPartZoneID="MiddleRightZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.FollowedCountsWebPart</TypeName>
+                        <Title>$Resources:spscore,FollowedCounts_WebPart_Title</Title>
+                        <Description>$Resources:spscore,FollowedCounts_WebPart_Description</Description>
+                        <PartOrder>1</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>                   
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MiddleRightZone" WebPartOrder="2">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.Office.Server.Search.WebControls.AnalyticsHashTagWebPart</TypeName>
+                        <Title>Trending #tags</Title>
+                        <Description>This client-side webpart helps the user find new social content</Description>
+                        <PartOrder>2</PartOrder>
+                        <FrameType>None</FrameType>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>false</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                    </WebPart>
+                    ]]>                   
+                </AllUsersWebPart>
+
+            </File>
+        </Module>
+    </Modules>
+</Project>

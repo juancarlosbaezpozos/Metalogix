@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="4" UIVersion="15" SiteLogoUrl="/_layouts/images/searchlogo.png">
+    <ListTemplates>
+        <ListTemplate Name="Tabs" DisplayName="$Resources:Microsoft.Office.Server.Search,SitesOnet_TabsListName;" FolderCreation="FALSE" Type="301" BaseType="0" OnQuickLaunch="FALSE" SecurityBits="11" Description="$Resources:Microsoft.Office.Server.Search,SitesOnet_TabsList_Description;" Image="/_layouts/images/itgen.png"> </ListTemplate>
+    </ListTemplates>
+
+    <Configurations>
+        <Configuration ID="0" Name="Default" CustomMasterUrl="_catalogs/masterpage/v15.master" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists> <List Title="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchCenterListName;" Description="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchCenterListDescription;" Url="SearchCenter" Type="301"> </List> <List Title="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchResultsListName;" Description="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchResultsListDescription;" Url="SearchResults" Type="301"> </List> </Lists>
+            <SiteFeatures>
+                <Feature ID="03B0A3DC-93DD-4c68-943E-7EC56E65ED4D" /> 
+                <Feature ID="7AC8CC56-D28E-41f5-AD04-D95109EB987A" /> 
+                <Feature ID="9C0834E1-BA47-4D49-812B-7D4FB6FEA211" />
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" /> 
+                <Feature ID="7ACFCB9D-8E8F-4979-AF7E-8AED7E95245E" /> 
+                <Feature ID="073232A0-1868-4323-A144-50DE99C70EFC" />                
+            </WebFeatures>
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+        </Configuration>
+
+        <Configuration ID="1" Name="Default" CustomMasterUrl="_catalogs/masterpage/v15.master" MasterUrl="_catalogs/masterpage/v15.master">
+            <SiteFeatures>                
+                <Feature ID="03B0A3DC-93DD-4c68-943E-7EC56E65ED4D" /> 
+                <Feature ID="7AC8CC56-D28E-41f5-AD04-D95109EB987A" /> 
+                <Feature ID="9C0834E1-BA47-4D49-812B-7D4FB6FEA211" />
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" /> 
+                <Feature ID="7ACFCB9D-8E8F-4979-AF7E-8AED7E95245E" /> 
+                <Feature ID="073232A0-1868-4323-A144-50DE99C70EFC" />                
+            </WebFeatures>
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+        </Configuration>
+    </Configurations>
+</Project>

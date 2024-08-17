@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_maskedtextboxPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_buttonCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;w_comboboxServerList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbRememberMe.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_labelSiteAddress.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_groupAuthentication.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_buttonBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowse.Name" xml:space="preserve">
+    <value>w_buttonBrowse</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowse.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_groupAuthentication.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_textBoxDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_maskedtextboxPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="w_buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 219</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////AbpyBgu6cgY7unIGU7pyBl+6cgZXunIGb7pyBmG6cgZZunIGW7pyBke6cgYn////Af//
+        /wH///8BunIGF7pyBjW6cgZ9unIGXbpyBj26cgYpunIGJ7pyBiG6cgYjunIGJ7pyBi26cgZJunIGbbpy
+        Bmm6cgYL////AbpyBnW6cgaDunIGFf///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wG6cgZbunIGb7pyBku6cgZhunIGXf///wG6cgYLunIGNbpyBkW6cgZJunIGQbpyBkW6cgZFunIGP7py
+        BiH///8BunIGH7pyBoG6cgZtunIGWbpyBmW6cgZPunIGbbpyBl26cgZTunIGRbpyBjm6cgY7unIGS7py
+        BlW6cgZhunIGabpyBlG6cgZbunIGSbpyBpO6cgarunIGQbpyBgf///8B////Af///wH///8B////Af//
+        /wH///8B////AbpyBhW6cgZ9unIGibpyBl+6cgZfunIGW////wH///8B////AbpyBhO6cgYfunIGL7py
+        Bie6cgYZunIGC////wH///8BunIGG7pyBm26cgZdunIGS7pyBkm6cgYhunIGYbpyBmO6cgZdunIGV7py
+        BmO6cgZhunIGV7pyBl+6cgZlunIGT7pyBiG6cgZBunIGO7pyBoG6cgabunIGY7pyBjW6cgYL////Af//
+        /wH///8B////Af///wG6cgYDunIGG7pyBku6cgaJunIGe7pyBlW6cgZxunIGb////wH///8B////Af//
+        /wG6cgYDunIGA7pyBgP///8B////Af///wH///8BunIGLbpyBoG6cgZnunIGT7pyBkf///8BunIGP7py
+        Blm6cgZbunIGVbpyBlO6cgZVunIGWbpyBle6cgZRunIGIbpyBgu6cgZNunIGRbpyBnO6cgaJunIGZ7py
+        Blm6cgY/unIGKbpyBhO6cgYPunIGD7pyBhm6cgYzunIGS7pyBmO6cgZ3unIGYbpyBkW6cgaPunIGlf//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BunIGQ7pyBpW6cgZzunIGX7py
+        Bmu6cgYX////Af///wH///8B////Af///wH///8B////Af///wH///8B////AbpyBle6cgZfunIGP7py
+        BhG6cgYpunIGc7pyBme6cgZNunIGL7pyBim6cgYpunIGKbpyBiu6cgY9unIGWbpyBnG6cgZhunIGA///
+        /wH///8B////AbpyBhW6cgZNunIGW7pyBlu6cgZjunIGWbpyBl26cgZhunIGXbpyBlu6cgY3unIGBf//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Connect to SQL Server</value>
+  </data>
+  <data name="&gt;&gt;w_buttonConnect.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowseDatabase.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_comboboxServerList.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_comboboxServerList.Name" xml:space="preserve">
+    <value>w_comboboxServerList</value>
+  </data>
+  <data name="&gt;&gt;w_labelPassword.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_labelPassword.Name" xml:space="preserve">
+    <value>w_labelPassword</value>
+  </data>
+  <data name="w_radioCurrentAuth.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_comboboxServerList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_radioCurrentAuth.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_groupAuthentication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 73</value>
+  </data>
+  <data name="&gt;&gt;w_labelSiteAddress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_radioCurrentAuth.Properties.Caption" xml:space="preserve">
+    <value>Use Windows Authentication </value>
+  </data>
+  <data name="w_labelDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="w_cbRememberMe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 19</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowseDatabase.Name" xml:space="preserve">
+    <value>w_buttonBrowseDatabase</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowseDatabase.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>443, 254</value>
+  </data>
+  <data name="w_buttonConnect.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_radioDifferentAuth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 54</value>
+  </data>
+  <data name="w_maskedtextboxPassword.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_buttonCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_buttonCancel.Name" xml:space="preserve">
+    <value>w_buttonCancel</value>
+  </data>
+  <data name="w_textboxUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 54</value>
+  </data>
+  <data name="w_comboboxServerList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 14</value>
+  </data>
+  <data name="w_groupAuthentication.Text" xml:space="preserve">
+    <value>Authentication</value>
+  </data>
+  <data name="w_groupAuthentication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 132</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowse.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowseDatabase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_buttonBrowseDatabase.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_buttonConnect.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_radioDifferentAuth.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_radioCurrentAuth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 29</value>
+  </data>
+  <data name="w_textBoxDatabase.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_buttonBrowseDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_labelDatabase.Name" xml:space="preserve">
+    <value>w_labelDatabase</value>
+  </data>
+  <data name="&gt;&gt;w_labelDatabase.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_buttonBrowse.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_labelPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="w_labelPassword.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="&gt;&gt;w_labelPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_radioCurrentAuth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_radioCurrentAuth.Name" xml:space="preserve">
+    <value>w_radioCurrentAuth</value>
+  </data>
+  <data name="w_buttonBrowseDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 43</value>
+  </data>
+  <data name="w_labelDatabase.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;w_maskedtextboxPassword.Parent" xml:space="preserve">
+    <value>w_groupAuthentication</value>
+  </data>
+  <data name="&gt;&gt;w_buttonCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_labelDatabase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_buttonCancel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_comboboxServerList.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;w_buttonBrowse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_buttonBrowseDatabase.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_radioDifferentAuth.Parent" xml:space="preserve">
+    <value>w_groupAuthentication</value>
+  </data>
+  <data name="w_buttonBrowseDatabase.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="w_buttonBrowseDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="w_radioDifferentAuth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 19</value>
+  </data>
+  <data name="&gt;&gt;w_labelPassword.Parent" xml:space="preserve">
+    <value>w_groupAuthentication</value>
+  </data>
+  <data name="&gt;&gt;w_maskedtextboxPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_labelDatabase.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_groupAuthentication.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_buttonBrowseDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_labelPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_radioCurrentAuth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 19</value>
+  </data>
+  <data name="&gt;&gt;w_textBoxDatabase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_radioDifferentAuth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_radioDifferentAuth.Name" xml:space="preserve">
+    <value>w_radioDifferentAuth</value>
+  </data>
+  <data name="w_textBoxDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 20</value>
+  </data>
+  <data name="w_textboxUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="&gt;&gt;w_textboxUsername.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_buttonConnect.Name" xml:space="preserve">
+    <value>w_buttonConnect</value>
+  </data>
+  <data name="&gt;&gt;w_buttonConnect.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_textboxUsername.Parent" xml:space="preserve">
+    <value>w_groupAuthentication</value>
+  </data>
+  <data name="w_textboxUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_textboxUsername.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_radioCurrentAuth.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_labelDatabase.Text" xml:space="preserve">
+    <value>SQL Database:</value>
+  </data>
+  <data name="w_labelDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 15</value>
+  </data>
+  <data name="w_labelSiteAddress.Text" xml:space="preserve">
+    <value>SQL Server:</value>
+  </data>
+  <data name="w_labelSiteAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
+  </data>
+  <data name="w_labelDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 46</value>
+  </data>
+  <data name="&gt;&gt;w_textBoxDatabase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_buttonCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_labelSiteAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="w_labelDatabase.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_buttonConnect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_maskedtextboxPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_textBoxDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_maskedtextboxPassword.Name" xml:space="preserve">
+    <value>w_maskedtextboxPassword</value>
+  </data>
+  <data name="&gt;&gt;w_maskedtextboxPassword.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_radioDifferentAuth.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_labelPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 83</value>
+  </data>
+  <data name="w_radioDifferentAuth.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_labelSiteAddress.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.Name" xml:space="preserve">
+    <value>w_cbRememberMe</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_buttonBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 12</value>
+  </data>
+  <data name="&gt;&gt;w_radioCurrentAuth.Parent" xml:space="preserve">
+    <value>w_groupAuthentication</value>
+  </data>
+  <data name="w_comboboxServerList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 20</value>
+  </data>
+  <data name="w_textBoxDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 45</value>
+  </data>
+  <data name="w_cbRememberMe.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_radioCurrentAuth.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DatabaseConnectDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_groupAuthentication.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_groupAuthentication.Name" xml:space="preserve">
+    <value>w_groupAuthentication</value>
+  </data>
+  <data name="w_cbRememberMe.Properties.Caption" xml:space="preserve">
+    <value>Remember my password</value>
+  </data>
+  <data name="w_cbRememberMe.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;w_textBoxDatabase.Name" xml:space="preserve">
+    <value>w_textBoxDatabase</value>
+  </data>
+  <data name="&gt;&gt;w_textBoxDatabase.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_comboboxServerList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_labelSiteAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 15</value>
+  </data>
+  <data name="w_buttonConnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 219</value>
+  </data>
+  <data name="&gt;&gt;w_labelSiteAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_labelSiteAddress.Name" xml:space="preserve">
+    <value>w_labelSiteAddress</value>
+  </data>
+  <data name="w_buttonBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="w_buttonBrowse.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="w_radioDifferentAuth.Properties.Caption" xml:space="preserve">
+    <value>Use SQL Server Login:</value>
+  </data>
+  <data name="w_cbRememberMe.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_textboxUsername.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_textboxUsername.Name" xml:space="preserve">
+    <value>w_textboxUsername</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbRememberMe.Parent" xml:space="preserve">
+    <value>w_groupAuthentication</value>
+  </data>
+  <data name="&gt;&gt;w_comboboxServerList.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="w_labelPassword.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="w_buttonCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_buttonConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_buttonConnect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="w_textboxUsername.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_groupAuthentication.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="w_maskedtextboxPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 80</value>
+  </data>
+  <data name="w_cbRememberMe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 106</value>
+  </data>
+</root>

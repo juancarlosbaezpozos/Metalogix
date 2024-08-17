@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;w_txtNodeType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeType.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectionType.Name" xml:space="preserve">
+    <value>w_txtConnectionType</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_lblNodeName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 116</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_txtNodeName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblServerInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_memoNodeXml.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="w_labelConnectedAs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 0</value>
+  </data>
+  <data name="&gt;&gt;_textEditMenu.Name" xml:space="preserve">
+    <value>_textEditMenu</value>
+  </data>
+  <data name="&gt;&gt;_textEditMenu.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.TextEditContextMenu, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_tbListTemplate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_textEditMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 48</value>
+  </data>
+  <data name="w_plServerInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 143</value>
+  </data>
+  <data name="w_lblAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_plListTemplate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_txtNodeType.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeXML.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeXML.Name" xml:space="preserve">
+    <value>w_lblNodeXML</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Name" xml:space="preserve">
+    <value>w_lblTemplate</value>
+  </data>
+  <data name="w_labelConnectionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 27</value>
+  </data>
+  <data name="w_plServerInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 67</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeType.Name" xml:space="preserve">
+    <value>w_txtNodeType</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectionType.Parent" xml:space="preserve">
+    <value>w_plConnectionType</value>
+  </data>
+  <data name="w_txtConnectionType.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Control</value>
+  </data>
+  <data name="w_txtNodeName.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_tbCustomTemplatePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblServerInfo.Parent" xml:space="preserve">
+    <value>w_plServerInfo</value>
+  </data>
+  <data name="w_plLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 291</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////AbhxA1m4cQNzuHEDd7hxA3e4cQNzuHEDX7hxAwf///8B////Af//
+        /wH///8B////Af///wH///8BuHEDN7hxA6O4cQODuHEDT7hxAzG4cQMvuHEDSbhxA324cQOluHEDS///
+        /wH///8B////Af///wH///8BuHEDUbhxA7u4cQM3////Af///wH///8B////Af///wH///8BuHEDJbhx
+        A7O4cQNn////Af///wH///8BuHEDLbhxA724cQMH////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8BuHEDt7hxA0f///8B////AbhxA5m4cQMv////Af///wH///8B////AbhxA0G4cQNH////Af//
+        /wH///8B////AbhxAxW4cQOnuHEDEbhxA0e4cQOH////Af///wH///8B////Af///wG4cQN7uHEDh///
+        /wH///8B////Af///wH///8BuHEDebhxA2e4cQN5uHEDY////wH///8B////Af///wH///8BuHEDabhx
+        A3X///8B////Af///wH///8B////AbhxA0W4cQN7uHEDnbhxA1H///8B////Af///wH///8B////Abhx
+        A2m4cQN1////Af///wH///8B////Af///wG4cQMruHEDd7hxA5e4cQNP////Af///wH///8B////Af//
+        /wG4cQN7uHEDh////wH///8B////Af///wH///8BuHEDK7hxA3e4cQNzuHEDX////wH///8B////Af//
+        /wH///8BuHEDL7hxAzX///8B////Af///wH///8B////AbhxA0m4cQN5uHEDPbhxA4X///8B////Af//
+        /wH///8B////AbhxAzO4cQM5////Af///wH///8B////Af///wG4cQN7uHEDV////wG4cQORuHEDPf//
+        /wH///8B////Af///wG4cQNHuHEDT////wH///8B////Af///wG4cQMjuHEDnbhxAwX///8BuHEDH7hx
+        A7+4cQMb////Af///wH///8B////Af///wH///8B////Af///wG4cQMHuHEDv7hxAzP///8B////Af//
+        /wG4cQM7uHEDv7hxA1X///8B////Af///wH///8B////Af///wG4cQNJuHEDv7hxA0////8B////Af//
+        /wH///8B////AbhxAx24cQObuHEDj7hxA2m4cQNVuHEDVbhxA2e4cQONuHEDo7hxAy////8B////Af//
+        /wH///8B////Af///wH///8B////AbhxA0G4cQNtuHEDl7hxA5u4cQNxuHEDSf///wH///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Node Properties</value>
+  </data>
+  <data name="w_memoServerInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="w_btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="&gt;&gt;w_memoServerInfo.Name" xml:space="preserve">
+    <value>w_memoServerInfo</value>
+  </data>
+  <data name="&gt;&gt;w_memoServerInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_tbListTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 2</value>
+  </data>
+  <data name="&gt;&gt;w_plListTemplate.Name" xml:space="preserve">
+    <value>w_plListTemplate</value>
+  </data>
+  <data name="&gt;&gt;w_plListTemplate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeName.Name" xml:space="preserve">
+    <value>w_lblNodeName</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_txtNodeType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_plConnectionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 53</value>
+  </data>
+  <data name="w_lblListTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="w_lblListTemplate.Text" xml:space="preserve">
+    <value>List Template:</value>
+  </data>
+  <data name="w_lblAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="w_lblAddress.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="w_lblServerInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="w_lblServerInfo.Text" xml:space="preserve">
+    <value>Server Info:</value>
+  </data>
+  <data name="w_txtConnectedAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>504, 572</value>
+  </data>
+  <data name="w_txtConnectedAs.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_btnCustomTemplatePath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="w_lblTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="w_lblTemplate.Text" xml:space="preserve">
+    <value>Template Path:</value>
+  </data>
+  <data name="w_txtConnectionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 29</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.Name" xml:space="preserve">
+    <value>w_btnClose</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_tbListTemplate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_plDBReferences.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 237</value>
+  </data>
+  <data name="&gt;&gt;w_memoServerInfo.Parent" xml:space="preserve">
+    <value>w_plServerInfo</value>
+  </data>
+  <data name="&gt;&gt;w_memoServerInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectionType.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectedAs.Parent" xml:space="preserve">
+    <value>w_plConnectionType</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_tbCustomTemplatePath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblHostName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 0</value>
+  </data>
+  <data name="w_plLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 27</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectedAs.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_memoNodeXml.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 320</value>
+  </data>
+  <data name="&gt;&gt;w_memoNodeXml.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_memoNodeXml.Name" xml:space="preserve">
+    <value>w_memoNodeXml</value>
+  </data>
+  <data name="w_memoNodeXml.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="w_lblAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 9</value>
+  </data>
+  <data name="w_memoServerInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.Name" xml:space="preserve">
+    <value>w_labelConnectionType</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_plServerInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_btnEditHost.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 14</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeName.Name" xml:space="preserve">
+    <value>w_txtNodeName</value>
+  </data>
+  <data name="w_lblNodeXML.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="w_lblNodeXML.Text" xml:space="preserve">
+    <value>Node XML:</value>
+  </data>
+  <data name="&gt;&gt;w_plConnectionType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_plConnectionType.Name" xml:space="preserve">
+    <value>w_plConnectionType</value>
+  </data>
+  <data name="w_lblHostName.Text" xml:space="preserve">
+    <value>Host Name:</value>
+  </data>
+  <data name="w_lblHostName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditHost.Name" xml:space="preserve">
+    <value>w_btnEditHost</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditHost.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditHost.Parent" xml:space="preserve">
+    <value>w_plDBReferences</value>
+  </data>
+  <data name="&gt;&gt;w_plServerInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_tbLinkName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 2</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectionType.Parent" xml:space="preserve">
+    <value>w_plConnectionType</value>
+  </data>
+  <data name="&gt;&gt;w_btnEditHost.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_txtLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeType.Name" xml:space="preserve">
+    <value>w_lblNodeType</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeName.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;w_plServerInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_plServerInfo.Name" xml:space="preserve">
+    <value>w_plServerInfo</value>
+  </data>
+  <data name="&gt;&gt;w_plServerInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_txtLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 2</value>
+  </data>
+  <data name="&gt;&gt;w_tbCustomTemplatePath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_lblNodeName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_lblListTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblListTemplate.Name" xml:space="preserve">
+    <value>w_lblListTemplate</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;w_tbCustomTemplatePath.Parent" xml:space="preserve">
+    <value>w_plDBReferences</value>
+  </data>
+  <data name="w_plConnectionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 36</value>
+  </data>
+  <data name="w_plServerInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_labelConnectionType.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_tbListTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_txtLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="w_tbLinkName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="w_txtConnectionType.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_txtLocation.Name" xml:space="preserve">
+    <value>w_txtLocation</value>
+  </data>
+  <data name="&gt;&gt;w_txtLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lblListTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 0</value>
+  </data>
+  <data name="w_memoServerInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 2</value>
+  </data>
+  <data name="w_txtNodeAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_tbListTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="w_plConnectionType.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeAddress.Name" xml:space="preserve">
+    <value>w_txtNodeAddress</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_memoServerInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 65</value>
+  </data>
+  <data name="w_lblHostName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="w_memoNodeXml.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 210</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 0</value>
+  </data>
+  <data name="&gt;&gt;w_txtLocation.Parent" xml:space="preserve">
+    <value>w_plLocation</value>
+  </data>
+  <data name="&gt;&gt;w_btnCustomTemplatePath.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnCustomTemplatePath.Name" xml:space="preserve">
+    <value>w_btnCustomTemplatePath</value>
+  </data>
+  <data name="w_labelConnectedAs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_tbLinkName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_lblServerInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 0</value>
+  </data>
+  <data name="w_txtNodeAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectedAs.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_lblNodeType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 89</value>
+  </data>
+  <data name="&gt;&gt;w_plLocation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plDBReferences.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblNodeType.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_plLocation.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_txtLocation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plDBReferences.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="w_tbLinkName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_txtNodeType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 92</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectedAs.Parent" xml:space="preserve">
+    <value>w_plConnectionType</value>
+  </data>
+  <data name="&gt;&gt;w_plListTemplate.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_labelConnectedAs.Text" xml:space="preserve">
+    <value>Connected As:</value>
+  </data>
+  <data name="w_labelConnectedAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="w_lblListTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.Parent" xml:space="preserve">
+    <value>w_plDBReferences</value>
+  </data>
+  <data name="w_btnCustomTemplatePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 29</value>
+  </data>
+  <data name="w_tbCustomTemplatePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 29</value>
+  </data>
+  <data name="&gt;&gt;w_lblHostName.Parent" xml:space="preserve">
+    <value>w_plDBReferences</value>
+  </data>
+  <data name="w_plDBReferences.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 54</value>
+  </data>
+  <data name="&gt;&gt;w_lblHostName.Name" xml:space="preserve">
+    <value>w_lblHostName</value>
+  </data>
+  <data name="&gt;&gt;w_lblHostName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnCustomTemplatePath.Parent" xml:space="preserve">
+    <value>w_plDBReferences</value>
+  </data>
+  <data name="w_txtConnectedAs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 2</value>
+  </data>
+  <data name="w_btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblTemplate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_btnCustomTemplatePath.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_btnCustomTemplatePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>NodePropertiesDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Components.CollapsableForm, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>512, 0</value>
+  </data>
+  <data name="&gt;&gt;w_tbLinkName.Parent" xml:space="preserve">
+    <value>w_plDBReferences</value>
+  </data>
+  <data name="&gt;&gt;w_tbLinkName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbLinkName.Name" xml:space="preserve">
+    <value>w_tbLinkName</value>
+  </data>
+  <data name="w_plListTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 27</value>
+  </data>
+  <data name="w_txtNodeName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 118</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>w_plLocation</value>
+  </data>
+  <data name="&gt;&gt;w_tbLinkName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_lblListTemplate.Parent" xml:space="preserve">
+    <value>w_plListTemplate</value>
+  </data>
+  <data name="&gt;&gt;w_plListTemplate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeXML.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_tbCustomTemplatePath.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_lblTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 27</value>
+  </data>
+  <data name="w_btnEditHost.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="w_btnEditHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 21</value>
+  </data>
+  <data name="&gt;&gt;w_memoNodeXml.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plDBReferences.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="w_txtNodeAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plConnectionType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="w_lblNodeXML.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;w_lblHostName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_lblNodeXML.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 318</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeXML.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnEditHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="w_btnEditHost.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_txtLocation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblNodeType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="w_lblNodeType.Text" xml:space="preserve">
+    <value>Node Type:</value>
+  </data>
+  <data name="w_plListTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 210</value>
+  </data>
+  <data name="w_txtConnectionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="w_labelConnectionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="w_labelConnectionType.Text" xml:space="preserve">
+    <value>Connection Type:</value>
+  </data>
+  <data name="w_txtNodeAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 11</value>
+  </data>
+  <data name="&gt;&gt;w_memoNodeXml.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_tbListTemplate.Name" xml:space="preserve">
+    <value>w_tbListTemplate</value>
+  </data>
+  <data name="&gt;&gt;w_tbListTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblListTemplate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lblTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_txtNodeName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="&gt;&gt;w_btnCustomTemplatePath.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lblNodeName.Text" xml:space="preserve">
+    <value>Node Name:</value>
+  </data>
+  <data name="w_lblNodeName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="&gt;&gt;w_plConnectionType.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_plLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeType.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="w_txtNodeType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plLocation.Name" xml:space="preserve">
+    <value>w_plLocation</value>
+  </data>
+  <data name="&gt;&gt;w_plLocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lblServerInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeAddress.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="w_memoNodeXml.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>344, 199</value>
+  </data>
+  <data name="w_txtConnectedAs.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectedAs.Name" xml:space="preserve">
+    <value>w_labelConnectedAs</value>
+  </data>
+  <data name="&gt;&gt;w_labelConnectedAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtNodeAddress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 536</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblAddress.Name" xml:space="preserve">
+    <value>w_lblAddress</value>
+  </data>
+  <data name="&gt;&gt;w_plDBReferences.Name" xml:space="preserve">
+    <value>w_plDBReferences</value>
+  </data>
+  <data name="&gt;&gt;w_plDBReferences.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_plLocation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_tbCustomTemplatePath.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbCustomTemplatePath.Name" xml:space="preserve">
+    <value>w_tbCustomTemplatePath</value>
+  </data>
+  <data name="&gt;&gt;w_lblServerInfo.Name" xml:space="preserve">
+    <value>w_lblServerInfo</value>
+  </data>
+  <data name="w_btnCustomTemplatePath.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_lblServerInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbListTemplate.Parent" xml:space="preserve">
+    <value>w_plListTemplate</value>
+  </data>
+  <data name="w_plListTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_lblNodeType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectedAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtConnectedAs.Name" xml:space="preserve">
+    <value>w_txtConnectedAs</value>
+  </data>
+  <data name="w_plDBReferences.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+</root>

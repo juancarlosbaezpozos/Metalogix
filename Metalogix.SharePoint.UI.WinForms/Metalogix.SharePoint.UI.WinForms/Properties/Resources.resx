@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FMMDCInvalidRowTitle" xml:space="preserve">
+    <value>Empty cells in row</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Edit16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAD5SURBVDhPjZLPCgFhFMVH/mRno5SdskLyCJ7Ayood
+        W88gC2VrZ+1tZKXsrFhRmmJJid8ddxjcD6d+Td+559yZqc+zlBnNkpA2iGvELUJt2MHijRUsNWaLgJQv
+        MFbrIbwabCAGksvr6C41pXwFa0EBqjDRzB5y4TBadi2QN4flkI4MSuDDOkJfe4E4W+UzVGTYhIFmP8TM
+        VW6EAecC/O9lEQdzAd7vsgjDtaAHQziBXRZhuhaMQb6iBUFZ0PFTmB8LOKdA3jyFEUi5CL5GnsK0FmSh
+        C2UI7j9PuYmHIBAVpvkL7/q2oA5HiF4kiy3MtfYqBok/iWlF5Xk3eEMRuH8IPpgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="FMMDCEditing" xml:space="preserve">
+    <value>Editing</value>
+  </data>
+  <data name="AppSetting_ConfigureGlobalMappings" xml:space="preserve">
+    <value>Configure Global Mappings</value>
+  </data>
+  <data name="NWSWarningInformation" xml:space="preserve">
+    <value>You are connecting using the Native SharePoint Web Services. This connection type has limited functionality. For full functionally, please connect using either the SharePoint Object Model, or using the Metalogix SharePoint Extensions Web Service. For more information please refer to the documentation.</value>
+  </data>
+  <data name="Overwrite Sites" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABIBJREFUeF7t
+        20moHEUYwPG4RHFDjbjvS1xwX4IKLnhS1GDiwSgqiGDccDd4cCEueBARRUUNoiKi6MEt15zEBUEDwavL
+        QQQ1iSYIbqjj/z/015RFvcfMu6U/G34z3+uvXk1PzZvX1VXV80aj0VpsxPru+RvsA3N6G5HfgB9xJiL/
+        GCIfrkbkr4O/FznjBxH5c2GdUca6XkfkD8K3KI/xE2wD8/PxKcpjtPx+iDpeQ5n39c7GvKjgOJyAk3EM
+        onIdglNg/iQcjx0R+X3h75k/sbMbIr8A/l7kjPdG5K0r6o5jOBiR91g8pngNnxci8joCZf5YbIvIH4jI
+        x3vYGuMG8KCiYCZ7YKWBm61SFxi60zAONiFjA/h1WG/gPwZ/qAsMnV/9jQZui1AXGLr+K/AqDujiTHbH
+        8lYilebOTHywk1B2GrLYBcsMvoc9p7rA0NkzHAd/dD/UBYbO0+BPBln7AX1HyM1zYl1g6Oz7jIOPcHgX
+        Z+JV7OOtRCrNnZn4MB4YSGh7LDL4DPUISwaOCv1u4HYq6gJDZ9/nF4P0/YA/4aBnXeBSPIL78cCE7sND
+        OB3W4eDnPXB/q/xs7sQOsB5Hjj2WaerxuB/GxSjfV+j7Ad/BUdcy6Ujxh7CCm3DLhJbjHTgMbT034HM4
+        NN4qP5Pr8THOh/W8jBdwI1rlWyz7BNagfG/B0e53DewQbNXtDDvh+WrfpJwzeLqLb+vUZSZhw1/WxStR
+        DqVPyv/0z1b7/qO5E/7pvYi5vOhSPNXFfgoefF1mEvfiki72azWXf9Se3Wb9IJs7kaEB/KtfYPAWypkY
+        ZWiAo/GVgVt9NZihATzz/WXQ6gdkaIC+H7AZ9cxQhgawvnHwNzI2wJFYZ3AWyuluZWgAzW/tVJYG+L8j
+        5MOjKJfEKEMDHIY1Bm717LDXAquqfZM6A9H/vgO3d/G0bsayLrYB9uziaWyH56p9oZ8dbvUDvBr0KsoF
+        UHdPwUvY9xCNdw1cwHQXWuVnsgIf4DxYj5/iS5imHss+g9Uo31vo+wGunmqtE7KndNWUroRXcK7ssg7P
+        Lovh/lb52VyEuEr1lHUFpqnHsnLoq3xfwRGhXw3cMk6MuDJuk4F/pi4WqAsMnTPiC1uJVJo7M/HhWmT8
+        CrguapWB21w6GVu6flR4ptPg0PX9gKwTIw4B/GzglnGhpA0wDrwYmstFz5bOXuqFrUQqzZ2Z+HAO6iGx
+        DLy8XmHwDzLeL9CPB7SGxTPw1L/BIGs/wM7fuAHcMvYD+q/Am6gnRzPwAvDWViKV5s5MfNgfGRdLesPE
+        EoPWIqkMHPUeB7/BWZK6wNB5v3F/GlyCcqVYeTOynSSHkJ1liXx9M7LPOyPye8H9nmtl7E3Ukd8VkZN1
+        lXd7+1q+ZtRt/lBE3q/sUYhj8Nmfy6+y5ctj9LYgJ3wi7xK8cWBP8Gu4pMyfrcRZmfJ2c+8rcp4tfvkV
+        1LejX4DIu6AxboePMk51Rf5yRC7yTyLyHvgPiDp8rfcReW98/hJxDD5/Aec0zfthOrNVHqP1uS4o6nhj
+        NBpt/hdC6BBuoqoUGwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Refresh16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAATVJREFUOE+N
+        0k8rBVEcxvEpNLeUFaW8BFnJArGRhZ1QyurWLVJKM3cpS1ZKWSkbWZA/K91udwYbspQtUt6CN+DP9xlz
+        pjOncecuPmfm95zfOYtzjueHkWsMe7jGHY6xhqJezw3U/IpDLGIWG9BG75hBbo1dxHhCt5XZlvCDOSvL
+        NtjGiwnbGMUn+k2moQ9vGDBhiQOcmFpDaAdt9KAr/ddZTeNcxSlWYTcX6cUt1FuHzmNdE/eYhLugyAhu
+        /DDW4kdlCh8wrqIj9dirBM2qH7SSM1N4hmrWUEYbbDY8P2gmtYYtHGUNnQhafOVvg0HoDVSSyXILnMG8
+        qU24Dx2mqf8zhC9Mmcye1DNuWLVrAt/InZfdIFxR9Iwd6GqHsYJLfKCG3JpckVqGbuYi/V5hF3pITm/k
+        /QLv1F+exn2rFAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Preserve Sites" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA0ZJREFUeF7t
+        20uojVEYxnHKJQpJIiJEIZdSrgMpkZJyidyTgQi5Ry4ll2IooZAJI3clBkbMKEohGZ6JgSQlZXDann/e
+        pdVqf7fdPpNvv6t+nXets/Y6Zz3n299Fdq9Go9El3+WrfOsQ7JU9dxFAt2yQqTKjQ7BX9txNACQyWqg7
+        CXv+RkEApJJOqDv27AFQeADWSSfUnQcgHgCFB2CddELdeQDiAVB4ANZJJ9SdByAeAIUHYJ10Qt15AOIB
+        UHgA1kknrJFTcrSiEzJXWGOkHJJj0mxuluOyTwYI6yyVk9Jsbh5+/8US7yvIDWCgPJGdwr+eVnFL7gjr
+        7JaXslGazc3C/BeyTFjnqZyRZnPzEMBtifcW5AYwRPiB8VhZi+Sy1fwVD1hd1R7hKKS+IsOtrmKwZO0j
+        N4BBckFYIB7PM1+GCofrJRvbJaetLmOOjLWat9IKq6/KTKuL9JclVk+S81an2hrAeqGNEjbRSgArhRbO
+        H60G8E5+WD1BejwANk27KPRXSdUARggtvA6tBMBraNOE/hTp8QB+ypuov1qqBsDv8CEZqxrAAqFtlzA2
+        WdoSQD/7mrovtN4SxrKOgL72NcUVg9ZH4vEqAfC+pz2UeLxtAewV5o2xPnYIbZaEMWQFwF+GNXhfhrlb
+        hDZPwliQBhAO62fy3OrgvfxKxtC2AMbLF6Gx6LB/ZeOwxK9DVgCc3T8KjZ/HpZbGRuPXB2kA063eJLS3
+        wpHHtZ42TuLXo20BBI8ktHsSfy8oOgneldC42Yq/F8t7C0yU3/JHaNz0hO/F2h4AbsqnZCxW5ipwTT4n
+        Y6micwC3yRyVN6KxVI8EUKRMAGUUBVCGByAtBcAJ6mwyVhZndO7dqXkO2G91VTxIrbWaALjNTucU4W1y
+        LhkLcgPguvpYSI8zfVkHhRPbdWGdbfJaeCRuNj/LEXklC4V1HghrVlmHuQTH02m8tyA3AMyWrbK5Ai5R
+        6yQ80PBYzWHMeLP5eZZLuMEK/6mpyjrMBbfD8b6CwgDqzgMQD4DCA7BOOqHuPADxACg8AOukE+rOAxAP
+        gMIDsE46oe48APEAKDwA66QT6s4DEA+AwgOwTjqh7jwA+R9AR390tuM/PN3BH59vdP0FILaqX+jn8DYA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="FMMDCConfirmChangesCap" xml:space="preserve">
+    <value>Confirm Close</value>
+  </data>
+  <data name="FMMDCConfirmChangesMsg" xml:space="preserve">
+    <value>Configuration has been modified. Closing without saving will lose all changes. Are you sure ?</value>
+  </data>
+  <data name="SmallAdd" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSaSP8Umkj/FJRC/xSOPP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUqFT/FLVa/xSgTf8UkkD/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFLJY/xi5Xv8Uo1D/FJJA/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSyWP8YuV7/FKNQ/xSS
+        QP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABq8YP8gwWf/IMJo/xW3XP8XuF3/GLpf/xSn
+        VP8UmUf/FJE//xSRP/8Ujz3/FI07/wAAAAAAAAAAAAAAAAAAAAAhw2j/MdN4/z3UhP8oym//IMJo/xy+
+        Y/8UtVr/FKRT/xSeTP8Unkz/FJhG/xSQPf8AAAAAAAAAAAAAAAAAAAAAJsht/zTUe/9C04j/O9SB/zPU
+        ef8py3D/HsBk/xS2W/8UqFT/FKhU/xShT/8UlEL/AAAAAAAAAAAAAAAAAAAAACrMcP8v0Hb/NNR7/y7Q
+        df801Hr/NNR6/yHDaP8Utlv/FKdU/xSnVP8UolD/FJhF/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAALdB0/zvUgf8oym//Fbdc/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADTUev9C04j/PdSE/yLEaP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAv0Hb/NNR7/zHTeP8gwmj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAKsxw/ybIbf8hw2j/Grxg/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//9/Af//fwH8P23//D9o//w/Y//8P1//wANc/8ADW//AA1L/wANT//w/X//8P2P//D9o//w/
+        bv///3H///9M8g==
+</value>
+  </data>
+  <data name="SPOLicensingWarningMessageTitle" xml:space="preserve">
+    <value>Content Matrix - SharePoint Online License Warning</value>
+  </data>
+  <data name="FMMDCFieldFilterLabel" xml:space="preserve">
+    <value>List Columns Where</value>
+  </data>
+  <data name="FMMDCFieldFilterTitle" xml:space="preserve">
+    <value>List Column Filter Conditions</value>
+  </data>
+  <data name="MappingOptions" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGMSURBVDhPrZLb
+        SgJRFIal5+oqeoSoB4gIgg4P0UVQ9AhBBpaSWoYQBgaFVtiIh0GUEkUrU/MwZmpN+Lf/rSNMTQTVdzN7
+        s771z6y9x4Y/8j8Bq4Ei5l1ZzDqzUAptWbCCNTp02UNkwKInJzc31S52IlW5toI1OsTokQHL3sEm8fAC
+        h/Ik11awRocYPcOAvNzERXE3+jUgeaehqvXgjtelQ4ye0QhbV2WsB+/hVRvwH3qgqkkpTG5ewDbtwtic
+        D6e3LenQNY2wMkxLV7rYi9aA9x5apTwWHComNsJIFDW0Om/Yj9WkQ4we0xmopc5ohMtcE7aZfbk24BnQ
+        IeYz8ORRa+s4yTThEyOMr53DNuVETbwsGDhGKBRCWo3DndQQEA5d9owClsQ8Z1kN25EKDpJ12MMFWSS6
+        rkNRFKgxRZzPwKHLHmIaIVUWI1hcY7/fl0+OQId8usZhwGPnx/+ADjEF8NeMFJ5hv66KW/g+gDU6dNlD
+        ZEBGfNaRWoc/1cCrPvhcK1ijQ5c9RAb8HuADqw6vGjH5yr4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SP2013WorkflowSuppressEventsOM" xml:space="preserve">
+    <value>"SuppressEvents" needs to be set to false in "ServerAdapterConfig.xml" in order to preserve workflows when migrating.
+Please contact support@metalogix.net if you have any questions or concerns regarding this process.</value>
+  </data>
+  <data name="SmallSubtract" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEVFzv9ISNX/SEjV/0NDyf9ERMz/Pz++/zg4
+        r/81Naj/NTWn/zU1p/80NKT/MjKh/wAAAAAAAAAAAAAAAAAAAABJSdb/UFDo/1VV9P9MTN7/SEjV/0ZG
+        0P9CQsf/Pj68/zs7tf87O7X/ODiu/zQ0pP8AAAAAAAAAAAAAAAAAAAAAS0vc/1JS7P9XV/n/VFTy/1FR
+        6v9MTN//R0fS/0NDyP8/P8D/Pz/A/zw8uP82Nqn/AAAAAAAAAAAAAAAAAAAAAE1N4P9PT+X/UlLs/09P
+        5f9NTeD/S0vc/0lJ1v9FRc7/Pz++/z8/vv88PLj/ODiu/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAwAMAAMADAADAAwAAwAM3A///AAD//zAA//8TCP//
+        AAD//y8A//8AAA==
+</value>
+  </data>
+  <data name="FS_LoadingConfiguation" xml:space="preserve">
+    <value>Loading Configuration{0}Please Wait...</value>
+  </data>
+  <data name="SCMMDCConfigDialogTitle" xml:space="preserve">
+    <value>Configure Site Column Transformations</value>
+  </data>
+  <data name="Overwrite_List" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="Advanced16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEbSURBVDhPpZM9aoJBEIa/I1iktEvnAbyHB/AIVkGS
+        Rs/hAQIW/lQ2NiHnkKQKGGLSBOws9H2Wd5aR/CDJwIOz77wzsvvtNjnaN+uOWItn0RMtQ472IDq2fw2K
+        4mjexMyQh/7rgGEy/sTQ9vNQYSB2ybgRC7FyHjqegdtK41x8uAh7MXK5hrSxa+GjZ0Zhm0QozfqdCBpg
+        Ym0ksneL2BefFjY2dsXBGpB3XYvt0NNH4DMtLc5tuhL55F/FtWtsGY2eVgy4t1gGEMrvrMGt5TxgKsoA
+        Lkn8W9lChNaP4GUJPPbWLTxZCOoXUP4CXrL+9hC5ulnk1MfuqYHmWvjqZ+T6ArfwXYThsouUQ4W/X2VC
+        xX8/JgbwZC98zk1zAumseQB/+3jKAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ReadOnlyConfiguration" xml:space="preserve">
+    <value>Read Only Configuration</value>
+  </data>
+  <data name="Delete16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAUtJREFUOE+N
+        008rBWEUx/FroSspJCEpUv6WdIsVkYS3oGz82bBRROmKe8XCyh5hQ5SdhUZ5B2LhDfn+budMZ2ZzLT51
+        zpnnzJxnnplCcS/Ja8EmyrgxJ9hGDzLrMwnW8Qo1L6EffZjHPp5xgLQnNl/hDV2hlteEBzx6zS+sQs2e
+        13ONXcVK2qHRdHflYxiwONL+SyHXFEMK9MIOrShT+MZIqKn5B8uhtoWygjMsWNHpSZ/osDzBosVOD7hQ
+        cIteK0Y6AZ2I3o22lb9eREXBPbqtGDVAU/yizWpRI6oKzjFjRdcJjT2KVrxjEnHNIGpb2EHtSMwwvrAS
+        arqRJpkLtTXUtqD9px8G9KS40I1jNuR3KHmiKVTwvJ4qdHqZT/kJ/7nJJT48z188xgs00QT0ZzZDZ74B
+        bVX/TNoTm51eov64U2jUijnCNMLapPAH6K5ihAFlj7AAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ResuableNintexWorkflowWarning" xml:space="preserve">
+    <value>Content Matrix will attempt to migrate both Nintex and SharePoint Designer (SPD) workflows to SharePoint Online (SPO).{0}Reusable Nintex workflows are not currently supported on SPO so they will be skipped during migration.</value>
+  </data>
+  <data name="FMMDCConfigDialogApplyOption" xml:space="preserve">
+    <value>Configure Transformation for a Column</value>
+  </data>
+  <data name="Preserve_Items" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAI8SURBVHhe7Zs9
+        SFZhGIa/fraEcAqiCFysoSAwcKgxsB9sEKE9iKCm2lsKDEsQDGqKaGgPaXFwCAqkok2haBHEpZqipjpe
+        z/M9r+nHsfdIS573vuEC7/fng+fCQT7P6ShKN1VV9cMYXG05V2A4xu6GhSOwCh/hXct5D99hJsZ3Affg
+        BeyKpVaHOY+D5UBaeAoTXgqJj19VJ1ORAJAAL4XEx5cACZCAVCQAJMBLIfHxJUACJCAVCQAJ8FJIfHwJ
+        kAAJSEUCQAK8FBIffzsC2L8Ni/A5wxLcgU1fsdNHwb6Xr7uzkU/wHPrjqoc+CHNQd6eXVzAUV2vDvqWZ
+        APbOwgc4BgMZjsJbuBDX7X4ffIHTUHenl0cwFdc99Hm4Efs5LsNSXK0N+5bGAq7Dw6jZcHYKbka1blIW
+        o2bD2fPwMqqHvgIHo2bD2Sp+rI3tk8YCzPyffyVlwtkHcCuqdfvNkYCo2XBWAmBHC7gP/yLgHEhAVA9d
+        AmDHCJgECYhqfbsCRuC/EnAJXkNfLG0ZzuwD+6ttPJZszZ4/+gYDsbRlOLMH7sLjWPLQF2D9M/8Wzp2B
+        5ai1Yd/SWMBueAI/IJef8Az2xnUP/Rp8hVx+wRs4FFc99GGwZ5iaZBlG4mptuscaCmhjfHwJkAAJSEUC
+        QAK8FBIfXwIkQAJSkQCQAC+FxMeXAAmQgFQkACTASyHx8TcImIBZKOW1uRPwG9ZfmzsM9rWzPVzQ+6Jh
+        20gvTk778Cks7IeLMF4Ap2JspfB0OmvShdZsf8xx6wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="FMMDCNotSupported" xml:space="preserve">
+    <value>This specific feature is not currently supported within this action scope. {0} property not set.</value>
+  </data>
+  <data name="FMMDCConfigDialogTitle" xml:space="preserve">
+    <value>Configure List Column Transformations</value>
+  </data>
+  <data name="Warning32" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAG8SURBVFhHxZcxSEJRFIZVpHBwcRJqc3R1cq6lIWc3
+        g4bAdqeaa665ptoitwibGwpCqjFwLYKGwKFeePtPnWfnPq/P95733X74QM79z/+fQQQzSql/xTh0SWJ9
+        nq0VwB1T4LE7oXQHKGaXx26EwiUwFAfQ52V+Tl8oOxHlPqf8nK5QVA8US+psS0coyIEbURjkFuTYbl8I
+        b4myabTYblcILoJnUTQN8hR5zZ4QuidKZrHPa3aEwAr48Au8y001er3XoJn/zt4Kr88vhHVFuPKutvEr
+        qotm0gO6vD6fELQSCI56ALHKMcmEgDx4EIE/xDjgEeQ5Lr6w3BZhY2IcQLQ5Lp6wWAJvImhMzAMoo8Sx
+        0YWlAxGiEfMA4pBjowkLVfAlAjQSHEBZVY6fLZh7YnmCBAcQPY4PF4yNwOIECQ8gGlxjFgwL4Eks2Iay
+        F7luUnjsCHNadLhOFx7K4F0Yp+L1ttRo+KJBM5PXAHWUufZPGB4JUyhzfAd8jrn2VxjUwEgYQrFwAHXV
+        /PIsuOaHSFg4gKDOLB3QFMNonK8r72JDg2ZGbzhNOmAQGLpkQAf0A0OX9I1/GF1iHLpDZb4B5VifbMV5
+        CpUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="Custom_Copy_Migration_Small" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="FMMDCListFilterLabel" xml:space="preserve">
+    <value>Lists Where</value>
+  </data>
+  <data name="FMMDCListFilterTitle" xml:space="preserve">
+    <value>List Filter Conditions</value>
+  </data>
+  <data name="Incremental_Migration_Small" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJ
+        TUUH4QMBBDQv+SIZQAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN3SURBVGhD
+        7ZjHixRREIfXnLMYMStiQgUVM4oJcw6Yc05gAhE86UEx4UVEED2YQNCbgifBk3/U+n1DzdKw7s5u9/TM
+        HPoHH7t0v6qa6vdevdBUqFBGNTc3ywTYAftgb0b0sRx6QkTJUQaB6/ALXsDzjLyBnzAWkjHaJbXCwU24
+        Aj2gW0bGwEeYCMkYo+AuPIQH8fc+XIJVMBS6Qsmmw9IATOBiKgcJha+R8AEclsnnA8HhdSI4DqfhDryH
+        d7AH+kLJrkOyMZiAXyKXBNpStBd/9AZ4C/aSvRGtKsiGUJcEkgpbbV7CLejls4qyETRKAjIFHE7rys/a
+        VTSqewIq7OUoPIbK8yEMGiIBFT7GwxdoqWRtKgxM4AJ0qWjQjsJXNRLwQzqhV1b0EQYm8ARWgKtoWpbB
+        NvgKqRJQ2Pkhn8L2ij5sACZgxofgYEZcT75DlgTkEeyq6CMam8BV6A3uYSxhadB2HLgSZ03ASdypBHJb
+        iTur8NPpBOpWhcLO2G43Sr8BWhIA92j9/b+VokEjJOCPd5O3Cfwd5TnQDy7DKQiLhHwIjZCArIFPsBns
+        gcNwDV6DK3RYJORDqGsCKmwtn+vhM/yFH/AKpkKpTSvFi7onoMLeJOyJP6CfyVB691/Fy2QCOkiLvjy4
+        pC6j4UNfc6DlVNemwuAs/Aa7zjGYBRexb2AiESVHGQSsALNgfpVwM5ZpONZd/vi8yVURxBpu/baKODGt
+        8Y7rc+Cx0ascN4C+PwYWAM/NC2A2eC4YAJ6d3Vovha3gwhaRcpIBwAQ8vJcT2ALeWpyHYbAT3MX63oO+
+        82Y/LAIT0NYEzsAkWAL6qFkCBpoJpW1AFbD37In851cEHALPwIkdb9Ip/B2AG+DON97kpAjoRdfoagQM
+        f4PBoVdac3JVBLQ8u0hOzxow/Hl3dATyv3eNgH3AquHEjTfpFP7mgefk7ln9VVQE9EstBOdCvEmn8Gcl
+        sijUbBI7Zr3EdV8Tb9Ip/O0G92w1G0J2tWXPCyonsmduJ7brg1+xfAa3nW185rCz/IrPnLC21244WBRq
+        NokHwT2YAX49DygOA6/VR4Cr9EZw0boNXgh4Nl8NLmbekZZ9WAhcxE5CzXrAL+wBxRV2LjgfLIP+aCvU
+        YnBM+1XXgnPFu6lp4Hbc1dte0IfbDNtqY29EpEKFChUqVKhQvdTU9A8d1Pw2k6TIzQAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="SCMMDCConfigDialogApplyOption" xml:space="preserve">
+    <value>Configure Transformation for a Column</value>
+  </data>
+  <data name="Preserve_List" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANJSURBVHhe7Ztb
+        iE1RGMdn3EbiYV5dw5Q0kVuTh1FeeGCUl4lJGpd4JpqRy4uaTFKE3BpSUpQ88DIPYhCvPJBbuaTkTgq5
+        jt9/93VO2+yos2q3zu771a9mfWtN+1v/mTNn77P31DiO44j+/v5abMODeLSgam/Lsda2XYbiDnyCe7C7
+        oGpvT3GbbbsMxTvYYsPCwh6XaK82LENRycyzYWHRHrVXG5bxADwAD8AD8AA8AA/gvwGwpg634G18gzex
+        zaajh14rD4D5wdiL3/AIKogLKHbasqihz6AAVuMPnG+lBMab8Bc2Wila6DEogIvShiWo6TfjLW61Ugrq
+        M7AzJ5vtsJkwHxTAVTxhwxTUH2OXDVNQ347vc/KAHTYT5oMC2IfPcLiVEhjPxN/YaqVoocegACbiR9RL
+        QV+PwEWo772LQ2xptNBj5QEI1jTjcxT6wyf0VjjOlkQNfYYFIFinc4GFuAqbcOBHTJFCr+EBVDMegAfg
+        AXgAQQGwRqe9a/ES3kNdDC2w6eih18oDYF53j86g3v/P4W7UOYDOAjfYsqihz6AAlqE2v9RKCYy7UFeJ
+        DVaKFnoMCuA89tqwBLVh+AE7rJSCegOuz8lpdthMmA8K4Br22DAF9Ue4y4YpVMe8OGmHzYT5oAAOoTY6
+        1EoJjCejXhorrBQt9BgUwFT8jKew3mqNeAt1Zzl1mRwj9Fh5AII1i/Ed6o+ePhQVejucYkuihj7DAhCs
+        q8d27EAFknpJxAy9hgdQzXgAHoAH4AEEB8C6FjyNV7AHZ9lU9NBrWACs2Y/iOh7Hh6hzgnZbEjX0WXkA
+        zOs9X6yzkmr6fOAwfsXxVo4WegwKQJ8F9NmwBDXdIPmEG62UgvpobM3JSXbYTJgPCkD3Bo/ZMAX1B9ht
+        wxTUdUstL87aYTNhPigAveb1ROkgKyUwHoM/cY2VUmg96vQ5D/95e475oABm43fci3VWG4s38CWOTBZG
+        DD1WHoBgzUr8groVfR/1k3+Bc2xJ1NBnWACCdRNwM+oJbD01MsqmoodewwOoZjwAD8AD8AA8AA8gO4A+
+        HPjfVAWDPeqZxcs2LENxLr5GXdX9/fBhUdTeXmGTbTsNE3r6azrqnL+Iam/JNYzjiJqaP73iS3QOaksh
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="FMMDCInvalidTaxonomyChars" xml:space="preserve">
+    <value>Invalid characters are: " ; &lt; &gt; | tab</value>
+  </data>
+  <data name="Navigate16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAT5JREFUOE+V
+        098rg1Ecx/EpiQtFaKm5HkLNlbYb8Q8spV26klLKciPiRqQ0Gms2lj+BUi6WUH5dKeWvcWXeH52zvjtt
+        NRev9j2ffc95nuc854n0ZKuhDizjCNe4wTHW0IuG/oYBlvCIE2QwgXEs4BD32EB9jp28hQ9MmiwUwwNO
+        feb/0NU+fdgG3cm6ag268YwRBU1MQ49hsy68IKbBCvKwDdYsvpE0mexiT8U5Fl3YShRfmDLZDCoqbuFv
+        cQBFXKBkbOMJNYxBvYMoqbhD3IX/WUC9ZRWXSLuwlSGEj6DNvVKRRc6FzczjBymTySZyKvrxhj7YBk+b
+        lQgy0Zy4H6zi3dXt0DdyoNqGBbxCu2tzqxN6a1rgLwsbdqBF9jEHnc5h6BDpTehDO0N9jp3saYJOmQ5Y
+        xf2KFh2F6a1GfgEsIGvxxGt/SgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="NintexWorkflowWarning" xml:space="preserve">
+    <value>Content Matrix will attempt to migrate both Nintex and SharePoint Designer (SPD) workflows to SharePoint Online (SPO).{0}Migration of Nintex workflows to SPO is not currently supported with DB/CSOM/NWS connections to a source environments, as a result they will be skipped.</value>
+  </data>
+  <data name="Properties16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAASRJREFUOE+F
+        08ErRFEUx/EpGVsLO8lCNjQoksJCicwCC5KVmsWgbEYyw2SjsBIriWxQ9jamhH/N9zed87oOPYtPnft7
+        596Zd+99hY5a6y9z2MMN7lHDEn71xqAPd7jCDtZMFZd4wiiyOenkaXxiPcki/Qv1rHjmD/rxhV4b5+mC
+        FhnX2MNrzFqdWsRyyGQAD+jUYAZniE2iX5kKmWtiQ8U+tiyMtGETIXPaj4YKHVW2KcExLkLmhlFXoXdZ
+        tTDaxUHI3BDaCxyhYmGUt8A8mioWcG5hlPcKDVR9cIsfN8zoSusoY96DF3R7UMIHijb+zxvaC6ehNvId
+        k0kWDeIV257FBk1+xCl0A8cwAp35CZ5RRjYnnZzahC7YIepW67LpO0j6WoVvYD1UWJLLv1gAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="Properties32" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAplJREFUWEe9
+        18urjVEch/GTc1LKpdzvI6UYiMjEJQMmSIqJ5H8wd0tuGbgUhZCBITOcc8gAcY5cch1IilxKrqWIAZ5H
+        796tvfY6e7172ww+2eu7fu96l/es/a61Ozo39jSjC6uwH924WfDzPqxEJ1LXJiXDAYzEZtzGO3zFt8AH
+        2LcJI5Aao04yjEzBBXzHC5zEOszGxMIcbMBpvMJPnMckpMasSoaBHfiFy5hbZGUsQB+8dnuRJSXDwn04
+        wJIga9YKOMa9IKuRDPEZPspUX7NclG/wMciq6gI8wusoawfHdOyavKaBXfCRxXm7OLb3qGZh52hYMC/I
+        csZhVJQ14tjeY0wlCzuv4EbQLuMOzkZZznVcrbQr4TA4s8lFu6xT2B1lOb4bvNdw2wauUr+rzw3+k6fw
+        HdNlYzUe4gDiwpxZmB5lZezBA6yxcQTvsRxxYY7v/jNRVoYvN7+Wx2z04hOmIS7McRc8GmVlTMBLdNu4
+        BTea8YgLc9xwfIKpvkYGwQn023ACP+Cs4sKcv51An42LcG+fibgwp9UJ+J91DfTaOIwvWIu4MKfVCSzG
+        W5y04THqMY4jLsxpdQI78QTrbfj32AKPWXFhTqsTeAbPlUMqwVD4emz2q3gJJ6IsZyy8l//WbUZ3g3YZ
+        rUzgGqrngrDDbdWZzQ+ynGa3Yw+y3mNqJYsLXBwWxHm7OPbBMAs7K9yY/sWRzBePK78mr2kE3BvadSiV
+        N/egW9dXFwTcLn1kC4OsWYvgGI6V6m84AVXWRA9mFFkZ1nqN1zpGquaPZBhxxbrt+ghdH3uxFP5k88eq
+        /LwM9vkVs9Zrqqt9IMlwAJ6at6If/kb07xoys28brE2NUScZNjAYblqHcA6eouVnM/usSV2b0NPxG8oS
+        QhuLQj9VAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="FMMDCValidInternalNameChars" xml:space="preserve">
+    <value>Allowed characters are alphanumeric and underscore only. Must start with an alphabetical character or underscore.</value>
+  </data>
+  <data name="ViewShowWebURLOptionName" xml:space="preserve">
+    <value>Show Web URLs</value>
+  </data>
+  <data name="SCMMDCSiteFilterTitle" xml:space="preserve">
+    <value>Site Filter Conditions</value>
+  </data>
+  <data name="SCMMDCSiteFilterLabel" xml:space="preserve">
+    <value>Sites Where</value>
+  </data>
+  <data name="PublishingWarningInformation" xml:space="preserve">
+    <value>SharePoint's Publishing Infrastructure feature is active on your source site collection but not on your target. This may result in the loss of vital functionality required for your site to work properly. We highly recommend that you activate the SharePoint Server Publishing Infrastructure feature on your target before proceeding with the migration.</value>
+  </data>
+  <data name="Add16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQdJREFUOE+t
+        0z1KA1EUhuEUip1oYaWou9BON+IGUqRQtBD8hWhWoEVC4hJsx59CBHFZvu9w7jA5Ggli8cDJd88Zcmfu
+        7SwdVtkmLnGHYbC+gGtT/VM/cIM3+IA9rAdrM9f6aGbaww94xnIry1x7gr11VhZOUZVwDvY6Uz9gGx9Y
+        MEgOQs7tdWbLHwO4v9ykc5ylrPCl3lqMsRNhNusfyJmxxQhrES6iiyP08BiszVyzx15nRv/ygL9uYRcT
+        C1+iLyQ36Dj8tHaFgcVvn/Ek5NxtfKL+jJp1kFZDzl/QHKRinqO8gld8O8qFF8UL4/7KZdrAPq7xDi9c
+        M9MeLvJ19jPfR5auc9X5AhIhZ07x/YEmAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Map16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAV5JREFUOE+V
+        08lKA0EQgGGNmngSo6iguC/EBQwqLrhviPu+i3hQcTkoQcSX0ItPk7fz/4cZMTBz8PBBd7q6urtqUpYp
+        FP9jBAc4Qb+/xQUl6cQb9nGFd2TjApMM4RPd6MC347jAJLM4xzQWcId8XGCSDHZRj15cIxUX+FcPxjCJ
+        QWzjCbdoxG8R05jBBobD3/SKHSzCynv9LniDICbafIEp5LAGN1goExhTjhQqQlXwSUGCLayiHUdohgm8
+        YitsnW27gU+wjYd4QM4EVnYFx3B+iT6Y0HmSOhQc2I4mnGIOe/CKVjsK9onWwC9xGbbxDPMuOhhHDSyY
+        b/NjaYPrXn0UdsTneTPX7UraAE//QC2ce8p9OI4SWCc3umZbKxGsR0F5PMJTXpBFtDYA67OETfgU2ZWS
+        P9MEvtASzqtDts1gTw024Rl2qiRBtMk6yFNtmR+XxbU7ttH5OhoyhWLZD/uGVf4bKck4AAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="FilterWorkflowsWarning" xml:space="preserve">
+    <value>If you are migrating workflows and you filter out lists related to workflows, workflows will not work correctly.</value>
+  </data>
+  <data name="FMMDCInvalidCharactersExist" xml:space="preserve">
+    <value>Invalid characters exist within the configuration item.</value>
+  </data>
+  <data name="AppSetting_ManageNintexWorkflowDatabases" xml:space="preserve">
+    <value>Manage Nintex Workflow Databases</value>
+  </data>
+  <data name="FMMDCWarningRemoveMsg" xml:space="preserve">
+    <value>Configuration exists for this option. Deselecting the option will remove all related configuration. Are you sure?</value>
+  </data>
+  <data name="FMMDCMissingValuesMsg" xml:space="preserve">
+    <value>Please define a value for each configuration item.</value>
+  </data>
+  <data name="FMMDCMissingValuesCap" xml:space="preserve">
+    <value>Missing Values</value>
+  </data>
+  <data name="SCMMDSiteColumnFilterLabel" xml:space="preserve">
+    <value>Site Columns Where</value>
+  </data>
+  <data name="ReadOnlyLicensedWarning" xml:space="preserve">
+    <value>Please note that this connection has been placed into read-only mode. To enable writing to this connection, please use the Content Matrix Installer to deploy the Content Matrix Organizer or License Check server components in the target environment. </value>
+  </data>
+  <data name="Overwrite_Items" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAQDSURBVHhe7ZtN
+        qFVVGIavmj+VKagVoWlqivmHIuRESxDxp5BS8z8ClSDQRiJEEEU00GaJ0rxBQYHpQG2QCIpBmmE4KESc
+        qAMHhon9kqfnXb6de87aW7cHHVz3d154YL/f9y0467uXc9bea+2errq6pUajMQ0etZXvB2vhzYypLknC
+        z8vyYrHTSfjxWV68DoNcopqH4Q3nWnnGJUn4F+C1jDlOJ+EnZ3nxEvRzSbtIbIO/YZ5Dig2Fo3AqY6tL
+        kvCfZHnxudNJ+A1ZXhyHp1yimglwwrlW1rskCb8vy4vdTifht2d5cQyaf+A2kbgCa21rL+Y6FjbZpoA0
+        2bb2Yq7r4bRttwEKnIMnbGuvQgOiqduARuMVOG4bT0xea5xhtimg380htvHE5KXnbOMpWgOY62MwyzZk
+        A9bASduQDSgshHQjNNG29iprwCRfhlChAdHE5NfBD7bxxORHwULbFAhzJ1gqGvAXhPkSLIjJS6FWgsx3
+        gC/jNYC5LoMjtiEbUFgHSKEbsBUG29ZehQZUieIxsB/O3wXfwXwPTcI/BNo/+BnKxrTyE7TtPUjEtsAZ
+        19yJX+BTuO0flFzHDfgC3gdtXlShHZhL0NyF4XozfAOToGxMKzPhAszwcI2fCBdhNpSNaeVZ+Bre9vCC
+        yM2A92yrRfFpmG1bKWqvwXBb+Z2ww7ZS1H4FK23lF8Nh20pR+xbsta0WxWfhSduCyHXagOtwLw34ElbZ
+        yi+BQ7aVorbjBki3/RUg12kDbkDoBvwOfbYB5PRd8qFtCkj3swF/Ql9uwEY4ZZsC0v1sgJ4wPVANOAgj
+        bQsi12kD/oEHpwFVorjTBvwLoRsg9eUGLIIDttVSMeh+ofyMTYuomQ9Xob9DiukIjhY3lfcb1IwELZmf
+        d0ix6aDVYeUWPjWD4DN4x6FqUfwxlJ+fQeR0gErr8LvRZVjhoUn4R0D3EvpyrJIWUbs8tCliH8BvKqiQ
+        vn8OQfM/sFJpWKDb4YKiNYC5Pg69R/nS9GM1QPsC3SdCtimgm5extrVXWQOG+jKECg2IJia/GnrPB0QT
+        k9e6ZJptCiyA5sotnJi8bl7ibpAyeSnSz2B/GGEbsgGvwgnbkA0orANuwhTb2qusAS9D7355zVVoQDR1
+        G3BrD3GLbQoM9GVM0YBfYYxtPDF5bWevtq29mGv73S8BHT74A34EHXCY4JRyT0PZC40bXZKE1xmCvGaP
+        00l4PR3Oa/RCY/MDcT0Hvnfuf07CApeoRgcuvnWulXddkoT/KMsLPXHWU+v2Xz0Cet10FayA5tsjXOsx
+        s1ZO+auo41yShH8xy4u5Tifhy15pXQ6thymGgT5HXte7dEX4pVleTHc6CT8rywvNb7RLugqunp7/AIVQ
+        8H9XLv4vAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="SCMMDSiteColumnFilterTitle" xml:space="preserve">
+    <value>Site Column Filter Conditions</value>
+  </data>
+  <data name="FMMDCEmptyValueError" xml:space="preserve">
+    <value>Enter a value to filter by, or click the button to set an advanced filter.</value>
+  </data>
+  <data name="Correct_links_with_scope_of_copy_only" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAR3SURBVHhe7Ztd
+        iFRlGMd38yNXsU1XFMyPLJYgjFgTFfTOKNTEBGU3+oKoBaGswAspYW1V8ONGQaIuIuiii1ApSIQi8evO
+        GwUTvbDIjUShIjHFkqbff+Z/3N3zNaOzzs6O7w9+uOd5n3fOeZ8558z7nhmbAoFAIACFQmERfpXiMqfk
+        Qt5rsX4JnVqWtL4xX3RqLuQti/WL7HBKPwTXoLiBfwyw2ym5kLcl1i+hU8uS1jfme07NhbzuWD+NTSx3
+        Sj8EowJsdajh0NhKQwwFCAVwqB+CT+F2fN6hhkNj8xifcCgQCAQCgUCgOEmYgI/hZIcaDo3NYxzvUD8E
+        w1qg1BYKUNcF4PgexgnevCM0Ng0QRk4BOB5dty+jnuTooUbEj/gOjnZqWcgdGQXgGB7H9/Ew/oviLO5E
+        FeMt/Br/wyP4kLvmQl79FoD96p3+EM/oIOAWHsUN2O60QRDX8vZvrOh5I3n1WQD2uRB/w5t4AF/HKW7O
+        hbx1KOY7lAk5uQWYh5/iKodqAvubiX/iSZzjcMXQZyxew00OZULOKtQY5zo0/OjA8RJW9I6nQV/dEPd6
+        c3jhQB7ABbgNj+MFPIE9mJhlEmvBqd4swrZeYzHuwHN42k0JaGvG37HHodrDzsfhCtTppWtZXMVvUDHd
+        sfVM/gN3SUDbeNQp+hleRqF7wnfY6bQEtC1XIixxqDawQw36VdyPugZFH36Mujs/6NQibGutMcabRdhu
+        w+gbJRVM6LNe24q3OjUV2mfhL3jEodrADp/D6J0+hfpWaD42OyUTcrQYeRe/x+gz/mfUmbISxzo1E3Ie
+        xY2oU1+X2Aw33XvY2bP4D2oATzqcCTm6np/BzaibVYT+VkxtuYVTO6rAKrQKLnRJqWi1W72yszGoU+4H
+        /e1wAtp0Y1Oh9mB0puiAVTS9+4849TbEdGZolldcqvKvXkNfbn6Cv6LQx+WX2Im5l8c9gZ3qFBVPO5SA
+        tl14vZhVKFzBz3E15i5gaO9Czf50WVxEnWXiJ9yNSzGz6FXDi2tCMQlbHEpAm07Zy95Mhfa3UXP2JTjK
+        4dsQewEXeHMQxGeg5vn6yHwDh3TCwuvprNIYk4UkWHYqrDbs8+YdQ1/9BkEfbZsdqik+fnF3awHaXkKt
+        wGY6VBHkq/Kas/+Fuond1Xq+Wthv1QXQQDRt/cKhTMiZglrUDJwn7MM2p9Qc9l39apD2V1Bnge7OEx0u
+        wnY7avl6DHVDE9E8YdgXIBxD9QUQ5LyJelc1ezuEWsKeRxFNX3UznO0udQHHMzQFEORNw49QBdCA9+Ja
+        rOjpzHDAsQ1dAUYiGltpiOkFiH4m1+VQw6GxeYzJn8kFAoFAIBAI3LcwO4qerzfyVLi3NMT0qXAoQKkt
+        FOAg6r+aRFb0IIM8Pbcf2C+hU8tCrh6Ipr6GLftVuCBvbqzftyhyCxBnvVNyIS+qbiZOLQup+tFDHr1O
+        zYW89aX0BKkFaEV9SxN30De3WZA3PdYvoVPLQm5HvG/M6U7NhbypsX6Rtf9SJRAI1CFNTf8DthwNfw72
+        znAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="Preserve the Default Features" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        gg==
+</value>
+  </data>
+  <data name="Question32" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAshJREFUWEe1
+        10uoTVEcx/FLV1dJIZKYIjFQHgMTQ3Wvt5lHMRHJ5BYlMZK86t7BRSmvFDLxyMD1LjPdlIkyQGTiFVHe
+        4vc9rbX7n3X+Z78w+NRev/Vfa59z9j5rr93R1TtYxWhZIYfkpgwFN+SgLJNR4o11uaFjhpyV38ZbeRm8
+        D1l0WqaKN1cTNzTGyVVh0o+yT2aLVztM5kiffBHGXJQx4tU3uGGwSpjkk/DTejV5VstPYY6lIWvhhrJL
+        GDhgsrpOCXPtMFmmJZDdwoD1JvN0yoLA67e2ivshmhqyUihcZzLPfqHO4lfzaqMtQl3T5bAFI4WCoybz
+        XBbq9gp3+kw5HLIT4o2Jzgl1I2JmO+8KnTZLrRVq5pss4kalb5HJPNRci+0YTpEygz/LgySznsjjJEut
+        Ec41kXYML8m3cJyHgawFXh+OCDVen0XNeY5pcD2KJo643uOTzLon75LMc0w4ZyeNeO1KLZ05Jgjz9Jqs
+        nXlCbQ+NeAenRVXMEuZ4ZLI8LNvU99O4I28kLSprrjAZNyeLk1fj4Z67zsFDeRHCOn4Ic3h9eT7IEAcM
+        fh7CqjYJ377LZGVlH4BLUObO9dyXZ0lW1ndpXAKeeHVvwqdyO8nKGC6cs48GDwca0yQtLPJV6tw/LOWc
+        s5tGXIjY56WFRfplT5KVwUOLczYWIrB14prYov+Jk1/gOAaTQ1h167VcupOsyAbhXJNo245bQofNilDP
+        E9Lra4cxLY9j8F+m86TJirBjZrvu9Xm41JwjWzHTAn5SCjaa7F/ZJszddksW7RQKN5vsb20X5izclEbx
+        Qxw3WV1sPNyToyUweAdk4C8p2iV7uIyMR9t/lxsavJpdESbhqcfegfeAbFdrsKteKHG3A7Z6YyWtzbih
+        Y7qckTgxeJ6/ktfCImb7eDkttbS7YQ5evZfIAeG/zNMQHPOyslgqvJ4PdvwBiOJ6rYghIBoAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="AzureUserMappingWarning" xml:space="preserve">
+    <value>No User Mappings have been defined. Please make sure that User Mappings have been configured before running a migration when using the “Use Azure/SPO Container Office 365 Upload” option.</value>
+  </data>
+  <data name="ConfigurationExistsWarning" xml:space="preserve">
+    <value>Configuration Exists Warning</value>
+  </data>
+  <data name="Full_Copy_Migration_Small" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJ
+        TUUH4QMBBCsCcadLqwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPXSURBVGhD
+        7ZnHaxVRFIdj713sXbFXULEhoqjYsDew94piQRBRXCio2HAjIogubCvdKbgSXPlHxe97nIQBk7y8mTeT
+        WeQHH0nm3nvuPXPLnHPT0KlOZVRjY6NMhB2wD/ZmRBuroCdELznKTuAq/IKX8CIjb+EnjIVkH22SWmHg
+        BlyGHtAtI2PgE0yCZB+j4DY8hAfx8x5chDUwFLpCpU27ZQPQgQupDCQUtkbCR3BZJp8PBJfX8eAYnIJb
+        8AHewx7oC5V27ZKVQQd8E7k40JqivjjojfAOnCVnI2pVkRWhQxxIKtra5hXchF4+qyorQVkckKngclrf
+        9KxNRaUOd0BFezkCT6D6fogGpXBAhY0J8BWaT7JWFQ3K5oDjcEOvrmojGpTGAUW7LvAMtle1YQUomwPy
+        GHZVtRGVy+iAm7jTgZoUtmp2INrZt+FGZQzQ7AAYo/X39/8UFcrggIM3yNsMjqNpD/SDS3ASokVCPoQy
+        OCDr4DNsAWfgEFyBN+AXOlok5EPo8D0QbT0+N8AX+As/4DVMg0qd/xQFpdjE0V4nnIk/oJ0pUClrUVGY
+        dEADadGWiYsJTc0OqLChrXnQnNW1qmhwBn6DU+cazMJ3+AY6Er3kKDsBT4A5sKhOGIxlWo4dLgefN7kq
+        OvEM9/z2FHFjesa7rs+CaaNXOSvB8qPgAWDevBjmgnnBADB3NrReAdvAD1v0lJPsAHTA5L3Jga3grcU5
+        GAY7wTsky0303Tf7YSnogG114DRMhuWgjcIcsKPZUAkD6oCz50zkv7+iwyHwHNzYUZJOYe8AXIf2JfxZ
+        FB160TW6Hh2GvcHg0qt8c3JVdOjx7EdyRtYOw553R4ch/3vX6LAPeGq4caMkncLeQjBP7p7VXlVFh76p
+        JeBeiJJ0CnueRB4KhW1i16yXuMY1UZJOYW83GLMVtoScao+92i5sW1DYGw4eCoVt4kFwB2Zl7TDsuZ9O
+        QGEz0Bu848wcmYY91/8y8HiOkpwUHeqAIYRTHyXpFPZ0wDipMAdcQvehXpvYm7rzUNgS8k359jMHX2HP
+        wM6PY+XvXBWdeIw+hXrFQobahcZCTdGoby5K0insFR6Nmg94t5MqwU8q7JkPbILCQgnfvF/Oli+lalDY
+        Wwsuo8ISGt+UkagbbwT4FTXA0yFPEpeEm9yEx6XhsTseTDc9wXymDe+G/Jr7PXE2C1tCDtx/Zs+Hg2B+
+        7OAfgc74v2mPxgVgPQd3DbydM/+9CwaC3pl6a2I6aXpZaCw0HXRkHPhG3RcOxrdtdKkjvu2Z4Fs2P3a2
+        nAVnz8EaimjDpD9xZdPQ8A+oLqd9hqHl9gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="WarningCaption" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Minus16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABfSURBVDhPpdCxDYAwDETRSCiiZA9ATJCI8ViNrZxz
+        i67gQ/GaX5wsl4j4xUbCRsJGwkbCRqIs112lyQl1mXNgk/io58D6iETLgUnyigPapdrHEDYSNhI2EjYS
+        Nr4XZQA6ZrgRBdqTYQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ViewShowListInternalName" xml:space="preserve">
+    <value>Show Internal List Names</value>
+  </data>
+  <data name="SP13StyleWorkflowWarning" xml:space="preserve">
+    <value>Content Matrix does not currently support migrating SharePoint Designer 2013 style Workflows from SharePoint 2013{0}or higher source environments that are set to Read-Only. This only applies for MEWS or CSOM connection types.{1}Any Lists and Libraries will still be migrated, but the workflows will be skipped.</value>
+  </data>
+  <data name="FMMDCRemoving" xml:space="preserve">
+    <value>Removing</value>
+  </data>
+  <data name="SiteColumnToMMDTransformerName" xml:space="preserve">
+    <value>Site Column To Managed Metadata</value>
+  </data>
+  <data name="WorkflowInstanceDataWarning" xml:space="preserve">
+    <value>Preserving workflow instance data requires writing directly to the SharePoint database. Please contact support@metalogix.net if you have any questions or concerns regarding this process.</value>
+  </data>
+  <data name="Filter16" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAVZJREFUOE+N
+        0r8rhVEcx/E7cK+BKF2Dn92J1PVjs0pKIYOykpGudJ+wUkhRBoPrRyiDRQwy3CeDwUQRyWS1+QtM3p/b
+        9+h57rmD4VXnfM75nuc855xEKl+UOsxiC3so4ABHRm1lGtvGPJqQUPEgTrCDBYwhi3Y0mzZ0YwRz0IfO
+        MKoF7rELt5v/CvCgRjW+EWINWn0F2uYMpqGvLmPTXOAHrW61CTwjA52FFtooswotlIZ2nUPpDJx9nLp+
+        UoKwC1m1XY51XLl+dEAekaNIxT1YRIB+ZYzpgD9RhVJNtFga8YY+CtLIYwkdqSBsIX+BbuivJlrsTOFJ
+        bQoz0PUpv4NOPjY/1onQTVxjHJM4hB6SN9cLTA1eoVenK/2AHpY31wtMPW5Qa/1LdFo7xgtMA26tPYB3
+        JK0f4wVGCxxjGCqOnXxUxdDov7/QG8k8FUNzjqGyrEwx8Qv2Pmkq0o2rFAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Do_not_copy_versions" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIESURBVHhe7ZvP
+        K+RxGMeHiKSVg5SmmWhJ2YPaXBz8Ddpyc8RdLk7+AbXlTFJK25awpZSLA6HV3jYc5CByEFJ+rNR4PXqa
+        UtNs3xkz3/l+e7/rdXie+c7z+cxrLtQ8CaVEyWQyPTAUAt+g3a8RTrjAANzDGRyUmSN4gUVo8CuVLxza
+        D3dwAxPeLms4twNMxg9vlScc2Ae3MAmrEIoAC2en4RG+eKu04aBeuIYpr0MVYOH8XRj1snThkG64hGlv
+        VYqAXzDuZWnCAV1wAd+99Rbq+Atg+Gc4hxlvZUMv3gIYnIJTmIUqb2dDL74CGJqEE5iHam+/C/14CmBg
+        KxzCAuT88BZei58AhrXAX/gJNd7OGV6PlwAGNcMfWIa8H97CM/ERwJAm+A0rUOvtvOG5eAhgwCfYhw2o
+        8/Z/w7PRF8CbG2EHjsH+yfkagC2IvIAReAb7Gz8oVzDoo0IJ5xctYAzWvYxcJEACJEACJEACJEACvAwe
+        CZAACZAACZCASAtYkwAJkAAJ8DJ4JEACJEACJEACJEACvIxcJEACJEACJEACJEACvAweCZAACRiGPS8j
+        F+6+DYUvTfHmTniApLciE+7cBra8WdzaHANsMcLWz1LeqvhwV9tosW9/yVuFhyH1MAf/wLYxNysc+1n/
+        E9gX93GrswyzJalByLWwXEnYHdN+bSV/EolXs2+CdbpjYB0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="Nintex2016WorkflowWarning" xml:space="preserve">
+    <value>Nintex Workflow migration is not fully supported from SharePoint 2016, and will not be able to migrate to SharePoint Online without the presence of the SharePoint Add-In "Nintex Workflows for Office 365" present at the target.Please validate the Add-In is present prior to the migration and validate the Nintex workflows migrated successfully once the migration is completed.</value>
+  </data>
+  <data name="GSLMDConfirmRemoveCap" xml:space="preserve">
+    <value>Confirm Remove</value>
+  </data>
+  <data name="GSLMDConfirmRemoveMsg" xml:space="preserve">
+    <value>Are you sure you wish to remove the selected item(s) ?</value>
+  </data>
+  <data name="FMMDCInvalidRowMessage" xml:space="preserve">
+    <value>Please enter in values or delete the row to cancel.</value>
+  </data>
+  <data name="FMMDCConfigDialogCreateRule" xml:space="preserve">
+    <value>Configure Transformation using a Rule</value>
+  </data>
+  <data name="Copy_all_versions" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMISURBVHhe7ZtN
+        qExhGMdH15Vu112wkURSig1F3JCPbgobERuKFWFlociGzcUGSRZWUqJrpSykq3xEWWDje8Ne2duN3zP+
+        nTrNmenEvO85573Pv37NPM+Z93ne878z75w595yWqwK12+2NcCAQu2FEreonJncCXsGZQFyHr3ASZqlt
+        PcSEzsFjCPoXov4Y3INLSlUvJnMRHsAcpYKKPkPwFpYqVa2YiH02hxRGEf0uw16FM0/s/AU4qDC+aL4V
+        ilbqQWC1+76j2F6dATQ+Dbba29swBLbIfYA9atkltlVjAE0n4SHMVSqIqL8EXsBRpXIiH98AGt6EOzBb
+        qaCizzz4BqNKZSIX1wCaDcNxiHoAQr+7sF5hJnLVLoKxxE7egm0KM0UxgAYTULRKD4L9sAaG1a5QbK/G
+        AIqfh99gEwjFE/gEq9W2S3pdXAMofBaewS+lgoke28F+4BR+q5CPawBFT4F9x49CcANM9LGv1S0KcyIf
+        zwAK2s/ZNzCmOJYB1+CwwpzIxzGAYkfgPcxXKqYBV62/wpzIhzeAQrYq284vUKoj4vQNoMg++AgLlcpE
+        Lm0DKLATbOcXKZUT+XQNYPAOsOPsnmdV2JamAQzcDF9gmVKFYnt6BjDITlvbgcdypXqK16RlAAM2wE8b
+        CGtLkJwBL8V0SW5raFDRJ5oBdoi7WGFtxJzcAHADFOZE3g0AN0BhJnJuALgBCsuJAW4AuAEKayPm5AaA
+        G6AwJ/IzwoAr4AYozIm8GwBugMJM5NwAcAMUlhMD3ABIxQA7Z7lOYTkxIAkDiO3KlWmF5cWgxhvA83H4
+        ASuVKi8GNdoAHl/DU+h5SU1fMTCZNeCfRCE3AJpmgN0X0PefuKVFoUYZQM4u3phS+P+iWGMMIN4E32Fw
+        d4VQrPYG8DgC7+A5rOq8YFCiYCPeATwPc/tNUwwIJjfg761t4wprI+Y0BRMKw4kmdmnMI4hyf18ZMRe7
+        FMdW+667QoKIRnYK+jPcgKIblmJyH+yHTeGF0sFEwxVwCI5VzC7oXJjtGrharT/a1REGPnjEoQAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="FS_SearchingForSharePointDatabases" xml:space="preserve">
+    <value>Searching '{0}' for SharePoint databases...</value>
+  </data>
+  <data name="MagnifyingGlass" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Ably
+        B1G5cgeL////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Ably
+        BzG5cgffuXIHOf///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Ably
+        Bz+5cgfpuXIHOf///wH///8B////Af///wG5cgcLuXIHc7lyB5m5cgeXuXIHl7lyB425cgcx////Ably
+        Bzm5cgfhuXIHN////wH///8B////Af///wG5cgdRuXIHz7lyB5O5cgdNuXIHM7lyBz25cgdvuXIHr7ly
+        B6G5cgeruXIHK////wH///8B////Af///wG5cgdXuXIH77lyBy3///8B////Af///wH///8B////Af//
+        /wG5cge1uXIHt////wH///8B////Af///wG5cgcLuXIHzblyByv///8B////Af///wH///8B////Af//
+        /wH///8B////AblyB6W5cgdz////Af///wH///8BuXIHeblyB5H///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cgczuXIHof///wH///8B////AblyB6G5cgdX////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////AblyB5W5cgcl////Af///wG5cge5uXIHOf///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wG5cgeNuXIHPf///wH///8BuXIHp7lyB1H///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8BuXIHk7lyByv///8B////AblyB3u5cgeR////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8BuXIHM7lyB6P///8B////Af///wG5cgcNuXIHz7ly
+        Byv///8B////Af///wH///8B////Af///wH///8B////AblyB6+5cgdz////Af///wH///8B////Ably
+        B1m5cgfxuXIHLf///wH///8B////Af///wH///8B////AblyB6W5cget////Af///wH///8B////Af//
+        /wH///8BuXIHU7lyB9O5cgeVuXIHTblyBye5cgc5uXIHc7lyB725cgeX////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cgcLuXIHc7lyB6W5cge9uXIHq7lyB425cgcx////Af///wH///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="FieldToMMDTransformerName" xml:space="preserve">
+    <value>List and Field Value To Managed Metadata</value>
+  </data>
+  <data name="FMMDCConfirmRemoveCap" xml:space="preserve">
+    <value>Confirm Remove</value>
+  </data>
+  <data name="FMMDCConfirmRemoveMsg" xml:space="preserve">
+    <value>Are you sure you wish to remove the selected configuration item ?</value>
+  </data>
+  <data name="Copy_x_number_of_versions" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOTSURBVHhe7Ztb
+        iE1RGMdnhrkwhqGZyWQojBr3W/NKyuSRkkjkSfEgJB48esCDKW+KEsrIJaXkLiEPLkmm5FJ48uCBd8rx
+        +3Z/OubM2GvP7DlnnXX2v36d/X1r7bXW/nf2Ouucs3ZVMZXL5dpguZitXFNebr5yY2GpcsssVn6BckaT
+        cp15uRblGqDajr0Sg9oHL0Sfcuvyco+gHrrgqXLPYB7YRT1Wzlir86/k5XYpdwTew3aosVxJxSA2wlyF
+        RRH9LYG7sFOp0ogB7Ie3MFWpyhEXvQ1eQptSJRH934BxCosnOp1Uko4HiDG8g5kKK09c/BvoVFh54uL3
+        wgSFoyM66AB7qxVLv+Aj7IbSftQxgHawz90f0KP0qIp+bLHUDU/ghNKDinJbF0xRmK5o2FZ3do8dBluM
+        FMWAP6K/ZvgC3UoViDIbX/rrEBptgdfQq7joBpjo8wwcUFggytI3gAbtI+45nIJo3c1rqQw4BocUFoiy
+        k5DeWoTGJoKt1U/D3wmIYy8NSFV01AgP4Sz8M/sS+/oO2AANCocvGhkPD+AyRF9R80XOVwNGPgfQgH1N
+        tTX1VSi4eBP5MA3g5Dq4DjehXukCUearAXbLzlCYTJxYC9fgDvz3PqI8rEmQRsfABbBfahqVHlLU8fUd
+        sAIGvW2HFCfYxZ8HW2o6fZGgns9zQJfCeFG5Bs7BB1gMsxzph/KfBKm8Cn7Ct4R8hUVqpmiizzgDbLk+
+        R2G8qNwD9xR6L8YaZ8A0cP+ZnMqhGdCuQzcFaIDdAu4/iVE5NAMST4IhGpDoYzA0A1ZCrcJ4UTkoAxIr
+        NAMos6X8dIXxonI2CUJmgELvxVjjDNgB7v8MUTmbBEMygDL7WbxVYbyonM0BkBmg0Hsx1jgDjkO0g8xJ
+        VM4mwZAMoGwPRPsKnUTlbA6AzACF3ouxxhlwGzoUxovK2SQYkgGUrYE6hfGicjYHQGaAQu/FWOMMeAXR
+        8wlOonJoBkzWoZsCNCDZ5oiQDCBvf/PbRkr35xWoHJIBm6BfoZs4ISQDbsFmhW7ihLI3gDj6EZTX5iiR
+        RJxU1gZwbHsZv4P7poh8cWK5G9AK7v8FDhQnBzMHDEuZAbncariv0Hsx1t60DVgInxV6L8ZqO1nTe0KU
+        xqrBHobYopS3Yoz20LRtz0u2ESpONGgPLH8C+1tpK9iee5+wFd5RsItfr2GnKxq2x2IOQh9c8oyLYAaM
+        4IHIqqrfhnaeFJB1yDgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ManualReconnectionRequiredDialog" xml:space="preserve">
+    <value>The authentication type you selected cannot renew your session automatically when it expires. When the session expires any running actions will pause and you will be prompted to login again</value>
+  </data>
+  <data name="FMMDCEmptySubstitutionError" xml:space="preserve">
+    <value>The substitution value must be set.</value>
+  </data>
+  <data name="SPDOnlyCheckBoxCaption" xml:space="preserve">
+    <value>Preserve workflow associations for SharePoint Designer Workflow</value>
+  </data>
+  <data name="AzureUploadWarningCaption" xml:space="preserve">
+    <value>Azure/SPO Container Migration Pipeline Confirmation</value>
+  </data>
+  <data name="Clear the Default Features" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="FS_UnableToEditConfiguration" xml:space="preserve">
+    <value>This item is a dependent configuration item related to the {0} transformer.{1}{2} this item is restricted via the respective route only.</value>
+  </data>
+  <data name="AzureUploadWarning" xml:space="preserve">
+    <value>Are you sure that you wish you use the Azure/SPO Container Migration Pipeline?
+
+This option should only be used if you are 100% certain that your SharePoint Online tenant has the Migration Pipeline enabled. 
+
+What does this do? This migrates items and folders within the document library using a combination of Azure storage/SPO Container and the Microsoft SharePoint Online Migration Pipeline. It provides faster upload of documents into a library.
+
+This option requires free storage space on the local hard drive that is at least 4x the largest file size in the document library that is going to be migrated using this approach.
+
+To migrate using Azure storage, please ensure that azure storage is configured and the appropriate configuration parameters are set within Content Matrix.
+
+To migrate using SPO Container, "Use Azure/SPO Container Office 365 Upload" and "Encrypt Azure/SPO Container Jobs" options should be checked  and connection string should be blank in the EnvironmentSettings.xml or Configuration Database.
+
+If you are unsure in the slightest then please do not use this option.</value>
+  </data>
+  <data name="FMMDCFieldValueFilterLabel" xml:space="preserve">
+    <value>Source Item Values Where</value>
+  </data>
+  <data name="FMMDCFieldValueFilterTitle" xml:space="preserve">
+    <value>Source Item Value Filter Conditions</value>
+  </data>
+  <data name="FS_DisablingResolveByNameWarning" xml:space="preserve">
+    <value>Disabling the '{0}' option will limit mapping to termstore only.{1}This means term set and term guids will not be resolved.{1}This may cause issues when using local site collection based managed metadata{1}and/or when the target term store has existing managed metadata that has the same structure{1}as the source and term sets or terms were added with the same name and different guids.{1}{1}Are you sure you want to disable this option?</value>
+  </data>
+  <data name="Correct_links_wth_scope_of_site" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="SPOLicensingWarningMessage" xml:space="preserve">
+    <value>This license is not eligible for migrations to SharePoint Online. Please contact your Metalogix sales representative or email sales@metalogix.com for assistance.</value>
+  </data>
+</root>

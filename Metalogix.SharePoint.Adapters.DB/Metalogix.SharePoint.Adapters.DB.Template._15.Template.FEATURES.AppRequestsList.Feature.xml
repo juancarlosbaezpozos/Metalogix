@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature 
+    xmlns="http://schemas.microsoft.com/sharepoint/" 
+    Title="$Resources:core,Marketplace_AppRequestsListFeatureTitle;"
+    Description="$Resources:core,Marketplace_AppRequestsListFeatureDescription;" 
+    Id="334DFC83-8655-48A1-B79D-68B7F6C63222"
+    Hidden="TRUE"
+    Version="15.0.0.0"
+    Scope="Web">
+    <ElementManifests>
+        <ElementManifest Location="AppRequestsFields.xml" />
+        <ElementManifest Location="AppRequestsContentTypes.xml" />
+        <ElementManifest Location="AppRequestsListTemplate.xml" />
+        <ElementManifest Location="AppRequestsListInstance.xml" />
+        <ElementFile Location="AppRequests\Schema.xml" />
+    </ElementManifests>
+</Feature>

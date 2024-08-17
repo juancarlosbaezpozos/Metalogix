@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Title="$Resources:vsrv,PR_projectTitle;" Revision="1" UIVersion="4" ListDir="$Resources:core,lists_Folder;" xmlns:ows="Microsoft SharePoint">
+    <NavBars>
+        <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002"/>
+        <NavBar Name="$Resources:core,category_Documents;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1004" />
+        <NavBar Name="$Resources:core,category_Lists;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1003" />
+        <NavBar Name="$Resources:core,category_Discussions;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1006" />
+        <NavBar Name="$Resources:core,category_Sites;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1026" />
+        <NavBar Name="$Resources:core,category_People;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1027" />
+    </NavBars>
+
+    <ListTemplates>
+    </ListTemplates>
+
+    <DocumentTemplates>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:vsrv,PR_doctemplate_name;" Type="150" Default="TRUE">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\visio\basflo_m.vst" TargetName="Forms/basflo_m.vst" Default="TRUE"/>
+                <DocumentTemplateFile Name="doctemp\visio\bpmn_m.vst" TargetName="Forms/bpmn_m.vst" Default="FALSE"/>
+                <DocumentTemplateFile Name="doctemp\visio\xfunc_m.vst" TargetName="Forms/xfunc_m.vst" Default="FALSE"/>
+
+                <DocumentTemplateFile Name="doctemp\visio\basflo_m.vstx" TargetName="Forms/basflo_m.vstx" Default="FALSE"/>
+                <DocumentTemplateFile Name="doctemp\visio\bpmn_m.vstx" TargetName="Forms/bpmn_m.vstx" Default="FALSE"/>
+                <DocumentTemplateFile Name="doctemp\visio\xfunc_m.vstx" TargetName="Forms/xfunc_m.vstx" Default="FALSE"/>
+
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+
+    <Configurations>
+        <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+              <List 
+                  FeatureId="00BFEA71-D1CE-42de-9C63-A44004CE0104"
+                  Type="104"
+                  Title="$Resources:core,announceList;" 
+                  Url="$Resources:core,lists_Folder;/$Resources:core,announce_Folder;" />
+              <List 
+                  FeatureId="00BFEA71-6A49-43FA-B535-D15C05500108"
+                  Type="108"
+                  Title="$Resources:vsrv,PR_reviewListTitle;" 
+                  Url="$Resources:core,lists_Folder;/$Resources:core,discussions_Folder;"
+                  QuickLaunchUrl="$Resources:core,lists_Folder;/$Resources:core,discussions_Folder;/AllItems.aspx"
+                  EmailAlias="$Resources:core,discussions_EmailAlias;" />
+              <List 
+                  FeatureId="F9CE21F8-F437-4f7e-8BC6-946378C850F0"
+                  Type="151"
+                  Title="$Resources:vsrv,PR_taskListTitle;" 
+                  Url="$Resources:core,lists_Folder;/$Resources:core,tasks_Folder;"
+                  QuickLaunchUrl="$Resources:core,lists_Folder;/$Resources:core,tasks_Folder;/AllItems.aspx" />
+                            <List
+                  Title="$Resources:vsrv,PR_documentsListTitle;"
+                  Description="$Resources:core,doclibList_Desc;"
+                  Url="$Resources:core,shareddocuments_Folder;"
+                  Type="101"
+                  FeatureId="00BFEA71-E717-4E80-AA17-D0C71B360101"
+                  QuickLaunchUrl="$Resources:core,shareddocuments_Folder;/Forms/AllItems.aspx" />
+              <List
+
+                  FeatureId="7E0AABEE-B92B-4368-8742-21AB16453D01"
+                  Type="505"
+
+                  Title="$Resources:vsrv,PR_processListTitle;"
+                  Description="$Resources:vsrv,PR_processListDesc;"
+                  Url="$Resources:vsrv,PR_processListUrl;"
+                  QuickLaunchUrl="$Resources:vsrv,PR_processListUrl;/Forms/AllItems.aspx"
+                  VersioningEnabled="TRUE" />
+            </Lists>
+
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+
+            <SiteFeatures>
+                <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+                <Feature ID="8581A8A7-CF16-4770-AC54-260265DDB0B2" />
+            </SiteFeatures>
+
+            <WebFeatures>
+
+                <!--new content types feature-->
+                <Feature ID="12E4F16B-8B04-42D2-90F2-AEF1CC0B65D9" />
+                <Feature ID="7E0AABEE-B92B-4368-8742-21AB16453D01" />
+
+                <Feature ID="99FE402E-89A0-45aa-9163-85342E865DC8" />
+                <Feature ID="0806D127-06E6-447a-980E-2E90B03101B8" />
+                <Feature ID="7201D6A4-A5D3-49A1-8C19-19C4BAC6E668" />
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+
+                <!-- MDS -->
+                <Feature ID="87294C72-F260-42f3-A41B-981A2FFCE37A" />
+            </WebFeatures>
+
+        </Configuration>
+    </Configurations>
+
+    <Modules>
+        <Module Name="Default" Url="" SetupPath="SiteTemplates\sts" Path="">
+            <File Url="default.aspx" NavBarHome="True">
+                <View
+                    List="$Resources:core,lists_Folder;/$Resources:core,announce_Folder;"
+                    BaseViewID="0"
+                    WebPartZoneID="Left" WebPartOrder="1" />
+                <View
+                    List="$Resources:vsrv,PR_processListUrl;"
+                    BaseViewID="0"
+                    WebPartZoneID="Left" WebPartOrder="2" />
+                <View
+                    List="$Resources:core,lists_Folder;/$Resources:core,discussions_Folder;"
+                    BaseViewID="0"
+                    WebPartZoneID="Left" WebPartOrder="3" />
+                <View
+                    List="$Resources:core,lists_Folder;/$Resources:core,tasks_Folder;"
+                    BaseViewID="0"
+                    WebPartZoneID="Left" WebPartOrder="4" />
+
+                <NavBarPage Name="$Resources:core,nav_Home;" ID="1002" Position="Start"/>
+                <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start"/>                
+            </File>
+        </Module>
+    </Modules>
+    <ServerEmailFooter>$Resources:ServerEmailFooter;</ServerEmailFooter>
+</Project>

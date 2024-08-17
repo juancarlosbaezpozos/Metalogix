@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Column_Name_Already_Exists" xml:space="preserve">
+    <value>A column with that name already exists.</value>
+  </data>
+  <data name="HostName_Change_Failed_Message" xml:space="preserve">
+    <value>The specified host name is not valid.</value>
+  </data>
+  <data name="HostName_Change_Failed_Caption" xml:space="preserve">
+    <value>Could not apply host name</value>
+  </data>
+  <data name="WarningString" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Bytes_Copied" xml:space="preserve">
+    <value>Bytes Copied</value>
+  </data>
+  <data name="TargetIsReadOnly" xml:space="preserve">
+    <value>The underlying SharePoint adapter does not support write operations</value>
+  </data>
+  <data name="FS_Xml" xml:space="preserve">
+    <value>Xml = {0}</value>
+  </data>
+  <data name="FS_InfoPathRefNotChanged" xml:space="preserve">
+    <value>[NOTCHANGED] {0}</value>
+  </data>
+  <data name="AdHoc_Web_Collection_Is_Immutable" xml:space="preserve">
+    <value>A dynamically provisioned collection of arbitrary webs is immutable</value>
+  </data>
+  <data name="Workflow_RepositoryVerboseHeading" xml:space="preserve">
+    <value>Supported Workflow Activities:</value>
+  </data>
+  <data name="List_Collision_Warning" xml:space="preserve">
+    <value>Two or more source lists share the same name. You may want to rename these lists to avoid collisions during the copy.</value>
+  </data>
+  <data name="Workflow_UnmappedHeading" xml:space="preserve">
+    <value>Analysis indicates {0} instance(s) where a possible GUID has not been mapped.{1}Details are in the format 'ActivityName.AttributeName=GUID' :{2}</value>
+  </data>
+  <data name="CTypeDialogOptionsLabel" xml:space="preserve">
+    <value>List With Content Types Applied</value>
+  </data>
+  <data name="CTypeDialogOptionsValue" xml:space="preserve">
+    <value>Applied Content Types</value>
+  </data>
+  <data name="Template_Location_Change_Successful" xml:space="preserve">
+    <value>The folder used as the template location for this connection has been changed to {0}</value>
+  </data>
+  <data name="ListPluralizedName" xml:space="preserve">
+    <value>Lists and Libraries</value>
+  </data>
+  <data name="DocSetDialogFolderTabTitle" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="Template_Location_Set" xml:space="preserve">
+    <value>Please select the folder to be used as the template location. </value>
+  </data>
+  <data name="MsgInvalidSiteCollectionSelection" xml:space="preserve">
+    <value>Please ensure that the web application, managed path, or url name of the site collection to be created are different than the source to avoid overwriting source data.</value>
+  </data>
+  <data name="Workflow_InitialiseRepository" xml:space="preserve">
+    <value>Initialising Workflow Repository</value>
+  </data>
+  <data name="DocSetDialogEditOption" xml:space="preserve">
+    <value>Edit Options</value>
+  </data>
+  <data name="DeleteItem" xml:space="preserve">
+    <value>Are you sure you wish to delete "{0}" permanently?</value>
+  </data>
+  <data name="RenameDialogOptionsColumn" xml:space="preserve">
+    <value>Source Node</value>
+  </data>
+  <data name="CTypeDialogRemoveOption" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="CTypeDialogEditOption" xml:space="preserve">
+    <value>Edit Options</value>
+  </data>
+  <data name="FS_InfoPathLogEnd" xml:space="preserve">
+    <value>, corrected={0}</value>
+  </data>
+  <data name="SitePluralizedName" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="MsgCannotFindContentType" xml:space="preserve">
+    <value>Target content type not found at current scope. This content type is defined at a higher scope in the site collection and cannot be edited.</value>
+  </data>
+  <data name="Workflow_AnalyseSourceWorkflow" xml:space="preserve">
+    <value>Analyse source workflow{0}</value>
+  </data>
+  <data name="InfoPathLogAttemptingToCorrectRefSplitter" xml:space="preserve">
+    <value>---- Attempting to correct reference ----</value>
+  </data>
+  <data name="CTypeDialogOptionsColumn" xml:space="preserve">
+    <value>Source List</value>
+  </data>
+  <data name="Workflow_RepositoryVerboseDetail" xml:space="preserve">
+    <value>{0} [{1} Attributes] ({2})</value>
+  </data>
+  <data name="SP2016" xml:space="preserve">
+    <value>SharePoint 2016</value>
+  </data>
+  <data name="SP2010" xml:space="preserve">
+    <value>SharePoint 2010</value>
+  </data>
+  <data name="SP2013" xml:space="preserve">
+    <value>SharePoint 2013</value>
+  </data>
+  <data name="SP2007" xml:space="preserve">
+    <value>SharePoint 2007</value>
+  </data>
+  <data name="SP2003" xml:space="preserve">
+    <value>SharePoint 2003</value>
+  </data>
+  <data name="_Folders" xml:space="preserve">
+    <value>folders</value>
+  </data>
+  <data name="Template_Location_Change_Warning" xml:space="preserve">
+    <value>Changing this setting impacts how data is read from this connection. If there are any actions currently running that use this connection, changing this setting may invalidate their results. Continue?</value>
+  </data>
+  <data name="_Sites" xml:space="preserve">
+    <value>sites</value>
+  </data>
+  <data name="_Items" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="_Lists" xml:space="preserve">
+    <value>lists</value>
+  </data>
+  <data name="Invalid_Options_Configuration" xml:space="preserve">
+    <value>Invalid Options Configuration</value>
+  </data>
+  <data name="DocSetDialogCreateOption" xml:space="preserve">
+    <value>Apply Document Set</value>
+  </data>
+  <data name="FS_InfoPathLogStart" xml:space="preserve">
+    <value>[{0}] {1}</value>
+  </data>
+  <data name="MsgSiteCollectionUrl" xml:space="preserve">
+    <value>Please enter a url for the site collection</value>
+  </data>
+  <data name="Show_Display_Names" xml:space="preserve">
+    <value>Show Display Names</value>
+  </data>
+  <data name="RenameDialogEditOption" xml:space="preserve">
+    <value>Edit Task</value>
+  </data>
+  <data name="DocSetDialogFolderTabOptionColumn" xml:space="preserve">
+    <value>Document Set Content Type</value>
+  </data>
+  <data name="RenameDialogOptionsLabel" xml:space="preserve">
+    <value>List of Rename Tasks</value>
+  </data>
+  <data name="RenameDialogOptionsValue" xml:space="preserve">
+    <value>Rename Operations To Perform</value>
+  </data>
+  <data name="CTypeDialogTitle" xml:space="preserve">
+    <value>Apply Content Types to Lists</value>
+  </data>
+  <data name="Site_Collision_Warning" xml:space="preserve">
+    <value>Two or more source sites share the same name. You may want to rename these sites to avoid collisions during the copy.</value>
+  </data>
+  <data name="CTypeDialogApplyOption" xml:space="preserve">
+    <value>Apply Content Types to Selected List</value>
+  </data>
+  <data name="Workflow_ActivitiesGuidCharacteristics" xml:space="preserve">
+    <value>Workflow Activities with GUID characteristics found in source XOML. Please see details.</value>
+  </data>
+  <data name="MsgSiteCollectionOwner" xml:space="preserve">
+    <value>Please enter an owner for the site collection</value>
+  </data>
+  <data name="Feature_StoragePoint_Warning" xml:space="preserve">
+    <value>Stop! Please ensure that the version of StoragePoint on your Source Farm and the version of StoragePoint on your Target
+Farm are identical and running v5.1 or higher. If these are not, you will cause content corruption as a result of this operation.</value>
+  </data>
+  <data name="_Site" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="_Item" xml:space="preserve">
+    <value>item</value>
+  </data>
+  <data name="_List" xml:space="preserve">
+    <value>list</value>
+  </data>
+  <data name="_SiteCollections" xml:space="preserve">
+    <value>site collections</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Confirm Delete</value>
+  </data>
+  <data name="Manual_Reconnection_Required" xml:space="preserve">
+    <value>Manual reconnection required.</value>
+  </data>
+  <data name="_SiteCollection" xml:space="preserve">
+    <value>site collection</value>
+  </data>
+  <data name="DocSetDialogTitle" xml:space="preserve">
+    <value>Apply Document Sets</value>
+  </data>
+  <data name="RenameDialogRemoveOption" xml:space="preserve">
+    <value>Remove Task(s)</value>
+  </data>
+  <data name="MsgUserDbWriteWarning" xml:space="preserve">
+    <value>Users not present in active directory must be added directly to the SharePoint Content Database. Writing to the content database is NOT supported by Microsoft. Using this feature is done at your own risk.</value>
+  </data>
+  <data name="DocSetDialogOptionsValue" xml:space="preserve">
+    <value>Applied Document Set Content Types</value>
+  </data>
+  <data name="MsgInvalid2010FolderName" xml:space="preserve">
+    <value>Folder: "{0}" has been renamed to: "{1}" to satisfy naming requirements of SharePoint 2010. The string "_vti_" cannot be the starting of a folder name in SharePoint 2010.</value>
+  </data>
+  <data name="DocSetDialogOptionsLabel" xml:space="preserve">
+    <value>Lists with Document Sets Applied</value>
+  </data>
+  <data name="ErrorString" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Invalid_Selection" xml:space="preserve">
+    <value>Invalid Selection</value>
+  </data>
+  <data name="_Folder" xml:space="preserve">
+    <value>folder</value>
+  </data>
+  <data name="Workflow_AnalyseSourceWorkflowVersion" xml:space="preserve">
+    <value> (Version {0})</value>
+  </data>
+  <data name="Host_Name_Invalid_Warning" xml:space="preserve">
+    <value>The specified host name is not valid</value>
+  </data>
+  <data name="RenameDialogApplyOption" xml:space="preserve">
+    <value>Rename Selected Node</value>
+  </data>
+  <data name="Select_One_Source_Item" xml:space="preserve">
+    <value>Please select only one source item when using the "New" button.</value>
+  </data>
+  <data name="Auto_Detect" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="DocSetDialogFolderTabObjectColumn" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="Show_Internal_Names" xml:space="preserve">
+    <value>Show Internal Names</value>
+  </data>
+  <data name="Workflow_InitialiseRepositoryError" xml:space="preserve">
+    <value>Error Initialising the Workflow Repository. Defaulting the repository to utilise the core supported workflow activities within this release build.{0}{1}</value>
+  </data>
+  <data name="Workflow_DetermineAll" xml:space="preserve">
+    <value>Determine All</value>
+  </data>
+  <data name="FolderPluralizedName" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="MsgNoContentDatabasesInWebApps" xml:space="preserve">
+    <value>There are no web applications that contain valid content databases available.</value>
+  </data>
+  <data name="HostName_Change_Successful" xml:space="preserve">
+    <value>The host name associated with this database connection has been set to {0}.</value>
+  </data>
+  <data name="CTypeDialogCreateRule" xml:space="preserve">
+    <value>Apply Content Types via Rule</value>
+  </data>
+  <data name="Workflow_RepositoryActivityInfo" xml:space="preserve">
+    <value>{0} Total Activities in current configuration. ({1} Core Default Activities)</value>
+  </data>
+  <data name="DocSetDialogOriginalTabText" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="Bytes_Restored" xml:space="preserve">
+    <value>Bytes Restored</value>
+  </data>
+  <data name="FS_SharePointVersionUnlicensed" xml:space="preserve">
+    <value>The Content Matrix license in use does not allow connections to {0}.</value>
+  </data>
+  <data name="Feature_Requires_DBWriting" xml:space="preserve">
+    <value>{0} requires writing directly to the SharePoint database.
+In order to enable this, please contact support by going to http://www.metalogix.com/Support#ContactSupport to enable DB writing.</value>
+  </data>
+  <data name="SPOnline" xml:space="preserve">
+    <value>SharePoint Online</value>
+  </data>
+  <data name="Preserve_DocumentIDs" xml:space="preserve">
+    <value>Preserving document IDs</value>
+  </data>
+  <data name="Shallow_Copying_Externalized_Data" xml:space="preserve">
+    <value>Shallow copying externalized data</value>
+  </data>
+  <data name="DocSetDialogRemoveOption" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="InsufficientIETitle" xml:space="preserve">
+    <value>Insufficient IE Version</value>
+  </data>
+  <data name="Folder_Collision_Warning" xml:space="preserve">
+    <value>Two or more source folders share the same name. You may want to rename these folders to avoid collisions during the copy.</value>
+  </data>
+  <data name="Invalid_Column_Name" xml:space="preserve">
+    <value>Invalid Column Name</value>
+  </data>
+  <data name="SPMasterPageGallery_GetPageLayoutCollection_Could_not_fetch_page_layout_collection_" xml:space="preserve">
+    <value>Could not fetch page layout collection.</value>
+  </data>
+  <data name="RenameDialogCreateRule" xml:space="preserve">
+    <value>Rename Nodes via Rule</value>
+  </data>
+  <data name="Manage_Nintex_Workflow_Databases" xml:space="preserve">
+    <value>Manage Nintex Workflow databases</value>
+  </data>
+  <data name="ListCopyOverwriteWarning" xml:space="preserve">
+    <value>Cannot Copy: Target Web is the parent of the Source List</value>
+  </data>
+  <data name="Site_Column_Name_Already_Exists" xml:space="preserve">
+    <value>A site column with that name already exists.</value>
+  </data>
+  <data name="DocSetDialogCreateOptionToList" xml:space="preserve">
+    <value>Apply New Document Sets To Library</value>
+  </data>
+  <data name="Force_Site_Rename_Warning" xml:space="preserve">
+    <value>This copy requires that you rename the site you copied to avoid overwriting your source data. Please ensure that the appropriate rename options have been selected and that you have specified a new name for your target site.</value>
+  </data>
+  <data name="DocSetDialogOptionsColumn" xml:space="preserve">
+    <value>List Filter</value>
+  </data>
+  <data name="Template_Location_Change_Failed_Message" xml:space="preserve">
+    <value>The specified template location could not be resolved.</value>
+  </data>
+  <data name="DocSetDialogApplyOption" xml:space="preserve">
+    <value>Apply Document Set to Selected Folder</value>
+  </data>
+  <data name="Template_Location_Change_Failed_Caption" xml:space="preserve">
+    <value>Could not set template location</value>
+  </data>
+  <data name="DocSetDialogCreateOptionViaRule" xml:space="preserve">
+    <value>Apply New Document Sets via Rule</value>
+  </data>
+  <data name="SourceInUseError" xml:space="preserve">
+    <value>The action cannot be run as because the source of this operation is currently in use by another action.</value>
+  </data>
+  <data name="DeleteItems" xml:space="preserve">
+    <value>Are you sure you wish to delete the selected {0} {1} permanently?</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Workflow_ErrorNamespaceDictionary" xml:space="preserve">
+    <value>Problem constructing workflow activity namespace dictionary [{0}].Activity '{1}' already has namespace of '{2}' and also appears with namespace '{3}'</value>
+  </data>
+  <data name="InsufficientIEMessage" xml:space="preserve">
+    <value>The authentication method you selected requires Internet Explorer version {0} or later. The Internet Explorer version detected was {1}. Please update Internet Explorer or select a different authentication method.</value>
+  </data>
+</root>

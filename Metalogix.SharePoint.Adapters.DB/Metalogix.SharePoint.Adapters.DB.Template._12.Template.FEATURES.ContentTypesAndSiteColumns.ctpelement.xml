@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ContentType ID="0x010400E6D617247A9F4d4dA5567E5551D87C01" Name="DEEWRAnnouncements" Group="DEEWR Content Types"
+               Description="Custom Content Types for the DEEWR Intranet" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{E15E79C1-D6FB-489d-BF68-50794BFB3BE7}" Name="DateCreated" />
+    </FieldRefs>
+  </ContentType>
+  <ContentType ID="0x0101009EDC4876AF524A70BD125A9D2C0D191E" Name="DEEWRDocument" Group="DEEWR Content Types"
+               Description="Create a new DEEWR Document." Version="0">
+    <FieldRefs>
+      <FieldRef ID="{BB38F50C-4339-41c0-BF2C-71503193DD86}" Name="DEEWRCategory" />
+      <FieldRef ID="{9EFAD2BA-C381-4ef2-98FC-EC1A2958D33E}" Name="DEEWRResourceType" />
+      <FieldRef ID="{8FF8B9F2-33B9-4963-B166-5253E493B9C3}" Name="DEEWRSubject" />
+    </FieldRefs>
+  </ContentType>
+  <ContentType ID="0x010200c32c5d4f00264724b885c1c402ad05c2" Name="DEEWR Project Calendar" Group="DEEWR Content Types"
+               Description="Custom Content Types for the DEEWR Calendar" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{9a0843fd-ba22-4165-89fe-b896b333b9df}" Name="Agenda" />
+      <FieldRef ID="{3085a5d6-6d4e-4edd-88bd-3760bd3de5dd}" Name="Minutes" />
+    </FieldRefs>
+  </ContentType>
+  <ContentType ID="0x01010200F7CE93BC01C74cadBE256B4F866A962A" Name="DEEWRPicLib" Group="DEEWR Content Types"
+               Description="Custom Content Types for the DEEWR Pictures" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{88FCB21C-5841-4f6c-B042-F52A76DF4A06}" Name="TopItemPosition" />
+      <FieldRef ID="{ECD0F507-A607-4591-88E2-BA5F25ACFB21}" Name="Link" />
+    </FieldRefs>
+  </ContentType>
+  <ContentType ID="0x0100CEA91C981E1F46B7A46568E08281B839" Name="DEEWROrganisationUserContact"
+               Group="DEEWR Content Types" Description="Create a new Organisation User Contact." Version="0"
+               ReadOnly="TRUE">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Title" Required="TRUE" />
+      <FieldRef ID="{E65C6551-0657-4278-8DBD-7F6ADB9B0E7F}" Name="DEEWRDescription" DisplayName="Description" />
+      <FieldRef ID="{755BAFAD-F489-4852-8CFD-671114F5F87C}" Name="DEEWRUserContactType" DisplayName="Type"
+                Required="TRUE" />
+      <FieldRef ID="{FDB6EE48-849D-498c-8032-395B3C4290CA}" Name="DEEWRUserContactOrder" DisplayName="Order" />
+      <FieldRef ID="{BB38F50C-4339-41c0-BF2C-71503193DD86}" Name="DEEWRCategory" DisplayName="Category" />
+    </FieldRefs>
+  </ContentType>
+  <ContentType ID="0x0100CEE136597A80412dADF7FE05E6E2E15E" Name="DEEWR Release List 0001" Group="DEEWR Content Types"
+               Description="Used to create the Release List used on the Depoyment 'Tab'/page of Project Sites."
+               Version="0" ReadOnly="TRUE">
+    <FieldRefs>
+      <FieldRef ID="{C9994A44-B453-4cba-83F8-B91FB8364ECD}" Name="DeewrCustListReleaseReleaseComments"
+                DisplayName="Release Comments 0001CT" />
+    </FieldRefs>
+  </ContentType>
+
+</Elements>

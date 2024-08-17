@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="11" Title="$Resources:spscore,PortalTitle;">
+    <NavBars>
+        <NavBar Name="SharePoint Top Navbar" ID="1002">
+        </NavBar>
+    </NavBars>
+    <ListTemplates>
+
+    </ListTemplates>
+
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+
+    <Configurations>
+        <Configuration ID="-1" Name="NewWeb"/>
+        <Configuration ID="0" Name="Default">
+            <Lists>
+                <List Title="$Resources:core,discussions_Title;" Description="$Resources:core,discussionList_DefaultDesc;" Url="Lists/General Discussion"  Type="108" FeatureId="00BFEA71-6A49-43FA-B535-D15C05500108"></List>
+                <List Title="$Resources:core,xml_onet_mwsidlinksDisp;" Description="$Resources:core,xml_onet_mwsidlinksDesc;" Type="103" FeatureId="00BFEA71-2062-426C-90BF-714C59600103"></List>
+                <List Title="$Resources:core,contactsList;" Description="$Resources:core,contactsList_Desc;" Url="Lists/Contacts"  Type="105" FeatureId="00BFEA71-7E6D-4186-9BA8-C047AC750105"></List>
+                <List Title="$Resources:spscore,EventsList;" Description="$Resources:spscore,EventsList_Desc;" Type="106" FeatureId="00BFEA71-EC85-4903-972D-EBE475780106">
+                    <Data>
+                        <Rows>
+                            <Row>
+                                <Field Name="Title">$Resources:spscore,SampleEventItem;</Field>
+                            </Row>
+                        </Rows>
+                    </Data>
+                </List>
+                <List Title="$Resources:core,taskList;" Description="$Resources:core,taskList_Desc;" Url="Lists/Tasks" Type="107" FeatureId="00BFEA71-A83E-497E-9BA0-7A5C597D0107"></List>
+            </Lists>
+            <SiteFeatures>
+                <!-- Workflow Expiration -->
+                <Feature ID="C85E5759-F323-4EFB-B548-443D2216EFB5" />
+
+                <!-- DLC Workflows -->  
+                <Feature ID="0AF5989A-3AEA-4519-8AB0-85D91ABE39FF" />
+
+                <!-- "A44D2AA3-AFFC-4d58-8DB4-F4A3AF053188" -->  
+                <Feature ID="A44D2AA3-AFFC-4d58-8DB4-F4A3AF053188" />
+
+                <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA" />
+
+                <Feature ID="B21B090C-C796-4b0f-AC0F-7EF1659C20AE"/>
+
+                <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+
+                <Feature ID="7AC8CC56-D28E-41f5-AD04-D95109EB987A" >
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="SearchCenterUrl" Value="~SiteCollection/searchcenter" />
+                        <Property Key="DocLib" Value="$Resources:osrvcore,List_Pages_UrlName;" />
+                    </Properties>
+                </Feature>
+
+                <Feature ID="B50E3104-6812-424F-A011-CC90E6327318" />
+
+            </SiteFeatures>
+            <WebFeatures>
+                <!-- Publishing feature -->
+                <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/Default.aspx" />
+                        <Property Key="SimplePublishing" Value="true" />
+                    </Properties>
+                </Feature>
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+                    <!-- Per-Web Portal Navigation Properties-->
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="InheritGlobalNavigation" Value="true"/>
+                        <Property Key="IncludeSubSites" Value="true"/>
+                    </Properties>
+                </Feature>
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+
+            </WebFeatures>
+            <Modules>
+                <Module Name="Default"/> 
+                <Module Name="HomePageImage" />               
+                <Module Name="HomePage" />
+            </Modules>
+        </Configuration>
+        <Configuration ID="1" Name="Blank">
+            <ExecuteUrl Url="_layouts/[%=Web.Language%]/settings.aspx" />
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="Default" Url="" Path="" RootWebOnly="TRUE">
+        </Module>
+        <Module Name="HomePageImage" Url="PublishingImages" Path="">
+            <File Url="NewsArticleImage.jpg" Type="GhostableInLibrary">
+                <Property Name="ContentType" Value="$Resources:cmscore,contenttype_image_name;" />
+            </File>
+	</Module>
+        <Module Name="HomePage" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+            <File Url="Default.aspx" Type="GhostableInLibrary">
+                <Property Name="Title" Value="$Resources:spscore,HomeLandingPage_Title;" />
+                <Property Name="ContentType" Value="$Resources:cmscore,contenttype_welcomepage_name;" />
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/defaultlayout.aspx, $Resources:spscore,DefaultLayoutTitle;" />
+                <Property Name="PublishingPageImage" Value="&lt;img border=&quot;0&quot; src=&quot;~SiteCollection/PublishingImages/newsarticleimage.jpg&quot; vspace=&quot;0&quot; style=&quot;margin-top:8px&quot; alt=&quot;&quot;&gt;" />
+		<Property Name="PublishingPageContent" Value="&lt;div style=&quot;padding: 8px 7px; font-family: tahoma&quot;&gt;&lt;div style=&quot;font-size: 10pt;&quot;&gt;&lt;strong&gt;$Resources:spscore,HomePageContent1;&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;$Resources:spscore,HomePageContent2;&lt;br/&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 8pt; color: #5b5b5b;&quot;&gt;&lt;br/&gt;&lt;div style=&quot;float:right; width:42%;&quot;&gt;&lt;strong&gt;$Resources:spscore,HomePageContent8;&lt;/strong&gt;&lt;ul class=&quot;ms-rteStyle-7;&quot;&gt;&lt;li&gt;$Resources:spscore,HomePageContent10;&lt;/li&gt;&lt;li&gt;$Resources:spscore,HomePageContent11;&lt;/li&gt;&lt;li&gt;$Resources:spscore,HomePageContent12;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;$Resources:spscore,HomePageContent3;&lt;/strong&gt;&lt;ul class=&quot;ms-rteStyle-7;&quot;&gt;&lt;li&gt;$Resources:spscore,HomePageContent4;&lt;/li&gt;&lt;li&gt;$Resources:spscore,HomePageContent5;&lt;/li&gt;&lt;li&gt;$Resources:spscore,HomePageContent6;&lt;/li&gt;&lt;li&gt;$Resources:spscore,HomePageContent7;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;" />
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="2"><![CDATA[
+                    <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.Publishing.WebControls.SummaryLinkWebPart,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+				    <property name="MissingAssembly" type="string">$Resources:spscore,WPImportErrorMessage;</property>
+				    <property name="FireInitialRow" type="bool">True</property>
+				    <property name="TitleIconImageUrl" type="string" />
+				    <property name="CacheXslStorage" type="bool">True</property>
+				    <property name="AllowClose" type="bool">True</property>
+				    <property name="Description" type="string" />
+				    <property name="AllowZoneChange" type="bool">True</property>
+				    <property name="ParameterBindings" type="string" null="true" />
+				    <property name="NoDefaultStyle" type="string" null="true" />
+				    <property name="TitleUrl" type="string" />
+				    <property name="ViewFlag" type="string" />
+				    <property name="Xsl" type="string" null="true" />
+				    <property name="SiteRelativeXslLink" type="string">/Style Library/XSL Style Sheets/SummaryLinkMain.xsl</property>
+				    <property name="Direction" type="direction">NotSet</property>
+				    <property name="DisplayName" type="string" />
+				    <property name="ListName" type="string" null="true" />
+				    <property name="Hidden" type="bool">False</property>
+				    <property name="HelpMode" type="helpmode">Modeless</property>
+				    <property name="AllowMinimize" type="bool">True</property>
+				    <property name="AllowEdit" type="bool">True</property>
+				    <property name="AllowHide" type="bool">True</property>
+				    <property name="ChromeType">TitleOnly</property>
+                                    <property name="Title" type="string">$Resources:spscore,RelatedLinksWP_Title;</property>
+				    <property name="CacheXslTimeOut" type="int">0</property>
+				    <property name="ChromeState" type="chromestate">Normal</property>
+				    <property name="ExportMode" type="exportmode">All</property>
+				    <property name="CatalogIconImageUrl" type="string" />
+				    <property name="AllowConnect" type="bool">True</property>
+				    <property name="DataSourceID" type="string" />
+        			    <property name="SummaryLinkStore" type="string">&lt;div title="_schemaversion" id="_3"&gt;
+  &lt;div title="_links"&gt;
+    &lt;div title="_link"&gt;
+      &lt;span title="_title"&gt;$Resources:spscore,HomePage_SampleLink_1;&lt;/span&gt;
+      &lt;span title="_description"&gt;$Resources:spscore,HomePage_SampleLink_Description;&lt;/span&gt;
+      &lt;span title="_linkurl"&gt;
+        &lt;a href="~SiteCollection/News"&gt;/&lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span title="_style"&gt;Bullets&lt;/span&gt;
+      &lt;span title="_order"&gt;1&lt;/span&gt;
+      &lt;span title="_begincolumn"&gt;True&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div title="_link"&gt;
+      &lt;span title="_title"&gt;$Resources:spscore,HomePage_SampleLink_2;&lt;/span&gt;
+      &lt;span title="_description"&gt;$Resources:spscore,HomePage_SampleLink_Description;&lt;/span&gt;
+      &lt;span title="_linkurl"&gt;
+        &lt;a href="~SiteCollection/News"&gt;/&lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span title="_style"&gt;Bullets&lt;/span&gt;
+      &lt;span title="_order"&gt;2&lt;/span&gt;
+      &lt;span title="_begincolumn"&gt;False&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div title="_link"&gt;
+      &lt;span title="_title"&gt;$Resources:spscore,HomePage_SampleLink_3;&lt;/span&gt;
+      &lt;span title="_description"&gt;$Resources:spscore,HomePage_SampleLink_Description;&lt;/span&gt;
+      &lt;span title="_linkurl"&gt;
+        &lt;a href="~SiteCollection/News"&gt;/&lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span title="_style"&gt;Bullets&lt;/span&gt;
+      &lt;span title="_order"&gt;3&lt;/span&gt;
+      &lt;span title="_begincolumn"&gt;False&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div title="_view"&gt;
+    &lt;span title="_columns"&gt;1&lt;/span&gt;
+    &lt;span title="_linkstyle"&gt;Bullets&lt;/span&gt;
+    &lt;span title="_groupstyle"&gt;DefaultHeader&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</property>
+
+                                </properties>
+                            </data>
+                        </webPart>
+                    </webParts>]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.SearchBoxEx</TypeName>
+                        <Title>$Resources:spscore,EmployeeLookupWP_Title;</Title>
+                        <Description>$Resources:spscore,EmployeeLookupWP_Desc;</Description>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <FrameState>Normal</FrameState>
+                        <AllowMinimize>true</AllowMinimize>
+                        <AllowRemove>true</AllowRemove>
+                        <IsVisible>true</IsVisible>
+                        <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch15.png</GoImageUrl>
+                        <GoImageUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtl15.png</GoImageUrlRTL>
+			<GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchhover15.png</GoImageActiveUrl>
+			<GoImageActiveUrlRTL  xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtlhover15.png</GoImageActiveUrlRTL> 
+                        <SearchBoxTableClass xmlns="urn:schemas-microsoft-com:SearchBoxEx">ms-sbtablealt</SearchBoxTableClass>
+                        <DropDownMode xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownMode>
+                        <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">160</TextBoxWidth>
+                        <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">~SiteCollection/searchcenter/$Resources:osrvcore,List_Pages_UrlName;/peopleresults.aspx</SearchResultPageURL>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+            </File>
+        </Module>
+    </Modules>
+</Project>

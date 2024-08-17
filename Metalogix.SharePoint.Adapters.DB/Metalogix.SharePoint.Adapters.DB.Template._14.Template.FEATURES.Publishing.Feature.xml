@@ -1,0 +1,24 @@
+<!-- _lcid="1033" _version="14.0.4750" _dal="1" -->
+<!-- _LocalBinding -->
+<Feature  Id="22A9EF51-737B-4ff2-9346-694633FE4416"
+          Title="Publishing"
+          Description="Enable Publishing in a web."
+          Version="14.0.0.0"
+          Scope="Web"
+          Hidden="TRUE"
+          DefaultResourceFile="core"
+          ReceiverAssembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+          ReceiverClass="Microsoft.SharePoint.Publishing.PublishingFeatureHandler"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ElementManifests>
+        <ElementManifest Location="ContentTypeConverterSettings.xml"/>
+        <ElementManifest Location="DocumentLibrarySettings.xml"/>
+        <ElementManifest Location="EditingMenu.xml"/>
+        <ElementManifest Location="PagesListTemplate.xml" />
+        <ElementManifest Location="PublishingSiteSettings.xml"/>
+        <ElementManifest Location="RegionalSettingsExtensions.xml"/>
+        <ElementManifest Location="SiteActionMenuCustomization.xml" />
+        <ElementManifest Location="VariationsFlagControl.xml"/>
+        <ElementManifest Location="ProvisionedUI.xml"/>
+    </ElementManifests>
+</Feature>

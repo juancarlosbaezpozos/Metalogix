@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- _lcid="1033" _version="15.0.4128" _dal="1" -->
+<!-- _LocalBinding -->
+<portal xmlns="PortalTemplate.xsd">
+    <web name="Home" siteDefinition="SPS" displayName="$Resources:spscore,PortalManifest_Home_DisplayName;" description="$Resources:spscore,PortalManifest_Home_Description;">
+        <webs>
+            <web name="News" siteDefinition="SPSNHOME" displayName="$Resources:spscore,PortalManifest_News_DisplayName;" description="$Resources:spscore,PortalManifest_News_Description;" />
+            <web name="SiteDirectory" siteDefinition="SPSSITES" displayName="$Resources:spscore,PortalManifest_SiteDirectory_DisplayName;" description="$Resources:spscore,PortalManifest_SiteDirectory_Description;" />
+            <web name="SearchCenter" siteDefinition="SRCHCEN" displayName="$Resources:spscore,PortalManifest_SearchCenter_DisplayName;" description="$Resources:spscore,PortalManifest_SearchCenter_Description;" />
+            <web name="Docs" siteDefinition="BDR" displayName="$Resources:spscore,PortalManifest_DocumentCenter_DisplayName;" description="$Resources:spscore,PortalManifest_DocumentCenter_Description;" />
+        </webs>
+    </web>
+</portal>

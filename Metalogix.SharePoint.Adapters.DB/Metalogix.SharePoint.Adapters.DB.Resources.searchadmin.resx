@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SearchResultRemoval_PageTitle_Label" xml:space="preserve">
+    <value>Remove URLs From Search Results</value>
+  </data>
+  <data name="ListContentSources_ListNameColHeader_Label" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ContentSourceList_AddCustomContentSource_AccessKey" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="SearchServiceInstance_RolesHelp_Text" xml:space="preserve">
+    <value>Use this option to specify if you want to use this server for search queries or indexing or both.</value>
+  </data>
+  <data name="AccessAccount_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Default Content Access Account</value>
+  </data>
+  <data name="SearchSSPSettings_CrawlLogNav_Label" xml:space="preserve">
+    <value>View crawl log</value>
+  </data>
+  <data name="SearchServiceInstance_QueryLocationHelp_Text" xml:space="preserve">
+    <value>This is the path where search indexes propagated to this server are stored.&lt;br&gt;
+This location must be shared to allow for this server to receive propagation. The search service account will be given write access to the propagation share and the share will be called "searchindexpropagation".&lt;br&gt;
+If the farm search service account is changed after the share is initially created, select "Configure share automatically" to update the permissions of the share.&lt;br&gt;
+The account of a local administrator is used to create the share on the query server. These credentials are not stored.</value>
+  </data>
+  <data name="AddContentSource_CrawlSettings_AccessKey" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="SearchServiceInstance_Index_Label" xml:space="preserve">
+    <value>Use this server for indexing content</value>
+  </data>
+  <data name="ManageCrawlRules_ListTypeColHeader_Label" xml:space="preserve">
+    <value>Include or exclude</value>
+  </data>
+  <data name="ManageCrawlRules_ListOrderColHeader_Label" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="SearchServiceInstance_QueryLocation_Text" xml:space="preserve">
+    <value>Query Server Index File Location</value>
+  </data>
+  <data name="SearchResults_AEAlertDaily" xml:space="preserve">
+    <value>Daily Alert Summary</value>
+  </data>
+  <data name="ManageFileTypes_ListIconColHeader_Label" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="SearchResultRemoval_Removal_Label" xml:space="preserve">
+    <value>Remove Now</value>
+  </data>
+  <data name="AddCrawlerRule_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Add Crawler Impact Rule</value>
+  </data>
+  <data name="SearchServiceInstance_ServiceCredentials_Title" xml:space="preserve">
+    <value>Farm Search Service Account</value>
+  </data>
+  <data name="SearchServiceInstance_IndexerPerformanceHelp_Text" xml:space="preserve">
+    <value>Indexing information can place a large load on the local SQL Server database and might slow down the responsiveness of the local SharePoint sites. However, reducing the maximum allowed indexing activity will slow down the speed at which items are indexed, and therefore might cause search results to be outdated. Use information about the local server load to select the appropriate indexer performance level.</value>
+  </data>
+  <data name="Schema_EditCategory_Label" xml:space="preserve">
+    <value>Edit Category</value>
+  </data>
+  <data name="LogViewer_LogSummaryNav_Label" xml:space="preserve">
+    <value>View by hostname</value>
+  </data>
+  <data name="ManageSearchService_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Search Service</value>
+  </data>
+  <data name="ManageSearchService_BackTo_Label" xml:space="preserve">
+    <value>Back to Manage Search Service</value>
+  </data>
+  <data name="SearchServiceInstance_QueryLocationExists_Label" xml:space="preserve">
+    <value>Do nothing. The share is already configured</value>
+  </data>
+  <data name="SearchServiceInstance_QueryLocationLocalAdmin_Label" xml:space="preserve">
+    <value>Credentials of a local administrator of %1:</value>
+  </data>
+  <data name="SearchServiceInstance_DedicatedWFE_Text" xml:space="preserve">
+    <value>Web Front End And Crawling</value>
+  </data>
+  <data name="ManageCrawlRules_AddCrawlRule_AccessKey" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="SearchServiceInstance_QueryLocation_Label" xml:space="preserve">
+    <value>Query server index file location:</value>
+  </data>
+  <data name="SearchResults_ATEventAll" xml:space="preserve">
+    <value>All changes</value>
+  </data>
+  <data name="SearchResults_AERemoveAlert" xml:space="preserve">
+    <value>Remove This Alert</value>
+  </data>
+  <data name="FarmSettings_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Farm-Level Search Settings</value>
+  </data>
+  <data name="ListKeywords_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="FarmSettings_Timeout_AccessKey" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="AddContentSource_StartCrawl_AccessKey" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="SearchService_Disable_Text2a" xml:space="preserve">
+    <value>If you uninstall the Search service, this server will no longer accept search queries and all content index files will be permanently deleted.</value>
+  </data>
+  <data name="SearchService_Disable_Text2b" xml:space="preserve">
+    <value>Indexing will be unavailable for all Shared Services Providers that use this server as their index server.</value>
+  </data>
+  <data name="SearchService_Disable_Text3a" xml:space="preserve">
+    <value>To uninstall the Office SharePoint Server Search service from this server, click OK.</value>
+  </data>
+  <data name="SearchService_Disable_Text3b" xml:space="preserve">
+    <value>To return to the Services on Server page, click Cancel.</value>
+  </data>
+  <data name="AddFileTypes_Extension_AccessKey" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="SearchCenterLiteOnet_Title" xml:space="preserve">
+    <value>Search Center</value>
+  </data>
+  <data name="ListContentSources_PauseAllCrawls_Label" xml:space="preserve">
+    <value>Pause all crawls</value>
+  </data>
+  <data name="SearchServiceInstanceConfirmation_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Disabling Office SharePoint Server Search</value>
+  </data>
+  <data name="SearchServiceInstance_IndexerPerformance_Text" xml:space="preserve">
+    <value>Indexer Performance</value>
+  </data>
+  <data name="SearchResultRemoval_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Search Result Removal</value>
+  </data>
+  <data name="SearchResults_AENewResults" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="AddKeyword_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Add Keyword</value>
+  </data>
+  <data name="ListContentSources_ListNextIncColHeader_Label" xml:space="preserve">
+    <value>Next Incremental Crawl</value>
+  </data>
+  <data name="SearchResults_AEEditAlert" xml:space="preserve">
+    <value>Edit This Alert</value>
+  </data>
+  <data name="SearchService_Disable_Text1" xml:space="preserve">
+    <value>Are you sure you want to uninstall the Office SharePoint Server Search service from this server?</value>
+  </data>
+  <data name="SearchService_Disable_Title" xml:space="preserve">
+    <value>Disable Office SharePoint Server Search</value>
+  </data>
+  <data name="FarmSettings_SSL_AccessKey" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="ManageCrawlerRules_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Crawler Impact Rules</value>
+  </data>
+  <data name="ContentSourceList_AddContentSource_AccessKey" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="ManageFileTypes_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>File Types</value>
+  </data>
+  <data name="ListServerNameMappings_ResultsAddress_ColHeader" xml:space="preserve">
+    <value>Address for display in search results</value>
+  </data>
+  <data name="SearchServiceInstance_PageHeader_Text" xml:space="preserve">
+    <value>Configure Office SharePoint Server Search Service Settings on server %1</value>
+  </data>
+  <data name="SearchServiceInstance_PerformanceMaximum_Label" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="EditRelevance_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Specify Authoritative Pages</value>
+  </data>
+  <data name="SearchService_DisablePromptMessage_Text" xml:space="preserve">
+    <value>The Office SharePoint Server Indexing Service that was enabled on this server will be uninstalled and all index files will be deleted permanently. This would disable indexing on {0} Shared Service Provider(s).</value>
+  </data>
+  <data name="SearchSettings_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Search Settings</value>
+  </data>
+  <data name="EnhancedSearch_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Search Settings</value>
+  </data>
+  <data name="SearchServiceInstanceSettings_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Office SharePoint Server Search Service Settings</value>
+  </data>
+  <data name="EditCrawlRule_Configuration_AccessKey" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="SearchServiceInstance_DedicatedWFEHelp_Text" xml:space="preserve">
+    <value>Use this option to specify a dedicated web front end for crawling. Crawling through a dedicated web front end will reduce the impact of crawling on the other web front ends in the farm.&lt;br&gt;
+If your index server is not running other shared services, it is recommended to enable the web front end role on this computer and use it as the dedicated web front end for crawling.&lt;br&gt;
+If your index server is also running the Excel Calculation service or other shared services, select no dedicated web front end for crawling. Otherwise, these services may not work as expected.</value>
+  </data>
+  <data name="SearchSSPSettings_BackTo_Label" xml:space="preserve">
+    <value>Back to Search Settings</value>
+  </data>
+  <data name="ManagePropagation_Mode_AccessKey" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="AddFreqRule_Frequency_AccessKey" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="SearchSSPSettings_CrawlRulesNav_Label" xml:space="preserve">
+    <value>Manage crawl rules</value>
+  </data>
+  <data name="SearchSSPSettings_ContentSourceNav_Label" xml:space="preserve">
+    <value>Manage content sources</value>
+  </data>
+  <data name="SearchServiceInstance_LocationHelp_Text" xml:space="preserve">
+    <value>The search index will be located at this path by default on this server. For index servers, you can specify a different path when you create a Shared Services Provider. To change this index file location for an existing Shared Services Provider, use the command stsadm.exe -o editssp.</value>
+  </data>
+  <data name="EditCrawlRule_NameExample_Label" xml:space="preserve">
+    <value>http://hostname/*; http://*.*; *://hostname/*</value>
+  </data>
+  <data name="FarmSettings_Email_AccessKey" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="SearchServiceInstance_Select_DedicatedWFE_Label" xml:space="preserve">
+    <value>Select a web front end computer</value>
+  </data>
+  <data name="SearchResultRemoval_Removal_AccessKey" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="ListServerNameMappings_IndexAddress_ColHeader" xml:space="preserve">
+    <value>Address for indexing</value>
+  </data>
+  <data name="SearchServiceInstance_ServiceCredentials_Description" xml:space="preserve">
+    <value>The search service will run using this account. Setting or changing this account affects all index and query servers in the server farm.&lt;br&gt;&lt;br&gt;The farm search service account must not be a built-in account for security reasons and for it to access the database and content index. Examples of built-in accounts are Local Service and Network Service.</value>
+  </data>
+  <data name="Alerts_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Search-Based Alerts</value>
+  </data>
+  <data name="AddContentSource_Schedules_AccessKey" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="AddContentSource_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Add Content Source</value>
+  </data>
+  <data name="SearchServiceInstance_PerformancePartlyReduced_Label" xml:space="preserve">
+    <value>Partly reduced</value>
+  </data>
+  <data name="SearchServiceInstance_ContactEmailHelp_Label" xml:space="preserve">
+    <value>Specify an e-mail address that external site administrators can contact if problems arise when their site is being crawled. This setting applies to all servers in the farm.</value>
+  </data>
+  <data name="SearchResultRemoval_RemovalList_Label" xml:space="preserve">
+    <value>URLs to remove:</value>
+  </data>
+  <data name="ManageContentSource_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Content Sources</value>
+  </data>
+  <data name="AddContentSource_CSType_AccessKey" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="LogViewer_LogViewerNav_Label" xml:space="preserve">
+    <value>View by URL</value>
+  </data>
+  <data name="ManageFileTypes_AddFileType_AccessKey" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="SearchServiceInstance_QueryLocationCreateShareSTSADM_Label" xml:space="preserve">
+    <value>I will configure the share with STSAdm</value>
+  </data>
+  <data name="SearchServiceInstance_PageDescription_Text" xml:space="preserve">
+    <value>Use this page to configure Office SharePoint Server Search Service Settings.</value>
+  </data>
+  <data name="ValidatePath_InvalidPath" xml:space="preserve">
+    <value>The path for the index location is not valid.</value>
+  </data>
+  <data name="SearchAdmin_Ok_AltText" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="ListServerNameMappings_AddMapping_AccessKey" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="ManageSiteHitRules_ListOrderColHeader_Label" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="SearchServiceInstance_Location_Label" xml:space="preserve">
+    <value>Default index file location:</value>
+  </data>
+  <data name="SpecialTermList_View3_Text" xml:space="preserve">
+    <value>Keywords Requiring Review</value>
+  </data>
+  <data name="SearchAdmin_RefreshNow_AltText" xml:space="preserve">
+    <value>Refresh Now</value>
+  </data>
+  <data name="EditRelevanceSettings_Level1AuthorityPageMissing_Error" xml:space="preserve">
+    <value>Please specify at least one most authoritative URL.</value>
+  </data>
+  <data name="ValidationSummaryHeaderText" xml:space="preserve">
+    <value>There were errors on the page:</value>
+  </data>
+  <data name="SearchServiceInstance_ContactEmailExample_Label" xml:space="preserve">
+    <value>Example: someone@example.com</value>
+  </data>
+  <data name="multipages_cancelbutton_text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="AddFreqRule_Site_AccessKey" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="ManageCrawlRules_ListUrlColHeader_Label" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="SearchResultRemoval_RemovalSection_Label" xml:space="preserve">
+    <value>URLs To Remove</value>
+  </data>
+  <data name="SpecialTermList_View2_Text" xml:space="preserve">
+    <value>Expired Keywords</value>
+  </data>
+  <data name="SearchResultRemoval_RemovalSectionHelp_Label" xml:space="preserve">
+    <value>Type the URLs you want to remove from search results. These URLs will be removed from search results immediately.
+
+Crawl rules will be created to exclude the specified URLs from future crawls.
+
+To undo this action, delete the crawl rule and start a full crawl of the content source with which this URL was crawled.</value>
+  </data>
+  <data name="SearchServiceInstance_PageTitle_Text" xml:space="preserve">
+    <value>Configure Office SharePoint Server Search Service Settings on server %1</value>
+  </data>
+  <data name="SearchAdmin_Ok_AccessKey" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="SearchResults_AEAlertWeekly" xml:space="preserve">
+    <value>Weekly Alert Summary</value>
+  </data>
+  <data name="SearchServiceInstance_ContactEmail_Label" xml:space="preserve">
+    <value>Contact E-mail Address</value>
+  </data>
+  <data name="SearchAdmin_Cancel_AccessKey" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="SpecialTermList_View1_Text" xml:space="preserve">
+    <value>All Keywords</value>
+  </data>
+  <data name="ListContentSources_ListTypeColHeader_Label" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="SearchServiceInstance_Query_Label" xml:space="preserve">
+    <value>Use this server for serving search queries</value>
+  </data>
+  <data name="ListContentSources_ResumeAllCrawls_Label" xml:space="preserve">
+    <value>Resume all crawls</value>
+  </data>
+  <data name="SearchResults_ATEventModified" xml:space="preserve">
+    <value>Existing items are changed</value>
+  </data>
+  <data name="Schema_CrawledProperties_Label" xml:space="preserve">
+    <value>Crawled Properties</value>
+  </data>
+  <data name="SearchServiceInstance_ContactEmailTextBox_Label" xml:space="preserve">
+    <value>E-mail Address:</value>
+  </data>
+  <data name="EditCrawlRule_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Add or Edit Crawl Rule</value>
+  </data>
+  <data name="EditCrawlRule_Path_AccessKey" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="SearchReset_Reset_AccessKey" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="AddFileType_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Add File Type</value>
+  </data>
+  <data name="SearchServiceInstance_PerformanceReduced_Label" xml:space="preserve">
+    <value>Reduced</value>
+  </data>
+  <data name="SearchServiceInstance_Location_Text" xml:space="preserve">
+    <value>Index Server Default File Location</value>
+  </data>
+  <data name="SearchServiceInstance_DedicatedWFE_Label" xml:space="preserve">
+    <value>Use a dedicated web front end computer for crawling</value>
+  </data>
+  <data name="ListContentSources_StartAllCrawls_Label" xml:space="preserve">
+    <value>Start all crawls</value>
+  </data>
+  <data name="SearchAdmin_Cancel_AltText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ManageFileTypes_ListExtensionColHeader_Label" xml:space="preserve">
+    <value>File name extension</value>
+  </data>
+  <data name="ManageSearchService_BackToCentral_Label" xml:space="preserve">
+    <value>Back to Application Management</value>
+  </data>
+  <data name="SearchServiceInstance_ServiceCredentialsBuiltinAccount_Description" xml:space="preserve">
+    <value>The search service will run using this account. Setting or changing this account affects all index and query servers in the server farm.&lt;br&gt;&lt;br&gt;Warning: This account is used to encrypt sensitive search configuration settings like passwords.&lt;br&gt;&lt;br&gt;Any other application or service running as this built-in account will have access to the passwords. This is a security risk. Change the search service account to a non built-in account. Examples of built-in accounts are Local Service and Network Service.</value>
+  </data>
+  <data name="ServerNameMappings_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Server Name Mappings</value>
+  </data>
+  <data name="SearchResults_AEMyAlerts" xml:space="preserve">
+    <value>Go to My Alerts</value>
+  </data>
+  <data name="ListContentSources_StopAllCrawls_Label" xml:space="preserve">
+    <value>Stop all crawls</value>
+  </data>
+  <data name="SearchServiceInstance_ContactEmailMissing_Error" xml:space="preserve">
+    <value>This is a required field. You must enter a value to continue.</value>
+  </data>
+  <data name="ManageCrawlRules_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Crawl Rules</value>
+  </data>
+  <data name="ListContentSources_ListNextFullColHeader_Label" xml:space="preserve">
+    <value>Next Full Crawl</value>
+  </data>
+  <data name="ManageSiteHitRules_ListRuleColHeader_Label" xml:space="preserve">
+    <value>Rule</value>
+  </data>
+  <data name="AddContentSource_Name_AccessKey" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="FarmSettings_ProxySettings_AccessKey" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="ContentSourceList_Refresh_AccessKey" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="ManageFileTypes_ListDescriptionColHeader_Label" xml:space="preserve">
+    <value>File type</value>
+  </data>
+  <data name="SearchSSPSettings_BackToSSP_Label" xml:space="preserve">
+    <value>Back to Shared Services Administration</value>
+  </data>
+  <data name="ManageSiteHitRules_ListSiteColHeader_Label" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="ManageFreqRules_AddRule_AccessKey" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="SearchResultRemoval_NoUrl_Error" xml:space="preserve">
+    <value>Please type at least one URL in the textbox above.</value>
+  </data>
+  <data name="SearchServiceInstance_Roles_Text" xml:space="preserve">
+    <value>Query and Indexing</value>
+  </data>
+  <data name="ManageCrawlRules_ListAccountColHeader_Label" xml:space="preserve">
+    <value>Authentication account</value>
+  </data>
+  <data name="AddContentSource_StartAddress_AccessKey" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="SearchResults_ATEventDiscovered" xml:space="preserve">
+    <value>New items in search result</value>
+  </data>
+  <data name="EditServerNameMapping_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Add or Edit Server Name Mappings</value>
+  </data>
+  <data name="SearchResults_AEChangedResults" xml:space="preserve">
+    <value>Changed</value>
+  </data>
+  <data name="Schema_ManagedProperties_Label" xml:space="preserve">
+    <value>Managed Properties</value>
+  </data>
+  <data name="EditContentSource_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Edit Content Source</value>
+  </data>
+  <data name="Reset_SearchAdminBreadcrumb" xml:space="preserve">
+    <value>Reset Crawled Content</value>
+  </data>
+  <data name="SearchAdmin_EnableDisable_AltText" xml:space="preserve">
+    <value>Toggle Alerts</value>
+  </data>
+  <data name="ListContentSources_ListStatusColHeader_Label" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="EditCrawlRule_Authentication_AccessKey" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="AddServerNameMapping_Address_AccessKey" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="cancelbutton_accesskey" xml:space="preserve">
+    <value>c</value>
+  </data>
+  <data name="SearchServiceInstance_NoDedicatedWFE_Label" xml:space="preserve">
+    <value>Use all web front end computers for crawling</value>
+  </data>
+  <data name="SearchServiceInstance_QueryLocationCreateShareAuto_Label" xml:space="preserve">
+    <value>Configure share automatically</value>
+  </data>
+  <data name="SearchServiceInstance_ContactEmailError_Label" xml:space="preserve">
+    <value>Invalid email address.</value>
+  </data>
+</root>

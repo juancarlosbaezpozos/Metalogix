@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 389</value>
+  </data>
+  <data name="&gt;&gt;richTextLicenseAgreement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextLicenseAgreement.Name" xml:space="preserve">
+    <value>richTextLicenseAgreement</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblExpiry.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblExpiry.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rbAgree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 374</value>
+  </data>
+  <data name="rbNotAgree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 374</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAAAAEAIACoEAAAJgAAABAQAAABACAAaAQAAM4QAAAoAAAAIAAAAEAAAAABACAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAALW8wP+QlZj/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/32C
+        hP99goT/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/32ChP99goT/fYKE/5CV
+        mP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//j5+f/4+fn/+Pn5//j5+f/4+Pj/+Pj4//f4
+        +P/3+Pj/9/j4//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b39//29/f/9vf3//b39//19vb/9fb2//X2
+        9v/19vb/fYKE/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADW1tb/+fn5/+Pj4/+MjIz/1NXV//j5
+        +f/4+Pj/+Pj4//f4+P/3+Pj/9/j4//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b39//29/f/9vf3//b3
+        9//29vb/9fb2//X29v99goT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/5+fn/4eHh/4aG
+        hv98fHz/5+jo//j5+f/4+fn/+Pj4//f4+P/3+Pj/9/j4//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b3
+        9//29/f/9vf3//b39//29vb/9fb2/32ChP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//n6
+        +v/5+vr/ubm5/3p6ev9tbW3/cXFx/2tra/9paWn/Z2dn/2RkZP9gYGD/XV1d/1hYWP9VVVX/UVFR/0xM
+        TP9ISEj/Q0ND/0RERP/29/f/9vf3//b39//29/f/fYKE/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADW1tb/+fr6//T19f/09fX/s7Oz/3Z2dv+srKz/cnJy/4eHh/+fn5//9fX1/8DAwP/j5OT/19jY//f4
+        +P/3+Pj/9/j4//f39//29/f/9vf3//b39//29/f/9vf3//b39/99goT/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAANbW1v/6+vr/hISE/4+Pj//S09P/h4eH/6enp/98fHz/dHR0/3l6ev9/f3//k5OT/4OD
+        g/+Li4v/19jY//f4+P/3+Pj/9/f3//b39//29/f/9vf3//b39//29/f/9vf3/32ChP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA1tbW//r6+v/6+vr/zMzM/4qLi/97e3v/x8fH//n5+f/Oz8//np6e/3R0
+        dP/j5OT/6+vr/39/f/85ODf/goOF/8nKyv/3+Pj/9/f3//f39//29/f/9vf3//b39//29/f/fYKE/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADW1tb/+vv7//r6+v/6+vr/8vLy/5CQkP+Dg4P/7/Dw//n5
+        +f/5+fn/+Pn5//j5+f/4+fn/6+zs/46PkP9vlbr/X3yZ/4eKjv/3+Pj/9/j4//f39//29/f/9vf3//b3
+        9/99goT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/6+/v/+vv7//r6+v/6+vr/zMzM/3+A
+        gP/Gx8f/+fr6//n5+f/5+fn/+fn5//j5+f/4+fn/6err/3aVtP+OyP//aZfI/3CMof/R1tj/9/j4//f3
+        9//39/f/9vf3/32ChP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//v7+//6+/v/+vv7//r6
+        +v/r6+v/g4OD/6ipqf/5+vr/+fn5//n5+f/5+fn/+Pn5//j5+f/4+fn/uLu+/36w3f+b0f//g7ry/12E
+        q//R1tj/9/j4//f4+P/39/f/fYKE/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADW1tb/+/v7//v7
+        +//6+/v/+vv7//r7+/+vr6//w8PD//r6+v/5+vr/+fr6//n6+v/5+fn/+fn5//j5+f/4+fn/fabB/3Sx
+        2v+P4f7/aNX1/zRqjP/R1tj/9/j4//f4+P99goT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW
+        1v/7+/v/+/v7//v7+//7+/v/+vv7//r6+v/6+vr/+vr6//n6+v/5+vr/+fr6//n5+f/5+fn/+Pn5//j5
+        +f/19vb/b5O5/2Gw1/+M6///btj5/zRqjP/R1tj/9/j4/32ChP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA1tbW//v8/P/7+/v/+/v7//v7+//6+/v/+vv7//r6+v/6+vr/+vr6//n6+v/5+vr/+fr6//n5
+        +f/5+fn/+Pn5//j5+f/19vb/Rnuj/2q33v+R7P//edz1/zRqjP/R1tj/fYKE/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADW1tb/+/z8//v8/P/7+/v/+/v7/7agjf+3nYb/uJt//7qXd/+7k2//vJFo/7yO
+        Y/+/iln/wIZP/8GDSv/CgUH/xH03/8V4Lf/BciL/SIKn/2+94/+i9v//f9/4/zRqjP9+hon/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/8/Pz//Pz8//v8/P/7/Pz/+/v7//v7+//6+/v/+vv7//r7
+        +//6+vr/+vr6//r6+v/5+vr/+fr6//n6+v/5+fn/+fn5//j5+f/19vb/To+3/3zI7P+o9f//huD2/zRq
+        jP+fqa3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//z8/P/8/Pz//Pz8//v8/P/7+/v/+/v7//v7
+        +//7+/v/+vv7//r7+//6+vr/+vr6//r6+v/5+vr/+fr6//n6+v/5+fn/+fn5//j5+f/09fb/U5W8/4LO
+        7v+v+P//ieL1/zRqjP+xur//AAAAAAAAAAAAAAAAAAAAAAAAAADW1tb//Pz8//z8/P/8/Pz//Pz8/7ag
+        jf+3nYb/uJt//7qXd/+7k2//vJFo/7yOY/+/iln/wIZP/8GDSv/CgUH/xH03/8V4Lf/GdCL/yHYi//j5
+        +f/29/f/WJ/G/4fV8/++/Pz/pLK5/2eFaP+xur//AAAAAAAAAAAAAAAAAAAAANbW1v/8/f3//Pz8//z8
+        /P/8/Pz//Pz8//v8/P/7+/v/+/v7//v7+//7+/v/+vv7//r7+//6+vr/+vr6//r6+v/5+vr/+fr6//n6
+        +v/5+fn/+fn5//n5+f/09fX/YKnS/6Syuf9EdDH/gZWB/6yurv+xur//AAAAAAAAAAAAAAAA1tbW//39
+        /f/8/f3//Pz8//z8/P/8/Pz//Pz8//v8/P/7/Pz/+/v7//v7+//7+/v/+vv7//r7+//6+/v/+vr6//r6
+        +v/6+vr/+fr6//n6+v/5+vr/+fn5//n5+f/z8/T/Z4Vo/4+li//q6er/mZnV/2Jkrv+rsrX/AAAAAAAA
+        AADW1tb//f39//39/f/8/f3//Pz8/7agjf+3nYb/uJt//7qXd/+7k2//vJFo/7yOY/+/iln/wIZP/8GD
+        Sv/CgUH/xH03/8V4Lf/GdCL/yHYi//n6+v/5+vr/+fr6//n5+f96f4L/vcHB/4mK2f9tbt3/Skqs/5ab
+        wv8AAAAAAAAAANbW1v/9/f3//f39//39/f/8/f3//Pz8//z8/P/8/Pz//Pz8//z8/P/7/Pz/+/z8//v7
+        +//7+/v/+/v7//v7+//6+/v/+vv7//r6+v/6+vr/+vr6//n6+v/5+vr/+fr6/32ChP8AAAAAam21/1lb
+        s/+Jjbv/AAAAAAAAAAAAAAAA1tbW//39/f/9/f3//f39//39/f/8/f3//P39//z8/P/8/Pz//Pz8//z8
+        /P/8/Pz/+/z8//v7+//7+/v/+/v7//v7+//6+/v/+vv7//r6+v/6+vr/+vr6//n6+v/U1NT/fYKE/wAA
+        AAAAAAAAp63L/wAAAAAAAAAAAAAAAAAAAADW1tb//f39//39/f/9/f3//f39/7ypmf+3nof/uZl7/7uT
+        bv+8j2T/v4lW/8GDSv/Dfzz/xXgr/8p8Lf/7+/v/+/v7//v7+//6+/v/+vv7/9bW1v/Ozs7/v7+//7i4
+        uP+Fio3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANbW1v/9/f3//f39//39/f/9/f3//f39//39
+        /f/9/f3//P39//z8/P/8/Pz//Pz8//z8/P/8/Pz/+/z8//v8/P/7+/v/+/v7/7Kysv+rq6v/qamp/6mp
+        qf+vr6//uLi4/52jpv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1tbW//7+/v/9/f3//f39//39
+        /f/9/f3//f39//39/f/9/f3//P39//z8/P/8/Pz//Pz8//z8/P/8/Pz/+/z8//v8/P/7+/v/xsbG//X1
+        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
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Metalogix License Agreement</value>
+  </data>
+  <data name="&gt;&gt;lblExpiry.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="richTextLicenseAgreement.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>520, 423</value>
+  </data>
+  <data name="richTextLicenseAgreement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>504, 286</value>
+  </data>
+  <data name="richTextLicenseAgreement.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExpiry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 22</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rbAgree.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 22</value>
+  </data>
+  <data name="rbAgree.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 12</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 389</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="lblAcceptance.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbAgree.Name" xml:space="preserve">
+    <value>rbAgree</value>
+  </data>
+  <data name="&gt;&gt;rbAgree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbNotAgree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 15</value>
+  </data>
+  <data name="rbNotAgree.Text" xml:space="preserve">
+    <value>I Do Not Agree</value>
+  </data>
+  <data name="&gt;&gt;rbNotAgree.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblAcceptance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 29</value>
+  </data>
+  <data name="lblAcceptance.Text" xml:space="preserve">
+    <value>Please take a moment to read the terms below.  If you accept the terms of the agreement, please click "I Agree", then "OK", otherwise click "Cancel".</value>
+  </data>
+  <data name="richTextLicenseAgreement.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;rbAgree.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblExpiry.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;rbNotAgree.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rbAgree.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;rbNotAgree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbNotAgree.Name" xml:space="preserve">
+    <value>rbNotAgree</value>
+  </data>
+  <data name="richTextLicenseAgreement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 52</value>
+  </data>
+  <data name="&gt;&gt;richTextLicenseAgreement.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rbNotAgree.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lblExpiry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 345</value>
+  </data>
+  <data name="&gt;&gt;lblAcceptance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblAcceptance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 15</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AgreeToLicense</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;lblAcceptance.Name" xml:space="preserve">
+    <value>lblAcceptance</value>
+  </data>
+  <data name="&gt;&gt;lblAcceptance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;richTextLicenseAgreement.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;lblAcceptance.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rbNotAgree.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblAcceptance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;lblExpiry.Name" xml:space="preserve">
+    <value>lblExpiry</value>
+  </data>
+  <data name="&gt;&gt;lblExpiry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbAgree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 15</value>
+  </data>
+  <data name="rbAgree.Text" xml:space="preserve">
+    <value>I Agree</value>
+  </data>
+  <data name="richTextLicenseAgreement.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+    <value>ForcedBoth</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 22</value>
+  </data>
+</root>

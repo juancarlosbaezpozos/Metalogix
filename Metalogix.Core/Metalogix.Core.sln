@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalogix.Core", "Metalogix.Core.csproj", "{E4130506-97AB-4226-9323-B9DB94629BDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalogix.Utilities", "..\Metalogix.Utilities\Metalogix.Utilities.csproj", "{44BE20ED-A618-469B-A9BF-C28393FA4A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalogix.Data", "..\Metalogix.Data\Metalogix.Data.csproj", "{6D91B83A-FB66-422E-BFFD-224630557A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalogix.Licensing", "..\Metalogix.Licensing\Metalogix.Licensing.csproj", "{4021BED6-DF4D-47A9-8F69-C7FFDF7A7604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalogix.Connectivity", "..\Metalogix.Connectivity\Metalogix.Connectivity.csproj", "{004767BA-3564-4224-8B0C-0EC2487B9DD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalogix.Telemetry", "..\Metalogix.Telemetry\Metalogix.Telemetry.csproj", "{08A3E529-0AF3-44AC-8668-230AF48B0FA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4130506-97AB-4226-9323-B9DB94629BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4130506-97AB-4226-9323-B9DB94629BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4130506-97AB-4226-9323-B9DB94629BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4130506-97AB-4226-9323-B9DB94629BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BE20ED-A618-469B-A9BF-C28393FA4A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE20ED-A618-469B-A9BF-C28393FA4A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE20ED-A618-469B-A9BF-C28393FA4A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE20ED-A618-469B-A9BF-C28393FA4A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D91B83A-FB66-422E-BFFD-224630557A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D91B83A-FB66-422E-BFFD-224630557A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D91B83A-FB66-422E-BFFD-224630557A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D91B83A-FB66-422E-BFFD-224630557A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4021BED6-DF4D-47A9-8F69-C7FFDF7A7604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4021BED6-DF4D-47A9-8F69-C7FFDF7A7604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4021BED6-DF4D-47A9-8F69-C7FFDF7A7604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4021BED6-DF4D-47A9-8F69-C7FFDF7A7604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004767BA-3564-4224-8B0C-0EC2487B9DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004767BA-3564-4224-8B0C-0EC2487B9DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004767BA-3564-4224-8B0C-0EC2487B9DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004767BA-3564-4224-8B0C-0EC2487B9DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A3E529-0AF3-44AC-8668-230AF48B0FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A3E529-0AF3-44AC-8668-230AF48B0FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A3E529-0AF3-44AC-8668-230AF48B0FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A3E529-0AF3-44AC-8668-230AF48B0FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

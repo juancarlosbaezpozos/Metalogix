@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="StoragePointCannotValidateBlobRef" xml:space="preserve">
+    <value>Provided content is not a StoragePoint blob reference</value>
+  </data>
+  <data name="AddSP2013WorkflowLogItem" xml:space="preserve">
+    <value>Adding SharePoint 2013 Workflow Association</value>
+  </data>
+  <data name="SharePoint_Not_Supported_By_License" xml:space="preserve">
+    <value>Connections to SharePoint 2013 or SharePoint 2016 are not available using Migration Manager for SharePoint license keys. Please upgrade to a full Content Matrix license to use these features.</value>
+  </data>
+  <data name="FS_UnableToObtainWebApplication" xml:space="preserve">
+    <value>Unable to obtain Web Application '{0}'</value>
+  </data>
+  <data name="WorkflowTaskListCreation" xml:space="preserve">
+    <value>Creating new task list with name {0}</value>
+  </data>
+  <data name="StoragePointNotConfigured" xml:space="preserve">
+    <value>StoragePoint is not configured for the target environment</value>
+  </data>
+  <data name="UnableToRetrieveWorkflowTemplateReplace" xml:space="preserve">
+    <value>Please ensure all necessary features are activated.</value>
+  </data>
+  <data name="SharePoint2007WorkflowFeatureNotActivated" xml:space="preserve">
+    <value>SharePoint 2007 Workflows feature is not activated on the target.</value>
+  </data>
+  <data name="CommandNotImplemented" xml:space="preserve">
+    <value>Command '{0}' has not been implemented within '{1}' adapter</value>
+  </data>
+  <data name="FS_UnableToCreateSC" xml:space="preserve">
+    <value>Migrating user '{0}' requires explicit Full Control on the web application where the site collection is intented to be created.If the migrating user is a member of the Farm Administrators group then connect to the Central Administration site and try again.</value>
+  </data>
+  <data name="FS_ShallowCopyingInvalid" xml:space="preserve">
+    <value>Could not shallow copy data: {0}</value>
+  </data>
+  <data name="WorkflowHistoryListCreation" xml:space="preserve">
+    <value>Creating new history list with name {0}</value>
+  </data>
+  <data name="HasUniquePermissionsNotNecessary" xml:space="preserve">
+    <value>This adapter reports item permission uniqueness in its returned item XML. It should never be necessary to call this method.</value>
+  </data>
+  <data name="StartIndexOutsideTheBoundsOfString" xml:space="preserve">
+    <value>Specified start index is outside the bounds of the given string.</value>
+  </data>
+  <data name="UnableToDetermineAdapterResult" xml:space="preserve">
+    <value>adapterResultXml is empty or null. Unable to determine the result of the adapter operation.</value>
+  </data>
+  <data name="UnableToRetrieveWorkflowTemplate" xml:space="preserve">
+    <value>Unable to retrieve the workflow template from the server. Please ensure all necessary features are activated.</value>
+  </data>
+  <data name="UnableToRetrieveSPDWorkflow" xml:space="preserve">
+    <value>The workflow template for workflow: {0} could not be retrieved from the server. Please ensure the hidden Workflows list copied correctly.</value>
+  </data>
+  <data name="UnableToMigrateListWorkflowAssociation" xml:space="preserve">
+    <value>The OOB list workflow association cannot be migrated. The workflow template could not be retrieved from the server. Please ensure 'SharePoint 2007 Workflows' feature is activated on the target site collection.</value>
+  </data>
+  <data name="WorkflowTaskListNotFound" xml:space="preserve">
+    <value>Could not find a suitable tasks list on the target to apply the workflow association to.</value>
+  </data>
+  <data name="MsgCannotFindContentType" xml:space="preserve">
+    <value>Target content type not found at current scope. This content type is defined at a higher scope in the site collection and cannot be edited.</value>
+  </data>
+  <data name="Method_Not_Implemented" xml:space="preserve">
+    <value>This method has not been implemented on this adapter type.</value>
+  </data>
+  <data name="CannotParseTagAreaNoClosingTag" xml:space="preserve">
+    <value>Cannot parse area between tags. No closing tag detected.</value>
+  </data>
+  <data name="WorkflowTargetListNotFound" xml:space="preserve">
+    <value>Could not find a suitable list on the target to apply the workflow association to.</value>
+  </data>
+  <data name="UnexpectedEndOfAspxContent" xml:space="preserve">
+    <value>Unexpected end of aspx content reached.</value>
+  </data>
+  <data name="WorkflowHistoryListNotFound" xml:space="preserve">
+    <value>Could not find a suitable history list on the target to apply the workflow association to.</value>
+  </data>
+  <data name="CommandNameIsNull" xml:space="preserve">
+    <value>commandName cannot be null or empty</value>
+  </data>
+  <data name="UnableToFindWorkflowAssociationInList" xml:space="preserve">
+    <value>Unable to find the workflow association in the list after addition.</value>
+  </data>
+  <data name="UnableToCreateSCUnderCentralAdmin" xml:space="preserve">
+    <value>Unable to create a site collection using Self Service Site Creation under the Administration Web Application</value>
+  </data>
+  <data name="UnexpectedEndOfTextLastTagIncomplete" xml:space="preserve">
+    <value>Unexpected end of text reached. The last tag is incomplete.</value>
+  </data>
+  <data name="UnableToParseTextValueIsEmpty" xml:space="preserve">
+    <value>Unable to parse text value. The specified value is empty.</value>
+  </data>
+  <data name="UnableToFindWorkflowAssociationInWeb" xml:space="preserve">
+    <value>AddWebWorkflowAssociation() - Unable to find the workflow association within the web after addition.</value>
+  </data>
+  <data name="InsufficientIEVersionMessage" xml:space="preserve">
+    <value>The version of Internet Explorer detected is insufficient to perform this operation. Internet Explorer version {0} was detected when version {1} or later was required</value>
+  </data>
+  <data name="UnableToUpdateAlreadyExistsSharePointError" xml:space="preserve">
+    <value>There is already a workflow association with this name</value>
+  </data>
+  <data name="NotSharePointDatabase" xml:space="preserve">
+    <value>SQL Server Database is not a SharePoint Database.</value>
+  </data>
+  <data name="WorkflowScopeInvalid" xml:space="preserve">
+    <value>The workflow association scope attribute is invalid, cannot add a new workflow association</value>
+  </data>
+  <data name="PleaseReviewDetails" xml:space="preserve">
+    <value>Please review details.</value>
+  </data>
+  <data name="ServiceError" xml:space="preserve">
+    <value>An error occurred during the operation of a service method: {0}</value>
+  </data>
+  <data name="UnableToObtainWorkflowInstances" xml:space="preserve">
+    <value>A problem was encountered in obtaining workflow instances.</value>
+  </data>
+  <data name="UnableToResolveDBAdapterTypeDetails" xml:space="preserve">
+    <value>The assembly required for this type may not be present in the GAC.</value>
+  </data>
+  <data name="NotSupportedByAdapter" xml:space="preserve">
+    <value>This operation is not supported by the underlying adapter{0}Operation: {1}{0}Adapter Type: {2}{0}</value>
+  </data>
+  <data name="CSOM_Client_Unavailable" xml:space="preserve">
+    <value>Unable to retrieve SharePoint Online cookies. CSOM client unavailable.</value>
+  </data>
+  <data name="UnableToConnectToDatabase" xml:space="preserve">
+    <value>A problem was encountered in connecting to the database.</value>
+  </data>
+  <data name="UnableToResolveDBAdapterType" xml:space="preserve">
+    <value>The database adapter type was not able to be resolved or loaded.</value>
+  </data>
+  <data name="ServiceNotFound" xml:space="preserve">
+    <value>Could not instantiate a service required for native remote communication with SharePoint 2013. This may be because .Net 4.0 is not installed in this environment.</value>
+  </data>
+  <data name="MsgWebTemplateMissing" xml:space="preserve">
+    <value>This template does not exist on the target server. Please install this template on the target machine or map it to an existing template.</value>
+  </data>
+  <data name="UnexpectedEndOfTextNotAllTagsClosed" xml:space="preserve">
+    <value>Unexpected end of text reached. Not all tags were closed.</value>
+  </data>
+  <data name="SharePoint2013WorkflowFeatureNotActivated" xml:space="preserve">
+    <value>SharePoint 2013 Workflows feature is not activated on the target</value>
+  </data>
+  <data name="FS_Brackets" xml:space="preserve">
+    <value>[{0}]</value>
+  </data>
+  <data name="InvalidCommandName" xml:space="preserve">
+    <value>Invalid command name '{0}'</value>
+  </data>
+  <data name="Not_A_Valid_Absolute_URL" xml:space="preserve">
+    <value>'{0}' is not a valid absolute URL.</value>
+  </data>
+  <data name="FS_UnableToMigrateContentTypeWorkflow" xml:space="preserve">
+    <value>The content type workflow association failed to migrate with exception: {0}</value>
+  </data>
+  <data name="UrlUtils_GetValidSiteUrl_MaxTriesReached" xml:space="preserve">
+    <value>The maximum number of tries for correcting the site url have been reached. (max iterations: {0}, site url: {1})</value>
+  </data>
+  <data name="WorkflowInstances" xml:space="preserve">
+    <value>Workflow Instances</value>
+  </data>
+  <data name="No_Connections_Attempted" xml:space="preserve">
+    <value>No connections attempted.</value>
+  </data>
+  <data name="CannotParseTagAreaStartTagNotOpening" xml:space="preserve">
+    <value>Cannot parse area between tags. Start tag is not an opening tag.</value>
+  </data>
+  <data name="WorkflowInstanceNotSupportedInCSOM" xml:space="preserve">
+    <value>Workflow instances not supported in CSOM</value>
+  </data>
+  <data name="UnexpectedEndOfTextFailedToLocateClosingBracket" xml:space="preserve">
+    <value>Unexpected end of text reached. Failed to locate tag closing bracket.</value>
+  </data>
+  <data name="MsgCannotFindLanguageTemplates" xml:space="preserve">
+    <value>The templates for the given source language ({0}) cannot be found on the target server. This is most likely due to the source language pack not being installed on the target server.</value>
+  </data>
+  <data name="MsgCannotFindContentDatabase" xml:space="preserve">
+    <value>The selected content database does not exist in the object model. The new site collection cannot be added to it.</value>
+  </data>
+  <data name="WorkflowScopeNotFound" xml:space="preserve">
+    <value>The workflow association scope attribute was null, cannot add a new workflow association</value>
+  </data>
+  <data name="ErrorInCommandExecution" xml:space="preserve">
+    <value>Error in executing command '{0}' in '{1}' adapter</value>
+  </data>
+</root>

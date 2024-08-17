@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="3" DisableWebDesignFeatures="">
+    <NavBars>
+        <NavBar Name="SharePoint Top Navbar" ID="1002">
+        </NavBar>
+    </NavBars>
+    <ListTemplates>
+    </ListTemplates>
+
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+
+    <Configurations>
+        <Configuration ID="-1" Name="NewWeb"/>
+        <Configuration ID="0" Name="Default">
+            <Lists>
+                <List Title="$Resources:spscore,imglibList;" Description="$Resources:spscore,imglibList_Desc;" Type="109" Url="Image Library" FeatureId="00BFEA71-52D4-45B3-B544-B1C71B620109">
+                </List>
+            </Lists>
+            <SiteFeatures>
+                <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA" />
+	         <!-- Base site feature -->
+                <Feature ID="B21B090C-C796-4b0f-AC0F-7EF1659C20AE"/>
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/Default.aspx" />
+                        <Property Key="SimplePublishing" Value="true" />
+                    </Properties>
+                </Feature>
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+                    <!-- Per-Web Portal Navigation Properties-->                
+				    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+				        <Property Key="InheritGlobalNavigation" Value="true"/>
+			            <Property Key="ShowSiblings" Value="true"/>
+			            <Property Key="IncludeSubSites" Value="true"/>
+                    </Properties>
+                </Feature>
+
+	      <!-- News Content Type Binding feature -->
+	      <Feature ID="306936FD-9806-4478-80D1-7E397BFA6474">
+      	      </Feature>
+
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+
+            </WebFeatures>
+            <Modules>
+                <Module Name="NewsHomePage" />
+                <Module Name="NewsArticlePage" />
+                <Module Name="NewsArchivePage" />
+            </Modules>
+        </Configuration>
+        <Configuration ID="1" Name="Blank">
+            <ExecuteUrl Url="_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/settings.aspx" />
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="NewsHomePage" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+            <File Url="Default.aspx" Type="GhostableInLibrary" >
+                <Property Name="Title" Value="$Resources:spscore,NewsHomeLandingPage_Title;" />
+                <Property Name="ContentType" Value="$Resources:cmscore,contenttype_welcomepage_name;" />
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/newshomelayout.aspx, $Resources:spscore,NewsHomeLayoutTitle;" />
+                <AllUsersWebPart WebPartZoneID="TopZone" WebPartOrder="1"><![CDATA[
+                        <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+                                    <property name="Title" type="string">$Resources:spscore,RecentNewsWP_Title;</property>
+                                    <property name="ChromeType" type="chrometype">None</property>
+                                    <property name="XslLink" type="string">/Style Library/XSL Style Sheets/ContentQueryMain.xsl</property>
+                                    <property name="CommonViewFields" type="string">ExternalUrl,URL;PublishingPageImage,Image</property>
+                                    <property name="SortBy" type="string">Modified</property>
+                                    <property name="SortByDirection" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+SortDirection,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Desc</property>
+                                    <property name="ItemStyle" type="string">LargeTitle</property>
+                                    <property name="ItemLimit" type="int">1</property>
+                                    <property name="CacheDataTimeout" type="int">0</property>
+                                    <property name="ListName" type="string">$Resources:cmscore,PagesListDisplayName;</property>
+                                    <property name="WebUrl" type="string">~Site</property>
+				    <property name="FilterField1" type="string">{c042a256-787d-4a6f-8a8a-cf6ab767f12d}</property>
+				    <property name="FilterOperator1" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Eq</property>
+				    <property name="FilterValue1" type="string">$Resources:cmscore,contenttype_redirectpage_name;</property>
+				    <property name="FilterType1" type="string">Text</property>
+				    <property name="Filter1ChainingOperator" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterChainingOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Or</property>
+				    <property name="FilterField2" type="string">{c042a256-787d-4a6f-8a8a-cf6ab767f12d}</property>
+				    <property name="FilterOperator2" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Eq</property>
+				    <property name="FilterValue2" type="string">$Resources:cmscore,contenttype_articlepage_name;</property>
+				    <property name="FilterType2" type="string">Text</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                        </webParts>]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="1"><![CDATA[
+                    <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+                                    <property name="Title" type="string">$Resources:spscore,NewsRollUpWP_Title;</property>
+                                    <property name="ChromeType" type="chrometype">None</property>
+                                    <property name="XslLink" type="string">/Style Library/XSL Style Sheets/ContentQueryMain.xsl</property>
+                                    <property name="CommonViewFields" type="string">ExternalUrl,URL;PublishingPageImage,Image</property>
+                                    <property name="ItemStyle" type="string">Bullets</property>
+                                    <property name="DisplayColumns" type="int">2</property>
+                                    <property name="CacheDataTimeout" type="int">0</property>
+                                    <property name="ListName" type="string">$Resources:cmscore,PagesListDisplayName;</property>
+                                    <property name="WebUrl" type="string">~Site</property>
+                                    <property name="SortBy" type="string">Created</property>
+                                    <property name="SortByDirection" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+SortDirection,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Asc</property>
+				    <property name="FilterField1" type="string">{c042a256-787d-4a6f-8a8a-cf6ab767f12d}</property>
+				    <property name="FilterOperator1" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Eq</property>
+				    <property name="FilterValue1" type="string">$Resources:cmscore,contenttype_redirectpage_name;</property>
+				    <property name="FilterType1" type="string">Text</property>
+				    <property name="Filter1ChainingOperator" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterChainingOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Or</property>
+				    <property name="FilterField2" type="string">{c042a256-787d-4a6f-8a8a-cf6ab767f12d}</property>
+				    <property name="FilterOperator2" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Eq</property>
+				    <property name="FilterValue2" type="string">$Resources:cmscore,contenttype_articlepage_name;</property>
+				    <property name="FilterType2" type="string">Text</property>
+			            <property name="FeedEnabled" type="bool">True</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                    </webParts>]]>
+                </AllUsersWebPart>
+		<AllUsersWebPart WebPartZoneID="MiddleLeftZone" WebPartOrder="2"><![CDATA[
+			<webParts>
+			  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			    <metaData>
+			      <type name="Microsoft.SharePoint.Portal.WebControls.RSSAggregatorWebPart,Microsoft.SharePoint.Portal,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+			      <importErrorMessage>$Resources:spscore,WPImportErrorMessage</importErrorMessage>
+			    </metaData>
+			    <data>
+			      <properties>
+			        <property name="Title" type="string">$Resources:spscore,RSSViewer_WebPart_Title;</property>
+			        <property name="Description" type="string">$Resources:spscore,RSSViewer_WebPart_Description;</property>
+                                <property name="ChromeType" type="chrometype">TitleOnly</property>
+			        <property name="CacheXslStorage" type="bool">true</property>
+			        <property name="CacheXslTimeOut" type="int">600</property>
+				<property name="ParameterBindings" type="string">&lt;ParameterBinding Name="RequestUrl" Location="WPProperty[FeedUrl]"/&gt;</property>
+        <property name="DataSourcesString" type="string">
+&lt;%@ Register TagPrefix="WebControls" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;
+&lt;%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;
+&lt;WebControls:XmlUrlDataSource runat="server" AuthType="None" HttpMethod="GET"&gt;
+  &lt;DataFileParameters&gt;
+            &lt;WebPartPages:DataFormParameter Name="RequestUrl" ParameterKey="RequestUrl" PropertyName="ParameterValues"/&gt;
+&lt;/DataFileParameters&gt;
+&lt;/WebControls:XmlUrlDataSource&gt;
+	</property>
+		      </properties>
+		    </data>
+		  </webPart>
+		</webParts>]]>
+		</AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title>$Resources:spscore,ReportCenterOnet_CWP_Title</Title>
+		  	<FrameType>TitleBarOnly</FrameType>
+		  	<Description>$Resources:spscore,ReportCenterOnet_CWP_Description</Description>
+		 	<IsIncluded>true</IsIncluded>
+                        <ZoneID>TopLeftZone</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/images/wp_pers.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.ContactFieldControl</TypeName>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="2"><![CDATA[
+                        <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.Publishing.WebControls.SummaryLinkWebPart,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+                                    <property name="Title" type="string">$Resources:spscore,RelatedLinksWP_Title;</property>
+                                    <property name="ChromeType" type="chrometype">TitleOnly</property>
+                                    <property name="SummaryLinkStore" type="string">&lt;div title="_schemaversion" id="_3"&gt;
+                                                            &lt;div title="_links"&gt;
+                                                            &lt;div title="_link"&gt;
+                                                            &lt;span title="_title"&gt;$Resources:spscore,BrowseNewsArchive_Link;&lt;/span&gt;
+                                                            &lt;span title="_description"&gt;Link to news archive page&lt;/span&gt;
+                                                            &lt;span title="_linkurl"&gt;
+                                                            &lt;a href="~Site/$Resources:osrvcore,List_Pages_UrlName;/NewsArchive.aspx"&gt;&#47;News&#47;NewsArchive.aspx&lt;/a&gt;
+                                                            &lt;/span&gt;
+                                                            &lt;span title="_style"&gt;Bullets&lt;/span&gt;
+                                                            &lt;span title="_order"&gt;1&lt;/span&gt;
+                                                            &lt;span title="_begincolumn"&gt;True&lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div title="_view"&gt;
+                                                            &lt;span title="_columns"&gt;1&lt;/span&gt;
+                                                            &lt;span title="_linkstyle"&gt;Bullets&lt;/span&gt;
+                                                            &lt;span title="_groupstyle"&gt;DefaultHeader&lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;/div&gt;</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                        </webParts>]]>
+                </AllUsersWebPart>
+            </File>
+        </Module>
+        <Module Name="NewsArticlePage" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+            <File Url="Article1.aspx" Type="GhostableInLibrary" >
+                <Property Name="Title" Value="$Resources:spscore,CompanyNewsArticle_Title;" />
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/articleleft.aspx, $Resources:cmscore,PageLayout_ArticleLeft_Title;" />
+                <Property Name="ContentType" Value="$Resources:cmscore,contenttype_articlepage_name;" />
+                <Property Name="Comments" Value="" />
+                <Property Name="PublishingPageContent" Value="$Resources:spscore,SampleNewsArticle_LoremIspum;" />
+                <Property Name="PublishingPageImage" Value="&lt;img class=&quot;Align=&amp;amp;&amp;amp;Src=~SiteCollection%2FPublishingImages%2Fnewsarticleimage%2Ejpg&amp;amp;Href=&amp;amp;Height=143&amp;amp;Width=170&amp;amp;HSpace=0&amp;amp;VSpace=0&amp;amp;Border=0&amp;amp;&quot;  border=&quot;0&quot; hspace=&quot;0&quot; src=&quot;~SiteCollection/PublishingImages/newsarticleimage.jpg&quot; vspace=&quot;0&quot; Alt=&quot;&quot;&gt;" />
+            </File>
+        </Module>
+        <Module Name="NewsArchivePage" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+            <File Url="newsarchive.aspx" Type="GhostableInLibrary">
+                <Property Name="Title" Value="$Resources:spscore,NewsArchivePage_Title;" />
+                <AllUsersWebPart WebPartZoneID="MainZone" WebPartOrder="1"><![CDATA[
+                        <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+                                    <property name="Title" type="string">$Resources:spscore,NewsArchiveWP_Title;</property>
+                                    <property name="ChromeType" type="chrometype">None</property>
+                                    <property name="XslLink" type="string">/Style Library/XSL Style Sheets/ContentQueryMain.xsl</property>
+                                    <property name="CommonViewFields" type="string">ExternalUrl,URL;PublishingPageImage,Image</property>
+                                    <property name="ItemStyle" type="string">NoImage</property>
+                                    <property name="GroupStyle" type="string">DefaultHeader</property>
+                                    <property name="WebUrl" type="string">~Site</property>
+                                    <property name="CacheDataTimeout" type="int">0</property>
+				    <property name="FilterField1" type="string">{c042a256-787d-4a6f-8a8a-cf6ab767f12d}</property>
+				    <property name="FilterOperator1" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Eq</property>
+				    <property name="FilterValue1" type="string">$Resources:cmscore,contenttype_redirectpage_name;</property>
+				    <property name="FilterType1" type="string">Text</property>
+				    <property name="Filter1ChainingOperator" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterChainingOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Or</property>
+				    <property name="FilterField2" type="string">{c042a256-787d-4a6f-8a8a-cf6ab767f12d}</property>
+				    <property name="FilterOperator2" type="Microsoft.SharePoint.Publishing.WebControls.ContentByQueryWebPart+FilterFieldQueryOperator,Microsoft.SharePoint.Publishing,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c">Eq</property>
+				    <property name="FilterValue2" type="string">$Resources:cmscore,contenttype_articlepage_name;</property>
+				    <property name="FilterType2" type="string">Text</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                        </webParts>]]>
+                </AllUsersWebPart>
+            </File>
+        </Module>
+    </Modules>
+</Project>

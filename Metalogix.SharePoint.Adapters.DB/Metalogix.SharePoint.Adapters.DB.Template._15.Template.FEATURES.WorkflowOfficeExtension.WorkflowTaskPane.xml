@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeWebExtension xmlns="http://schemas.microsoft.com/office/webextensions/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneExtension">
+  <!--manifest for Taskpane MOE-->
+  <Id>SharepointWorkflowMOE</Id>
+  <IdIssuer>Custom</IdIssuer>
+  <Version>15.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-us</DefaultLocale>
+  <DisplayName DefaultValue="Workflow"></DisplayName>
+  <Description DefaultValue="Workflow Agave"></Description>
+  <IconUrl DefaultValue="http://officeimg.vo.msecnd.net/_layouts/images/general/office_logo.jpg"></IconUrl>
+  <HostApps>
+    <HostApp Name="Word" MinVersion="15.0"/>
+    <HostApp Name="Excel" MinVersion="15.0"/>
+  </HostApps>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="http://office/sites/699392e2-2876-4b64-9a5b-157a70e8b4d4/_layouts/15/WorkflowTaskPane.aspx">
+    </SourceLocation>
+    <RequestedHeight>400</RequestedHeight>
+  </DefaultSettings>
+  <RequestedCapabilities>ReadWriteDocument</RequestedCapabilities>
+</OfficeWebExtension>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="barButtonItemSupportForum" xml:space="preserve">
+    <value>This opens a web browser window that directs you to the Metalogix Support Forum.</value>
+  </data>
+  <data name="MetalogixUIWinFormsTransformersTCTransformation_barMenuAddTransformerLinkText" xml:space="preserve">
+    <value>custom_transformations_using_ps.html</value>
+  </data>
+  <data name="barButtonItemReplicator" xml:space="preserve">
+    <value>This will open an in-product information window for Metalogix Replicator.</value>
+  </data>
+  <data name="MetalogixUIWinFormsComponentsTCCertificateInclusionConfig" xml:space="preserve">
+    <value>This allows you to select and set any security Certificates that may be required to connect to SharePoint in your environment.</value>
+  </data>
+  <data name="barCheckItemSecondExplorer" xml:space="preserve">
+    <value>This option displays a second Explorer View in the main window. If the option is not selected, only one Explorer View (one tree view) will be displayed.</value>
+  </data>
+  <data name="barButtonItemTwitter" xml:space="preserve">
+    <value>This opens a web browser window to the Metalogix Twitter page.</value>
+  </data>
+  <data name="barButtonItemFacebook" xml:space="preserve">
+    <value>This opens a web browser window to the Metalogix Facebook page.</value>
+  </data>
+  <data name="barButtonItemContactSupport" xml:space="preserve">
+    <value>This opens an Email window so you can send a message directly to Metalogix Support.</value>
+  </data>
+  <data name="MetalogixUIWinFormsProxyTCProxyConfigw_cbProxyLinkText" xml:space="preserve">
+    <value>configuring_proxy_settings.html</value>
+  </data>
+  <data name="MetalogixUIWinFormsComponentsTCCertificateInclusionConfigLinkText" xml:space="preserve">
+    <value>connecting_with_certificates.html</value>
+  </data>
+  <data name="barButtonItemResetSticky" xml:space="preserve">
+    <value>This will reset the currently set migration configuration options back to the default settings, even if the preserve setting option is selected.</value>
+  </data>
+  <data name="barButtonItemUpdateLicence" xml:space="preserve">
+    <value>This opens a window that allows you to update your current license key.</value>
+  </data>
+  <data name="barCheckItemEnableSticky" xml:space="preserve">
+    <value>This option preserves any changes and setting configurations for most migration actions.</value>
+  </data>
+  <data name="MetalogixUIWinFormsThreadSettingsEditorSetting" xml:space="preserve">
+    <value>This will open a window that allows you to change the throttling setting for migration actions.</value>
+  </data>
+  <data name="barButtonItemAbout" xml:space="preserve">
+    <value>This opens the About window and provides details about you current version of Content Matrix Console.</value>
+  </data>
+  <data name="barButtonItemBlog" xml:space="preserve">
+    <value>This opens a web browser window to the Metalogix Blog page.</value>
+  </data>
+  <data name="MetalogixUIWinFormsTransformersEnableCustomTransformersSetting" xml:space="preserve">
+    <value>This option will allow custom transformers to be used with Content Matrix as part of a migration.</value>
+  </data>
+  <data name="barButtonItemStoragePoint" xml:space="preserve">
+    <value>This will open an in-product information window for Metalogix StoragePoint.</value>
+  </data>
+  <data name="UpdateAgentHelpTooltip" xml:space="preserve">
+    <value>This action will update the Content Matrix Console, license file, and all
+mapping files on the selected Agent with copies from this installation.</value>
+  </data>
+  <data name="barButtonItemLinkedIn" xml:space="preserve">
+    <value>This opens a web browser window to the Metalogix LinkedIn page.</value>
+  </data>
+  <data name="MetalogixUIWinFormsProxyTCProxyConfigw_cbProxy" xml:space="preserve">
+    <value>This Tab allows you to set any Proxy connection information that may be required to connect to SharePoint in your environment.</value>
+  </data>
+  <data name="barButtonItemRefresh" xml:space="preserve">
+    <value>Refreshes all current connections.</value>
+  </data>
+  <data name="barCheckItemShowJobsList" xml:space="preserve">
+    <value>This option will make the Job List visible at the bottom of the main window.  If the option is not selected, the Job List will not be visible.</value>
+  </data>
+  <data name="MetalogixUIWinFormsTransformersTCTransformation_barMenuAddTransformer" xml:space="preserve">
+    <value>This option allows you to add any custom transformer actions that you may have into the migration process. A transformer action must be manually configured beforehand. Transformers allow you to programmatically modify migrated objects during migration.</value>
+  </data>
+  <data name="barButtonManageActionTemplates" xml:space="preserve">
+    <value>This opens a new window that allows you to manage different configuration templates for Content Matrix actions.</value>
+  </data>
+  <data name="MetalogixUIWinFormsMetabaseMetabaseSettingsEditorSetting" xml:space="preserve">
+    <value>This will open a new window that allows you to select the storage type and location used for data associated with specific connections.</value>
+  </data>
+  <data name="barButtonItemUpdateCheck" xml:space="preserve">
+    <value>This will use your internet connection to check with Metalogix to see if there is a more recent build of Content Matrix that is available to download.</value>
+  </data>
+  <data name="barCheckItemShowCheckBoxes" xml:space="preserve">
+    <value>A set of checkboxes will be displayed in front of each node, under each connection. This is to help with multi-select features.</value>
+  </data>
+  <data name="MetalogixUIWinFormsShowAdvancedSetting" xml:space="preserve">
+    <value>Enables advanced right click menu features that are not needed by most users. For more information, please search for 'Advanced Mode' in Help Topics</value>
+  </data>
+  <data name="barButtonItemMetalogixAcademy" xml:space="preserve">
+    <value>This will open an in-product information window for Metalogix Academy.</value>
+  </data>
+</root>

@@ -1,0 +1,14 @@
+<Feature Id="A0E5A010-1329-49d4-9E09-F280CDBED37D"
+         Title="$Resources:SupportFeatureTitle;"
+         Description="$Resources:SupportFeatureDescription;"
+         Version="12.0.0.0"
+         Scope="Web"
+         Hidden="TRUE"
+         SolutionId="7ED6CD55-B479-4EB7-A529-E99A24C10BD3"
+         DefaultResourceFile="ipfscore"
+         xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ListTemplates\FormTemplates.xml" />
+    <ElementManifest Location="ListInstances\FormTemplatesList.xml" />
+  </ElementManifests>
+</Feature>

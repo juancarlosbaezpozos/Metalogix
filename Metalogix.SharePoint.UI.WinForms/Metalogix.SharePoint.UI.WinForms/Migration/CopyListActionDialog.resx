@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAAAIABoBAAAJgAAACAgAAAAACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAAEAE
+        AAAAAAAAAAAAAAAAAAAAAAAA////Af///wH///8B////Af///wH///8B////Af///wH///8BuXEJdblx
+        CWG5cQljuXEJY7lxCWO5cQlhuXEJb////wH///8B////Af///wH///8B////Af///wH///8B////Ablx
+        CU////8B////Af///wH///8B////AblxCSn///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wG5cQlV////Af///wH///8B////Af///wG5cQkx////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8BuXEJVf///wH///8B////Af///wH///8BuXEJMf///wH///8B////Af///wH///8B////Af//
+        /wH///8B////AblxCVX///8B////Af///wH///8B////AblxCTH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cQlL////Af///wH///8B////Af///wG5cQkx////Af///wH///8BuXEJCblx
+        CTG5cQkx////Af///wH///8BuXEJo7lxCW25cQlR////Af///wH///8BuXEJMblxCWG5cQmjuXEJz7lx
+        Cfe5cQn/uXEJjblxCRn///8B////AblxCRe5cQlxuXEJS////wH///8B////AblxCSu5cQnTuXEJ/7lx
+        Cf+5cQn/uXEJ/7lxCY+5cQnxuXEJbf///wH///8BuXEJG7lxCYW5cQlnuXEJZ7lxCWe5cQlhuXEJz7lx
+        CdO5cQk3uXEJt7lxCf+5cQmLuXEJr7lxCZe5cQk/////Af///wH///8B////AblxCQ3///8B////Ablx
+        Cc+5cQn5uXEJu7lxCWu5cQn/uXEJj////wG5cQkDuXEJ1blxCV3///8B////AblxCQu5cQnRuXEJX///
+        /wG5cQnPuXEJ07lxCUG5cQnzuXEJ/7lxCY////8BuXEJC7lxCfO5cQmx////Af///wG5cQkNuXEJY7lx
+        CQf///8BuXEJz7lxCeG5cQlFuXEJr7lxCf+5cQmLuXEJR7lxCTm5cQmJuXEJB////wH///8BuXEJB7lx
+        CZf///8B////AblxCc+5cQn/uXEJ+7lxCfu5cQn/uXEJj7lxCfu5cQmx////AblxCS25cQmBuXEJYblx
+        CZW5cQkb////Af///wG5cQm3uXEJ+blxCf+5cQn/uXEJ/7lxCYu5cQl3uXEJHf///wH///8BuXEJA7lx
+        CRH///8B////Af///wH///8B////AblxCQu5cQk1uXEJY7lxCaO5cQlx////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////AQAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8oAAAAIAAAAEAAAAABACAAAAAAAIAQAAAAAAAAAAAAAAAA
+        AAAAAAAA////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8BuXEJLblxCZO5cQl9uXEJg7lxCYO5cQmDuXEJg7lxCYO5cQmDuXEJg7lx
+        CYO5cQl/uXEJlblxCUP///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wG5cQmVuXEJf7lxCT+5cQlFuXEJRblxCUW5cQlFuXEJRblx
+        CUW5cQlFuXEJRblxCT+5cQlvuXEJdf///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////AblxCYe5cQkN////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wG5cQlD////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BuXEJhblxCSX///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8BuXEJGblxCUv///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wG5cQmFuXEJJf//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wG5cQkZuXEJS////wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Ablx
+        CYW5cQkl////Af///wH///8B////Af///wH///8B////Af///wH///8B////AblxCRm5cQlL////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8BuXEJhblxCSX///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BuXEJGblx
+        CUv///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cQmFuXEJJf///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wG5cQkZuXEJS////wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////AblxCYW5cQkl////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////AblxCRm5cQlL////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8BuXEJhblxCSX///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8BuXEJGblxCUv///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wG5cQmFuXEJJf///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wG5cQkZuXEJS////wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AblxCX////8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////AblxCRm5cQlL////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BuXEJrblx
+        CYu5cQl3uXEJh7lxCV////8B////Af///wH///8B////Af///wH///8BuXEJGblxCUv///8B////Af//
+        /wH///8B////Af///wH///8BuXEJH7lxCUu5cQl7uXEJpblxCR3///8B////Af///wH///8B////Af//
+        /wG5cQlduXEJ+blxCV+5cQlXuXEJyblxCR3///8B////Af///wH///8B////Af///wG5cQkZuXEJS///
+        /wG5cQkNuXEJMblxCV25cQmLuXEJt7lxCd+5cQn/uXEJ/7lxCf+5cQn/uXEJJf///wH///8B////Af//
+        /wH///8B////Af///wG5cQlXuXEJnf///wG5cQl3uXEJLf///wH///8B////Af///wH///8B////Ablx
+        CRm5cQlLuXEJg7lxCfG5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQkVuXEJI7lx
+        CT////8B////Af///wH///8B////Af///wG5cQl7uXEJqblxCYv///8B////Af///wH///8B////Af//
+        /wH///8B////AblxCUm5cQmxuXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJ9blx
+        CSO5cQnjuXEJ/7lxCaH///8B////Af///wH///8B////Af///wG5cQlpuXEJ/7lxCW+5cQlluXEJZ7lx
+        CWe5cQlnuXEJZ7lxCWW5cQmNuXEJcblxCZ+5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lx
+        Cf+5cQnxuXEJMblxCee5cQn/uXEJ/7lxCRP///8B////Af///wH///8B////Af///wG5cQk1uXEJb7lx
+        CWe5cQlnuXEJZ7lxCWe5cQlnuXEJablxCWm5cQkduXEJn7lxCf+5cQn/uXEJ3blxCVm5cQlZuXEJ4blx
+        Cf+5cQn/uXEJ/7lxCfG5cQkpuXEJ+blxCf+5cQnruXEJ6blxCRP///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wG5cQmfuXEJ/7lxCf+5cQl1uXEJDblx
+        CSG5cQkPuXEJ77lxCf+5cQn/uXEJ/blxCRe5cQlPuXEJd7lxCQW5cQmFuXEJ6f///wH///8B////Af//
+        /wH///8B////Af///wH///8B////AblxCQ25cQkn////Af///wH///8B////AblxCZ+5cQn/uXEJ/7lx
+        Cee5cQn/uXEJ7////wG5cQm7uXEJ/7lxCf+5cQn/uXEJH////wH///8B////Af///wG5cQnfuXEJoblx
+        CTP///8B////Af///wH///8B////Af///wH///8BuXEJo7lxCf+5cQmvuXEJLf///wH///8BuXEJn7lx
+        Cf+5cQn/uXEJ/7lxCem5cQkT////AblxCe+5cQn/uXEJ/7lxCf+5cQkf////Af///wH///8BuXEJCblx
+        Cde5cQn/uXEJ/7lxCT////8B////Af///wH///8B////AblxCSu5cQnxuXEJtblxCXG5cQkx////Af//
+        /wG5cQmfuXEJ/7lxCf+5cQnpuXEJA7lxCQO5cQnNuXEJ/7lxCf+5cQn/uXEJ/7lxCR////8B////Af//
+        /wG5cQkruXEJ/7lxCf+5cQn/uXEJmf///wH///8B////Af///wH///8BuXEJM7lxCUG5cQmPuXEJCf//
+        /wH///8B////AblxCZ+5cQn/uXEJ/7lxCWX///8BuXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJH///
+        /wH///8B////Af///wG5cQnRuXEJ/7lxCf25cQkz////Af///wH///8B////Af///wH///8B////Ablx
+        Cb+5cQkP////Af///wH///8BuXEJn7lxCf+5cQn/uXEJh////wG5cQm3uXEJp7lxCfu5cQn/uXEJ/7lx
+        Cf+5cQkb////Af///wH///8B////AblxCe25cQl9uXEJHf///wH///8B////Af///wH///8B////Af//
+        /wG5cQlruXEJu////wH///8B////Af///wG5cQmfuXEJ/7lxCf+5cQn/uXEJX////wG5cQkZuXEJ/7lx
+        Cf+5cQn/uXEJ+7lxCRm5cQl3uXEJp7lxCS25cQm3uXEJu////wH///8B////Af///wH///8B////Af//
+        /wH///8BuXEJHblxCfu5cQk5////Af///wH///8B////AblxCZ+5cQn/uXEJ/7lxCf+5cQn/uXEJ77lx
+        CfG5cQn/uXEJ/7lxCf+5cQnxuXEJLblxCf+5cQn/uXEJ/7lxCcX///8B////Af///wG5cQl3uXEJi7lx
+        CRv///8BuXEJFblxCXO5cQnxuXEJa////wH///8B////Af///wH///8BuXEJn7lxCf+5cQn/uXEJ/7lx
+        Cf+5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lxCfG5cQkxuXEJ77lxCf+5cQn/////Af///wH///8B////Ablx
+        CTu5cQmnuXEJt7lxCbO5cQm9uXEJt7lxCT3///8B////Af///wH///8B////Af///wG5cQm5uXEJ/7lx
+        Cf+5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJ97lxCR+5cQnHuXEJ/blxCXP///8B////Af//
+        /wH///8B////Af///wG5cQkLuXEJLblxCRP///8B////Af///wH///8B////Af///wH///8B////Ablx
+        CWG5cQnDuXEJ6blxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJ/7lxCf+5cQn/uXEJF7lxCQO5cQkX////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wG5cQkFuXEJJ7lxCVG5cQmBuXEJrblxCde5cQn9uXEJ/7lxCf+5cQkn////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BuXEJCblxCS+5cQlfuXEJiblx
+        CRn///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>784, 502</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnSave.Name" xml:space="preserve">
+    <value>w_btnSave</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Name" xml:space="preserve">
+    <value>w_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CopyListActionDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableLeftNavigableTabsForm, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnOK.Name" xml:space="preserve">
+    <value>w_btnOK</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="CopyListActionDialog.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+</root>

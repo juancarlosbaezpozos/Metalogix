@@ -1,0 +1,1181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="w_cbCopyCustomContent.Properties.Caption" xml:space="preserve">
+    <value>Copy Other Root Files/Folders</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbContentTypes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_rbClearTargetFeatures.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_teNewSiteTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 24</value>
+  </data>
+  <data name="w_cbPreserveMasterPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_plThemes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 40</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeTemplate.Name" xml:space="preserve">
+    <value>w_cbChangeTemplate</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyTheme.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plMasterPage.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.Name" xml:space="preserve">
+    <value>w_cmbTemplateName</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyTheme.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_rbAllThemes.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_cbChangeTemplate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpApplyTheme.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_plThemes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_plFeatures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 247</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyCustomContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyCustomContent.Name" xml:space="preserve">
+    <value>w_cbCopyCustomContent</value>
+  </data>
+  <data name="w_cbPreserveUIVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeTemplate.Parent" xml:space="preserve">
+    <value>w_plSiteScoped</value>
+  </data>
+  <data name="w_cbApplyTheme.Properties.Caption" xml:space="preserve">
+    <value>Preserve Themes </value>
+  </data>
+  <data name="w_plFeatures.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_cmbTemplateName.Parent" xml:space="preserve">
+    <value>w_plSiteScoped</value>
+  </data>
+  <data name="w_rbPreserveOnTarget.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_cbCopySubsites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_rbCopyOnlyTopNavBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 60</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubsites.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyBothQuickLaunchAndTopNav.Parent" xml:space="preserve">
+    <value>w_plNavStructCopy</value>
+  </data>
+  <data name="w_rbCopyOnlyQuickLaunch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 19</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 492</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyBothQuickLaunchAndTopNav.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_cbSiteFeatures.Properties.Caption" xml:space="preserve">
+    <value>Copy Site Features</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPortalListings.Name" xml:space="preserve">
+    <value>w_cbCopyPortalListings</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPortalListings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeTemplate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_rbPreserveOnTarget.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_plMasterPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plMasterPage.Name" xml:space="preserve">
+    <value>w_plMasterPage</value>
+  </data>
+  <data name="w_rbCopyBothQuickLaunchAndTopNav.Properties.Caption" xml:space="preserve">
+    <value>Copy both the quick launch and the top navigation bar</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubsites.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.Name" xml:space="preserve">
+    <value>w_plSiteScoped</value>
+  </data>
+  <data name="&gt;&gt;w_cbNavigation.Name" xml:space="preserve">
+    <value>w_cbNavigation</value>
+  </data>
+  <data name="&gt;&gt;w_cbNavigation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbApplyTheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 19</value>
+  </data>
+  <data name="w_cbContentTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 19</value>
+  </data>
+  <data name="&gt;&gt;w_helpClearTargetFeatures.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyTopNavBar.Name" xml:space="preserve">
+    <value>w_rbCopyOnlyTopNavBar</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyTopNavBar.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbNavigation.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="w_cmbTemplateName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_plUIVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 399</value>
+  </data>
+  <data name="&gt;&gt;w_cbNavigation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cmbTemplateName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 0</value>
+  </data>
+  <data name="&gt;&gt;w_helpClearTargetFeatures.Parent" xml:space="preserve">
+    <value>w_plFeatures</value>
+  </data>
+  <data name="w_cbRunNavigationStructureCopy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_rbCopyOnlyTopNavBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveMasterPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_cbCopyCustomContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 19</value>
+  </data>
+  <data name="w_plMasterPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 23</value>
+  </data>
+  <data name="w_plNavStructCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_cbPreserveMasterPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 19</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_rbCopyOnlyQuickLaunch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 40</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveMasterPage.Parent" xml:space="preserve">
+    <value>w_plMasterPage</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyUncustomizedFiles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_rbClearTargetFeatures.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_rbCopyOnlyTopNavBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_teNewSiteTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_helpApplyTheme.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="w_cbNavigation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyUncustomizedFiles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpApplyTheme.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="_lblNewSiteName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="_lblNewSiteName.Text" xml:space="preserve">
+    <value>New Site Name</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteTitle.Parent" xml:space="preserve">
+    <value>w_plSingleSitePanel</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbCopyUncustomizedFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="w_cbNavigation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 124</value>
+  </data>
+  <data name="w_cbCopyUncustomizedFiles.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_rbCurrentTheme.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_rbCurrentTheme.Name" xml:space="preserve">
+    <value>_rbCurrentTheme</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteName.Name" xml:space="preserve">
+    <value>_teNewSiteName</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyTheme.Name" xml:space="preserve">
+    <value>w_cbApplyTheme</value>
+  </data>
+  <data name="&gt;&gt;w_cbApplyTheme.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveOnTarget.Parent" xml:space="preserve">
+    <value>w_plFeatures</value>
+  </data>
+  <data name="w_helpCopySubsites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_helpApplyTheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plMasterPage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_lblNewSiteName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_plNavStructCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 80</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteName.Parent" xml:space="preserve">
+    <value>w_plSingleSitePanel</value>
+  </data>
+  <data name="w_helpApplyTheme.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_rbClearTargetFeatures.Parent" xml:space="preserve">
+    <value>w_plFeatures</value>
+  </data>
+  <data name="w_plMasterPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 376</value>
+  </data>
+  <data name="w_cbSiteFeatures.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_plSiteScoped.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_rbCopyBothQuickLaunchAndTopNav.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 19</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_rbPreserveOnTarget.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbPreserveOnTarget.Name" xml:space="preserve">
+    <value>w_rbPreserveOnTarget</value>
+  </data>
+  <data name="_lblNewSiteName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 3</value>
+  </data>
+  <data name="w_cbCopyPortalListings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_plFeatures.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plFeatures.Name" xml:space="preserve">
+    <value>w_plFeatures</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveUIVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveUIVersion.Name" xml:space="preserve">
+    <value>w_cbPreserveUIVersion</value>
+  </data>
+  <data name="w_plCopyPortalListings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 23</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveUIVersion.Parent" xml:space="preserve">
+    <value>w_plUIVersion</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;helpTipCopyOnlyQuickLaunch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteName.Parent" xml:space="preserve">
+    <value>w_plSingleSitePanel</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveOnTarget.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_lblNewSiteTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="_plThemes.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_cbRunNavigationStructureCopy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbRunNavigationStructureCopy.Name" xml:space="preserve">
+    <value>w_cbRunNavigationStructureCopy</value>
+  </data>
+  <data name="_rbCurrentTheme.Properties.Caption" xml:space="preserve">
+    <value>Copy Current Theme only</value>
+  </data>
+  <data name="w_rbCopyBothQuickLaunchAndTopNav.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbSiteFeatures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 227</value>
+  </data>
+  <data name="w_cbPreserveUIVersion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_teNewSiteName.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_cbChangeTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;helpTipCopyOnlyQuickLaunch.Parent" xml:space="preserve">
+    <value>w_plNavStructCopy</value>
+  </data>
+  <data name="w_rbClearTargetFeatures.Properties.Caption" xml:space="preserve">
+    <value>Clear Default Features on Target</value>
+  </data>
+  <data name="&gt;&gt;w_rbPreserveOnTarget.Parent" xml:space="preserve">
+    <value>w_plFeatures</value>
+  </data>
+  <data name="_rbCurrentTheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 19</value>
+  </data>
+  <data name="_rbAllThemes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 0</value>
+  </data>
+  <data name="w_rbClearTargetFeatures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <data name="w_cbPreserveMasterPage.Properties.Caption" xml:space="preserve">
+    <value>Preserve Master Page</value>
+  </data>
+  <data name="&gt;&gt;_rbAllThemes.Name" xml:space="preserve">
+    <value>_rbAllThemes</value>
+  </data>
+  <data name="&gt;&gt;_rbAllThemes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plMasterPage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpCopySubsites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_rbPreserveOnTarget.Properties.Caption" xml:space="preserve">
+    <value>Preserve Default Features on Target</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubsites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopySubsites.Name" xml:space="preserve">
+    <value>w_cbCopySubsites</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyTheme.Parent" xml:space="preserve">
+    <value>_plThemes</value>
+  </data>
+  <data name="w_helpCopySubsites.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="w_cbRunNavigationStructureCopy.Properties.Caption" xml:space="preserve">
+    <value>Copy Navigation Links and Headings</value>
+  </data>
+  <data name="w_cbCopyUncustomizedFiles.Properties.Caption" xml:space="preserve">
+    <value>Copy Uncustomized Files (Ghosted Files)</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteTitle.Parent" xml:space="preserve">
+    <value>w_plSingleSitePanel</value>
+  </data>
+  <data name="w_plSingleSitePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 46</value>
+  </data>
+  <data name="&gt;&gt;_rbCurrentTheme.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbNavigation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveUIVersion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_plCopyPortalListings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 353</value>
+  </data>
+  <data name="_teNewSiteTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="w_cbChangeTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 19</value>
+  </data>
+  <data name="w_plSingleSitePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="w_cmbTemplateName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 20</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopySubsites.Name" xml:space="preserve">
+    <value>w_helpCopySubsites</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopySubsites.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_plSingleSitePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_rbCopyBothQuickLaunchAndTopNav.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="w_plSiteScoped.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 7</value>
+  </data>
+  <data name="&gt;&gt;w_rbPreserveOnTarget.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_cbPreserveUIVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPortalListings.Parent" xml:space="preserve">
+    <value>w_plCopyPortalListings</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyTheme.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyTheme.Name" xml:space="preserve">
+    <value>w_helpApplyTheme</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, -1</value>
+  </data>
+  <data name="&gt;&gt;w_plUIVersion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plUIVersion.Name" xml:space="preserve">
+    <value>w_plUIVersion</value>
+  </data>
+  <data name="w_cbSiteFeatures.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_helpApplyTheme.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_cbApplyTheme.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_rbCurrentTheme.Parent" xml:space="preserve">
+    <value>_plThemes</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyCustomContent.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_cbApplyTheme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 289</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteTitle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpApplyTheme.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="_rbCurrentTheme.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyCustomContent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpCopySubsites.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_cbContentTypes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyPortalListings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_cbRunNavigationStructureCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 0</value>
+  </data>
+  <data name="&gt;&gt;w_plSingleSitePanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbRenameSite.Properties.Caption" xml:space="preserve">
+    <value>Rename Site</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 19</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_teNewSiteTitle.Name" xml:space="preserve">
+    <value>_teNewSiteTitle</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="_plThemes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 310</value>
+  </data>
+  <data name="w_cbCopyUncustomizedFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 19</value>
+  </data>
+  <data name="w_cbCopyCustomContent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyUncustomizedFiles.Name" xml:space="preserve">
+    <value>w_cbCopyUncustomizedFiles</value>
+  </data>
+  <data name="&gt;&gt;w_cbCopyUncustomizedFiles.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_helpClearTargetFeatures.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpClearTargetFeatures.Name" xml:space="preserve">
+    <value>w_helpClearTargetFeatures</value>
+  </data>
+  <data name="w_cbCopyCustomContent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 423</value>
+  </data>
+  <data name="w_rbCopyOnlyTopNavBar.Properties.Caption" xml:space="preserve">
+    <value>Only copy the top navigation bar</value>
+  </data>
+  <data name="w_cbNavigation.Properties.Caption" xml:space="preserve">
+    <value>Copy Navigation and Tree View Settings</value>
+  </data>
+  <data name="w_cbCopyPortalListings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteFeatures.Name" xml:space="preserve">
+    <value>w_cbSiteFeatures</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteFeatures.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbCopySubsites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 19</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_teNewSiteName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="w_cbRenameSite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 19</value>
+  </data>
+  <data name="_lblNewSiteTitle.Text" xml:space="preserve">
+    <value>New Site Title</value>
+  </data>
+  <data name="_lblNewSiteTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;w_plSingleSitePanel.Parent" xml:space="preserve">
+    <value>w_plSiteScoped</value>
+  </data>
+  <data name="w_cbRunNavigationStructureCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveOnTarget.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_helpPreserveOnTarget.Name" xml:space="preserve">
+    <value>w_helpPreserveOnTarget</value>
+  </data>
+  <data name="w_rbClearTargetFeatures.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopySubsites.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_rbCopyOnlyTopNavBar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_cbPreserveUIVersion.Properties.Caption" xml:space="preserve">
+    <value>Preserve 2007 Look and Feel</value>
+  </data>
+  <data name="w_cbContentTypes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="w_cbChangeTemplate.Properties.Caption" xml:space="preserve">
+    <value>Change Template</value>
+  </data>
+  <data name="_rbAllThemes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 19</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 39</value>
+  </data>
+  <data name="_teNewSiteName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteFeatures.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_rbCurrentTheme.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_plSiteScoped.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbContentTypes.Properties.Caption" xml:space="preserve">
+    <value>Copy Content Types</value>
+  </data>
+  <data name="w_helpCopySubsites.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;_rbAllThemes.Parent" xml:space="preserve">
+    <value>_plThemes</value>
+  </data>
+  <data name="&gt;&gt;helpTipCopyOnlyQuickLaunch.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=7.3.0.1, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;helpTipCopyOnlyQuickLaunch.Name" xml:space="preserve">
+    <value>helpTipCopyOnlyQuickLaunch</value>
+  </data>
+  <data name="w_rbPreserveOnTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 19</value>
+  </data>
+  <data name="_rbAllThemes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_cbCopyUncustomizedFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 443</value>
+  </data>
+  <data name="w_cbRenameSite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbSiteFeatures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 19</value>
+  </data>
+  <data name="w_plUIVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 23</value>
+  </data>
+  <data name="w_cbNavigation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_helpCopySubsites.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyPortalListings.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_lblNewSiteTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 27</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyTopNavBar.Parent" xml:space="preserve">
+    <value>w_plNavStructCopy</value>
+  </data>
+  <data name="w_cbPreserveMasterPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_cbPreserveUIVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="w_helpCopySubsites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 81</value>
+  </data>
+  <data name="w_rbPreserveOnTarget.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCSiteContentOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_cbChangeTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_plFeatures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 40</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteTitle.Name" xml:space="preserve">
+    <value>_lblNewSiteTitle</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_rbClearTargetFeatures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 19</value>
+  </data>
+  <data name="w_cbPreserveMasterPage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbSiteFeatures.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbCopyPortalListings.Properties.Caption" xml:space="preserve">
+    <value>Copy Portal Listings</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="w_cbCopySubsites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 82</value>
+  </data>
+  <data name="&gt;&gt;w_plFeatures.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="w_helpPreserveOnTarget.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_plUIVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyTopNavBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_rbAllThemes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plUIVersion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_plNavStructCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 146</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteName.Name" xml:space="preserve">
+    <value>_lblNewSiteName</value>
+  </data>
+  <data name="&gt;&gt;_lblNewSiteName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbRenameSite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_plUIVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyBothQuickLaunchAndTopNav.Name" xml:space="preserve">
+    <value>w_rbCopyBothQuickLaunchAndTopNav</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyBothQuickLaunchAndTopNav.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="w_helpApplyTheme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 288</value>
+  </data>
+  <data name="w_helpApplyTheme.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_cbRenameSite.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_plThemes.Name" xml:space="preserve">
+    <value>_plThemes</value>
+  </data>
+  <data name="&gt;&gt;_plThemes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plSingleSitePanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plSingleSitePanel.Name" xml:space="preserve">
+    <value>w_plSingleSitePanel</value>
+  </data>
+  <data name="&gt;&gt;w_plFeatures.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbApplyTheme.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="helpTipCopyOnlyQuickLaunch.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_rbCopyBothQuickLaunchAndTopNav.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_rbCopyOnlyQuickLaunch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_cbCopySubsites.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_plCopyPortalListings.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyPortalListings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_helpCopySubsites.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="w_cbCopySubsites.Properties.Caption" xml:space="preserve">
+    <value>Copy Child Sites recursively</value>
+  </data>
+  <data name="&gt;&gt;w_plNavStructCopy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plNavStructCopy.Name" xml:space="preserve">
+    <value>w_plNavStructCopy</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameSite.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_cbCopyCustomContent.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="w_cbRunNavigationStructureCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 19</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_helpClearTargetFeatures.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_cbRunNavigationStructureCopy.Parent" xml:space="preserve">
+    <value>w_plNavStructCopy</value>
+  </data>
+  <data name="&gt;&gt;w_plNavStructCopy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyQuickLaunch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cbCopyPortalListings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyPortalListings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_plCopyPortalListings.Name" xml:space="preserve">
+    <value>w_plCopyPortalListings</value>
+  </data>
+  <data name="w_plSiteScoped.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_cbCopyPortalListings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbContentTypes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameSite.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameSite.Name" xml:space="preserve">
+    <value>w_cbRenameSite</value>
+  </data>
+  <data name="_plThemes.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="w_helpCopySubsites.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="w_plSiteScoped.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 69</value>
+  </data>
+  <data name="&gt;&gt;_plThemes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_rbCurrentTheme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <data name="&gt;&gt;w_plNavStructCopy.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_rbAllThemes.Properties.Caption" xml:space="preserve">
+    <value>Copy All Themes</value>
+  </data>
+  <data name="&gt;&gt;w_rbClearTargetFeatures.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbClearTargetFeatures.Name" xml:space="preserve">
+    <value>w_rbClearTargetFeatures</value>
+  </data>
+  <data name="w_rbCopyOnlyQuickLaunch.Properties.Caption" xml:space="preserve">
+    <value>Only copy the quick launch</value>
+  </data>
+  <data name="&gt;&gt;w_cbContentTypes.Name" xml:space="preserve">
+    <value>w_cbContentTypes</value>
+  </data>
+  <data name="&gt;&gt;w_cbContentTypes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveMasterPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbPreserveMasterPage.Name" xml:space="preserve">
+    <value>w_cbPreserveMasterPage</value>
+  </data>
+  <data name="&gt;&gt;w_cbRenameSite.Parent" xml:space="preserve">
+    <value>w_plSingleSitePanel</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyQuickLaunch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyQuickLaunch.Name" xml:space="preserve">
+    <value>w_rbCopyOnlyQuickLaunch</value>
+  </data>
+  <data name="&gt;&gt;w_cbRunNavigationStructureCopy.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_rbCopyOnlyQuickLaunch.Parent" xml:space="preserve">
+    <value>w_plNavStructCopy</value>
+  </data>
+  <data name="w_plNavStructCopy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_rbCopyOnlyQuickLaunch.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_rbPreserveOnTarget.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 0</value>
+  </data>
+  <data name="&gt;&gt;w_cbContentTypes.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+</root>

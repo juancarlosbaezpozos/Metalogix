@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Title="$Resources:onet_BlogWebSite;" Revision="4" ListDir="$Resources:core,lists_Folder;" xmlns:ows="Microsoft SharePoint" UIVersion="15" HideSiteContentsLink="true">
+  <NavBars>
+    <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002" />
+    <NavBar Name="$Resources:core,category_NavHome;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1031" />
+    <NavBar Name="$Resources:core,category_SiteContents;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1034" />
+  </NavBars>
+  <ListTemplates>
+  </ListTemplates>
+  <DocumentTemplates>
+    <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+  </DocumentTemplates>
+  <Configurations>
+    <Configuration ID="0" Name="Basic" MasterUrl="_catalogs/masterpage/v15.master">
+      <Lists>
+      </Lists>
+      <SiteFeatures>
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+        <!-- Three-state Workflow Feature -->
+        <Feature ID="FDE5D850-671E-4143-950A-87B473922DC7" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- MobilityRedirect -->
+        <Feature ID="F41CC668-37E5-4743-B4A8-74D1DB3FD8A4" />
+        <!-- Blog feature -->
+        <Feature ID="FAF00902-6BAB-4583-BD02-84DB191801D8" />
+        <!-- MDS -->
+        <Feature ID="87294C72-F260-42f3-A41B-981A2FFCE37A" />
+      </WebFeatures>
+      <Modules>
+        <Module Name="BasicHome" />
+      </Modules>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="BasicHome" Url="" Path="">
+      <File Url="default.aspx" IgnoreIfAlreadyExists="TRUE">
+        <View List="$Resources:core,lists_Folder;/$Resources:core,blogpost_Folder;" BaseViewID="0" WebPartZoneID="Left" WebPartOrder="1"><![CDATA[
+                        <webParts>
+                            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                <metaData>
+                                    <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                    <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                                </metaData>
+                                <data>
+                                    <properties>
+                                        <property name="AllowConnect" type="bool">True</property>
+                                        <property name="ChromeType" type="chrometype">None</property>
+                                        <property name="AllowClose" type="bool">False</property>
+                                    </properties>
+                                </data>
+                            </webPart>
+                        </webParts>
+                    ]]></View>
+        <View List="$Resources:core,lists_Folder;/$Resources:core,blogcatagories_Folder;" BaseViewID="0" WebPartZoneID="BlogNavigator" WebPartOrder="1"><![CDATA[
+                        <webParts>
+                            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                <metaData>
+                                    <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                    <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                                </metaData>
+                                <data>
+                                    <properties>
+                                        <property name="AllowConnect" type="bool">True</property>
+                                        <property name="ChromeType" type="chrometype">None</property>
+                                    </properties>
+                                </data>
+                            </webPart>
+                        </webParts>
+                    ]]></View>
+        <AllUsersWebPart WebPartZoneID="BlogNavigator" WebPartOrder="2"><![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                      <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                      <TypeName>Microsoft.SharePoint.WebPartPages.BlogMonthQuickLaunch</TypeName>
+                      <Title>$Resources:core,months_schema_blg_title;</Title>
+                      <Description>$Resources:core,blog_month_quick_launch;</Description>
+                      <FrameType>None</FrameType>
+                      <FrameState>Normal</FrameState>
+                      <IsVisible>true</IsVisible>
+                      </WebPart>
+                   ]]></AllUsersWebPart>
+        <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="1"><![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                      <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                      <TypeName>Microsoft.SharePoint.WebPartPages.BlogAdminWebPart</TypeName>
+                      <Title>$Resources:core,adminlinks_schema_blg_title;</Title>
+                      <Description>$Resources:core,blog_admin_links;</Description>
+                      <FrameType>None</FrameType>
+                      <FrameState>Normal</FrameState>
+                      <IsVisible>true</IsVisible>
+                      </WebPart>
+                   ]]></AllUsersWebPart>
+        <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="2"><![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                    <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                    <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                    <Title>$Resources:core,aboutblog_title;</Title>
+                    <FrameType>None</FrameType>
+                    <FrameState>Normal</FrameState>
+                    <Description></Description>
+                    <Height />
+                    <Width />
+                    <AllowRemove>true</AllowRemove>
+                    <AllowZoneChange>true</AllowZoneChange>
+                    <AllowMinimize>true</AllowMinimize>
+                    <AllowConnect>true</AllowConnect>
+                    <AllowEdit>true</AllowEdit>
+                    <AllowHide>true</AllowHide>
+                    <IsVisible>true</IsVisible>
+                    <DetailLink />
+                    <HelpLink />
+                    <HelpMode>Modeless</HelpMode>
+                    <Dir>Default</Dir>
+                    <PartImageSmall />
+                    <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+                    <PartImageLarge>/_layouts/15/images/homepage.gif</PartImageLarge>
+                    <IsIncludedFilter />
+                    <ExportControlledProperties>true</ExportControlledProperties>
+                    <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                    <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+                        &lt;table style="width: 100%"&gt;
+                              &lt;tr &gt;
+                                &lt;td &gt;
+                                  &lt;img alt="$Resources:core,aboutblogimage_alt;" src="/_layouts/15/images/blogabout96.png" class="ms-blog-aboutImage" /&gt; 
+                                &lt;/td &gt;
+                              &lt;/tr &gt;
+                              &lt;tr &gt;
+                                &lt;td class="ms-textSmall" &gt;
+                                  $Resources:core,aboutblog_description2;
+                                &lt;/td &gt;
+                              &lt;/tr &gt;
+                        &lt;/table &gt;
+                        </Content>
+                    <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                    </WebPart>        
+                ]]></AllUsersWebPart>
+        <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="3"><![CDATA[
+                      <webParts>
+                         <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                               <type name="Microsoft.SharePoint.WebPartPages.BlogLinksWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                            </metaData>
+                            <data>
+                               <properties>
+                                  <property name="Title" type="string">$Resources:core,BlogNotificationsWPTitle;</property>
+                                  <property name="Description" type="string">$Resources:core,BlogNotificationsWPDescription;</property>
+                                  <property name="ChromeType" type="chrometype">None</property>
+                                  <property name="ListUrl" type="string">$Resources:core,lists_Folder;/$Resources:core,blogpost_Folder;</property>
+                               </properties>
+                            </data>
+                         </webPart>
+                      </webParts>
+                   ]]></AllUsersWebPart>
+        <NavBarPage Name="$Resources:core,nav_Home;" Url="~site" ID="1002" Position="Start" />
+      </File>
+    </Module>
+  </Modules>
+  <ServerEmailFooter>$Resources:ServerEmailFooter;</ServerEmailFooter>
+</Project>

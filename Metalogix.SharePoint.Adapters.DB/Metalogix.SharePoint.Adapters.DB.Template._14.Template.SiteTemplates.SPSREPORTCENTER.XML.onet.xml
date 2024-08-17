@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="3" DisableWebDesignFeatures="" UIVersion="4">
+    <NavBars>
+        <NavBar Name="SharePoint Top Navbar" ID="1002" />
+        <NavBar Name="$Resources:spscore,ReportCenterOnet_ReportsLink;" ID="1008" Url="ReportsLibrary" />
+        <NavBar Name="$Resources:spscore,ReportCenterOnet_DashboardsLink" ID="1009" Url="ReportsLibrary/forms/scsummpg.aspx"/>
+        <NavBar Name="$Resources:spscore,ReportCenterOnet_ResourcesLink" ID="1010" Url="_layouts/viewlsts.aspx">
+            <NavBarLink Name="$Resources:spscore,ReportCenterOnet_DataConnectionsLink" Url="Data Connections" />
+            <NavBarLink Name="$Resources:spscore,ReportCenterOnet_ReportCalendarLink" Url="Lists/Report Calendar" />
+            <NavBarLink Name="$Resources:spscore,ReportCenterOnet_ReferenceLibraryLink" Url="Reference Library" />
+        </NavBar>
+    </NavBars>
+    <ListTemplates>
+        <ListTemplate Name="doclib" DisplayName="$Resources:spscore,ReportCenterOnet_WebPartPageListName" Type="434" BaseType="1" Hidden="TRUE" OnQuickLaunch="TRUE" SecurityBits="11" Description="$Resources:spscore,ReportCenterOnet_WebPartPageListDescription" Image="/_layouts/images/itdl.png" DocumentTemplate="106" />
+    </ListTemplates>
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+
+    <Configurations>
+        <Configuration ID="-1" Name="NewWeb"/>
+        <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v4.master">
+            <Lists>
+                <List Title="$Resources:spscore,ReportCenterOnet_ReferenceLibraryInstanceName" Description="$Resources:spscore,ReportCenterOnet_ReferenceLibraryInstanceDescription" Type="434" Url="Reference Library" />
+                <List Title="$Resources:spscore,ReportCenterOnet_ReportCalendarListInstanceName" Description="$Resources:spscore,ReportCenterOnet_ReportCalendarListInstanceName" Type="106" Url="Lists/Report Calendar" FeatureId="00BFEA71-EC85-4903-972D-EBE475780106" />
+                <List Title="$Resources:spscore,ReportCenterOnet_DataConnectionsListInstanceName" FeatureId="00BFEA71-DBD7-4F72-B8CB-DA7AC0440130" Description="$Resources:spscore,ReportCenterOnet_DataConnectionsListInstanceDescription" Url="Data Connections" Type="130" />
+                <List Title="$Resources:spscore,ReportCenterOnet_AnnouncementsListInstanceName" Description="$Resources:spscore,ReportCenterOnet_AnnouncementsListInstanceDescription" Type="104" FeatureId="00BFEA71-D1CE-42de-9C63-A44004CE0104" Url="Lists/Announcements">
+                    <Data>
+                        <Rows>
+                            <Row>
+                                <Field Name="Title">$Resources:spscore,ReportCenterOnet_AnnouncementsListTitle</Field>
+                                <Field Name="Body">$Resources:spscore,ReportCenterOnet_AnnouncementsListBody</Field>
+                                <Field Name="Expires"></Field>
+                            </Row>
+                        </Rows>
+                    </Data>
+                </List>
+                <List Title="$Resources:spscore,ReportCenterOnet_SampleKpisListInstanceName;" Description="$Resources:spscore,ReportCenterOnet_SampleKpisListInstanceDescription;" Type="432" Url="Lists/Sample KPIs" FeatureId="065C78BE-5231-477e-A972-14177CC5B3C7">
+                    <Data>
+                        <Rows>
+                            <Row>
+                                <Field Name="ContentType">$Resources:spscore,BizAppsContentTypes_StaticKPI;</Field>
+                                <Field Name="ContentTypeId">0x00A7470EADF4194e2e9ED1031B61DA088401</Field>
+                                <Field Name="Title">$Resources:spscore,ReportCenterOnet_SampleKpiMoraleTitle;</Field>
+                                <Field Name="KpiDescription">$Resources:spscore,ReportCenterOnet_SampleKpiDescription;</Field>
+                                <Field Name="Value">9</Field>
+                                <Field Name="Goal">7</Field>
+                                <Field Name="Warning">5</Field>
+                            </Row>
+                            <Row>
+                                <Field Name="ContentType">$Resources:spscore,BizAppsContentTypes_StaticKPI;</Field>
+                                <Field Name="ContentTypeId">0x00A7470EADF4194e2e9ED1031B61DA088401</Field>
+                                <Field Name="Title">$Resources:spscore,ReportCenterOnet_SampleKpiProductivityTitle;</Field>
+                                <Field Name="KpiDescription">$Resources:spscore,ReportCenterOnet_SampleKpiDescription;</Field>
+                                <Field Name="Value">73</Field>
+                                <Field Name="Goal">85</Field>
+                                <Field Name="Warning">50</Field>
+                            </Row>
+                            <Row>
+                                <Field Name="ContentType">$Resources:spscore,BizAppsContentTypes_StaticKPI;</Field>
+                                <Field Name="ContentTypeId">0x00A7470EADF4194e2e9ED1031B61DA088401</Field>
+                                <Field Name="Title">$Resources:spscore,ReportCenterOnet_SampleKpiExpensesTitle;</Field>
+                                <Field Name="KpiDescription">$Resources:spscore,ReportCenterOnet_SampleKpiDescription;</Field>
+                                <Field Name="LowerValuesAreBetter">true</Field>
+                                <Field Name="Value">80000</Field>
+                                <Field Name="Goal">50000</Field>
+                                <Field Name="Warning">60000</Field>
+                            </Row>
+                        </Rows>
+                    </Data>
+                </List>
+            </Lists>
+            <SiteFeatures>
+                <!-- PublishingPrerequisites feature -->
+                <Feature ID="A392DA98-270B-4e85-9769-04C0FDE267AA" />
+                <!-- PublishingResources feature -->
+                <Feature ID="AEBC918D-B20F-4a11-A1DB-9ED84D79C87E" /> 
+                <Feature ID="43F41342-1A37-4372-8CA0-B44D881E4434" /> 
+                <Feature ID="2ED1C45E-A73B-4779-AE81-1524E4DE467A" /> 
+                <Feature ID="89E0306D-453B-4ec5-8D68-42067CDBF98E" /> 
+                <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" /> 
+            </SiteFeatures>
+            <WebFeatures>
+                <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/Default.aspx" />
+                        <Property Key="SimplePublishing" Value="true" />
+                    </Properties>
+                </Feature>
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+                    <!-- Per-Web Portal Navigation Properties-->
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="InheritGlobalNavigation" Value="true"/>
+                        <Property Key="IncludeSubSites" Value="true"/>
+                    </Properties>
+                </Feature>
+                <Feature ID="2510D73F-7109-4ccc-8A1C-314894DEEB3A" /> 
+                <Feature ID="D250636F-0A26-4019-8425-A5232D592C09" /> 
+                <Feature ID="00BFEA71-DBD7-4F72-B8CB-DA7AC0440130" /> 
+                <Feature ID="065C78BE-5231-477e-A972-14177CC5B3C7" /> 
+                <Feature ID="C5D947D6-B0A2-4e07-9929-8E54F5A9FFF9" /> 
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+            </WebFeatures>
+            <Modules>
+                <Module Name="HomePage" />
+            </Modules>
+        </Configuration>
+        <Configuration ID="1" Name="Blank">
+            <ExecuteUrl Url="_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/settings.aspx" />
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="HomePage" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+            <File Url="default.aspx" Type="GhostableInLibrary" >
+                <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/reportcenterlayout.aspx, $Resources:spscore,ReportCenterOnet_ReportCenterLayoutTitle;" />
+                <Property Name="Title" Value="$Resources:spscore,ReportCenterOnet_DefaultPageName;" />
+                <Property Name="ContentType" Value="$Resources:cmscore,contenttype_welcomepage_name;" />
+                <AllUsersWebPart WebPartZoneID="TopLeftZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title>$Resources:spscore,ReportCenterOnet_CEWP_Title;</Title>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <Description>$Resources:spscore,ReportCenterOnet_CEWP_Description;</Description>
+                        <IsIncluded>true</IsIncluded>
+                        <ZoneID>TopLeftZone</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/images/mscontl.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                        <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                        <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+                             &lt;DIV class=&quot;ms-vb&quot;&gt;
+                             &lt;SPAN class=&quot;ms-announcementtitle&quot;&gt;$Resources:spscore,ReportCenterOnet_CEWP_Header1;&lt;/SPAN&gt;
+                             &lt;UL&gt;
+                             &lt;LI&gt;$Resources:spscore,ReportCenterOnet_CEWP_Line1;&lt;/LI&gt;
+                             &lt;LI&gt;$Resources:spscore,ReportCenterOnet_CEWP_Line2;&lt;/LI&gt;
+                             &lt;LI&gt;$Resources:spscore,ReportCenterOnet_CEWP_Line3;&lt;/LI&gt;
+                             &lt;/UL&gt;
+                             &lt;SPAN class=&quot;ms-announcementtitle&quot;&gt;$Resources:spscore,ReportCenterOnet_CEWP_Header2;&lt;/SPAN&gt;
+                             &lt;UL&gt;
+                             &lt;LI&gt;$Resources:spscore,ReportCenterOnet_CEWP_Line4;&lt;/LI&gt;
+                             &lt;LI&gt;$Resources:spscore,ReportCenterOnet_CEWP_Line5;&lt;/LI&gt;
+                             &lt;LI&gt;$Resources:spscore,ReportCenterOnet_CEWP_Line6;&lt;/LI&gt;
+                             &lt;LI&gt;$Resources:spscore,ReportCenterOnet_CEWP_Line7;&lt;/LI&gt;
+                             &lt;/UL&gt;
+                             &lt;/DIV&gt;
+			</Content>
+                        <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+                <View List="104" BaseViewID="0" WebPartZoneID="TopLeftZone" WebPartOrder="2"> 
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListViewWebPart</TypeName>
+                        <FrameType>TitleBarOnly</FrameType>
+                    </WebPart>
+                    ]]>
+                </View>
+
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title>$Resources:spscore,ReportCenterOnet_CWP_Title</Title>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <Description>$Resources:spscore,ReportCenterOnet_CWP_Description</Description>
+                        <IsIncluded>true</IsIncluded>
+                        <ZoneID>TopLeftZone</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/images/wp_pers.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Portal.WebControls.ContactFieldControl</TypeName>
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="2">
+                    <![CDATA[
+                    <webParts>
+                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                        <metaData>
+                          <type name="Microsoft.SharePoint.Portal.WebControls.KPIListWebPart,Microsoft.SharePoint.Portal,Version=14.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                          <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                        </metaData>
+                        <data>
+                          <properties>
+                            <property name="ExportMode" type="exportmode">All</property>
+                            <property name="AllowClose" type="bool">True</property>
+                            <property name="AlwaysShowFullToolbar" type="bool">False</property>
+                            <property name="AllowZoneChange" type="bool">True</property>
+                            <property name="Direction" type="direction">NotSet</property>
+                            <property name="ShowOnlyStatusIcon" type="bool">True</property>
+                            <property name="DisplayMultipleColumns" type="bool">False</property>
+                            <property name="Title" type="string">$Resources:spscore,ReportCenterOnet_SampleKpisListInstanceName;</property>
+                            <property name="Hidden" type="bool">False</property>
+                            <property name="HelpMode" type="helpmode">Modeless</property>
+                            <property name="ChromeType" type="chrometype">TitleOnly</property>
+                            <property name="ShowOnlyProblems" type="bool">False</property>
+                            <property name="Description" type="string">Shows a list of status indicators. Status indicators display important measures for your organization, and show how your organization is performing with respect to your goals.</property>
+                            <property name="ToolbarHidden" type="bool">False</property>
+                            <property name="AllowMinimize" type="bool">True</property>
+                            <property name="AllowEdit" type="bool">True</property>
+                            <property name="IconPrefix" type="string">KpiIconChange</property>
+                            <property name="ListURL" type="string">~Site/Lists/Sample KPIs/KPIListViewPage.aspx</property>
+                            <property name="ChromeState" type="chromestate">Normal</property>
+                            <property name="AllowHide" type="bool">True</property>
+                            <property name="AllowConnect" type="bool">True</property>
+                          </properties>
+                        </data>
+                      </webPart>
+                    </webParts>
+                    ]]>
+                </AllUsersWebPart>
+
+                <AllUsersWebPart WebPartZoneID="RightZone" WebPartOrder="3">
+                    <![CDATA[
+                    <webParts>
+                        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                            <metaData>
+                                <type name="Microsoft.SharePoint.Publishing.WebControls.SummaryLinkWebPart,Microsoft.SharePoint.Publishing,Version=14.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" />
+                                <importErrorMessage>$Resources:spscore,WPImportErrorMessage;</importErrorMessage>
+                            </metaData>
+                            <data>
+                                <properties>
+                                    <property name="Title" type="string">$Resources:spscore,ReportCenterOnet_SLWP_Title</property>
+                                    <property name="ChromeType">TitleOnly</property>
+                                    <property name="ChromeState">Normal</property>
+                                    <property name="HelpUrl" type="string">/_layouts/Help.aspx</property>
+                                    <property name="SummaryLinkStore" type="string">&lt;div title=&quot;_schemaversion&quot; id=&quot;_3&quot;&gt;
+                                        &lt;div title=&quot;_links&quot;&gt;
+                                        &lt;div title=&quot;_link&quot;&gt;
+                                        &lt;span title=&quot;_title&quot;&gt;$Resources:spscore,ReportCenterOnet_SLWP_Group;&lt;/span&gt;
+                                        &lt;span title=&quot;_order&quot;&gt;1&lt;/span&gt;
+                                        &lt;span title=&quot;_begincolumn&quot;&gt;True&lt;/span&gt;
+                                        &lt;span title=&quot;_isgroupheader&quot;&gt;True&lt;/span&gt;
+                                        &lt;span title=&quot;_groupstyle&quot;&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                        &lt;div title=&quot;_link&quot;&gt;
+                                        &lt;span title=&quot;_title&quot;&gt;$Resources:spscore,ReportCenterOnet_SLWP_Link;&lt;/span&gt;
+                                        &lt;span title=&quot;_group&quot;&gt;$Resources:spscore,ReportCenterOnet_SLWP_Group;&lt;/span&gt;
+                                        &lt;span title=&quot;_style&quot;&gt;Default&lt;/span&gt;
+                                        &lt;span title=&quot;_order&quot;&gt;2&lt;/span&gt;
+                                        &lt;span title=&quot;_begincolumn&quot;&gt;False&lt;/span&gt;
+                                        &lt;span title=&quot;_linkurl&quot;&gt;
+                                        &lt;a href=&quot;~Site/ReportsLibrary/Sample Dashboard.aspx&quot;&gt;~Site/ReportsLibrary/Sample Dashboard.aspx&lt;/a&gt;
+                                        &lt;/span&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div title=&quot;_view&quot;&gt;
+                                        &lt;span title=&quot;_columns&quot;&gt;1&lt;/span&gt;
+                                        &lt;span title=&quot;_linkstyle&quot;&gt;&lt;/span&gt;
+                                        &lt;span title=&quot;_groupstyle&quot;&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                        &lt;/div&gt;</property>
+                                </properties>
+                            </data>
+                        </webPart>
+                    </webParts>
+                    ]]>
+                </AllUsersWebPart>
+
+                <View List="106" BaseViewID="0" WebPartZoneID="RightZone" WebPartOrder="4">
+                    <![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListViewWebPart</TypeName>
+                        <Title>$Resources:spscore,ReportCenterOnet_EventsWP_Title;</Title>
+                        <FrameType>TitleBarOnly</FrameType>
+                    </WebPart>
+                    ]]>
+                </View>
+            </File>
+        </Module>
+    </Modules>
+</Project>

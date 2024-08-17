@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Title="$Resources:onet_TeamWebSite;" Revision="2" ListDir="$Resources:core,lists_Folder;" xmlns:ows="Microsoft SharePoint" UIVersion="15">
+  <DocumentTemplates>
+    <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+  </DocumentTemplates>
+  <Configurations>
+    <Configuration ID="-1" Name="NewWeb" MasterUrl="_catalogs/masterpage/v15.master" />
+    <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v15.master">
+      <Lists>
+        <List FeatureId="00BFEA71-E717-4E80-AA17-D0C71B360101" Type="101" Title="$Resources:core,shareddocuments_Title_15;" Url="$Resources:core,shareddocuments_Folder;" />
+        <List FeatureId="00BFEA71-D1CE-42de-9C63-A44004CE0104" Type="104" Title="$Resources:core,announceList;" Url="$Resources:core,lists_Folder;/$Resources:core,announce_Folder;">
+          <Data>
+            <Rows>
+              <Row>
+                <Field Name="Title">$Resources:onetid11;</Field>
+                <Field Name="Body">$Resources:onetid12;</Field>
+                <Field Name="Expires">&lt;ows:TodayISO/&gt;</Field>
+              </Row>
+            </Rows>
+          </Data>
+        </List>
+        <List FeatureId="F9CE21F8-F437-4f7e-8BC6-946378C850F0" Type="151" Title="$Resources:core,taskList;" Url="$Resources:core,lists_Folder;/$Resources:core,tasks_Folder;" />
+        <List FeatureId="00BFEA71-6A49-43FA-B535-D15C05500108" Type="108" Title="$Resources:core,discussions_Title;" Url="$Resources:core,lists_Folder;/$Resources:core,discussions_Folder;" />
+        <List FeatureId="00BFEA71-2062-426C-90BF-714C59600103" Type="103" Title="$Resources:core,linksList;" Url="$Resources:core,lists_Folder;/$Resources:core,links_Folder;" />
+      </Lists>
+      <Modules>
+        <Module Name="Default" />
+      </Modules>
+      <SiteFeatures>
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- GroupBoardWebParts Feature -->
+        <Feature ID="3D25BD73-7CD4-4425-B8FB-8899977F73DE" />
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- GroupBoard Feature -->
+        <Feature ID="9C03E124-EEF7-4DC6-B5EB-86CCD207CB87" />
+        <!-- GroupBoardSiteProvision Feature -->
+        <Feature ID="6E8A2ADD-ED09-4592-978E-8FA71E6F117C" />
+        <!-- MobilityRedirect -->
+        <Feature ID="F41CC668-37E5-4743-B4A8-74D1DB3FD8A4" />
+      </WebFeatures>
+    </Configuration>
+    <Configuration ID="1" Name="Blank" MasterUrl="_catalogs/masterpage/v15.master">
+      <Lists />
+      <Modules>
+        <Module Name="DefaultBlank" />
+      </Modules>
+      <SiteFeatures>
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- GroupBoardWebParts Feature -->
+        <Feature ID="3D25BD73-7CD4-4425-B8FB-8899977F73DE" />
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+        <!-- GroupBoard Feature -->
+        <Feature ID="9C03E124-EEF7-4DC6-B5EB-86CCD207CB87" />
+        <!-- GroupBoardSiteProvision Feature -->
+        <Feature ID="6E8A2ADD-ED09-4592-978E-8FA71E6F117C" />
+        <!-- MobilityRedirect -->
+        <Feature ID="F41CC668-37E5-4743-B4A8-74D1DB3FD8A4" />
+      </WebFeatures>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="Default" Url="" Path="">
+      <File Url="default.aspx" NavBarHome="True">
+        <View List="$Resources:core,lists_Folder;/$Resources:core,calendar_Folder;" BaseViewID="2" MobileView="TRUE" Type="CALENDAR" Scope="Recursive" RecurrenceRowset="TRUE" WebPartZoneID="Left" WebPartOrder="1" />
+        <View List="$Resources:core,lists_Folder;/$Resources:core,announce_Folder;" BaseViewID="0" MobileView="TRUE" WebPartZoneID="Left" WebPartOrder="2" />
+        <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="1"><![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Applications.GroupBoard.WebPartPages.WhatsNewWebPart</TypeName>
+                        <Title>$Resources:WhatsNewWebPartTitle;</Title>
+                        <NumItemsPerson xmlns="http://schemas.microsoft.com/WebPart/v2/GBW/WhatsNew">10</NumItemsPerson>
+                        <NumItemsShared xmlns="http://schemas.microsoft.com/WebPart/v2/GBW/WhatsNew">5</NumItemsShared>
+                        <TargetConfig xmlns="http://schemas.microsoft.com/WebPart/v2/GBW/WhatsNew">${GBWINIT}</TargetConfig>
+                    </WebPart>
+                    ]]></AllUsersWebPart>
+        <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="2"><![CDATA[
+                    <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.Applications.GroupBoard.WebPartPages.WhereaboutsWebPart</TypeName>
+                        <Title>$Resources:GbwWAWebPartTitle;</Title>
+                    </WebPart>
+                    ]]></AllUsersWebPart>
+        <View List="$Resources:core,lists_Folder;/$Resources:core,links_Folder;" BaseViewID="0" MobileView="TRUE" WebPartZoneID="Right" WebPartOrder="3" />
+        <NavBarPage Name="$Resources:core,nav_Home;" Url="~site" ID="1002" Position="Start" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start" />
+      </File>
+    </Module>
+    <Module Name="DefaultBlank" Url="" Path="">
+      <File Url="default.aspx" NavBarHome="True" Type="Ghostable">
+        <AllUsersWebPart WebPartZoneID="Right" WebPartOrder="1"><![CDATA[
+                   <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" xmlns:iwp="http://schemas.microsoft.com/WebPart/v2/Image">
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ImageWebPart</TypeName>
+                        <FrameType>None</FrameType>
+                        <Title>$Resources:wp_SiteImage;</Title>
+                        <iwp:ImageLink>/_layouts/15/images/homepage.gif</iwp:ImageLink>
+                   </WebPart>
+                   ]]></AllUsersWebPart>
+        <NavBarPage Name="$Resources:core,nav_Home;" Url="~site" ID="1002" Position="Start" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start" />
+      </File>
+    </Module>
+  </Modules>
+</Project>

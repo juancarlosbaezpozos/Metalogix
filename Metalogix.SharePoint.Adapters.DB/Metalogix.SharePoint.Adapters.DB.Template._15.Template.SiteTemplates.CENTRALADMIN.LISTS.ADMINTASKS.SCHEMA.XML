@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Name="AdminTasks" Title="$Resources:core,AdminTasks_Title;" Direction="$Resources:core,Direction;" EnableContentTypes="TRUE" Url="$Resources:core,lists_Folder;/$Resources:core,AdminTasks_Folder;" BaseType="0">
+  <MetaData>
+    <ContentTypes>
+      <ContentTypeRef ID="0x010802">
+        <Folder TargetName="Task" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+      <ContentTypeRef ID="0x012004" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{7b016ee5-70aa-4abb-8aa3-01795b4efe6f}" Type="URL" Name="Action" DisplayName="$Resources:core,Tasks_Action;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Action">
+      </Field>
+      <Field ID="{cf935cc2-a00c-4ad3-bca1-0865ab15afc1}" Type="Number" Name="Priority" Min="1" Max="20" DisplayName="$Resources:core,AdminTasks_Order;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Priority">
+        <Default>20</Default>
+      </Field>
+      <Field ID="{c15b34c3-ce7d-490a-b133-3f4de8801b76}" Type="Choice" Name="Status" DisplayName="$Resources:core,Tasks_Status;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Status">
+        <CHOICES><CHOICE>$Resources:core,Tasks_NotStarted;</CHOICE><CHOICE>$Resources:core,Tasks_InProgress;</CHOICE><CHOICE>$Resources:core,Tasks_Completed;</CHOICE><CHOICE>$Resources:core,Tasks_Deferred;</CHOICE><CHOICE>$Resources:core,Tasks_Waiting;</CHOICE>
+        </CHOICES>
+        <MAPPINGS>
+          <MAPPING Value="1">$Resources:core,Tasks_NotStarted;</MAPPING>
+          <MAPPING Value="2">$Resources:core,Tasks_InProgress;</MAPPING>
+          <MAPPING Value="3">$Resources:core,Tasks_Completed;</MAPPING>
+          <MAPPING Value="4">$Resources:core,Tasks_Deferred;</MAPPING>
+          <MAPPING Value="5">$Resources:core,Tasks_Waiting;</MAPPING>
+        </MAPPINGS>
+        <Default>$Resources:core,Tasks_NotStarted;</Default>
+      </Field>
+      <Field ID="{c3a92d97-2b77-4a25-9698-3ab54874bc6f}" Name="Predecessors" Type="LookupMulti" Mult="TRUE" Required="FALSE" DisplayName="$Resources:core,Tasks_Predecessors;" StaticName="Predecessors" List="Self" ShowField="Title" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3">
+      </Field>
+      <Field ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Type="Number" Name="PercentComplete" Percentage="TRUE" Min="0" Max="1" DisplayName="$Resources:core,Tasks_PercentComplete;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PercentComplete">
+      </Field>
+      <Field ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Type="User" List="UserInfo" Name="AssignedTo" DisplayName="$Resources:core,Tasks_AssignedTo;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="AssignedTo">
+      </Field>
+      <Field ID="{93490584-b6a8-4996-aa00-ead5f59aae0d}" Type="Note" RichText="TRUE" Name="Description" DisplayName="$Resources:core,Tasks_Description;" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Description">
+      </Field>
+      <Field ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Type="DateTime" Name="StartDate" DisplayName="$Resources:core,Tasks_StartDate;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="StartDate">
+        <Default>[today]</Default>
+      </Field>
+      <Field ID="{cd21b4c2-6841-4f9e-a23a-738a65f99889}" Type="DateTime" Name="DueDate" DisplayName="$Resources:core,Tasks_DueDate;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="DueDate">
+      </Field>
+      <Field ID="{48b4a73e-8853-44ac-83a8-3a4bd59ce9ec}" Type="Text" Name="Service" DisplayName="$Resources:core,AdminTasks_AssociatedService;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Service">
+      </Field>
+      <Field ID="{af0a3d4b-3ceb-449e-9bf4-51103f2032e3}" Type="Boolean" Name="SystemTask" DisplayName="$Resources:core,AdminTasks_System Task;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="SystemTask">
+      </Field>
+      <Field ID="{2b491de5-7431-4482-b033-f9b267974432}" Type="Text" Name="SystemID" DisplayName="$Resources:core,AdminTasks_SystemID;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="SystemID">
+      </Field>
+      <Field ID="{9ce4da1a-7989-46fa-998b-82a15cddcfb3}" Type="Boolean" Name="BasicTask" DisplayName="$Resources:core,AdminTasks_BasicTask;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BasicTask">
+        <Default>0</Default>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" TabularView="FALSE">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Position="After" Type="Freeform">
+          <IfHasRights>
+            <RightsChoices>
+              <RightsGroup PermAddListItems="required" />
+            </RightsChoices>
+            <Then><HTML><![CDATA[<div class="tb"><img src="/_layouts/15/images/caladd.gif" alt="" />&#160;<a class="ms-addnew" id="idAddNewTask" href="]]></HTML>
+              <URL Cmd="New" /><HTML><![CDATA[" onclick="javascript:NewItem(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <URL Cmd="New" />
+              </ScriptQuote><HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML><HTML>$Resources:core,Tasks_AddNewTask;</HTML><HTML><![CDATA[</a></div>]]></HTML>
+            </Then>
+          </IfHasRights>
+        </Toolbar>
+        <RowLimit>10</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon">
+          </FieldRef>
+          <FieldRef Name="Priority">
+          </FieldRef>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+          <FieldRef Name="AssignedTo">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+          <Where>
+            <Or>
+              <Neq>
+                <FieldRef Name="Status">
+                </FieldRef>
+                <Value Type="Text">$Resources:core,Tasks_Completed;</Value>
+              </Neq>
+              <IsNull>
+                <FieldRef Name="Status">
+                </FieldRef>
+              </IsNull>
+            </Or>
+          </Where>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,Tasks_AddNewTask)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,moreItemsParen)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Tasks_AllTasks;" DefaultView="TRUE" Url="AllItems.aspx" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/issues.png">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="DocIcon">
+          </FieldRef>
+          <FieldRef Name="Attachments">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="Action">
+          </FieldRef>
+          <FieldRef Name="Service">
+          </FieldRef>
+          <FieldRef Name="SystemTask">
+          </FieldRef>
+          <FieldRef Name="AssignedTo">
+          </FieldRef>
+          <FieldRef Name="Status">
+          </FieldRef>
+          <FieldRef Name="Priority">
+          </FieldRef>
+          <FieldRef Name="DueDate">
+          </FieldRef>
+          <FieldRef Name="PercentComplete">
+          </FieldRef>
+          <FieldRef Name="Predecessors">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="2" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Tasks_MyTasks;" Url="MyItems.aspx" ReqAuth="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/issues.png">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="Action">
+          </FieldRef>
+          <FieldRef Name="Service">
+          </FieldRef>
+          <FieldRef Name="SystemTask">
+          </FieldRef>
+          <FieldRef Name="Status">
+          </FieldRef>
+          <FieldRef Name="Priority">
+          </FieldRef>
+          <FieldRef Name="DueDate">
+          </FieldRef>
+          <FieldRef Name="PercentComplete">
+          </FieldRef>
+          <FieldRef Name="Predecessors">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="AssignedTo">
+              </FieldRef>
+              <Value Type="Integer">
+                <UserID />
+              </Value>
+            </Eq>
+          </Where>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Tasks_DueToday;" Url="duetoday.aspx" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/issues.png">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="Action">
+          </FieldRef>
+          <FieldRef Name="Service">
+          </FieldRef>
+          <FieldRef Name="SystemTask">
+          </FieldRef>
+          <FieldRef Name="AssignedTo">
+          </FieldRef>
+          <FieldRef Name="Status">
+          </FieldRef>
+          <FieldRef Name="Priority">
+          </FieldRef>
+          <FieldRef Name="PercentComplete">
+          </FieldRef>
+          <FieldRef Name="Predecessors">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="DueDate">
+              </FieldRef>
+              <Value Type="DateTime">
+                <Today>
+                </Today>
+              </Value>
+            </Eq>
+          </Where>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="4" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Tasks_ActiveTasks;" Url="active.aspx" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/issues.png">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="Action">
+          </FieldRef>
+          <FieldRef Name="Service">
+          </FieldRef>
+          <FieldRef Name="SystemTask">
+          </FieldRef>
+          <FieldRef Name="AssignedTo">
+          </FieldRef>
+          <FieldRef Name="Status">
+          </FieldRef>
+          <FieldRef Name="Priority">
+          </FieldRef>
+          <FieldRef Name="DueDate">
+          </FieldRef>
+          <FieldRef Name="PercentComplete">
+          </FieldRef>
+          <FieldRef Name="Predecessors">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <Where>
+            <Neq>
+              <FieldRef Name="Status">
+              </FieldRef>
+              <Value Type="Text">$Resources:core,Tasks_Completed;</Value>
+            </Neq>
+          </Where>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="5" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Tasks_ByAssignedTo;" Url="byowner.aspx" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/issues.png">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="Action">
+          </FieldRef>
+          <FieldRef Name="Service">
+          </FieldRef>
+          <FieldRef Name="SystemTask">
+          </FieldRef>
+          <FieldRef Name="AssignedTo">
+          </FieldRef>
+          <FieldRef Name="Status">
+          </FieldRef>
+          <FieldRef Name="Priority">
+          </FieldRef>
+          <FieldRef Name="DueDate">
+          </FieldRef>
+          <FieldRef Name="PercentComplete">
+          </FieldRef>
+          <FieldRef Name="Predecessors">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="7" Type="HTML" TabularView="FALSE">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Position="After" Type="Freeform">
+          <IfHasRights>
+            <RightsChoices>
+              <RightsGroup PermAddListItems="required" />
+            </RightsChoices>
+            <Then><HTML><![CDATA[<div class="tb"><img src="/_layouts/15/images/caladd.gif" alt="" />&#160;<a class="ms-addnew" id="idAddNewTask" href="]]></HTML>
+              <URL Cmd="New" /><HTML><![CDATA[" onclick="javascript:NewItem(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <URL Cmd="New" />
+              </ScriptQuote><HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML><HTML>$Resources:core,Tasks_AddNewTask;</HTML><HTML><![CDATA[</a></div>]]></HTML>
+            </Then>
+          </IfHasRights>
+        </Toolbar>
+        <RowLimit>12</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="AssignedTo">
+          </FieldRef>
+          <FieldRef Name="Status">
+          </FieldRef>
+          <FieldRef Name="Action">
+          </FieldRef>
+          <FieldRef Name="Service">
+          </FieldRef>
+          <FieldRef Name="SystemTask">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="8" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,AdminTasks_BasicTask;" Url="basicitems.aspx" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/issues.png">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <RowLimit>10</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Priority">
+          </FieldRef>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+          <FieldRef Name="AssignedTo">
+          </FieldRef>
+          <FieldRef Name="Status">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Priority" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="BasicTask">
+              </FieldRef>
+              <Value Type="Boolean">1</Value>
+            </Eq>
+          </Where>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+    <DefaultDescription>
+            $Resources:core,AdminTasks_DefaultDescription;
+        </DefaultDescription>
+  </MetaData>
+</List>

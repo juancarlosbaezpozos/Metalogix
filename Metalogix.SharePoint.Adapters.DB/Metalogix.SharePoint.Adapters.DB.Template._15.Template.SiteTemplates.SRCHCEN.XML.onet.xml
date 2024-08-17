@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="8" UIVersion="15" SiteLogoUrl="/_layouts/images/searchlogo.png">
+    <NavBars>
+        <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002"/>
+    </NavBars>
+
+    <ListTemplates>
+        <ListTemplate Name="Tabs" DisplayName="$Resources:Microsoft.Office.Server.Search,SitesOnet_TabsListName;" FolderCreation="FALSE" Type="301" BaseType="0" OnQuickLaunch="FALSE" SecurityBits="11" Description="$Resources:Microsoft.Office.Server.Search,SitesOnet_TabsList_Description;" Image="/_layouts/images/itgen.png"> </ListTemplate>
+    </ListTemplates>
+
+    <Configurations>
+        <Configuration ID="-1" Name="NewWeb"/>
+        <Configuration ID="0" Name="Default" CustomMasterUrl="_catalogs/masterpage/v15.master" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists> <List Title="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchCenterListName;" Description="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchCenterListDescription;" Url="SearchCenter" Type="301"> <Data> <Rows> <Row> <Field Name="TabName">$Resources:Microsoft.Office.Server.Search,DocumentsTab;</Field> <Field Name="Page">default.aspx</Field> <Field Name="Comments">$Resources:Microsoft.Office.Server.Search,DocumentsTabComment;</Field> </Row> <Row> <Field Name="TabName">$Resources:Microsoft.Office.Server.Search,DocumentsTab;</Field> <Field Name="Page">advanced.aspx</Field> <Field Name="Comments">$Resources:Microsoft.Office.Server.Search,DocumentsTabComment;</Field> </Row> </Rows> </Data> </List> <List Title="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchResultsListName;" Description="$Resources:Microsoft.Office.Server.Search,SearchCenterOnet_SearchResultsListDescription;" Url="SearchResults" Type="301"> <Data> <Rows> <Row> <Field Name="TabName">$Resources:Microsoft.Office.Server.Search,DocumentsTab;</Field> <Field Name="Page">results.aspx</Field> <Field Name="Comments">$Resources:Microsoft.Office.Server.Search,DocumentsTabComment;</Field> </Row> </Rows> </Data> </List> </Lists>
+            <SiteFeatures>
+                <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA" />                
+                <Feature ID="B21B090C-C796-4b0f-AC0F-7EF1659C20AE" /> 
+                <Feature ID="7AC8CC56-D28E-41f5-AD04-D95109EB987A" /> 
+                <Feature ID="9C0834E1-BA47-4D49-812B-7D4FB6FEA211" />
+            </SiteFeatures>
+            <WebFeatures>                
+                <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416"> 
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/default.aspx" />
+                        <Property Key="AvailablePageLayouts" Value="~SiteCollection/_catalogs/masterpage/SearchResults.aspx"/>
+                        <Property Key="SimplePublishing" Value="true" />
+                        <Property Key="DefaultPageLayout" Value="~SiteCollection/_catalogs/masterpage/searchresults.aspx" />
+                    </Properties>
+                </Feature>
+                <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />                
+                <Feature ID="7ACFCB9D-8E8F-4979-AF7E-8AED7E95245E" /> 
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA"> 
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="InheritGlobalNavigation" Value="true"/>
+                        <Property Key="IncludeSubSites" Value="true"/>
+                        <Property Key="IncludePages" Value="false"/>
+                    </Properties>
+                </Feature>
+                <Feature ID="6077B605-67B9-4937-AEB6-1D41E8F5AF3B" />
+                <Feature ID="9E99F7D7-08E9-455C-B3AA-FC71B9210027" />
+                <Feature ID="B9455243-E547-41F0-80C1-D5F6CE6A19E5" />
+            </WebFeatures>
+            <Modules>
+                <Module Name="PageUpload" />
+            </Modules>
+        </Configuration>
+        <Configuration ID="1" Name="Blank">
+            <ExecuteUrl Url="_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/settings.aspx" />
+        </Configuration>
+    </Configurations>
+</Project>

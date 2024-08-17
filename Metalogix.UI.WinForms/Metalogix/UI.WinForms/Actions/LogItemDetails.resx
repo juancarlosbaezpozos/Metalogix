@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="w_lblSource.Text" xml:space="preserve">
+    <value>SOURCE</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_lblSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="&gt;&gt;w_txtDetails.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lblLicenseUsed.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;w_lblStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblStatus.Name" xml:space="preserve">
+    <value>w_lblStatus</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_lnkTarget.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_detailsTab.Name" xml:space="preserve">
+    <value>_detailsTab</value>
+  </data>
+  <data name="&gt;&gt;_detailsTab.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeFinished.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblTarget.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 162</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnPrev.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_lblOperationValue.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_lblSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 112</value>
+  </data>
+  <data name="w_lblSource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblItemName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 12</value>
+  </data>
+  <data name="&gt;&gt;w_lblOperation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblOperation.Name" xml:space="preserve">
+    <value>w_lblOperation</value>
+  </data>
+  <data name="openSourceURLInNewWindowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Navigate to Source URL in new window</value>
+  </data>
+  <data name="openSourceURLInNewWindowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 22</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopy.Name" xml:space="preserve">
+    <value>w_btnCopy</value>
+  </data>
+  <data name="&gt;&gt;w_txtDetails.Parent" xml:space="preserve">
+    <value>_detailsTab</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblOperation.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeFinished.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAwKCQ/2BIMP9gSDD/YEgw/2BIMP9gSDD/YEgw/2BIMP9gSDD/YEgw/2BIMP9gSDD/AAAAAAAA
+        AAAAAAAAAAAAAMCokP//+PD///Dg//Do4P/w4ND/8NDA//DIsP/gwKD/4Lig/+CwkP/gqJD/YEgw/wAA
+        AAAAAAAAAAAAAAAAAADAqKD////w/8CooP+woKD/8Ojg/7CgkP+wmJD/sJiQ/7CYkP+wmJD/4LCQ/2BI
+        MP8AAAAAAAAAAAAAAAAAAAAAwKig////8P////D///jw///w4P/w6OD/8ODQ//DQwP/wyLD/4MCg/+C4
+        oP9gSDD/AAAAAAAAAAAAAAAAAAAAAMCooP////D/sKig/7CgoP//+PD/sKCQ/7CYkP+wmJD/sJiQ/7CY
+        kP/gwKD/YEgw/wAAAAAAAAAAAAAAAAAAAADAsKD////w////8P////D////w///48P//8OD/8Ojg//Dg
+        0P/w0MD/8Miw/2BIMP8AAAAAAAAAAAAAAAAAAAAAwLCg////8P////D////w////8P////D///jw/8DI
+        wP9AYHD/8ODQ//DQwP9gSDD/AAAAAAAAAAAAAAAAAAAAAMCwoP//////4Ojw/2B4gP/g4OD////w/8DI
+        0P9QYHD/MKjQ/yA4QP+woKD/YEgw/wAAAAAAAAAAq8Or/0CAUP/QsKD//////5CosP+A0OD/UGBw/7C4
+        wP9QYHD/YMDg/1BgcP8wuPD/ECgw/xAwQP8QKDD/eIGK/0B4QP9QqGD/0Lig///////g6PD/kKiw/4Dg
+        8P9QYHD/gNDg/1BgcP9g0PD/QGBw/zCw4P8gmND/IIiw/yBQcP9QiGD/ULBg/9C4oP/QuKD/0Lig/8Cw
+        oP+QqLD/gODw/1BgcP+A4PD/QFhw/2DQ8P9QyPD/QMDw/yCw4P8goND/YJhw/1C4cP8AAAAAAAAAAAAA
+        AAAAAAAA4+nr/5CosP+A4PD/QFhw/4Dg8P9w2PD/YNDw/1DI8P9AwPD/MLjw/3CogP9gwID/AAAAAAAA
+        AAAAAAAAAAAAAAAAAADj6ev/kKiw/4Dg8P+A4PD/gODw/3DY8P9g0PD/YLDQ/4CIkP+wwKD/kNCg/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOPp6/+QqLD/kKCw/5CgoP+AmKD/gJCg/4CIkP+/w8f/oLig/7DA
+        oP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADAAAAAAAAAAAAAAAAAAA8AAAAPgA
+        AAD8AAAA//8AAA==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value> Log Item Details</value>
+  </data>
+  <data name="&gt;&gt;_contentTab.Name" xml:space="preserve">
+    <value>_contentTab</value>
+  </data>
+  <data name="&gt;&gt;_contentTab.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;copySourceUrlToolStripMenuItem.Name" xml:space="preserve">
+    <value>copySourceUrlToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;copySourceUrlToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="w_btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;w_txtItemName.Name" xml:space="preserve">
+    <value>w_txtItemName</value>
+  </data>
+  <data name="&gt;&gt;w_txtItemName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_tbTimeFinished.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_contentTab.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;w_lblSource.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblSource.Name" xml:space="preserve">
+    <value>w_lblSource</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeStarted.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lnkTarget.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 178</value>
+  </data>
+  <data name="&gt;&gt;w_txtStatus.Name" xml:space="preserve">
+    <value>w_txtStatus</value>
+  </data>
+  <data name="&gt;&gt;w_txtStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lblTimeStarted.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="w_btnNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 558</value>
+  </data>
+  <data name="w_lblInformation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_tbTimeFinished.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_tbTimeFinished.Name" xml:space="preserve">
+    <value>w_tbTimeFinished</value>
+  </data>
+  <data name="&gt;&gt;w_xmlComparer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lblTimeFinished.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_lblSource.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="w_txtDetails.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="w_txtItemName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 28</value>
+  </data>
+  <data name="&gt;&gt;w_lblItemName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblTarget.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblLicenseUsed.Text" xml:space="preserve">
+    <value>LICENSE USED</value>
+  </data>
+  <data name="w_lblLicenseUsed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>617, 593</value>
+  </data>
+  <data name="w_lblItemName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.Name" xml:space="preserve">
+    <value>w_btnClose</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="w_btnPrev.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_xmlComparer.Name" xml:space="preserve">
+    <value>w_xmlComparer</value>
+  </data>
+  <data name="&gt;&gt;w_xmlComparer.Type" xml:space="preserve">
+    <value>Metalogix.Xml.XMLComparer, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_xmlComparer.Parent" xml:space="preserve">
+    <value>_contentTab</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Name" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_tabControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_lblOperationValue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_lblOperation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_lblOperationValue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblTimeFinished.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_txtTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 78</value>
+  </data>
+  <data name="_tabControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblSource.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 12</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeStarted.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="w_lblTimeFinished.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 62</value>
+  </data>
+  <data name="w_lnkTarget.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="w_lblItemName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_btnPrev.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_textEditContextMenu.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.TextEditContextMenu, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;_textEditContextMenu.Name" xml:space="preserve">
+    <value>_textEditContextMenu</value>
+  </data>
+  <data name="w_tbTimeFinished.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 78</value>
+  </data>
+  <data name="&gt;&gt;w_lblItemName.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="w_lblStatus.Text" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="w_lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="_lblOperationValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="&gt;&gt;w_txtDetails.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtDetails.Name" xml:space="preserve">
+    <value>w_txtDetails</value>
+  </data>
+  <data name="_detailsTab.Text" xml:space="preserve">
+    <value>DETAILS VIEW</value>
+  </data>
+  <data name="_detailsTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 228</value>
+  </data>
+  <data name="&gt;&gt;openSourceURLInNewWindowToolStripMenuItem.Name" xml:space="preserve">
+    <value>openSourceURLInNewWindowToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;openSourceURLInNewWindowToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lblInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 212</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeFinished.Name" xml:space="preserve">
+    <value>w_lblTimeFinished</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeFinished.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_lnkSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 128</value>
+  </data>
+  <data name="&gt;&gt;w_txtItemName.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;w_txtItemName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="w_lblStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="copySourceUrlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 22</value>
+  </data>
+  <data name="copySourceUrlToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Copy Source URL</value>
+  </data>
+  <data name="w_txtItemName.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_lblInformation.Name" xml:space="preserve">
+    <value>w_lblInformation</value>
+  </data>
+  <data name="&gt;&gt;w_lblInformation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblOperation.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="w_lblTimeFinished.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;w_txtOperation.Name" xml:space="preserve">
+    <value>w_txtOperation</value>
+  </data>
+  <data name="&gt;&gt;w_txtOperation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_txtItemName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 18</value>
+  </data>
+  <data name="&gt;&gt;w_btnPrev.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblTimeStarted.Text" xml:space="preserve">
+    <value>TIME STARTED</value>
+  </data>
+  <data name="w_lblTimeStarted.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="&gt;&gt;w_txtOperation.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="w_lblTarget.Text" xml:space="preserve">
+    <value>TARGET</value>
+  </data>
+  <data name="w_lblTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="_contentTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 228</value>
+  </data>
+  <data name="_contentTab.Text" xml:space="preserve">
+    <value>CONTENT COMPARER</value>
+  </data>
+  <data name="&gt;&gt;w_lnkSource.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lnkSource.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="w_contextMenuStripSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 48</value>
+  </data>
+  <data name="w_lblInformation.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;w_lblItemName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblItemName.Name" xml:space="preserve">
+    <value>w_lblItemName</value>
+  </data>
+  <data name="w_tbLicenseUsed.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lnkTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 18</value>
+  </data>
+  <data name="w_btnPrev.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 558</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseUsed.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="w_lblItemName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="w_lblItemName.Text" xml:space="preserve">
+    <value>ITEM NAME</value>
+  </data>
+  <data name="w_lblLicenseUsed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 62</value>
+  </data>
+  <data name="w_btnNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_btnCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="w_btnCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseUsed.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblLicenseUsed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_txtOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 18</value>
+  </data>
+  <data name="w_txtTime.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="w_btnNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_txtStatus.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="w_btnCopy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseUsed.Name" xml:space="preserve">
+    <value>w_tbLicenseUsed</value>
+  </data>
+  <data name="&gt;&gt;w_tbLicenseUsed.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblLicenseUsed.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_txtOperation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblLicenseUsed.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblSource.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeStarted.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblTimeStarted.Name" xml:space="preserve">
+    <value>w_lblTimeStarted</value>
+  </data>
+  <data name="&gt;&gt;w_tbTimeFinished.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnNext.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="w_lblTimeStarted.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_lblOperationValue.Name" xml:space="preserve">
+    <value>_lblOperationValue</value>
+  </data>
+  <data name="&gt;&gt;_lblOperationValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_btnCopy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_tbLicenseUsed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 78</value>
+  </data>
+  <data name="&gt;&gt;w_contextMenuStripTarget.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_contextMenuStripTarget.Name" xml:space="preserve">
+    <value>w_contextMenuStripTarget</value>
+  </data>
+  <data name="&gt;&gt;w_btnNext.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_txtStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 18</value>
+  </data>
+  <data name="w_txtInformation.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;w_lblTarget.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblTarget.Name" xml:space="preserve">
+    <value>w_lblTarget</value>
+  </data>
+  <data name="&gt;&gt;_detailsTab.Parent" xml:space="preserve">
+    <value>_tabControl</value>
+  </data>
+  <data name="openTargetURLInNewWindowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Navigate to Target URL in new window</value>
+  </data>
+  <data name="openTargetURLInNewWindowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
+  </data>
+  <data name="&gt;&gt;w_tbTimeFinished.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_xmlComparer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="w_tbTimeFinished.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 18</value>
+  </data>
+  <data name="&gt;&gt;w_txtInformation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_txtInformation.Name" xml:space="preserve">
+    <value>w_txtInformation</value>
+  </data>
+  <data name="&gt;&gt;w_txtStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_lblSource.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;copyTargetUrlToolStripMenuItem.Name" xml:space="preserve">
+    <value>copyTargetUrlToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;copyTargetUrlToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lnkSource.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="w_txtInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 60</value>
+  </data>
+  <data name="&gt;&gt;w_lnkTarget.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_detailsTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_txtInformation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lnkSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lnkSource.Name" xml:space="preserve">
+    <value>w_lnkSource</value>
+  </data>
+  <data name="&gt;&gt;w_txtTime.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="w_lblLicenseUsed.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="w_txtDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 228</value>
+  </data>
+  <data name="w_txtDetails.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="copyTargetUrlToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Copy Target URL</value>
+  </data>
+  <data name="copyTargetUrlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
+  </data>
+  <data name="_tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="w_btnNext.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="w_btnNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_btnCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="w_txtTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 18</value>
+  </data>
+  <data name="w_tbLicenseUsed.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="w_btnNext.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;w_lnkTarget.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;w_txtTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_textEditContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 48</value>
+  </data>
+  <data name="w_btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;w_lblLicenseUsed.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblLicenseUsed.Name" xml:space="preserve">
+    <value>w_lblLicenseUsed</value>
+  </data>
+  <data name="&gt;&gt;w_lnkTarget.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lnkTarget.Name" xml:space="preserve">
+    <value>w_lnkTarget</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LogItemDetails</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>625, 540</value>
+  </data>
+  <data name="w_lblTarget.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;w_txtInformation.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="w_lnkSource.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="w_contextMenuStripTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 70</value>
+  </data>
+  <data name="&gt;&gt;w_btnPrev.Name" xml:space="preserve">
+    <value>w_btnPrev</value>
+  </data>
+  <data name="&gt;&gt;w_btnPrev.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_txtOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_lnkSource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lblStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblTimeStarted.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="w_lblTarget.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="w_txtDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;w_contextMenuStripSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_contextMenuStripSource.Name" xml:space="preserve">
+    <value>w_contextMenuStripSource</value>
+  </data>
+  <data name="w_txtInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 230</value>
+  </data>
+  <data name="w_btnPrev.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="w_lblItemName.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="w_lnkSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;w_lblTarget.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;w_lblStatus.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="_tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 256</value>
+  </data>
+  <data name="w_txtDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_txtOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 28</value>
+  </data>
+  <data name="_lblOperationValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;openTargetURLInNewWindowToolStripMenuItem.Name" xml:space="preserve">
+    <value>openTargetURLInNewWindowToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;openTargetURLInNewWindowToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_btnPrev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_btnPrev.Text" xml:space="preserve">
+    <value>Prev</value>
+  </data>
+  <data name="w_lnkTarget.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="w_txtItemName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblOperation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_txtStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 296</value>
+  </data>
+  <data name="w_lblTimeStarted.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 62</value>
+  </data>
+  <data name="&gt;&gt;w_lblInformation.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="w_lnkSource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lnkTarget.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_xmlComparer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_txtInformation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="w_lblTimeFinished.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="w_lblTimeFinished.Text" xml:space="preserve">
+    <value>TIME FINISHED</value>
+  </data>
+  <data name="&gt;&gt;w_btnNext.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_tbLicenseUsed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 18</value>
+  </data>
+  <data name="&gt;&gt;w_btnNext.Name" xml:space="preserve">
+    <value>w_btnNext</value>
+  </data>
+  <data name="w_xmlComparer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_xmlComparer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 228</value>
+  </data>
+  <data name="w_lblStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_txtStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 28</value>
+  </data>
+  <data name="w_lblOperation.Text" xml:space="preserve">
+    <value>OPERATION</value>
+  </data>
+  <data name="w_lblOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="w_lblInformation.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="w_lblStatus.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="w_btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 558</value>
+  </data>
+  <data name="&gt;&gt;w_lblTarget.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;w_txtTime.Name" xml:space="preserve">
+    <value>w_txtTime</value>
+  </data>
+  <data name="&gt;&gt;w_txtTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_lblInformation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lnkSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 18</value>
+  </data>
+  <data name="w_btnCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 558</value>
+  </data>
+  <data name="&gt;&gt;w_btnCopy.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="w_lblInformation.Text" xml:space="preserve">
+    <value>INFORMATION</value>
+  </data>
+  <data name="w_lblInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="&gt;&gt;_contentTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+</root>

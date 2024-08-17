@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomActionGroup
+        Id="AppManagement"
+        Location="Microsoft.SharePoint.SiteSettings"
+        Title="$Resources:core,appmng_appmanagement_title;"
+        Sequence="10"
+        ImageUrl="/_layouts/15/images/SiteSettings_UsersAndPermissions_48x48.png" />
+    <CustomAction
+        Id="RegNewApp"
+        GroupId="AppManagement"
+        Location="Microsoft.SharePoint.SiteSettings"
+        Sequence="10"
+        Title="$Resources:core,appmng_regnewapp_title;"
+        Rights="ManageLists"
+        Description="$Resources:core,appmng_regnewappreg_description;">
+            <UrlAction Url="~layouts/appregnew.aspx" />
+    </CustomAction>
+    <CustomAction
+        Id="ViewMyApps"
+        GroupId="AppManagement"
+        Location="Microsoft.SharePoint.SiteSettings"
+        Sequence="20"
+        Title="$Resources:core,appmng_viewmyapp_title;"
+        Rights="ManageLists"
+        Description="$Resources:core,appmng_viewmyapp_description;">
+            <UrlAction Url="~layouts/appreglist.aspx" />
+    </CustomAction>
+</Elements>

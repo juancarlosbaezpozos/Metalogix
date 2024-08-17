@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- default.html redirect page -->
+    <Module 
+    	Name="MOEPageRedirect"
+    	Url="OECatalog"
+    	RootWebOnly="TRUE" >
+    	<File Url="WorkflowTaskPane.xml" Type="GhostableInLibrary" />
+    </Module>
+</Elements>

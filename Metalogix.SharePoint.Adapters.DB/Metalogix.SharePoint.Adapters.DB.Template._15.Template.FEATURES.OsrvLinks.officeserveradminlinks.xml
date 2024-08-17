@@ -1,0 +1,18 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+        <CustomAction 
+            Id="LicenseConversion"
+            GroupId="Patch"
+            Location="Microsoft.SharePoint.Administration.UpgradeAndMigration"
+            Sequence="5"
+            Title="$Resources:osrvcore,ServerConversionLinkText;" >
+                <UrlAction Url="/_admin/Conversion.aspx"/>
+        </CustomAction>
+        <CustomAction
+            Id="CA_UpgradeAndMigration_ConvertFarmLicenseType"
+            GroupId="CA_UpgradeAndMigration"
+            Location="Microsoft.SharePoint.Administration.Default"
+            Sequence="5"
+            Title="$Resources:osrvcore,ServerConversionLinkText;">
+            <UrlAction Url="/_admin/Conversion.aspx" />
+        </CustomAction>
+</Elements>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_bOkay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_bMapItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_cbMapColumns.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_cbChangeDefaultContentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 404</value>
+  </data>
+  <data name="w_cbRemoveAllOther.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 381</value>
+  </data>
+  <data name="w_cbChangeDefaultContentType.Properties.Caption" xml:space="preserve">
+    <value>Change default content type:</value>
+  </data>
+  <data name="w_bCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>437, 429</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_bMapColumns.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_bMapColumns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 335</value>
+  </data>
+  <data name="&gt;&gt;w_bMapColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_bMapColumns.Name" xml:space="preserve">
+    <value>w_bMapColumns</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Content Type Application Options</value>
+  </data>
+  <data name="&gt;&gt;w_bMapItems.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbMapColumns.Properties.Caption" xml:space="preserve">
+    <value>Map source data to new content type columns</value>
+  </data>
+  <data name="w_cbAddUnmappedToDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 19</value>
+  </data>
+  <data name="w_cbMapColumns.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_cbAddUnmappedToDefault.Properties.Caption" xml:space="preserve">
+    <value>Add unmapped items to the default content type</value>
+  </data>
+  <data name="w_cbMapItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="w_cbMapItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 358</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>524, 464</value>
+  </data>
+  <data name="&gt;&gt;w_bMapColumns.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_bMapColumns.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeDefaultContentType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeDefaultContentType.Name" xml:space="preserve">
+    <value>w_cbChangeDefaultContentType</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapItems.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_bOkay.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_cbRemoveAllOther.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapItems.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbMapItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="w_bMapColumns.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="w_cbMapItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 19</value>
+  </data>
+  <data name="&gt;&gt;w_lrscContentTypeSelector.Name" xml:space="preserve">
+    <value>w_lrscContentTypeSelector</value>
+  </data>
+  <data name="&gt;&gt;w_lrscContentTypeSelector.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Components.LeftRightSelectionControl, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="w_bCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_cbNewDefaultContentType.Name" xml:space="preserve">
+    <value>w_cbNewDefaultContentType</value>
+  </data>
+  <data name="&gt;&gt;w_cbNewDefaultContentType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbMapColumns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 335</value>
+  </data>
+  <data name="w_cbChangeDefaultContentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 19</value>
+  </data>
+  <data name="&gt;&gt;w_cbAddUnmappedToDefault.Name" xml:space="preserve">
+    <value>w_cbAddUnmappedToDefault</value>
+  </data>
+  <data name="&gt;&gt;w_cbAddUnmappedToDefault.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbMapColumns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 19</value>
+  </data>
+  <data name="w_lrscContentTypeSelector.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cbNewDefaultContentType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_bMapColumns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 19</value>
+  </data>
+  <data name="w_bMapColumns.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;w_cbAddUnmappedToDefault.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbChangeDefaultContentType.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="w_cbAddUnmappedToDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="w_cbRemoveAllOther.Properties.Caption" xml:space="preserve">
+    <value>Remove all other content types from list</value>
+  </data>
+  <data name="w_cbChangeDefaultContentType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="w_cbMapItems.Properties.Caption" xml:space="preserve">
+    <value>Map source items to new content types</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="w_cbAddUnmappedToDefault.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;w_cbNewDefaultContentType.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_cbNewDefaultContentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 403</value>
+  </data>
+  <data name="&gt;&gt;w_cbAddUnmappedToDefault.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_bCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_bCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="w_cbNewDefaultContentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 20</value>
+  </data>
+  <data name="w_cbAddUnmappedToDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 427</value>
+  </data>
+  <data name="w_bOkay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 429</value>
+  </data>
+  <data name="w_lrscContentTypeSelector.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbRemoveAllOther.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.Name" xml:space="preserve">
+    <value>w_bOkay</value>
+  </data>
+  <data name="w_cbNewDefaultContentType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="w_cbRemoveAllOther.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="w_bOkay.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="w_bOkay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_cbNewDefaultContentType.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ContentTypeApplicationOptionsConfigDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>455, 290</value>
+  </data>
+  <data name="w_bMapItems.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_cbRemoveAllOther.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeDefaultContentType.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_bMapItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_bMapItems.Name" xml:space="preserve">
+    <value>w_bMapItems</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="w_lrscContentTypeSelector.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lrscContentTypeSelector.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="w_bCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;w_cbRemoveAllOther.Name" xml:space="preserve">
+    <value>w_cbRemoveAllOther</value>
+  </data>
+  <data name="&gt;&gt;w_cbRemoveAllOther.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="w_cbRemoveAllOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 19</value>
+  </data>
+  <data name="&gt;&gt;w_lrscContentTypeSelector.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cbChangeDefaultContentType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.Name" xml:space="preserve">
+    <value>w_bCancel</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapItems.Name" xml:space="preserve">
+    <value>w_cbMapItems</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;w_cbMapColumns.Name" xml:space="preserve">
+    <value>w_cbMapColumns</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_bMapItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 358</value>
+  </data>
+  <data name="w_lrscContentTypeSelector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 315</value>
+  </data>
+  <data name="&gt;&gt;w_bMapItems.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="w_bMapItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 19</value>
+  </data>
+  <data name="w_bMapItems.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+</root>

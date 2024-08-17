@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblDaysUntilReregistrationValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblLicenseExpiredWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 13</value>
+  </data>
+  <data name="lblLicenseExpiredWarning.Text" xml:space="preserve">
+    <value>License has expired. Please contact sales@metalogix.com.</value>
+  </data>
+  <data name="&gt;&gt;panelTelemetry.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelTelemetry.Name" xml:space="preserve">
+    <value>panelTelemetry</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageValue.Name" xml:space="preserve">
+    <value>lblLicenseUsageValue</value>
+  </data>
+  <data name="lblMaintenanceExpirationWarning.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblMaintenanceDateValue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pnlRefreshandCloseButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 458</value>
+  </data>
+  <data name="lblLicenseUsageWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 159</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDate.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panelTelemetry.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbxMetalogixLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pbxMetalogixLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 165</value>
+  </data>
+  <data name="&gt;&gt;pnlRefreshandCloseButtons.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpiredWarning.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;panelTelemetry.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageWarning.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageWarning.Name" xml:space="preserve">
+    <value>lblLicenseUsageWarning</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAC5cgcvuXIHo7lyB5W5cgebuXIHGf///wG5cgdluXIHpblyB6W5cgdv////AblyBw+5cgeVuXIHlbly
+        B6e5cgc3uXIHqblyBz////8BuXIHablyB3W5cgcnuXIHnf///wH///8BuXIHnblyBy+5cgdpuXIHdf//
+        /wG5cgcxuXIHq7lyB6W5cgcF////AblyBy25cgdnuXIHUblyB3P///8B////AblyB3G5cgdRuXIHYbly
+        Bzv///8B////AblyB5+5cgdruXIHnblyBz+5cgeruXIHSf///wG5cgebuXIHa7lyB2O5cgeh////Ably
+        Bz25cgetuXIHQ7lyB5e5cgdz////AblyB0O5cgdhuXIHN////wH///8BuXIHF7lyB1m5cgdbuXIHHf//
+        /wH///8BuXIHM7lyB2G5cgdHuXIHA////wG5cgcvuXIHWblyByP///8B////AblyBwm5cgdJuXIHTbly
+        Bwv///8B////AblyBx+5cgdZuXIHM////wG5cgdfuXIHpblyB1O5cgetuXIHP////wG5cgeTuXIHfbly
+        B3W5cgeZ////AblyBzO5cgetuXIHVblyB5+5cgdnuXIHpblyBwn///8BuXIHMblyB2e5cgdRuXIHd///
+        /wH///8BuXIHc7lyB1G5cgdjuXIHPf///wH///8BuXIHoblyB6u5cgct////AblyB1W5cgdzuXIHN7ly
+        B5P///8B////AblyB4+5cgc9uXIHa7lyB2P///8BuXIHIblyB6m5cgc9uXIHpblyB325cgehuXIHI///
+        /wG5cgd1uXIHmblyB5O5cgd7////AblyBxm5cgeduXIHf7lyB6W5cgdF////AblyBwu5cgcjuXIHA///
+        /wH///8B////AblyBxm5cgcb////Af///wH///8BuXIHA7lyByO5cgcN////AblyBwW5cgdduXIHd7ly
+        B1H///8B////AblyBye5cgdxuXIHc7lyBy3///8B////AblyB0u5cgd3uXIHYblyBwu5cgdxuXIHl7ly
+        BzO5cgenuXIHT////wG5cgefuXIHX7lyB1e5cgej////AblyB0O5cgeruXIHNblyB5G5cgd7uXIHpbly
+        BwX///8BuXIHLblyB2W5cgdTuXIHc////wH///8BuXIHb7lyB1G5cgdhuXIHOf///wH///8BuXIHn7ly
+        B6W5cgdN////AblyB3W5cgdxuXIHH7lyB6X///8B////AblyB6O5cgcnuXIHZblyB4H///8BuXIHP7ly
+        B6e5cgcluXIHoblyB6W5cgeTuXIHE////wG5cgdbuXIHr7lyB6+5cgdj////AblyBwu5cgeNuXIHpbly
+        B6W5cgctAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistrationValue.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="lblLicenseExpirationDate.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblLicenseUsageValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 140</value>
+  </data>
+  <data name="panelTelemetry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>529, 25</value>
+  </data>
+  <data name="&gt;&gt;checkBoxEnableTelemetry.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxEnableTelemetry.Name" xml:space="preserve">
+    <value>checkBoxEnableTelemetry</value>
+  </data>
+  <data name="lblLicenseKeyValue.Text" xml:space="preserve">
+    <value>lblLicenseKeyValue</value>
+  </data>
+  <data name="lblLicenseKeyValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDate.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="lblMaintenanceExpirationWarning.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelLicenseInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 188</value>
+  </data>
+  <data name="pbxMetalogixLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBoxEnableTelemetry.Parent" xml:space="preserve">
+    <value>panelTelemetry</value>
+  </data>
+  <data name="&gt;&gt;pnlRefreshandCloseButtons.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pnlMetalogixLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistrationValue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlRefreshandCloseButtons.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pnlRefreshandCloseButtons.Name" xml:space="preserve">
+    <value>pnlRefreshandCloseButtons</value>
+  </data>
+  <data name="lblLicenseUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>532, 529</value>
+  </data>
+  <data name="lblLicenseExpiredWarning.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pbxMetalogixLogo.Name" xml:space="preserve">
+    <value>pbxMetalogixLogo</value>
+  </data>
+  <data name="&gt;&gt;pbxMetalogixLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMaintenanceExpirationWarning.Text" xml:space="preserve">
+    <value>Support &amp;&amp; Maintenance has expired. Please contact sales@metalogix.com.</value>
+  </data>
+  <data name="lblMaintenanceExpirationWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 13</value>
+  </data>
+  <data name="lblLicenseUsage.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblLicenseUsageWarning.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblMaintenanceDateValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 13</value>
+  </data>
+  <data name="lblMaintenanceDateValue.Text" xml:space="preserve">
+    <value>lblMaintenanceDateValue</value>
+  </data>
+  <data name="lblMetalogixCopywrites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 210</value>
+  </data>
+  <data name="&gt;&gt;checkBoxEnableTelemetry.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblLicenseUsageValue.Text" xml:space="preserve">
+    <value>lblLicenseUsageValue</value>
+  </data>
+  <data name="lblLicenseUsageValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="&gt;&gt;_textEditContextMenu.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.TextEditContextMenu, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;_textEditContextMenu.Name" xml:space="preserve">
+    <value>_textEditContextMenu</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDateValue.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 14</value>
+  </data>
+  <data name="lblLicenseKey.Text" xml:space="preserve">
+    <value>License Key:</value>
+  </data>
+  <data name="lblLicenseKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="checkBoxEnableTelemetry.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlMetalogixLogo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 33</value>
+  </data>
+  <data name="&gt;&gt;labelLink.Name" xml:space="preserve">
+    <value>labelLink</value>
+  </data>
+  <data name="&gt;&gt;labelLink.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.HyperLinkEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblLicenseUsageWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblLicenseExpiredWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="labelLink.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.Name" xml:space="preserve">
+    <value>lblLicenseKey</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="checkBoxEnableTelemetry.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelLink.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>90, 135, 198</value>
+  </data>
+  <data name="panelLicenseInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlMetalogixLogo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageValue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblLicenseExpiredWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 79</value>
+  </data>
+  <data name="lblMaintenanceDate.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDateValue.Name" xml:space="preserve">
+    <value>lblLicenseExpirationDateValue</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDateValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblLicenseUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 140</value>
+  </data>
+  <data name="lblDaysUntilReregistrationValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 181</value>
+  </data>
+  <data name="lblLicenseExpirationDate.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDate.Name" xml:space="preserve">
+    <value>lblMaintenanceDate</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="pnlMetalogixLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 188</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlMetalogixLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDateValue.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="lblDaysUntilReregistration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 13</value>
+  </data>
+  <data name="lblDaysUntilReregistration.Text" xml:space="preserve">
+    <value>Days Until Reregistration:</value>
+  </data>
+  <data name="lblLicenseExpirationDateValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 58</value>
+  </data>
+  <data name="btnRefresh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDaysUntilReregistration.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblLicenseUsageValue.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 18</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDateValue.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="lblLicenseUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="lblLicenseUsage.Text" xml:space="preserve">
+    <value>License Usage:</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageWarning.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDateValue.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageValue.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsageWarning.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btnRefresh.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>pnlRefreshandCloseButtons</value>
+  </data>
+  <data name="&gt;&gt;panelLicenseInfo.Name" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;panelLicenseInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlMetalogixLogo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pnlMetalogixLogo.Name" xml:space="preserve">
+    <value>pnlMetalogixLogo</value>
+  </data>
+  <data name="lblLicenseExpirationDate.Text" xml:space="preserve">
+    <value>License Expiration Date:</value>
+  </data>
+  <data name="lblLicenseExpirationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 13</value>
+  </data>
+  <data name="lblLicenseExpirationDateValue.Text" xml:space="preserve">
+    <value>lblLicenseExpirationDateValue</value>
+  </data>
+  <data name="lblLicenseExpirationDateValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 13</value>
+  </data>
+  <data name="lblMaintenanceDate.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceExpirationWarning.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="checkBoxEnableTelemetry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 3</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistrationValue.Name" xml:space="preserve">
+    <value>lblDaysUntilReregistrationValue</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistrationValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblLicenseKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 17</value>
+  </data>
+  <data name="pbxMetalogixLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="checkBoxEnableTelemetry.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 5</value>
+  </data>
+  <data name="pnlRefreshandCloseButtons.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="panelLicenseInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelLicenseInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 270</value>
+  </data>
+  <data name="lblMaintenanceExpirationWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 119</value>
+  </data>
+  <data name="lblLicenseKeyValue.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblMaintenanceDateValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 99</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceExpirationWarning.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKeyValue.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblLicenseExpiredWarning.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistration.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblMetalogixCopywrites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 52</value>
+  </data>
+  <data name="lblMetalogixCopywrites.Text" xml:space="preserve">
+    <value>© Copyright 2017 Metalogix Software,  GmbH
+http://www.metalogix.com
++1202.609.9100
+support@metalogix.com</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="lblDaysUntilReregistration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 181</value>
+  </data>
+  <data name="lblLicenseKeyValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 17</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKeyValue.Name" xml:space="preserve">
+    <value>lblLicenseKeyValue</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKeyValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="_textEditContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 148</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UIAboutForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKey.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panelTelemetry.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblLicenseUsageWarning.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="pbxMetalogixLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 12</value>
+  </data>
+  <data name="labelLink.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="checkBoxEnableTelemetry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 19</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseKeyValue.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsage.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsage.Name" xml:space="preserve">
+    <value>lblLicenseUsage</value>
+  </data>
+  <data name="lblLicenseKey.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblLicenseExpirationDateValue.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblMetalogixCopywrites.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblLicenseUsageWarning.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistration.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="lblMaintenanceDate.Text" xml:space="preserve">
+    <value>Support &amp;&amp; Maintenance Expiration Date:</value>
+  </data>
+  <data name="pnlRefreshandCloseButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 71</value>
+  </data>
+  <data name="lblMaintenanceDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 13</value>
+  </data>
+  <data name="pnlRefreshandCloseButtons.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="labelLink.EditValue" xml:space="preserve">
+    <value>Metalogix Customer Experience Improvement Program.</value>
+  </data>
+  <data name="lblMaintenanceExpirationWarning.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblMetalogixCopywrites.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDateValue.Name" xml:space="preserve">
+    <value>lblMaintenanceDateValue</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDateValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblDaysUntilReregistration.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsage.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceExpirationWarning.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceExpirationWarning.Name" xml:space="preserve">
+    <value>lblMaintenanceExpirationWarning</value>
+  </data>
+  <data name="&gt;&gt;lblMetalogixCopywrites.Name" xml:space="preserve">
+    <value>lblMetalogixCopywrites</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDate.Name" xml:space="preserve">
+    <value>lblLicenseExpirationDate</value>
+  </data>
+  <data name="&gt;&gt;lblMetalogixCopywrites.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpirationDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelLicenseInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelLicenseInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblLicenseExpiredWarning.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="&gt;&gt;labelLink.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblLicenseKey.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDate.Parent" xml:space="preserve">
+    <value>panelLicenseInfo</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>pnlRefreshandCloseButtons</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpiredWarning.Name" xml:space="preserve">
+    <value>lblLicenseExpiredWarning</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpiredWarning.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="panelTelemetry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 456</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistration.Name" xml:space="preserve">
+    <value>lblDaysUntilReregistration</value>
+  </data>
+  <data name="&gt;&gt;lblDaysUntilReregistration.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lblLicenseUsageWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lblMetalogixCopywrites.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseExpiredWarning.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblLicenseUsage.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="checkBoxEnableTelemetry.Properties.Caption" xml:space="preserve">
+    <value>Participate in the Metalogix Customer Experience Improvement Program</value>
+  </data>
+  <data name="pnlMetalogixLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="lblLicenseExpirationDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 58</value>
+  </data>
+  <data name="&gt;&gt;lblMaintenanceDate.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblMaintenanceExpirationWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pbxMetalogixLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblMaintenanceDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 99</value>
+  </data>
+  <data name="&gt;&gt;labelLink.Parent" xml:space="preserve">
+    <value>panelTelemetry</value>
+  </data>
+  <data name="lblDaysUntilReregistrationValue.Text" xml:space="preserve">
+    <value>lblDaysUntilReregistrationValue</value>
+  </data>
+  <data name="lblDaysUntilReregistrationValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 13</value>
+  </data>
+  <data name="&gt;&gt;pbxMetalogixLogo.Parent" xml:space="preserve">
+    <value>pnlMetalogixLogo</value>
+  </data>
+</root>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<Feature  Id="EAF6A128-0482-4F71-9A2F-B1C650680E77"
+          Title="$Resources:SearchWebParts_Feature_Title_15;"
+          Description="$Resources:SearchWebParts_Feature_Description_15;"
+          DefaultResourceFile="Microsoft.Office.Server.Search"
+          Version="15.0.0.24"
+          Scope="Site"
+          Hidden="TRUE"
+          ReceiverAssembly="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+          ReceiverClass="Microsoft.Office.Server.Search.Administration.SearchWebPartsFeatureReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ElementManifests>
+        <ElementManifest Location="DisplayTemplateColumns.xml"/>
+        <ElementManifest Location="DisplayTemplateContentTypes.xml"/>
+        <ElementManifest Location="webPartDWPFiles.xml"/>
+    </ElementManifests>
+    <UpgradeActions>
+        <VersionRange EndVersion="15.0.0.2">
+            <ApplyElementManifests>
+                <ElementManifest Location="DisplayTemplateColumns.xml"/>
+                <ElementManifest Location="DisplayTemplateContentTypes.xml"/>
+            </ApplyElementManifests>
+            <CustomUpgradeAction Name="RemoveOldWebparts"/>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.3">
+            <CustomUpgradeAction Name="RemoveFiles">
+                <Parameters>
+                    <Parameter Name="FileNames">
+                    _catalogs/masterpage/Display Templates/Search/IntentGroup.js |
+                    _catalogs/masterpage/Display Templates/Search/IntentGroup.html
+                    </Parameter>
+                </Parameters>
+            </CustomUpgradeAction>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.5">
+          <ApplyElementManifests>
+            <ElementManifest Location="ServerTemplateContentTypes.xml" />
+            <ElementManifest Location="ServerTemplateFiles.xml" />
+          </ApplyElementManifests>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.7">
+            <CustomUpgradeAction Name="RemoveOldWebparts"/>
+        </VersionRange> 
+        <VersionRange EndVersion="15.0.0.11">
+            <CustomUpgradeAction Name="RemoveFiles">
+                <Parameters>
+                    <Parameter Name="FileNames">
+                    _catalogs/masterpage/Display Templates/Search/BestBetItem.js |
+                    _catalogs/masterpage/Display Templates/Search/BestBetItem.html |
+                    _catalogs/masterpage/Display Templates/Search/DefaultItem.js |
+                    _catalogs/masterpage/Display Templates/Search/DefaultItem.html |
+                    _catalogs/masterpage/Display Templates/Search/DefaultHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/DefaultHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/DefinitionItem.js |
+                    _catalogs/masterpage/Display Templates/Search/DefinitionItem.html |
+                    _catalogs/masterpage/Display Templates/Search/SiteItem.js |
+                    _catalogs/masterpage/Display Templates/Search/SiteItem.html |
+                    _catalogs/masterpage/Display Templates/Search/SiteHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/SiteHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/WordItem.js |
+                    _catalogs/masterpage/Display Templates/Search/WordItem.html |
+                    _catalogs/masterpage/Display Templates/Search/WordHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/WordHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/OfficeDocumentItem.js |
+                    _catalogs/masterpage/Display Templates/Search/OfficeDocumentItem.html |
+                    _catalogs/masterpage/Display Templates/Search/OfficeDocumentHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/OfficeDocumentHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/OneNoteItem.js |
+                    _catalogs/masterpage/Display Templates/Search/OneNoteItem.html |
+                    _catalogs/masterpage/Display Templates/Search/OneNoteHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/OneNoteHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/PersonalResultItem.js |
+                    _catalogs/masterpage/Display Templates/Search/PersonalResultItem.html |
+                    _catalogs/masterpage/Display Templates/Search/PictureItem.js |
+                    _catalogs/masterpage/Display Templates/Search/PictureItem.html |
+                    _catalogs/masterpage/Display Templates/Search/PictureHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/PictureHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/PowerPointItem.js |
+                    _catalogs/masterpage/Display Templates/Search/PowerPointItem.html |
+                    _catalogs/masterpage/Display Templates/Search/PowerPointHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/PowerPointHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/PeopleHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/PeopleHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/VideoHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/VideoHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Search/DefaultGroup.js |
+                    _catalogs/masterpage/Display Templates/Search/DefaultGroup.html |
+                    _catalogs/masterpage/Display Templates/Search/DefaultResult.js |
+                    _catalogs/masterpage/Display Templates/Search/DefaultResult.html |
+                    _catalogs/masterpage/Display Templates/Search/DefaultSearchBox.js |
+                    _catalogs/masterpage/Display Templates/Search/DefaultSearchBox.html |
+                    _catalogs/masterpage/Display Templates/Search/SiteSearchBox.js |
+                    _catalogs/masterpage/Display Templates/Search/SiteSearchBox.html |
+                    _catalogs/masterpage/Display Templates/Search/EmptySearchBox.js |
+                    _catalogs/masterpage/Display Templates/Search/EmptySearchBox.html |
+                    _catalogs/masterpage/Display Templates/Search/MicroBlogItem.js |
+                    _catalogs/masterpage/Display Templates/Search/MicroBlogItem.html |
+                    _catalogs/masterpage/Display Templates/Search/MicroBlogHoverPanel.js |
+                    _catalogs/masterpage/Display Templates/Search/MicroBlogHoverPanel.html |
+                    _catalogs/masterpage/Display Templates/Filters/DefaultRefinement.js |
+                    _catalogs/masterpage/Display Templates/Filters/DefaultRefinement.html |
+                    _catalogs/masterpage/Display Templates/Filters/RefinementItem.js |
+                    _catalogs/masterpage/Display Templates/Filters/RefinementItem.html
+                    </Parameter>
+                </Parameters>
+            </CustomUpgradeAction>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.12">
+            <CustomUpgradeAction Name="RemoveFiles">
+                <Parameters>
+                    <Parameter Name="FileNames">
+                    _catalogs/masterpage/Display Templates/Content Web Parts/Group_Content.js
+                    </Parameter>
+                </Parameters>
+            </CustomUpgradeAction>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.15">
+            <CustomUpgradeAction Name="SyncTemplates">
+                <Parameters>
+                    <Parameter Name="FileNames">
+                        _catalogs/masterpage/Display Templates/Content Web Parts/Group_Content |
+                        _catalogs/masterpage/Display Templates/Filters/Control_Refinement |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_Default |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_Slider |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_SliderBarGraph |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_eDiscoveryExchangeRefinement |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_eDiscoverySharePointRefinement |
+                        _catalogs/masterpage/Display Templates/Search/Item_Default |
+                        _catalogs/masterpage/Display Templates/Search/Item_CommonItem_Body |
+                        _catalogs/masterpage/Display Templates/Search/Item_Site |
+                        _catalogs/masterpage/Display Templates/Search/Item_Word |
+                        _catalogs/masterpage/Display Templates/Search/Item_BestBet |
+                        _catalogs/masterpage/Display Templates/Search/Item_Excel |
+                        _catalogs/masterpage/Display Templates/Search/Item_OfficeDocument |
+                        _catalogs/masterpage/Display Templates/Search/Item_OneNote |
+                        _catalogs/masterpage/Display Templates/Search/Item_PDF |
+                        _catalogs/masterpage/Display Templates/Search/Item_PersonalFavorite |
+                        _catalogs/masterpage/Display Templates/Search/Item_Picture |
+                        _catalogs/masterpage/Display Templates/Search/Item_PowerPoint |
+                        _catalogs/masterpage/Display Templates/Search/Group_Default |
+                        _catalogs/masterpage/Display Templates/Search/Control_SearchResults |
+                        _catalogs/masterpage/Display Templates/Search/Control_SearchBox |
+                        _catalogs/masterpage/Display Templates/Search/Control_SearchBox_Compact |
+                        _catalogs/masterpage/Display Templates/Search/Control_Blank |
+                        _catalogs/masterpage/Display Templates/Search/Item_Default_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_CommonHoverPanel_Actions |
+                        _catalogs/masterpage/Display Templates/Search/Item_CommonHoverPanel_Body |
+                        _catalogs/masterpage/Display Templates/Search/Item_CommonHoverPanel_Header |
+                        _catalogs/masterpage/Display Templates/Search/Item_Excel_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_PDF_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_OfficeDocument_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_Word_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_PowerPoint_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_OneNote_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_Picture_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_Site_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_Person_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_Video_HoverPanel |
+                        _catalogs/masterpage/Display Templates/Search/Item_MicroBlog |
+                        _catalogs/masterpage/Display Templates/Search/Item_MicroBlog_HoverPanel |
+                        _catalogs/masterpage/Display Templates/System/Item_Recommendations |
+                        _catalogs/masterpage/Display Templates/System/Control_Recommendations |
+                        _catalogs/masterpage/Display Templates/System/Item_eDiscoverySharePoint_HoverPanel
+                    </Parameter>
+                </Parameters>
+            </CustomUpgradeAction>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.16">
+            <ApplyElementManifests>
+                <ElementManifest Location="webPartDWPFiles7.xml"/>
+            </ApplyElementManifests>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.17">
+            <CustomUpgradeAction Name="RemoveFiles">
+                <Parameters>
+                    <Parameter Name="FileNames">
+                        _catalogs/wp/Navigation.webpart |
+                        _catalogs/masterpage/Display Templates/System/Item_eDiscoverySharePoint_HoverPanel.html |
+                        _catalogs/masterpage/Display Templates/System/Item_eDiscoverySharePoint_HoverPanel.js |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_eDiscoverySharePointRefinement.html |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_eDiscoverySharePointRefinement.js |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_eDiscoveryExchangeRefinement.html |
+                        _catalogs/masterpage/Display Templates/Filters/Filter_eDiscoveryExchangeRefinement.js
+                    </Parameter>
+                </Parameters>
+            </CustomUpgradeAction>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.18">
+            <ApplyElementManifests>
+                <ElementManifest Location="webPartDWPFiles8.xml"/>
+            </ApplyElementManifests>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.19">
+            <ApplyElementManifests>
+                <ElementManifest Location="webPartDWPFilesQB.xml"/>
+            </ApplyElementManifests>
+            <CustomUpgradeAction Name="RemoveFiles">
+                <Parameters>
+                    <Parameter Name="FileNames">
+                        _catalogs/masterpage/Display Templates/Search/Item_QBPreview.html |
+                        _catalogs/masterpage/Display Templates/Search/Item_QBPreview.js |
+                        _catalogs/masterpage/Display Templates/Search/Control_QBPreview.html |
+                        _catalogs/masterpage/Display Templates/Search/Control_QBPreview.js |
+                        _catalogs/masterpage/Display Templates/Search/Group_QBPreview.html |
+                        _catalogs/masterpage/Display Templates/Search/Group_QBPreview.js |
+                    </Parameter>
+                </Parameters>
+            </CustomUpgradeAction>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.20">
+            <ApplyElementManifests>
+                <ElementManifest Location="webPartDWPFiles9.xml"/>
+            </ApplyElementManifests>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.21">
+            <CustomUpgradeAction Name="SyncTemplates">
+                <Parameters>
+                    <Parameter Name="FileNames">
+                        _catalogs/masterpage/Display Templates/System/Item_Recommendations |
+                        _catalogs/masterpage/Display Templates/System/Control_Recommendations
+                    </Parameter>
+                </Parameters>
+            </CustomUpgradeAction>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.22">
+            <ApplyElementManifests>
+                <ElementManifest Location="webPartDWPFiles10.xml"/>
+            </ApplyElementManifests>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.23">
+            <ApplyElementManifests>
+                <ElementManifest Location="webPartDWPFilesQBRef.xml"/>
+            </ApplyElementManifests>
+        </VersionRange>
+        <VersionRange EndVersion="15.0.0.24">
+            <ApplyElementManifests>
+                <ElementManifest Location="webPartDWPFiles.xml"/>
+            </ApplyElementManifests>
+        </VersionRange>
+    </UpgradeActions>
+</Feature>

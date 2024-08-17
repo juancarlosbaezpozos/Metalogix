@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="helpTipButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbListScope.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_cbNintexDatabaseInstanceEntries.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeOOB.Name" xml:space="preserve">
+    <value>_cbContentTypeOOB</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeOOB.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gbWebScope.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="helpTipButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="gbListScope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 177</value>
+  </data>
+  <data name="_cbListSPD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowPreviousVersionInstanceData.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowPreviousVersionInstanceData.Name" xml:space="preserve">
+    <value>_cbWorkflowPreviousVersionInstanceData</value>
+  </data>
+  <data name="_cbWorkflowInstanceData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 19</value>
+  </data>
+  <data name="helpIncludePreviousVersionInstancesButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;labelControlHelp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_cbListOOB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 19</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceCancelStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeSPD.Name" xml:space="preserve">
+    <value>_cbContentTypeSPD</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeSPD.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gbxGloballyReusable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceCancelStatus.Parent" xml:space="preserve">
+    <value>gbAssociationOptions</value>
+  </data>
+  <data name="helpTipButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;gbxGloballyReusable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_cbWorkflowInstanceData.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="helpListSPD2013OMButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;helpIncludePreviousVersionInstancesButton.Parent" xml:space="preserve">
+    <value>gbAssociationOptions</value>
+  </data>
+  <data name="_cbNintexDatabaseInstanceEntries.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>571, 470</value>
+  </data>
+  <data name="&gt;&gt;_cbListSPD.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbListSPD.Name" xml:space="preserve">
+    <value>_cbListSPD</value>
+  </data>
+  <data name="_cbNintexDatabaseInstanceEntries.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 19</value>
+  </data>
+  <data name="cbxGloballyReusableWorkflowTemplate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="cbxGloballyReusableWorkflowTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 19</value>
+  </data>
+  <data name="&gt;&gt;gbWebScope.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gbWebScope.Name" xml:space="preserve">
+    <value>gbWebScope</value>
+  </data>
+  <data name="_cbContentTypeSPD.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_cbWebOOB.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;helpWebSPD2013OMButton.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;helpWebSPD2013OMButton.Name" xml:space="preserve">
+    <value>helpWebSPD2013OMButton</value>
+  </data>
+  <data name="&gt;&gt;helpIncludePreviousVersionInstancesButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="helpIncludePreviousVersionInstancesButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="_cbWorkflowInstanceData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="&gt;&gt;helpIncludePreviousVersionInstancesButton.Name" xml:space="preserve">
+    <value>helpIncludePreviousVersionInstancesButton</value>
+  </data>
+  <data name="&gt;&gt;helpIncludePreviousVersionInstancesButton.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;gbListScope.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeSPD.Parent" xml:space="preserve">
+    <value>gbContentTypeScope</value>
+  </data>
+  <data name="_cbWorkflowInstanceData.Properties.Caption" xml:space="preserve">
+    <value>Preserve current workflow instance data</value>
+  </data>
+  <data name="&gt;&gt;gbAssociationOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="_rbWorkflowInstanceCancelStatus.Properties.Caption" xml:space="preserve">
+    <value>Cancel running workflows during migration</value>
+  </data>
+  <data name="_cbContentTypeOOB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 19</value>
+  </data>
+  <data name="&gt;&gt;gbListScope.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;helpTipButton.Name" xml:space="preserve">
+    <value>helpTipButton</value>
+  </data>
+  <data name="&gt;&gt;helpTipButton.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;gbAssociationOptions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_rbWorkflowInstanceRunningStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 43</value>
+  </data>
+  <data name="_cbWebSPD.Properties.Caption" xml:space="preserve">
+    <value>Preserve workflow associations for SharePoint Designer and Nintex Workflow</value>
+  </data>
+  <data name="_cbWorkflowPreviousVersionInstanceData.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_cbWebOOB.Parent" xml:space="preserve">
+    <value>gbWebScope</value>
+  </data>
+  <data name="_cbWebSPD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 19</value>
+  </data>
+  <data name="gbContentTypeScope.Text" xml:space="preserve">
+    <value>Content type scope</value>
+  </data>
+  <data name="gbContentTypeScope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 73</value>
+  </data>
+  <data name="gbContentTypeScope.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;_cbNintexDatabaseInstanceEntries.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbxGloballyReusableWorkflowTemplate.Parent" xml:space="preserve">
+    <value>gbxGloballyReusable</value>
+  </data>
+  <data name="&gt;&gt;_cbWebSPD.Parent" xml:space="preserve">
+    <value>gbWebScope</value>
+  </data>
+  <data name="&gt;&gt;_cbListOOB.Parent" xml:space="preserve">
+    <value>gbListScope</value>
+  </data>
+  <data name="helpTipButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbWebSPD.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceCancelStatus.Name" xml:space="preserve">
+    <value>_rbWorkflowInstanceCancelStatus</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceCancelStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbNintexDatabaseInstanceEntries.Parent" xml:space="preserve">
+    <value>gbAssociationOptions</value>
+  </data>
+  <data name="helpTipButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;_cbWebOOB.Name" xml:space="preserve">
+    <value>_cbWebOOB</value>
+  </data>
+  <data name="&gt;&gt;_cbWebOOB.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbListOOB.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="helpListSPD2013OMButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbListOOB.Name" xml:space="preserve">
+    <value>_cbListOOB</value>
+  </data>
+  <data name="&gt;&gt;helpWebSPD2013OMButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeSPD.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbAssociationOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 335</value>
+  </data>
+  <data name="gbAssociationOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;helpWebSPD2013OMButton.Parent" xml:space="preserve">
+    <value>gbWebScope</value>
+  </data>
+  <data name="helpListSPD2013OMButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbWebOOB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_cbListOOB.Properties.Caption" xml:space="preserve">
+    <value>Preserve out of the box list workflow associations</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="gbWebScope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 98</value>
+  </data>
+  <data name="helpListSPD2013OMButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_rbWorkflowInstanceCancelStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbNintexDatabaseInstanceEntries.Name" xml:space="preserve">
+    <value>_cbNintexDatabaseInstanceEntries</value>
+  </data>
+  <data name="&gt;&gt;_cbNintexDatabaseInstanceEntries.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="cbxGloballyReusableWorkflowTemplate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_cbContentTypeSPD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="&gt;&gt;gbContentTypeScope.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="helpIncludePreviousVersionInstancesButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbListOOB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gbContentTypeScope.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gbContentTypeScope.Name" xml:space="preserve">
+    <value>gbContentTypeScope</value>
+  </data>
+  <data name="&gt;&gt;cbxGloballyReusableWorkflowTemplate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 45</value>
+  </data>
+  <data name="gbContentTypeScope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 256</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_cbNintexDatabaseInstanceEntries.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="helpListSPD2013OMButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="_cbWorkflowPreviousVersionInstanceData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 83</value>
+  </data>
+  <data name="&gt;&gt;helpListSPD2013OMButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="helpListSPD2013OMButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 45</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="&gt;&gt;_cbListSPD.Parent" xml:space="preserve">
+    <value>gbListScope</value>
+  </data>
+  <data name="cbxGloballyReusableWorkflowTemplate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gbListScope.Name" xml:space="preserve">
+    <value>gbListScope</value>
+  </data>
+  <data name="&gt;&gt;gbListScope.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gbContentTypeScope.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbxGloballyReusable.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelControlHelp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_cbListOOB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_cbListSPD.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_rbWorkflowInstanceRunningStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>338, 19</value>
+  </data>
+  <data name="helpIncludePreviousVersionInstancesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="_cbNintexDatabaseInstanceEntries.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 102</value>
+  </data>
+  <data name="_cbWorkflowPreviousVersionInstanceData.Properties.Caption" xml:space="preserve">
+    <value>Include previous version instances</value>
+  </data>
+  <data name="labelControlHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_rbWorkflowInstanceCancelStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 63</value>
+  </data>
+  <data name="&gt;&gt;labelControlHelp.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControlHelp.Name" xml:space="preserve">
+    <value>labelControlHelp</value>
+  </data>
+  <data name="_cbContentTypeOOB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_cbContentTypeOOB.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gbListScope.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_cbListOOB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="_cbContentTypeOOB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="&gt;&gt;helpListSPD2013OMButton.Parent" xml:space="preserve">
+    <value>gbListScope</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_cbNintexDatabaseInstanceEntries.Properties.Caption" xml:space="preserve">
+    <value>Preserve Nintex Workflow instance history</value>
+  </data>
+  <data name="_cbContentTypeSPD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 19</value>
+  </data>
+  <data name="_cbWebSPD.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_cbWorkflowPreviousVersionInstanceData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 19</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;gbxGloballyReusable.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gbxGloballyReusable.Name" xml:space="preserve">
+    <value>gbxGloballyReusable</value>
+  </data>
+  <data name="gbxGloballyReusable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 50</value>
+  </data>
+  <data name="gbxGloballyReusable.Text" xml:space="preserve">
+    <value>Globally reusable workflow</value>
+  </data>
+  <data name="_cbWebOOB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gbxGloballyReusable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 42</value>
+  </data>
+  <data name="_cbWorkflowInstanceData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gbWebScope.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeOOB.Parent" xml:space="preserve">
+    <value>gbContentTypeScope</value>
+  </data>
+  <data name="_cbWebOOB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 19</value>
+  </data>
+  <data name="_cbWorkflowPreviousVersionInstanceData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="_cbListSPD.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceRunningStatus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbContentTypeScope.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbContentTypeOOB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowInstanceData.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="helpIncludePreviousVersionInstancesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_cbWebSPD.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceRunningStatus.Parent" xml:space="preserve">
+    <value>gbAssociationOptions</value>
+  </data>
+  <data name="helpIncludePreviousVersionInstancesButton.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="gbWebScope.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gbListScope.Text" xml:space="preserve">
+    <value>List scope</value>
+  </data>
+  <data name="gbListScope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 73</value>
+  </data>
+  <data name="labelControlHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 3</value>
+  </data>
+  <data name="_cbListSPD.Properties.Caption" xml:space="preserve">
+    <value>Preserve workflow associations for SharePoint Designer and Nintex Workflow</value>
+  </data>
+  <data name="&gt;&gt;gbAssociationOptions.Name" xml:space="preserve">
+    <value>gbAssociationOptions</value>
+  </data>
+  <data name="&gt;&gt;gbAssociationOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;helpTipButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gbxGloballyReusable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_cbWorkflowPreviousVersionInstanceData.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowInstanceData.Parent" xml:space="preserve">
+    <value>gbAssociationOptions</value>
+  </data>
+  <data name="helpListSPD2013OMButton.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TCWorkflowOptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Metalogix.SharePoint.UI.WinForms.ScopableTabbableControl, Metalogix.SharePoint.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="_cbWebSPD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceRunningStatus.Name" xml:space="preserve">
+    <value>_rbWorkflowInstanceRunningStatus</value>
+  </data>
+  <data name="&gt;&gt;_rbWorkflowInstanceRunningStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowInstanceData.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowInstanceData.Name" xml:space="preserve">
+    <value>_cbWorkflowInstanceData</value>
+  </data>
+  <data name="helpListSPD2013OMButton.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_cbListSPD.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_cbWebOOB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="_cbListOOB.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_rbWorkflowInstanceCancelStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 19</value>
+  </data>
+  <data name="_cbContentTypeOOB.Properties.Caption" xml:space="preserve">
+    <value>Preserve out of the box content type workflow associations</value>
+  </data>
+  <data name="&gt;&gt;_cbWebSPD.Name" xml:space="preserve">
+    <value>_cbWebSPD</value>
+  </data>
+  <data name="&gt;&gt;_cbWebSPD.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="gbWebScope.Text" xml:space="preserve">
+    <value>Web scope</value>
+  </data>
+  <data name="gbWebScope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 73</value>
+  </data>
+  <data name="&gt;&gt;helpTipButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_rbWorkflowInstanceRunningStatus.Properties.Caption" xml:space="preserve">
+    <value>Preserve historical state (running workflows cannot be continued)</value>
+  </data>
+  <data name="helpTipButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;cbxGloballyReusableWorkflowTemplate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v16.1, Version=16.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbxGloballyReusableWorkflowTemplate.Name" xml:space="preserve">
+    <value>cbxGloballyReusableWorkflowTemplate</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOFJREFUOE+dk70NgzAQhT1KZmGSzEFLRE9JlklNxRJJWicFUDr+HNuyzYEQJz0J
+        3fuRfT5UWcuyXKdpeszzbFLQg/OydVnyYoXjMAymrmtTVVUGenBo0Hrbv7xZt227Mpbouo4QnYWQChFE
+        TXMzr+fbfPTXgW96RcjozNyLowUSBGOJVIMHr2I45Z1LgxSABy/HzwgJUgDAuxvQ9/doPhWQmgkr+cMB
+        EgdcgDTEI4hDlJ4xYO8E8Rkpe5RR2sKtgGyRKNbSNnS6jVsQV5nyIed+prS4F8OxQjflAHpwXuZLqR/N
+        EUAPX5kP1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="helpIncludePreviousVersionInstancesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 82</value>
+  </data>
+  <data name="helpTipButton.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="_cbListSPD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 19</value>
+  </data>
+  <data name="&gt;&gt;helpListSPD2013OMButton.Name" xml:space="preserve">
+    <value>helpListSPD2013OMButton</value>
+  </data>
+  <data name="&gt;&gt;helpListSPD2013OMButton.Type" xml:space="preserve">
+    <value>TooltipsTest.HelpTipButton, Metalogix.UI.WinForms, Version=8.3.0.3, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;labelControlHelp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowPreviousVersionInstanceData.Parent" xml:space="preserve">
+    <value>gbAssociationOptions</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="gbAssociationOptions.Text" xml:space="preserve">
+    <value>Association content preservation</value>
+  </data>
+  <data name="gbAssociationOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 133</value>
+  </data>
+  <data name="_rbWorkflowInstanceRunningStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;_cbWorkflowPreviousVersionInstanceData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="helpWebSPD2013OMButton.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="_cbWebOOB.Properties.Caption" xml:space="preserve">
+    <value>Preserve out of the box web workflow associations</value>
+  </data>
+  <data name="_cbContentTypeSPD.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gbAssociationOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;gbWebScope.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelControlHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>539, 26</value>
+  </data>
+  <data name="labelControlHelp.Text" xml:space="preserve">
+    <value>Please note that workflow instance history is not migrated by default because this requires direct writing to the target SQL Server DB. For more information on enabling DB writing, please click the help button (?) to the left.</value>
+  </data>
+  <data name="cbxGloballyReusableWorkflowTemplate.Properties.Caption" xml:space="preserve">
+    <value>Preserve globally reusable workflow templates</value>
+  </data>
+  <data name="_cbContentTypeSPD.Properties.Caption" xml:space="preserve">
+    <value>Preserve workflow associations for SharePoint Designer and Nintex Workflow</value>
+  </data>
+  <data name="_rbWorkflowInstanceRunningStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_cbWorkflowInstanceData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+</root>

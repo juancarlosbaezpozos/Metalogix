@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TenantSettings>
+  <!--MysiteHostPath : https://<tenantName>-my.sharepoint.com. If it is blank, we will replace “admin” word from admin url to “my”
+  MySitePersonalFormat: Based on “Setup My Sites” options in Office 365 User profile settings. Default is Username_CollisionError
+  MysiteManagedPath : Based on “Setup My Sites” options in Office 365 User profile settings. Default is personal-->
+  <TenantSetting AdminUrl="default" MysiteManagedPath="/personal/" MysiteHostPath=""
+                 MySitePersonalFormat="Username_CollisionError">
+    <LanguageCollection>
+      <Language Name="English" LCID="1033"></Language>
+      <Language Name="Arabic" LCID="1025"></Language>
+      <Language Name="Basque" LCID="1069"></Language>
+      <Language Name="Bulgarian" LCID="1026"></Language>
+      <Language Name="Catalan" LCID="1027"></Language>
+      <Language Name="Chinese (Simplified)" LCID="2052"></Language>
+      <Language Name="Chinese (Traditional)" LCID="1028"></Language>
+      <Language Name="Croatian" LCID="1050"></Language>
+      <Language Name="Czech" LCID="1029"></Language>
+      <Language Name="Danish" LCID="1030"></Language>
+      <Language Name="Dutch" LCID="1043"></Language>
+      <Language Name="Estonian" LCID="1061"></Language>
+      <Language Name="Finnish" LCID="1035"></Language>
+      <Language Name="French" LCID="1036"></Language>
+      <Language Name="Galician" LCID="1110"></Language>
+      <Language Name="German" LCID="1031"></Language>
+      <Language Name="Greek" LCID="1032"></Language>
+      <Language Name="Hebrew" LCID="1037"></Language>
+      <Language Name="Hindi" LCID="1081"></Language>
+      <Language Name="Hungarian" LCID="1038"></Language>
+      <Language Name="Indonesian" LCID="1057"></Language>
+      <Language Name="Italian" LCID="1040"></Language>
+      <Language Name="Japanese" LCID="1041"></Language>
+      <Language Name="Kazakh" LCID="1087"></Language>
+      <Language Name="Korean" LCID="1042"></Language>
+      <Language Name="Latvian" LCID="1062"></Language>
+      <Language Name="Lithuanian" LCID="1063"></Language>
+      <Language Name="Malay" LCID="1086"></Language>
+      <Language Name="Norwegian (Bokmål)" LCID="1044"></Language>
+      <Language Name="Polish" LCID="1045"></Language>
+      <Language Name="Portuguese (Brazil)" LCID="1046"></Language>
+      <Language Name="Portuguese (Portugal)" LCID="2070"></Language>
+      <Language Name="Romanian" LCID="1048"></Language>
+      <Language Name="Russian" LCID="1049"></Language>
+      <Language Name="Serbian (Cyrillic, Serbia)" LCID="10266"></Language>
+      <Language Name="Serbian (Latin)" LCID="2074"></Language>
+      <Language Name="Slovak" LCID="1051"></Language>
+      <Language Name="Slovenian" LCID="1060"></Language>
+      <Language Name="Spanish" LCID="3082"></Language>
+      <Language Name="Swedish" LCID="1053"></Language>
+      <Language Name="Thai" LCID="1054"></Language>
+      <Language Name="Turkish" LCID="1055"></Language>
+      <Language Name="Ukrainian" LCID="1058"></Language>
+      <Language Name="Vietnamese" LCID="1066"></Language>
+    </LanguageCollection>
+    <ManagedPathCollection>
+      <Path IsWildcard="True">/sites/</Path>
+      <Path IsWildcard="True">/teams/</Path>
+      <Path IsWildcard="True">/portals/</Path>
+    </ManagedPathCollection>
+  </TenantSetting>
+</TenantSettings>

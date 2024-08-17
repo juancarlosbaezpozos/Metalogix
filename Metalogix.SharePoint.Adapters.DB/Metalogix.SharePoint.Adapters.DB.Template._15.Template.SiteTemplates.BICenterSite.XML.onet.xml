@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="1" ListDir="$Resources:core,lists_Folder;" xmlns:ows="Microsoft SharePoint" UIVersion="15">
+    <NavBars>
+        <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002" />
+        <NavBar Name="$Resources:ppsma,Onet_BIDashboards_Title;" Url="Dashboards" ID="1005" />
+        <NavBar Name="$Resources:spscore,ReportCenterOnet_DataConnectionsListInstanceName" Url="Data Connections" ID="1006" />
+        <NavBar Name="$Resources:core,category_Documents;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1004" />
+    </NavBars>
+    <ListTemplates>
+    </ListTemplates>
+    <DocumentTemplates>
+
+        <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+            </DocumentTemplateFiles>
+        </DocumentTemplate>
+
+        <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+            <DocumentTemplateFiles>
+                <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+            </DocumentTemplateFiles>
+        </DocumentTemplate>             
+
+    </DocumentTemplates>
+    <Configurations>
+        <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v15.master">
+            <Lists>
+                <List
+                    Title="$Resources:ppsma,Onet_BIDashboards_Title"
+                    Description="$Resources:ppsma,Onet_BIDashboards_Description"
+                    Type="480"
+                    Url="Dashboards"
+                    FeatureId="F979E4DC-1852-4F26-AB92-D1B2A190AFC9" />
+            </Lists>
+            <Modules>
+                <Module Name="Default"/>
+            </Modules>
+            <SiteFeatures>
+
+              <!-- Office Server PublishingSite Feature -->
+              <Feature ID="F6924D36-2FA8-4F0B-B16D-06B7250180FA" />
+              <!-- BasicWebParts Feature -->
+              <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+              <!-- PremiumSite Feature -->
+              <Feature ID="8581A8A7-CF16-4770-AC54-260265DDB0B2" />
+            </SiteFeatures>
+            <WebFeatures> 
+		<!-- Data Connections Feature -->
+		<Feature ID="00BFEA71-DBD7-4F72-B8CB-DA7AC0440130" />
+		<!-- Office Server PublishingWeb Feature -->
+                <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/Default.aspx" />
+                        <Property Key="SimplePublishing" Value="true" />
+                    </Properties>
+                </Feature>
+                <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+                    <!-- Per-Web Portal Navigation Properties-->
+                    <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+                        <Property Key="InheritGlobalNavigation" Value="true"/>
+                        <Property Key="IncludeSubSites" Value="true"/>
+                        <Property Key="IncludePages" Value="false"/>
+                    </Properties>
+                </Feature>
+				<Feature ID="99FE402E-89A0-45aa-9163-85342E865DC8" /> <!-- BaseWeb - Standard Site Features -->
+                <Feature ID="3992D4AB-FA9E-4791-9158-5EE32178E88A" /> <!-- BI Center Sample Data  -->
+		<Feature ID="A64C4402-7037-4476-A290-84CFD56CA01D" /> <!-- Data ConnectionsList Instance  -->				
+              </WebFeatures>
+        </Configuration>
+    </Configurations>
+    <Modules>
+        <Module Name="Default" Url="$Resources:osrvcore,List_Pages_UrlName;" Path="">
+        <File Url="default.aspx" NavBarHome="True" Type="GhostableInLibrary">
+                <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+                    <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title></Title>
+                        <FrameType>None</FrameType>
+                        <Description></Description>
+                        <IsIncluded>true</IsIncluded>
+                        <ZoneID>Main</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/15/images/mscontl.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                        <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                        <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><Value>
+
+&lt;table style=&quot;width: 100%&quot;&gt;
+
+				&lt;tr&gt;
+
+					&lt;td colspan=&quot;2&quot; &gt;
+					&lt;p style=&quot;width: 753px&quot;&gt; $Resources:ppsma,SiteTemplate_DefaultPage_GeneralDescription;
+
+					&lt;/p&gt;
+					&lt;/td&gt;
+
+&lt;/tr&gt;
+				&lt;tr&gt;
+
+					&lt;td style=&quot;height: 23px; width: 86px&quot;&gt;
+
+					&lt;img alt=&quot;BICENTERStatusList.png&quot; hasHeight=&quot;true&quot;setHeight=&quot;105&quot; setWidth=&quot;203&quot; 
+					src=&quot;/_layouts/15/images/BICENTERStatusList.png&quot; style=&quot;margin: 5px; width: 203px; height: 105px; float: left;&quot; /&gt;
+					&lt;/td&gt;
+
+				&lt;td&gt;
+					&lt;h2&gt;$Resources:ppsma,SiteTemplate_DefaultPage_ExcelShareSectionTitle;&lt;/h2&gt;
+
+				&lt;p style=&quot;width: 753px&quot;&gt;$Resources:ppsma,SiteTemplate_DefaultPage_ShareExcelWorkbooks;
+					&lt;/p&gt;
+
+				&lt;/td&gt;
+				&lt;/tr&gt;
+
+		&lt;tr&gt;
+					&lt;td style=&quot;height: 23px; width: 86px&quot;&gt;
+
+					&lt;img alt=&quot;BICENTERStatusList.png&quot; hasHeight=&quot;true&quot; setHeight=&quot;105&quot; setWidth=&quot;203&quot; 
+					src=&quot;/_layouts/15/images/BICENTERStatusList.png&quot; style=&quot;margin: 5px; width: 203px; height: 105px; float: left;&quot; /&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;height: 23px&quot;&gt;
+
+					&lt;h2&gt;$Resources:ppsma,SiteTemplate_DefaultPage_ExcelCreateSectionTitle;&lt;/h2&gt;
+
+				&lt;p style=&quot;width: 753px&quot;&gt;$Resources:ppsma,SiteTemplate_DefaultPage_ExcelCreateReports;
+					&lt;/p&gt;
+
+				&lt;/td&gt;
+
+				&lt;/tr&gt;
+
+				&lt;tr&gt;
+
+					&lt;td style=&quot;height: 23px; width: 86px&quot;&gt;
+
+				&lt;img alt=&quot;BICENTERStatusList.png&quot; hasHeight=&quot;true&quot; setHeight=&quot;105&quot; setWidth=&quot;203&quot; 
+					src=&quot;/_layouts/15/images/BICENTERStatusList.png&quot; style=&quot;margin: 5px; width: 203px; height: 105px;&quot; /&gt;
+					&lt;/td&gt;
+
+				&lt;td&gt;
+
+					&lt;h2&gt;$Resources:ppsma,SiteTemplate_DefaultPage_ExploreData;&lt;/h2&gt;
+					&lt;p style=&quot;width: 753px&quot;&gt;$Resources:ppsma,SiteTemplate_DefaultPage_PublishExcelWorkbooks;
+					&lt;/p&gt;
+
+				&lt;/td&gt;
+
+				&lt;/tr&gt;
+
+			&lt;/table&gt;
+			</Value>
+			</Content>
+                        <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                    </WebPart>
+                    ]]>
+                </AllUsersWebPart>
+                <NavBarPage Name="$Resources:core,nav_Home;" ID="1002" Position="Start"/>
+                <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start"/>               
+            </File>
+            <File Url="excelservicessample.aspx" NavBarHome="False" Type="GhostableInLibrary">
+	      <AllUsersWebPart WebPartZoneID="Top_Left" WebPartOrder="1">
+                <![CDATA[
+                    <WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                        <Title>$Resources:ppsma,EXCELSERVICESSAMPLE_TEXTWEBPART_TITLE;</Title>
+                        <FrameType>TitleBarOnly</FrameType>
+                        <Description></Description>
+                        <IsIncluded>true</IsIncluded>
+                        <ZoneID>Right</ZoneID>
+                        <PartOrder>1</PartOrder>
+                        <FrameState>Normal</FrameState>
+                        <Height />
+                        <Width />
+                        <AllowRemove>true</AllowRemove>
+                        <AllowZoneChange>true</AllowZoneChange>
+                        <AllowMinimize>true</AllowMinimize>
+                        <IsVisible>true</IsVisible>
+                        <Hidden>false</Hidden>
+                        <DetailLink />
+                        <HelpLink />
+                        <Dir>Default</Dir>
+                        <PartImageSmall />
+                        <MissingAssembly />
+                        <PartImageLarge>/_layouts/15/images/mscontl.gif</PartImageLarge>
+                        <IsIncludedFilter />
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                        <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                        <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><Value>
+			&lt;table style=&quot;width: 100%&quot;&gt;
+
+				&lt;tr&gt;
+
+					&lt;td&gt;
+					&lt;h2&gt;$Resources:ppsma,EXCELSERVICESSAMPLE_TEXTWEBPART_DESC1;
+					&lt;/h2&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td&gt;
+					&lt;p&gt;$Resources:ppsma,EXCELSERVICESSAMPLE_TEXTWEBPART_DESC2;
+					&lt;/p&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;				
+			&lt;/table&gt;
+                        </Value></Content>
+                        <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                    </WebPart>
+                    ]]>
+              </AllUsersWebPart>
+              <AllUsersWebPart WebPartZoneID="Top_Left" WebPartOrder="2">
+                <![CDATA[
+                      <WebPart xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns='http://schemas.microsoft.com/WebPart/v2'>
+                       <Title>Excel Web Renderer</Title>
+                       <FrameType>Default</FrameType>
+                       <Description>$Resources:ppsma,EXCELSERVICESSAMPLE_XLWEBPART_DESC;</Description>
+                       <IsIncluded>true</IsIncluded>
+                       <ZoneID>Left</ZoneID>
+                       <PartOrder>1</PartOrder>
+                       <FrameState>Normal</FrameState>
+                       <Height />
+                       <Width />
+                       <AllowRemove>true</AllowRemove>
+                       <AllowZoneChange>true</AllowZoneChange>
+                       <AllowMinimize>true</AllowMinimize>
+                       <AllowConnect>true</AllowConnect>
+                       <AllowEdit>true</AllowEdit>
+                       <AllowHide>true</AllowHide>
+                       <IsVisible>true</IsVisible>
+                       <Hidden>false</Hidden>
+                       <DetailLink></DetailLink>
+                       <HelpLink />
+                       <Dir>Default</Dir>
+                       <PartImageSmall />
+                       <MissingAssembly />
+                       <PartImageLarge />
+                       <IsIncludedFilter />
+                       <AuthorizationFilter />
+                       <Assembly>Microsoft.Office.Excel.WebUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                       <TypeName>Microsoft.Office.Excel.WebUI.ExcelWebRenderer</TypeName>
+                       <WorkbookUri xmlns='Microsoft.Office.Excel.WebUI'>~Site/Documents/Excel Services Sample Workbook.xlsx</WorkbookUri>
+                       <CloseWorkbookSessions xmlns='Microsoft.Office.Excel.WebUI'>true</CloseWorkbookSessions>
+                      </WebPart>
+                    ]]>
+              </AllUsersWebPart>              
+            </File >            
+        </Module>
+    </Modules>
+    <ServerEmailFooter>$Resources:ServerEmailFooter;</ServerEmailFooter>
+</Project>

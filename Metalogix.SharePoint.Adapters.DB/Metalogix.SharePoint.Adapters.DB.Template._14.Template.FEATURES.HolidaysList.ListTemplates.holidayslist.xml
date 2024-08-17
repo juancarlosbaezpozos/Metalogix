@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ListTemplate
+        Name="holidays"
+        Type="421"
+        BaseType="0"
+        Unique="TRUE"
+        OnQuickLaunch="TRUE"
+        FolderCreation="FALSE"
+        SecurityBits="11"
+        DisplayName="$Resources:core,GbwListTemplateHolidaysDisplay;"
+        Description="$Resources:core,GbwListTemplateHolidaysDescription;"
+        Image="/_layouts/images/itgbhol.gif"/>
+</Elements>

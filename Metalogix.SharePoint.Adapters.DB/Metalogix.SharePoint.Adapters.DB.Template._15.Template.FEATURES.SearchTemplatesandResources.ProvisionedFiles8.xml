@@ -1,0 +1,60 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Module Name="SystemDisplayTemplates" Url="_catalogs/masterpage/Display Templates/System" Path="DisplayTemplates" RootWebOnly="TRUE">
+        <File Url="Item_eDiscoverySharePoint_HoverPanel.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_DiscoverySharePointHoverPanel" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Item" />
+            <Property Name="TemplateHidden" Value="1" />
+            <Property Name="TargetControlType" Value=";#SearchResults;#" />
+            <Property Name="HtmlDesignLockedFile" Value="TRUE" />
+            <Property Name="ManagedPropertyMapping" Value="'Title':'Title','Path':'Path','Created By':'MetadataAuthor','Created On':'Write','Author':'Author','Size':'Size','LastModifiedTime':'LastModifiedTime','CollapsingStatus':'CollapsingStatus','DocId':'DocId','HitHighlightedSummary':'HitHighlightedSummary','ContentClass':'ContentClass','ContentType':'ContentType','FileExtension':'FileExtension','ViewsLifeTime':'ViewsLifeTime','ParentLink':'ParentLink'"/>
+        </File>
+        <File Url="Item_eDiscoveryExchange_HoverPanel.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_DiscoveryExchangeHoverPanel" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Item" />
+            <Property Name="TemplateHidden" Value="1" />
+            <Property Name="TargetControlType" Value=";#SearchResults;#" />
+            <Property Name="HtmlDesignLockedFile" Value="TRUE" />
+            <Property Name="ManagedPropertyMapping" Value="'Subject':'Subject','To':'ToRecipients','Sender':'Sender','Sent Time':'SentTime','BccRecipients':'BccRecipients','CcRecipients':'CcRecipients','CreatedTime':'CreatedTime','HasAttachment':'HasAttachment','Importance':'Importance','Preview':'Preview','OwaLink':'OwaLink','Size':'Size','ExchangeType':'Kind'"/>
+        </File>
+    </Module>
+
+    <Module Name="FilterDisplayTemplates" Url="_catalogs/masterpage/Display Templates/Filters" Path="DisplayTemplates" RootWebOnly="TRUE">
+        <File Url="Filter_eDiscoveryExchangeRefinement.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_UserSpecifiedRefinementEX" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Filter" />
+            <Property Name="TemplateHidden" Value="1" />
+            <Property Name="TargetControlType" Value=";#Refinement;#" />
+            <Property Name="CompatibleSearchDataTypes" Value="" />
+            <Property Name="CompatibleManagedProperties" Value="" />
+            <Property Name="HtmlDesignLockedFile" Value="TRUE" />
+        </File>
+        <File Url="Filter_eDiscoverySharePointRefinement.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_UserSpecifiedRefinementSP" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Filter" />
+            <Property Name="TemplateHidden" Value="1" />
+            <Property Name="TargetControlType" Value=";#Refinement;#" />
+            <Property Name="CompatibleSearchDataTypes" Value="" />
+            <Property Name="CompatibleManagedProperties" Value="" />
+            <Property Name="HtmlDesignLockedFile" Value="TRUE" />
+        </File>
+        <File Url="Filter_eDiscoveryExchangeTypeRefinement.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_ExchangeMailType" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Filter" />
+            <Property Name="TemplateHidden" Value="1" />
+            <Property Name="TargetControlType" Value=";#Refinement;#" />
+            <Property Name="CompatibleSearchDataTypes" Value="" />
+            <Property Name="CompatibleManagedProperties" Value="" />
+            <Property Name="HtmlDesignLockedFile" Value="TRUE" />
+        </File>
+    </Module>
+</Elements>

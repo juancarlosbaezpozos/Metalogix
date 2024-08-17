@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Name="Textbox" Title="$Resources:textbox_schema_mswid100;" Url="Lists/textbox" BaseType="0" DisableAttachments="TRUE">
+  <MetaData>
+    <Fields>
+      <Field ID="{67df98f4-9dec-48ff-a553-29bece9c5bf4}" Name="Attachments" Hidden="TRUE" ReadOnly="TRUE" ColName="tp_HasAttachment" Type="Attachments" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Attachments">
+      </Field>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Hidden="TRUE" ReadOnly="TRUE" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title">
+      </Field>
+      <Field ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitle">
+      </Field>
+      <Field ID="{f09a8636-9713-4467-a752-cc75346dcef5}" Type="Note" Name="Text" DisplayName="$Resources:textbox_schema_mswidcamlidF2;" Required="TRUE" NumLines="20" Sortable="FALSE" RichText="TRUE" TitleField="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Text">
+      </Field>
+      <Field ID="{94f89715-e097-4e8b-ba79-ea02aa8b7adb}" Name="FileRef" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" Type="Lookup" DisplayName="$Resources:core,URL_Path;" List="Docs" FieldRef="ID" ShowField="FullUrl" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileRef"><!-- _locID@DisplayName="camlionet42" _locComment=" " -->
+      </Field>
+      <Field ID="{56605df6-8fa1-47e4-a04c-5b384d59609f}" Name="FileDirRef" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" Type="Lookup" DisplayName="$Resources:core,URL_Dir_Name;" List="Docs" FieldRef="ID" ShowField="DirName" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileDirRef"><!-- _locID@DisplayName="camlionet42" _locComment=" " -->
+      </Field>
+      <Field ID="{173f76c8-aebd-446a-9bc9-769a2bd2c18f}" Name="Last_x0020_Modified" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Modified;" Type="Lookup" List="Docs" FieldRef="ID" ShowField="TimeLastModified" Format="TRUE" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Last_x0020_Modified"><!-- _locID@DisplayName="camlionet36" _locComment=" " -->
+      </Field>
+      <Field ID="{998b5cff-4a35-47a7-92f3-3914aa6aa4a2}" Name="Created_x0020_Date" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Created;" Type="Lookup" List="Docs" FieldRef="ID" ShowField="TimeCreated" Format="TRUE" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Created_x0020_Date"><!-- _locID@DisplayName="camlionet37" _locComment=" " -->
+      </Field>
+      <Field ID="{30bb605f-5bae-48fe-b4e3-1f81d9772af9}" Name="FSObjType" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,File_System_Object_Type;" List="Docs" FieldRef="ID" ShowField="FSType" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FSObjType"><!-- _locID@DisplayName="camlionet99" _locComment=" " -->
+      </Field>
+      <Field ID="{ba3c27ee-4791-4867-8821-ff99000bac98}" Name="PermMask" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" RenderXMLUsingPattern="TRUE" ShowInFileDlg="FALSE" Type="Computed" DisplayName="$Resources:core,Effective_Perm_Mask;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PermMask"><!-- _locID@DisplayName="camlionet124" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="ID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <CurrentRights />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Hidden="TRUE" ShowInFileDlg="FALSE" ShowInVersionHistory="FALSE" Type="File" Name="FileLeafRef" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Name;" AuthoringInfo="$Resources:core,for_use_in_forms;" List="Docs" FieldRef="ID" ShowField="LeafName" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FileLeafRef"><!-- _locID@DisplayName="camlionet42" _locComment=" " --><!-- _locID@AuthoringInfo="idAIForUseinForms" _locComment=" " -->
+      </Field>
+      <Field ID="{4b7403de-8d94-43e8-9f0f-137a3e298126}" Name="UniqueId" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,UniqueId;" List="Docs" FieldRef="ID" ShowField="UniqueId" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="UniqueId"><!-- _locID@DisplayName="camlionet2154" _locComment=" " -->
+      </Field>
+      <Field ID="{c5c4b81c-f1d9-4b43-a6a2-090df32ebb68}" Name="ProgId" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,ProgId;" List="Docs" FieldRef="ID" ShowField="ProgId" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ProgId"><!-- _locID@DisplayName="camlionet9595" _locComment=" " -->
+      </Field>
+      <Field ID="{dddd2420-b270-4735-93b5-92b713d0944d}" Name="ScopeId" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,ScopeId;" List="Docs" FieldRef="ID" ShowField="ScopeId" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ScopeId">
+      </Field>
+      <Field ID="{39360f11-34cf-4356-9945-25c44e68dade}" ReadOnly="TRUE" Hidden="TRUE" Type="Text" Name="File_x0020_Type" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,File_Type;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="File_x0020_Type"><!-- _locID@DisplayName="camlionet43" _locComment=" " -->
+      </Field>
+      <Field ReadOnly="TRUE" ID="{4ef1b78f-fdba-48dc-b8ab-3fa06a0c9804}" Hidden="TRUE" Type="Computed" Name="HTML_x0020_File_x0020_Type" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,HTML_File_Type;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="HTML_x0020_File_x0020_Type"><!-- _locID@DisplayName="camlionet44" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="File_x0020_Type" />
+        </FieldRefs>
+        <DisplayPattern />
+      </Field>
+      <Field ID="{3c6303be-e21f-4366-80d7-d6d0a3b22c7a}" Hidden="TRUE" ReadOnly="TRUE" Type="Computed" Name="_EditMenuTableStart" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Edit_Menu_Table_Start;" ClassInfo="Menu" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_EditMenuTableStart"><!-- _locID@DisplayName="camlionet60startmenu" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="FileDirRef" />
+          <FieldRef Name="FSObjType" />
+          <FieldRef Name="ID" />
+          <FieldRef Name="ServerUrl" />
+          <FieldRef Name="HTML_x0020_File_x0020_Type" />
+          <FieldRef Name="File_x0020_Type" />
+          <FieldRef Name="PermMask" />
+          <FieldRef Name="_HasCopyDestinations" />
+          <FieldRef Name="_CopySource" />
+          <FieldRef Name="ContentType" />
+          <FieldRef Name="ContentTypeId" />
+          <FieldRef Name="_ModerationStatus" />
+          <FieldRef Name="_UIVersion" />
+        </FieldRefs>
+        <DisplayPattern><HTML><![CDATA[<table height="100%" cellspacing=0 class="ms-unselectedtitle" onmouseover="OnItem(this)" CTXName="ctx]]></HTML>
+          <Counter Type="View" /><HTML>" Id="</HTML>
+          <Column Name="ID" HTMLEncode="TRUE" /><HTML>" Url="</HTML>
+          <Field Name="ServerUrl" URLEncodeAsURL="TRUE" /><HTML>" DRef="</HTML>
+          <Field Name="FileDirRef" /><HTML>" Perm="</HTML>
+          <Field Name="PermMask" /><HTML>" Type="</HTML>
+          <Column Name="HTML_x0020_File_x0020_Type" /><HTML>" Ext="</HTML>
+          <Column Name="File_x0020_Type" /><HTML>" Icon="</HTML>
+          <MapToAll>
+            <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+            <Column Name="File_x0020_Type" />
+          </MapToAll><HTML>" OType="</HTML>
+          <LookupColumn Name="FSObjType" /><HTML>" COUId="</HTML><HTML>" HCD="</HTML>
+          <Column Name="_HasCopyDestinations" /><HTML>" CSrc="</HTML>
+          <Column Name="_CopySource" URLEncodeAsURL="TRUE" /><HTML>" MS="</HTML>
+          <Column Name="_ModerationStatus" /><HTML><![CDATA[" CType="]]></HTML>
+          <Column Name="ContentType" HTMLEncode="TRUE" /><HTML><![CDATA[" CId="]]></HTML>
+          <Column Name="ContentTypeId" /><HTML>" UIS="</HTML>
+          <Column Name="_UIVersion" />
+          <GetVar Name="_EditMenuTableExtra" /><HTML>" SUrl="</HTML><HTML><![CDATA["><tr><td width="100%" Class="ms-vb">]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{2ea78cef-1bf9-4019-960a-02c41636cb47}" Hidden="TRUE" ReadOnly="TRUE" Type="Computed" Name="_EditMenuTableEnd" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Edit_Menu_Table_End;" ClassInfo="Menu" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_EditMenuTableEnd"><!-- _locID@DisplayName="camlionet60startmenu" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="ID" />
+        </FieldRefs>
+        <DisplayPattern><HTML><![CDATA[</td><td><img src="/_layouts/images/blank.gif" width=13 style="visibility:hidden" alt=""></td></tr></table>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{9d30f126-ba48-446b-b8f9-83745f322ebe}" ReadOnly="TRUE" Type="Computed" Name="LinkFilenameNoMenu" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Name;" Hidden="TRUE" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" AuthoringInfo="$Resources:core,linked_to_document;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkFilenameNoMenu"><!-- _locID@DisplayName="camlionetfn47" _locComment=" " --><!-- _locID@AuthoringInfo="103" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="FSObjType" />
+          <FieldRef Name="Created_x0020_Date" />
+          <FieldRef Name="FileRef" />
+          <FieldRef Name="File_x0020_Type" />
+          <FieldRef Name="ContentTypeId" />
+          <FieldRef Name="PermMask" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <FieldSwitch>
+                <Expr>
+                  <GetVar Name="RecursiveView" />
+                </Expr>
+                <Case Value="1">
+                  <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+                </Case>
+                <Default>
+                  <SetVar Name="UnencodedFilterLink">
+                    <SetVar Name="RootFolder"><HTML>/</HTML>
+                      <LookupColumn Name="FileRef" />
+                    </SetVar>
+                    <SetVar Name="FolderCTID">
+                      <FieldSwitch>
+                        <Expr>
+                          <ListProperty Select="EnableContentTypes" />
+                        </Expr>
+                        <Case Value="1">
+                          <Column Name="ContentTypeId" />
+                        </Case>
+                      </FieldSwitch>
+                    </SetVar>
+                    <FilterLink Default="" Paged="FALSE" />
+                  </SetVar><HTML><![CDATA[<A onfocus="OnLink(this)" HREF="]]></HTML>
+                  <GetVar Name="UnencodedFilterLink" HTMLEncode="TRUE" /><HTML><![CDATA[" onclick="javascript:EnterFolder(']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <GetVar Name="UnencodedFilterLink" />
+                  </ScriptQuote><HTML><![CDATA[');return false;">]]></HTML>
+                  <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+                  <IfEqual>
+                    <Expr1>
+                      <GetVar Name="ShowAccessibleIcon" />
+                    </Expr1>
+                    <Expr2>1</Expr2>
+                    <Then><HTML><![CDATA[<img src="/_layouts/images/blank.gif" class="ms-hidden" border=0 width=1 height=1 alt="]]></HTML><HTML>$Resources:OpenMenuKeyAccessible;</HTML><HTML><![CDATA[">]]></HTML>
+                    </Then>
+                  </IfEqual><HTML><![CDATA[</A>]]></HTML>
+                </Default>
+              </FieldSwitch>
+            </Then>
+            <Else><HTML><![CDATA[<A onfocus="OnLink(this)" HREF="]]></HTML>
+              <Field Name="ServerUrl" URLEncodeAsURL="TRUE" /><HTML><![CDATA[" onclick="return DispEx(this,event,']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <ServerProperty Select="HtmlTransform" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <ListProperty Select="DefaultItemOpen" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <MapToControl>
+                  <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                  <Column Name="File_x0020_Type" />
+                </MapToControl>
+              </ScriptQuote><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <Column Name="HTML_x0020_File_x0020_Type" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <UserID AllowAnonymous="TRUE" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <ListProperty Select="ForceCheckout" />
+              </ScriptQuote><HTML><![CDATA[',']]></HTML><HTML><![CDATA[',']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <Field Name="PermMask" />
+              </ScriptQuote><HTML><![CDATA[')">]]></HTML>
+              <UrlBaseName HTMLEncode="TRUE">
+                <LookupColumn Name="FileLeafRef" />
+              </UrlBaseName>
+              <IfEqual>
+                <Expr1>
+                  <GetVar Name="ShowAccessibleIcon" />
+                </Expr1>
+                <Expr2>1</Expr2>
+                <Then><HTML><![CDATA[<img src="/_layouts/images/blank.gif" class="ms-hidden" border=0 width=1 height=1 alt="]]></HTML><HTML>$Resources:OpenMenuKeyAccessible;</HTML><HTML><![CDATA[">]]></HTML>
+                </Then>
+              </IfEqual><HTML><![CDATA[</A>]]></HTML>
+              <IfNew Name="Created_x0020_Date"><HTML><![CDATA[<IMG SRC="/_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/new.gif" alt="]]></HTML><HTML>$Resources:core,new_gif_alttext;</HTML><HTML><![CDATA[">]]></HTML>
+              </IfNew>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{5cc6dc79-3710-4374-b433-61cb4a686c12}" ReadOnly="TRUE" Type="Computed" Name="LinkFilename" DisplaceOnUpgrade="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Name;" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" ClassInfo="Menu" AuthoringInfo="$Resources:core,linked_to_document_with_edit_menu;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkFilename"><!-- _locID@DisplayName="camlionetfn75" _locComment=" " --><!-- _locID@AuthoringInfo="115" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="LinkFilenameNoMenu" />
+          <FieldRef Name="_EditMenuTableStart" />
+          <FieldRef Name="_EditMenuTableEnd" />
+        </FieldRefs>
+        <DisplayPattern>
+          <FieldSwitch>
+            <Expr>
+              <GetVar Name="FreeForm" />
+            </Expr>
+            <Case Value="TRUE">
+              <Field Name="LinkFilenameNoMenu" />
+            </Case>
+            <Default>
+              <Field Name="_EditMenuTableStart" />
+              <SetVar Name="ShowAccessibleIcon" Value="1" />
+              <Field Name="LinkFilenameNoMenu" />
+              <SetVar Name="ShowAccessibleIcon" Value="0" />
+              <Field Name="_EditMenuTableEnd" />
+            </Default>
+          </FieldSwitch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{081c6e4c-5c14-4f20-b23e-1a71ceb6a67c}" Type="Computed" ReadOnly="TRUE" Name="DocIcon" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Type;" TextOnly="TRUE" ClassInfo="Icon" AuthoringInfo="$Resources:core,Icon_Linked_Document;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="DocIcon"><!-- _locID@DisplayName="$Resources:core,basetypes1" _locComment="same as Type column in Windows Explorer details view" --><!-- _locID@AuthoringInfo="0106" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="File_x0020_Type" />
+          <FieldRef Name="FSObjType" />
+          <FieldRef Name="FileRef" />
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="HTML_x0020_File_x0020_Type" />
+          <FieldRef Name="PermMask" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <FieldSwitch>
+                <Expr>
+                  <GetVar Name="RecursiveView" />
+                </Expr>
+                <Case Value="1"><HTML><![CDATA[<IMG BORDER=0 alt="]]></HTML><HTML>$Resources:core,Folder;: </HTML>
+                  <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" /><HTML><![CDATA[" SRC="/_layouts/images/folder.gif">]]></HTML>
+                </Case>
+                <Default>
+                  <SetVar Name="UnencodedFilterLink">
+                    <SetVar Name="RootFolder"><HTML>/</HTML>
+                      <LookupColumn Name="FileRef" />
+                    </SetVar>
+                    <SetVar Name="FolderCTID">
+                      <FieldSwitch>
+                        <Expr>
+                          <ListProperty Select="EnableContentTypes" />
+                        </Expr>
+                        <Case Value="1">
+                          <Column Name="ContentTypeId" />
+                        </Case>
+                      </FieldSwitch>
+                    </SetVar>
+                    <FilterLink Default="" Paged="FALSE" />
+                  </SetVar><HTML><![CDATA[<A TABINDEX=-1 HREF="]]></HTML>
+                  <GetVar Name="UnencodedFilterLink" HTMLEncode="TRUE" /><HTML><![CDATA[" onclick="javascript:EnterFolder(']]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <GetVar Name="UnencodedFilterLink" />
+                  </ScriptQuote><HTML><![CDATA[');javascript:return false;">]]></HTML><HTML><![CDATA[<IMG BORDER=0 alt="]]></HTML><HTML>$Resources:core,Folder;: </HTML>
+                  <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" /><HTML><![CDATA[" title="]]></HTML><HTML><!-- _locID_text="105" _locComment="{StringCategory=HTX}" -->Folder: </HTML>
+                  <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" /><HTML><![CDATA[" SRC="/_layouts/images/folder.gif"></A>]]></HTML>
+                </Default>
+              </FieldSwitch>
+            </Then>
+            <Else><HTML><![CDATA[<a onfocus="OnLink(this)" href="]]></HTML>
+              <URL /><HTML><![CDATA[" ONCLICK="GoToLink(this);return false;" target="_self">]]></HTML><HTML><![CDATA[<IMG BORDER=0 ALT="]]></HTML>
+              <LookupColumn Name="Title" HTMLEncode="TRUE" /><HTML><![CDATA[" title="]]></HTML>
+              <LookupColumn Name="Title" HTMLEncode="TRUE" /><HTML><![CDATA[" SRC="/_layouts/images/]]></HTML>
+              <MapToIcon>
+                <Column Name="HTML_x0020_File_x0020_Type" /><HTML>|</HTML>
+                <Column Name="File_x0020_Type" />
+              </MapToIcon><HTML><![CDATA["></A>]]></HTML>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{105f76ce-724a-4bba-aece-f81f2fce58f5}" ReadOnly="TRUE" Hidden="TRUE" Type="Computed" Name="ServerUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Server_Relative_URL;" Filterable="FALSE" RenderXMLUsingPattern="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ServerUrl"><!-- _locID@DisplayName="camlionet50" _locComment=" " --><!-- _locID@DisplayName="camlionet51" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="FileRef" />
+        </FieldRefs>
+        <DisplayPattern><HTML>/</HTML>
+          <LookupColumn Name="FileRef" />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{7177cfc7-f399-4d4d-905d-37dd51bc90bf}" ReadOnly="TRUE" Hidden="TRUE" Type="Computed" Name="EncodedAbsUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Encoded_Absolute_URL;" Filterable="FALSE" RenderXMLUsingPattern="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EncodedAbsUrl"><!-- _locID@DisplayName="camlionet50" _locComment=" " --><!-- _locID@DisplayName="camlionet51" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="FileRef" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HttpHost URLEncodeAsURL="TRUE" /><HTML>/</HTML>
+          <LookupColumn Name="FileRef" URLEncodeAsURL="TRUE" />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{7615464b-559e-4302-b8e2-8f440b913101}" ReadOnly="TRUE" Hidden="TRUE" Type="Computed" Name="BaseName" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,File_Name;" Filterable="FALSE" RenderXMLUsingPattern="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="BaseName"><!-- _locID@DisplayName="camlionet50" _locComment=" " --><!-- _locID@DisplayName="camlionet51" _locComment=" " -->
+        <FieldRefs>
+          <FieldRef Name="FileLeafRef" />
+          <FieldRef Name="FSObjType" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+            </Then>
+            <Else>
+              <UrlBaseName HTMLEncode="TRUE">
+                <LookupColumn Name="FileLeafRef" />
+              </UrlBaseName>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{687c7f94-686a-42d3-9b67-2782eac4b4f8}" Name="MetaInfo" DisplaceOnUpgrade="TRUE" Hidden="TRUE" ShowInFileDlg="FALSE" Type="Lookup" DisplayName="$Resources:core,Property_Bag;" List="Docs" FieldRef="ID" ShowField="MetaInfo" JoinColName="DoclibRowId" JoinType="INNER" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="MetaInfo"><!-- _locID@DisplayName="camlionet106" _locComment=" " -->
+      </Field>
+      <Field ID="{43bdd51b-3c5b-4e78-90a8-fb2087f71e70}" ColName="tp_Level" RowOrdinal="0" ReadOnly="TRUE" Type="Integer" Name="_Level" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Level;" Hidden="TRUE" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_Level"><!-- _locID@DisplayName="camlionetlevel1" _locComment=" " -->
+      </Field>
+      <Field ID="{c101c3e7-122d-4d4d-bc34-58e94a38c816}" ColName="tp_IsCurrentVersion" DisplaceOnUpgrade="TRUE" RowOrdinal="0" ReadOnly="TRUE" Type="Boolean" Name="_IsCurrentVersion" DisplayName="$Resources:core,Is_Current_Version;" Hidden="TRUE" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_IsCurrentVersion"><!-- _locID@DisplayName="camlionetcurrent1" _locComment=" " -->
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" ReadOnly="TRUE">
+        <ViewHeader>
+        </ViewHeader>
+        <ViewBody><HTML><![CDATA[
+                    <TABLE width=100% cellpadding=0 cellspacing=0 border=0>
+                        <TR><TD class="ms-vb" style="padding: 6px;"><div>]]></HTML>
+          <Switch>
+            <Expr>
+              <FieldProperty Name="Text" Select="RichText" />
+            </Expr>
+            <Case Value="TRUE">
+              <Switch>
+                <Expr>
+                  <FieldProperty Name="Text" Select="RichTextMode" />
+                </Expr>
+                <Case Value="FullHtml">
+                  <Column Name="Text" />
+                </Case>
+                <Default>
+                  <Column Name="Text" AutoHyperLinkNoEncoding="TRUE" />
+                </Default>
+              </Switch>
+            </Case>
+            <Default>
+              <Column Name="Text" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+            </Default>
+          </Switch><HTML><![CDATA[</div></TD></TR>
+                        <tr><td height="5"><img src="/_layouts/images/blank.gif" width="1" height=5px alt=""></td></tr> 
+                    </TABLE>
+                    <TABLE width=100% cellpadding=0 cellspacing=0 border=0>                  
+                        <tr>
+                            <td colspan="2" class="ms-partline"><img src="/_layouts/images/blank.gif" width="1" height="1" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="ms-addnew" style="padding-bottom: 3px;">
+                            <img src="/_layouts/images/rect.gif" alt="">&nbsp;<a class="ms-addnew" ID="addnewText" href="]]></HTML>
+          <URL Cmd="Edit" /><HTML><![CDATA[" ONCLICK='javascript:EditItem(]]></HTML>
+          <ScriptQuote>
+            <URL Cmd="Edit" />
+          </ScriptQuote><HTML><![CDATA[);javascript:return false;' target="_self">]]></HTML><HTML>$Resources:textbox_schema_mswidonetiddispform2;</HTML><HTML><![CDATA[</a></td>                                    
+                        </tr>
+                        <tr><td><img src="/_layouts/images/blank.gif" width="1" height=5px alt=""></td></tr>
+                    </TABLE>
+                    ]]></HTML>
+        </ViewBody>
+        <ViewFooter>
+        </ViewFooter>
+        <RowLimitExceeded><HTML><![CDATA[<TABLE width="100%" border=0 rules=rows><TR><TD class="ms-vb"><a href="]]></HTML>
+          <ListProperty Select="DefaultViewUrl" /><HTML><![CDATA[" ID=onetidMore>]]></HTML><HTML>$Resources:textbox_schema_mswidonetid700;</HTML><HTML><![CDATA[</a></TD></TR><tr><td height="8"><img src="]]></HTML>
+          <HttpVDir /><HTML><![CDATA[/_layouts/images/blank.gif" width="1" height="5" alt=""></td></tr></TABLE>]]></HTML>
+        </RowLimitExceeded>
+        <ViewEmpty><HTML><![CDATA[
+                        <TABLE class="ms-summarycustombody" cellpadding=0 cellspacing=0 border=0>
+                        <TR><TD class="ms-vb">]]></HTML><HTML>$Resources:textbox_schema_mswidonetid9;</HTML>
+          <ListProperty Select="Title" HTMLEncode="TRUE" /><HTML>$Resources:textbox_schema_mswidonetidstdv11;</HTML><HTML><![CDATA[
+                        </TD></TR>
+                        <tr><td height="5"><img src="/_layouts/images/blank.gif" width="1" height=5px alt=""></td></tr> 
+                        </TABLE>
+                        <TABLE width=100% cellpadding=0 cellspacing=0 border=0>                  
+                        <tr>
+                            <td colspan="2" class="ms-partline"><img src="/_layouts/images/blank.gif" width="1" height="1" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="ms-addnew" style="padding-bottom: 3px;">
+                            <img src="/_layouts/images/rect.gif">&nbsp;<a class="ms-addnew" ID="addnewText" href="]]></HTML>
+          <URL Cmd="New" /><HTML><![CDATA[" ONCLICK="javascript:NewItem(']]></HTML>
+          <URL Cmd="New" /><HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML><HTML>$Resources:textbox_schema_mswidcamlidE10;</HTML><HTML><![CDATA[</a></td>                                 
+                        </tr>
+                        <tr><td><img src="/_layouts/images/blank.gif" width="1" height=5px alt=""></td></tr>
+                        </TABLE>
+                    ]]></HTML>
+        </ViewEmpty>
+        <RowLimit>50</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Text">
+          </FieldRef>
+        </ViewFields>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:textbox_schema_mswidcamlidC24;" ToolbarTemplate="MWSViewToolBar" DefaultView="TRUE" Url="AllItems.aspx" ReadOnly="TRUE" ImageUrl="/_layouts/images/generic.png">
+        <Toolbar Type="Standard" />
+        <ViewHeader>
+        </ViewHeader>
+        <ViewBody><HTML><![CDATA[
+                    <TABLE width=100% cellpadding=0 cellspacing=0 border=0>
+                    <tr><td colspan=5 class="ms-vb">
+                        <table cellpadding="1" cellspacing="1" border="0" width="100%">
+                        <tr>
+                            <td colspan=5 class="ms-vb" style="padding: 6px;"><div>]]></HTML>
+          <Switch>
+            <Expr>
+              <FieldProperty Name="Text" Select="RichText" />
+            </Expr>
+            <Case Value="TRUE">
+              <Switch>
+                <Expr>
+                  <FieldProperty Name="Text" Select="RichTextMode" />
+                </Expr>
+                <Case Value="FullHtml">
+                  <Column Name="Text" />
+                </Case>
+                <Default>
+                  <Column Name="Text" AutoHyperLinkNoEncoding="TRUE" />
+                </Default>
+              </Switch>
+            </Case>
+            <Default>
+              <Column Name="Text" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+            </Default>
+          </Switch><HTML><![CDATA[</div></td>
+                        </tr>
+                        </table>
+                    </td></tr></table>
+                    ]]></HTML>
+        </ViewBody>
+        <ViewFooter>
+        </ViewFooter>
+        <RowLimitExceeded><HTML><![CDATA[<TABLE width="100%" border=0 rules=rows><TR><TD class="ms-vb"><a href="]]></HTML>
+          <ListProperty Select="DefaultViewUrl" /><HTML><![CDATA[" ID=onetidMore>]]></HTML><HTML>$Resources:textbox_schema_mswidonetid700;</HTML><HTML><![CDATA[</a></TD></TR><tr><td height="8"><img src="]]></HTML>
+          <HttpVDir /><HTML><![CDATA[/_layouts/images/blank.gif" width="1" height="5" alt=""></td></tr></TABLE>]]></HTML>
+        </RowLimitExceeded>
+        <ViewEmpty><HTML><![CDATA[
+                    <TABLE class="ms-summarycustombody" cellpadding=0 cellspacing=0 border=0>
+                    <TR><TD class="ms-vb">]]></HTML><HTML>$Resources:textbox_schema_mswidonetid9;</HTML>
+          <ListProperty Select="Title" HTMLEncode="TRUE" /><HTML>$Resources:textbox_schema_mswidonetidstdv11;</HTML><HTML><![CDATA[
+                    </TD></TR>
+                    </TABLE>
+                    ]]></HTML>
+        </ViewEmpty>
+        <RowLimit>50</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Text">
+          </FieldRef>
+        </ViewFields>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" WebPartZoneID="Main" />
+    </Forms>
+    <DefaultDescription>
+            $Resources:textbox_schema_mswidonetid710;
+        </DefaultDescription>
+  </MetaData>
+</List>

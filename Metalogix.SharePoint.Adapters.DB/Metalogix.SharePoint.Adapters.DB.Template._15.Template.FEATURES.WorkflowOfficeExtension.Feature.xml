@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="{D4FEAC79-B213-4657-9B9D-649EB6EDA020}"
+          Title="$Resources:Feature_Title;"
+          Description="$Resources:Feature_Description;"
+          Hidden="FALSE"
+          Scope="Web"
+          Version="15.0.0.0"
+          AlwaysForceInstall="TRUE"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="workflowfiles.xml" />
+  </ElementManifests>
+  <ActivationDependencies> 
+    <ActivationDependency FeatureId="61E874CD-3AC3-4531-8628-28C3ACB78279" />
+  </ActivationDependencies> 
+</Feature>

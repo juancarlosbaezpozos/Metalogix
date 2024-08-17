@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Title="$Resources:onet_TeamWebSite;" ListDir="$Resources:core,lists_Folder;" xmlns:ows="Microsoft SharePoint" UIVersion="15">
+  <NavBars>
+    <NavBar Name="$Resources:core,category_Top;" Separator="&amp;nbsp;&amp;nbsp;&amp;nbsp;" Body="&lt;a ID='onettopnavbar#LABEL_ID#' href='#URL#' accesskey='J'&gt;#LABEL#&lt;/a&gt;" ID="1002" />
+    <NavBar Name="$Resources:core,nav_CentralAdministrationHome;" Prefix="&lt;table border='0' cellpadding='4' cellspacing='0'&gt;" Body="&lt;tr&gt;&lt;td&gt;&lt;table border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td&gt;&lt;img src='/_layouts/15/images/blank.gif' id='100' alt='' border='0'&gt;&amp;nbsp;&lt;/td&gt;&lt;td valign='top'&gt;&lt;a id='onetleftnavbar#LABEL_ID#' href='#URL#'&gt;#LABEL#&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;" Suffix="&lt;/table&gt;" ID="1001" Url="/default.aspx" />
+  </NavBars>
+  <ListTemplates>
+    <ListTemplate Name="admintasks" DisplayName="$Resources:AdminTasks_Title;" Type="1200" BaseType="0" OnQuickLaunch="TRUE" SecurityBits="11" Description="$Resources:AdminTasks_Description;" Image="/_layouts/15/images/ittask.png">
+    </ListTemplate>
+    <ListTemplate Name="distributionlists" DisplayName="$Resources:core,DistributionGroups_Title;" Type="1210" BaseType="0" OnQuickLaunch="TRUE" SecurityBits="11" Description="$Resources:DistributionGroups_Description;" Image="/_layouts/15/images/itgen.png">
+    </ListTemplate>
+    <ListTemplate Name="healthrules" DisplayName="$Resources:core,HealthRules_Title;" Type="1220" BaseType="0" SecurityBits="11" Description="$Resources:core,HealthRules_Description;" Hidden="TRUE" Unique="TRUE" OnQuickLaunch="FALSE" RootWebOnly="TRUE" AllowDeletion="FALSE" Image="/_layouts/15/images/hlthrls.png">
+    </ListTemplate>
+    <ListTemplate Name="healthreports" DisplayName="$Resources:core,HealthReports_Title;" Type="1221" BaseType="0" SecurityBits="11" Description="$Resources:core,HealthReports_Description;" Hidden="TRUE" Unique="TRUE" OnQuickLaunch="FALSE" RootWebOnly="TRUE" AllowDeletion="FALSE" Image="/_layouts/15/images/hlthrpts.png">
+    </ListTemplate>
+  </ListTemplates>
+  <DocumentTemplates>
+    <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+  </DocumentTemplates>
+  <Configurations>
+    <Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v15.master">
+      <Lists>
+        <List FeatureId="00BFEA71-E717-4E80-AA17-D0C71B360101" Type="101" Title="$Resources:core,shareddocuments_Title;" Url="$Resources:core,shareddocuments_Folder;" />
+        <List FeatureId="00BFEA71-D1CE-42de-9C63-A44004CE0104" Type="104" Title="$Resources:core,announceList;" Url="$Resources:core,lists_Folder;/$Resources:core,announce_Folder;" />
+        <List FeatureId="00BFEA71-EC85-4903-972D-EBE475780106" Type="106" Title="$Resources:core,calendarList;" Url="$Resources:core,lists_Folder;/$Resources:core,calendar_Folder;" />
+        <List FeatureId="00BFEA71-2062-426C-90BF-714C59600103" Type="103" Title="$Resources:core,OnetXmlAdmin_Resources;" Url="$Resources:core,lists_Folder;/$Resources:core,resources_Folder;" />
+        <List Type="1200" Title="$Resources:AdminTasks_Title;" />
+        <List Type="1220" Title="$Resources:core,HealthRules_Title;" Url="$Resources:core,lists_Folder;/$Resources:core,HealthRules_Folder;" />
+        <List Type="1221" Title="$Resources:core,HealthReports_Title;" Url="$Resources:core,lists_Folder;/$Resources:core,HealthReports_Folder;" />
+        <List Type="1210" Title="$Resources:DistributionGroups_Title;">
+        </List>
+      </Lists>
+      <Modules>
+        <Module Name="AdminHome" />
+        <Module Name="ApplicationsPage" />
+        <Module Name="AppsPage" />
+        <Module Name="BackupsPage" />
+        <Module Name="ConfigurationWizardsPage" />
+        <Module Name="GeneralApplicationSettingsPage" />
+        <Module Name="MonitoringPage" />
+        <Module Name="SecurityPage" />
+        <Module Name="SystemSettingsPage" />
+        <Module Name="UpgradeAndMigrationPage" />
+        <Module Name="AdminWebPartPopulation" />
+      </Modules>
+      <SiteFeatures>
+        <!-- BasicWebParts Feature -->
+        <Feature ID="00BFEA71-1C5E-4A24-B310-BA51C3EB7A57" />
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- AdminLinks Feature -->
+        <Feature ID="FEAD7313-AE6D-45DD-8260-13B563CB4C71" />
+        <!-- TeamCollab Feature -->
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5" />
+      </WebFeatures>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="AdminHome" Url="" Path="">
+      <File Url="default.aspx" NavBarHome="true">
+        <View List="$Resources:core,lists_Folder;/$Resources:core,resources_Folder;" BaseViewID="0" WebPartZoneID="Right" WebPartOrder="2" />
+        <NavBarPage Name="$Resources:core,nav_Home;" ID="0" Position="Start" />
+      </File>
+    </Module>
+    <Module Name="ApplicationsPage" Url="" Path="">
+      <File Url="applications.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="AppsPage" Url="" Path="">
+      <File Url="apps.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="BackupsPage" Url="" Path="">
+      <File Url="backups.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="ConfigurationWizardsPage" Url="" Path="">
+      <File Url="configurationwizards.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="GeneralApplicationSettingsPage" Url="" Path="">
+      <File Url="generalapplicationsettings.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="MonitoringPage" Url="" Path="">
+      <File Url="monitoring.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="SecurityPage" Url="" Path="">
+      <File Url="security.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="SystemSettingsPage" Url="" Path="">
+      <File Url="systemsettings.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="UpgradeAndMigrationPage" Url="" Path="">
+      <File Url="upgradeandmigration.aspx" NavBarHome="false" />
+    </Module>
+    <Module Name="AdminWebPartPopulation" List="113" Url="_catalogs/wp" Path="dwp" RootWebOnly="TRUE">
+      <File Url="TopologyView.dwp" Type="GhostableInLibrary" />
+    </Module>
+  </Modules>
+</Project>

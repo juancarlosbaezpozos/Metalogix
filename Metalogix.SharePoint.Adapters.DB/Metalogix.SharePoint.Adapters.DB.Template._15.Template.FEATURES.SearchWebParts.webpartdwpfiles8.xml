@@ -1,0 +1,22 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Module Name="WebPartPopulation" Url="_catalogs/wp" Path="" RootWebOnly="TRUE">
+        <File Url="Navigation.webpart" Type="GhostableInLibrary">
+            <Property Name="Group" Value="$Resources:Microsoft.Office.Server.Search,SearchWebPartGroup;"></Property>
+            <Property Name="QuickAddGroups" Value=";#Search;#" />
+        </File>
+    </Module>
+
+    <Module Name="FilterDisplayTemplates" Url="_catalogs/masterpage/Display Templates/Filters" Path="DisplayTemplates" RootWebOnly="TRUE">
+        <File Url="Filter_MultiValue.js" Type="GhostableInLibrary" >
+            <Property Name="Title" Value="$Resources:Microsoft.Office.Server.Search,DisplayTemplateTitle_MultiVaueRefinementItem" />
+            <Property Name="MasterPageDescription" Value="" />
+            <Property Name="ContentType" Value="$Resources:TemplateContentType_Code_Name" />
+            <Property Name="DisplayTemplateLevel" Value="Filter" />
+            <Property Name="TemplateHidden" Value="0" />
+            <Property Name="TargetControlType" Value=";#Refinement;#" />
+            <Property Name="CompatibleSearchDataTypes" Value="" />
+            <Property Name="CompatibleManagedProperties" Value="" />
+            <Property Name="HtmlDesignLockedFile" Value="TRUE" />
+        </File>
+    </Module>
+</Elements>

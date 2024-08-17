@@ -1,0 +1,25 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="Ribbon.Library.Actions.TakeOfflineToClient"
+    Location="CommandUI.Ribbon"
+    RegistrationId="700"
+    RegistrationType="List"
+    Title="Sync To Local Folder">
+	<CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Library.Actions.TakeOfflineToClient">
+		<Button
+                Id="Ribbon.Library.Actions.TakeOfflineToClient.FolderSync"
+                Sequence="20"
+                Command="TakeOfflineToClient"
+                Image16by16="/_layouts/15/$Resources:core,Language;/images/formatmap16x16.png" Image16by16Top="-1" Image16by16Left="-195"
+                Image32by32="/_layouts/15/$Resources:core,Language;/images/formatmap32x32.png" Image32by32Top="-307" Image32by32Left="-137"
+                LabelText="$Resources:spscore,PeopleFeatures_Ribbon_MyDocuments_FolderSync"
+                TemplateAlias="o1"
+                ToolTipTitle="$Resources:spscore,PeopleFeatures_Ribbon_MyDocuments_FolderSync"
+                ToolTipDescription="$Resources:spscore,PeopleFeatures_MyDocuments_FolderSync_ToolTip"
+              />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

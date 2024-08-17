@@ -1,0 +1,12 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+    Name="KPIList"
+    Type="432"
+    DisplayName="$Resources:spscore,ReportCenterOnet_KPIListName;"
+    BaseType="0"
+    OnQuickLaunch="TRUE"
+    SecurityBits="11"
+    Description="$Resources:spscore,ReportCenterOnet_KPIListDescription;"
+    Image="/_layouts/images/iKpiList.png">
+  </ListTemplate>
+</Elements>

@@ -1,0 +1,1801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _lcid="1033" _version="12.0.2101" _dal="1" -->
+<!-- _LocalBinding -->
+<List xmlns:ows="Microsoft SharePoint" Name="Tabs" Title="Tabs" FolderCreation="FALSE" Direction="0" OrderedList="TRUE" Url="Lists/Tabs" BaseType="0" DisableAttachments="TRUE">
+  <MetaData>
+    <Fields>
+      <Field Name="Title" ReadOnly="TRUE" Required="FALSE" Hidden="TRUE">
+      </Field>
+      <Field Name="LinkTitle" Hidden="TRUE">
+      </Field>
+      <Field Name="LinkTitleNoMenu" Hidden="TRUE">
+      </Field>
+      <Field Type="Text" Name="TabName" ID="{D81CCF85-954F-4bcf-A530-BF68E672AC24}" DisplayName="$Resources:spscore,TabsList_TabName_Text;" Description="$Resources:spscore,TabsList_TabName_Description;" Required="TRUE" TitleField="TRUE" Sortable="TRUE" Filterable="TRUE" Sealed="TRUE">
+      </Field>
+      <Field Type="Text" Name="Page" ID="{A1C08CD7-CA3E-42bd-9CBC-E45BAEAED17F}" Direction="ltr" DisplayName="$Resources:spscore,TabsList_Page_Text;" Description="$Resources:spscore,TabsList_Page_Description;" Required="TRUE" Sortable="TRUE" Filterable="TRUE" Sealed="TRUE">
+      </Field>
+      <Field Type="Note" Name="Comments" DisplayName="$Resources:spscore,TabsList_Notes_Text;" Description="$Resources:spscore,TabsList_Notes_Description;" Sortable="FALSE">
+      </Field>
+      <Field ReadOnly="TRUE" Filterable="FALSE" Type="Computed" Name="PagewMenu" DisplayName="$Resources:spscore,TabsList_Page_Text;" DisplayNameSrcField="Page" AuthoringInfo="(Page with edit menu)" ID="{37B6AA1F-7656-4823-AA56-3D216892F01C}" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PagewMenu">
+        <FieldRefs>
+          <FieldRef Name="Page" />
+          <FieldRef ID="{3c6303be-e21f-4366-80d7-d6d0a3b22c7a}" Name="_EditMenuTableStart" />
+          <FieldRef ID="{2ea78cef-1bf9-4019-960a-02c41636cb47}" Name="_EditMenuTableEnd" />
+        </FieldRefs>
+        <DisplayPattern>
+          <FieldSwitch>
+            <Expr>
+              <GetVar Name="FreeForm" />
+            </Expr>
+            <Case Value="TRUE">
+              <Field Name="Page" />
+            </Case>
+            <Default>
+              <Field Name="_EditMenuTableStart" />
+              <Switch>
+                <Expr>
+                  <Column Name="Page" />
+                </Expr>
+                <Case Value="">
+                  <Column2 Name="Page" HTMLEncode="TRUE" />
+                </Case>
+                <Default>
+                  <FieldSwitch>
+                    <Expr>
+                      <FieldProperty Name="Page" Select="Format" />
+                    </Expr>
+                    <Case Value="Image">
+                      <HTML><![CDATA[<IMG onfocus="OnLink(this)" SRC="]]></HTML>
+                      <Column Name="Page" HTMLEncode="TRUE" />
+                      <HTML>" ALT="</HTML>
+                      <Column2 Name="Page" HTMLEncode="TRUE" />
+                      <HTML><![CDATA[">]]></HTML>
+                    </Case>
+                    <Default>
+                      <HTML><![CDATA[<A onfocus="OnLink(this)"]]></HTML>
+                      <HTML><![CDATA[>]]></HTML>
+                      <Switch>
+                        <Expr>
+                          <Column2 Name="Page" />
+                        </Expr>
+                        <Case Value="">
+                          <Column Name="Page" HTMLEncode="TRUE" />
+                        </Case>
+                        <Default>
+                          <Column2 Name="Page" HTMLEncode="TRUE" />
+                        </Default>
+                      </Switch>
+                      <HTML><![CDATA[</A>]]></HTML>
+                    </Default>
+                  </FieldSwitch>
+                </Default>
+              </Switch>
+              <Field Name="_EditMenuTableEnd" />
+            </Default>
+          </FieldSwitch>
+        </DisplayPattern>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" OrderedView="TRUE">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Position="After" Type="Freeform">
+          <HTML><![CDATA[ <table width=100% cellpadding=0 cellspacing=0 border=0 > <tr> <td colspan="2" class="ms-partline"><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td> </tr> <tr> <td class="ms-addnew" style="padding-bottom: 3px"> <img src="/_layouts/images/rect.gif" alt="">&nbsp;<a class="ms-addnew" ID="idHomePageNewLink" href="]]></HTML>
+          <URL Cmd="New" />
+          <HTML><![CDATA[" ONCLICK="javascript:NewItem(']]></HTML>
+          <URL Cmd="New" />
+          <HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML>
+          <HTML>$Resources:spscore,TabsList_AddNewLink_Text;</HTML>
+          <HTML><![CDATA[</a> </td> </tr> <tr><td><IMG SRC="/_layouts/images/blank.gif" width=1 height=5 alt=""></td></tr> </table>]]></HTML>
+        </Toolbar>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Order" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ViewFields>
+          <FieldRef Name="Page">
+          </FieldRef>
+          <FieldRef Name="TabName">
+          </FieldRef>
+        </ViewFields>
+        <RowLimit>20</RowLimit>
+      </View>
+      <View BaseViewID="1" Type="HTML" OrderedView="TRUE" WebPartZoneID="Main" DisplayName="$Resources:spscore,TabsList_AllTabsView_Text;" DefaultView="TRUE" Url="AllItems.aspx">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <RowLimit Paged="TRUE">100</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Edit">
+          </FieldRef>
+          <FieldRef Name="TabName">
+          </FieldRef>
+          <FieldRef Name="PagewMenu">
+          </FieldRef>
+          <FieldRef Name="Comments">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Order" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="3" Type="HTML" OrderedView="TRUE">
+        <Toolbar Position="After" Type="Freeform">
+          <HTML><![CDATA[ <table width=100% cellpadding=0 cellspacing=0 border=0 > <tr> <td colspan="2" class="ms-partline"><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td> </tr> <tr> <td class="ms-addnew" style="padding-bottom: 3px"> <img src="/_layouts/images/rect.gif" alt="">&nbsp;<a class="ms-addnew" ID="idView3NewLink" href="]]></HTML>
+          <URL Cmd="New" />
+          <HTML><![CDATA[" ONCLICK="javascript:NewItem(']]></HTML>
+          <URL Cmd="New" />
+          <HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML>
+          <HTML>$Resources:spscore,TabsList_AddNewLink_Text;</HTML>
+          <HTML><![CDATA[</a> </td> </tr> <tr><td><IMG SRC="/_layouts/images/blank.gif" width=1 height=5 alt=""></td></tr> </table>]]></HTML>
+        </Toolbar>
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Order" Ascending="TRUE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ViewFields>
+          <FieldRef Name="Page">
+          </FieldRef>
+        </ViewFields>
+        <RowLimit>12</RowLimit>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" WebPartZoneID="Main">
+        <ListFormOpening>
+          <HTML><![CDATA[
+<Script Language="JavaScript">
+function Discuss(strUrl)
+{
+    var L_IE5upRequired_Text = "]]><![CDATA['Discuss' requires a Windows SharePoint Services-compatible application and Microsoft Internet Explorer 5.0 or greater.]]><![CDATA[";
+    if (browseris.ie5up && browseris.win32)
+	window.parent.location.href = strUrl;
+    else
+	alert(L_IE5upRequired_Text);
+}
+function DeleteItem()
+{
+    var L_Delete_text = (]]></HTML>
+          <ProjectProperty Select="RecycleBinEnabled" />
+          <HTML><![CDATA[ == 1 ?
+        "Are you sure you want to send this item to the site Recycle Bin?"
+        : "Are you sure you want to delete this item?");
+    if (confirm(L_Delete_text))
+        SubmitFormPost(']]></HTML>
+          <HttpPath />
+          <HTML><![CDATA[&Cmd=Delete&List=]]></HTML>
+          <List />
+          <HTML><![CDATA[&ID=]]></HTML>
+          <ID />
+          <HTML><![CDATA[&NextUsing=' + GetSource(]]></HTML>
+          <ScriptQuote>
+            <ListProperty Select="DefaultViewUrl" />
+          </ScriptQuote>
+          <HTML><![CDATA[));
+}
+function ExportItem(using)
+{
+    window.location = ']]></HTML>
+          <HttpPath />
+          <HTML><![CDATA[?Cmd=Display&CacheControl=1&List=]]></HTML>
+          <List URLEncode="1" />
+          <HTML><![CDATA[&ID=]]></HTML>
+          <ID />
+          <HTML><![CDATA[&Using=]]></HTML>
+          <ListUrlDir WebRel="TRUE" URLEncode="1" />
+          <HTML><![CDATA[/' + using;
+}
+</Script>
+]]></HTML>
+        </ListFormOpening>
+        <ListFormButtons>
+          <HTML><![CDATA[
+  <TABLE class="ms-toolbar" style="margin-left: 3px;" cellpadding=2 cellspacing=0 border=0>
+   <TR>
+<TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIONewItem class="ms-toolbar" title=]]></HTML>
+          <HTML>New</HTML>
+          <HTML><![CDATA[ ACCESSKEY=N href="]]></HTML>
+          <URL Cmd="New" />
+          <HTML><![CDATA[" onclick="javascript:NewItem(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <URL Cmd="New" />
+          </ScriptQuote>
+          <HTML><![CDATA[');return false;" target=_self> <img src="/_layouts/images/newitem.gif" ID="tbbuttonstart1" alt=]]></HTML>
+          <HTML>New</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 ID=diidIONewItem class="ms-toolbar" ACCESSKEY=N href="]]></HTML>
+          <URL Cmd="New" />
+          <HTML><![CDATA[" onclick="javascript:NewItem(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <URL Cmd="New" />
+          </ScriptQuote>
+          <HTML><![CDATA[');return false;" target=_self>
+	<LocID ID="L_NewItem">]]></HTML>
+          <HTML>New Item</HTML>
+          <HTML><![CDATA[</LocID>
+</a> </td> </tr> </table> </TD>
+<TD class=ms-separator>|</td>
+<TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIOEditItem class="ms-toolbar" title=]]></HTML>
+          <HTML>"Edit"</HTML>
+          <HTML><![CDATA[ ACCESSKEY=I href="]]></HTML>
+          <URL Cmd="Edit" />
+          <HTML><![CDATA[" onclick="javascript:EditItem(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <URL Cmd="Edit" />
+          </ScriptQuote>
+          <HTML><![CDATA[');return false;" target=_self> <img src="/_layouts/images/edititem.gif" ID="tbbuttonstart1" alt=]]></HTML>
+          <HTML>"Edit"</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 ID=diidIOEditItem class="ms-toolbar" ACCESSKEY=I href="]]></HTML>
+          <URL Cmd="Edit" />
+          <HTML><![CDATA[" onclick="javascript:EditItem(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <URL Cmd="Edit" />
+          </ScriptQuote>
+          <HTML><![CDATA[');return false;" target=_self>
+	<LocID ID="L_EditItem">]]></HTML>
+          <HTML>Edit Item</HTML>
+          <HTML><![CDATA[</LocID>
+</a> </td> </tr> </table> </TD>
+<TD class=ms-separator>|</td>
+<TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIODeleteItem class="ms-toolbar" title=]]></HTML>
+          <HTML>"Delete"</HTML>
+          <HTML><![CDATA[ ACCESSKEY=X href="javascript:DeleteItem()" target="_self"> <img src="/_layouts/images/delitem.gif" ID="tbbuttonstart1" alt=]]></HTML>
+          <HTML>"Delete"</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 ID=diidIODeleteItem class="ms-toolbar" ACCESSKEY=X href="javascript:DeleteItem()" target="_self">
+	<LocID ID="L_DeleteItem">]]></HTML>
+          <HTML>Delete Item</HTML>
+          <HTML><![CDATA[</LocID>
+</a> </td> </tr> </table> </TD>
+<TD class=ms-separator>|</td>
+    <td class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIOPermissions class="ms-toolbar" ACCESSKEY=P href="javascript:" onclick="javascript:NavigateToManagePermsPage(']]></HTML>
+          <HttpVDir />
+          <HTML><![CDATA[', ']]></HTML>
+          <List />
+          <HTML><![CDATA[,]]></HTML>
+          <ID />
+          <HTML><![CDATA[');javascript:return false;" target=_top title=]]></HTML>
+          <HTML>"Manage Permissions"</HTML>
+          <HTML><![CDATA[><img src="/_layouts/images/share.gif" ID="tbbutton1P" alt=]]></HTML>
+          <HTML>"Manage Permissions"</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 class="ms-toolbar" ACCESSKEY=P ID=diidIOPermissions href="javascript:" onclick="javascript:NavigateToManagePermsPage(']]></HTML>
+          <HttpVDir />
+          <HTML><![CDATA[', ']]></HTML>
+          <List />
+          <HTML><![CDATA[,]]></HTML>
+          <ID />
+          <HTML><![CDATA[');javascript:return false;" target=_top>]]></HTML>
+          <HTML>Manage Permissions</HTML>
+          <HTML><![CDATA[</a></td> </tr></table></td>
+    <TD class=ms-separator>|</td>
+]]></HTML>
+          <Switch>
+            <Expr>
+              <ListProperty Select="ModeratedList" />
+            </Expr>
+            <Case Value="0" />
+            <Default>
+              <HTML><![CDATA[
+<TD class="ms-toolbar">
+<table cellpadding=1 cellspacing=0 border=0>
+<tr>
+<TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td nowrap> <a tabindex=2 ID=diidIOAppDenyItem class="ms-toolbar" ACCESSKEY=Y href="]]></HTML>
+              <URL Cmd="Edit" />
+              <HTML><![CDATA[&ChangeApproval=TRUE" onclick="javascript:EditItem(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <URL Cmd="Edit" />
+              </ScriptQuote>
+              <HTML><![CDATA[&ChangeApproval=TRUE');javascript:return false;" target="_self">
+<LocID ID="L_AppDenyItem">]]></HTML>
+              <HTML>Approve/reject Item</HTML>
+              <HTML><![CDATA[</LocID>
+</a> </td> </tr> </table> </TD>
+</tr>
+</table>
+</TD>
+<TD class=ms-separator>|</td>
+]]></HTML>
+            </Default>
+          </Switch>
+          <HTML><![CDATA[
+<TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td nowrap> <a tabindex=2 ID=diidSubscribeButton class="ms-toolbar" ACCESSKEY=B href="javascript:" onclick="javascript:NavigateToSubNewAspx(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <HttpVDir />
+          </ScriptQuote>
+          <HTML><![CDATA[', 'List=]]></HTML>
+          <List />
+          <HTML><![CDATA[&ID=]]></HTML>
+          <ID />
+          <HTML><![CDATA[');javascript:return false;" target="_self">
+    <LocID ID="L_Subscribe">]]></HTML>
+          <HTML>Alert Me</HTML>
+          <HTML><![CDATA[</LocID>
+</a> </td> </tr> </table> </TD>
+<TD class=ms-separator>|</td>
+<TD class="2ms-toolbar">
+    <table cellpadding=1 cellspacing=0 border=0>
+    <tr>
+        <td colspan=2 nowrap>
+        <a tabindex=2 class="ms-toolbar" ACCESSKEY=G ID=diidIOGoBack href="]]></HTML>
+          <ListProperty Select="DefaultViewUrl" />
+          <HTML><![CDATA[" onclick="javascript:GoBack(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <ListProperty Select="DefaultViewUrl" />
+          </ScriptQuote>
+          <HTML><![CDATA[');return false;" target="_self">
+            <LocID ID="L_GOBackItem">]]></HTML>
+          <HTML>Go Back to List</HTML>
+          <HTML><![CDATA[</LocID>
+        </a>
+        </td>
+    </tr>
+    </table>
+</TD>
+<td width=100%><img src="/_layouts/images/blank.gif" alt=""></td> 
+</TR>
+</TABLE>
+<table width=100% border=0 cellpadding=0 cellspacing=2>
+<tr>
+<td colspan=8 height=3><img border=0 width=1 height=3 src="/_layouts/images/blank.gif" alt=""></td>
+</tr>
+</table>
+]]></HTML>
+        </ListFormButtons>
+        <ListFormBody>
+          <SetVar Name="FreeForm">TRUE</SetVar>
+          <HTML><![CDATA[<TABLE id="tp_dispTable" class="ms-formtable" border=0 cellpadding=2>]]></HTML>
+          <Fields>
+            <HTML><![CDATA[<TR  style="display:none" id="]]></HTML>
+            <Property Select="Name" HTMLEncode="TRUE" />
+            <HTML><![CDATA[">
+	<TH nowrap valign=top class="ms-formlabel">]]></HTML>
+            <Property Select="DisplayName" HTMLEncode="TRUE" AutoNewLine="TRUE" />
+            <HTML><![CDATA[:</TH>]]></HTML>
+            <HTML><![CDATA[<TD valign="top" class="ms-formbody">]]></HTML>
+            <HTML><![CDATA[<table border=0 cellpadding=0 cellspacing=0><tr><td class="ms-formbody">]]></HTML>
+            <Field />
+            <HTML><![CDATA[</td></tr></table>]]></HTML>
+            <HTML><![CDATA[</TD></TR>]]></HTML>
+          </Fields>
+          <HTML><![CDATA[<TR id=idAttachmentsRow><TH nowrap valign=top class="ms-formlabel">]]></HTML>
+          <FieldProperty Name="Attachments" Select="DisplayName" HTMLEncode="TRUE" />
+          <HTML><![CDATA[:</TH>]]></HTML>
+          <HTML><![CDATA[<TD valign="top" class="ms-formbody">]]></HTML>
+          <HTML><![CDATA[<TABLE border=0 cellpadding=0 cellspacing=0 id=idAttachmentsTable>]]></HTML>
+          <Field Name="Attachments" />
+          <HTML><![CDATA[</TABLE>]]></HTML>
+          <HTML><![CDATA[</TD><TD>&nbsp;</TD></TR>]]></HTML>
+          <HTML><![CDATA[<SCRIPT>if (document.getElementById("idAttachmentsTable").rows.length == 0) document.getElementById("idAttachmentsRow").style.display='none';</SCRIPT>]]></HTML>
+          <Switch>
+            <Expr>
+              <ListProperty Select="ModeratedList" />
+            </Expr>
+            <Case Value="0" />
+            <Default>
+              <HTML><![CDATA[<tr><td class="ms-smallsectionline" height=1 colspan=2><img src="/_layouts/images/blank.gif" alt=""></td></tr>]]></HTML>
+              <HTML><![CDATA[<TR><TH nowrap valign=top class="ms-formlabel">]]></HTML>
+              <FieldProperty Name="_ModerationStatus" Select="DisplayName" HTMLEncode="TRUE" />
+              <HTML><![CDATA[:</TH>]]></HTML>
+              <HTML><![CDATA[<TD valign="top" class="ms-formbody">]]></HTML>
+              <HTML><![CDATA[<table border=0 cellpadding=0 cellspacing=0><tr><td class="ms-formbody">]]></HTML>
+              <Field Name="_ModerationStatus" />
+              <Switch>
+                <Expr>
+                  <Field Name="_ModerationComments" />
+                </Expr>
+                <Case Value="" />
+                <Default>
+                  <HTML><![CDATA[<BR>]]></HTML>
+                  <Field Name="_ModerationComments" />
+                </Default>
+              </Switch>
+              <HTML><![CDATA[</td></tr></table>]]></HTML>
+              <HTML><![CDATA[</TD></TR>]]></HTML>
+            </Default>
+          </Switch>
+          <HTML><![CDATA[</TABLE>
+<SCRIPT>var _g_tp_cRow = 0;</SCRIPT>
+]]></HTML>
+          <ContentTypes>
+            <ForEach Select="FieldRefs/FieldRef">
+              <HTML><![CDATA[<SCRIPT>
+    document.getElementById("ContentType").style.display="";
+    MoveDisplayRow(document.all.tp_dispTable, _g_tp_cRow + 1,]]></HTML>
+              <ScriptQuote>
+                <Property Select="Name" />
+              </ScriptQuote>
+              <HTML><![CDATA[);
+    _g_tp_cRow++;</SCRIPT>
+    ]]></HTML>
+            </ForEach>
+          </ContentTypes>
+          <HTML><![CDATA[<SCRIPT>
+if (_g_tp_cRow == 0)
+{
+    var i;
+    var tbl = document.getElementById("tp_dispTable");
+    for (i = 0; i < tbl.rows.length; i++)
+    {    
+        var tr;
+        if (browseris.ie4up)
+            tr = tbl.rows(i);
+        else
+            tr = tbl.rows[i];
+        if (tr.id != null)
+        {
+            if (tr.id != "ContentType" &&
+                (tr.id != "idAttachmentsRow" ||
+                document.getElementById("idAttachmentsTable").rows.length > 0))
+            {
+                tr.style.display="";
+            }
+        }
+    }
+}
+</SCRIPT>
+]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="WebEditorPreview" />
+            </Expr>
+            <Case Value="TRUE">
+              <SetVar Name="DisplayMode" Scope="Request">PREVIEWDISPLAY</SetVar>
+            </Case>
+            <Default>
+              <SetVar Name="DisplayMode" Scope="Request">DISPLAY</SetVar>
+            </Default>
+          </Switch>
+          <HTML><![CDATA[
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td class="ms-formlabel"> 
+   <table border=0 cellpadding=0 cellspacing=4 width=100%>
+    <tr><td class="ms-sectionline" height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td></tr>
+    <tr><td height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td></tr>
+    <tr><td class="ms-formbody" ID=onetidinfoblock1>]]></HTML>
+          <HTML>Created at </HTML>
+          <SetVar Name="FreeForm" Scope="Request">TRUE</SetVar>
+          <Field Name="Created" />
+          <HTML> by </HTML>
+          <Field Name="Author" />
+          <HTML><![CDATA[</td></tr>
+    <tr><td class="ms-formbody" ID=onetidinfoblock2>]]></HTML>
+          <HTML>Last modified at </HTML>
+          <SetVar Name="FreeForm" Scope="Request">TRUE</SetVar>
+          <Field Name="Modified" />
+          <HTML> by </HTML>
+          <Field Name="Editor" />
+          <HTML><![CDATA[</td></tr> 
+]]></HTML>
+          <SetVar Name="FreeForm" Scope="Request">
+          </SetVar>
+          <HTML><![CDATA[
+   </table>
+  </td>
+ </tr>
+</table>
+]]></HTML>
+          <SetVar Name="FreeForm">
+          </SetVar>
+        </ListFormBody>
+      </Form>
+      <Form Type="EditForm" Url="EditForm.aspx" WebPartZoneID="Main">
+        <ListFormOpening>
+          <HTML><![CDATA[
+<SCRIPT>
+var frm = new OWSForm(]]></HTML>
+          <ScriptQuote>
+            <Switch>
+              <Expr>
+                <GetVar Name="HTMLFormName" />
+              </Expr>
+              <Case Value="">
+                <HTML><![CDATA[OWSForm]]></HTML>
+              </Case>
+              <Default>
+                <GetVar Name="HTMLFormName" />
+              </Default>
+            </Switch>
+          </ScriptQuote>
+          <HTML><![CDATA[, true, ]]></HTML>
+          <ScriptQuote>
+            <HttpVDir />
+            <HTML>/_layouts/</HTML>
+          </ScriptQuote>
+          <HTML><![CDATA[);
+frm.fPreviewMode = (]]></HTML>
+          <ScriptQuote>
+            <GetVar Name="ID" />
+          </ScriptQuote>
+          <HTML><![CDATA[ == ""); 
+var theForm = document.forms[]]></HTML>
+          <ScriptQuote>
+            <Switch>
+              <Expr>
+                <GetVar Name="HTMLFormName" />
+              </Expr>
+              <Case Value="">
+                <HTML><![CDATA[OWSForm]]></HTML>
+              </Case>
+              <Default>
+                <GetVar Name="HTMLFormName" />
+              </Default>
+            </Switch>
+          </ScriptQuote>
+          <HTML><![CDATA[];
+</SCRIPT>]]></HTML>
+          <HTML><![CDATA[<SCRIPT>]]></HTML>
+          <HTML><![CDATA[ frm.dopt.chDateSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="29" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.chTimeSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="30" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.SetTimeFormat(]]></HTML>
+          <ProjectProperty Select="Time24" />
+          <HTML><![CDATA[); frm.dopt.SetDateOrder(]]></HTML>
+          <LocaleInfo LCTYPE="33" />
+          <HTML><![CDATA[); frm.dopt.SetDOW(]]></HTML>
+          <LocaleInfo LCTYPE="4108" />
+          <HTML><![CDATA[); frm.dopt.stAM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="40" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.stPM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="41" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.TimeMarkPosn = ]]></HTML>
+          <LocaleInfo LCTYPE="4101" />
+          <HTML><![CDATA[; frm.dopt.webTZOffsetMin = ]]></HTML>
+          <ProjectProperty Select="TimeZoneBias" />
+          <HTML><![CDATA[; ]]></HTML>
+          <HTML><![CDATA[ frm.nopt.chDigSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="15" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chDecimal = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="14" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chMinus = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="81" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.iNegNumber = ]]></HTML>
+          <LocaleInfo LCTYPE="4112" />
+          <HTML><![CDATA[; frm.nopt.SetGrouping(]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="16" />
+          </ScriptQuote>
+          <HTML><![CDATA[); ]]></HTML>
+          <HTML><![CDATA[
+frm.stFieldPrefix = ]]></HTML>
+          <ScriptQuote>
+            <FieldPrefix />
+          </ScriptQuote>
+          <HTML><![CDATA[;
+frm.stImagesPath = ]]></HTML>
+          <ScriptQuote>/_layouts/images/</ScriptQuote>
+          <HTML><![CDATA[;
+frm.wBaseType = ]]></HTML>
+          <ListProperty Select="BaseType" />
+          <HTML><![CDATA[;
+</SCRIPT>]]></HTML>
+          <HTML><![CDATA[
+<SCRIPT>
+function DeleteItem()
+{
+    var L_Delete_text = (]]></HTML>
+          <ProjectProperty Select="RecycleBinEnabled" />
+          <HTML><![CDATA[ == 1 ? L_STSRecycleConfirm_Text : L_STSDelConfirm_Text);
+    if (confirm(L_Delete_text))
+    {
+       SetControlValue("onetidCmd", "Delete");
+       SubmitFormPost(']]></HTML>
+          <HttpPath />
+          <HTML><![CDATA[&Cmd=Delete&List=]]></HTML>
+          <List />
+          <HTML><![CDATA[&ID=]]></HTML>
+          <ID />
+          <HTML><![CDATA[&NextUsing=' + GetSource());
+    }
+}
+function SubmitForm()
+{
+    theForm.action = ]]></HTML>
+          <ScriptQuote>
+            <HttpPath />
+          </ScriptQuote>
+          <HTML><![CDATA[;
+    frm.ValidateAndSubmit(true);
+}
+function Discuss(strUrl)
+{
+    var L_IE5upRequired_Text = "]]><![CDATA['Discuss' requires a Windows SharePoint Services-compatible application and Microsoft Internet Explorer 5.0 or greater.]]><![CDATA[";
+    if (browseris.ie5up && browseris.win32)
+	STSNavigate(strUrl);
+    else
+	alert(L_IE5upRequired_Text);
+}
+</SCRIPT>
+]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[
+<Form Name="OWSForm" EncType="multipart/form-data" Action="]]></HTML>
+              <HttpPath />
+              <HTML><![CDATA[" Method=POST onsubmit="return false;">
+]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+  <INPUT type=hidden name="_charset_">
+  <INPUT type=hidden name="NextID" value="-1" />
+  <INPUT type=hidden name="NextUsing" value="]]></HTML>
+          <GetVar Name="Source" HTMLEncode="TRUE" />
+          <HTML><![CDATA[" />
+  <INPUT ID=onetidCmd Type=Hidden Name="Cmd" Value="Save">
+  <INPUT type=hidden name="ChangeApproval" value="]]></HTML>
+          <GetVar Name="ChangeApproval" />
+          <HTML><![CDATA[" />
+  <INPUT ID=onetidNotDemoting type=hidden name="NotDemoting">
+  <INPUT ID=onetidNotDemotingURL type=hidden name="NotDemotingURL">
+]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="ChangeApproval" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[
+<SCRIPT>
+function SubmitModerateCommand()
+{
+    theForm.action = ]]></HTML>
+              <ScriptQuote>
+                <HttpPath />
+              </ScriptQuote>
+              <HTML><![CDATA[;
+    theForm["Cmd"].value = "MODERATE";
+    frm.ValidateAndSubmit(true);
+}
+</SCRIPT>
+<SPAN id='partChangeApproval'>
+    <TABLE cellSpacing=0 cellPadding=0 border=0>
+    <TBODY>
+    <TR>
+    <TD class="ms-descriptiontext" style="padding-bottom: 10px">]]></HTML>
+              <HTML>
+    Use this page to approve or reject submissions. Note that rejecting an item does not delete it, and that users who know the exact URL of a rejected item can still view it.
+    </HTML>
+              <HTML><![CDATA[ <a HREF=javascript:HelpWindowKey("ContentApproval")>]]></HTML>
+              <HTML>More information on content approval.</HTML>
+              <HTML><![CDATA[</A>
+    </TD>
+    </TR>
+        <TR><TD height=4><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+    </TBODY>
+    </TABLE>
+    <TABLE width=100% border=0 cellpadding=0 cellspacing=0>
+      <TBODY>
+       <tr>
+        <td class="ms-sectionline" colspan=4 height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td>
+       </tr>
+       <TR>
+        <TD nowrap rowspan="2"></TD>
+        <TD class="ms-descriptiontext" rowspan="2" valign="top"  ID="align02">
+          <TABLE border=0 cellpadding=1 cellspacing=0>
+            <TR><TD colspan=2 class="ms-sectionheader" height=28 valign=top ID="201">]]></HTML>
+              <HTML>Approval Status</HTML>
+              <HTML><![CDATA[</TD></TR>
+            <TR><TD id=onetidListDescription class="ms-descriptiontext">]]></HTML>
+              <HTML>
+                    Approve, reject, or leave the status as Pending for others with the Manage Lists right to evaluate the item.
+            </HTML>
+              <HTML><![CDATA[</TD><TD width="10">&nbsp;</TD></TR>
+          </TABLE>
+        </TD>
+        <TD height=10 colspan=2 class="ms-authoringcontrols"><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD>
+       </TR>
+       <TR>
+        <TD class=ms-authoringcontrols colSpan=2>
+         <TABLE cellSpacing=0 cellPadding=0 border=0><TR>
+           <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+           <TD class="ms-authoringcontrols" ID="800" valign=top>
+]]></HTML>
+              <Switch>
+                <Expr>
+                  <Field Name="_ModerationStatus" />
+                </Expr>
+                <Case Value="3">
+                  <Switch>
+                    <Expr>
+                      <ListProperty Select="EnableMinorVersions" />
+                    </Expr>
+                    <Case Value="0">
+                      <HTML><![CDATA[
+            <INPUT tabindex=1 id=onetidApproved Type="Radio"  Name="]]></HTML>
+                      <FieldPrefix />
+                      <HTML><![CDATA[_ModerationStatus" Value=0]]></HTML>
+                      <Switch>
+                        <Expr>
+                          <Field Name="_ModerationStatus" />
+                        </Expr>
+                        <Case Value="0">
+                          <HTML><![CDATA[ checked="checked" ]]></HTML>
+                        </Case>
+                        <Default />
+                      </Switch>
+                      <HTML><![CDATA[></TD>
+            <TD class=ms-authoringcontrols style="PADDING-TOP: 3px">
+            <LABEL for="onetidApproved"><B>]]></HTML>
+                      <HTML>Approved.</HTML>
+                      <HTML><![CDATA[&nbsp;</B><BR>]]></HTML>
+                      <HTML>This item will become visible to all users.</HTML>
+                      <HTML><![CDATA[</LABEL>
+            </TD>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            </TR>
+            <TR><TD class="ms-authoringcontrols" colspan=4 height=6><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+            <TR>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            <TD class="ms-authoringcontrols" ID="800" valign=top>             
+            <INPUT tabindex=1 id=onetidDenied Type="Radio"  Name="]]></HTML>
+                      <FieldPrefix />
+                      <HTML><![CDATA[_ModerationStatus" Value=1]]></HTML>
+                      <Switch>
+                        <Expr>
+                          <Field Name="_ModerationStatus" />
+                        </Expr>
+                        <Case Value="1">
+                          <HTML><![CDATA[ checked="checked" ]]></HTML>
+                        </Case>
+                        <Default />
+                      </Switch>
+                      <HTML><![CDATA[></TD>
+            <TD class=ms-authoringcontrols style="PADDING-TOP: 3px">
+            <LABEL for="onetidDenied"><B>]]></HTML>
+                      <HTML>Rejected.</HTML>
+                      <HTML><![CDATA[&nbsp;</B><BR>]]></HTML>
+                      <HTML>This item will be returned to its creator and not appear in public views.</HTML>
+                      <HTML><![CDATA[</LABEL>
+            </TD>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            </TR>
+            <TR><TD class="ms-authoringcontrols" colspan=4 height=6><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+            <TR>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            <TD class="ms-authoringcontrols" ID="800" valign=top>]]></HTML>
+                    </Case>
+                    <Default />
+                  </Switch>
+                  <HTML><![CDATA[
+            <INPUT tabindex=1 id=onetidDraft Type="Radio"  Name="]]></HTML>
+                  <FieldPrefix />
+                  <HTML><![CDATA[_ModerationStatus" Value=3 checked="checked">
+           </TD>
+           <TD class=ms-authoringcontrols style="PADDING-TOP: 3px">
+           <LABEL for="onetidDraft"><B>]]></HTML>
+                  <HTML>Draft</HTML>
+                  <HTML><![CDATA[&nbsp;</B><BR>]]></HTML>
+                  <HTML>This item will be returned to its creator and not appear in public views.</HTML>
+                  <HTML><![CDATA[</LABEL>
+                </TD>
+               <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+               </TR>
+               <TR><TD class="ms-authoringcontrols" colspan=4 height=6><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+               <TR>
+               <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+                <TD class="ms-authoringcontrols" ID="800" valign=top>]]></HTML>
+                </Case>
+                <Default>
+                  <HTML><![CDATA[
+            <INPUT tabindex=1 id=onetidApproved Type="Radio"  Name="]]></HTML>
+                  <FieldPrefix />
+                  <HTML><![CDATA[_ModerationStatus" Value=0]]></HTML>
+                  <Switch>
+                    <Expr>
+                      <Field Name="_ModerationStatus" />
+                    </Expr>
+                    <Case Value="0">
+                      <HTML><![CDATA[ checked="checked" ]]></HTML>
+                    </Case>
+                    <Default />
+                  </Switch>
+                  <HTML><![CDATA[></TD>
+            <TD class=ms-authoringcontrols style="PADDING-TOP: 3px">
+            <LABEL for="onetidApproved"><B>]]></HTML>
+                  <HTML>Approved.</HTML>
+                  <HTML><![CDATA[&nbsp;</B><BR>]]></HTML>
+                  <HTML>This item will become visible to all users.</HTML>
+                  <HTML><![CDATA[</LABEL>
+            </TD>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            </TR>
+            <TR><TD class="ms-authoringcontrols" colspan=4 height=6><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+            <TR>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            <TD class="ms-authoringcontrols" ID="800" valign=top>             
+            <INPUT tabindex=1 id=onetidDenied Type="Radio"  Name="]]></HTML>
+                  <FieldPrefix />
+                  <HTML><![CDATA[_ModerationStatus" Value=1]]></HTML>
+                  <Switch>
+                    <Expr>
+                      <Field Name="_ModerationStatus" />
+                    </Expr>
+                    <Case Value="1">
+                      <HTML><![CDATA[ checked="checked" ]]></HTML>
+                    </Case>
+                    <Default />
+                  </Switch>
+                  <HTML><![CDATA[></TD>
+            <TD class=ms-authoringcontrols style="PADDING-TOP: 3px">
+            <LABEL for="onetidDenied"><B>]]></HTML>
+                  <HTML>Rejected.</HTML>
+                  <HTML><![CDATA[&nbsp;</B><BR>]]></HTML>
+                  <HTML>This item will be returned to its creator and not appear in public views.</HTML>
+                  <HTML><![CDATA[</LABEL>
+            </TD>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            </TR>
+            <TR><TD class="ms-authoringcontrols" colspan=4 height=6><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+            <TR>
+            <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+            <TD class="ms-authoringcontrols" ID="800" valign=top>]]></HTML>
+                </Default>
+              </Switch>
+              <HTML><![CDATA[<INPUT tabindex=1 id=onetidPending Type="Radio"  Name="]]></HTML>
+              <FieldPrefix />
+              <HTML><![CDATA[_ModerationStatus" Value=2]]></HTML>
+              <Switch>
+                <Expr>
+                  <Field Name="_ModerationStatus" />
+                </Expr>
+                <Case Value="2">
+                  <HTML><![CDATA[ checked="checked" ]]></HTML>
+                </Case>
+                <Default />
+              </Switch>
+              <HTML><![CDATA[></TD>
+            <TD class=ms-authoringcontrols style="PADDING-TOP: 3px">
+            <LABEL for="onetidPending"><B>]]></HTML>
+              <HTML>Pending.</HTML>
+              <HTML><![CDATA[&nbsp;</B><BR>]]></HTML>
+              <HTML>This item will remain visible to its creator and all users with the Manage Lists right.</HTML>
+              <HTML><![CDATA[</LABEL>
+                </TD>
+               <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+               </TR>
+           <TR><TD class="ms-authoringcontrols" colspan=4 height=21><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+         </TABLE>
+        </td>
+       </tr>
+       <tr>
+        <td class="ms-sectionline" colspan=4 height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td>
+       </tr>
+       <TR>
+        <TD nowrap rowspan="3"></TD>
+        <TD class="ms-descriptiontext" rowspan="3" valign="top"  ID="align02">
+          <TABLE border=0 cellpadding=1 cellspacing=0>
+            <TR><TD colspan=2 class="ms-sectionheader" height=28 valign=top ID="201">]]></HTML>
+              <HTML>Comment</HTML>
+              <HTML><![CDATA[</TD></TR>
+            <TR><TD id=onetidListDescription class="ms-descriptiontext">]]></HTML>
+              <HTML>
+                    Use this field to enter any comments about why the item was approved or rejected.
+            </HTML>
+              <HTML><![CDATA[</TD><TD width="10">&nbsp;</TD></TR>
+          </TABLE>
+        </TD>
+        <TD height=10 colspan=2 class="ms-authoringcontrols"><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD>
+       </TR>
+       <TR>
+       <TD class="ms-authoringcontrols" width=10>&nbsp;</TD>
+        <TD class="ms-authoringcontrols" ID="800">
+          ]]></HTML>
+              <Field Name="_ModerationComments" />
+              <HTML><![CDATA[
+        </TD>
+       </TR>
+       <TR><TD class="ms-authoringcontrols" colspan=2 height=21><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>       
+<!--OK/Cancel-->
+    <TR><TD class=ms-sectionline height=2 colspan=4><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD></TR>
+    <TR>
+        <TD class=ms-spaceBetContentAndButton colspan=4><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD>
+    </TR>
+    <TR>
+     <TD align=right colspan=4 ID="align01">
+      <INPUT tabindex=4 ID=onetidOK class="ms-ButtonHeightWidth" onClick="SubmitModerateCommand();" Type="button" Value="     OK     ">
+      <span id="idSpace" class=ms-SpaceBetButtons></span>
+      <INPUT tabindex=4 ID=onetidCancel class="ms-ButtonHeightWidth" Type="button" onclick="window.parent.history.back()" Value="   Cancel   ">
+     </TD>
+    </TR>
+    <tr>
+      </TBODY>
+    </TABLE>
+</SPAN><SPAN id='part1' style='display:none'>]]></HTML>
+            </Case>
+            <Default>
+              <HTML><![CDATA[<SPAN id='part1'>]]></HTML>
+            </Default>
+          </Switch>
+          <Switch>
+            <Expr>
+              <Column Name="HTML_x0020_File_x0020_Type" />
+            </Expr>
+            <Case Value="SharePoint.WebPartPage.Document">
+              <SetVar Name="IsWebPartPage" Scope="Request">1</SetVar>
+            </Case>
+          </Switch>
+          <Identity />
+        </ListFormOpening>
+        <ListFormButtons>
+          <Switch>
+            <Expr>
+              <ListProperty Select="ModeratedList" />
+            </Expr>
+            <Case Value="0" />
+            <Default>
+              <HTML><![CDATA[<table border=0><tr><td valign=top class="ms-propertysheet" style="padding-bottom: 10px"><font color=red><b>!&nbsp;</b></font>]]></HTML>
+              <HTML>Items on this list require content approval. Your submission will not appear in public views until approved by someone with proper rights.</HTML>
+              <HTML><![CDATA[ <a HREF=javascript:HelpWindowKey("ContentApproval")>]]></HTML>
+              <HTML>More information on content approval.</HTML>
+              <HTML><![CDATA[</A>]]></HTML>
+              <HTML><![CDATA[</td></tr></table>]]></HTML>
+            </Default>
+          </Switch>
+          <HTML><![CDATA[
+  <TABLE class="ms-toolbar" style="margin-left: 3px;" cellpadding=2 cellspacing=0 border=0>
+   <TR>
+       <TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIOSaveItem class="ms-toolbar" title=]]></HTML>
+          <HTML>"Save"</HTML>
+          <HTML><![CDATA[ ACCESSKEY=S href="javascript:SubmitForm()" target="_self"> <img src="/_layouts/images/saveitem.gif" ID="tbbuttonstart1" alt=]]></HTML>
+          <HTML>"Save"</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 ID=diidIOSaveItem class="ms-toolbar" ACCESSKEY=S href="javascript:SubmitForm()" target="_self">
+           <LocID ID="L_EditFormSave">]]></HTML>
+          <HTML>Save and Close</HTML>
+          <HTML><![CDATA[</LocID>
+       </a> </td> </tr> </table> </TD>
+    <TD class=ms-separator>|</td>
+     ]]></HTML>
+          <Switch>
+            <Expr>
+              <ListProperty Select="AttachmentsDisabled" />
+            </Expr>
+            <Case Value="0">
+              <HTML><![CDATA[
+<td class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIOAttach class="ms-toolbar" ACCESSKEY=I href="javascript:UploadAttachment()" target="_self" title=]]></HTML>
+              <HTML>"Attach File"</HTML>
+              <HTML><![CDATA[><img src="/_layouts/images/attachtb.gif" ID="tbbutton1I" alt=]]></HTML>
+              <HTML>"Attach File"</HTML>
+              <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 class="ms-toolbar" ACCESSKEY=I ID=diidIOAttach href="javascript:UploadAttachment()" target="_self">]]></HTML>
+              <HTML>Attach File</HTML>
+              <HTML><![CDATA[</a></td> </tr></table></td>
+<TD class=ms-separator>|</TD>
+]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIODeleteItem class="ms-toolbar" title=]]></HTML>
+          <HTML>"Delete"</HTML>
+          <HTML><![CDATA[ ACCESSKEY=X href="javascript:DeleteItem()" target="_self"> <img src="/_layouts/images/delitem.gif" ID="tbbuttonstart1" alt=]]></HTML>
+          <HTML>"Delete"</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 ID=diidIODeleteItem class="ms-toolbar" ACCESSKEY=X href="javascript:DeleteItem()" target="_self">
+   <LocID ID="L_EditFormDelete">]]></HTML>
+          <HTML>Delete Item</HTML>
+          <HTML><![CDATA[</LocID>
+</a> </td> </tr> </table> </TD> 
+<TD class=ms-separator>|</td>
+	<td class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIOPermissions class="ms-toolbar" ACCESSKEY=P href="javascript:" onclick="javascript:NavigateToManagePermsPage(']]></HTML>
+          <HttpVDir />
+          <HTML><![CDATA[', ']]></HTML>
+          <List />
+          <HTML><![CDATA[,]]></HTML>
+          <ID />
+          <HTML><![CDATA[');javascript:return false;" target=_top title=]]></HTML>
+          <HTML>"Manage Permissions"</HTML>
+          <HTML><![CDATA[><img src="/_layouts/images/share.gif" ID="tbbutton1P" alt=]]></HTML>
+          <HTML>"Manage Permissions"</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 class="ms-toolbar" ACCESSKEY=P ID=diidIOPermissions href="javascript:" onclick="javascript:NavigateToManagePermsPage(']]></HTML>
+          <HttpVDir />
+          <HTML><![CDATA[', ']]></HTML>
+          <List />
+          <HTML><![CDATA[,]]></HTML>
+          <ID />
+          <HTML><![CDATA[');javascript:return false;" target=_top>]]></HTML>
+          <HTML>Manage Permissions</HTML>
+          <HTML><![CDATA[</a></td> </tr></table></td>
+	<TD class=ms-separator>|</td>
+    <TD class="ms-toolbar"><table cellpadding=1 cellspacing=0 border=0><tr><td colspan=2 nowrap><a tabindex="2" class="ms-toolbar" ACCESSKEY=G ID=diidIOGoBack href="]]></HTML>
+          <ListProperty Select="DefaultViewUrl" />
+          <HTML><![CDATA[" ONCLICK="javascript:GoBack(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <ListProperty Select="DefaultViewUrl" />
+          </ScriptQuote>
+          <HTML><![CDATA[');return false;" target="_self">
+<LocID ID="L_EditFormGoBack">]]></HTML>
+          <HTML>Go Back to List</HTML>
+          <HTML><![CDATA[</LocID>
+</a></td></tr></table></TD>
+<td width=100%><img src="/_layouts/images/blank.gif" alt=""></td>
+   </TR>
+  </TABLE>
+  <table width=100% border=0 cellpadding=0 cellspacing=2>
+  <tr>
+   <td colspan=5 height=3><img border=0 width=1 height=3 src="/_layouts/images/blank.gif" alt=""></td>
+  </tr>
+  </table>
+<font size=1><br></font>
+]]></HTML>
+        </ListFormButtons>
+        <ListFormBody>
+          <HTML><![CDATA[
+<SCRIPT>var _g_tp_fNewForm = false;</SCRIPT>
+<TABLE border=0 cellpadding=2>]]></HTML>
+          <Switch>
+            <Expr>
+              <ListProperty Select="ModeratedList" />
+            </Expr>
+            <Case Value="0" />
+            <Default>
+              <Switch>
+                <Expr>
+                  <GetVar Name="ChangeApproval" />
+                </Expr>
+                <Case Value="TRUE" />
+                <Default>
+                  <HTML><![CDATA[<INPUT TYPE=HIDDEN NAME="]]></HTML>
+                  <FieldPrefix />
+                  <HTML><![CDATA[_ModerationStatus" VALUE="]]></HTML>
+                  <Field Name="_ModerationStatus" />
+                  <HTML><![CDATA[">]]></HTML>
+                  <HTML><![CDATA[<INPUT TYPE=HIDDEN NAME="]]></HTML>
+                  <FieldPrefix />
+                  <HTML><![CDATA[_ModerationComments" VALUE="]]></HTML>
+                  <Column Name="_ModerationComments" HTMLEncode="TRUE" />
+                  <HTML><![CDATA[">]]></HTML>
+                </Default>
+              </Switch>
+            </Default>
+          </Switch>
+          <Fields>
+            <HTML><![CDATA[<TR style="display:none"><TH nowrap valign=top class="ms-formlabel"><nobr>]]></HTML>
+            <Property Select="DisplayName" HTMLEncode="TRUE" AutoNewLine="TRUE" />
+            <Switch>
+              <Expr>
+                <Property Select="Required" />
+              </Expr>
+              <Case Value="TRUE">
+                <HTML><![CDATA[<font color=red> *</font>]]></HTML>
+                <SetVar Scope="Request" Name="HasRequired">TRUE</SetVar>
+              </Case>
+              <Default>
+                <HTML><![CDATA[<font color=red></font>]]></HTML>
+              </Default>
+            </Switch>
+            <HTML><![CDATA[</nobr></TH><TD class="ms-formbody">]]></HTML>
+            <Field />
+            <Switch>
+              <Expr>
+                <Property Select="RichText" />
+              </Expr>
+              <Case Value="TRUE" />
+              <Default>
+                <Switch>
+                  <Expr>
+                    <Property Select="Type" />
+                  </Expr>
+                  <Case Value="Choice" />
+                  <Case Value="MultiChoice" />
+                  <Default>
+                    <HTML><![CDATA[&nbsp;]]></HTML>
+                    <Switch>
+                      <Expr>
+                        <Property Select="NoEditFormBreak" />
+                      </Expr>
+                      <Case Value="TRUE" />
+                      <Default>
+                        <HTML><![CDATA[<br>]]></HTML>
+                      </Default>
+                    </Switch>
+                  </Default>
+                </Switch>
+              </Default>
+            </Switch>
+            <HTML><![CDATA[<SPAN class="ms-formdescription">]]></HTML>
+            <Property Select="Description" HTMLEncode="TRUE" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+            <HTML><![CDATA[</SPAN></TD></TR>]]></HTML>
+          </Fields>
+          <HTML><![CDATA[<TR id=idAttachmentsRow><TH nowrap valign=top class="ms-formlabel">]]></HTML>
+          <FieldProperty Name="Attachments" Select="DisplayName" HTMLEncode="TRUE" />
+          <HTML><![CDATA[</TH>]]></HTML>
+          <HTML><![CDATA[<TD class="ms-formbody">]]></HTML>
+          <HTML><![CDATA[<TABLE border=0 cellpadding=0 cellspacing=0 id=idAttachmentsTable>]]></HTML>
+          <Field Name="Attachments" />
+          <HTML><![CDATA[</TABLE>]]></HTML>
+          <HTML><![CDATA[</TD></TR>]]></HTML>
+          <HTML><![CDATA[<SCRIPT>if (document.getElementById("idAttachmentsTable").rows.length == 0) document.getElementById("idAttachmentsRow").style.display='none';</SCRIPT>]]></HTML>
+          <HTML><![CDATA[</TABLE>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="IsWebPartPage" />
+            </Expr>
+            <Case Value="1">
+              <HTML><![CDATA[
+               <P>
+               <TABLE>
+                 <TR>
+                   <TD class="ms-formbody" valign=top>
+                     Open this Web Part Page in maintenance view to delete problem Web Parts and remove personal settings.<BR>
+                     <A href="]]></HTML>
+              <HttpVDir />
+              <HTML><![CDATA[/_layouts/spcontnt.aspx?url=]]></HTML>
+              <Field Name="ServerUrl" URLEncode="TRUE" />
+              <HTML><![CDATA[">]]></HTML>
+              <HTML>Open Web Part Page in maintenance view</HTML>
+              <HTML><![CDATA[</A>  
+                   </TD>
+                 </TR>
+               </TABLE>
+             ]]></HTML>
+            </Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <GetVar Name="HasRequired" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[
+        <TABLE border=0 cellpadding=2>
+        <TR>
+        <TD class="ms-descriptiontext" colspan=2 valign=top><br><font color=red>*</font>&nbsp;]]></HTML>
+              <HTML>indicates a required field</HTML>
+              <HTML><![CDATA[</td>
+        </TR>
+        </TABLE>
+        ]]></HTML>
+            </Case>
+          </Switch>
+          <ContentTypes>
+            <HTML><![CDATA[
+    <SCRIPT>
+    _tp_rgctfld = new Array;
+    ]]></HTML>
+            <ForEach Select="FieldRefs/FieldRef">
+              <HTML>
+        _tp_ctfld = new Object(null);
+        _tp_ctfld.stName=</HTML>
+              <ScriptQuote>
+                <Property Select="Name" />
+              </ScriptQuote>
+              <HTML>;
+        _tp_ctfld.fRequired = BoolFromString(</HTML>
+              <ScriptQuote>
+                <Property Select="Required" />
+              </ScriptQuote>
+              <HTML>);
+        _tp_ctfld.fHidden = BoolFromString(</HTML>
+              <ScriptQuote>
+                <Property Select="Hidden" />
+              </ScriptQuote>
+              <HTML>);</HTML>
+              <ForEach Select="Default">
+                <HTML>
+            _tp_ctfld.stDefault=</HTML>
+                <ScriptQuote>
+                  <Property Select="." />
+                </ScriptQuote>
+                <HTML>;</HTML>
+              </ForEach>
+              <HTML>
+            _tp_rgctfld.push(_tp_ctfld);
+        </HTML>
+            </ForEach>
+            <HTML><![CDATA[
+    _g_tp_rgcts.push(_tp_rgctfld);
+    </SCRIPT>
+    ]]></HTML>
+          </ContentTypes>
+          <Switch>
+            <Expr>
+              <GetVar Name="WebEditorPreview" />
+            </Expr>
+            <Case Value="TRUE">
+              <SetVar Name="DisplayMode" Scope="Request">PREVIEWDISPLAY</SetVar>
+            </Case>
+            <Default>
+              <SetVar Name="DisplayMode" Scope="Request">DISPLAY</SetVar>
+            </Default>
+          </Switch>
+          <HTML><![CDATA[
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td class="ms-formlabel"> 
+   <table border=0 cellpadding=0 cellspacing=4 width=100%>
+    <tr><td class="ms-sectionline" height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td></tr>
+    <tr><td height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td></tr>
+    <tr><td class="ms-formbody" ID=onetidinfoblock1>]]></HTML>
+          <HTML>Created at </HTML>
+          <SetVar Name="FreeForm" Scope="Request">TRUE</SetVar>
+          <Field Name="Created" />
+          <HTML> by </HTML>
+          <Field Name="Author" />
+          <HTML><![CDATA[</td></tr>
+    <tr><td class="ms-formbody" ID=onetidinfoblock2>]]></HTML>
+          <HTML>Last modified at </HTML>
+          <SetVar Name="FreeForm" Scope="Request">TRUE</SetVar>
+          <Field Name="Modified" />
+          <HTML> by </HTML>
+          <Field Name="Editor" />
+          <HTML><![CDATA[</td></tr> 
+]]></HTML>
+          <SetVar Name="FreeForm" Scope="Request">
+          </SetVar>
+          <HTML><![CDATA[
+   </table>
+  </td>
+ </tr>
+</table>
+]]></HTML>
+        </ListFormBody>
+        <ListFormClosing>
+          <HTML><![CDATA[
+</SPAN>]]></HTML>
+          <Switch>
+            <Expr>
+              <ListProperty Select="AttachmentsDisabled" />
+            </Expr>
+            <Case Value="0">
+              <HTML><![CDATA[
+<INPUT type=hidden name='attachmentsToBeRemovedFromServer'>
+<INPUT type=hidden name='RectGifUrl' value="/_layouts/images/rect.gif">
+<SPAN id='partAttachment' style='display:none'>
+<TABLE cellSpacing=0 cellPadding=0 border=0 width="100%">
+<TBODY>
+<TR>
+    <TD class=ms-descriptiontext colSpan=4 vAlign=top>]]></HTML>
+              <HTML>
+    Use this page to add attachments to an item.</HTML>
+              <HTML><![CDATA[<BR><BR>
+    </TD>
+</TR>
+<TR>
+    <TD class=ms-sectionline colSpan=4 height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD>
+</TR>
+<TR>
+    <TD colSpan=4 height=10><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD>
+</TR>
+<TR>
+   <TH class=ms-formlabel vAlign=top height=15>]]></HTML>
+              <HTML>Name </HTML>
+              <HTML><![CDATA[</TH>
+   <TD class=ms-formbody vAlign=bottom height=15 id=attachmentsOnClient>
+    <INPUT tabIndex=1 type=file name=fileupload0 id=onetidIOFile class=ms-long
+    title="]]></HTML>
+              <HTML>Name </HTML>
+              <HTML><![CDATA["></INPUT>
+   </TD>
+</TR>
+<!--OK/Cancel-->
+<TR><TD vAlign=top colSpan=4 height=25><HR SIZE=1></HR></TD></TR>
+<TR>
+  <TD align=right colSpan=4>
+    <INPUT tabindex=1 class="ms-ButtonHeightWidth" id=attachOKbutton type=BUTTON onclick='OkAttach()'     value="]]></HTML>
+              <HTML>OK </HTML>
+              <HTML><![CDATA[ ">
+    <span id="idSpace" class=ms-SpaceBetButtons></span>
+    <INPUT tabindex=1 class="ms-ButtonHeightWidth" id=attachCancelButton type=BUTTON onclick='CancelAttach()' value="]]></HTML>
+              <HTML>Cancel </HTML>
+              <HTML><![CDATA[">
+  </TD>
+</TR>
+<TR>
+  <TD colSpan=4 height=60>&nbsp; 
+  </TD>
+  <TD>&nbsp;
+  </TD>
+</TR>
+</TBODY>
+</TABLE>
+</SPAN>
+]]></HTML>
+            </Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[</form>]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<SCRIPT>
+function OnLoadWrapper()
+{
+    try
+    {
+        if (null != document.all.onetidApproved)
+            frm.InitFormFields();
+        else
+            frm.SetFirstFocus();
+    }
+    catch(e)
+    {
+    }
+}
+if ((browseris.ie4up) && !browseris.mac) 
+{
+    document.body.onload = OnLoadWrapper;
+}
+else 
+{
+    frm.SetFirstFocus();
+}
+</SCRIPT>
+]]></HTML>
+        </ListFormClosing>
+      </Form>
+      <Form Type="NewForm" Url="NewForm.aspx" WebPartZoneID="Main">
+        <ListFormOpening>
+          <HTML><![CDATA[
+<SCRIPT>
+var frm = new OWSForm(]]></HTML>
+          <ScriptQuote>
+            <Switch>
+              <Expr>
+                <GetVar Name="HTMLFormName" />
+              </Expr>
+              <Case Value="">
+                <HTML><![CDATA[OWSForm]]></HTML>
+              </Case>
+              <Default>
+                <GetVar Name="HTMLFormName" />
+              </Default>
+            </Switch>
+          </ScriptQuote>
+          <HTML><![CDATA[, true, ]]></HTML>
+          <ScriptQuote>
+            <HttpVDir />
+            <HTML>/_layouts/</HTML>
+          </ScriptQuote>
+          <HTML><![CDATA[);
+</SCRIPT>
+]]></HTML>
+          <HTML><![CDATA[<SCRIPT>]]></HTML>
+          <HTML><![CDATA[ frm.dopt.chDateSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="29" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.chTimeSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="30" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.SetTimeFormat(]]></HTML>
+          <ProjectProperty Select="Time24" />
+          <HTML><![CDATA[); frm.dopt.SetDateOrder(]]></HTML>
+          <LocaleInfo LCTYPE="33" />
+          <HTML><![CDATA[); frm.dopt.SetDOW(]]></HTML>
+          <LocaleInfo LCTYPE="4108" />
+          <HTML><![CDATA[); frm.dopt.stAM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="40" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.stPM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="41" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.TimeMarkPosn = ]]></HTML>
+          <LocaleInfo LCTYPE="4101" />
+          <HTML><![CDATA[; frm.dopt.webTZOffsetMin = ]]></HTML>
+          <ProjectProperty Select="TimeZoneBias" />
+          <HTML><![CDATA[; ]]></HTML>
+          <HTML><![CDATA[ frm.nopt.chDigSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="15" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chDecimal = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="14" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chMinus = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="81" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.iNegNumber = ]]></HTML>
+          <LocaleInfo LCTYPE="4112" />
+          <HTML><![CDATA[; frm.nopt.SetGrouping(]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="16" />
+          </ScriptQuote>
+          <HTML><![CDATA[); ]]></HTML>
+          <HTML><![CDATA[
+frm.stFieldPrefix = ]]></HTML>
+          <ScriptQuote>
+            <FieldPrefix />
+          </ScriptQuote>
+          <HTML><![CDATA[;
+frm.stImagesPath = ]]></HTML>
+          <ScriptQuote>/_layouts/images/</ScriptQuote>
+          <HTML><![CDATA[;
+frm.wBaseType = ]]></HTML>
+          <ListProperty Select="BaseType" />
+          <HTML><![CDATA[;
+</SCRIPT>]]></HTML>
+          <HTML><![CDATA[
+<Script>
+function SetAction()
+{
+	var theForm = document.forms[]]></HTML>
+          <ScriptQuote>
+            <Switch>
+              <Expr>
+                <GetVar Name="HTMLFormName" />
+              </Expr>
+              <Case Value="">
+                <HTML><![CDATA[OWSForm]]></HTML>
+              </Case>
+              <Default>
+                <GetVar Name="HTMLFormName" />
+              </Default>
+            </Switch>
+          </ScriptQuote>
+          <HTML><![CDATA[];
+    theForm.action = ]]></HTML>
+          <ScriptQuote>
+            <HttpPath />
+          </ScriptQuote>
+          <HTML><![CDATA[;
+}
+	g_MSclicked = false;
+	function ClickOnce()
+	{
+		SetAction();
+		if(!g_MSclicked)
+		{
+			if(frm.ValidateAndSubmit(true))
+				g_MSclicked = true;
+		}
+		else
+		{
+			if(confirm(L_ClickOnce1_text ))
+				frm.ValidateAndSubmit(true);
+		}
+	}
+</Script>
+]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[<Form Name="OWSForm" id=OWSForm EncType="multipart/form-data" Action="]]></HTML>
+              <HttpPath />
+              <HTML><![CDATA[" Method=POST onSubmit="return false;">]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<INPUT Type=Hidden Name="_charset_" Value="utf-8">
+<INPUT ID=onetidCmd Type=Hidden Name="Cmd" Value="Save">
+<INPUT ID=onetidIsFormValid type=hidden name="IsFormValid">
+<INPUT ID=onetidFormWasPosted type=hidden name="FormWasPosted">
+<INPUT ID="MustUpdateForm" type=hidden name="MustUpdateForm" value="true">
+<INPUT type=hidden name="NextID" id="NextID" value="-1">
+<INPUT type=hidden name="NextUsing" id="NextUsing" value="]]></HTML>
+          <GetVar Name="Source" HTMLEncode="TRUE" />
+          <HTML><![CDATA[">
+]]></HTML>
+          <HTML><![CDATA[<SPAN id='part1'>]]></HTML>
+          <Identity />
+        </ListFormOpening>
+        <ListFormButtons>
+          <Switch>
+            <Expr>
+              <ListProperty Select="ModeratedList" />
+            </Expr>
+            <Case Value="0" />
+            <Default>
+              <HTML><![CDATA[<table border=0><tr><td valign=top class="ms-propertysheet" style="padding-bottom: 10px"><font color=red><b>!&nbsp;</b></font>]]></HTML>
+              <HTML>Items on this list require content approval. Your submission will not appear in public views until approved by someone with proper rights.</HTML>
+              <HTML><![CDATA[ <a HREF=javascript:HelpWindowKey("ContentApproval")>]]></HTML>
+              <HTML>More information on content approval.</HTML>
+              <HTML><![CDATA[</A>]]></HTML>
+              <HTML><![CDATA[</td></tr></table>]]></HTML>
+            </Default>
+          </Switch>
+          <HTML><![CDATA[
+  <TABLE id=toolBarTbl class="ms-toolbar" style="margin-left: 3px;" cellpadding=2 cellspacing=0 border=0>
+   <TR>
+      <TD class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIOSaveItem class="ms-toolbar" title=]]></HTML>
+          <HTML>"Save and Close"</HTML>
+          <HTML><![CDATA[ ACCESSKEY=S href="javascript:ClickOnce()" target="_self"> <img src="/_layouts/images/saveitem.gif" ID="tbbuttonstart1" alt=]]></HTML>
+          <HTML>"Save and Close"</HTML>
+          <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 ID=diidIOSaveItem class="ms-toolbar" ACCESSKEY=S href="javascript:ClickOnce()" target="_self">
+      <LocID ID="L_NewFormSaveClose">
+    ]]></HTML>
+          <HTML>Save and Close</HTML>
+          <HTML><![CDATA[  
+      </LocID>
+      </td>
+      </tr>
+      </table>
+    </TD>
+    <TD class=ms-separator>|</TD>
+       ]]></HTML>
+          <Switch>
+            <Expr>
+              <ListProperty Select="AttachmentsDisabled" />
+            </Expr>
+            <Case Value="0">
+              <HTML><![CDATA[
+            <td class="ms-toolbar"> <table cellpadding=1 cellspacing=0 border=0> <tr> <td class="ms-toolbar" nowrap> <a tabindex=2 ID=diidIOAttach class="ms-toolbar" ACCESSKEY=I href="javascript:UploadAttachment()" target="_self" title=]]></HTML>
+              <HTML>"Attach File"</HTML>
+              <HTML><![CDATA[><img src="/_layouts/images/attachtb.gif" ID="tbbutton1I" alt=]]></HTML>
+              <HTML>"Attach File"</HTML>
+              <HTML><![CDATA[ border=0 width=16 height=16></a></td> <td nowrap> <a tabindex=2 class="ms-toolbar" ACCESSKEY=I ID=diidIOAttach href="javascript:UploadAttachment()" target="_self">]]></HTML>
+              <HTML>Attach File</HTML>
+              <HTML><![CDATA[</a></td> </tr></table></td>
+            <TD class=ms-separator>|</TD>
+          ]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+    <TD class="ms-toolbar">
+       <table cellpadding=1 cellspacing=0 border=0>
+         <tr>
+           <td colspan=2 nowrap>
+             <a tabindex=2 class="ms-toolbar" ACCESSKEY=G ID=diidIOGoBack href="]]></HTML>
+          <ListProperty Select="DefaultViewUrl" />
+          <HTML><![CDATA[" onclick="javascript:GoBack(']]></HTML>
+          <ScriptQuote NotAddingQuote="TRUE">
+            <ListProperty Select="DefaultViewUrl" />
+          </ScriptQuote>
+          <HTML><![CDATA[');javascript:return false;" target="_self">
+               <LocID ID="L_NewFormGoBack">]]></HTML>
+          <HTML>Go Back to List</HTML>
+          <HTML><![CDATA[</LocID>
+             </a>
+           </td>
+         </tr>
+       </table>
+    </TD>
+    <td width=100%><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></td>
+   </TR>
+  </TABLE>
+  <table width=100% border=0 cellpadding=0 cellspacing=2>
+   <tr>
+    <td  colspan=3 height=3><IMG SRC="/_layouts/images/blank.gif" width=1 height=3 alt=""></td>
+   </tr>
+  </table>
+  <font size=1><br></font>
+  ]]></HTML>
+        </ListFormButtons>
+        <ListFormBody>
+          <HTML><![CDATA[<TABLE border=0 cellpadding=2>
+<SCRIPT>var _g_tp_fNewForm = true;</SCRIPT>
+]]></HTML>
+          <Fields>
+            <HTML><![CDATA[<TR style="display:none"><TH nowrap valign=top class="ms-formlabel"><nobr>]]></HTML>
+            <Property Select="DisplayName" HTMLEncode="TRUE" AutoNewLine="TRUE" />
+            <Switch>
+              <Expr>
+                <Property Select="Required" />
+              </Expr>
+              <Case Value="TRUE">
+                <HTML><![CDATA[<font color=red> *</font>]]></HTML>
+                <SetVar Scope="Request" Name="HasRequired">TRUE</SetVar>
+              </Case>
+              <Default>
+                <HTML><![CDATA[<font color=red></font>]]></HTML>
+              </Default>
+            </Switch>
+            <HTML><![CDATA[</nobr></TH><TD class="ms-formbody">]]></HTML>
+            <Field />
+            <Switch>
+              <Expr>
+                <Property Select="RichText" />
+              </Expr>
+              <Case Value="TRUE" />
+              <Default>
+                <Switch>
+                  <Expr>
+                    <Property Select="Type" />
+                  </Expr>
+                  <Case Value="Choice" />
+                  <Case Value="MultiChoice" />
+                  <Default>
+                    <HTML><![CDATA[&nbsp;]]></HTML>
+                    <Switch>
+                      <Expr>
+                        <Property Select="NoEditFormBreak" />
+                      </Expr>
+                      <Case Value="TRUE" />
+                      <Default>
+                        <HTML><![CDATA[<br>]]></HTML>
+                      </Default>
+                    </Switch>
+                  </Default>
+                </Switch>
+              </Default>
+            </Switch>
+            <HTML><![CDATA[<SPAN class="ms-formdescription">]]></HTML>
+            <Property Select="Description" HTMLEncode="TRUE" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+            <HTML><![CDATA[</SPAN></TD></TR>]]></HTML>
+          </Fields>
+          <HTML><![CDATA[<TR style='display:none' id=idAttachmentsRow><TH nowrap valign=top class="ms-formlabel">]]></HTML>
+          <FieldProperty Name="Attachments" Select="DisplayName" HTMLEncode="TRUE" />
+          <HTML><![CDATA[</TH>]]></HTML>
+          <HTML><![CDATA[<TD class="ms-formbody">]]></HTML>
+          <HTML><![CDATA[<TABLE border=0 cellpadding=0 cellspacing=0><TBODY id=idAttachmentsTable>]]></HTML>
+          <HTML><![CDATA[</TBODY></TABLE>]]></HTML>
+          <HTML><![CDATA[</TD></TR>]]></HTML>
+          <HTML><![CDATA[</TABLE>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HasRequired" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[
+          <TABLE border=0 cellpadding=2>
+          <TR>
+            <TD id=reqdFldTxt class="ms-descriptiontext" colspan=2 height=150px valign=top><br><font color=red>*</font> 
+             &nbsp;]]></HTML>
+              <HTML>indicates a required field</HTML>
+              <HTML><![CDATA[
+            </TD>
+          </TR>
+          </TABLE>
+          ]]></HTML>
+            </Case>
+          </Switch>
+          <ContentTypes>
+            <HTML><![CDATA[
+    <SCRIPT>
+    _tp_rgctfld = new Array;
+    ]]></HTML>
+            <ForEach Select="FieldRefs/FieldRef">
+              <HTML>
+        _tp_ctfld = new Object(null);
+        _tp_ctfld.stName=</HTML>
+              <ScriptQuote>
+                <Property Select="Name" />
+              </ScriptQuote>
+              <HTML>;
+        _tp_ctfld.fRequired = BoolFromString(</HTML>
+              <ScriptQuote>
+                <Property Select="Required" />
+              </ScriptQuote>
+              <HTML>);
+        _tp_ctfld.fHidden = BoolFromString(</HTML>
+              <ScriptQuote>
+                <Property Select="Hidden" />
+              </ScriptQuote>
+              <HTML>);</HTML>
+              <ForEach Select="Default">
+                <HTML>
+            _tp_ctfld.stDefault=</HTML>
+                <ScriptQuote>
+                  <Property Select="." />
+                </ScriptQuote>
+                <HTML>;</HTML>
+              </ForEach>
+              <HTML>
+            _tp_rgctfld.push(_tp_ctfld);
+        </HTML>
+            </ForEach>
+            <HTML><![CDATA[
+    _g_tp_rgcts.push(_tp_rgctfld);
+    </SCRIPT>
+    ]]></HTML>
+          </ContentTypes>
+        </ListFormBody>
+        <ListFormClosing>
+          <HTML><![CDATA[
+</SPAN>]]></HTML>
+          <Switch>
+            <Expr>
+              <ListProperty Select="AttachmentsDisabled" />
+            </Expr>
+            <Case Value="0">
+              <HTML><![CDATA[
+<INPUT type=hidden name='attachmentsToBeRemovedFromServer'>
+<INPUT type=hidden name='RectGifUrl' value="/_layouts/images/rect.gif">
+<SPAN id='partAttachment' style='display:none'>
+<TABLE cellSpacing=0 cellPadding=0 border=0 width="100%">
+<TBODY>
+<TR>
+    <TD class=ms-descriptiontext colSpan=4 vAlign=top>]]></HTML>
+              <HTML>
+    Use this page to add attachments to an item.</HTML>
+              <HTML><![CDATA[<BR><BR>
+    </TD>
+</TR>
+<TR>
+    <TD class=ms-sectionline colSpan=4 height=1><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD>
+</TR>
+<TR>
+    <TD colSpan=4 height=10><IMG SRC="/_layouts/images/blank.gif" width=1 height=1 alt=""></TD>
+</TR>
+<TR>
+   <TH class=ms-formlabel vAlign=top height=15>]]></HTML>
+              <HTML>Name </HTML>
+              <HTML><![CDATA[</TH>
+   <TD class=ms-formbody vAlign=bottom height=15 id=attachmentsOnClient>
+    <INPUT tabIndex=1 type=file name=fileupload0 id=onetidIOFile class=ms-long
+    title="]]></HTML>
+              <HTML>Name </HTML>
+              <HTML><![CDATA["></INPUT>
+   </TD>
+</TR>
+<!--OK/Cancel-->
+<TR><TD vAlign=top colSpan=4 height=25><HR SIZE=1></HR></TD></TR>
+<TR>
+  <TD align=right colSpan=4>
+    <INPUT tabindex=1 class="ms-ButtonHeightWidth" id=attachOKbutton type=BUTTON onclick='OkAttach()'     value="]]></HTML>
+              <HTML>OK </HTML>
+              <HTML><![CDATA[ ">
+    <span id="idSpace" class=ms-SpaceBetButtons></span>
+    <INPUT tabindex=1 class="ms-ButtonHeightWidth" id=attachCancelButton type=BUTTON onclick='CancelAttach()' value="]]></HTML>
+              <HTML>Cancel </HTML>
+              <HTML><![CDATA[">
+  </TD>
+</TR>
+<TR>
+  <TD colSpan=4 height=60>&nbsp; 
+  </TD>
+  <TD>&nbsp;
+  </TD>
+</TR>
+</TBODY>
+</TABLE>
+</SPAN>
+]]></HTML>
+            </Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[</form>]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<SCRIPT>
+function OnLoadWrapper()
+{
+    try{frm.SetFirstFocus();}catch(e){}
+}
+if (browseris.ie4up && !browseris.mac)
+{
+    document.body.onload = OnLoadWrapper;
+}
+else
+{
+    frm.SetFirstFocus();
+}
+</SCRIPT>
+]]></HTML>
+        </ListFormClosing>
+      </Form>
+    </Forms>
+    <DefaultDescription>
+            $Resources:spscore,SitesOnet_SitesList_Description;
+        </DefaultDescription>
+  </MetaData>
+</List>

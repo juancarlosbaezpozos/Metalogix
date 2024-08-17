@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Feature Id="00BFEA71-6A49-43FA-B535-D15C05500108"
+         Title="$Resources:core,discussionslistFeatureTitle;"
+         Description="$Resources:core,discussionslistFeatureDesc;"
+         Version="1.0.0.0"
+         Hidden="TRUE"
+         Scope="Web"
+         DefaultResourceFile="core"
+         xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ListTemplates\Discussions.xml" />
+  </ElementManifests>
+</Feature>

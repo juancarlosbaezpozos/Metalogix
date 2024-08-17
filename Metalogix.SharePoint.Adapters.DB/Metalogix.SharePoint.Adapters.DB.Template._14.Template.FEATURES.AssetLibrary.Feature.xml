@@ -1,0 +1,25 @@
+<!-- _lcid="1033" _version="14.0.4750" _dal="1" -->
+<!-- _LocalBinding -->
+<Feature  Id="4BCCCD62-DCAF-46dc-A7D4-E38277EF33F4"
+          Title="Asset Library"
+          Description="Enable Asset Library Creation for site collection."
+          Version="14.0.1.0"
+          Scope="Site"
+          Hidden="TRUE"
+          DefaultResourceFile="core"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ElementManifests>
+        <ElementManifest Location="AssetLibraryTemplate.xml"/>
+        <ElementManifest Location="AssetContentTypes.xml"/>
+        <ElementManifest Location="AssetFields.xml"/>
+        <ElementManifest Location="AssetContentTypes2.xml"/>
+    </ElementManifests>
+    <UpgradeActions>
+        <VersionRange EndVersion="14.0.1.0">
+            <ApplyElementManifests>
+                <ElementManifest Location="AssetFields.xml"/>
+                <ElementManifest Location="AssetContentTypes2.xml"/>
+            </ApplyElementManifests>
+        </VersionRange>
+    </UpgradeActions>
+</Feature>

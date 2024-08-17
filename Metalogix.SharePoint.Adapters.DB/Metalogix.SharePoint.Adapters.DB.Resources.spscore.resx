@@ -1,0 +1,3690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommunityMembership_GiftedBadgeLookup" xml:space="preserve">
+    <value>Gifted Badge</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text" xml:space="preserve">
+    <value>Research &amp; Development</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description" xml:space="preserve">
+    <value>Use for formatted text, tables, and images.</value>
+  </data>
+  <data name="TWCSiteAndBelow" xml:space="preserve">
+    <value>Site and Below</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description" xml:space="preserve">
+    <value>Profile Pictures for all users will be stored here.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text" xml:space="preserve">
+    <value>Contact Details</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName" xml:space="preserve">
+    <value>Last Post</value>
+  </data>
+  <data name="TopSitesTab" xml:space="preserve">
+    <value>Top Sites</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName" xml:space="preserve">
+    <value>Divisions</value>
+  </data>
+  <data name="People_WebPart_Title" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription" xml:space="preserve">
+    <value>A Document Library with web part page template.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName" xml:space="preserve">
+    <value>Rating (0-5)</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description" xml:space="preserve">
+    <value>Shows basic profile info for the current user</value>
+  </data>
+  <data name="Ratings_Feature_Title" xml:space="preserve">
+    <value>Ratings</value>
+  </data>
+  <data name="SitesList_TopSite_Text" xml:space="preserve">
+    <value>Top Site</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription" xml:space="preserve">
+    <value>This page layout contains Web Part zones arranged in a header, footer, 2 columns and 3 rows.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text" xml:space="preserve">
+    <value>tags</value>
+  </data>
+  <data name="SitesList_Owner_Text" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink" xml:space="preserve">
+    <value>View entities</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP" xml:space="preserve">
+    <value>Microfeed ContentTypes</value>
+  </data>
+  <data name="SkipContactCard_Text" xml:space="preserve">
+    <value>Skip contact card</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name" xml:space="preserve">
+    <value>Indicator Warning Threshold</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description" xml:space="preserve">
+    <value>Web part to display Business Data Actions</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description" xml:space="preserve">
+    <value>The description provides information about the purpose of the goal.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures" xml:space="preserve">
+    <value>Shared Pictures</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText" xml:space="preserve">
+    <value>Move Documents</value>
+  </data>
+  <data name="FeaturePushdownLink" xml:space="preserve">
+    <value>Enable Features on Existing Sites</value>
+  </data>
+  <data name="DiscussionsTab" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+  <data name="DwpBdActionsDesc" xml:space="preserve">
+    <value>Displays a list of actions from Business Data Connectivity.</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc" xml:space="preserve">
+    <value>This feature contains the list schema and list instance which is used to manage the offensive content within a community site</value>
+  </data>
+  <data name="imglibList_Desc" xml:space="preserve">
+    <value>Provides a place to store images for this area.</value>
+  </data>
+  <data name="CategoriesList_Disp" xml:space="preserve">
+    <value>Categories List</value>
+  </data>
+  <data name="CategoriesList_Desc" xml:space="preserve">
+    <value>Categories List</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup" xml:space="preserve">
+    <value>My Recommendations</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text" xml:space="preserve">
+    <value>All Tabs</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles" xml:space="preserve">
+    <value>User profiles and properties</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription" xml:space="preserve">
+    <value>Sample Status Indicators which are displayed by default on the home page of this Report Center.</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title" xml:space="preserve">
+    <value>Manage User Sub-types</value>
+  </data>
+  <data name="TopSitesWebpartDescription" xml:space="preserve">
+    <value>Displays the top sites from Site Directory.</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text" xml:space="preserve">
+    <value>Broken Sites</value>
+  </data>
+  <data name="DocumentsTabComment" xml:space="preserve">
+    <value>Click for results from All Sites</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description" xml:space="preserve">
+    <value>Whether lower is better or higher is better</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name" xml:space="preserve">
+    <value>Parent ID</value>
+  </data>
+  <data name="SocialSite_Feature_Desc" xml:space="preserve">
+    <value>The site collection level fields, content types and webparts required for discussion lists, reputation, categories and membership in a community.</value>
+  </data>
+  <data name="CommunityContentTypesGroupName" xml:space="preserve">
+    <value>Community Content Types</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title" xml:space="preserve">
+    <value>Sites Recommended to Me</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description" xml:space="preserve">
+    <value>Provides content types, site columns, and library templates required to support Reports and Data Search in the Enterprise Search Center.</value>
+  </data>
+  <data name="EmployeeLookupWP_Title" xml:space="preserve">
+    <value>Employee Lookup</value>
+  </data>
+  <data name="NewsArchiveWP_Title" xml:space="preserve">
+    <value>News Archive</value>
+  </data>
+  <data name="HomePageContent1" xml:space="preserve">
+    <value>Welcome to Microsoft® SharePoint® Server 2013 </value>
+  </data>
+  <data name="HomePageContent2" xml:space="preserve">
+    <value>Get started with the new version of Microsoft SharePoint Server 2013 :</value>
+  </data>
+  <data name="HomePageContent3" xml:space="preserve">
+    <value>Site and Content Management</value>
+  </data>
+  <data name="HomePageContent4" xml:space="preserve">
+    <value>Create new &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;pages&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;sites &lt;/a&gt;, and &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;lists &lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent5" xml:space="preserve">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Add users &lt;/a&gt; to "Members" group to edit pages</value>
+  </data>
+  <data name="HomePageContent6" xml:space="preserve">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Create a personal site &lt;/a&gt; by clicking "My Site"</value>
+  </data>
+  <data name="HomePageContent7" xml:space="preserve">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Search &lt;/a&gt; over sites, documents, and people</value>
+  </data>
+  <data name="HomePageContent8" xml:space="preserve">
+    <value>Business Solutions(requires Enterprise License)</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content" xml:space="preserve">
+    <value>{Assigner} assigned you new tasks in {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description" xml:space="preserve">
+    <value>Automatically recommend documents and sites for users to follow on their SharePoint MySites.</value>
+  </data>
+  <data name="DwpBdAssociationDesc" xml:space="preserve">
+    <value>Displays a list of items related to one or more parent items from a data source in Business Data Connectivity.</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial" xml:space="preserve">
+    <value>Manage Social Tags and Notes</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title" xml:space="preserve">
+    <value>Popular Communities</value>
+  </data>
+  <data name="ProjectSite_Feature_Title" xml:space="preserve">
+    <value>Project Site Support</value>
+  </data>
+  <data name="CategoriesListInstance_Title" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone" xml:space="preserve">
+    <value>Bottom Middle Zone</value>
+  </data>
+  <data name="Dashboard_WebPart_Title" xml:space="preserve">
+    <value>What's happening</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description" xml:space="preserve">
+    <value>The web part that shows my recent activities.</value>
+  </data>
+  <data name="MicroFeed_WebPart_Title" xml:space="preserve">
+    <value>Newsfeed</value>
+  </data>
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup" xml:space="preserve">
+    <value>Business Intelligence</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName" xml:space="preserve">
+    <value>Item Id</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text" xml:space="preserve">
+    <value>Tags the selected item(s) with 'I Like It.'  Tags make it easy to remember links and post items to your news feed.</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text" xml:space="preserve">
+    <value>All Sites</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName" xml:space="preserve">
+    <value>Category Picture</value>
+  </data>
+  <data name="Members_CreatedFieldName" xml:space="preserve">
+    <value>Joined</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description" xml:space="preserve">
+    <value>This client-side webpart helps the user find new social content</value>
+  </data>
+  <data name="CompanyNewsArticle_Title" xml:space="preserve">
+    <value>Sample News Article</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName" xml:space="preserve">
+    <value>Report Library</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description" xml:space="preserve">
+    <value>Links to various hints and tips about the usage of the My Site.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text" xml:space="preserve">
+    <value>My Site Navigation</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc" xml:space="preserve">
+    <value>Installs navigation providers for My Site.</value>
+  </data>
+  <data name="BusinessDataField_Filterby" xml:space="preserve">
+    <value>Filter by </value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description" xml:space="preserve">
+    <value>The most recent blog posts for the user</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description" xml:space="preserve">
+    <value>The central web part that the user will use to share items.</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription" xml:space="preserve">
+    <value>What should community members talk about in this category?</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text" xml:space="preserve">
+    <value>More apps</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title" xml:space="preserve">
+    <value>Using the Report Center</value>
+  </data>
+  <data name="TOCWP_Title" xml:space="preserve">
+    <value>Table of Contents</value>
+  </data>
+  <data name="AppViewerWebPartGroup" xml:space="preserve">
+    <value>Office Client Applications</value>
+  </data>
+  <data name="DwpPageContextFilterName" xml:space="preserve">
+    <value>Page Field</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name" xml:space="preserve">
+    <value>Business Intelligence</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description" xml:space="preserve">
+    <value>Use the Tabs list to store links to pages. The Tabs list should be used with the tab control on your site.</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description" xml:space="preserve">
+    <value>The Search Center displays search results</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title" xml:space="preserve">
+    <value>Content Following Stapling</value>
+  </data>
+  <data name="BusinessDataWebPartGroup" xml:space="preserve">
+    <value>Business Data</value>
+  </data>
+  <data name="SingleMemberView" xml:space="preserve">
+    <value>Single Member View</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7" xml:space="preserve">
+    <value>Update or remove sample content</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6" xml:space="preserve">
+    <value>If you plan to use Excel to analyze information from existing data servers, create and upload data connection (ODC) files to the &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;Data Connection Library&amp;lt;/A&amp;gt;. If you want users to create new KPI Lists then add them to the "Owners" group. Users in the "Members" group can edit pages but can not create KPI Lists.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5" xml:space="preserve">
+    <value>If the samples do not work correctly ask an administrator to ensure that Excel Services are enabled and that this Report Center is a Trusted Location</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4" xml:space="preserve">
+    <value>View the sample &amp;lt;A &amp;gt;dashboard&amp;lt;/A&amp;gt; and &amp;lt;A&amp;gt;workbook&amp;lt;/A&amp;gt; to understand some of the capabilities of this Report Center</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3" xml:space="preserve">
+    <value>The &amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;Reports&amp;lt;/A&amp;gt; library is designed to store files containing reports and dashboards and allow easy access to information from previous time periods.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2" xml:space="preserve">
+    <value>&amp;lt;A&amp;gt;Dashboards&amp;lt;/A&amp;gt; enable you to give a more detailed explanation of your information using Excel workbooks and KPIs. Dashboard filters make it easy to select a range of information to view. To create your own dashboard go to the &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Dashboards&amp;lt;/A&amp;gt; view of the Reports library and click 'New'.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1" xml:space="preserve">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Key Performance Indicators&amp;lt;/A&amp;gt; (KPIs) enable you to communicate goals, trends and track progress.</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text" xml:space="preserve">
+    <value>Shared with me</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title" xml:space="preserve">
+    <value>Manage User Profiles</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description" xml:space="preserve">
+    <value>Show Tags Applied by the Current User</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title" xml:space="preserve">
+    <value>Team Work Center</value>
+  </data>
+  <data name="CategoriesTabComment" xml:space="preserve">
+    <value>Click for categories</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name" xml:space="preserve">
+    <value>Report Modified</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline" xml:space="preserve">
+    <value>Access your documents offline</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title" xml:space="preserve">
+    <value>Community Administration</value>
+  </data>
+  <data name="InCommon_WebPart_Description" xml:space="preserve">
+    <value>Shows what is in common between you and the user</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text" xml:space="preserve">
+    <value>Newsfeed</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title" xml:space="preserve">
+    <value>All Tags</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage" xml:space="preserve">
+    <value>Unable to import My Recommendations webpart.</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title" xml:space="preserve">
+    <value>WSRP Viewer</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text" xml:space="preserve">
+    <value>Submitted Sites</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title" xml:space="preserve">
+    <value>Ask Me About</value>
+  </data>
+  <data name="ModerationDeleteItem" xml:space="preserve">
+    <value>Delete Post</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description" xml:space="preserve">
+    <value>Displays conversations and event notifications from content and people you follow across SharePoint sites, and lets users send short, publicly-viewable messages.</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description" xml:space="preserve">
+    <value>Web Parts useful for and requiring the project site</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName" xml:space="preserve">
+    <value>Document Center</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView" xml:space="preserve">
+    <value>All reports and dashboards</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name" xml:space="preserve">
+    <value>Indicator</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle" xml:space="preserve">
+    <value>Move Documents.</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name" xml:space="preserve">
+    <value>Report Document</value>
+  </data>
+  <data name="Dashboard_Description" xml:space="preserve">
+    <value>Create a page that displays Status Indicators and Excel workbooks.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription" xml:space="preserve">
+    <value>To add top sites, add a link to the site directory list, and mark this link as a "Top Site". Get started by adding a link to the site directory and submitting it as a Top Site.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault" xml:space="preserve">
+    <value>My Tags</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="AddToTimelineLabel" xml:space="preserve">
+    <value>Add To Timeline</value>
+  </data>
+  <data name="MicroFeed_ListDescription" xml:space="preserve">
+    <value>MySite MicroFeed Persistent Storage List</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name" xml:space="preserve">
+    <value>Warning Cell</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name" xml:space="preserve">
+    <value>View Guid</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name" xml:space="preserve">
+    <value>Lower values are better</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description" xml:space="preserve">
+    <value>Name of Microsoft SQL Server 2005 Analysis Services KPI</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description" xml:space="preserve">
+    <value>Name of the Sheet for the value</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text" xml:space="preserve">
+    <value>My Calendar</value>
+  </data>
+  <data name="DwpBdActionsTitle" xml:space="preserve">
+    <value>Business Data Actions</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description" xml:space="preserve">
+    <value>URL to the data source</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text" xml:space="preserve">
+    <value>My SharePoint Sites</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription" xml:space="preserve">
+    <value>Use this list template to create Tabs list.</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc" xml:space="preserve">
+    <value>Provides a place to store documents for this area.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text" xml:space="preserve">
+    <value>Follow</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody" xml:space="preserve">
+    <value>This page is intentionally left blank.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text" xml:space="preserve">
+    <value>Displays your contacts using Outlook Web Access for Microsoft Exchange Server 2003 or later.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup" xml:space="preserve">
+    <value>My Site: Bottom</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle" xml:space="preserve">
+    <value>SharePoint Server Usage Reporting</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description" xml:space="preserve">
+    <value>Displays categories from the Site Directory.</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData" xml:space="preserve">
+    <value>Search usage reports</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name" xml:space="preserve">
+    <value>Link to Report</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile" xml:space="preserve">
+    <value>Upload a photo and tell others more about yourself &lt;a href="{0}"&gt; here&lt;/a&gt;.</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData" xml:space="preserve">
+    <value>Site usage reports</value>
+  </data>
+  <data name="FollowingContent_Feature_Description" xml:space="preserve">
+    <value>Enable users to follow documents or sites.</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title" xml:space="preserve">
+    <value>Organizations</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title" xml:space="preserve">
+    <value>In Common</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy" xml:space="preserve">
+    <value>  &lt;a href="{0}"&gt;Update your privacy settings &lt;/a&gt; so others can see and comment on your activities in the SharePoint newsfeed.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People" xml:space="preserve">
+    <value>Keep in touch</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text" xml:space="preserve">
+    <value>Colleagues</value>
+  </data>
+  <data name="DwpIViewTitle" xml:space="preserve">
+    <value>IView Web Part</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description" xml:space="preserve">
+    <value>Web part to display member groups</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle" xml:space="preserve">
+    <value>Review Reports</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName" xml:space="preserve">
+    <value>Author's Number of Posts</value>
+  </data>
+  <data name="TagCloudWebPart_Description" xml:space="preserve">
+    <value>Displays the most popular subjects being tagged inside your organization.</value>
+  </data>
+  <data name="Home_QuickLaunch" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="communityDiscussions_Folder" xml:space="preserve">
+    <value>Community Discussion</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements" xml:space="preserve">
+    <value>Follow interesting documents by going to them and clicking follow.</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI" xml:space="preserve">
+    <value>SharePoint List based Status Indicator</value>
+  </data>
+  <data name="RelatedItems_Feature_Title" xml:space="preserve">
+    <value>Related items feature</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description" xml:space="preserve">
+    <value>The Parent Id of this report</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final" xml:space="preserve">
+    <value>Final</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title" xml:space="preserve">
+    <value>Site Mailbox</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text" xml:space="preserve">
+    <value>My Site Host</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title" xml:space="preserve">
+    <value>Site Membership List template schema</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc" xml:space="preserve">
+    <value>Installs features related to hosting My Sites.</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title" xml:space="preserve">
+    <value>MySite Personal Site Upgrade On Navigation</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title" xml:space="preserve">
+    <value>Suggested people to follow</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description" xml:space="preserve">
+    <value>RD web</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName" xml:space="preserve">
+    <value>Is My Documents</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description" xml:space="preserve">
+    <value>Show people who have applied a tag to a specific URL</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts using a list of values entered by the page author.</value>
+  </data>
+  <data name="SiteMembership_Status_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="SubNavTab_Organization_Text" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName" xml:space="preserve">
+    <value>Report Calendar</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip" xml:space="preserve">
+    <value>Provide sites to be included with the "This and Related Sites" scope of the search results for this site.</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text" xml:space="preserve">
+    <value>My Newsfeed</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title" xml:space="preserve">
+    <value>Tag Control for Project Sites</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription" xml:space="preserve">
+    <value>Use this list template to create Sites lists.</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle" xml:space="preserve">
+    <value>Sites In Category</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description" xml:space="preserve">
+    <value>Use the Sites List to store links to sites and site categories.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription" xml:space="preserve">
+    <value>Add a new member</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople" xml:space="preserve">
+    <value>&lt;a href="{0}"&gt;Follow&lt;/a&gt; people you care about.</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text" xml:space="preserve">
+    <value>See the people you're following</value>
+  </data>
+  <data name="SubNavTab_Overview_Text" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites" xml:space="preserve">
+    <value>My Site settings</value>
+  </data>
+  <data name="TagInformation_WebPart_Description" xml:space="preserve">
+    <value>Displays metadata from a managed taxonomy about specific terms</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description" xml:space="preserve">
+    <value>Category of the report</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group" xml:space="preserve">
+    <value>More Information</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed" xml:space="preserve">
+    <value>Newsfeed</value>
+  </data>
+  <data name="TabsList_TabName_Description" xml:space="preserve">
+    <value>This is the tab label text.</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title" xml:space="preserve">
+    <value>Configure Synchronization Timer Job</value>
+  </data>
+  <data name="BDC_ActionMenuAltText" xml:space="preserve">
+    <value>Open Menu</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle" xml:space="preserve">
+    <value>Edit Post</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name" xml:space="preserve">
+    <value>Report Created</value>
+  </data>
+  <data name="SitesList_National_Text" xml:space="preserve">
+    <value>National</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name" xml:space="preserve">
+    <value>Goal from workbook</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title" xml:space="preserve">
+    <value>Site Mailboxes</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title" xml:space="preserve">
+    <value>Highlights</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text" xml:space="preserve">
+    <value>I'm following</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc" xml:space="preserve">
+    <value>Create a new Status Indicator using data from SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description" xml:space="preserve">
+    <value>Address or name of the cell for the warning</value>
+  </data>
+  <data name="RecentNewsWP_Title" xml:space="preserve">
+    <value>Recent News</value>
+  </data>
+  <data name="WorkManagementWebPartGroup" xml:space="preserve">
+    <value>Work Management</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content" xml:space="preserve">
+    <value>You were assigned one or more tasks in {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="MyMembership_WebPart_Description" xml:space="preserve">
+    <value>Displays reputation and membership information for the current visitor of a community site. This web part will work on Community sites or any other site that has Community Features turned on.</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle" xml:space="preserve">
+    <value>Welcome Layout</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone" xml:space="preserve">
+    <value>Top Left Zone</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description" xml:space="preserve">
+    <value>Provides data support to social features</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title" xml:space="preserve">
+    <value>Member Groups</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name" xml:space="preserve">
+    <value>Is Report</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description" xml:space="preserve">
+    <value>Whether the goal comes from the workbook or from the indicator definition</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle" xml:space="preserve">
+    <value>Web Part Adder default groups</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName" xml:space="preserve">
+    <value>Parent Url</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name" xml:space="preserve">
+    <value>VIEW MY TASKS</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription" xml:space="preserve">
+    <value>Move selected documents to another site or to a folder within the current library.</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title" xml:space="preserve">
+    <value>SharePoint Portal Server Master Site Directory Capture Control</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title" xml:space="preserve">
+    <value>New Item Suggestions</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI" xml:space="preserve">
+    <value>Excel based Status Indicator</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName" xml:space="preserve">
+    <value>Shared with Everyone</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription" xml:space="preserve">
+    <value>The Data Connection Library makes it easy to share files that enable users to connect to external data sources.</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc" xml:space="preserve">
+    <value>Displays one image from an Image Library and links to a slide show where users can see all of the images in the Image Library.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description" xml:space="preserve">
+    <value>Portal feature that uploads all the layouts to the master page gallery.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title" xml:space="preserve">
+    <value>Content Following List</value>
+  </data>
+  <data name="ManageProfileService_People_Title" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="DwpSpListFilterTitle" xml:space="preserve">
+    <value>SharePoint List Filter</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin" xml:space="preserve">
+    <value>Configure Settings for Single Sign-On (SSO)</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title" xml:space="preserve">
+    <value>Site Map</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription" xml:space="preserve">
+    <value>A library for information that describes how to use this site.</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc" xml:space="preserve">
+    <value>Installs additional web parts common to all types of sites.</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text" xml:space="preserve">
+    <value>Global Web Parts</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName" xml:space="preserve">
+    <value>Data Connections</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments" xml:space="preserve">
+    <value>Shared Documents</value>
+  </data>
+  <data name="communityAboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description" xml:space="preserve">
+    <value>The status of the Indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description" xml:space="preserve">
+    <value>Comments describe the current status of the indicator, and may provide information about causes or problems.</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup" xml:space="preserve">
+    <value>My Site: Middle Right</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description" xml:space="preserve">
+    <value>Shows tags that have been used together with a specific term and enables filtering of the Tagged Items web part</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated" xml:space="preserve">
+    <value>Good news! You also have {0} for Business on Office 365 and you can access files there from anywhere. Just click {1} in the top nav bar to get started. Don't worry, the files you have here will keep working too. {2}Click here{3} for information about moving your files.</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience" xml:space="preserve">
+    <value>Allow Global Audiences</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title" xml:space="preserve">
+    <value>My Site Layouts Feature</value>
+  </data>
+  <data name="KPIList" xml:space="preserve">
+    <value>Status Indicator List</value>
+  </data>
+  <data name="SiteMembership_ListName" xml:space="preserve">
+    <value>Membership List Template</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name" xml:space="preserve">
+    <value>Trend</value>
+  </data>
+  <data name="PromotedSites_WebParDescription" xml:space="preserve">
+    <value>Renders promoted sites as tiles.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description" xml:space="preserve">
+    <value>Displays an RSS feed.</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name" xml:space="preserve">
+    <value>Most recent indicator data update</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description" xml:space="preserve">
+    <value>Use this document library for documents that you want to keep for personal use. They will only be visible to you and administrators for the server.</value>
+  </data>
+  <data name="ProfileProperties_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="ProjectsTabTitle" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description" xml:space="preserve">
+    <value>Status of the report</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title" xml:space="preserve">
+    <value>Org Chart</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title" xml:space="preserve">
+    <value>Configure Synchronization Settings</value>
+  </data>
+  <data name="ProfileProperties_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="IViewWebPart_Description" xml:space="preserve">
+    <value>This web part is deprecated.</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc" xml:space="preserve">
+    <value>This feature adds community portal functionality. It also provisions community portal pages.</value>
+  </data>
+  <data name="CommunityPortalFeature_Text" xml:space="preserve">
+    <value>Community Portal Feature</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView" xml:space="preserve">
+    <value>Category Tiles</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites" xml:space="preserve">
+    <value>Promoted Sites</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title" xml:space="preserve">
+    <value>User Profile User Settings Provider</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip" xml:space="preserve">
+    <value>Manage categories in a community.</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle" xml:space="preserve">
+    <value>Followed Item</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title" xml:space="preserve">
+    <value>My Site First Run Experience</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description" xml:space="preserve">
+    <value>Displays the counts of followed users, content, and tags for the current user.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description" xml:space="preserve">
+    <value>Enable users to follow documents or sites.</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks" xml:space="preserve">
+    <value>Personalization site links</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName" xml:space="preserve">
+    <value>Member Status</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="ManageMembersGroupTitle" xml:space="preserve">
+    <value>Gifted Badges</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name" xml:space="preserve">
+    <value>Formatted indicator goal</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage" xml:space="preserve">
+    <value>Unable to import the tagging webpart.</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text" xml:space="preserve">
+    <value>Newsfeed</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip" xml:space="preserve">
+    <value>Open the selected project in Microsoft Project.  If the project is checked out to someone else, it will be opened read-only.  If you have multiple projects selected, they will be opened in a new master project.</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName" xml:space="preserve">
+    <value>Author's Reputation Score</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription" xml:space="preserve">
+    <value>Average value of all the ratings that have been submitted</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name" xml:space="preserve">
+    <value>Report Modified By</value>
+  </data>
+  <data name="MySiteMaster15_Title" xml:space="preserve">
+    <value>My Site Master Page</value>
+  </data>
+  <data name="HomePage_SampleLink_Description" xml:space="preserve">
+    <value>Sample description</value>
+  </data>
+  <data name="DwpBdItemTitle" xml:space="preserve">
+    <value>Business Data Item</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text" xml:space="preserve">
+    <value>My Site Single Quick Launch Feature</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc" xml:space="preserve">
+    <value>My Site feature that shows the same quick launch for the host and personal sites.</value>
+  </data>
+  <data name="IViewWebPart_Title" xml:space="preserve">
+    <value>iView</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName" xml:space="preserve">
+    <value>Unique Id</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName" xml:space="preserve">
+    <value>Icon Url</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName" xml:space="preserve">
+    <value>Farm Id</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description" xml:space="preserve">
+    <value>This feature provisions the Project Site Tagging webpart.</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text" xml:space="preserve">
+    <value>See the sites you're following</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc" xml:space="preserve">
+    <value>Use the Discussion list to hold forum-style conversations, including question and answer, on topics relevant to your team, project, or community.</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName" xml:space="preserve">
+    <value>Subtype</value>
+  </data>
+  <data name="WelcomeLayout2Title" xml:space="preserve">
+    <value>Welcome Page with Web Part Zones</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title" xml:space="preserve">
+    <value>Report Document Library</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip" xml:space="preserve">
+    <value>Manage posts that were reported as offensive.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text" xml:space="preserve">
+    <value>My Contacts</value>
+  </data>
+  <data name="BusinessDataField_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description" xml:space="preserve">
+    <value>A description of the contents of the report</value>
+  </data>
+  <data name="MySiteMaster_Title" xml:space="preserve">
+    <value>My Site Master Page</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle" xml:space="preserve">
+    <value>Area Document Library</value>
+  </data>
+  <data name="InternalUseOnly" xml:space="preserve">
+    <value>For internal use only</value>
+  </data>
+  <data name="EventsList" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="IndicatorWebPart_Description" xml:space="preserve">
+    <value>Displays the details of a single Status Indicator. Status Indicators display an important measure for an organization and may be obtained from other data sources including SharePoint lists, Excel workbooks, and SQL Server 2005 Analysis Services KPIs.</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle" xml:space="preserve">
+    <value>Microblog Properties</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description" xml:space="preserve">
+    <value>Guid of the view</value>
+  </data>
+  <data name="EventsList_Desc" xml:space="preserve">
+    <value>Use the Events list to post information about meetings, deadlines, and other events related to this area.</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name" xml:space="preserve">
+    <value>Report Modified Link</value>
+  </data>
+  <data name="SitesList_International_Text" xml:space="preserve">
+    <value>International</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title" xml:space="preserve">
+    <value>Start Profile Synchronization</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text" xml:space="preserve">
+    <value>Interest Tracker</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName" xml:space="preserve">
+    <value>Comments Lookup</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title" xml:space="preserve">
+    <value>Organization Logos</value>
+  </data>
+  <data name="IndicatorWebPart_Title" xml:space="preserve">
+    <value>Status Indicator Details</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle" xml:space="preserve">
+    <value>Sort by Title</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text" xml:space="preserve">
+    <value>Displays your inbox using Outlook Web Access for Microsoft Exchange Server 2003 or later.</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions" xml:space="preserve">
+    <value>Personalization services permissions</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName" xml:space="preserve">
+    <value>Aggregated Like Count</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle" xml:space="preserve">
+    <value>Getting the most out of SharePoint</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc" xml:space="preserve">
+    <value>Installs links related to administering the User Profile service.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text" xml:space="preserve">
+    <value>User Profile Administration Links</value>
+  </data>
+  <data name="badges_Folder" xml:space="preserve">
+    <value>Badges</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync" xml:space="preserve">
+    <value>Let others know what you are working on</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription" xml:space="preserve">
+    <value>Shared With Internal</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter" xml:space="preserve">
+    <value>Sharing Center</value>
+  </data>
+  <data name="BrowseNewsArchive_Link" xml:space="preserve">
+    <value>Browse News Archive</value>
+  </data>
+  <data name="FollowingContent_Feature_Title" xml:space="preserve">
+    <value>Following Content</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts using values passed via the query string.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description" xml:space="preserve">
+    <value>The Site Mailbox app helps you keep email and documents close together by connecting your site to an Exchange mailbox. You can then view your email on SharePoint, and view site documents in Outlook.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title" xml:space="preserve">
+    <value>Manage Reported Posts</value>
+  </data>
+  <data name="TopSitesWebpartTitle" xml:space="preserve">
+    <value>Top Sites</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description" xml:space="preserve">
+    <value>The value of the indicator, formatted by its datasource provider</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView" xml:space="preserve">
+    <value>Status List</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName" xml:space="preserve">
+    <value>Popularity</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name" xml:space="preserve">
+    <value>Goal Cell</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title" xml:space="preserve">
+    <value>Configure Synchronization Connections</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle" xml:space="preserve">
+    <value>WSRP Consumer Web Part</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text" xml:space="preserve">
+    <value>What's New</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView" xml:space="preserve">
+    <value>Category List</value>
+  </data>
+  <data name="SPSDisco_Feature_Title" xml:space="preserve">
+    <value>Portal DiscoPage Feature</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text" xml:space="preserve">
+    <value>About me</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title" xml:space="preserve">
+    <value>Tabs</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title" xml:space="preserve">
+    <value>Tags Webpart</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle" xml:space="preserve">
+    <value>Welcome to Report Center</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text" xml:space="preserve">
+    <value>My Pictures</value>
+  </data>
+  <data name="TagCloudWebPart_Title15" xml:space="preserve">
+    <value>Tags and Notes</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title" xml:space="preserve">
+    <value>Manage Discussions</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription" xml:space="preserve">
+    <value>This feature adds project management functionality to a site. It includes tasks, a calendar, and web parts on the home page of the site.</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description" xml:space="preserve">
+    <value>Divisions web</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title" xml:space="preserve">
+    <value>Portal Layouts Feature</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description" xml:space="preserve">
+    <value>Show people related to specific terms</value>
+  </data>
+  <data name="Mybrary_StatusBarText2" xml:space="preserve">
+    <value>Welcome to &lt;span id="skyDriveText"&gt;your {0} for Business&lt;/span&gt;, the place to store, sync, and share your work. Documents are private until shared. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Learn more here&lt;/a&gt;.</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description" xml:space="preserve">
+    <value>Use to display details about a contact for this page or site.</value>
+  </data>
+  <data name="KPIList_Desc" xml:space="preserve">
+    <value>A status indicator list is used to track and display a set of goals. Colored icons are displayed to communicate the degree to which the goals have been achieved.</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle" xml:space="preserve">
+    <value>Followed Document</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description" xml:space="preserve">
+    <value>Whether the warning comes from the workbook or from the indicator definition</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName" xml:space="preserve">
+    <value>Unread At Mentions</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description" xml:space="preserve">
+    <value>Displays your calendar using Outlook Web Access for Microsoft Exchange Server 2003 or later.</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName" xml:space="preserve">
+    <value>Reporter</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription" xml:space="preserve">
+    <value>Use the cross-farm site permissions feature to allow internal SharePoint applications to access websites across farms.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip" xml:space="preserve">
+    <value>Open in Project Workspace</value>
+  </data>
+  <data name="CommunityWebPartGroup" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description" xml:space="preserve">
+    <value>Displays My Bookmark information</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription" xml:space="preserve">
+    <value>A place to track and display a set of goals.  Colored icons display the degree to which the goals have been achieved.</value>
+  </data>
+  <data name="PeopleReputation_Level4Text" xml:space="preserve">
+    <value>Level 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text" xml:space="preserve">
+    <value>Level 5</value>
+  </data>
+  <data name="PeopleReputation_Level1Text" xml:space="preserve">
+    <value>Level 1</value>
+  </data>
+  <data name="members_Folder" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text" xml:space="preserve">
+    <value>My Links</value>
+  </data>
+  <data name="PeopleReputation_Level2Text" xml:space="preserve">
+    <value>Level 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text" xml:space="preserve">
+    <value>Level 3</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description" xml:space="preserve">
+    <value>The last indicator update from its datasource provider</value>
+  </data>
+  <data name="DwpCurrentUserFilterName" xml:space="preserve">
+    <value>Current User</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text" xml:space="preserve">
+    <value>User Profile Administration Basic Links</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName" xml:space="preserve">
+    <value>Author's Number of Replies</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc" xml:space="preserve">
+    <value>Installs links related to basic administering of the User Profile service.</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc" xml:space="preserve">
+    <value>Create a new Status Indicator using manually entered information</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name" xml:space="preserve">
+    <value>Search Dropdown</value>
+  </data>
+  <data name="StartDateColumn" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="AboutUs_WebPart_Title" xml:space="preserve">
+    <value>About this community</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc" xml:space="preserve">
+    <value>Installs Claim Hierarchy Provider based on Organizations.</value>
+  </data>
+  <data name="TabsList_Page_Description" xml:space="preserve">
+    <value>Type in the name of the page that should be displayed as a part of this tab. If you have not created a page, create a page using the Create Page option in Site Actions.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text" xml:space="preserve">
+    <value>Organizations Claim Hierarchy Provider</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc" xml:space="preserve">
+    <value>Delete the discussion item that has been reported as offensive. This will also remove associated comments left by members complaining about the item</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2" xml:space="preserve">
+    <value>Move your existing My Site documents to your {0} for Business, the place to store, sync, and share your work.</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description" xml:space="preserve">
+    <value>Creates or upgrades a user's personal site upon navigation to the My Site Host site.</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description" xml:space="preserve">
+    <value>Displays sites from the Site Directory within a specific category.</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title" xml:space="preserve">
+    <value>This Week in Pictures</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip" xml:space="preserve">
+    <value>Home Page Image</value>
+  </data>
+  <data name="PortalManifest_Reports_Description" xml:space="preserve">
+    <value>Report Center</value>
+  </data>
+  <data name="SearchResultsDescription" xml:space="preserve">
+    <value>This page layout contains a tab control, and search Web Parts. It has Web Part zones arranged in a right column, header, footer, 2 columns and 2 rows.</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description" xml:space="preserve">
+    <value>Use this timeline to create a high level view of the tasks in a project</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description" xml:space="preserve">
+    <value>Displays the groups that you are a member of.</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description" xml:space="preserve">
+    <value>Shows your organization chart and reporting hierarchy</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview" xml:space="preserve">
+    <value>DiscussionsByCategoryFeaturedPreview</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text" xml:space="preserve">
+    <value>Go to My Site</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo" xml:space="preserve">
+    <value>(link to report with edit menu)</value>
+  </data>
+  <data name="DocumentsTab" xml:space="preserve">
+    <value>All Sites</value>
+  </data>
+  <data name="TargetToField_DisplayName" xml:space="preserve">
+    <value>Audience Targeting</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description" xml:space="preserve">
+    <value>Contains the error message from last update, if any</value>
+  </data>
+  <data name="DefaultLayoutTitle" xml:space="preserve">
+    <value>Web Part zones</value>
+  </data>
+  <data name="Ratings_RatingsFieldName" xml:space="preserve">
+    <value>User ratings</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName" xml:space="preserve">
+    <value>Discussion</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15" xml:space="preserve">
+    <value>Content Feedback</value>
+  </data>
+  <data name="SiteFeed_PageTitle" xml:space="preserve">
+    <value>Newsfeed</value>
+  </data>
+  <data name="DwpKpiListTitle" xml:space="preserve">
+    <value>Status List</value>
+  </data>
+  <data name="AboutUs_WebPart_Description" xml:space="preserve">
+    <value>This web part displays the community description and other properties like established date. This web part will work on Community sites or any other site that has Community Features turned on.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text" xml:space="preserve">
+    <value>Displays your mail folder using Outlook Web Access for Microsoft Exchange Server 2000.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle" xml:space="preserve">
+    <value>Productivity</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="RefreshNow" xml:space="preserve">
+    <value>Refresh Now</value>
+  </data>
+  <data name="HomePageImageAltText" xml:space="preserve">
+    <value>Man working on a computer</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle" xml:space="preserve">
+    <value>Project Summary</value>
+  </data>
+  <data name="Discussion_TitleOrBody" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription" xml:space="preserve">
+    <value>User ratings for the item</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites" xml:space="preserve">
+    <value>Manage Promoted Sites</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title" xml:space="preserve">
+    <value>People Recommended to Me</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title" xml:space="preserve">
+    <value>Content Following</value>
+  </data>
+  <data name="DwpDateFilterTitle" xml:space="preserve">
+    <value>Date Filter</value>
+  </data>
+  <data name="NewsArchivePage_Title" xml:space="preserve">
+    <value>News Archive</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText" xml:space="preserve">
+    <value>Everyone in &lt;span id="skyDriveFolder"&gt;your organization&lt;/span&gt; can access the documents here.</value>
+  </data>
+  <data name="TargetToField_AllowDL" xml:space="preserve">
+    <value>Allow Distribution Lists</value>
+  </data>
+  <data name="TabsList_Notes_Text" xml:space="preserve">
+    <value>Tooltip</value>
+  </data>
+  <data name="SubNavTab_Content_Text" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="MySiteQuickAddGroup" xml:space="preserve">
+    <value>My Site</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated" xml:space="preserve">
+    <value>Don't worry, your files are safe. We moved them to your new {0} for Business on Office 365, where you'll be able to access them from anywhere on any device. You can get there by clicking {1} in the top nav bar.</value>
+  </data>
+  <data name="ModerationToolsGroupTitle" xml:space="preserve">
+    <value>Review Reported Posts</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text" xml:space="preserve">
+    <value>My Content</value>
+  </data>
+  <data name="DefaultLayoutDescription" xml:space="preserve">
+    <value>This page layout contains an image field on left, a rich text field, and Web Part zones arranged in a right column, header, footer and 2 columns.</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName" xml:space="preserve">
+    <value>Manage shared apps</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo" xml:space="preserve">
+    <value>(snapshotted value)</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink" xml:space="preserve">
+    <value>Data Connections</value>
+  </data>
+  <data name="ContentRollupWebPartGroup" xml:space="preserve">
+    <value>Content Rollup</value>
+  </data>
+  <data name="FiltersWebPartGroup" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title" xml:space="preserve">
+    <value>Project Site Timeline</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title" xml:space="preserve">
+    <value>Reports and Data Search Support</value>
+  </data>
+  <data name="Mybrary_DismissStatusText" xml:space="preserve">
+    <value>Dismiss</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription" xml:space="preserve">
+    <value>Use the calendar to post events related to this area.</value>
+  </data>
+  <data name="SitesList_Description_Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title" xml:space="preserve">
+    <value>My Tags</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle" xml:space="preserve">
+    <value>Additional Upgrade Tasks</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription" xml:space="preserve">
+    <value>(Category Content Type Description)</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle" xml:space="preserve">
+    <value>Choice Filter</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name" xml:space="preserve">
+    <value>Value Sheet</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName" xml:space="preserve">
+    <value>Reporter Lookup</value>
+  </data>
+  <data name="NewsRollUpWP_Title" xml:space="preserve">
+    <value>News Roll Up</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName" xml:space="preserve">
+    <value>Last Post By</value>
+  </data>
+  <data name="DwpBdcFilterTitle" xml:space="preserve">
+    <value>Business Data Connectivity Filter</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize" xml:space="preserve">
+    <value>Personalize your profile</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile" xml:space="preserve">
+    <value>Go mobile!</value>
+  </data>
+  <data name="GlobalNavTab_Projects_Text" xml:space="preserve">
+    <value>My Projects</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName" xml:space="preserve">
+    <value>Audience Targeting</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome" xml:space="preserve">
+    <value>What are Personalization Sites...</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView" xml:space="preserve">
+    <value>Recently Updated</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name" xml:space="preserve">
+    <value>Display Folder</value>
+  </data>
+  <data name="OfficeServerUpgradeLink" xml:space="preserve">
+    <value>Enable Enterprise Features</value>
+  </data>
+  <data name="ProfileProperties_Office" xml:space="preserve">
+    <value>Office</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title" xml:space="preserve">
+    <value>Profile Info</value>
+  </data>
+  <data name="ContentEditorWP_Title" xml:space="preserve">
+    <value>Content Editor</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title" xml:space="preserve">
+    <value>Discussions List</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns" xml:space="preserve">
+    <value>Common Indicator Columns</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle" xml:space="preserve">
+    <value>Site Map</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription" xml:space="preserve">
+    <value>Use Feature Pushdown to enable new features on existing sites.</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink" xml:space="preserve">
+    <value>Site Directory Settings</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle" xml:space="preserve">
+    <value>Audiences</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle" xml:space="preserve">
+    <value>My Tasks Dashboard Stapling</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle" xml:space="preserve">
+    <value>Business Data Profile Template</value>
+  </data>
+  <data name="HomePageImageWP_Title" xml:space="preserve">
+    <value>Home Page Image Web Part</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription" xml:space="preserve">
+    <value>A place where you can easily create and manage web pages and documents to track metrics, goals and business intelligence information. </value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName" xml:space="preserve">
+    <value>Reported Posts</value>
+  </data>
+  <data name="INeedToWP_Description" xml:space="preserve">
+    <value>Allows users to pick from a list of options and navigates them to the relevant location.</value>
+  </data>
+  <data name="Community_QuickLaunch" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title" xml:space="preserve">
+    <value>Recent Activities</value>
+  </data>
+  <data name="SharedWithInternalFieldName" xml:space="preserve">
+    <value>Shared With Internal</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits" xml:space="preserve">
+    <value>Keep my last edits</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy" xml:space="preserve">
+    <value>Profile services policies</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text" xml:space="preserve">
+    <value>My Site</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc" xml:space="preserve">
+    <value>Installs features related to My Site and User Profiles.</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title" xml:space="preserve">
+    <value>Connected Timeline</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name" xml:space="preserve">
+    <value>View Name</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name" xml:space="preserve">
+    <value>Detail Link</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description" xml:space="preserve">
+    <value>Use this timeline to show a high level view of data from another webpart</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="BusinessDataField_Desc" xml:space="preserve">
+    <value>Sort Descending</value>
+  </data>
+  <data name="PeopleTab" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description" xml:space="preserve">
+    <value>Move selected documents to another site or to a folder within the current library.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc" xml:space="preserve">
+    <value>My Site feature that uploads the master page to the master page gallery.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text" xml:space="preserve">
+    <value>My Site Master Feature</value>
+  </data>
+  <data name="HomeLandingPage_Title" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title" xml:space="preserve">
+    <value>RSS Viewer</value>
+  </data>
+  <data name="SearchDiscussions" xml:space="preserve">
+    <value>Search Discussions</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName" xml:space="preserve">
+    <value>Last Post Date</value>
+  </data>
+  <data name="DwpPageContextFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts using information about the current page.</value>
+  </data>
+  <data name="SitesList_Local_Text" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="SocialComment_WebPart_Title" xml:space="preserve">
+    <value>Note Board</value>
+  </data>
+  <data name="SocialSite_Feature_Title" xml:space="preserve">
+    <value>Community Site Infrastructure</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title" xml:space="preserve">
+    <value>Business Data Actions</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description" xml:space="preserve">
+    <value>Provides the ability for non-members of a community site to join the community. The button hides itself if the user is already a member. This web part will work on Community sites or any other site that has Community Features turned on.</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription" xml:space="preserve">
+    <value>Open the selected project.</value>
+  </data>
+  <data name="TargetToField_Description" xml:space="preserve">
+    <value>Targeted Audience (Rule-based Audiences; SharePoint Groups; Distribution Lists)</value>
+  </data>
+  <data name="DwpPageContextFilterTitle" xml:space="preserve">
+    <value>Page Field Filter</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureTitle" xml:space="preserve">
+    <value>Tenant User Profile Application Stapling</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName" xml:space="preserve">
+    <value>Announcements</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2" xml:space="preserve">
+    <value>You can take documents offline by clicking the Sync button on any library. Try it out on your &lt;a href="{0}"&gt;{1} for Business&lt;/a&gt;.</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description" xml:space="preserve">
+    <value>Name of the sheet for the goal</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description" xml:space="preserve">
+    <value>Expression used to determine the value of the Indicator.</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone" xml:space="preserve">
+    <value>Middle Left Zone</value>
+  </data>
+  <data name="MicroFeed_ListTitle" xml:space="preserve">
+    <value>MicroFeed</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description" xml:space="preserve">
+    <value>Is the item a data source?</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName" xml:space="preserve">
+    <value>Author's Number of Best Replies</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title" xml:space="preserve">
+    <value>Reputation Settings</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink" xml:space="preserve">
+    <value>View applications</value>
+  </data>
+  <data name="People_WebPart_Description" xml:space="preserve">
+    <value>Displays the people who someone is following as well as who is following them.</value>
+  </data>
+  <data name="DocumentsListFolder" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title" xml:space="preserve">
+    <value>Suggested sites to follow</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title" xml:space="preserve">
+    <value>Manage Categories</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses" xml:space="preserve">
+    <value>Best Replies</value>
+  </data>
+  <data name="MoreNewsWP_Title" xml:space="preserve">
+    <value>More News</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title" xml:space="preserve">
+    <value>MySite Recommendations</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile" xml:space="preserve">
+    <value>Take SharePoint with you by downloading the {0}mobile apps{1}.</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text" xml:space="preserve">
+    <value>Tasks and Tools</value>
+  </data>
+  <data name="WPImportErrorMessage" xml:space="preserve">
+    <value>Cannot import this web part.</value>
+  </data>
+  <data name="DwpKpiTitle" xml:space="preserve">
+    <value>Indicator Details</value>
+  </data>
+  <data name="DwpDateFilterDescription" xml:space="preserve">
+    <value>Filter the contents of Web Parts by allowing users to enter or pick a date.</value>
+  </data>
+  <data name="DwpApplyFiltersTitle" xml:space="preserve">
+    <value>Apply Filters Button</value>
+  </data>
+  <data name="DefaultWebPartGroup" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle" xml:space="preserve">
+    <value>In Project Workspace</value>
+  </data>
+  <data name="General_ListUrlWithNumber" xml:space="preserve">
+    <value>{0}{1}</value>
+  </data>
+  <data name="MySiteMaster15_Description" xml:space="preserve">
+    <value>Provides the unique look and feel of the My Site.</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI" xml:space="preserve">
+    <value>Fixed Value based Status Indicator</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title" xml:space="preserve">
+    <value>Community Settings</value>
+  </data>
+  <data name="PersonalWebPartGroup" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="GlobalQuickLaunch_Apps_Text" xml:space="preserve">
+    <value>Apps</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description" xml:space="preserve">
+    <value>Site Feed contains microblogging conversations on a group site.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description" xml:space="preserve">
+    <value>Use this Document Library to store your WebPartPages. They will automatically be shared on your public home page.</value>
+  </data>
+  <data name="CategoriesListFeature_Text" xml:space="preserve">
+    <value>Categories List Feature</value>
+  </data>
+  <data name="CategoriesListFeature_Desc" xml:space="preserve">
+    <value>This feature contains the template for the Categories list functionality</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc" xml:space="preserve">
+    <value>If you don't know where to post, start here.</value>
+  </data>
+  <data name="BadgesListInstance_Title" xml:space="preserve">
+    <value>Badges</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text" xml:space="preserve">
+    <value>See the documents you're following</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name" xml:space="preserve">
+    <value>Warning Sheet</value>
+  </data>
+  <data name="SPSBlogFeature_Text" xml:space="preserve">
+    <value>Blog Notifications Feature</value>
+  </data>
+  <data name="SPSBlogFeature_Desc" xml:space="preserve">
+    <value>This feature adds notifications to Blogs</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text" xml:space="preserve">
+    <value>Displays details about a contact for this page or site.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title" xml:space="preserve">
+    <value>Upcoming Events</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="Documents_WebPart_Description" xml:space="preserve">
+    <value>Details about the sites that the user is a member of</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description" xml:space="preserve">
+    <value>Document Center site</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description" xml:space="preserve">
+    <value>A place where you can create and manage report documents.</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName" xml:space="preserve">
+    <value>File Type ProgID</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text" xml:space="preserve">
+    <value>Site Aggregator</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name" xml:space="preserve">
+    <value>Report Created By</value>
+  </data>
+  <data name="TabViewPageLayoutTitle" xml:space="preserve">
+    <value>Site directory home</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle" xml:space="preserve">
+    <value>Dismiss Report</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription" xml:space="preserve">
+    <value>This page layout contains Web Part zones arranged in a header, footer, and 2 columns.</value>
+  </data>
+  <data name="SitesOnet_TabsListName" xml:space="preserve">
+    <value>Tabs List</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name" xml:space="preserve">
+    <value>Warning from workbook</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo" xml:space="preserve">
+    <value>(the name of a snapshot's parent)</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore" xml:space="preserve">
+    <value>Reputation Score</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text" xml:space="preserve">
+    <value>Tags help you remember links and classify the selected item.  Notes are public comments.  Tags and notes post to your news feed and work across different sites.</value>
+  </data>
+  <data name="SitesList_Title_Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Members_QuickLaunch" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle" xml:space="preserve">
+    <value>Content Following</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes" xml:space="preserve">
+    <value>Manage Organization Sub-types</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc" xml:space="preserve">
+    <value>Links to subpages for Tenant User Profile Application Management</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink" xml:space="preserve">
+    <value>SharePoint Top Navbar</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text" xml:space="preserve">
+    <value>Displays your calendar using Outlook Web Access for Microsoft Exchange Server 2003 or later.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName" xml:space="preserve">
+    <value>Sharing</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description" xml:space="preserve">
+    <value>Name of the view</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description" xml:space="preserve">
+    <value>Determine whether the expression is used to calculate percentage</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone" xml:space="preserve">
+    <value>Top Right Zone</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues" xml:space="preserve">
+    <value>Colleague Tracker</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName" xml:space="preserve">
+    <value>Community Member</value>
+  </data>
+  <data name="TabViewPageLayoutDescription" xml:space="preserve">
+    <value>This page layout contains a tab control. It has Web Part zones arranged in a header, footer, and 2 columns. </value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text" xml:space="preserve">
+    <value>I'm following</value>
+  </data>
+  <data name="GS_SiteMailbox_Description" xml:space="preserve">
+    <value>Share email on your site and connect documents to Outlook.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text" xml:space="preserve">
+    <value>Use to display your links</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView" xml:space="preserve">
+    <value>All Items</value>
+  </data>
+  <data name="SkyDrivePro" xml:space="preserve">
+    <value>OneDrive for Business</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name" xml:space="preserve">
+    <value>Goal Sheet</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text" xml:space="preserve">
+    <value>SharePoint Documents</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text" xml:space="preserve">
+    <value>Use to display documents authored by you on sites where you are a member and sites of your choice.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip" xml:space="preserve">
+    <value>Community Settings like established date and enabling reporting of offensive content.</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle" xml:space="preserve">
+    <value>Project Functionality</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title" xml:space="preserve">
+    <value>Manually Configured Timeline</value>
+  </data>
+  <data name="TagCloudWebPart_Description15" xml:space="preserve">
+    <value>Displays the most popular subjects being tagged inside your organization.</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName" xml:space="preserve">
+    <value>Author's membership status</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text" xml:space="preserve">
+    <value>Displays your tasks using Outlook Web Access for Microsoft Exchange Server 2003 or later.</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription" xml:space="preserve">
+    <value>Contains a reference to a followed content item</value>
+  </data>
+  <data name="MembersViewAdmin" xml:space="preserve">
+    <value>Admin View</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="Profile_ChangePicture_Text" xml:space="preserve">
+    <value>Change your photo</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description" xml:space="preserve">
+    <value>Related Item Suggestions WebPart.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description" xml:space="preserve">
+    <value>Share pictures and photos with others by adding it to this picture library. Pictures and images stored here will be shared on your public home page.</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description" xml:space="preserve">
+    <value>The trend of the Indicator</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc" xml:space="preserve">
+    <value>My Site feature that shows the same navigation for the host and personal sites.</value>
+  </data>
+  <data name="DwpBdlCannotImport" xml:space="preserve">
+    <value>Cannot import this web part.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text" xml:space="preserve">
+    <value>My Site Unified Navigation Feature</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch" xml:space="preserve">
+    <value>Mailbox</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text" xml:space="preserve">
+    <value>Displays sites created under your My Site.</value>
+  </data>
+  <data name="ProjectSite_Feature_Description" xml:space="preserve">
+    <value>Enables creation of Project Sites in this Site Collection.</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory" xml:space="preserve">
+    <value>View History</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title" xml:space="preserve">
+    <value>Social Data Storage</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties" xml:space="preserve">
+    <value>Manage Organization Properties</value>
+  </data>
+  <data name="EndDateColumn" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="CommunityMembership_HideReputation" xml:space="preserve">
+    <value>Hide Reputation</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text" xml:space="preserve">
+    <value>Indeterminate</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text" xml:space="preserve">
+    <value>Link Status</value>
+  </data>
+  <data name="SiteFeed_Feature_Description" xml:space="preserve">
+    <value>Enables the use of site feeds.</value>
+  </data>
+  <data name="SPSDisco_Feature_Description" xml:space="preserve">
+    <value>Portal feature that sets the DiscoPage property of the default web service to spsdisco.aspx.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description" xml:space="preserve">
+    <value>This list will contain all items that you have chosen to follow.</value>
+  </data>
+  <data name="BDC_AddApplicationLink" xml:space="preserve">
+    <value>Import application definition</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription" xml:space="preserve">
+    <value>A report library provides enhanced support for managing reports which can display Status Indicators and Excel workbooks.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text" xml:space="preserve">
+    <value>Displays sites of your choice.</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription" xml:space="preserve">
+    <value>Audience Targeting</value>
+  </data>
+  <data name="SitesList_Url_Text" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description" xml:space="preserve">
+    <value>Link for page for clicking through for details </value>
+  </data>
+  <data name="Members_WebPart_Description" xml:space="preserve">
+    <value>Web part to display the members of a group</value>
+  </data>
+  <data name="TimelineWebPart_Group" xml:space="preserve">
+    <value>Timelines</value>
+  </data>
+  <data name="ContentEditorWP_Desc" xml:space="preserve">
+    <value>Allows authors to enter rich text content.</value>
+  </data>
+  <data name="HomePageImageWP_Desc" xml:space="preserve">
+    <value>Displays home page image</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text" xml:space="preserve">
+    <value>I Like It</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName" xml:space="preserve">
+    <value>Research &amp; Development</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description" xml:space="preserve">
+    <value>The Tagging web part allows members of a site to tag and view tags on pages in the site.</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name" xml:space="preserve">
+    <value>Update Error</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription" xml:space="preserve">
+    <value>Add selected items to the timeline.</value>
+  </data>
+  <data name="PortalManifest_Topics_Description" xml:space="preserve">
+    <value>Topics web</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle" xml:space="preserve">
+    <value>In Project Professional</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description" xml:space="preserve">
+    <value>Shows what is in common between you and the user</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle" xml:space="preserve">
+    <value>Query String (URL) Filter</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text" xml:space="preserve">
+    <value>Shared Pictures</value>
+  </data>
+  <data name="communitySiteTitle" xml:space="preserve">
+    <value>Community Site</value>
+  </data>
+  <data name="SitesList_Finance_Text" xml:space="preserve">
+    <value>Finance</value>
+  </data>
+  <data name="IndustryNewsArticle_Title" xml:space="preserve">
+    <value>Industry News</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description" xml:space="preserve">
+    <value>New Item Suggestions Webpart</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host" xml:space="preserve">
+    <value>Configure Trusted Host Locations</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title" xml:space="preserve">
+    <value>Site Feed Feature Stapling</value>
+  </data>
+  <data name="NewsHomeLayoutDescription" xml:space="preserve">
+    <value>This page layout contains Web Part zones arranged in a right column, header, footer and 2 columns.</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting" xml:space="preserve">
+    <value>Others can see and comment on some of your activities in SharePoint. You can change the settings &lt;a href="{0}"&gt; here&lt;/a&gt;.</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName" xml:space="preserve">
+    <value>Topic Last Updated</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title" xml:space="preserve">
+    <value>Related Tags</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title" xml:space="preserve">
+    <value>Portal Upgrade File Upload Feature</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text" xml:space="preserve">
+    <value>Broken</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone" xml:space="preserve">
+    <value>Bottom Right Zone</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="TabsList_TabName_Text" xml:space="preserve">
+    <value>Tab Name</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary" xml:space="preserve">
+    <value>Preliminary</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc" xml:space="preserve">
+    <value>Review reported content along with comments left by the members who found it offensive</value>
+  </data>
+  <data name="ManageProfileService_Mysite" xml:space="preserve">
+    <value>My Site Settings</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title" xml:space="preserve">
+    <value>Schedule Audience Compilation</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList" xml:space="preserve">
+    <value>Allow Distribution List</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old" xml:space="preserve">
+    <value>This document library was formerly used for documents that you wanted to share with other people. It is now recommended that you use the new My Documents library for this purpose.</value>
+  </data>
+  <data name="DwpBdlTitle" xml:space="preserve">
+    <value>Business Data List</value>
+  </data>
+  <data name="Links_WebPart_Title" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="SiteMapTabComment" xml:space="preserve">
+    <value>Click for site map</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name" xml:space="preserve">
+    <value>Report Description</value>
+  </data>
+  <data name="HomePage_SampleLink_3" xml:space="preserve">
+    <value>Sample Link 3</value>
+  </data>
+  <data name="HomePage_SampleLink_2" xml:space="preserve">
+    <value>Sample Link 2</value>
+  </data>
+  <data name="HomePage_SampleLink_1" xml:space="preserve">
+    <value>Sample Link 1</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles" xml:space="preserve">
+    <value>Manage Organization Profiles</value>
+  </data>
+  <data name="BadgesListInstance_Desc" xml:space="preserve">
+    <value>This list stores badges created by administrators or moderators of this community.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text" xml:space="preserve">
+    <value>Displays recent activities in your areas of interest.</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName" xml:space="preserve">
+    <value>Reports Lookup</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription" xml:space="preserve">
+    <value>Use the Announcements list to post messages related to this area.</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text" xml:space="preserve">
+    <value>Memberships</value>
+  </data>
+  <data name="ProjectNewLabel" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description" xml:space="preserve">
+    <value>Use this document library to store your documents. Documents shared here will be displayed on your public home page.</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description" xml:space="preserve">
+    <value>Shows your organization chart and reporting hierarchy</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle" xml:space="preserve">
+    <value>Enable new features on existing sites</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description" xml:space="preserve">
+    <value>Adds recommendations CBS control to all item display forms.</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text" xml:space="preserve">
+    <value>My Apps</value>
+  </data>
+  <data name="INeedToDefaultChoice" xml:space="preserve">
+    <value>Choose task</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name" xml:space="preserve">
+    <value>Include child indicators</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText" xml:space="preserve">
+    <value>Getting your SkyDrive Pro ready. This may take a while, feel free to navigate away.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text" xml:space="preserve">
+    <value>Displays a list of your colleagues and their recent changes.</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks" xml:space="preserve">
+    <value>Published links to Office client applications</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name" xml:space="preserve">
+    <value>Formatted indicator value</value>
+  </data>
+  <data name="SitesList_TopTasks_Text" xml:space="preserve">
+    <value>Top Tasks</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription" xml:space="preserve">
+    <value>This feature staples (connects) the My Tasks Dashboard feature to the MySite template.</value>
+  </data>
+  <data name="SetupMySite" xml:space="preserve">
+    <value>Set up My Site</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description" xml:space="preserve">
+    <value>Name of the sheet for the warning</value>
+  </data>
+  <data name="TimelineGroupTitle" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text" xml:space="preserve">
+    <value>You can't change this person's photo because it is synchronized with Microsoft Exchange.</value>
+  </data>
+  <data name="SearchWebPartGroup" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title" xml:space="preserve">
+    <value>Project Site WebParts</value>
+  </data>
+  <data name="Mybrary_StatusBarText" xml:space="preserve">
+    <value>Welcome to &lt;span id="skyDriveText"&gt;your SkyDrive Pro&lt;/span&gt;, the place to store, sync, and share your work. Documents are private until shared. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Learn more here&lt;/a&gt;.</value>
+  </data>
+  <data name="CommunityMembership_NumReplies" xml:space="preserve">
+    <value>Replies</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title" xml:space="preserve">
+    <value>Recommended Sites</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName" xml:space="preserve">
+    <value>Topic Last Updated By</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title" xml:space="preserve">
+    <value>Related Item Suggestions</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone" xml:space="preserve">
+    <value>Filter Zone</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description" xml:space="preserve">
+    <value>This feature provisions the User Profile User Settings Provider.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent" xml:space="preserve">
+    <value>Followed Content</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription" xml:space="preserve">
+    <value>Is My Documents</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title" xml:space="preserve">
+    <value>Compile Audiences</value>
+  </data>
+  <data name="SocialCTGroup" xml:space="preserve">
+    <value>Social</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing" xml:space="preserve">
+    <value>Manage Following</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title" xml:space="preserve">
+    <value>Recent Activity</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription" xml:space="preserve">
+    <value>Content Following allows users to subscribe to updates in their feed for a particular document</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName" xml:space="preserve">
+    <value>Author's membership date</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title" xml:space="preserve">
+    <value>Site Feed</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments" xml:space="preserve">
+    <value>SharePoint Sites</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name" xml:space="preserve">
+    <value>Indicator Comments</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description" xml:space="preserve">
+    <value>My Site feature that uploads all the layouts to the master page gallery.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title" xml:space="preserve">
+    <value>Documents Recommended to Me</value>
+  </data>
+  <data name="Blog_SampleBody" xml:space="preserve">
+    <value>This is a sample blog post.  It would typically be filled with a post by the user.</value>
+  </data>
+  <data name="AbuseReportsView" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc" xml:space="preserve">
+    <value>Create a new Status Indicator using data from SharePoint Lists</value>
+  </data>
+  <data name="TagInformation_WebPart_Title" xml:space="preserve">
+    <value>About This Tag</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title" xml:space="preserve">
+    <value>Manage Audiences</value>
+  </data>
+  <data name="tenantprofileadminFeatureTitle" xml:space="preserve">
+    <value>Tenant User Profile Application</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog" xml:space="preserve">
+    <value>Recent Blog Posts</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience" xml:space="preserve">
+    <value>Allow Global Audience</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name" xml:space="preserve">
+    <value>Percent Expression</value>
+  </data>
+  <data name="SubNavTab_People_Text" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text" xml:space="preserve">
+    <value>My Tasks</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc" xml:space="preserve">
+    <value>Configures a user's personal site.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text" xml:space="preserve">
+    <value>My Site Personal Site Configuration</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts by using properties of the current user.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc" xml:space="preserve">
+    <value>Create a new Status Indicator using data from Excel Services</value>
+  </data>
+  <data name="INeedToWP_Title" xml:space="preserve">
+    <value>I need to...</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup" xml:space="preserve">
+    <value>Content Tracking</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription" xml:space="preserve">
+    <value>Users rated the item.</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="TWCProjectScope" xml:space="preserve">
+    <value>Project Site Scope</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SocialComment_WebPart_Description" xml:space="preserve">
+    <value>Enable users to leave short, publicly-viewable notes about this page.</value>
+  </data>
+  <data name="ModerationApproveItem" xml:space="preserve">
+    <value>Dismiss Report</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle" xml:space="preserve">
+    <value>Content Subscription</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup" xml:space="preserve">
+    <value>Related Items</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName" xml:space="preserve">
+    <value>Has Feed</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description" xml:space="preserve">
+    <value>Create a new report document.</value>
+  </data>
+  <data name="SitesList_Region_Text" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title" xml:space="preserve">
+    <value>Trending Hashtags</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault" xml:space="preserve">
+    <value>Everyone's Tags</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title" xml:space="preserve">
+    <value>Sites in Category</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle" xml:space="preserve">
+    <value>Feature Pushdown</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName" xml:space="preserve">
+    <value>Reports Library</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks" xml:space="preserve">
+    <value>My Links</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData" xml:space="preserve">
+    <value>Site collection usage reports</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink" xml:space="preserve">
+    <value>Scan Site Directory Links</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text" xml:space="preserve">
+    <value>Shared with me</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText" xml:space="preserve">
+    <value>Move selected documents to another site or to a folder within the current library.</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone" xml:space="preserve">
+    <value>Top Zone</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text" xml:space="preserve">
+    <value>Choose a task that you need to perform</value>
+  </data>
+  <data name="ProjectOpenLabel" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription" xml:space="preserve">
+    <value>Add a picture that represents this category.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText" xml:space="preserve">
+    <value>Follow this document and get updates in your newsfeed.</value>
+  </data>
+  <data name="Documents_WebPart_Title" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text" xml:space="preserve">
+    <value>My Inbox</value>
+  </data>
+  <data name="abuseReports_Folder" xml:space="preserve">
+    <value>AbuseReports</value>
+  </data>
+  <data name="Links_WebPart_Description" xml:space="preserve">
+    <value>Shows the links the user has shared with you</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description" xml:space="preserve">
+    <value>Web part to display group details</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name" xml:space="preserve">
+    <value>Value Cell</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title" xml:space="preserve">
+    <value>Manage Members</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage" xml:space="preserve">
+    <value>Manage User Profile Application</value>
+  </data>
+  <data name="HomePageContent11" xml:space="preserve">
+    <value>View an Excel workbook through the Excel Web Access Web Part</value>
+  </data>
+  <data name="HomePageContent10" xml:space="preserve">
+    <value>Create status indicators and reports</value>
+  </data>
+  <data name="HomePageContent12" xml:space="preserve">
+    <value>Deploy an InfoPath form to a Document Library</value>
+  </data>
+  <data name="NextRefresh" xml:space="preserve">
+    <value>The project list will be updated on {0}</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title" xml:space="preserve">
+    <value>Followed Counts</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink" xml:space="preserve">
+    <value>Business Data Connectivity permissions</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc" xml:space="preserve">
+    <value>Edit reported discussion item to remove potentially offensive content</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text" xml:space="preserve">
+    <value>List Content Targeting</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc" xml:space="preserve">
+    <value>Installs a button on the List Settings page to enable content targeting using audiences.</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked" xml:space="preserve">
+    <value>Blocked</value>
+  </data>
+  <data name="Members_MemberLookupFieldName" xml:space="preserve">
+    <value>Posted by</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3" xml:space="preserve">
+    <value>After your personalization site is developed, to make your personalization site a permanent location on your users My Site navigation bar, contact your administrator to register your personalization site.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2" xml:space="preserve">
+    <value>&lt;i&gt;As an example you can use a personalization site to unlock information buried in various business systems and by your site structure, to provide a one stop shop experience that easily allows users to view and access information they need to perform their job or task.  Or you could offer an experience which helps to better align your organization with its goals, by using your personalization site to drive user behavior through performance indicators and metrics, which can specifically set for an individual user based on their role.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1" xml:space="preserve">
+    <value>Personalization sites are designed to help you provide an uncompromised distinct personalization experience that connects your portal to users My Sites. Use this site to push personalized and targeted information to your users based on who they are and why they visit your portal. The personalization site template helps you identify the current user and use their profile to accurately target and present information that is specific to that user and his or her needs. This gives you the opportunity to offer me centric view of your portal to your users.</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo" xml:space="preserve">
+    <value>(linked to edit menu)</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription" xml:space="preserve">
+    <value>Move your existing My Site documents to your SkyDrive Pro, the place to store, sync, and share your work.</value>
+  </data>
+  <data name="SitesList_IT_Text" xml:space="preserve">
+    <value>Information Technology</value>
+  </data>
+  <data name="OwnerColumn" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description" xml:space="preserve">
+    <value>Displays a user's most recent conversations and activities.</value>
+  </data>
+  <data name="KPIListWebPart_Description" xml:space="preserve">
+    <value>Shows a list of Status Indicators. Status Indicators display important measures for your organization, and show how your organization is performing with respect to your goals.</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name" xml:space="preserve">
+    <value>Is Data</value>
+  </data>
+  <data name="GS_SiteMailbox_Title" xml:space="preserve">
+    <value>Keep email in context.</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text" xml:space="preserve">
+    <value>TagsAndNotes</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText" xml:space="preserve">
+    <value>Search is currently unavailable. Please try again later. If the problem persists, contact your system administrator.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description" xml:space="preserve">
+    <value>Displays the links that you have created.</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title" xml:space="preserve">
+    <value>My Organization Chart</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle" xml:space="preserve">
+    <value>Report Center Page</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name" xml:space="preserve">
+    <value>Formatted indicator warning</value>
+  </data>
+  <data name="Blog_SampleAuthor" xml:space="preserve">
+    <value>Sample User</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate" xml:space="preserve">
+    <value>Period To Date</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text" xml:space="preserve">
+    <value>Displays pictures from your pictures library, with an option to view as a slide show.</value>
+  </data>
+  <data name="BDC_LinksTitle" xml:space="preserve">
+    <value>Business Data Connectivity</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName" xml:space="preserve">
+    <value>Not Visible In Feed</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title" xml:space="preserve">
+    <value>Recommended Links (M1 only)</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription" xml:space="preserve">
+    <value>This page layout contains Web Part zones arranged in a right column, header, footer and 2 columns.</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text" xml:space="preserve">
+    <value>Add a new post</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships" xml:space="preserve">
+    <value>My Memberships</value>
+  </data>
+  <data name="Members_TitleFieldName" xml:space="preserve">
+    <value>Member Name</value>
+  </data>
+  <data name="ProjectGroupTitle" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName" xml:space="preserve">
+    <value>Microblog Edit</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name" xml:space="preserve">
+    <value>Save to report history</value>
+  </data>
+  <data name="SitesList_Sales_Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup" xml:space="preserve">
+    <value>Sharing Fields</value>
+  </data>
+  <data name="CategoriesList_AdminView" xml:space="preserve">
+    <value>Admin View</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI" xml:space="preserve">
+    <value>SQL Server Analysis Services based Status Indicator</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text" xml:space="preserve">
+    <value>Web part to display the members of a group</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title" xml:space="preserve">
+    <value>Site Feed Feature Controller</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc" xml:space="preserve">
+    <value>Use this Picture Library to store logos for Organizations.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text" xml:space="preserve">
+    <value>Shared Picture Library for Organizations logos</value>
+  </data>
+  <data name="BDC_ProfilePageLink" xml:space="preserve">
+    <value>Edit profile page template</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody" xml:space="preserve">
+    <value>The Report Center enables you to create, distribute, and manage business information.</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription" xml:space="preserve">
+    <value>Number of ratings submitted</value>
+  </data>
+  <data name="CategoriesTab" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink" xml:space="preserve">
+    <value>Report Calendar</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip" xml:space="preserve">
+    <value>Manage discussions in a community.</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink" xml:space="preserve">
+    <value>Configure the Site Directory</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName" xml:space="preserve">
+    <value>Number of Ratings</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc" xml:space="preserve">
+    <value>Installs claim provider for Groups.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text" xml:space="preserve">
+    <value>Groups Claim Provider</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName" xml:space="preserve">
+    <value>Reference Library</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle" xml:space="preserve">
+    <value>Report Center Creation</value>
+  </data>
+  <data name="AbuseReports_CountFieldName" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName" xml:space="preserve">
+    <value>Site Template Gallery</value>
+  </data>
+  <data name="DashboardWebPartGroup" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title" xml:space="preserve">
+    <value>Item Form Recommendations</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc" xml:space="preserve">
+    <value>Adds entry points for social tagging and note board commenting to the ribbon user interface.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text" xml:space="preserve">
+    <value>Social Tags and Note Board Ribbon Controls</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc" xml:space="preserve">
+    <value>List that enables users to follow content in SharePoint.</value>
+  </data>
+  <data name="PortalManifest_Sales_Description" xml:space="preserve">
+    <value>Sales web</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc" xml:space="preserve">
+    <value>This list stores comments about a discussion item submitted by people who reported that item as abusive</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription" xml:space="preserve">
+    <value>This is a sample indicator, and may safely be deleted.</value>
+  </data>
+  <data name="Colleagues_WebPart_Title" xml:space="preserve">
+    <value>Colleagues</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName" xml:space="preserve">
+    <value>Replies</value>
+  </data>
+  <data name="TargetToField_NotTargeted" xml:space="preserve">
+    <value>Not targeted</value>
+  </data>
+  <data name="DwpProfilePropertyFilter" xml:space="preserve">
+    <value>Profile Property Filter</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description" xml:space="preserve">
+    <value>Feature that encapsulates the list that enables users to follow content in SharePoint.</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc" xml:space="preserve">
+    <value>This feature staples Blog notifications and likes feature to Blog site templates</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description" xml:space="preserve">
+    <value>Portal feature that uploads upgrade only files.</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text" xml:space="preserve">
+    <value>Blog Notifications Stapling Feature</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name" xml:space="preserve">
+    <value>Business Intelligence</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName" xml:space="preserve">
+    <value>Web Part Page Doc Lib</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName" xml:space="preserve">
+    <value>Followed Sites</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome" xml:space="preserve">
+    <value>Get Started with My Site</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text" xml:space="preserve">
+    <value>people</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText" xml:space="preserve">
+    <value>Search is currently disabled. Please contact your system administrator.</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup" xml:space="preserve">
+    <value>Allow SharePoint Groups</value>
+  </data>
+  <data name="SiteMapTab" xml:space="preserve">
+    <value>Site Map</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup" xml:space="preserve">
+    <value>Allow Sharepoint Group</value>
+  </data>
+  <data name="SubNavTab_Tags_Text" xml:space="preserve">
+    <value>Tags and Notes</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text" xml:space="preserve">
+    <value>About {0}</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2" xml:space="preserve">
+    <value>To prepare this Report Center for use, the following actions are suggested:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1" xml:space="preserve">
+    <value>Report Center features include:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady" xml:space="preserve">
+    <value>Your SharePoint newsfeed is ready</value>
+  </data>
+  <data name="Ratings_RatedByFieldName" xml:space="preserve">
+    <value>Rated By</value>
+  </data>
+  <data name="BusinessDataField_All" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="BusinessDataField_Asc" xml:space="preserve">
+    <value>Sort Ascending</value>
+  </data>
+  <data name="BusinessDataField_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="MembersView" xml:space="preserve">
+    <value>Members View</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView" xml:space="preserve">
+    <value>Single Category View</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc" xml:space="preserve">
+    <value>Staple Tenant User Profile Application Feature to TenantAdmin Template</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName" xml:space="preserve">
+    <value>Aggregated Rating Count</value>
+  </data>
+  <data name="MyInformationWebPartGroup" xml:space="preserve">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description" xml:space="preserve">
+    <value>Show tags applied by all users</value>
+  </data>
+  <data name="CommunityMembership_LastActivity" xml:space="preserve">
+    <value>Last Activity</value>
+  </data>
+  <data name="SitesList_Division_Text" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription" xml:space="preserve">
+    <value>This page layout contains a tab control. It has Web Part zones arranged in a header, footer and 2 columns.</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup" xml:space="preserve">
+    <value>Site Directory</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description" xml:space="preserve">
+    <value>Related Items WebPart.</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName" xml:space="preserve">
+    <value>Liked By</value>
+  </data>
+  <data name="DwpBdAssociationTitle" xml:space="preserve">
+    <value>Business Data Related List</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text" xml:space="preserve">
+    <value>My Mail Folder</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc" xml:space="preserve">
+    <value>Search for employees</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName" xml:space="preserve">
+    <value>WebId</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description" xml:space="preserve">
+    <value>HumanResources web</value>
+  </data>
+  <data name="TabsList_Page_Text" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription" xml:space="preserve">
+    <value>As part of your upgrade, you now have additional features installed on your SharePoint farm. These features will be enabled in newly created sites, but have not yet been made available to existing sites. You can make these features available to all your existing sites by navigating to the 'Enable Features on Existing Sites' page. If you do not wish to make these features available to all existing sites now, you may delete this task. You can perform this task at any time from the Operations page in the Central Administration site. You can also make these features available to individual sites by using Site Settings menu for that site.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle" xml:space="preserve">
+    <value>Cross-Farm Site Permissions</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description" xml:space="preserve">
+    <value>The web part that shows a list of keywords that others can ask me questions on.</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName" xml:space="preserve">
+    <value>Author's last activity date</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description" xml:space="preserve">
+    <value>Displays portlets from web sites using WSRP 1.1.</value>
+  </data>
+  <data name="RefreshingCache" xml:space="preserve">
+    <value>Refreshing project list...</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc" xml:space="preserve">
+    <value>Installs job for user profile and membership synchronization with team sites.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text" xml:space="preserve">
+    <value>Profile Synchronization Feature</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description" xml:space="preserve">
+    <value>SharePoint Portal Server Master Site Directory Capture Control.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements" xml:space="preserve">
+    <value>You haven't followed any Sites yet. To see something in this list, go to a Site and click the Follow icon.</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName" xml:space="preserve">
+    <value>Number of Likes</value>
+  </data>
+  <data name="NewMembersView" xml:space="preserve">
+    <value>New Members</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description" xml:space="preserve">
+    <value>Shows people who frequently use or expressed interest or experise in a tag.</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="FormsWebPartGroup" xml:space="preserve">
+    <value>Forms</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description" xml:space="preserve">
+    <value>Staples the site feed feature to all new Team Site site collections.</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description" xml:space="preserve">
+    <value>The goal of the indicator, formatted by its datasource provider</value>
+  </data>
+  <data name="Ratings_EnableLink" xml:space="preserve">
+    <value>Rating settings</value>
+  </data>
+  <data name="General_ListTitleWithNumber" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull" xml:space="preserve">
+    <value>DiscussionsByCategoryFeaturedFull</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc" xml:space="preserve">
+    <value>Dismiss reports associated with discussion item if you think that it is appropriate for the community. This will remove associated comments left by members who found it offensive</value>
+  </data>
+  <data name="InCommon_WebPart_Title" xml:space="preserve">
+    <value>In Common with You</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup" xml:space="preserve">
+    <value>Setup My Sites</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage" xml:space="preserve">
+    <value>Unable to import Related Items WebPart.</value>
+  </data>
+  <data name="SiteMembership_Status_Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo" xml:space="preserve">
+    <value>(linked to URL)</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title" xml:space="preserve">
+    <value>Activity Feed</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName" xml:space="preserve">
+    <value>Site Id</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title" xml:space="preserve">
+    <value>Tagged Items</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title" xml:space="preserve">
+    <value>Contact Details</value>
+  </data>
+  <data name="Colleagues_WebPart_Description" xml:space="preserve">
+    <value>This web part is designed to be added to the profile page of a person. It provides a list of all colleagues a user has shared with others. It provides an entry point for the profile owner to manage the list of colleagues.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description" xml:space="preserve">
+    <value>Provides community owners and administrators with quick links to common settings pages and content lists for managing a community site. This web part will work on Community sites or any other site that has Community Features turned on.</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="About_QuickLaunch" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues" xml:space="preserve">
+    <value>Value 1&amp;Value 2&amp;Value 3=Description 3</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text" xml:space="preserve">
+    <value>Site Membership</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription" xml:space="preserve">
+    <value>Provides a dashboard on a user's My Site to manage and interact with his/her tasks, aggregated across sites and systems.</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc" xml:space="preserve">
+    <value>This feature contains the list schema and list instance which is used to manage the members within a site like Community, Project, Team, Education sites</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc" xml:space="preserve">
+    <value>Give Badge to a Member</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName" xml:space="preserve">
+    <value>Followed Documents</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc" xml:space="preserve">
+    <value>This list keeps a record of ongoing activity by members and reputation they accrue within this community.</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description" xml:space="preserve">
+    <value>This Web Part displays each person in the reporting chain in an interactive view optimized for browsing organization charts.</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name" xml:space="preserve">
+    <value>Report Parent Name</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description" xml:space="preserve">
+    <value>The recommendations web part suggests content a user may wish to follow within a farm.</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description" xml:space="preserve">
+    <value>Site Directory web</value>
+  </data>
+  <data name="SiteMembership_Status_Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="DwpApplyFiltersDescription" xml:space="preserve">
+    <value>Add this button to a page so users can decide when to apply their filter choices. Otherwise, each filter is applied when its value is changed.</value>
+  </data>
+  <data name="ProjectNewToolTipDescription" xml:space="preserve">
+    <value>Create a new project workspace.</value>
+  </data>
+  <data name="DwpTextFilterTitle" xml:space="preserve">
+    <value>Text Filter</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments" xml:space="preserve">
+    <value>Personal Documents</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory" xml:space="preserve">
+    <value>DiscussionsByCategory</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures" xml:space="preserve">
+    <value>User Photos</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text" xml:space="preserve">
+    <value>See the tags you're following</value>
+  </data>
+  <data name="MySiteMaster_Description" xml:space="preserve">
+    <value>Provides the unique look and feel of the My Site.</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName" xml:space="preserve">
+    <value>Human Resources</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle" xml:space="preserve">
+    <value>Business Data Item Builder</value>
+  </data>
+  <data name="TopContributorsView" xml:space="preserve">
+    <value>Top Contributors</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline" xml:space="preserve">
+    <value>You can take documents offline by clicking the Sync button on any library. Try it out on your &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription" xml:space="preserve">
+    <value>Area Document libraries are folders that make it easy to share documents with others. Each library displays documents in a list that can be filtered or sorted.</value>
+  </data>
+  <data name="SiteFeed_Feature_Title" xml:space="preserve">
+    <value>Site Feed</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old" xml:space="preserve">
+    <value>Personal Documents - OLD</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name" xml:space="preserve">
+    <value>Indicator Status</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName" xml:space="preserve">
+    <value>List Id</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text" xml:space="preserve">
+    <value>Tags and Notes</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description" xml:space="preserve">
+    <value>Shows manually configured data in a timeline view</value>
+  </data>
+  <data name="DwpBdcFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts using a list of values from the Business Data Connectivity.</value>
+  </data>
+  <data name="KPIListWebPart_Title" xml:space="preserve">
+    <value>Status List</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle" xml:space="preserve">
+    <value>My Tasks Dashboard</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting" xml:space="preserve">
+    <value>Usage reporting</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription" xml:space="preserve">
+    <value>Detail report page for Excel files.</value>
+  </data>
+  <data name="SampleEventItem" xml:space="preserve">
+    <value>New SharePoint Server!</value>
+  </data>
+  <data name="DwpSpListFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts by using a list of values.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title" xml:space="preserve">
+    <value>My membership</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name" xml:space="preserve">
+    <value>Report Status</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle" xml:space="preserve">
+    <value>Current User Filter</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription" xml:space="preserve">
+    <value>Creates the Report Center on Premium sites.</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2" xml:space="preserve">
+    <value>Category 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3" xml:space="preserve">
+    <value>Category 3</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1" xml:space="preserve">
+    <value>Category 1</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link" xml:space="preserve">
+    <value>Quick Reference Guide</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText" xml:space="preserve">
+    <value>{0}edit{1} your profile</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title" xml:space="preserve">
+    <value>Get Connected</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description" xml:space="preserve">
+    <value>Provides data support to social features</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description" xml:space="preserve">
+    <value>Web part to business data item details</value>
+  </data>
+  <data name="RelatedLinksWP_Title" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings" xml:space="preserve">
+    <value>Organizations Delegation Settings</value>
+  </data>
+  <data name="ClaimProvider_People_Desc" xml:space="preserve">
+    <value>Installs claim provider for People and Organizations.</value>
+  </data>
+  <data name="ClaimProvider_People_Text" xml:space="preserve">
+    <value>People and Organizations Claim Provider</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc" xml:space="preserve">
+    <value>Enhances the existing SharePoint document library for My Site. Enables new views, lightweight versioning, enhanced contextual information, and per-item sharing.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text" xml:space="preserve">
+    <value>My Site Document Library Feature</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription" xml:space="preserve">
+    <value>Adds additional default groups the QuickAddGroups column in webpart gallery</value>
+  </data>
+  <data name="SitesList_StatusOk_Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription" xml:space="preserve">
+    <value>The name of the category.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle" xml:space="preserve">
+    <value>Expenses</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle" xml:space="preserve">
+    <value>Top Sites</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle" xml:space="preserve">
+    <value>Give Badge to a Member</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title" xml:space="preserve">
+    <value>Suggested documents to follow</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title" xml:space="preserve">
+    <value>Reports List template schema</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="TargetToField_Targeted" xml:space="preserve">
+    <value>Targeted</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name" xml:space="preserve">
+    <value>Report Document Library</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text" xml:space="preserve">
+    <value>Add new link</value>
+  </data>
+  <data name="ModerationViewItem" xml:space="preserve">
+    <value>Review Reports</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description" xml:space="preserve">
+    <value>The Display Folder of the Indicator</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description" xml:space="preserve">
+    <value>The recommendations web part suggests content a user may wish to follow within a farm.</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText" xml:space="preserve">
+    <value>Gifted Badge Text</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text" xml:space="preserve">
+    <value>Manage Sites</value>
+  </data>
+  <data name="RelatedItems_Feature_Description" xml:space="preserve">
+    <value>Related items feature for adding related items and recommended items functionality to a site collection.</value>
+  </data>
+  <data name="MySiteHost_PageTitle" xml:space="preserve">
+    <value>Newsfeed</value>
+  </data>
+  <data name="imglibList" xml:space="preserve">
+    <value>This Week in Pictures Library</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text" xml:space="preserve">
+    <value>Use to display documents authored by the user where the user is a site member.</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish" xml:space="preserve">
+    <value>Publish Links to Office Client Applications</value>
+  </data>
+  <data name="Ratings_Feature_Description" xml:space="preserve">
+    <value>Use this feature to enable users to rate content.</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText" xml:space="preserve">
+    <value>Add a filter</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle" xml:space="preserve">
+    <value>Content Following</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved" xml:space="preserve">
+    <value>Your existing My Site documents have been moved to your &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;, the place in SharePoint to store, sync, and share your work.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink" xml:space="preserve">
+    <value>Reference Library</value>
+  </data>
+  <data name="TWCSearchProject" xml:space="preserve">
+    <value>Search this list...</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text" xml:space="preserve">
+    <value>Site Creation Categories</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName" xml:space="preserve">
+    <value>Status List</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text" xml:space="preserve">
+    <value>Only {0} can change this photo.</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description" xml:space="preserve">
+    <value>Owner of this document</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle" xml:space="preserve">
+    <value>User Profiles and My Sites</value>
+  </data>
+  <data name="NewsArticleWithPictTitle" xml:space="preserve">
+    <value>News Article With Picture</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title" xml:space="preserve">
+    <value>Manage Policies</value>
+  </data>
+  <data name="BadgesList_TitleFieldName" xml:space="preserve">
+    <value>Badge Name</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy" xml:space="preserve">
+    <value>Others can see and comment on your activities in SharePoint. You can change the settings &lt;a href="{0}"&gt; here&lt;/a&gt;.</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle" xml:space="preserve">
+    <value>Document Library</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2" xml:space="preserve">
+    <value>Getting your {0} for Business ready. This may take a while, feel free to navigate away.</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone" xml:space="preserve">
+    <value>Middle Right Zone</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription" xml:space="preserve">
+    <value>Displays information about a project in an easy to read overview</value>
+  </data>
+  <data name="ManageSharedAppsDescription" xml:space="preserve">
+    <value>View all libraries and lists in this site.</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl" xml:space="preserve">
+    <value>Sort by Url</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName" xml:space="preserve">
+    <value>Server Url ProgID</value>
+  </data>
+  <data name="TagCloudWebPart_Title" xml:space="preserve">
+    <value>Tag Cloud</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip" xml:space="preserve">
+    <value>Community Reputation Settings like content and people reputation.</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup" xml:space="preserve">
+    <value>My Site: Top</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text" xml:space="preserve">
+    <value>Related Links scope settings</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description" xml:space="preserve">
+    <value>The Team Work Center provides a rolled up view of all your project sites in a single location. The Team Work Center can be connected to the Timeline Web Part to create a visualization of your portfolio of projects.</value>
+  </data>
+  <data name="NewsHomeLayoutTitle" xml:space="preserve">
+    <value>News Home</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar" xml:space="preserve">
+    <value>My Calendar</value>
+  </data>
+  <data name="SitesOnet_SitesListName" xml:space="preserve">
+    <value>Sites List</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup" xml:space="preserve">
+    <value>My Site: Middle Left</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip" xml:space="preserve">
+    <value>Define the location of the directory to list new sites.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title" xml:space="preserve">
+    <value>Featured Discussions</value>
+  </data>
+  <data name="DwpBdItemDesc" xml:space="preserve">
+    <value>Displays one item from a data source in Business Data Connectivity.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title" xml:space="preserve">
+    <value>Recommended Documents</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title" xml:space="preserve">
+    <value>Community Members</value>
+  </data>
+  <data name="PeopleTabComment" xml:space="preserve">
+    <value>Click for people results</value>
+  </data>
+  <data name="TabsList_Notes_Description" xml:space="preserve">
+    <value>This is the tooltip that will be displayed when a user moves the mouse pointer over this tab.</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone" xml:space="preserve">
+    <value>Bottom Left Zone</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name" xml:space="preserve">
+    <value>Indicator Value</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text" xml:space="preserve">
+    <value>Rejected Sites</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup" xml:space="preserve">
+    <value>Status Indicators</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old" xml:space="preserve">
+    <value>This document library was formerly used for documents that you wanted to keep for personal use. It is now recommended that you use the new My Documents library for this purpose.</value>
+  </data>
+  <data name="CommunitySiteFeature_Text" xml:space="preserve">
+    <value>Community Site Feature</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc" xml:space="preserve">
+    <value>This feature adds community functionality such as discussion categories, content and people reputation, and the members list. It also provisions community site pages which contain these lists and features.</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text" xml:space="preserve">
+    <value>Spotlight Site</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle" xml:space="preserve">
+    <value>Morale</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription" xml:space="preserve">
+    <value>Add a new community member</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription" xml:space="preserve">
+    <value>Sharing</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description" xml:space="preserve">
+    <value>Address or name of the cell for the goal</value>
+  </data>
+  <data name="EmptyViewText" xml:space="preserve">
+    <value>There are no items to show in this view.</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name" xml:space="preserve">
+    <value>Report Category</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description" xml:space="preserve">
+    <value>The warning value of the indicator, formatted by its datasource provider</value>
+  </data>
+  <data name="Blog_SampleCategory" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title" xml:space="preserve">
+    <value>Manage User Properties</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle" xml:space="preserve">
+    <value>Promoted Sites</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization" xml:space="preserve">
+    <value>Configure Personalization Site</value>
+  </data>
+  <data name="PortalManifest_News_Description" xml:space="preserve">
+    <value>Company News Home</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description" xml:space="preserve">
+    <value>Every time this document is saved a copy will be added to the report history.</value>
+  </data>
+  <data name="AbuseReports_ListName" xml:space="preserve">
+    <value>Reports List Template</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1" xml:space="preserve">
+    <value>Expert</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2" xml:space="preserve">
+    <value>Professional</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title" xml:space="preserve">
+    <value>Manage User Permissions</value>
+  </data>
+  <data name="SearchMainDescription" xml:space="preserve">
+    <value>This page layout contains a tab control, and search box Web Part. It has Web Part zones arranged in a header and footer.</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging" xml:space="preserve">
+    <value>Configure Social and Expertise tagging</value>
+  </data>
+  <data name="CategoriesListInstance_Desc" xml:space="preserve">
+    <value>Use the Categories list to define the categories available for discussion list posts.</value>
+  </data>
+  <data name="Members_AssignBadge" xml:space="preserve">
+    <value>Give Badge</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description" xml:space="preserve">
+    <value>The recommendations web part suggests content a user may wish to follow within a farm.</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites" xml:space="preserve">
+    <value>Trusted My Site host locations</value>
+  </data>
+  <data name="TWCSiteCollection" xml:space="preserve">
+    <value>Site Collection</value>
+  </data>
+  <data name="ProjectNameColumn" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="DwpDateFilterName" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="BusinessDataField_Sortby" xml:space="preserve">
+    <value>Sort by </value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip" xml:space="preserve">
+    <value>Manage members in a community.</value>
+  </data>
+  <data name="TopSitesTabComment" xml:space="preserve">
+    <value>Click for top sites</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName" xml:space="preserve">
+    <value>Report Center</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text" xml:space="preserve">
+    <value>documents</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc" xml:space="preserve">
+    <value>Installs features related to migrating user data when a user's account information changes.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text" xml:space="preserve">
+    <value>Shared Service Provider User Migrator</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text" xml:space="preserve">
+    <value>Tags &amp; Notes</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title" xml:space="preserve">
+    <value>Reports List</value>
+  </data>
+  <data name="DwpQueryStringFilterName" xml:space="preserve">
+    <value>QueryString</value>
+  </data>
+  <data name="Blog_SampleTitle" xml:space="preserve">
+    <value>Sample Post</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="SiteDirectoryPageTitle" xml:space="preserve">
+    <value>Site Directory</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl" xml:space="preserve">
+    <value>Topic page URL</value>
+  </data>
+  <data name="BusinessDataField_BusinessData" xml:space="preserve">
+    <value>Business data</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text" xml:space="preserve">
+    <value>My Workspaces</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport" xml:space="preserve">
+    <value>Excel Report</value>
+  </data>
+  <data name="BusinessDataField_Blank" xml:space="preserve">
+    <value>(Blank)</value>
+  </data>
+  <data name="BusinessDataField_Empty" xml:space="preserve">
+    <value>(Empty)</value>
+  </data>
+  <data name="SiteDirectoryPageDescription" xml:space="preserve">
+    <value>The Sites Directory is a catalog of sites that can be grouped into categories. To submit a site to the Sites Directory, please choose either "Create Site" or "Add Link to Site" on the top-right corner of this page.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description" xml:space="preserve">
+    <value>Activate Content Following feature on all site collections.</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name" xml:space="preserve">
+    <value>Auto Update</value>
+  </data>
+  <data name="BusinessDataField_Update" xml:space="preserve">
+    <value>(Update)</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName" xml:space="preserve">
+    <value>Persistent Storage List for MySite Published Feed</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription" xml:space="preserve">
+    <value>Can view, add, update, and delete list items and documents.</value>
+  </data>
+  <data name="PortalTitle" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="categories_Folder" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="ModerationEditItem" xml:space="preserve">
+    <value>Edit Post</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description" xml:space="preserve">
+    <value>To include child KPIs or not</value>
+  </data>
+  <data name="SitesPage_NewSiteLink" xml:space="preserve">
+    <value>new site</value>
+  </data>
+  <data name="PortalManifest_Products_Description" xml:space="preserve">
+    <value>Products web</value>
+  </data>
+  <data name="ExternalNewsArticleTitle" xml:space="preserve">
+    <value>Link To News Article</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description" xml:space="preserve">
+    <value>Is the item a report?</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name" xml:space="preserve">
+    <value>Value Expression</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old" xml:space="preserve">
+    <value>Shared Documents - OLD</value>
+  </data>
+  <data name="Members_WebPart_Title" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="Membership_WebPart_Description" xml:space="preserve">
+    <value>Displays your site and distribution list memberships.</value>
+  </data>
+  <data name="DwpOlapFilterTitle" xml:space="preserve">
+    <value>SQL Server Analysis Services Filter</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title" xml:space="preserve">
+    <value>Social</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text" xml:space="preserve">
+    <value>sites</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName" xml:space="preserve">
+    <value>Sample Indicators</value>
+  </data>
+  <data name="PeopleSearchResultsDescription" xml:space="preserve">
+    <value>This page layout contains a tab control.  It has Web Part zones arranged in a right column, header, footer, 2 columns and 2 rows.</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone" xml:space="preserve">
+    <value>Bottom Zone</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName" xml:space="preserve">
+    <value>Social Properties</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle" xml:space="preserve">
+    <value>Delete Post</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description" xml:space="preserve">
+    <value>Whether to fetch the backend data every time</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="NavigationWebPartGroup" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="BizAppsContentTypes_Report" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName" xml:space="preserve">
+    <value>Topics</value>
+  </data>
+  <data name="PortalManifest_Home_Description" xml:space="preserve">
+    <value>Portal Home site</value>
+  </data>
+  <data name="Ratings_FieldsGroup" xml:space="preserve">
+    <value>Ratings</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel" xml:space="preserve">
+    <value>Replies to reach next level</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName" xml:space="preserve">
+    <value>Site Membership</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title" xml:space="preserve">
+    <value>Recommended People</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description" xml:space="preserve">
+    <value>Address or name of the cell for the value</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText" xml:space="preserve">
+    <value>Audience targeting settings</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences" xml:space="preserve">
+    <value>Audiences</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title" xml:space="preserve">
+    <value>Synchronization</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep" xml:space="preserve">
+    <value>Here's what you can do next:</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description" xml:space="preserve">
+    <value>Enables the provisioning of an Exchange mailbox for sites on this farm and connects the documents from the site to Outlook.</value>
+  </data>
+  <data name="ModerationTabTitle" xml:space="preserve">
+    <value>Moderation</value>
+  </data>
+  <data name="DwpBdlDesc" xml:space="preserve">
+    <value>Displays a list of items from a data source in Business Data Connectivity.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc" xml:space="preserve">
+    <value>My Site feature that uploads all the layouts to the master page gallery</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text" xml:space="preserve">
+    <value>My Site Layouts Feature</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description" xml:space="preserve">
+    <value>Displays a list of your colleagues and their recent changes.</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView" xml:space="preserve">
+    <value>Current reports</value>
+  </data>
+  <data name="DwpTextFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts by allowing users to enter a text value.</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard" xml:space="preserve">
+    <value>Web Part Page with Status List</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title" xml:space="preserve">
+    <value>Business Data Item</value>
+  </data>
+  <data name="Categories_QuickLaunch" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Membership_WebPart_Title" xml:space="preserve">
+    <value>Memberships</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title" xml:space="preserve">
+    <value>Related Items</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc" xml:space="preserve">
+    <value>Creates a Business Data item from parameters in the query string and provides it to other Web Parts.</value>
+  </data>
+  <data name="DwpOlapFilterDescription" xml:space="preserve">
+    <value>Filters the contents of Web Parts using a list of values from SQL Server Analysis Services cubes.</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title" xml:space="preserve">
+    <value>Organization Browser</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name" xml:space="preserve">
+    <value>Indicator Goal Threshold</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description" xml:space="preserve">
+    <value>Controls the activation of the site feed feature.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady" xml:space="preserve">
+    <value>Your SkyDrive Pro is ready</value>
+  </data>
+  <data name="Dashboard_WebPart_Description" xml:space="preserve">
+    <value>Displays the number of members, topics and replies within a community site. This web part will work on Community sites or any other site that has Community Features turned on.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description" xml:space="preserve">
+    <value>Details about the sites that the user is a member of</value>
+  </data>
+</root>

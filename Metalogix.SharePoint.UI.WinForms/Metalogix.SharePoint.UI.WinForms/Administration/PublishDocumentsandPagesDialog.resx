@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_tbPublishComment.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_cbCheckin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 12</value>
+  </data>
+  <data name="&gt;&gt;w_cbPublish.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_tbApprovalComment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbPublish.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;w_cbPublish.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAC5cgdtuXIHV7lyB1O5cgdTuXIHU7lyB1O5cgdTuXIHcblyBx////8B////Af///wH///8B////Af//
+        /wH///8BuXIHf////wH///8B////Af///wH///8B////AblyB025cgdB////Af///wH///8B////Af//
+        /wH///8B////AblyB3H///8B////Af///wH///8B////Af///wG5cgdHuXIHOf///wH///8B////Af//
+        /wH///8B////Af///wG5cgdx////Af///wG5cgcTuXIHHf///wH///8BuXIHR7lyBzn///8B////Af//
+        /wH///8B////Af///wH///8BuXIHcf///wH///8BuXIHOblyB1f///8B////AblyB0e5cgc5////Af//
+        /wH///8B////Af///wH///8B////AblyB3H///8B////AblyBzG5cgdL////Af///wG5cgdHuXIHOf//
+        /wH///8B////Af///wH///8B////Af///wG5cgd1////Af///wG5cgctuXIHUf///wH///8BuXIHP7ly
+        Bz////8B////Af///wH///8B////Af///wH///8BuXIHfblyB1O5cgc/uXIHN7lyBz+5cgcfuXIHSbly
+        B3e5cgcf////Af///wH///8B////Af///wH///8B////AblyBwu5cgcruXIHT7lyBze5cgcduXIHO7ly
+        B0e5cgcbuXIHJblyB1W5cgdFuXIHRblyB0W5cgdFuXIHSblyB0f///8B////AblyBzO5cgeJuXIHkbly
+        B1e5cgcL////AblyB0G5cgcruXIHB////wH///8BuXIHB7lyBwe5cgdL////Af///wH///8BuXIHU7ly
+        B6H///8B////Af///wG5cgc5uXIHIf///wG5cgcfuXIHCf///wH///8BuXIHO////wH///8B////Af//
+        /wH///8B////Af///wH///8BuXIHOblyBxO5cgcluXIHcblyB1u5cgcH////AblyBz3///8B////Af//
+        /wH///8B////Af///wH///8B////AblyBzm5cgcbuXIHFf///wG5cgcxuXIHW7lyBwW5cgc7////Af//
+        /wH///8B////Af///wH///8B////Af///wG5cgc5uXIHIf///wH///8B////AblyBxm5cgcDuXIHOf//
+        /wH///8B////Af///wH///8B////Af///wH///8BuXIHQblyByH///8B////Af///wH///8B////Ably
+        B0P///8B////Af///wH///8B////Af///wH///8B////AblyBzW5cgdnuXIHW7lyB1u5cgdbuXIHW7ly
+        B1u5cgdbAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Check In, Publish or Approve Items</value>
+  </data>
+  <data name="&gt;&gt;w_tbApprovalComment.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_cbApprove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 112</value>
+  </data>
+  <data name="w_tbCheckinComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 20</value>
+  </data>
+  <data name="&gt;&gt;w_lblApprovalComment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblPublishComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="w_lblPublishComment.Text" xml:space="preserve">
+    <value>Publish Comment:</value>
+  </data>
+  <data name="&gt;&gt;w_lblCheckinComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblCheckinComment.Name" xml:space="preserve">
+    <value>w_lblCheckinComment</value>
+  </data>
+  <data name="&gt;&gt;w_cbCheckin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblApprovalComment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>425, 200</value>
+  </data>
+  <data name="&gt;&gt;w_tbApprovalComment.Name" xml:space="preserve">
+    <value>w_tbApprovalComment</value>
+  </data>
+  <data name="&gt;&gt;w_tbApprovalComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 165</value>
+  </data>
+  <data name="w_cbApprove.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_cbCheckin.Name" xml:space="preserve">
+    <value>w_cbCheckin</value>
+  </data>
+  <data name="&gt;&gt;w_cbCheckin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_cbCheckin.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="w_btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="w_cbPublish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 17</value>
+  </data>
+  <data name="w_cbPublish.Text" xml:space="preserve">
+    <value>Publish Items  (Minor Versions must be enabled on List)</value>
+  </data>
+  <data name="&gt;&gt;w_tbPublishComment.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_lblApprovalComment.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="w_tbPublishComment.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="w_lblCheckinComment.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_tbCheckinComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 37</value>
+  </data>
+  <data name="w_tbCheckinComment.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_tbApprovalComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 137</value>
+  </data>
+  <data name="w_tbPublishComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 20</value>
+  </data>
+  <data name="w_lblPublishComment.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_cbApprove.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_cbPublish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_cbPublish.Name" xml:space="preserve">
+    <value>w_cbPublish</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Name" xml:space="preserve">
+    <value>w_btnCancel</value>
+  </data>
+  <data name="&gt;&gt;w_tbCheckinComment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_tbPublishComment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_cbPublish.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_cbApprove.Name" xml:space="preserve">
+    <value>w_cbApprove</value>
+  </data>
+  <data name="&gt;&gt;w_cbApprove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_cbApprove.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_tbCheckinComment.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="w_cbApprove.Text" xml:space="preserve">
+    <value>Approve Items  (Content Approval must be enabled on List)</value>
+  </data>
+  <data name="w_cbApprove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 17</value>
+  </data>
+  <data name="w_btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;w_lblPublishComment.Name" xml:space="preserve">
+    <value>w_lblPublishComment</value>
+  </data>
+  <data name="&gt;&gt;w_lblPublishComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_btnOk.Name" xml:space="preserve">
+    <value>w_btnOk</value>
+  </data>
+  <data name="w_btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="w_btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;w_cbApprove.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_btnOk.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="w_lblPublishComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 90</value>
+  </data>
+  <data name="&gt;&gt;w_lblApprovalComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblApprovalComment.Name" xml:space="preserve">
+    <value>w_lblApprovalComment</value>
+  </data>
+  <data name="w_btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_lblCheckinComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="w_lblCheckinComment.Text" xml:space="preserve">
+    <value>Check In Comment:</value>
+  </data>
+  <data name="w_lblApprovalComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 140</value>
+  </data>
+  <data name="&gt;&gt;w_btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_lblCheckinComment.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_lblApprovalComment.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_cbCheckin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PublishDocumentsandPagesDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>431, 226</value>
+  </data>
+  <data name="w_lblApprovalComment.Text" xml:space="preserve">
+    <value>Approval Comment:</value>
+  </data>
+  <data name="w_lblApprovalComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="w_lblCheckinComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 40</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>431, 235</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;w_tbCheckinComment.Name" xml:space="preserve">
+    <value>w_tbCheckinComment</value>
+  </data>
+  <data name="&gt;&gt;w_tbCheckinComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_tbCheckinComment.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;w_lblCheckinComment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lblCheckinComment.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;w_lblPublishComment.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 165</value>
+  </data>
+  <data name="w_cbCheckin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="w_tbPublishComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 87</value>
+  </data>
+  <data name="w_lblPublishComment.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="w_tbApprovalComment.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="w_tbApprovalComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 20</value>
+  </data>
+  <data name="w_cbCheckin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="w_cbCheckin.Text" xml:space="preserve">
+    <value>Check In Items</value>
+  </data>
+  <data name="w_tbApprovalComment.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;w_tbPublishComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tbPublishComment.Name" xml:space="preserve">
+    <value>w_tbPublishComment</value>
+  </data>
+  <data name="w_cbPublish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 62</value>
+  </data>
+  <data name="&gt;&gt;w_lblPublishComment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+</root>

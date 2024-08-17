@@ -1,0 +1,973 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_chRuleAppliedTypes.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="w_bOkay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="w_spListRulesSplitter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="removeRuleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remove Rule</value>
+  </data>
+  <data name="removeRuleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="w_lvOptions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_lvOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 116</value>
+  </data>
+  <data name="&gt;&gt;w_plControlButtonPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="w_lbListsWithOptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_lblContentTypeRules.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Name" xml:space="preserve">
+    <value>w_spCTApplicationSplitter</value>
+  </data>
+  <data name="&gt;&gt;w_chRules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_chRules.Name" xml:space="preserve">
+    <value>w_chRules</value>
+  </data>
+  <data name="w_bCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 7</value>
+  </data>
+  <data name="w_tsbRemoveRule.Text" xml:space="preserve">
+    <value>Remove Rule</value>
+  </data>
+  <data name="w_tsbRemoveRule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
+  <data name="w_spDividedContainer.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="w_spDividedContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>205</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Parent" xml:space="preserve">
+    <value>w_spCTApplicationSplitter.Panel1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Apply Content Types to Lists</value>
+  </data>
+  <data name="w_lbListsWithOptions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="w_lbListsWithOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 13</value>
+  </data>
+  <data name="w_lbListsWithOptions.Text" xml:space="preserve">
+    <value>Lists With Content Types Applied</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_plControlButtonPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_cmsExplorerMenu.Name" xml:space="preserve">
+    <value>w_cmsExplorerMenu</value>
+  </data>
+  <data name="&gt;&gt;w_cmsExplorerMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lblContentTypeRules.Name" xml:space="preserve">
+    <value>w_lblContentTypeRules</value>
+  </data>
+  <data name="&gt;&gt;w_lblContentTypeRules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel2.Parent" xml:space="preserve">
+    <value>w_spListRulesSplitter</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel1.Parent" xml:space="preserve">
+    <value>w_spDividedContainer</value>
+  </data>
+  <data name="w_spDividedContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 514</value>
+  </data>
+  <data name="w_spDividedContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_spListRulesSplitter.SplitterDistance" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="w_spListRulesSplitter.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;propertiesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;propertiesToolStripMenuItem.Name" xml:space="preserve">
+    <value>propertiesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;w_cmsListRulesMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_cmsListRulesMenu.Name" xml:space="preserve">
+    <value>w_cmsListRulesMenu</value>
+  </data>
+  <data name="w_tsbEditOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAgVJREFUOE+lkd9LU3EYxs9f0EUX/RvRxS68ia4CAwMhsqsuJoOQMTXbpGJEoKdA
+        q8V0raO2ubkznMvZbM4ZM3WGc6TNIc4ymDl/NJEuEjWdO09935PuTNtueuG5eOH9PB++53D/PS2eTSjD
+        i5t40J2BoeM7tG0bUD9dx41Ha7j6cBWX76/ioiFNKbu9guMCxwRgG5MghHOwhA5hCmTRMnCApr59GN2/
+        0OjYRX3XDmpe7kDTvk25oJnJFxylyZXBPVsGuhey+Tq/hivGNC79NSpzXh2VC9xDHyFJUsnsZ3PY3sth
+        6+chJb2Vhaq8Wi5w+qN0NBZbooSjX2gPjC/gTXgefaEEwXbfDARPDA5fFEPjc7ilb5YLXvVHCmzKKM3M
+        urRxgPnpOF5rb1JG/f3ghN5ROmbmkQ+LZGY7M4tvP5GZwW2uKTjdPgJTz+oQN8glnMU1UmBl+Zd5Op7E
+        uwEjvMMxzDU3EGxSqcCZHUGCir2ZmRkc8jbgx3IrPk9qwfNGgkXTk3xBKXNQ1BCcfK+GXyjHubNnUF1T
+        K3/Eo4KTbxbcE7D3eBGwV52Crd2e/G9kBcy8+PUbEsllxBIpRGZTGA5HMNhZcQruEAfh/CMqKGCLMrq7
+        PKxdTkwFH2Nl9s4xXKdvLLijgmLDCiQph15zJcG2TnNp4OTo6vWovFbFIFgtz4vAHPcb6q+Bt8sxtewA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Name" xml:space="preserve">
+    <value>w_spListRulesSplitter</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_cmsListViewMenu.Name" xml:space="preserve">
+    <value>w_cmsListViewMenu</value>
+  </data>
+  <data name="&gt;&gt;w_cmsListViewMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_tsbNavigate.Text" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="w_tsbNavigate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="w_spDividedContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;w_tsOptionsMenu.Name" xml:space="preserve">
+    <value>w_tsOptionsMenu</value>
+  </data>
+  <data name="&gt;&gt;w_tsOptionsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Parent" xml:space="preserve">
+    <value>w_spDividedContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel1.Parent" xml:space="preserve">
+    <value>w_spListRulesSplitter</value>
+  </data>
+  <data name="&gt;&gt;w_tsRulesMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>532, 555</value>
+  </data>
+  <data name="w_lblContentTypeRules.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_tsbEditOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="w_tsbEditOptions.Text" xml:space="preserve">
+    <value>Edit Options</value>
+  </data>
+  <data name="w_tsRulesMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;w_lvRules.Parent" xml:space="preserve">
+    <value>w_spListRulesSplitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;editOptionsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editOptionsToolStripMenuItem.Name" xml:space="preserve">
+    <value>editOptionsToolStripMenuItem</value>
+  </data>
+  <data name="w_bOkay.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_ecwlExplorer.Type" xml:space="preserve">
+    <value>Metalogix.UI.WinForms.Explorer.Widgets.ExplorerControlWithLocation, Metalogix.System, Version=5.0.0.10, Culture=neutral, PublicKeyToken=1bd76498c7c4cba4</value>
+  </data>
+  <data name="&gt;&gt;w_ecwlExplorer.Name" xml:space="preserve">
+    <value>w_ecwlExplorer</value>
+  </data>
+  <data name="&gt;&gt;w_chSourceLists.Name" xml:space="preserve">
+    <value>w_chSourceLists</value>
+  </data>
+  <data name="&gt;&gt;w_chSourceLists.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_chSourceLists.Text" xml:space="preserve">
+    <value>Source Lists</value>
+  </data>
+  <data name="w_lblContentTypeRules.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="w_lblContentTypeRules.Text" xml:space="preserve">
+    <value>Rules for Copy Wide Content Type Application</value>
+  </data>
+  <data name="w_lblContentTypeRules.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 13</value>
+  </data>
+  <data name="&gt;&gt;editRuleToolStripMenuitem.Name" xml:space="preserve">
+    <value>editRuleToolStripMenuitem</value>
+  </data>
+  <data name="&gt;&gt;editRuleToolStripMenuitem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_spListRulesSplitter.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="w_spCTApplicationSplitter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="w_tsbEditRuleOptions.Text" xml:space="preserve">
+    <value>Edit Options</value>
+  </data>
+  <data name="w_tsbEditRuleOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 22</value>
+  </data>
+  <data name="&gt;&gt;removeRuleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeRuleToolStripMenuItem.Name" xml:space="preserve">
+    <value>removeRuleToolStripMenuItem</value>
+  </data>
+  <data name="w_lvOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;w_lvRules.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_tsRulesMenu.Parent" xml:space="preserve">
+    <value>w_spListRulesSplitter.Panel2</value>
+  </data>
+  <data name="w_tsbApplyContentTypeRules.Text" xml:space="preserve">
+    <value>Rule Based Application of Content Types</value>
+  </data>
+  <data name="w_tsbApplyContentTypeRules.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
+  <data name="w_lvRules.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_lvRules.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 104</value>
+  </data>
+  <data name="&gt;&gt;w_chRuleAppliedTypes.Name" xml:space="preserve">
+    <value>w_chRuleAppliedTypes</value>
+  </data>
+  <data name="&gt;&gt;w_chRuleAppliedTypes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_lblContentTypeRules.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="w_bCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_chAppliedContentTypes.Name" xml:space="preserve">
+    <value>w_chAppliedContentTypes</value>
+  </data>
+  <data name="&gt;&gt;w_chAppliedContentTypes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editRuleOptionsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editRuleOptionsToolStripMenuItem.Name" xml:space="preserve">
+    <value>editRuleOptionsToolStripMenuItem</value>
+  </data>
+  <data name="w_tsbEditOptions.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="w_tsOptionsMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="w_tsOptionsMenu.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="w_tsOptionsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 28</value>
+  </data>
+  <data name="w_tsbRemoveOptions.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="w_tsbEditRuleOptions.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;w_tsMenu.Parent" xml:space="preserve">
+    <value>w_spDividedContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel2.Parent" xml:space="preserve">
+    <value>w_spCTApplicationSplitter</value>
+  </data>
+  <data name="w_chRuleAppliedTypes.Text" xml:space="preserve">
+    <value>Applied Content Types</value>
+  </data>
+  <data name="&gt;&gt;w_lvOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_chAppliedContentTypes.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="w_spDividedContainer.SplitterWidth" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="w_bCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_tsbApplyContentTypes.Text" xml:space="preserve">
+    <value>Apply Content Types to Selected List</value>
+  </data>
+  <data name="w_tsbApplyContentTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="w_tsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 25</value>
+  </data>
+  <data name="w_tsMenu.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="w_tsbEditRule.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="w_plControlButtonPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 41</value>
+  </data>
+  <data name="w_plControlButtonPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="editRuleOptionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="editRuleOptionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit Options</value>
+  </data>
+  <data name="&gt;&gt;w_tsMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_tsRulesMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_tsRulesMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 25</value>
+  </data>
+  <data name="&gt;&gt;w_tsbApplyContentTypes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tsbApplyContentTypes.Name" xml:space="preserve">
+    <value>w_tsbApplyContentTypes</value>
+  </data>
+  <data name="w_tsbRemoveRule.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_lvOptions.Parent" xml:space="preserve">
+    <value>w_spCTApplicationSplitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_lblContentTypeRules.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_tsbApplyContentTypes.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="w_chRules.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="editRuleToolStripMenuitem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="editRuleToolStripMenuitem.Text" xml:space="preserve">
+    <value>Edit Rule</value>
+  </data>
+  <data name="&gt;&gt;refreshToolStripMenuItem.Name" xml:space="preserve">
+    <value>refreshToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;refreshToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel1.Name" xml:space="preserve">
+    <value>w_spListRulesSplitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tsbApplyContentTypeRules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tsbApplyContentTypeRules.Name" xml:space="preserve">
+    <value>w_tsbApplyContentTypeRules</value>
+  </data>
+  <data name="w_ecwlExplorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 180</value>
+  </data>
+  <data name="w_ecwlExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_tsbEditRuleOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAgVJREFUOE+lkd9LU3EYxs9f0EUX/RvRxS68ia4CAwMhsqsuJoOQMTXbpGJEoKdA
+        q8V0raO2ubkznMvZbM4ZM3WGc6TNIc4ymDl/NJEuEjWdO09935PuTNtueuG5eOH9PB++53D/PS2eTSjD
+        i5t40J2BoeM7tG0bUD9dx41Ha7j6cBWX76/ioiFNKbu9guMCxwRgG5MghHOwhA5hCmTRMnCApr59GN2/
+        0OjYRX3XDmpe7kDTvk25oJnJFxylyZXBPVsGuhey+Tq/hivGNC79NSpzXh2VC9xDHyFJUsnsZ3PY3sth
+        6+chJb2Vhaq8Wi5w+qN0NBZbooSjX2gPjC/gTXgefaEEwXbfDARPDA5fFEPjc7ilb5YLXvVHCmzKKM3M
+        urRxgPnpOF5rb1JG/f3ghN5ROmbmkQ+LZGY7M4tvP5GZwW2uKTjdPgJTz+oQN8glnMU1UmBl+Zd5Op7E
+        uwEjvMMxzDU3EGxSqcCZHUGCir2ZmRkc8jbgx3IrPk9qwfNGgkXTk3xBKXNQ1BCcfK+GXyjHubNnUF1T
+        K3/Eo4KTbxbcE7D3eBGwV52Crd2e/G9kBcy8+PUbEsllxBIpRGZTGA5HMNhZcQruEAfh/CMqKGCLMrq7
+        PKxdTkwFH2Nl9s4xXKdvLLijgmLDCiQph15zJcG2TnNp4OTo6vWovFbFIFgtz4vAHPcb6q+Bt8sxtewA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;w_lvOptions.Name" xml:space="preserve">
+    <value>w_lvOptions</value>
+  </data>
+  <data name="&gt;&gt;w_lvOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_tsbEditRule.Text" xml:space="preserve">
+    <value>Edit Rule</value>
+  </data>
+  <data name="w_tsbEditRule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 22</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel2.Name" xml:space="preserve">
+    <value>w_spListRulesSplitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_spListRulesSplitter.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tsMenu.Name" xml:space="preserve">
+    <value>w_tsMenu</value>
+  </data>
+  <data name="applyContentTypesToListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="applyContentTypesToListToolStripMenuItem.Text" xml:space="preserve">
+    <value>Apply Content Types to List</value>
+  </data>
+  <data name="w_spCTApplicationSplitter.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Name" xml:space="preserve">
+    <value>w_spDividedContainer</value>
+  </data>
+  <data name="editOptionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit Options</value>
+  </data>
+  <data name="editOptionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="navigateToToolStripMenuItem.Text" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="navigateToToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="&gt;&gt;w_lblContentTypeRules.Parent" xml:space="preserve">
+    <value>w_spListRulesSplitter.Panel1</value>
+  </data>
+  <data name="w_lbListsWithOptions.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.Parent" xml:space="preserve">
+    <value>w_plControlButtonPanel</value>
+  </data>
+  <data name="w_bCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="w_bCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="w_ecwlExplorer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_lvRules.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="w_lblContentTypeRules.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_bOkay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 7</value>
+  </data>
+  <data name="w_plControlButtonPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="w_chSourceLists.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="w_cmsListViewMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 70</value>
+  </data>
+  <data name="w_tsOptionsMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 5, 1, 0</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.Name" xml:space="preserve">
+    <value>w_bOkay</value>
+  </data>
+  <data name="w_lvRules.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="&gt;&gt;w_ecwlExplorer.Parent" xml:space="preserve">
+    <value>w_spDividedContainer.Panel1</value>
+  </data>
+  <data name="w_spCTApplicationSplitter.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;w_tsbRemoveOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tsbRemoveOptions.Name" xml:space="preserve">
+    <value>w_tsbRemoveOptions</value>
+  </data>
+  <data name="w_bOkay.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="w_bOkay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel1.Parent" xml:space="preserve">
+    <value>w_spCTApplicationSplitter</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel2.Name" xml:space="preserve">
+    <value>w_spCTApplicationSplitter.Panel2</value>
+  </data>
+  <data name="w_lvOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="w_tsbRemoveOptions.Text" xml:space="preserve">
+    <value>Remove Options</value>
+  </data>
+  <data name="w_tsbRemoveOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel1.Name" xml:space="preserve">
+    <value>w_spCTApplicationSplitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;w_ecwlExplorer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ContentTypeApplicationOptionsSiteLevelConfigDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;applyContentTypesToListToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;applyContentTypesToListToolStripMenuItem.Name" xml:space="preserve">
+    <value>applyContentTypesToListToolStripMenuItem</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>540, 379</value>
+  </data>
+  <data name="w_tsMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel2.Name" xml:space="preserve">
+    <value>w_spDividedContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel1.Name" xml:space="preserve">
+    <value>w_spDividedContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;w_tsbEditRule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_tsbEditRule.Name" xml:space="preserve">
+    <value>w_tsbEditRule</value>
+  </data>
+  <data name="&gt;&gt;w_lvRules.Name" xml:space="preserve">
+    <value>w_lvRules</value>
+  </data>
+  <data name="&gt;&gt;w_lvRules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Panel2.Parent" xml:space="preserve">
+    <value>w_spDividedContainer</value>
+  </data>
+  <data name="&gt;&gt;w_tsbEditRuleOptions.Name" xml:space="preserve">
+    <value>w_tsbEditRuleOptions</value>
+  </data>
+  <data name="&gt;&gt;w_tsbEditRuleOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="propertiesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="&gt;&gt;removeOptionsToolStripMenuItem.Name" xml:space="preserve">
+    <value>removeOptionsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;removeOptionsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_lbListsWithOptions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="w_cmsExplorerMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 70</value>
+  </data>
+  <data name="&gt;&gt;w_tsbNavigate.Name" xml:space="preserve">
+    <value>w_tsbNavigate</value>
+  </data>
+  <data name="&gt;&gt;w_tsbNavigate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="w_cmsListRulesMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 70</value>
+  </data>
+  <data name="&gt;&gt;w_tsbRemoveRule.Name" xml:space="preserve">
+    <value>w_tsbRemoveRule</value>
+  </data>
+  <data name="&gt;&gt;w_tsbRemoveRule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_spListRulesSplitter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_spListRulesSplitter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 146</value>
+  </data>
+  <data name="w_tsOptionsMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 279</value>
+  </data>
+  <data name="w_tsbNavigate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAkRJREFUOE+tkl9IEwEcx7eGa01btbJWbUX+WVnpotkZiNWLIiEEFtEl7CBZixaE
+        mM0ihmmshJIGxVb0YBizyM1t6VYnu62p68EmWM2FWPT3rSeNXnr4trttt04UeugDv5e73/fz+/G7Ey2E
+        nvTCPG4EEdKDCKYqoAf1gkRvzIFMy9IYRkkcnqiHfeYaXLM3YX9rRsfEEZwKV6DKp0LNEwLuWN/iIiKi
+        x9VkO9yfnHAmLbBNNuHCeDXORXV8UaEyFD9YD/fYAokhSqJr+iJ6ZzrR88bEB4Y/OwQCtozh3Si1a3IC
+        Ou5FDbMXdxOt6Hx9FC1jBNc49YMBy9ef7wUCc7QCB/s349LTlrTEHDHidKwWlleHBI3X48fx6/ecQGJ6
+        WY6msBYnmBJU9uxMC6oG9Tg/WikIZ2vgQzcnYPkyn+SeNYaKUEdrsK5DlhEM6LkXt6eaM61L83E+gVpa
+        jernKqhv5WcErn8XBL4/xr5gIfYElFjTLk0LKDcJaqSMX7t+RMPVSUYLx7QlEwV831xceNfwamzx56O4
+        TZ0WPIw4sP+Rigtnj8QK7qQ+axY2rEtNLXpWAI1fjrUOKRqvNKQFLAfuETgWLAHJlPJHmp17x4e3D63i
+        pm70yaDwSKA0KUCHvTkBHfNiW3ch6gIa/kitcQNuJC5zU9X+FVAO5kHuFkN6RgzbfWsunMXD9EHXlfpV
+        nSu5I2mHFNy6G7zLUeBZBpldDGWzYvHw39j6rShv2wH5WQlkRgnyKDG2GjaBspLCtf8PItEf9xzwLsbs
+        4Q8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;w_spCTApplicationSplitter.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_tsOptionsMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="w_chRules.Text" xml:space="preserve">
+    <value>Rule</value>
+  </data>
+  <data name="&gt;&gt;w_tsOptionsMenu.Parent" xml:space="preserve">
+    <value>w_spDividedContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="w_lbListsWithOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;w_spDividedContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;w_lbListsWithOptions.Parent" xml:space="preserve">
+    <value>w_spCTApplicationSplitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;w_lbListsWithOptions.Name" xml:space="preserve">
+    <value>w_lbListsWithOptions</value>
+  </data>
+  <data name="w_bCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;w_lbListsWithOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_tsRulesMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;w_tsOptionsMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.Name" xml:space="preserve">
+    <value>w_bCancel</value>
+  </data>
+  <data name="&gt;&gt;w_bCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_spDividedContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="w_tsbApplyContentTypeRules.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="w_bOkay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="w_plControlButtonPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 514</value>
+  </data>
+  <data name="w_tsbNavigate.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;w_tsbEditOptions.Name" xml:space="preserve">
+    <value>w_tsbEditOptions</value>
+  </data>
+  <data name="&gt;&gt;w_tsbEditOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;navigateToToolStripMenuItem.Name" xml:space="preserve">
+    <value>navigateToToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;navigateToToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_plControlButtonPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;w_plControlButtonPanel.Name" xml:space="preserve">
+    <value>w_plControlButtonPanel</value>
+  </data>
+  <data name="w_ecwlExplorer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="w_spCTApplicationSplitter.SplitterDistance" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="&gt;&gt;w_bOkay.Parent" xml:space="preserve">
+    <value>w_plControlButtonPanel</value>
+  </data>
+  <data name="w_lbListsWithOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="removeOptionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="removeOptionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remove Options</value>
+  </data>
+  <data name="&gt;&gt;w_tsRulesMenu.Name" xml:space="preserve">
+    <value>w_tsRulesMenu</value>
+  </data>
+  <data name="&gt;&gt;w_tsRulesMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="w_spCTApplicationSplitter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 279</value>
+  </data>
+  <data name="w_spCTApplicationSplitter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="w_tsbEditRule.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAgVJREFUOE+lkd9LU3EYxs9f0EUX/RvRxS68ia4CAwMhsqsuJoOQMTXbpGJEoKdA
+        q8V0raO2ubkznMvZbM4ZM3WGc6TNIc4ymDl/NJEuEjWdO09935PuTNtueuG5eOH9PB++53D/PS2eTSjD
+        i5t40J2BoeM7tG0bUD9dx41Ha7j6cBWX76/ioiFNKbu9guMCxwRgG5MghHOwhA5hCmTRMnCApr59GN2/
+        0OjYRX3XDmpe7kDTvk25oJnJFxylyZXBPVsGuhey+Tq/hivGNC79NSpzXh2VC9xDHyFJUsnsZ3PY3sth
+        6+chJb2Vhaq8Wi5w+qN0NBZbooSjX2gPjC/gTXgefaEEwXbfDARPDA5fFEPjc7ilb5YLXvVHCmzKKM3M
+        urRxgPnpOF5rb1JG/f3ghN5ROmbmkQ+LZGY7M4tvP5GZwW2uKTjdPgJTz+oQN8glnMU1UmBl+Zd5Op7E
+        uwEjvMMxzDU3EGxSqcCZHUGCir2ZmRkc8jbgx3IrPk9qwfNGgkXTk3xBKXNQ1BCcfK+GXyjHubNnUF1T
+        K3/Eo4KTbxbcE7D3eBGwV52Crd2e/G9kBcy8+PUbEsllxBIpRGZTGA5HMNhZcQruEAfh/CMqKGCLMrq7
+        PKxdTkwFH2Nl9s4xXKdvLLijgmLDCiQph15zJcG2TnNp4OTo6vWovFbFIFgtz4vAHPcb6q+Bt8sxtewA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="w_tsMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="w_chAppliedContentTypes.Text" xml:space="preserve">
+    <value>Applied Content Types</value>
+  </data>
+</root>

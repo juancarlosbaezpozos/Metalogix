@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="932F5BB1-E815-4C14-8917-C2BAE32F70FE"
+         Title="$Resources:eduserver,IDS_EduMySiteHostFeatureTitle"
+         Description="$Resources:eduserver,IDS_EduMySiteHostFeatureDescription"
+         Hidden="TRUE"
+         SolutionId="7ED6CD55-B479-4EB7-A529-E99A24C10BD3"
+         Version="15.0.8.0"
+         Scope="Web"
+         AlwaysForceInstall="FALSE"
+         ReceiverAssembly="Microsoft.Office.Education.Data, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+         ReceiverClass="Microsoft.Office.Education.EduMySiteHostFeatureReceiver"
+         DefaultResourceFile="eduserver"
+         xmlns="http://schemas.microsoft.com/sharepoint/">
+
+	<ElementManifests>
+		<ElementManifest Location="DefaultPageElements.xml" />
+		<ElementManifest Location="Elements.xml" />
+		<ElementFile Location="Pages\Assignments.aspx" />
+		<ElementFile Location="Pages\Calendar.aspx" />
+		<ElementFile Location="Pages\Portal.aspx" /> 
+		<ElementFile Location="Pages\Settings.aspx" /> 
+		<ElementFile Location="profile.xml"/>
+	</ElementManifests>
+
+	<UpgradeActions>
+		<VersionRange EndVersion="15.0.1.0">
+			<CustomUpgradeAction Name="EduMySiteHost_DefaultPageUpgrade" />
+			<ApplyElementManifests>
+				<ElementManifest Location="DefaultPageElements.xml"/>
+			</ApplyElementManifests>
+		</VersionRange>
+		<VersionRange EndVersion="15.0.2.0">
+			<CustomUpgradeAction Name="Upgrade_EduMySiteHost_15.0.2.0" />
+		</VersionRange>
+		<VersionRange EndVersion="15.0.3.0">
+			<CustomUpgradeAction Name="EduMySiteHost_RemoveOAuthProviderSchema" />
+		</VersionRange>
+		<VersionRange EndVersion="15.0.4.0">
+			<CustomUpgradeAction Name="Upgrade_EduMySiteHost_15.0.4.0" />
+		</VersionRange>
+		<VersionRange EndVersion="15.0.5.0">
+			<CustomUpgradeAction Name="Upgrade_EduMySiteHost_15.0.5.0" />
+			<ApplyElementManifests>
+				<ElementManifest Location="DefaultPageElements.xml"/>
+			</ApplyElementManifests>
+		</VersionRange>
+		<VersionRange EndVersion="15.0.6.0">
+			<CustomUpgradeAction Name="Upgrade_EduMySiteHost_15.0.6.0" />
+		</VersionRange>
+		<VersionRange EndVersion="15.0.7.0">
+			<CustomUpgradeAction Name="Upgrade_EduMySiteHost_15.0.7.0" />
+		</VersionRange>
+		<VersionRange EndVersion="15.0.8.0">
+			<CustomUpgradeAction Name="Upgrade_EduMySiteHost_15.0.8.0" />
+		</VersionRange>
+	</UpgradeActions>
+
+</Feature>

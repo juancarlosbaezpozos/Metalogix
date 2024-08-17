@@ -1,0 +1,21 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+    Name="MicroBlogList"
+    Type="544"
+    DisplayName="$Resources:spscore,MicroFeed_ListDisplayName;"
+    Description="$Resources:spscore,MicroFeed_ListDescription;"
+    BaseType="0" 
+    AllowDeletion="TRUE"
+    AllowEveryoneViewItems="FALSE" 
+    CacheSchema="TRUE"
+    DisableAttachments="TRUE"
+    DontSaveInTemplate="TRUE"
+    FolderCreation="TRUE"
+    Hidden="TRUE"
+    HiddenList="FALSE"
+    Followable="TRUE"
+    RestrictUserUpdates="FALSE"
+    Image="/_layouts/15/images/ltgen.png">
+  </ListTemplate>
+</Elements>
+
